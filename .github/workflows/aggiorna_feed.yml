@@ -21,7 +21,7 @@ jobs:
           python-version: '3.11'
 
       - name: Installa librerie
-        run: pip install -r requirements.txt
+        run: pip install groq beautifulsoup4 feedparser feedgen requests python-dateutil pydantic
 
       - name: Esegui la pipeline con Groq
         env:
