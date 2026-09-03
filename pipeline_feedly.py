@@ -13,28 +13,58 @@ from groq import Groq
 # ---------------------------------------------------------------------------
 FONTI = [
     {
-        "nome": "British Journal of Photography",
-        "url": "https://www.1854.photography/feed/",
-        "categoria": "Fotografia",
-        "colore": "#d97706"
+        "nome": "Frieze (Opinion)",
+        "url": "https://www.frieze.com/rss.xml",
+        "categoria": "Critica d'Arte & Dibattito Culturale",
+        "colore": "#0f172a"
     },
     {
-        "nome": "Aperture",
-        "url": "https://aperture.org/feed/",
-        "categoria": "Fotografia",
-        "colore": "#0284c7"
-    },
-    {
-        "nome": "Hyperallergic",
-        "url": "https://hyperallergic.com/feed/",
-        "categoria": "Arte",
+        "nome": "ArtReview (Opinion)",
+        "url": "https://artreview.com/category/opinion/feed/",
+        "categoria": "Teoria Artistica & Controversie",
         "colore": "#7c3aed"
     },
     {
-        "nome": "IrpiMedia",
-        "url": "https://irpimedia.irpi.eu/feed/",
-        "categoria": "News",
+        "nome": "Valigia Blu (Fuori da qui)",
+        "url": "https://www.valigiablu.it/category/fuori-da-qui/feed/",
+        "categoria": "Geopolitica & Diritti Umani",
+        "colore": "#0284c7"
+    },
+    {
+        "nome": "IrpiMedia (Editoriali)",
+        "url": "https://irpimedia.irpi.eu/editoriali/feed/",
+        "categoria": "Opinione & Analisi Investigativa",
         "colore": "#dc2626"
+    },
+    {
+        "nome": "IrpiMedia (Inchieste)",
+        "url": "https://irpimedia.irpi.eu/inchieste/feed/",
+        "categoria": "Giornalismo d'Inchiesta",
+        "colore": "#991b1b"
+    },
+    {
+        "nome": "IrpiMedia (Feature)",
+        "url": "https://irpimedia.irpi.eu/feature/feed/",
+        "categoria": "Reportage & Approfondimento",
+        "colore": "#b91c1c"
+    },
+    {
+        "nome": "1000 Words",
+        "url": "https://www.1000wordsmag.com/feed/",
+        "categoria": "Fotografia Contemporanea & Linguaggi Visivi",
+        "colore": "#d97706"
+    },
+    {
+        "nome": "Il Tascabile",
+        "url": "https://www.iltascabile.com/feed/",
+        "categoria": "Saggistica, Filosofia & Scienze",
+        "colore": "#059669"
+    },
+    {
+        "nome": "The Italian Review",
+        "url": "https://www.theitalianreview.com/feed/",
+        "categoria": "Critica Letteraria & Sguardo d'Autore",
+        "colore": "#4338ca"
     }
 ]
 
