@@ -24,7 +24,6 @@ FONTI = [
 
 DATABASE_FILE = "feed_database.json"
 FEED_OUTPUT = "feed_sintesi.xml"
-FEED_URL = "https://lorenzoromani367.github.io/NewsFeed/feed_sintesi.xml"
 FEED_SITE = "https://lorenzoromani367.github.io/NewsFeed/"
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"}
@@ -34,8 +33,7 @@ client = Groq(api_key=os.environ.get("GROQ_API_KEY")) if os.environ.get("GROQ_AP
 def carica_database():
     if os.path.exists(DATABASE_FILE):
         try:
-            with open(DATABASE_FILE, "r", encoding="utf-8") as f:
-                return json.load(f)
+            with open(DATABASE_FILE, "r", encoding="utf-8") as f: return json.load(f)
         except: pass
     return {}
 
@@ -54,10 +52,9 @@ def recupera_feed_xml(url, fallback_url=None):
         except: pass
     return feedparser.parse(url)
 
-def genera_sintesi_e_traduzione(titolo, fonte, categoria, testo):
+def genera_sintesi_e_traduzione(titolo, fonte, testo):
     if not client: return None
 
-    # Istruzione chiara per tradurre dall'inglese e riassumere
     prompt_sistema = """Sei un analista editoriale. Se il testo originale è in inglese, TRADUCILO IN ITALIANO.
 REGOLE TASSATIVE:
 1. LINGUA: Esclusivamente ITALIANO.
@@ -66,24 +63,26 @@ REGOLE TASSATIVE:
    - "PUNTI CHIAVE": Elenco numerato di 3 concetti salienti.
 3. FORMATO: Solo codice HTML (<p>, <strong>, <ol>, <li>). Nessun markdown."""
 
-    prompt_utente = f"FONTE: {fonte}\nTITOLO: {titolo}\nTESTO:\n{testo[:4500]}"
+    prompt_utente = f"FONTE: {fonte}\nTITOLO: {titolo}\nTESTO:\n{testo[:4000]}"
 
-    try:
-        # Usiamo il modello 8B che ha 30.000 token/minuto di limite (non si blocca mai)
-        completion = client.chat.completions.create(
-            model="llama3-8b-8192", 
-            messages=[
-                {"role": "system", "content": prompt_sistema},
-                {"role": "user", "content": prompt_utente}
-            ],
-            temperature=0.3,
-            max_tokens=900
-        )
-        ris = completion.choices[0].message.content.strip()
-        return ris.replace("```html", "").replace("```", "").strip()
-    except Exception as e:
-        print(f"Errore Groq: {e}")
-        return None
+    # Auto-Retry: riprova fino a 3 volte in caso di errore Groq
+    for tentativo in range(3):
+        try:
+            completion = client.chat.completions.create(
+                model="llama-3.1-8b-instant", 
+                messages=[
+                    {"role": "system", "content": prompt_sistema},
+                    {"role": "user", "content": prompt_utente}
+                ],
+                temperature=0.3,
+                max_tokens=900
+            )
+            ris = completion.choices[0].message.content.strip()
+            return ris.replace("```html", "").replace("```", "").strip()
+        except Exception as e:
+            print(f"    [Groq Fallito - Tentativo {tentativo+1}/3] {e}")
+            time.sleep(10) # Pausa prima di riprovare
+    return None
 
 def componi_html_finale(fonte, categoria, colore, contenuto, link, immagine_url):
     img_tag = f'<div style="margin-bottom: 20px;"><img src="{immagine_url}" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>' if immagine_url else ""
@@ -106,20 +105,20 @@ def main():
         for entry in parsed.entries[:2]:
             link = entry.get("link", "").strip()
             titolo = entry.get("title", "Senza Titolo").strip()
-            item_id = f"v_traduzione_{link or titolo}"
+            # Cache buster automatico V8
+            item_id = f"v8_{link or titolo}"
 
             if item_id in db:
                 articoli.append(db[item_id])
                 continue
             
-            print(f"Elaborazione e traduzione: {titolo[:40]}...")
+            print(f"Elaborazione: {titolo[:40]}...")
             
             testo_grezzo = entry.get("content", [{}])[0].get("value", entry.get("summary", ""))
             soup = BeautifulSoup(testo_grezzo, "html.parser")
             for tag in soup(["script", "style"]): tag.decompose()
             testo_pulito = " ".join(soup.get_text().split())
 
-            # Se l'RSS è troppo corto, scarica l'articolo web
             if len(testo_pulito) < 400 and link:
                 try:
                     r = requests.get(link, headers=HEADERS, timeout=8)
@@ -128,11 +127,12 @@ def main():
                     if len(testo_estratto) > len(testo_pulito): testo_pulito = testo_estratto
                 except: pass
 
-            sintesi = genera_sintesi_e_traduzione(titolo, f["nome"], f["categoria"], testo_pulito)
+            sintesi = genera_sintesi_e_traduzione(titolo, f["nome"], testo_pulito)
             
-            # Se la traduzione fallisse, mettiamo il testo originale pulito come riserva
+            traduzione_riuscita = True
             if not sintesi: 
-                sintesi = f"<p><em>Traduzione non disponibile. Testo originale:</em></p><p>{testo_pulito[:800]}...</p>"
+                traduzione_riuscita = False
+                sintesi = f"<p><em>Traduzione temporaneamente non disponibile. Riproverà al prossimo aggiornamento.</em></p><p>{testo_pulito[:800]}...</p>"
 
             img_url = None
             if "media_content" in entry and len(entry.media_content) > 0: img_url = entry.media_content[0].get("url")
@@ -147,10 +147,13 @@ def main():
                 "html_content": html,
                 "published": datetime.now(timezone.utc).isoformat()
             }
-            db[item_id] = record
-            articoli.append(record)
             
-            # Pausa di sicurezza di 8 secondi (diluisce i consumi API)
+            # IL FIX CRUCIALE: Salva nel database SOLO se l'IA ha funzionato
+            if traduzione_riuscita:
+                db[item_id] = record
+            
+            # Ma inseriscilo comunque nel feed per non lasciarlo vuoto
+            articoli.append(record)
             time.sleep(8)
 
     salva_database(db)
