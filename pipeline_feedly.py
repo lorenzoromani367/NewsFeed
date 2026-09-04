@@ -2,69 +2,71 @@ import os
 import json
 import time
 from datetime import datetime, timezone
-import feedparser
 import requests
+import feedparser
 from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
 from groq import Groq
 
 # ---------------------------------------------------------------------------
-# CONFIGURAZIONE FONTI
+# CONFIGURAZIONE FONTI CON FALLBACK ANTI-BLOCCO
 # ---------------------------------------------------------------------------
 FONTI = [
     {
-        "nome": "Frieze (Opinion)",
-        "url": "https://www.frieze.com/rss.xml",
-        "categoria": "Critica d'Arte & Dibattito Culturale",
-        "colore": "#0f172a"
-    },
-    {
-        "nome": "ArtReview (Opinion)",
-        "url": "https://artreview.com/category/opinion/feed/",
-        "categoria": "Teoria Artistica & Controversie",
-        "colore": "#7c3aed"
-    },
-    {
-        "nome": "Valigia Blu (Fuori da qui)",
-        "url": "https://www.valigiablu.it/category/fuori-da-qui/feed/",
-        "categoria": "Geopolitica & Diritti Umani",
-        "colore": "#0284c7"
-    },
-    {
-        "nome": "IrpiMedia (Editoriali)",
-        "url": "https://irpimedia.irpi.eu/editoriali/feed/",
-        "categoria": "Opinione & Analisi Investigativa",
-        "colore": "#dc2626"
-    },
-    {
-        "nome": "IrpiMedia (Inchieste)",
-        "url": "https://irpimedia.irpi.eu/inchieste/feed/",
-        "categoria": "Giornalismo d'Inchiesta",
-        "colore": "#991b1b"
-    },
-    {
-        "nome": "IrpiMedia (Feature)",
-        "url": "https://irpimedia.irpi.eu/feature/feed/",
-        "categoria": "Reportage & Approfondimento",
-        "colore": "#b91c1c"
-    },
-    {
-        "nome": "1000 Words",
-        "url": "https://www.1000wordsmag.com/feed/",
-        "categoria": "Fotografia Contemporanea & Linguaggi Visivi",
-        "colore": "#d97706"
-    },
-    {
         "nome": "Il Tascabile",
         "url": "https://www.iltascabile.com/feed/",
-        "categoria": "Saggistica, Filosofia & Scienze",
+        "fallback": None,
+        "categoria": "Saggistica & Dibattito Culturale",
         "colore": "#059669"
     },
     {
         "nome": "The Italian Review",
         "url": "https://www.theitalianreview.com/feed/",
-        "categoria": "Critica Letteraria & Sguardo d'Autore",
+        "fallback": None,
+        "categoria": "Critica Letteraria & Società",
         "colore": "#4338ca"
+    },
+    {
+        "nome": "Valigia Blu",
+        "url": "https://www.valigiablu.it/category/fuori-da-qui/feed/",
+        "fallback": "https://www.valigiablu.it/feed/",
+        "categoria": "Geopolitica & Diritti Umani",
+        "colore": "#0284c7"
+    },
+    {
+        "nome": "IrpiMedia (Inchieste)",
+        "url": "https://irpimedia.irpi.eu/inchieste/feed/",
+        "fallback": "https://irpimedia.irpi.eu/feed/",
+        "categoria": "Giornalismo d'Inchiesta",
+        "colore": "#dc2626"
+    },
+    {
+        "nome": "IrpiMedia (Editoriali)",
+        "url": "https://irpimedia.irpi.eu/editoriali/feed/",
+        "fallback": "https://irpimedia.irpi.eu/feed/",
+        "categoria": "Opinione & Analisi",
+        "colore": "#991b1b"
+    },
+    {
+        "nome": "Frieze",
+        "url": "https://www.frieze.com/rss.xml",
+        "fallback": "https://www.frieze.com/feed",
+        "categoria": "Critica d'Arte Contemporanea",
+        "colore": "#0f172a"
+    },
+    {
+        "nome": "ArtReview",
+        "url": "https://artreview.com/category/opinion/feed/",
+        "fallback": "https://artreview.com/feed/",
+        "categoria": "Teoria Artistica & Controversie",
+        "colore": "#7c3aed"
+    },
+    {
+        "nome": "1000 Words",
+        "url": "https://www.1000wordsmag.com/feed/",
+        "fallback": "http://www.1000wordsmag.com/feed/",
+        "categoria": "Fotografia Contemporanea",
+        "colore": "#d97706"
     }
 ]
 
@@ -73,7 +75,14 @@ FEED_OUTPUT = "feed_sintesi.xml"
 FEED_URL = "https://lorenzoromani367.github.io/NewsFeed/feed_sintesi.xml"
 FEED_SITE = "https://lorenzoromani367.github.io/NewsFeed/"
 
-client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+HEADERS_BROWSER = {
+    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Language": "it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7"
+}
+
+api_key = os.environ.get("GROQ_API_KEY")
+client = Groq(api_key=api_key) if api_key else None
 
 def carica_database():
     if os.path.exists(DATABASE_FILE):
@@ -87,6 +96,22 @@ def carica_database():
 def salva_database(db):
     with open(DATABASE_FILE, "w", encoding="utf-8") as f:
         json.dump(db, f, ensure_ascii=False, indent=2)
+
+def recupera_feed_xml(url, fallback_url=None):
+    """Scarica il feed usando uno User-Agent reale per bypassare i blocchi 403."""
+    for target in [url, fallback_url]:
+        if not target:
+            continue
+        try:
+            res = requests.get(target, headers=HEADERS_BROWSER, timeout=12)
+            if res.status_code == 200 and len(res.content) > 100:
+                parsed = feedparser.parse(res.content)
+                if len(parsed.entries) > 0:
+                    return parsed
+        except Exception as e:
+            print(f"    [RETE] Avviso su {target}: {e}")
+    # Tentativo diretto come extrema ratio
+    return feedparser.parse(url)
 
 def pulisci_testo(html_raw):
     if not html_raw:
@@ -114,25 +139,21 @@ def estrai_immagine(entry):
     return None
 
 def genera_sintesi_approfondita(titolo, fonte, categoria, testo):
-    prompt_sistema = """Sei un analista editoriale senior per una rassegna culturale, artistica e investigativa d'avanguardia.
-Il tuo compito è produrre un'analisi densa, approfondita e stimolante dell'articolo fornito.
+    if not client:
+        return None
+
+    prompt_sistema = """Sei un analista editoriale senior per una rassegna culturale, artistica e d'inchiesta d'avanguardia.
+Produci un'analisi densa, rigorosa e stimolante dell'articolo fornito.
 
 REGOLE TASSATIVE:
-1. LINGUA: Italiano colto, incisivo, privo di formule banali o frasi fatte (vietato esordire con "L'articolo parla di...", "Questo pezzo esplora...").
-2. STRUTTURA A DUE SEZIONI:
-   - Sezione 1: "QUADRO CRITICO & CONTESTO" -> Sviluppa un testo approfondito articolato in 3 paragrafi ricchi. Devi contestualizzare l'opera o l'inchiesta, analizzare le metodologie o la visione dell'autore e metterne a fuoco le implicazioni politiche, estetiche o sociali.
-   - Sezione 2: "TESI CHIAVE & PUNTI SALIENTI" -> Elenco numerato di 3-4 punti specifici contenenti dati, dichiarazioni significative, concetti cardine o risvolti operativi emersi.
-3. FORMATO OUTPUT: Restituisci ESCLUSIVAMENTE codice HTML pulito (senza blocchi markdown ```html). Usa solo i tag <p>, <strong>, <ol>, <li>.
+1. LINGUA: Italiano colto, incisivo, privo di convenevoli o formule generiche.
+2. STRUTTURA IN DUE BLOCCHI:
+   - Blocco 1: "QUADRO CRITICO & CONTESTO" -> Testo articolato in 3 paragrafi ricchi. Analizza tesi, presupposti teorici o metodologici e impatto culturale/politico.
+   - Blocco 2: "TESI CHIAVE & PUNTI SALIENTI" -> Elenco numerato di 3-4 punti specifici (concetti centrali, evidenze o snodi critici).
+3. FORMATO: Restituisci ESCLUSIVAMENTE codice HTML pulito (senza blocchi markdown ```html). Usa solo i tag <p>, <strong>, <ol>, <li>.
 """
 
-    prompt_utente = f"""FONTE: {fonte}
-CATEGORIA: {categoria}
-TITOLO: {titolo}
-
-TESTO ARTICOLO:
-{testo[:6500]}
-
-Genera l'analisi approfondita seguendo rigorosamente le regole e la struttura stabilite."""
+    prompt_utente = f"FONTE: {fonte}\nCATEGORIA: {categoria}\nTITOLO: {titolo}\n\nTESTO ARTICOLO:\n{testo[:6000]}"
 
     try:
         completion = client.chat.completions.create(
@@ -142,28 +163,19 @@ Genera l'analisi approfondita seguendo rigorosamente le regole e la struttura st
                 {"role": "user", "content": prompt_utente}
             ],
             temperature=0.35,
-            max_tokens=1400
+            max_tokens=1300
         )
         risultato = completion.choices[0].message.content.strip()
-        if risultato.startswith("```html"):
-            risultato = risultato[7:]
-        if risultato.startswith("```"):
-            risultato = risultato[3:]
-        if risultato.endswith("```"):
-            risultato = risultato[:-3]
-        return risultato.strip()
+        risultato = risultato.replace("```html", "").replace("```", "").strip()
+        return risultato
     except Exception as e:
-        print(f"Errore Groq: {e}")
+        print(f"    [GROQ ERROR] {e}")
         return None
 
 def componi_html_finale(fonte, categoria, colore, riassunto_html, link_originale, immagine_url):
     img_tag = ""
     if immagine_url:
-        img_tag = f"""
-        <div style="margin-bottom: 20px;">
-            <img src="{immagine_url}" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" alt="Copertina" />
-        </div>
-        """
+        img_tag = f'<div style="margin-bottom: 20px;"><img src="{immagine_url}" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" alt="Copertina" /></div>'
 
     return f"""<div style="font-family: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b; max-width: 680px;">
     {img_tag}
@@ -173,11 +185,9 @@ def componi_html_finale(fonte, categoria, colore, riassunto_html, link_originale
     <div style="font-size: 13px; color: #64748b; margin-bottom: 18px; font-weight: 500;">
         Ambito: <em>{categoria}</em>
     </div>
-
     <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;">
         {riassunto_html}
     </div>
-
     <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid {colore}; border-radius: 4px;">
         <span style="font-weight: 600; font-size: 14px; color: #334155;">Consulta l'originale integrale:</span><br/>
         <a href="{link_originale}" target="_blank" rel="noopener" style="color: {colore}; font-weight: 700; text-decoration: underline; font-size: 14px;">
@@ -190,32 +200,32 @@ def main():
     db = carica_database()
     articoli_processati = []
 
-    print("--- INIZIO ELABORAZIONE FONTI ---")
+    print("=== INIZIO ACQUISIZIONE FONTI ===")
 
     for f_info in FONTI:
         nome_fonte = f_info["nome"]
-        url_feed = f_info["url"]
         categoria = f_info["categoria"]
         colore = f_info["colore"]
 
-        print(f"\nScansione feed: {nome_fonte}...")
-        parsed = feedparser.parse(url_feed)
+        parsed = recupera_feed_xml(f_info["url"], f_info.get("fallback"))
+        num_articoli = len(parsed.entries) if hasattr(parsed, "entries") else 0
+        print(f"\n[FONTE] {nome_fonte}: trovati {num_articoli} articoli.")
 
-        for entry in parsed.entries[:3]:
-            link = entry.get("link", "")
+        if num_articoli == 0:
+            continue
+
+        for entry in parsed.entries[:2]:
+            link = entry.get("link", "").strip()
             titolo_originale = entry.get("title", "Senza Titolo").strip()
-            
-            # Chiave v2 per forzare il refresh strutturale su Feedly
-            item_id = f"v2_{link or titolo_originale}"
+            item_id = f"v3_{link or titolo_originale}"
 
             if item_id in db:
-                print(f"  [GIA ARCHIVIATO] {titolo_originale[:40]}...")
+                print(f"  -> In archivio: {titolo_originale[:40]}...")
                 articoli_processati.append(db[item_id])
                 continue
 
-            print(f"  [NUOVO] Elaborazione: {titolo_originale[:40]}...")
-            
-            # Estrazione corpo articolo
+            print(f"  -> Elaborazione: {titolo_originale[:40]}...")
+
             testo_grezzo = ""
             if "content" in entry:
                 testo_grezzo = entry.content[0].value
@@ -226,29 +236,28 @@ def main():
 
             testo_pulito = pulisci_testo(testo_grezzo)
 
-            # Approfondimento da pagina originale se il feed RSS è troppo corto
-            if len(testo_pulito) < 400 and link:
+            if len(testo_pulito) < 300 and link:
                 try:
-                    r = requests.get(link, timeout=10, headers={"User-Agent": "Mozilla/5.0"})
+                    r = requests.get(link, headers=HEADERS_BROWSER, timeout=8)
                     if r.status_code == 200:
                         soup = BeautifulSoup(r.text, "html.parser")
                         paragraphs = soup.find_all("p")
-                        testo_pulito = " ".join([p.get_text() for p in paragraphs])
+                        testo_estratto = " ".join([p.get_text() for p in paragraphs])
+                        if len(testo_estratto) > len(testo_pulito):
+                            testo_pulito = testo_estratto
                 except Exception:
                     pass
 
-            if len(testo_pulito) < 150:
-                print(f"  [SCARTATO] Testo insufficiente per {titolo_originale}")
-                continue
-
             sintesi_corpo = genera_sintesi_approfondita(titolo_originale, nome_fonte, categoria, testo_pulito)
+            
+            # Fail-safe: se Groq non risponde, usa l'estratto per non svuotare il feed
             if not sintesi_corpo:
-                continue
+                print(f"     [AVVISO] Sintesi LLM fallita, utilizzo estratto originale.")
+                anteprima = testo_pulito[:700] if len(testo_pulito) > 100 else "Testo disponibile al link originale."
+                sintesi_corpo = f"<p><strong>Estratto:</strong></p><p>{anteprima}...</p>"
 
             immagine = estrai_immagine(entry)
             html_finale = componi_html_finale(nome_fonte, categoria, colore, sintesi_corpo, link, immagine)
-
-            # Titolo esplicito: [Fonte] Titolo originale
             titolo_formattato = f"[{nome_fonte}] {titolo_originale}"
 
             data_pub = datetime.now(timezone.utc)
@@ -267,13 +276,16 @@ def main():
 
             db[item_id] = record
             articoli_processati.append(record)
-            time.sleep(1)
+            time.sleep(2)
 
     salva_database(db)
 
-    # ---------------------------------------------------------------------------
-    # GENERAZIONE FEED RSS XML
-    # ---------------------------------------------------------------------------
+    print(f"\n=== GENERAZIONE XML: {len(articoli_processati)} ARTICOLI TOTALI ===")
+
+    if len(articoli_processati) == 0:
+        print("[ERRORE CRITICO] Nessun articolo recuperato dalle fonti.")
+        return
+
     fg = FeedGenerator()
     fg.title("Rassegna Personale: Arte, Fotografia & Inchieste")
     fg.link(href=FEED_SITE, rel="alternate")
@@ -281,7 +293,6 @@ def main():
     fg.description("Sintesi critiche approfondite e monitoraggio editoriale con Groq Llama 3.3 70B.")
     fg.language("it")
 
-    # Ordina cronologicamente
     articoli_processati.sort(key=lambda x: x.get("published", ""), reverse=True)
 
     for item in articoli_processati[:25]:
@@ -294,7 +305,7 @@ def main():
         fe.published(item["published"])
 
     fg.rss_file(FEED_OUTPUT, pretty=True)
-    print(f"\nFeed salvato con successo in {FEED_OUTPUT} ({len(articoli_processati[:25])} articoli).")
+    print(f"[COMPLETATO] Feed salvato con successo in {FEED_OUTPUT}")
 
 if __name__ == "__main__":
     main()
