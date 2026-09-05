@@ -53,7 +53,9 @@ def recupera_feed_xml(url, fallback_url=None):
     return feedparser.parse(url)
 
 def genera_sintesi_e_traduzione(titolo, fonte, testo):
-    if not client: return None
+    if not client: 
+        print("    [ERRORE] Chiave Groq non trovata!", flush=True)
+        return None
 
     prompt_sistema = """Sei un analista editoriale. Se il testo originale è in inglese, TRADUCILO IN ITALIANO.
 REGOLE TASSATIVE:
@@ -67,9 +69,9 @@ REGOLE TASSATIVE:
 
     for tentativo in range(3):
         try:
-            # IL MODELLO CORRETTO E ATTIVO
+            # IL NUOVO MODELLO ATTIVO DA AGOSTO 2026
             completion = client.chat.completions.create(
-                model="llama-3.1-8b-instant", 
+                model="openai/gpt-oss-20b", 
                 messages=[
                     {"role": "system", "content": prompt_sistema},
                     {"role": "user", "content": prompt_utente}
@@ -80,7 +82,8 @@ REGOLE TASSATIVE:
             ris = completion.choices[0].message.content.strip()
             return ris.replace("```html", "").replace("```", "").strip()
         except Exception as e:
-            print(f"    [Groq Fallito - Tentativo {tentativo+1}/3] {e}")
+            # FLUSH=TRUE PERMETTE DI VEDERE L'ERRORE LIVE NEL TERMINALE DI GITHUB
+            print(f"    [Groq Fallito - Tentativo {tentativo+1}/3] {e}", flush=True)
             time.sleep(10)
     return None
 
@@ -105,11 +108,13 @@ def main():
         for entry in parsed.entries[:2]:
             link = entry.get("link", "").strip()
             titolo = entry.get("title", "Senza Titolo").strip()
-            item_id = f"v13_{link or titolo}"
+            item_id = f"v14_{link or titolo}"
 
             if item_id in db:
                 articoli.append(db[item_id])
                 continue
+            
+            print(f"Elaborazione: {titolo[:40]}...", flush=True)
             
             testo_grezzo = entry.get("content", [{}])[0].get("value", entry.get("summary", ""))
             soup = BeautifulSoup(testo_grezzo, "html.parser")
