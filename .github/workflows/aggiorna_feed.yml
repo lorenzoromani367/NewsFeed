@@ -2,35 +2,35 @@ name: Aggiorna Feed Sintesi
 
 on:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: "0 */4 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  run-pipeline:
+  aggiorna:
     runs-on: ubuntu-latest
     steps:
-      - name: Scarica il repository
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Configura Python
-        uses: actions/setup-python@v5
+      - name: Setup Python
+        uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: "3.10"
 
-      - name: Installa librerie
-        run: pip install groq beautifulsoup4 feedparser feedgen requests python-dateutil pydantic
+      - name: Installa dipendenze
+        run: pip install requests feedparser beautifulsoup4 feedgen groq
 
-      - name: Esegui la pipeline con Groq
+      - name: Esegui pipeline Python
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python pipeline_feedly.py
 
-      - name: Salva aggiornamenti nel repository
+      - name: Salva modifiche
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add feed_database.json feed_sintesi.xml
+          git add feed_sintesi.xml feed_database.json
           git diff --staged --quiet || (git commit -m "Feed aggiornato" && git push)
