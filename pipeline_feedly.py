@@ -2,7 +2,7 @@ import os
 import json
 import time
 from datetime import datetime, timezone
-import requests
+import cloudscraper
 import feedparser
 from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
@@ -26,8 +26,8 @@ DATABASE_FILE = "feed_database.json"
 FEED_OUTPUT = "feed_sintesi.xml"
 FEED_SITE = "https://lorenzoromani367.github.io/NewsFeed/"
 
-HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"}
-
+# Inizializza il motore anti-bot
+scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'darwin', 'desktop': True})
 client = Groq(api_key=os.environ.get("GROQ_API_KEY")) if os.environ.get("GROQ_API_KEY") else None
 
 def carica_database():
@@ -38,14 +38,13 @@ def carica_database():
     return {}
 
 def salva_database(db):
-    with open(DATABASE_FILE, "w", encoding="utf-8") as f:
-        json.dump(db, f, ensure_ascii=False, indent=2)
+    with open(DATABASE_FILE, "w", encoding="utf-8") as f: json.dump(db, f, ensure_ascii=False, indent=2)
 
 def recupera_feed_xml(url, fallback_url=None):
     for target in [url, fallback_url]:
         if not target: continue
         try:
-            res = requests.get(target, headers=HEADERS, timeout=12)
+            res = scraper.get(target, timeout=15)
             if res.status_code == 200:
                 parsed = feedparser.parse(res.content)
                 if len(parsed.entries) > 0: return parsed
@@ -53,21 +52,16 @@ def recupera_feed_xml(url, fallback_url=None):
     return feedparser.parse(url)
 
 def genera_sintesi_e_traduzione(titolo, fonte, testo):
-    if not client: 
-        print("    [ERRORE] Chiave Groq non trovata!", flush=True)
-        return None
-
-    # Prompt aggiornato per scalabilità dinamica
+    if not client: return None
     prompt_sistema = """Sei un analista editoriale. Se il testo originale è in inglese, TRADUCILO IN ITALIANO.
 REGOLE TASSATIVE:
 1. LINGUA: Esclusivamente ITALIANO.
-2. LUNGHEZZA PROPORZIONALE: Analizza la complessità e la lunghezza del testo originale fornito e calibra la tua risposta.
-   - Testo breve o notizia: scrivi 1 solo paragrafo conciso di "QUADRO CRITICO" e 2 "PUNTI CHIAVE".
-   - Testo medio: scrivi 2 paragrafi e 3 punti.
-   - Saggio lungo o inchiesta: scrivi 3-4 paragrafi densi e analitici di "QUADRO CRITICO" e 5 "PUNTI CHIAVE".
-3. FORMATO: Solo codice HTML (<p>, <strong>, <ol>, <li>). Nessun markdown."""
+2. LUNGHEZZA PROPORZIONALE:
+   - Testo breve: 1 paragrafo di "QUADRO CRITICO" e 2 "PUNTI CHIAVE".
+   - Testo medio: 2 paragrafi e 3 punti.
+   - Saggio/Inchiesta: 3-4 paragrafi densi e 5 "PUNTI CHIAVE".
+3. FORMATO: Solo codice HTML (<p>, <strong>, <ol>, <li>)."""
 
-    # Limite di lettura drasticamente aumentato a 15.000 caratteri
     prompt_utente = f"FONTE: {fonte}\nTITOLO: {titolo}\nTESTO:\n{testo[:15000]}"
 
     for tentativo in range(3):
@@ -79,12 +73,12 @@ REGOLE TASSATIVE:
                     {"role": "user", "content": prompt_utente}
                 ],
                 temperature=0.3,
-                max_tokens=1500 # Aumentato per permettere l'output di saggi lunghi
+                max_tokens=1500
             )
             ris = completion.choices[0].message.content.strip()
             return ris.replace("```html", "").replace("```", "").strip()
         except Exception as e:
-            print(f"    [Groq Fallito - Tentativo {tentativo+1}/3] {e}", flush=True)
+            print(f"    [Groq Fallito] {e}", flush=True)
             time.sleep(10)
     return None
 
@@ -109,9 +103,7 @@ def main():
         for entry in parsed.entries[:2]:
             link = entry.get("link", "").strip()
             titolo = entry.get("title", "Senza Titolo").strip()
-            
-            # Cache buster aggiornato per forzare la riscrittura
-            item_id = f"v15_{link or titolo}"
+            item_id = f"v16_{link or titolo}"
 
             if item_id in db:
                 articoli.append(db[item_id])
@@ -126,7 +118,7 @@ def main():
 
             if len(testo_pulito) < 400 and link:
                 try:
-                    r = requests.get(link, headers=HEADERS, timeout=8)
+                    r = scraper.get(link, timeout=12)
                     s = BeautifulSoup(r.text, "html.parser")
                     testo_estratto = " ".join([p.get_text() for p in s.find_all("p")])
                     if len(testo_estratto) > len(testo_pulito): testo_pulito = testo_estratto
@@ -134,10 +126,10 @@ def main():
 
             sintesi = genera_sintesi_e_traduzione(titolo, f["nome"], testo_pulito)
             
-            traduzione_riuscita = True
+            trad_ok = True
             if not sintesi: 
-                traduzione_riuscita = False
-                sintesi = f"<p><em>Traduzione temporaneamente non disponibile. Riproverà al prossimo aggiornamento.</em></p><p>{testo_pulito[:800]}...</p>"
+                trad_ok = False
+                sintesi = f"<p><em>Traduzione non disponibile.</em></p><p>{testo_pulito[:800]}...</p>"
 
             img_url = None
             if "media_content" in entry and len(entry.media_content) > 0: img_url = entry.media_content[0].get("url")
@@ -145,17 +137,9 @@ def main():
 
             html = componi_html_finale(f["nome"], f["categoria"], f["colore"], sintesi, link, img_url)
             
-            record = {
-                "id": item_id,
-                "title": f"[{f['nome']}] {titolo}",
-                "link": link,
-                "html_content": html,
-                "published": datetime.now(timezone.utc).isoformat()
-            }
+            record = {"id": item_id, "title": f"[{f['nome']}] {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
             
-            if traduzione_riuscita:
-                db[item_id] = record
-            
+            if trad_ok: db[item_id] = record
             articoli.append(record)
             time.sleep(8)
 
@@ -164,7 +148,7 @@ def main():
     fg = FeedGenerator()
     fg.title("Rassegna Personale Unificata")
     fg.link(href=FEED_SITE, rel="alternate")
-    fg.description("Le migliori testate con traduzione e analisi IA.")
+    fg.description("Sintesi IA e aggiramento Cloudflare.")
     fg.language("it")
 
     for item in sorted(articoli, key=lambda x: x.get("published", ""), reverse=True)[:30]:
