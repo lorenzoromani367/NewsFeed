@@ -1,156 +1,52 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
-    <title>Rassegna Personale Unificata</title>
+    <title>Rassegna Diagnostica</title>
     <link>https://lorenzoromani367.github.io/NewsFeed/</link>
-    <description>Le migliori testate con traduzione e analisi IA.</description>
+    <description>Test Diagnostico per scovare l'errore</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Sat, 05 Sep 2026 05:50:25 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 05:58:15 +0000</lastBuildDate>
     <item>
       <title>[Il Tascabile] Un saper leggero di Xavier Nueno</title>
       <link>https://www.iltascabile.com/recensioni/saper-leggero-xavier-nueno/</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #059669; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Il Tascabile</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Saggistica</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><em>Traduzione temporaneamente non disponibile. Riproverà al prossimo aggiornamento.</em></p><p>S crivo questo pezzo in un appartamento foderato di libri. Di fronte a me, si alzano mensole da terra fino al soffitto, larghe circa quattro metri e stipate di volumi, organizzati per genere e ordine alfabetico. Sono i libri che ho letto. Sui tavoli e tavolini sparsi per la casa, ammonticchiati per terra lungo il perimetro delle pareti, accanto al letto, in bagno e dietro alle porte, stanno invece quelli che non ho ancora cominciato. Negli ultimi anni, complice il mestiere che faccio, il numero di libri di cui mi circondo è aumentato esponenzialmente. È difficile tenerne il conto, è difficile trovarli, è difficile ricordare quali titoli posseggo già – sempre più spesso mi trovo con due copie dello stesso romanzo. Eppure continuo a portarne a casa. Dai mercatini, dalle librerie, da Vinted, ...</p></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #059669;"><a href="https://www.iltascabile.com/recensioni/saper-leggero-xavier-nueno/" style="color: #059669; font-weight: 700;">Leggi originale su Il Tascabile &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v8_https://www.iltascabile.com/recensioni/saper-leggero-xavier-nueno/</guid>
+      <description><![CDATA[<div style="font-family: sans-serif; font-size: 16px; line-height: 1.6; color: #1e293b;">
+                <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #059669; color: white; font-weight: bold; border-radius: 4px;">Il Tascabile</div>
+                <div style="margin-top: 15px;"><div style='background-color: #fee2e2; color: #991b1b; padding: 15px; border: 2px solid #ef4444; border-radius: 8px; font-weight: bold; margin-bottom: 20px;'>⚠️ DIAGNOSTICA GUASTO:<br><br>ERRORE_GROQ: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}</div></div>
+                <div style="margin-top: 20px;"><a href="https://www.iltascabile.com/recensioni/saper-leggero-xavier-nueno/" style="color: #059669; font-weight: bold;">Leggi originale &rarr;</a></div>
+            </div>]]></description>
+      <guid isPermaLink="false">v12_https://www.iltascabile.com/recensioni/saper-leggero-xavier-nueno/</guid>
     </item>
     <item>
       <title>[Il Tascabile] L’amore di dio è un virus</title>
       <link>https://www.iltascabile.com/linguaggi/amore-dio-virus/</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #059669; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Il Tascabile</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Saggistica</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><em>Traduzione temporaneamente non disponibile. Riproverà al prossimo aggiornamento.</em></p><p>“Q uand’ero in Mozambico / io mi punsi un dito / fece infezione / necessaria amputazione”. Cito il testo per quel che mi ricordo, ma quella melodia altalenante da filastrocca, con la discesa melodica di “am-pu-ta-zio-NE” che culminava nel rintocco ineluttabile della tonica sull’ultima sillaba, è scolpita nella mia mente. Eravamo soltanto dei bambini, nati in un paesino di provincia dell’Abruzzo, che prima della messa domenicale delle undici erano costretti a fare il catechismo. Le suore ci facevano sedere in cerchio nello stanzone sotterraneo del vecchio asilo, dove l’oppressione del soffitto basso e i crocifissi appesi alle pareti di legno listellato, stonavano con le promesse di divertimento dei giocattoli, degli scivoli e dei palloni colorati sparsi un po’ ovunque ai bordi della stanza....</p></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #059669;"><a href="https://www.iltascabile.com/linguaggi/amore-dio-virus/" style="color: #059669; font-weight: 700;">Leggi originale su Il Tascabile &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v8_https://www.iltascabile.com/linguaggi/amore-dio-virus/</guid>
-    </item>
-    <item>
-      <title>[The Italian Review] TRENT’ANNI SENZA SAPIENZA</title>
-      <link>https://www.theitalianreview.com/trentanni-senza-goliarda-sapienza/</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #4338ca; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: The Italian Review</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Critica</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><em>Traduzione temporaneamente non disponibile. Riproverà al prossimo aggiornamento.</em></p><p>L’altra sera ho domandato a due care amiche che effetto avesse avuto su di loro la lettura de L’arte della gioia di Goliarda Sapienza. Entrambe condividono con me un deposito romanzesco soprattutto femminile che abbiamo nutrito quasi contemporaneamente tra i ventuno e i ventisei anni e spesso capita che le nostre cene si trasformino in oziose, indolenti conversazioni a proposito della passione apparentemente semplice di Annie Ernaux per il diplomatico sovietico di stanza a Parigi già protagonista di almeno due dei suoi testi saltabeccando in maniera disordinata intorno a un quesito centrale, annoso, inesauribile: cosa vedeva lei in lui? Si trattava davvero soltanto di sesso? Può il sesso soltanto indurre una donna a perdere il senno in un modo tanto furioso? Di questa e altre questioni viv...</p></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #4338ca;"><a href="https://www.theitalianreview.com/trentanni-senza-goliarda-sapienza/" style="color: #4338ca; font-weight: 700;">Leggi originale su The Italian Review &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v8_https://www.theitalianreview.com/trentanni-senza-goliarda-sapienza/</guid>
-    </item>
-    <item>
-      <title>[The Italian Review] L’ESTATE DI ANTHONY BOURDAIN</title>
-      <link>https://www.theitalianreview.com/state-di-anthony-bourdain/</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #4338ca; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: The Italian Review</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Critica</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><em>Traduzione temporaneamente non disponibile. Riproverà al prossimo aggiornamento.</em></p><p>In collaborazione con I Wonder Pictures pubblichiamo una lettura di Tony. Diario di un giovane cuoco di Matt Johnson, al cinema dal 27 agosto. Raccontare bugie è un’arte da poeti e mercanti.Entrambi vogliono che qualcuno creda a qualcosa che fino a poco prima non esisteva. Entrambi vendono sogni, desideri, la nostalgia di qualcosa di nuovo e lontano. Poeti e mercanti sono i migliori clienti di sé stessi: consumano per primi quell’illusione, prima ancora di offrirla agli altri. I mercanti, almeno, ci guadagnano.I poeti invece, sono pessimi spacciatori: corrono sempre il rischio di finire in overdose del proprio prodotto. Le loro bugie servono più a loro che a chi le ascolta. Sono strumenti per orientarsi e scegliere una direzione. Per dare forma a qualcosa che, come i gatti, soltanto loro r...</p></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #4338ca;"><a href="https://www.theitalianreview.com/state-di-anthony-bourdain/" style="color: #4338ca; font-weight: 700;">Leggi originale su The Italian Review &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v8_https://www.theitalianreview.com/state-di-anthony-bourdain/</guid>
-    </item>
-    <item>
-      <title>[Valigia Blu] Il boia di Srebrenica è morto, la sua mostruosa ideologia si aggira ancora per l’Europa</title>
-      <link>https://www.valigiablu.it/morte-mladic-boia-srebrenica-eredita-europa/</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #0284c7; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Valigia Blu</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Geopolitica</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><em>Traduzione temporaneamente non disponibile. Riproverà al prossimo aggiornamento.</em></p><p>Quando scoprì i massacri e le atrocità commessi da suo padre, Ana Mladić, 23 anni, brillante studentessa di medicina a Belgrado, si tolse la vita utilizzando la pistola preferita del padre, una Zastava che il generale aveva ricevuto come premio alla scuola militare e con cui aveva giurato che avrebbe sparato solo per festeggiare la nascita di un nipote. Era il 24 marzo 1994, poco più di un anno prima del genocidio di Srebrenica, quando il comandante dell’Esercito della Republika Srpska, Ratko Mladić, ordinò l’uccisione di più di 8.000 uomini e ragazzi bosgnacchi. Molti di loro erano ragazzi di appena 14 o 15 anni. In appena pochi giorni furono uccisi più di 600 minorenni. Le forze dell’Esercito della Republika Srpska separarono sistematicamente gli uomini e i ragazzi dalle donne, abbassand...</p></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #0284c7;"><a href="https://www.valigiablu.it/morte-mladic-boia-srebrenica-eredita-europa/" style="color: #0284c7; font-weight: 700;">Leggi originale su Valigia Blu &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v8_https://www.valigiablu.it/morte-mladic-boia-srebrenica-eredita-europa/</guid>
-    </item>
-    <item>
-      <title>[Valigia Blu] Guerra USA-Iran: chi comanda davvero nel Golfo</title>
-      <link>https://www.valigiablu.it/guerra-usa-iran-equilibri-medio-oriente-trump/</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #0284c7; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Valigia Blu</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Geopolitica</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><em>Traduzione temporaneamente non disponibile. Riproverà al prossimo aggiornamento.</em></p><p>Doveva essere, per la presidenza Trump, una nuova fase della guerra per soggiogare l’Iran: il passaggio dallo scontro militare a un’offensiva economica senza precedenti, che alla fine avrebbe ottenuto quello che oltre quattro decenni di sanzioni e due guerre in meno di un anno non erano riusciti a fare. E invece ci risiamo: nella notte tra il 30 e il 31 agosto gli USA hanno attaccato strutture missilistiche sull’isola iraniana di Larak, nello Stretto di Hormuz, e Teheran ha risposto colpendo basi americane in Giordania e negli Emirati Arabi Uniti. Nei due attacchi sulle strutture missilistiche di Larak vi sarebbero stati morti e feriti tra i militari e civili - gli ennesimi per l’Iran, che nella seconda guerra ha contato almeno 3500 vittime, fra cui oltre mille civili - mentre una petrolie...</p></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #0284c7;"><a href="https://www.valigiablu.it/guerra-usa-iran-equilibri-medio-oriente-trump/" style="color: #0284c7; font-weight: 700;">Leggi originale su Valigia Blu &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v8_https://www.valigiablu.it/guerra-usa-iran-equilibri-medio-oriente-trump/</guid>
-    </item>
-    <item>
-      <title>[IrpiMedia (Inchieste)] L’omicidio di Daphne Caruana Galizia non ha ancora un mandante</title>
-      <link>https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #dc2626; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: IrpiMedia (Inchieste)</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Inchiesta</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><em>Traduzione temporaneamente non disponibile. Riproverà al prossimo aggiornamento.</em></p><p>IrpiMedia Periodico indipendente di giornalismo d'inchiesta 03.09.26 Lorenzo Bagnoli Argomenti correlati La giornalista Daphne Caruana Galizia è stata uccisa da un’autobomba il 16 ottobre 2017 vicino alla sua casa di Bidnija, a Malta. Quasi nove anni dopo, il 2 settembre 2026, Yorgen Fenech, l’uomo d’affari accusato di essere il mandante del suo omicidio, è stato dichiarato innocente da otto dei nove componenti di una giuria popolare. La giudice Edwina Grima, a cui nel sistema giuridico di Malta spetta commutare le pene e dirigere i processi, ha ordinato immediatamente la sua scarcerazione. Il verdetto è stato raggiunto dopo otto ore di camera di consiglio e 55 giorni di udienze.  «Giustizia negata», è il titolo di un post Instagram pubblicato dalla famiglia di Daphne Caruana Galizia pubbl...</p></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #dc2626;"><a href="https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&utm_medium=rss&utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante" style="color: #dc2626; font-weight: 700;">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v8_https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante</guid>
-    </item>
-    <item>
-      <title>[IrpiMedia (Inchieste)] Caccia alle linee di rifornimento russe. La strategia ucraina per stabilizzare il fronte</title>
-      <link>https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #dc2626; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: IrpiMedia (Inchieste)</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Inchiesta</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><em>Traduzione temporaneamente non disponibile. Riproverà al prossimo aggiornamento.</em></p><p>IrpiMedia Periodico indipendente di giornalismo d'inchiesta #AttaccoAllUcraina 02.09.26 Yuri Larin Argomenti correlati Con una sottile sigaretta tra le labbra e lenti da sole gialle a coprirne gli occhi, incontriamo “Cuba” – questo il suo nome di battaglia – in un piccolo bar su una strada nell’oblast di Dnipro, una delle regioni ucraine su cui si estende la linea di contatto con l’esercito russo. Si presenta con un largo sorriso e una decisa stretta di mano prima di tagliare corto con i convenevoli. In guerra il tempo è prezioso, e dopo pochi minuti siamo già nella sua auto con la quale è venuto a prenderci di persona.  “Cuba” è il comandante dell’unità UAV (unmanned aerial vehicle) della 25ª brigata aviotrasportata “Sicheslav“, una delle unità specializzate nella guerra con i droni che –...</p></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #dc2626;"><a href="https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&utm_medium=rss&utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte" style="color: #dc2626; font-weight: 700;">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v8_https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte</guid>
-    </item>
-    <item>
-      <title>[IrpiMedia (Editoriali)] L’omicidio di Daphne Caruana Galizia non ha ancora un mandante</title>
-      <link>https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #991b1b; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: IrpiMedia (Editoriali)</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Opinione</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><em>Traduzione temporaneamente non disponibile. Riproverà al prossimo aggiornamento.</em></p><p>IrpiMedia Periodico indipendente di giornalismo d'inchiesta 03.09.26 Lorenzo Bagnoli Argomenti correlati La giornalista Daphne Caruana Galizia è stata uccisa da un’autobomba il 16 ottobre 2017 vicino alla sua casa di Bidnija, a Malta. Quasi nove anni dopo, il 2 settembre 2026, Yorgen Fenech, l’uomo d’affari accusato di essere il mandante del suo omicidio, è stato dichiarato innocente da otto dei nove componenti di una giuria popolare. La giudice Edwina Grima, a cui nel sistema giuridico di Malta spetta commutare le pene e dirigere i processi, ha ordinato immediatamente la sua scarcerazione. Il verdetto è stato raggiunto dopo otto ore di camera di consiglio e 55 giorni di udienze.  «Giustizia negata», è il titolo di un post Instagram pubblicato dalla famiglia di Daphne Caruana Galizia pubbl...</p></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #991b1b;"><a href="https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&utm_medium=rss&utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante" style="color: #991b1b; font-weight: 700;">Leggi originale su IrpiMedia (Editoriali) &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v8_https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante</guid>
-    </item>
-    <item>
-      <title>[IrpiMedia (Editoriali)] Caccia alle linee di rifornimento russe. La strategia ucraina per stabilizzare il fronte</title>
-      <link>https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #991b1b; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: IrpiMedia (Editoriali)</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Opinione</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><em>Traduzione temporaneamente non disponibile. Riproverà al prossimo aggiornamento.</em></p><p>IrpiMedia Periodico indipendente di giornalismo d'inchiesta #AttaccoAllUcraina 02.09.26 Yuri Larin Argomenti correlati Con una sottile sigaretta tra le labbra e lenti da sole gialle a coprirne gli occhi, incontriamo “Cuba” – questo il suo nome di battaglia – in un piccolo bar su una strada nell’oblast di Dnipro, una delle regioni ucraine su cui si estende la linea di contatto con l’esercito russo. Si presenta con un largo sorriso e una decisa stretta di mano prima di tagliare corto con i convenevoli. In guerra il tempo è prezioso, e dopo pochi minuti siamo già nella sua auto con la quale è venuto a prenderci di persona.  “Cuba” è il comandante dell’unità UAV (unmanned aerial vehicle) della 25ª brigata aviotrasportata “Sicheslav“, una delle unità specializzate nella guerra con i droni che –...</p></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #991b1b;"><a href="https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&utm_medium=rss&utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte" style="color: #991b1b; font-weight: 700;">Leggi originale su IrpiMedia (Editoriali) &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v8_https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte</guid>
+      <description><![CDATA[<div style="font-family: sans-serif; font-size: 16px; line-height: 1.6; color: #1e293b;">
+                <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #059669; color: white; font-weight: bold; border-radius: 4px;">Il Tascabile</div>
+                <div style="margin-top: 15px;"><div style='background-color: #fee2e2; color: #991b1b; padding: 15px; border: 2px solid #ef4444; border-radius: 8px; font-weight: bold; margin-bottom: 20px;'>⚠️ DIAGNOSTICA GUASTO:<br><br>ERRORE_GROQ: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}</div></div>
+                <div style="margin-top: 20px;"><a href="https://www.iltascabile.com/linguaggi/amore-dio-virus/" style="color: #059669; font-weight: bold;">Leggi originale &rarr;</a></div>
+            </div>]]></description>
+      <guid isPermaLink="false">v12_https://www.iltascabile.com/linguaggi/amore-dio-virus/</guid>
     </item>
     <item>
       <title>[1000 Words] Between pose and presence: on Farren van Wyk’s Mixedness is My Mythology</title>
       <link>https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    <div style="margin-bottom: 20px;"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2666.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #d97706; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: 1000 Words</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Fotografia</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><em>Traduzione temporaneamente non disponibile. Riproverà al prossimo aggiornamento.</em></p><p>Farren van Wyk’s first solo museum exhibition, at Fotomuseum Den Haag, turns the camera towards her own family while drawing on the visual histories of anthropological photography, portraiture and colonial representation. Born to a South African mother and Dutch father, Van Wyk was classified as ‘coloured’ before moving to the Netherlands at the age of six. In Mixedness is My Mythology, made with her parents and brothers on the family farm in Putten, her carefully staged analogue photographs explore how identity is shaped through pose, performance and the act of representation itself. Bas Blaasse writes about a body of work that examines how photography negotiates the terms of visibility, revealing how family, history and belonging are not only recorded but constructed through images. Bas ...</p></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #d97706;"><a href="https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/" style="color: #d97706; font-weight: 700;">Leggi originale su 1000 Words &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v8_https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/</guid>
+      <description><![CDATA[<div style="font-family: sans-serif; font-size: 16px; line-height: 1.6; color: #1e293b;">
+                <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #d97706; color: white; font-weight: bold; border-radius: 4px;">1000 Words</div>
+                <div style="margin-top: 15px;"><div style='background-color: #fee2e2; color: #991b1b; padding: 15px; border: 2px solid #ef4444; border-radius: 8px; font-weight: bold; margin-bottom: 20px;'>⚠️ DIAGNOSTICA GUASTO:<br><br>ERRORE_GROQ: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}</div></div>
+                <div style="margin-top: 20px;"><a href="https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/" style="color: #d97706; font-weight: bold;">Leggi originale &rarr;</a></div>
+            </div>]]></description>
+      <guid isPermaLink="false">v12_https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/</guid>
     </item>
     <item>
       <title>[1000 Words] The ethics of looking at a mother</title>
       <link>https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    <div style="margin-bottom: 20px;"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2666.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #d97706; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: 1000 Words</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Fotografia</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><em>Traduzione temporaneamente non disponibile. Riproverà al prossimo aggiornamento.</em></p><p>Katherine Hubbard’s The Great Room has the makings of a modern classic, and its presentation at Vienna’s Secession marks the artist’s first institutional solo exhibition outside the U.S. Joining Hubbard and her circle on the opening night, Peter Watkins finds something stranger and less settled than a documentary about dementia, caregiving or the ethics of consent. Staged photographs, mirrors, bodily contact prints, and reconstructed rooms show a mother and daughter continually remaking their roles, testing who looks, who holds power, and what it costs to make grief public. Peter Watkins | Exhibition Review | 23 July 2026Join us on Patreon En route to Vienna’s Secession, I thought I understood the terms and conditions Katherine Hubbard was working in. My own project, The Unforgetting, grew...</p></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #d97706;"><a href="https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/" style="color: #d97706; font-weight: 700;">Leggi originale su 1000 Words &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v8_https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/</guid>
+      <description><![CDATA[<div style="font-family: sans-serif; font-size: 16px; line-height: 1.6; color: #1e293b;">
+                <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #d97706; color: white; font-weight: bold; border-radius: 4px;">1000 Words</div>
+                <div style="margin-top: 15px;"><div style='background-color: #fee2e2; color: #991b1b; padding: 15px; border: 2px solid #ef4444; border-radius: 8px; font-weight: bold; margin-bottom: 20px;'>⚠️ DIAGNOSTICA GUASTO:<br><br>ERRORE_GROQ: Error code: 400 - {'error': {'message': 'The model `llama3-8b-8192` has been decommissioned and is no longer supported. Please refer to https://console.groq.com/docs/deprecations for a recommendation on which model to use instead.', 'type': 'invalid_request_error', 'code': 'model_decommissioned'}}</div></div>
+                <div style="margin-top: 20px;"><a href="https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/" style="color: #d97706; font-weight: bold;">Leggi originale &rarr;</a></div>
+            </div>]]></description>
+      <guid isPermaLink="false">v12_https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/</guid>
     </item>
   </channel>
 </rss>
