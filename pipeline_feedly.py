@@ -57,19 +57,21 @@ def genera_sintesi_e_traduzione(titolo, fonte, testo):
         print("    [ERRORE] Chiave Groq non trovata!", flush=True)
         return None
 
+    # Prompt aggiornato per scalabilità dinamica
     prompt_sistema = """Sei un analista editoriale. Se il testo originale è in inglese, TRADUCILO IN ITALIANO.
 REGOLE TASSATIVE:
 1. LINGUA: Esclusivamente ITALIANO.
-2. STRUTTURA:
-   - "QUADRO CRITICO": 2-3 paragrafi di analisi profonda.
-   - "PUNTI CHIAVE": Elenco numerato di 3 concetti salienti.
+2. LUNGHEZZA PROPORZIONALE: Analizza la complessità e la lunghezza del testo originale fornito e calibra la tua risposta.
+   - Testo breve o notizia: scrivi 1 solo paragrafo conciso di "QUADRO CRITICO" e 2 "PUNTI CHIAVE".
+   - Testo medio: scrivi 2 paragrafi e 3 punti.
+   - Saggio lungo o inchiesta: scrivi 3-4 paragrafi densi e analitici di "QUADRO CRITICO" e 5 "PUNTI CHIAVE".
 3. FORMATO: Solo codice HTML (<p>, <strong>, <ol>, <li>). Nessun markdown."""
 
-    prompt_utente = f"FONTE: {fonte}\nTITOLO: {titolo}\nTESTO:\n{testo[:4000]}"
+    # Limite di lettura drasticamente aumentato a 15.000 caratteri
+    prompt_utente = f"FONTE: {fonte}\nTITOLO: {titolo}\nTESTO:\n{testo[:15000]}"
 
     for tentativo in range(3):
         try:
-            # IL NUOVO MODELLO ATTIVO DA AGOSTO 2026
             completion = client.chat.completions.create(
                 model="openai/gpt-oss-20b", 
                 messages=[
@@ -77,12 +79,11 @@ REGOLE TASSATIVE:
                     {"role": "user", "content": prompt_utente}
                 ],
                 temperature=0.3,
-                max_tokens=900
+                max_tokens=1500 # Aumentato per permettere l'output di saggi lunghi
             )
             ris = completion.choices[0].message.content.strip()
             return ris.replace("```html", "").replace("```", "").strip()
         except Exception as e:
-            # FLUSH=TRUE PERMETTE DI VEDERE L'ERRORE LIVE NEL TERMINALE DI GITHUB
             print(f"    [Groq Fallito - Tentativo {tentativo+1}/3] {e}", flush=True)
             time.sleep(10)
     return None
@@ -108,7 +109,9 @@ def main():
         for entry in parsed.entries[:2]:
             link = entry.get("link", "").strip()
             titolo = entry.get("title", "Senza Titolo").strip()
-            item_id = f"v14_{link or titolo}"
+            
+            # Cache buster aggiornato per forzare la riscrittura
+            item_id = f"v15_{link or titolo}"
 
             if item_id in db:
                 articoli.append(db[item_id])
