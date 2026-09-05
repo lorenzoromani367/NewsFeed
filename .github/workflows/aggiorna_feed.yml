@@ -21,7 +21,7 @@ jobs:
           python-version: "3.10"
 
       - name: Installa dipendenze
-        run: pip install requests feedparser beautifulsoup4 feedgen groq
+        run: pip install requests feedparser beautifulsoup4 feedgen groq cloudscraper
 
       - name: Esegui pipeline Python
         env:
