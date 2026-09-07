@@ -1,7 +1,9 @@
 import os
 import json
 import time
+import urllib.parse
 from datetime import datetime, timezone
+import requests
 import cloudscraper
 import feedparser
 from bs4 import BeautifulSoup
@@ -26,7 +28,8 @@ DATABASE_FILE = "feed_database.json"
 FEED_OUTPUT = "feed_sintesi.xml"
 FEED_SITE = "https://lorenzoromani367.github.io/NewsFeed/"
 
-# Inizializza il motore anti-bot
+HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"}
+
 scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'darwin', 'desktop': True})
 client = Groq(api_key=os.environ.get("GROQ_API_KEY")) if os.environ.get("GROQ_API_KEY") else None
 
@@ -41,14 +44,29 @@ def salva_database(db):
     with open(DATABASE_FILE, "w", encoding="utf-8") as f: json.dump(db, f, ensure_ascii=False, indent=2)
 
 def recupera_feed_xml(url, fallback_url=None):
-    for target in [url, fallback_url]:
-        if not target: continue
+    targets = [u for u in [url, fallback_url] if u]
+    
+    # 1. Tentativo diretto con Cloudscraper
+    for target in targets:
         try:
-            res = scraper.get(target, timeout=15)
+            res = scraper.get(target, timeout=12)
             if res.status_code == 200:
                 parsed = feedparser.parse(res.content)
                 if len(parsed.entries) > 0: return parsed
         except: pass
+        
+    # 2. Bypass per IP Datacenter tramite Proxy Neutrale AllOrigins
+    for target in targets:
+        try:
+            print(f"    [PROXY] Tentativo di aggiramento IP per: {target}", flush=True)
+            safe_url = urllib.parse.quote(target, safe='')
+            proxy_url = f"https://api.allorigins.win/raw?url={safe_url}"
+            res = requests.get(proxy_url, headers=HEADERS, timeout=15)
+            if res.status_code == 200:
+                parsed = feedparser.parse(res.content)
+                if len(parsed.entries) > 0: return parsed
+        except: pass
+
     return feedparser.parse(url)
 
 def genera_sintesi_e_traduzione(titolo, fonte, testo):
@@ -56,11 +74,8 @@ def genera_sintesi_e_traduzione(titolo, fonte, testo):
     prompt_sistema = """Sei un analista editoriale. Se il testo originale è in inglese, TRADUCILO IN ITALIANO.
 REGOLE TASSATIVE:
 1. LINGUA: Esclusivamente ITALIANO.
-2. LUNGHEZZA PROPORZIONALE:
-   - Testo breve: 1 paragrafo di "QUADRO CRITICO" e 2 "PUNTI CHIAVE".
-   - Testo medio: 2 paragrafi e 3 punti.
-   - Saggio/Inchiesta: 3-4 paragrafi densi e 5 "PUNTI CHIAVE".
-3. FORMATO: Solo codice HTML (<p>, <strong>, <ol>, <li>)."""
+2. LUNGHEZZA PROPORZIONALE: Adatta la densità. Testo breve: 1 paragrafo critico. Saggio lungo: 3-4 paragrafi critici. Fornisci sempre 3-5 PUNTI CHIAVE.
+3. FORMATO: Solo codice HTML (<p>, <strong>, <ol>, <li>). Nessun markdown."""
 
     prompt_utente = f"FONTE: {fonte}\nTITOLO: {titolo}\nTESTO:\n{testo[:15000]}"
 
@@ -103,7 +118,7 @@ def main():
         for entry in parsed.entries[:2]:
             link = entry.get("link", "").strip()
             titolo = entry.get("title", "Senza Titolo").strip()
-            item_id = f"v16_{link or titolo}"
+            item_id = f"v17_{link or titolo}"
 
             if item_id in db:
                 articoli.append(db[item_id])
@@ -119,6 +134,10 @@ def main():
             if len(testo_pulito) < 400 and link:
                 try:
                     r = scraper.get(link, timeout=12)
+                    if r.status_code in [403, 503]:
+                        safe_link = urllib.parse.quote(link, safe='')
+                        r = requests.get(f"https://api.allorigins.win/raw?url={safe_link}", headers=HEADERS, timeout=15)
+                    
                     s = BeautifulSoup(r.text, "html.parser")
                     testo_estratto = " ".join([p.get_text() for p in s.find_all("p")])
                     if len(testo_estratto) > len(testo_pulito): testo_pulito = testo_estratto
@@ -148,7 +167,7 @@ def main():
     fg = FeedGenerator()
     fg.title("Rassegna Personale Unificata")
     fg.link(href=FEED_SITE, rel="alternate")
-    fg.description("Sintesi IA e aggiramento Cloudflare.")
+    fg.description("Sintesi IA e proxy anti-blocco.")
     fg.language("it")
 
     for item in sorted(articoli, key=lambda x: x.get("published", ""), reverse=True)[:30]:
