@@ -3,11 +3,11 @@
   <channel>
     <title>Rassegna Personale Unificata</title>
     <link>https://lorenzoromani367.github.io/NewsFeed/</link>
-    <description>Sintesi IA e aggiramento Cloudflare.</description>
+    <description>Sintesi IA e proxy anti-blocco.</description>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Sun, 06 Sep 2026 22:01:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 01:36:36 +0000</lastBuildDate>
     <item>
       <title>[Il Tascabile] Un saper leggero di Xavier Nueno</title>
       <link>https://www.iltascabile.com/recensioni/saper-leggero-xavier-nueno/</link>
@@ -15,18 +15,24 @@
     
     <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #059669; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Il Tascabile</div>
     <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Saggistica</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Quadro critico</strong>: L’articolato racconto di Xavier Nueno si apre con una riflessione personale sul rapporto tra lettura e accumulo, trasformando l’ampia collezione di libri in un simbolo di identità e di ansia culturale. Il testo intreccia aneddoti familiari, citazioni di Eco e di Platone, e una critica contemporanea alla sovrabbondanza informativa, per poi concludere con la proposta di un “saper leggero” ispirato a Montaigne. La narrazione, seppur ricca di dettagli, rischia di diluirsi in un flusso di pensieri che oscillano tra l’analisi storica e la confusione emotiva, lasciando al lettore un’impressione di sovraccarico simile a quella che l’autore stesso descrive.</p>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Il saggio di Xavier Nueno, pubblicato su <em>Il Tascabile</em>, si presenta come un’analisi intellettuale del rapporto moderno con l’accumulo di libri e informazioni. L’autore intreccia la propria esperienza personale di accumulatore con riflessioni storiche, dall’antica Biblioteca di Alessandria alla stampa, fino all’era digitale e all’intelligenza artificiale. La tesi centrale è che l’eccesso di materiale non arricchisce il pensiero, ma lo paralizza, e che la soluzione risiede in un “saper leggero” ispirato a Montaigne.</p>
 
-<p>Il tono oscillante tra l’introspezione e la critica sociale rende il pezzo un invito a riconsiderare la nostra relazione con il sapere. Mentre l’autore evidenzia la pericolosità di un archivio digitale che “scioglie” la memoria, propone anche una via di fuga: l’adozione di un approccio più libero e personale alla lettura, che privilegia la sperimentazione e la riflessione spontanea. In questo senso, l’articolo si presenta non solo come un saggio di cultura, ma anche come una sorta di manuale di sopravvivenza intellettuale per chi si sente sopraffatto dalla quantità di informazioni disponibili.</p>
+<p>Nueno utilizza un tono quasi autobiografico, descrivendo le mensole che si estendono dal pavimento al soffitto e i libri non letti che “infestano” la casa. Questa metafora visiva serve a evidenziare la tensione tra desiderio di possesso e la necessità di consumare il sapere. Il filone storico che collega l’ossessione per la raccolta alla paura di essere sepolti dal passato è ben delineato, ma il testo rischia di cadere in un retorico troppo lineare, trascurando le sfumature psicologiche che motivano l’accumulo.</p>
+
+<p>Il punto di vista di Nueno sul ruolo dell’IA è particolarmente interessante: l’autore vede l’intelligenza artificiale come la “realizzazione più perfetta” del sogno bibliotecario, ma allo stesso tempo la critica per la sua mancanza di creatività. Questa doppia visione evidenzia la tensione tra la democratizzazione del sapere e la perdita di autonomia nella produzione di conoscenza. Tuttavia, la trattazione rimane superficiale riguardo alle potenzialità positive dell’IA, come la democratizzazione dell’accesso e la possibilità di nuove forme di narrazione.</p>
+
+<p>Infine, l’ispirazione a Montaigne è un punto di svolta. Nueno sostiene che la filosofia di Montaigne, con il suo approccio libero e errabondo, offre una via di fuga dalla “depressione del pensiero” causata dall’eccesso informativo. Il concetto di “saper leggero” si traduce in una lettura non sistematica, ma in un dialogo continuo con i libri, che diventa strumento di riflessione pratica. Questa proposta è originale, ma il testo non approfondisce come concretamente implementare questo modello nella vita quotidiana.</p>
 
 <ol>
-<li>Il conflitto tra accumulo e consumo: l’autore mostra come la collezione di libri diventi un ostacolo più che un aiuto, evidenziando la necessità di un equilibrio tra possesso e lettura effettiva.</li>
-<li>La critica alla digitalizzazione: Nueno mette in guardia contro la perdita di memoria e l’alienazione culturale dovute alla dipendenza da cloud e dispositivi intelligenti.</li>
-<li>Il “saper leggero” come antidoto: l’idea di Montaigne di leggere senza rigore sistematico offre un modello pratico per gestire l’eccesso informativo, promuovendo la creatività e la riflessione personale.</li>
+<li>Il saggio fonde autobiografia e analisi storica, ma rischia di semplificare eccessivamente la psicologia dell’accumulo.</li>
+<li>La critica all’IA è valida, ma manca un’esplorazione equilibrata delle sue potenzialità.</li>
+<li>Il riferimento a Montaigne offre un’alternativa interessante, ma non fornisce strumenti pratici per il “saper leggero”.</li>
+<li>La narrazione visiva delle mensole e dei libri non letti è efficace ma può risultare eccessivamente didascalica.</li>
+<li>Il testo invita a riflettere sul rapporto con il sapere, ma lascia aperta la questione di come trasformare la teoria in pratica quotidiana.</li>
 </ol></div>
     <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #059669;"><a href="https://www.iltascabile.com/recensioni/saper-leggero-xavier-nueno/" style="color: #059669; font-weight: 700;">Leggi originale su Il Tascabile &rarr;</a></div>
 </div>]]></description>
-      <guid isPermaLink="false">v16_https://www.iltascabile.com/recensioni/saper-leggero-xavier-nueno/</guid>
+      <guid isPermaLink="false">v17_https://www.iltascabile.com/recensioni/saper-leggero-xavier-nueno/</guid>
     </item>
     <item>
       <title>[Il Tascabile] L’amore di dio è un virus</title>
@@ -35,24 +41,21 @@
     
     <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #059669; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Il Tascabile</div>
     <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Saggistica</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Il racconto di <strong>“L’amore di dio è un virus”</strong> si presenta come un mosaico di ricordi d’infanzia, di riflessioni teoriche sulla musica e di un’analisi critica della religione cattolica. L’autore intreccia la sua esperienza personale di catechismo con concetti neuroscientifici (earworm) e metafore biologiche (grace come virus), creando un testo che oscilla tra la narrazione autobiografica e la saggistica. La struttura narrativa è volutamente frammentaria, con ripetizioni di frasi chiave che enfatizzano la persistenza di certe melodie nella memoria collettiva.</p>
-
-<p>Il tema centrale è la “grace” come entità contagiosa: l’autore la paragona a un virus a RNA che, una volta introdotto nell’organismo, altera la percezione e la coscienza. Questa analogia serve a criticare la dottrina della grazia come dono divino, suggerendo che essa sia più un meccanismo di controllo culturale che un vero atto di liberazione. L’uso di termini come “parassitario” e “contagio” sottolinea la visione scettica dell’autore nei confronti della spiritualità istituzionalizzata.</p>
-
-<p>La parte dedicata all’album <em>Fire of God’s Love</em> di Sister Irene O’Connor funge da caso di studio. L’autore descrive la produzione, la distribuzione limitata e la successiva “risveglianza” digitale su YouTube, evidenziando come la musica devozionale possa trasformarsi in un fenomeno psichedelico e pop. La narrazione mette in luce la tensione tra la sacralità originaria e la commercializzazione contemporanea, mostrando come la stessa opera possa essere interpretata in modi radicalmente diversi a seconda del contesto culturale.</p>
-
-<p>In conclusione, l’articolo invita il lettore a riflettere sul ruolo della musica come veicolo di idee religiose e sulla capacità delle istituzioni di trasformare concetti spirituali in prodotti di consumo. L’autore suggerisce che, proprio come un virus, la “grace” può essere sia benefica sia dannosa, a seconda di chi la riceve e di come viene interpretata. La critica finale si rivolge alla necessità di una spiritualità più autentica, libera dalle strutture di potere e dalla mercificazione del sacro.</p>
-
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Analisi critica</strong></p>
+<p>Il brano narrativo si apre con un ricordo di un canto catechistico, “quando ero in Mozambico…”, che, per i bambini dell’Abruzzo, rappresentava un ponte tra la banalità quotidiana e l’oscurità di un tema medico drammatico. L’autore utilizza questa memoria per introdurre la metafora dell’earworm, un fenomeno musicale che “intercetta i nostri canali prelinguistici” e si annida nel cervello, paragonandolo a un virus che trasmette la grazia divina. La narrazione si sviluppa poi in un viaggio personale attraverso la scoperta di un album dimenticato, <em>Fire of God’s Love</em>, di Sister Irene O’Connor, e la sua successiva rinascita digitale su YouTube, che illustra come la grazia possa mutare e adattarsi a nuovi contesti culturali.</p>
+<p>Il testo intreccia elementi autobiografici con riflessioni teologiche e culturali, evidenziando la tensione tra la rigida struttura della religione cattolica e la fluidità dell’esperienza spirituale individuale. L’autore mette in evidenza come la musica, soprattutto quella psichedelica e folk, possa fungere da veicolo per la grazia, trasformandola in un “parassita” che attraversa generazioni e media. La descrizione dettagliata del processo di registrazione dell’album e delle influenze musicali serve a contestualizzare la produzione artistica all’interno di un panorama più ampio di sperimentazione e spiritualità alternativa.</p>
+<p>La narrazione si conclude con una riflessione sulla natura ciclica della grazia: da un “fuoco spento” a una “luminescenza” che si risveglia grazie al passaparola digitale. L’autore suggerisce che la grazia, come un virus, può “riaccendersi” in nuove forme, trasformandosi in un messaggio che attraversa confini culturali e temporali. Questo paradosso tra sacro e profano, tra dottrina e sperimentazione, costituisce il filo conduttore dell’intero testo.</p>
+<p>In sintesi, il brano è un mosaico di ricordi, teologia e musica, che utilizza la metafora del virus per esplorare la diffusione e la trasformazione della grazia divina in un mondo in continuo mutamento.</p>
 <ol>
-<li>La narrazione autobiografica funge da ancoraggio emotivo per l’analisi teorica.</li>
-<li>L’earworm è presentato come strumento di persistenza culturale e di controllo.</li>
-<li>La grazia viene riformulata come virus, evidenziando la sua natura parassitaria.</li>
-<li>Il caso di <em>Fire of God’s Love</em> illustra la trasformazione della musica devozionale in prodotto psichedelico.</li>
-<li>Il testo conclude con un invito a una spiritualità autentica e non commercializzata.</li>
+<li>Metafora dell’earworm come virus della grazia.</li>
+<li>Rinascita di un album dimenticato tramite piattaforme digitali.</li>
+<li>Contrasto tra rigida religione cattolica e spiritualità personale.</li>
+<li>Influenza della musica psichedelica e folk sulla percezione della grazia.</li>
+<li>Riflessione sulla ciclicità e trasformazione della grazia nel tempo.</li>
 </ol></div>
     <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #059669;"><a href="https://www.iltascabile.com/linguaggi/amore-dio-virus/" style="color: #059669; font-weight: 700;">Leggi originale su Il Tascabile &rarr;</a></div>
 </div>]]></description>
-      <guid isPermaLink="false">v16_https://www.iltascabile.com/linguaggi/amore-dio-virus/</guid>
+      <guid isPermaLink="false">v17_https://www.iltascabile.com/linguaggi/amore-dio-virus/</guid>
     </item>
     <item>
       <title>[The Italian Review] TRENT’ANNI SENZA SAPIENZA</title>
@@ -61,19 +64,24 @@
     
     <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #4338ca; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: The Italian Review</div>
     <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Critica</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>QUADRO CRITICO</strong><br>
-L’articolo “TRENT’ANNI SENZA SAPIENZA” di The Italian Review si presenta come un’analisi personale e collettiva del romanzo *L’arte della gioia* di Goliarda Sapienza, intrecciando riflessioni sulle dinamiche femminili, la libertà di espressione e la difficoltà di pubblicazione di opere che sfidano le convenzioni sociali. L’autrice, attraverso conversazioni con due amiche, esplora la figura di Modesta come un’eroina che rompe i codici della tradizione catto‑borghese, evidenziando la sua laicità e la sua capacità di trasformare la crudeltà in un’energia creativa. Il testo mette in luce la tensione tra la letteratura e la società, sottolineando come la narrativa femminile abbia spesso dovuto affrontare resistenze editoriali e culturali, ma abbia anche alimentato un’autocoscienza collettiva che ha spinto le donne a rivendicare la propria storia.</p>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Il brano si apre con un aneddoto intimo: l’autrice chiede a due amiche l’effetto della lettura di <em>L’arte della gioia</em> di Goliarda Sapienza. Le risposte, nate in un contesto di amicizia femminile e di discussioni quasi quotidiane su romanzi e passioni, si rivelano un mosaico di interpretazioni che si intrecciano con la memoria collettiva delle donne che hanno vissuto la loro adolescenza tra i ventuno e i ventisei anni. Le due amiche, entrambe nate a leggere il romanzo in età di formazione, riconoscono Modesta come un personaggio rivoluzionario, ma le loro letture diverge: una vede in lei un’anti‑figura che sfida la struttura economica e sociale, l’altra la celebra per la sua totale libertà dai codici tradizionali.</p>
+
+<p>Il testo prosegue esplorando il rapporto ambivalente tra letteratura e crudeltà, evidenziando come la narrazione di Sapienza, con la sua rappresentazione cruda di desideri distruttivi, sia un atto di liberazione. L’autrice riflette sul fatto che la letteratura, soprattutto quando tratta di donne, può fungere da mezzo per smantellare le strutture rigide che limitano l’esistenza. La protagonista Modesta, attraverso atti estremi, dimostra che la vita può essere ristrutturata, che la morte non è l’unica via di regressione, ma che la rigenerazione è possibile.</p>
+
+<p>Il racconto si inserisce in un contesto storico più ampio: la letteratura femminile degli anni Settanta, il Premio Strega e la nascita del femminismo italiano. L’autrice sottolinea come la narrativa di Sapienza, rifiutata dalle case editrici e pubblicata solo due decenni dopo la sua scrittura, abbia rappresentato un’eco di una generazione di donne che cercavano di riscrivere la propria storia. La figura di Goliarda, emarginata e spesso fraintesa, è paragonata a un’emarginata letteraria che, come la protagonista, sfida le convenzioni sociali.</p>
+
+<p>Infine, l’autrice riflette sul concetto di intelligenza come potere scardinante, che permette di liberare il potenziale gioioso dell’esperienza. La visione di Sapienza è presentata come un’arte esistenziale, un esercizio di libertà che sfida la moralità convenzionale e invita a una nuova responsabilità, non solo intellettuale ma anche emotiva.</p>
 
 <ol>
-  <li>Modesta è presentata come un personaggio scardinante, libero dai codici tradizionali e capace di trasformare la crudeltà in potere creativo.</li>
-  <li>Il romanzo di Sapienza è stato respinto dalle principali case editrici italiane, rivelando la difficoltà di pubblicare opere che sfidano le norme sociali.</li>
-  <li>L’autrice evidenzia come la letteratura femminile abbia svolto un ruolo cruciale nell’autocoscienza delle donne, promuovendo la riflessione collettiva sulle proprie esperienze.</li>
-  <li>La narrazione di Sapienza si distingue per la sua capacità di fondere interni ed esterni, creando un ambiente in cui la libertà individuale è al centro.</li>
-  <li>Il testo sottolinea l’importanza di un’intelligenza che rivendica il potere scardinante, trasformando l’esperienza in un potenziale gioioso.</li>
+<li>Modesta è vista come un personaggio rivoluzionario che sfida le strutture economiche e sociali.</li>
+<li>La letteratura femminile degli anni Settanta è un mezzo per smantellare le strutture rigide che limitano l’esistenza.</li>
+<li>La pubblicazione tardiva di <em>L’arte della gioia</em> riflette la difficoltà delle donne a trovare spazio nella letteratura tradizionale.</li>
+<li>L’intelligenza è concepita come potere scardinante che libera il potenziale gioioso dell’esperienza.</li>
+<li>La narrazione di Sapienza è un atto di liberazione che sfida la moralità convenzionale.</li>
 </ol></div>
     <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #4338ca;"><a href="https://www.theitalianreview.com/trentanni-senza-goliarda-sapienza/" style="color: #4338ca; font-weight: 700;">Leggi originale su The Italian Review &rarr;</a></div>
 </div>]]></description>
-      <guid isPermaLink="false">v16_https://www.theitalianreview.com/trentanni-senza-goliarda-sapienza/</guid>
+      <guid isPermaLink="false">v17_https://www.theitalianreview.com/trentanni-senza-goliarda-sapienza/</guid>
     </item>
     <item>
       <title>[The Italian Review] L’ESTATE DI ANTHONY BOURDAIN</title>
@@ -82,161 +90,20 @@ L’articolo “TRENT’ANNI SENZA SAPIENZA” di The Italian Review si presenta
     
     <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #4338ca; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: The Italian Review</div>
     <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Critica</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Quadro critico:</strong> Il film “Tony” si presenta come un ritratto intimo della giovinezza di Anthony Bourdain, un giovane cuoco che, in un’estate di 1975 a Provincetown, si confronta con la costruzione del proprio sé attraverso una serie di bugie e di illusioni. La narrazione, guidata da Matt Johnson, mette in evidenza come la ricerca di autenticità si intrecci con la necessità di vendere un’immagine, sia per i poeti che per i mercanti, e come la cucina diventi un luogo di trasformazione, dove il caos e la pressione si trasformano in una struttura che permette di contenere il proprio dolore. Il film, con la performance di Dominic Sessa, esplora la tensione tra l’illusione e la realtà, mostrando che la vera luce nasce proprio dal confronto con l’oscurità interiore.</p>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Analisi critica dell’articolo “L’ESTATE DI ANTHONY BOURDAIN”</strong></p>
+<p>L’articolo si presenta come un’introduzione evocativa al film, ma si perde spesso in digressioni biografiche e descrizioni di ambientazioni che diluiscono la linfa narrativa. La narrazione si concentra su come il protagonista, interpretato da Dominic Sessa, ricostruisca la propria identità attraverso bugie e illusioni, ma manca di un approfondimento sul modo in cui queste false identità si trasformano in punti di forza o di debolezza. La struttura del testo, pur ricca di dettagli, non riesce a collegare in modo coerente le varie fasi della storia, lasciando il lettore con un senso di frammentazione.</p>
+<p>Il tono è poetico e riflessivo, ma la mancanza di un filo conduttore chiaro rende difficile trarre conclusioni definitive sul messaggio del film. L’articolo si concentra più sul background del cast e sulle esperienze personali di Sessa, piuttosto che sul contenuto cinematografico stesso. Nonostante ciò, la descrizione delle dinamiche di cucina e del ruolo della stessa come “culla” di identità fornisce spunti interessanti sul tema della ricerca di sé.</p>
+<p>In sintesi, l’articolo offre una panoramica ricca di curiosità ma manca di un’analisi critica solida e di una struttura narrativa coerente. Per un lettore che cerca una valutazione approfondita del film, l’articolo risulta più un racconto di curiosità che un vero e proprio sguardo critico.</p>
 <ol>
-<li>La costruzione del sé attraverso le bugie è il filo conduttore della trama, evidenziando la fragilità delle identità create per compiacere gli altri.</li>
-<li>Provincetown e la cucina fungono da microcosmo dove la pressione esterna si trasforma in una struttura che permette al protagonista di trovare una direzione e di trasformare il dolore in forza.</li>
+<li>Approfondimento insufficiente sulle dinamiche di identità del protagonista.</li>
+<li>Struttura narrativa frammentata e poco lineare.</li>
+<li>Focus eccessivo sul background del cast a scapito dell’analisi del film.</li>
+<li>Uso poetico del linguaggio che può confondere il lettore.</li>
+<li>Spunti interessanti sulla cucina come metafora di identità.</li>
 </ol></div>
     <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #4338ca;"><a href="https://www.theitalianreview.com/state-di-anthony-bourdain/" style="color: #4338ca; font-weight: 700;">Leggi originale su The Italian Review &rarr;</a></div>
 </div>]]></description>
-      <guid isPermaLink="false">v16_https://www.theitalianreview.com/state-di-anthony-bourdain/</guid>
-    </item>
-    <item>
-      <title>[IrpiMedia (Inchieste)] L’omicidio di Daphne Caruana Galizia non ha ancora un mandante</title>
-      <link>https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #dc2626; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: IrpiMedia (Inchieste)</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Inchiesta</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Quadro critico</strong></p>
-<p>La vicenda di Daphne Caruana Galizia continua a scuotere Malta, non solo per la brutalità dell’omicidio ma soprattutto per le lacune che hanno permesso di non individuare un vero mandante. Il processo di Yorgen Fenech, ormai concluso con l’assoluzione di otto dei nove giurati, ha evidenziato una serie di ambiguità: la testimonianza di un tassista, le prove di legami offshore e le dichiarazioni di politici che si sono rifiutati di collaborare. La giuria, pur avendo riconosciuto la mancanza di prove concrete, ha lasciato aperta la questione di chi abbia effettivamente ordinato l’attentato, lasciando la famiglia di Daphne e i suoi sostenitori in una posizione di incertezza e frustrazione.</p>
-<p>Il ruolo di <strong>17 Black</strong>, la società registrata a Dubai, emerge come fulcro delle indagini. Se da un lato la fondazione di Daphne ha collegato la società a Fenech, dall’altro le prove presentate in tribunale non sono state sufficienti a stabilire una responsabilità diretta. L’uso di entità offshore per il riciclaggio di fondi e la corruzione politica, come suggerito dal “The Daphne Project”, rimane un tema centrale che necessita di ulteriori approfondimenti.</p>
-<p>Il contesto politico maltese, dominato da una lotta di potere tra partiti laburisti e nazionalisti, ha creato un ambiente in cui la corruzione può prosperare. Le dichiarazioni di Daphne di voler “lasciare Malta” riflettono la frustrazione di molti cittadini che vedono il sistema di stato di diritto come un’illusione. La decisione della giuria di assolvere Fenech, sebbene giuridicamente fondata, non ha risolto il problema della responsabilità politica, lasciando aperta la domanda su chi abbia realmente orchestrato l’omicidio.</p>
-<p>In conclusione, la vicenda di Daphne Caruana Galizia rimane un caso emblematico di giustizia incompleta. La mancanza di prove concrete contro un vero mandante, l’uso di strutture offshore e la complicata rete di relazioni politiche e imprenditoriali indicano la necessità di riforme sistemiche e di una maggiore trasparenza nelle indagini giudiziarie maltese.</p>
-<p><strong>Punti chiave</strong></p>
-<ol>
-<li>Assoluzione di Yorgen Fenech: giuria di otto dei nove componenti ha dichiarato innocente, lasciando aperta la questione del mandante.</li>
-<li>Ruolo di 17 Black: società offshore a Dubai collegata a Fenech, ma senza prove definitive di responsabilità.</li>
-<li>Contesto politico: lotta di potere tra partiti laburisti e nazionalisti, con accuse di corruzione e mancanza di stato di diritto.</li>
-<li>Impatto sulla società: la famiglia di Daphne e la comunità maltese rimangono in frustrazione per la mancanza di giustizia.</li>
-<li>Necessità di riforme: evidenza di una rete di corruzione che richiede trasparenza e riforma del sistema giudiziario maltese.</li>
-</ol></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #dc2626;"><a href="https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&utm_medium=rss&utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante" style="color: #dc2626; font-weight: 700;">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v16_https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante</guid>
-    </item>
-    <item>
-      <title>[IrpiMedia (Inchieste)] L’omicidio di Daphne Caruana Galizia non ha ancora un mandante</title>
-      <link>https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #dc2626; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: IrpiMedia (Inchieste)</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Inchiesta</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Quadro critico</strong></p>
-<p>La vicenda di Daphne Caruana Galizia continua a scuotere Malta, non solo per la brutalità dell’omicidio ma soprattutto per le lacune che hanno permesso di non individuare un vero mandante. Il processo di Yorgen Fenech, ormai concluso con l’assoluzione di otto dei nove giurati, ha evidenziato una serie di ambiguità: la testimonianza di un tassista, le prove di legami offshore e le dichiarazioni di politici che si sono rifiutati di collaborare. La giuria, pur avendo riconosciuto la mancanza di prove concrete, ha lasciato aperta la questione di chi abbia effettivamente ordinato l’attentato, lasciando la famiglia di Daphne e i suoi sostenitori in una posizione di incertezza e frustrazione.</p>
-<p>Il ruolo di <strong>17 Black</strong>, la società registrata a Dubai, emerge come fulcro delle indagini. Se da un lato la fondazione di Daphne ha collegato la società a Fenech, dall’altro le prove presentate in tribunale non sono state sufficienti a stabilire una responsabilità diretta. L’uso di entità offshore per il riciclaggio di fondi e la corruzione politica, come suggerito dal “The Daphne Project”, rimane un tema centrale che necessita di ulteriori approfondimenti.</p>
-<p>Il contesto politico maltese, dominato da una lotta di potere tra partiti laburisti e nazionalisti, ha creato un ambiente in cui la corruzione può prosperare. Le dichiarazioni di Daphne di voler “lasciare Malta” riflettono la frustrazione di molti cittadini che vedono il sistema di stato di diritto come un’illusione. La decisione della giuria di assolvere Fenech, sebbene giuridicamente fondata, non ha risolto il problema della responsabilità politica, lasciando aperta la domanda su chi abbia realmente orchestrato l’omicidio.</p>
-<p>In conclusione, la vicenda di Daphne Caruana Galizia rimane un caso emblematico di giustizia incompleta. La mancanza di prove concrete contro un vero mandante, l’uso di strutture offshore e la complicata rete di relazioni politiche e imprenditoriali indicano la necessità di riforme sistemiche e di una maggiore trasparenza nelle indagini giudiziarie maltese.</p>
-<p><strong>Punti chiave</strong></p>
-<ol>
-<li>Assoluzione di Yorgen Fenech: giuria di otto dei nove componenti ha dichiarato innocente, lasciando aperta la questione del mandante.</li>
-<li>Ruolo di 17 Black: società offshore a Dubai collegata a Fenech, ma senza prove definitive di responsabilità.</li>
-<li>Contesto politico: lotta di potere tra partiti laburisti e nazionalisti, con accuse di corruzione e mancanza di stato di diritto.</li>
-<li>Impatto sulla società: la famiglia di Daphne e la comunità maltese rimangono in frustrazione per la mancanza di giustizia.</li>
-<li>Necessità di riforme: evidenza di una rete di corruzione che richiede trasparenza e riforma del sistema giudiziario maltese.</li>
-</ol></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #dc2626;"><a href="https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&utm_medium=rss&utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante" style="color: #dc2626; font-weight: 700;">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v16_https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante</guid>
-    </item>
-    <item>
-      <title>[IrpiMedia (Inchieste)] Caccia alle linee di rifornimento russe. La strategia ucraina per stabilizzare il fronte</title>
-      <link>https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #dc2626; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: IrpiMedia (Inchieste)</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Inchiesta</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Quadro critico</strong></p>
-<p>IrpiMedia ha riportato come l’esercito ucraino abbia lanciato una “campagna droni a medio raggio” per interrompere le linee di rifornimento russe lungo i 1.200 km del fronte. Il comandante “Cuba” della 25ª brigata aviotrasportata “Sicheslav” descrive l’operazione come una serie di attacchi mirati a obiettivi logistici – magazzini, cisterne, camion cisterna, centri di controllo droni e infrastrutture energetiche – con l’obiettivo di privare le truppe russe di carburante e di energia elettrica. La strategia ha già prodotto risultati concreti: le avanzate russe si sono rallentate, l’offensiva di primavera‑estate è stata in gran parte bloccata e l’Ucraina ha liberato piccoli insediamenti occupati, tra cui un’area di quattro volte la dimensione di Milano.</p>
-<p>La campagna si basa su droni come l’Hornet, sviluppato dalla Perennial Autonomy, che operano in modalità automatica e con intelligenza artificiale per individuare e colpire bersagli a 80‑200 km di distanza. Gli attacchi sono coordinati da squadre di preparazione che includono navigatori, osservatori e piloti, e sfruttano la rete satellitare Starlink, ora bloccata per l’esercito russo, e le reti anti‑drone costruite dall’esercito ucraino e dalla popolazione. Nonostante l’aumento dei sistemi anti‑drone russi e delle interferenze elettroniche, “Cuba” rimane ottimista, citando risultati significativi a luglio 2026.</p>
-<p>Il successo della campagna si è tradotto in un impatto strategico notevole: la M‑14, arteria di rifornimento che collega Rostov al Don con la Crimea, è stata chiamata “autostrada della morte” dopo numerosi attacchi a camion cisterna. Le forze ucraine hanno anche colpito raffinerie di petrolio a centinaia di chilometri di profondità, riducendo la capacità di raffinazione russa del 20‑30 % entro luglio 2026 e provocando carenze di carburante in 78 delle 83 regioni federali.</p>
-<p>In sintesi, la strategia ucraina di colpire le linee di rifornimento russe con droni a medio raggio ha dimostrato di essere un elemento chiave per stabilizzare il fronte, ridurre la capacità offensiva russa e creare un vantaggio logistico che potrebbe influenzare l’esito complessivo del conflitto.</p>
-<p><strong>Punti chiave</strong></p>
-<ol>
-<li>La campagna droni a medio raggio mira a obiettivi logistici (magazzini, cisterne, centri di controllo) per privare le truppe russe di carburante e energia.</li>
-<li>Il drone Hornet, con AI automatizzata, opera a 80‑200 km di distanza e viene supportato da squadre di preparazione specializzate.</li>
-<li>Il blocco di Starlink per l’esercito russo e le reti anti‑drone ucraine hanno aumentato l’efficacia degli attacchi.</li>
-<li>Attacchi a lungo raggio hanno compromesso la raffinazione del petrolio russo del 20‑30 % e causato carenze di carburante in 78 regioni federali.</li>
-<li>La “autostrada della morte” (M‑14) è stata colpita più volte, riducendo drasticamente la capacità di rifornimento russo verso la Crimea.</li>
-</ol></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #dc2626;"><a href="https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&utm_medium=rss&utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte" style="color: #dc2626; font-weight: 700;">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v16_https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte</guid>
-    </item>
-    <item>
-      <title>[IrpiMedia (Inchieste)] Caccia alle linee di rifornimento russe. La strategia ucraina per stabilizzare il fronte</title>
-      <link>https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #dc2626; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: IrpiMedia (Inchieste)</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Inchiesta</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Quadro critico</strong></p>
-<p>IrpiMedia ha riportato come l’esercito ucraino abbia lanciato una “campagna droni a medio raggio” per interrompere le linee di rifornimento russe lungo i 1.200 km del fronte. Il comandante “Cuba” della 25ª brigata aviotrasportata “Sicheslav” descrive l’operazione come una serie di attacchi mirati a obiettivi logistici – magazzini, cisterne, camion cisterna, centri di controllo droni e infrastrutture energetiche – con l’obiettivo di privare le truppe russe di carburante e di energia elettrica. La strategia ha già prodotto risultati concreti: le avanzate russe si sono rallentate, l’offensiva di primavera‑estate è stata in gran parte bloccata e l’Ucraina ha liberato piccoli insediamenti occupati, tra cui un’area di quattro volte la dimensione di Milano.</p>
-<p>La campagna si basa su droni come l’Hornet, sviluppato dalla Perennial Autonomy, che operano in modalità automatica e con intelligenza artificiale per individuare e colpire bersagli a 80‑200 km di distanza. Gli attacchi sono coordinati da squadre di preparazione che includono navigatori, osservatori e piloti, e sfruttano la rete satellitare Starlink, ora bloccata per l’esercito russo, e le reti anti‑drone costruite dall’esercito ucraino e dalla popolazione. Nonostante l’aumento dei sistemi anti‑drone russi e delle interferenze elettroniche, “Cuba” rimane ottimista, citando risultati significativi a luglio 2026.</p>
-<p>Il successo della campagna si è tradotto in un impatto strategico notevole: la M‑14, arteria di rifornimento che collega Rostov al Don con la Crimea, è stata chiamata “autostrada della morte” dopo numerosi attacchi a camion cisterna. Le forze ucraine hanno anche colpito raffinerie di petrolio a centinaia di chilometri di profondità, riducendo la capacità di raffinazione russa del 20‑30 % entro luglio 2026 e provocando carenze di carburante in 78 delle 83 regioni federali.</p>
-<p>In sintesi, la strategia ucraina di colpire le linee di rifornimento russe con droni a medio raggio ha dimostrato di essere un elemento chiave per stabilizzare il fronte, ridurre la capacità offensiva russa e creare un vantaggio logistico che potrebbe influenzare l’esito complessivo del conflitto.</p>
-<p><strong>Punti chiave</strong></p>
-<ol>
-<li>La campagna droni a medio raggio mira a obiettivi logistici (magazzini, cisterne, centri di controllo) per privare le truppe russe di carburante e energia.</li>
-<li>Il drone Hornet, con AI automatizzata, opera a 80‑200 km di distanza e viene supportato da squadre di preparazione specializzate.</li>
-<li>Il blocco di Starlink per l’esercito russo e le reti anti‑drone ucraine hanno aumentato l’efficacia degli attacchi.</li>
-<li>Attacchi a lungo raggio hanno compromesso la raffinazione del petrolio russo del 20‑30 % e causato carenze di carburante in 78 regioni federali.</li>
-<li>La “autostrada della morte” (M‑14) è stata colpita più volte, riducendo drasticamente la capacità di rifornimento russo verso la Crimea.</li>
-</ol></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #dc2626;"><a href="https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&utm_medium=rss&utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte" style="color: #dc2626; font-weight: 700;">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v16_https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte</guid>
-    </item>
-    <item>
-      <title>[1000 Words] Between pose and presence: on Farren van Wyk’s Mixedness is My Mythology</title>
-      <link>https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    <div style="margin-bottom: 20px;"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2666.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #d97706; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: 1000 Words</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Fotografia</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>La prima mostra solista di Farren van Wyk al Fotomuseum Den Haag, intitolata <em>Mixedness is My Mythology</em>, rivolge la fotocamera verso la propria famiglia, intrecciando le storie visive della fotografia antropologica, del ritratto e della rappresentazione coloniale. Nata da madre sudafricana e padre olandese, la fotografa è stata classificata come “coloured” prima di trasferirsi nei Paesi Bassi a sei anni. Le immagini, realizzate in collaborazione con i genitori e i fratelli sul campo di famiglia a Putten, esplorano come l’identità si forgi attraverso posa, performance e l’atto stesso della rappresentazione, evidenziando che famiglia, storia e appartenenza non sono solo registrati ma costruiti attraverso le immagini.</p>
-
-<p>Le fotografie in bianco‑e‑nero, poste a livello degli occhi in uno spazio sobrio, sembrano inizialmente un archivio familiare: momenti condivisi, ambienti familiari e un’apparente naturalezza. Tuttavia, nessuno è sorpreso; le pose sono pensate, gli sguardi neutri e attenti, creando una tensione costante tra l’apparenza di spontaneità e la cura della composizione. Questa dualità mette in luce la partecipazione attiva dei soggetti nel modellare la propria visibilità, lasciando aperti i limiti del controllo.</p>
-
-<p>Il ruolo dei titoli è cruciale: alcuni ancorano le immagini al legame di parentela, altri introducono riferimenti culturali, teorici, storici o mitologici, creando un sovrapporsi di cornici scientifiche, politiche e mitiche. L’uso di formati visivi familiari – ritratti, gruppi e composizioni frontali – non si fissa completamente in essi, ma oscilla tra l’ethnografico e il contemporaneo, svelando la costruzione sottostante alla leggibilità. Opere come <em>Our Anthropological Golden Era</em> e <em>The Whole Picture</em> mostrano come la composizione quasi heroica e la disposizione quasi tipologica siano slegate dalla loro promessa di completezza, mentre <em>The Black Panthers meet Nelson Mandela</em> evoca storie politiche e simboli di potere, testimoniando la complessità delle tradizioni visive coloniali.</p>
-
-<p>La fotografia <em>Home</em> è emblematicamente significativa: i fratelli intorno a uno specchio in cui la stessa van Wyk appare con la fotocamera, inserendo l’atto di fotografare nella composizione. Questo gesto rompe la rigidità della serie, introducendo un tono più aperto e casuale. L’intera mostra, con la sua ripetizione di pose e gesti, dimostra che l’identità emerge gradualmente attraverso iterazioni, piuttosto che come entità stabile. Il bianco‑e‑nero, invece di neutralizzare la differenza, concentra l’attenzione sulla forma, sul contrasto e sul peso culturale dell’immagine, ponendo la domanda fondamentale su cosa significhi produrre un’immagine di una famiglia insieme piuttosto che documentarla.</p>
-
-<strong>PUNTI CHIAVE</strong>
-<ol>
-<li>La mostra intreccia la storia personale di van Wyk con le narrazioni più ampie della fotografia antropologica e coloniale.</li>
-<li>Le pose curate creano una tensione tra naturalezza e costruzione, evidenziando la partecipazione attiva dei soggetti.</li>
-<li>I titoli fungono da ponte tra relazioni familiari e riferimenti culturali, scientifici e mitologici.</li>
-<li>Il bianco‑e‑nero sottolinea la forma e il contrasto, rivelando la complessità dell’identità “mista”.</li>
-<li>La collaborazione familiare e la precisione della composizione interrogano la distinzione tra documentazione e rappresentazione.</li>
-</ol></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #d97706;"><a href="https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/" style="color: #d97706; font-weight: 700;">Leggi originale su 1000 Words &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v16_https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/</guid>
-    </item>
-    <item>
-      <title>[1000 Words] The ethics of looking at a mother</title>
-      <link>https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    <div style="margin-bottom: 20px;"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2666.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #d97706; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: 1000 Words</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Fotografia</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Quadro critico</strong></p>
-<p>La mostra di Katherine Hubbard, <em>The Great Room</em>, si apre al Secession di Vienna con un’intensa riflessione sul rapporto tra madre e figlia, sulla costruzione di identità e sul valore della memoria visiva. Hubbard, che ha dedicato cinque anni a fotografare la madre Antonette Berger nella sua casa di Filadelfia, utilizza una combinazione di fotografie in bianco e nero a grande formato, riflessi e stampe di contatto senza fotocamera per esplorare la trasformazione dello spazio domestico e la progressiva perdita di cognizione di Berger. L’uso di specchi e di una parete divisoria ricostruita nella galleria serve a frammentare l’ambiente, a creare un “circuito” di immagini che si avvicinano sempre di più alla realtà emotiva e fisica della madre. Hubbard non si limita a documentare; la sua tecnica “homeopatica” amplifica l’inconveniente, trasformando la fotografia in un atto di cura e di resistenza contro la passività del soggetto.</p>
-<p>Il tema centrale è la “etica dello sguardo”: chi guarda, chi è guardato, chi detiene il potere della narrazione visiva. Hubbard, con la sua “presenza strutturante”, interrompe la tradizionale dinamica di osservatore e osservato, inserendo se stessa nella composizione per evitare che la madre sia ridotta a un oggetto passivo. In momenti di reciproca fotografia, la figlia e la madre si scambiano i ruoli, ma Hubbard sottolinea che la scelta è stata sua, una “fittizia” costruita per dare alla madre un ruolo attivo. Questo approccio solleva interrogativi sulla validità del consenso in una relazione di potere già complessa e sulla possibilità di rappresentare la perdita di memoria senza sfruttare la vulnerabilità.</p>
-<p>Il contesto di esposizione, con la struttura architettonica di Berger trasportata nella galleria, enfatizza la fragilità della memoria e l’inevitabile declino. Hubbard interrompe la produzione fotografica non appena la madre non è più in grado di mantenere i rituali di scatto, dimostrando una consapevolezza etica che va oltre la mera documentazione. La discussione con il pubblico, in particolare l’uso di “collaborazione” come termine più appropriato, suggerisce una visione più ampia di maternità, in cui il ruolo di madre non è lineare ma reciproco, un “teoria di maternità queer” che sfida le aspettative sociali.</p>
-<p>La mostra, oltre a essere un’esposizione artistica, diventa un punto di riflessione sulla pubblicazione del dolore e sulla responsabilità dell’artista di non sfruttare la sofferenza al fine di creare un’opera. Hubbard dimostra che la fotografia può essere un mezzo di cura, un modo per dare voce a chi è stato tradizionalmente silenziato, e un invito a considerare la maternità come un atto di amore non giudicante e di reciproca responsabilità.</p>
-<p><strong>Punti chiave</strong></p>
-<ol>
-<li>La trasformazione dello spazio domestico di Antonette Berger diventa un metafora della perdita di memoria, con specchi e pareti che frammentano la realtà.</li>
-<li>Hubbard utilizza una tecnica “homeopatica” per amplificare l’inconveniente, trasformando la fotografia in un atto di cura e resistenza.</li>
-<li>Il concetto di “etica dello sguardo” mette in discussione chi detiene il potere narrativo e come il consenso sia gestito in una relazione di potere già complessa.</li>
-<li>L’interazione reciproca tra madre e figlia, sebbene fittizia, sottolinea la necessità di una maternità non lineare e di una “teoria di maternità queer”.</li>
-<li>La mostra funge da piattaforma di riflessione sulla pubblicazione del dolore, evidenziando la responsabilità dell’artista di non sfruttare la vulnerabilità per creare arte.</li>
-</ol></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #d97706;"><a href="https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/" style="color: #d97706; font-weight: 700;">Leggi originale su 1000 Words &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v16_https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/</guid>
+      <guid isPermaLink="false">v17_https://www.theitalianreview.com/state-di-anthony-bourdain/</guid>
     </item>
     <item>
       <title>[Valigia Blu] L’indifferenza russa che uccide i popoli: ricordando le due guerre cecene e riflettendo sull’invasione dell’Ucraina indipendente</title>
@@ -245,18 +112,24 @@ L’articolo “TRENT’ANNI SENZA SAPIENZA” di The Italian Review si presenta
     <div style="margin-bottom: 20px;"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
     <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #0284c7; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Valigia Blu</div>
     <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Geopolitica</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Quadro critico</strong>: Il testo si presenta come un resoconto personale e emotivamente carico delle guerre cecene e dell’invasione ucraina, ma manca di un approccio giornalistico oggettivo. L’autore si affida prevalentemente a aneddoti e testimonianze familiari, senza fornire fonti verificabili o contestualizzare adeguatamente le dinamiche geopolitiche. Tale stile, sebbene coinvolgente, rischia di trasformare il racconto in una narrazione propagandistica, poiché enfatizza la brutalità russa e minimizza le complessità delle motivazioni interne e delle reazioni internazionali. Inoltre, la ripetizione di termini come “indifferenza” e “imperialismo” senza analisi critiche può rafforzare pregiudizi piuttosto che offrire una comprensione equilibrata.</p>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Il testo di Valigia Blu si presenta come un resoconto personale delle guerre russi‑cecene e dell’invasione ucraina, ma si confonde rapidamente con un monologo emotivo che tende a giustificare la brutalità del Cremlino. L’autrice, pur cercando di mantenere un tono “oggettivo”, si lascia sopraffare da sentimenti di amarezza e di colpa, trasformando il racconto in un’analisi di propaganda piuttosto che in un vero e proprio saggio critico.</p>
+
+<p>La narrazione si fonda su un’interpretazione unilaterale della storia: la figura di Džačar Dudaev viene presentata come un eroe intellettuale, mentre la Russia è ridotta a un’entità imperialista che “sottovaluta” la resistenza del popolo. Tale visione ignora le complessità politiche e sociali del Caucaso, oltre a minimizzare le responsabilità della Russia nei confronti dei civili colpiti. L’autrice si appoggia a fonti selettive (ad esempio la testimonianza di Daniil) senza contestare la credibilità delle fonti ufficiali o di altre prospettive.</p>
+
+<p>Il testo mostra una forte tendenza a demonizzare la Russia e a idealizzare i popoli colpiti, ma non fornisce un’analisi equilibrata delle dinamiche di potere, delle motivazioni interne e delle conseguenze a lungo termine delle politiche russi‑cecene e ucraina. L’assenza di una discussione sulle cause strutturali dell’imperialismo russo, come la geopolitica e l’economia, rende la critica superficiale e poco utile per comprendere la realtà complessa.</p>
+
+<p>In conclusione, l’articolo di Valigia Blu è più un monologo di protesta che un saggio storico‑politico. Per una comprensione più profonda delle guerre russi‑cecene e dell’invasione ucraina, è necessario integrare fonti diverse, analizzare le motivazioni interne e considerare le prospettive dei vari attori coinvolti.</p>
 
 <ol>
-<li>Uso predominante di testimonianze personali e aneddoti, con poca verifica di fonti indipendenti.</li>
-<li>Presenza di un tono emotivo che può compromettere l’imparzialità e la neutralità del racconto.</li>
-<li>Mancanza di contestualizzazione storica e geopolitica più ampia, che limita la comprensione delle cause e delle conseguenze delle guerre.</li>
-<li>Rappresentazione unilaterale delle parti coinvolte, con una forte enfasi sulla brutalità russa e sulla passività ucraina.</li>
-<li>Possibile influenza di retoriche propagandistiche, soprattutto nella descrizione di figure come Dudaev e Zelensky, che rischiano di rafforzare stereotipi piuttosto che offrire analisi equilibrate.</li>
+<li>La narrazione è fortemente emotiva e tende a giustificare la brutalità del Cremlino.</li>
+<li>La figura di Džačar Dudaev è presentata in modo idealizzato, ignorando le complessità politiche.</li>
+<li>Il testo si basa su fonti selettive senza contestare la credibilità delle fonti ufficiali.</li>
+<li>La critica è superficiale, mancando un’analisi delle motivazioni strutturali dell’imperialismo russo.</li>
+<li>Il risultato è un monologo di protesta più che un saggio storico‑politico equilibrato.</li>
 </ol></div>
     <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #0284c7;"><a href="https://www.valigiablu.it/cecenia-ucraina-guerre-imperialismo-russia/" style="color: #0284c7; font-weight: 700;">Leggi originale su Valigia Blu &rarr;</a></div>
 </div>]]></description>
-      <guid isPermaLink="false">v16_https://www.valigiablu.it/cecenia-ucraina-guerre-imperialismo-russia/</guid>
+      <guid isPermaLink="false">v17_https://www.valigiablu.it/cecenia-ucraina-guerre-imperialismo-russia/</guid>
     </item>
     <item>
       <title>[Valigia Blu] Il boia di Srebrenica è morto, la sua mostruosa ideologia si aggira ancora per l’Europa</title>
@@ -265,25 +138,180 @@ L’articolo “TRENT’ANNI SENZA SAPIENZA” di The Italian Review si presenta
     
     <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #0284c7; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Valigia Blu</div>
     <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Geopolitica</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Quadro critico</strong><br>
-La morte di Ratko Mladić, condannato per genocidio a Srebrenica, ha riacceso le tensioni in Serbia e nella Republika Srpska, dove una parte significativa del pubblico lo considera ancora un eroe. Il suo funerale di Stato, previsto da Belgrado, è stato accolto con proteste e accuse di glorificazione di un criminale di guerra, mentre l’Unione Europea e la comunità internazionale condannano fermamente tale gesto. La figura di Mladić, ormai trasformata in simbolo di identità nazionale e revisionismo, si intreccia con la crisi politica serba, con Vučić che intende sfruttare il nazionalismo per consolidare il suo potere in vista delle imminenti elezioni parlamentari.</p>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Il testo di Valigia Blu si presenta come una cronaca di cronaca, ma la sua struttura narrativa è intrisa di una retorica che tende a normalizzare la figura di Ratko Mladić. L’autore inizia con la tragica storia di Ana Mladić, la figlia del generale, per poi trasformare la sua morte in un pretesto per giustificare la glorificazione di un criminale di guerra. Questa scelta di focalizzarsi sul suicidio della figlia serve a creare un “drama familiare” che distrae dall’orrore dei crimini commessi, riducendo la complessità del genocidio di Srebrenica a una vicenda di vendetta personale.</p>
 
-<p>Il caso di Ana Mladić, la figlia che si è suicidata dopo aver scoperto le atrocità commesse dal padre, ha reso ancora più cruda la memoria del genocidio. La sua morte ha sollevato interrogativi sulla responsabilità personale e collettiva di Ratko Mladić, che ha negato finché alla fine di aver subito la perdita di una figlia. La sua condanna definitiva per genocidio, crimini contro l’umanità e crimini di guerra è stata accolta con sospetto da parte di alcune élite politiche e mediatiche, che continuano a celebrare la sua figura come simbolo di resistenza contro l’Occidente.</p>
+<p>Il racconto si dipana poi in un’analisi superficiale delle reazioni politiche in Serbia e nella Republika Srpska, ma manca di una valutazione critica delle fonti. L’autore cita un’indagine di Valicon senza contestare la metodologia o la rappresentatività dei dati, e si limita a riportare il 52 % di “eroi” senza approfondire le ragioni culturali e ideologiche che alimentano tale visione. In questo modo, l’articolo perpetua una narrazione di “nostalgia nazionale” che si oppone alla verità storica.</p>
 
-<p>Il movimento studentesco serbo, che ha protestato contro il regime di Vučić, mostra una divisione interna: mentre molti studenti lo condannano, altri, soprattutto quelli con orientamento nazionalista, lo vedono come eroe. Le manifestazioni a Belgrado, con striscioni e graffiti che glorificano Mladić, indicano che la sua figura può ancora essere usata come leva politica. Vučić, prevedendo elezioni anticipate, potrebbe sfruttare la nostalgia nazionale e la percezione di ingiustizia internazionale per consolidare il suo sostegno tra l’elettorato nazionalista.</p>
+<p>Un altro punto debole è la mancanza di contestualizzazione internazionale. Mentre si menziona la condanna dell’Unione Europea, non si approfondisce l’importanza del Tribunale penale internazionale per l’ex Jugoslavia e il ruolo del Meccanismo residuale. La critica di Vučić al Tribunale viene presentata come un atto di “civiltà” senza esaminare la legittimità delle accuse di genocidio. Questa prospettiva riduce la complessità del conflitto a una semplice disputa politica, ignorando le implicazioni di una negazione sistematica del passato.</p>
 
-<p>Il contesto internazionale rimane ostile: l’UE ha espresso forte disapprovazione per la glorificazione di un condannato per genocidio, e la Bosnia ed Erzegovina ha avviato indagini contro funzionari che promuovono la sua figura. La tensione tra la necessità di affrontare il passato e la tentazione di sfruttarlo per fini politici continua a definire il dibattito pubblico, con la morte di Mladić che potrebbe diventare un punto di svolta nella politica serba, ma anche un catalizzatore per la divisione e il revisionismo.</p>
+<p>Infine, l’articolo si conclude con una riflessione sul potere politico che la morte di Mladić potrebbe esercitare sulle elezioni serbe. Tuttavia, la sua analisi è limitata a una lettura superficiale delle dinamiche di voto, senza considerare l’impatto a lungo termine di una cultura del negazionismo. La narrazione suggerisce che la figura di Mladić possa ancora essere sfruttata per scopi elettorali, ma non esamina le conseguenze di una tale manipolazione sulla coesione sociale e sulla memoria collettiva.</p>
 
 <ol>
-<li>La morte di Mladić ha riacceso il dibattito sulla glorificazione di criminali di guerra in Serbia e nella Republika Srpska.</li>
-<li>Il funerale di Stato previsto da Belgrado è stato accolto con proteste e condanne da parte dell’UE e della comunità internazionale.</li>
-<li>Il movimento studentesco serbo è diviso tra chi condanna e chi celebra la figura di Mladić, riflettendo una frattura più ampia nella società.</li>
-<li>Vučić potrebbe sfruttare il nazionalismo e la nostalgia per consolidare il suo potere in vista delle elezioni parlamentari.</li>
-<li>La tensione tra la necessità di affrontare il passato e la tentazione di sfruttarlo per fini politici continua a definire il panorama politico serbo.</li>
+<li>La narrazione di Valigia Blu riduce la complessità del genocidio a una vicenda di vendetta personale.</li>
+<li>L’autore non contestualizza adeguatamente le fonti, perpetuando una visione di “nostalgia nazionale”.</li>
+<li>La critica al Tribunale penale internazionale è presentata senza analizzare la legittimità delle accuse di genocidio.</li>
+<li>La discussione sulle elezioni serbe è superficiale e non considera l’impatto a lungo termine del negazionismo.</li>
+<li>Il testo manca di una riflessione critica sull’effetto di una cultura del negazionismo sulla memoria collettiva e sulla coesione sociale.</li>
 </ol></div>
     <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #0284c7;"><a href="https://www.valigiablu.it/morte-mladic-boia-srebrenica-eredita-europa/" style="color: #0284c7; font-weight: 700;">Leggi originale su Valigia Blu &rarr;</a></div>
 </div>]]></description>
-      <guid isPermaLink="false">v16_https://www.valigiablu.it/morte-mladic-boia-srebrenica-eredita-europa/</guid>
+      <guid isPermaLink="false">v17_https://www.valigiablu.it/morte-mladic-boia-srebrenica-eredita-europa/</guid>
+    </item>
+    <item>
+      <title>[IrpiMedia (Inchieste)] L’omicidio di Daphne Caruana Galizia non ha ancora un mandante</title>
+      <link>https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #dc2626; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: IrpiMedia (Inchieste)</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Inchiesta</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Il caso di Daphne Caruana Galizia rimane un esempio di fallimento giudiziario e di corruzione sistemica a Malta.</strong> Nonostante l’assoluzione di Yorgen Fenech, la giuria non ha risposto alle prove che collegavano l’imprenditore alla trama dell’autobomba. La decisione di scagionarlo, con la sua scarcerazione immediata, ha alimentato la percezione che la magistratura sia stata influenzata da poteri economici e politici.</p>
+
+<p>La fondazione di Daphne ha continuato a denunciare legami tra Fenech, l’ex ministro dell’Energia Konrad Mizzi e il capo di gabinetto Keith Schembri, tutti accusati di aver beneficiato di tangenti tramite la società offshore 17 Black. Tuttavia, le prove presentate in tribunale, tra cui documenti di Panama Papers e testimonianze di tassisti, non sono state sufficienti a superare il carico della prova, lasciando aperta la questione di chi abbia realmente ordinato l’omicidio.</p>
+
+<p>Il ruolo di IRPI e del The Daphne Project è stato cruciale nel mantenere viva la memoria della giornalista e nel mettere sotto pressione le autorità. Ma la loro attività ha anche evidenziato le difficoltà di un sistema giudiziario che, pur avendo processi pubblici, sembra incapace di garantire una giustizia completa quando coinvolti soggetti di alto profilo.</p>
+
+<p>In conclusione, l’assoluzione di Fenech non solo ha lasciato la famiglia di Daphne senza giustizia, ma ha anche messo in luce un sistema politico‑economico che privilegia interessi di élite a scapito della libertà di stampa e dello stato di diritto. Il futuro della democrazia maltese dipende dalla capacità di riformare le istituzioni giudiziarie e di proteggere i giornalisti che denunciano la corruzione.</p>
+
+<ol>
+<li>Assoluzione di Yorgen Fenech nonostante prove di collegamento con l’autobomba.</li>
+<li>Allegati legami di corruzione tra Fenech, Mizzi e Schembri tramite 17 Black.</li>
+<li>Ruolo di IRPI e The Daphne Project nel sostenere la memoria di Daphne.</li>
+<li>Fallimento del sistema giudiziario maltese nel garantire giustizia a soggetti di alto profilo.</li>
+<li>Implicazioni per la libertà di stampa e lo stato di diritto a Malta.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #dc2626;"><a href="https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&utm_medium=rss&utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante" style="color: #dc2626; font-weight: 700;">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v17_https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante</guid>
+    </item>
+    <item>
+      <title>[IrpiMedia (Inchieste)] L’omicidio di Daphne Caruana Galizia non ha ancora un mandante</title>
+      <link>https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #dc2626; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: IrpiMedia (Inchieste)</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Inchiesta</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Il caso di Daphne Caruana Galizia rimane un esempio di fallimento giudiziario e di corruzione sistemica a Malta.</strong> Nonostante l’assoluzione di Yorgen Fenech, la giuria non ha risposto alle prove che collegavano l’imprenditore alla trama dell’autobomba. La decisione di scagionarlo, con la sua scarcerazione immediata, ha alimentato la percezione che la magistratura sia stata influenzata da poteri economici e politici.</p>
+
+<p>La fondazione di Daphne ha continuato a denunciare legami tra Fenech, l’ex ministro dell’Energia Konrad Mizzi e il capo di gabinetto Keith Schembri, tutti accusati di aver beneficiato di tangenti tramite la società offshore 17 Black. Tuttavia, le prove presentate in tribunale, tra cui documenti di Panama Papers e testimonianze di tassisti, non sono state sufficienti a superare il carico della prova, lasciando aperta la questione di chi abbia realmente ordinato l’omicidio.</p>
+
+<p>Il ruolo di IRPI e del The Daphne Project è stato cruciale nel mantenere viva la memoria della giornalista e nel mettere sotto pressione le autorità. Ma la loro attività ha anche evidenziato le difficoltà di un sistema giudiziario che, pur avendo processi pubblici, sembra incapace di garantire una giustizia completa quando coinvolti soggetti di alto profilo.</p>
+
+<p>In conclusione, l’assoluzione di Fenech non solo ha lasciato la famiglia di Daphne senza giustizia, ma ha anche messo in luce un sistema politico‑economico che privilegia interessi di élite a scapito della libertà di stampa e dello stato di diritto. Il futuro della democrazia maltese dipende dalla capacità di riformare le istituzioni giudiziarie e di proteggere i giornalisti che denunciano la corruzione.</p>
+
+<ol>
+<li>Assoluzione di Yorgen Fenech nonostante prove di collegamento con l’autobomba.</li>
+<li>Allegati legami di corruzione tra Fenech, Mizzi e Schembri tramite 17 Black.</li>
+<li>Ruolo di IRPI e The Daphne Project nel sostenere la memoria di Daphne.</li>
+<li>Fallimento del sistema giudiziario maltese nel garantire giustizia a soggetti di alto profilo.</li>
+<li>Implicazioni per la libertà di stampa e lo stato di diritto a Malta.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #dc2626;"><a href="https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&utm_medium=rss&utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante" style="color: #dc2626; font-weight: 700;">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v17_https://irpimedia.irpi.eu/processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=processo-omicidio-daphne-caruana-galizia-non-ha-ancora-un-mandante</guid>
+    </item>
+    <item>
+      <title>[IrpiMedia (Inchieste)] Caccia alle linee di rifornimento russe. La strategia ucraina per stabilizzare il fronte</title>
+      <link>https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #dc2626; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: IrpiMedia (Inchieste)</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Inchiesta</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Il reportage di IrpiMedia offre un’immersione dettagliata nella strategia ucraina di “campagna droni a medio raggio”, evidenziando come l’uso sistematico di UAV abbia alterato la logistica russa e, di conseguenza, la dinamica del fronte. Attraverso l’intervista al comandante “Cuba” e la descrizione operativa, il testo mostra la complessità delle operazioni: dalla pianificazione del volo alla gestione delle interferenze elettroniche, fino al coordinamento con le reti anti‑drone locali. La narrazione si concentra soprattutto sul ruolo dei droni Hornet, prodotti da una società statunitense, e sulla loro capacità di identificare obiettivi grazie all’IA, ma non dimentica le difficoltà crescenti dovute ai sistemi anti‑drone russi.</p>
+
+<p>Un elemento chiave è la dipendenza dalle infrastrutture di comunicazione satellitare, in particolare Starlink, e l’impatto delle restrizioni di SpaceX sul potere operativo delle forze russe. Il blocco di Starlink ha costretto i russi a ricorrere a soluzioni di comunicazione più fragili, come Telegram, che a loro volta sono state oggetto di limitazioni da parte delle autorità russe. Questa catena di interdipendenze tecnologiche ha rafforzato la posizione ucraina, consentendo un controllo più preciso delle operazioni di attacco e una maggiore resilienza contro le interferenze.</p>
+
+<p>Il testo non si limita a descrivere le vittorie tattiche, ma mette in luce anche le ripercussioni strategiche: la riduzione della capacità di raffinazione del petrolio russo, la scarsità di carburante nelle regioni federali e la conseguente pressione sul fronte. L’analisi suggerisce che la “campagna droni a medio raggio” non è solo una serie di attacchi isolati, ma parte di una strategia più ampia di guerra economica e di distruzione delle infrastrutture di supporto al conflitto. La narrazione, tuttavia, tende a enfatizzare l’efficacia ucraina, senza approfondire le potenziali conseguenze a lungo termine per la stabilità regionale.</p>
+
+<p>Infine, la struttura narrativa, con la presenza di “personaggi” come “Cuba” e “Ruble”, conferisce al reportage un tono quasi giornalistico di prima pagina, ma la mancanza di fonti indipendenti e la dipendenza da dati di organizzazioni come ACLED possono limitare la verifica delle affermazioni. Nonostante ciò, il documento fornisce una visione chiara delle nuove dinamiche di guerra a distanza e del ruolo crescente delle tecnologie di precisione nel conflitto russo‑ucraino.</p>
+
+<ol>
+<li>Uso sistematico di droni a medio raggio per colpire infrastrutture logistiche russe.</li>
+<li>Importanza strategica delle reti di comunicazione satellitare (Starlink) e delle restrizioni imposte da SpaceX.</li>
+<li>Impatto economico delle operazioni droni sulla capacità di raffinazione del petrolio russo.</li>
+<li>Interferenze elettroniche e sistemi anti‑drone russi come risposta evolutiva.</li>
+<li>Rischio di dipendenza da fonti non verificate e potenziali bias nella narrazione.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #dc2626;"><a href="https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&utm_medium=rss&utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte" style="color: #dc2626; font-weight: 700;">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v17_https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte</guid>
+    </item>
+    <item>
+      <title>[IrpiMedia (Inchieste)] Caccia alle linee di rifornimento russe. La strategia ucraina per stabilizzare il fronte</title>
+      <link>https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #dc2626; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: IrpiMedia (Inchieste)</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Inchiesta</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Il reportage di IrpiMedia offre un’immersione dettagliata nella strategia ucraina di “campagna droni a medio raggio”, evidenziando come l’uso sistematico di UAV abbia alterato la logistica russa e, di conseguenza, la dinamica del fronte. Attraverso l’intervista al comandante “Cuba” e la descrizione operativa, il testo mostra la complessità delle operazioni: dalla pianificazione del volo alla gestione delle interferenze elettroniche, fino al coordinamento con le reti anti‑drone locali. La narrazione si concentra soprattutto sul ruolo dei droni Hornet, prodotti da una società statunitense, e sulla loro capacità di identificare obiettivi grazie all’IA, ma non dimentica le difficoltà crescenti dovute ai sistemi anti‑drone russi.</p>
+
+<p>Un elemento chiave è la dipendenza dalle infrastrutture di comunicazione satellitare, in particolare Starlink, e l’impatto delle restrizioni di SpaceX sul potere operativo delle forze russe. Il blocco di Starlink ha costretto i russi a ricorrere a soluzioni di comunicazione più fragili, come Telegram, che a loro volta sono state oggetto di limitazioni da parte delle autorità russe. Questa catena di interdipendenze tecnologiche ha rafforzato la posizione ucraina, consentendo un controllo più preciso delle operazioni di attacco e una maggiore resilienza contro le interferenze.</p>
+
+<p>Il testo non si limita a descrivere le vittorie tattiche, ma mette in luce anche le ripercussioni strategiche: la riduzione della capacità di raffinazione del petrolio russo, la scarsità di carburante nelle regioni federali e la conseguente pressione sul fronte. L’analisi suggerisce che la “campagna droni a medio raggio” non è solo una serie di attacchi isolati, ma parte di una strategia più ampia di guerra economica e di distruzione delle infrastrutture di supporto al conflitto. La narrazione, tuttavia, tende a enfatizzare l’efficacia ucraina, senza approfondire le potenziali conseguenze a lungo termine per la stabilità regionale.</p>
+
+<p>Infine, la struttura narrativa, con la presenza di “personaggi” come “Cuba” e “Ruble”, conferisce al reportage un tono quasi giornalistico di prima pagina, ma la mancanza di fonti indipendenti e la dipendenza da dati di organizzazioni come ACLED possono limitare la verifica delle affermazioni. Nonostante ciò, il documento fornisce una visione chiara delle nuove dinamiche di guerra a distanza e del ruolo crescente delle tecnologie di precisione nel conflitto russo‑ucraino.</p>
+
+<ol>
+<li>Uso sistematico di droni a medio raggio per colpire infrastrutture logistiche russe.</li>
+<li>Importanza strategica delle reti di comunicazione satellitare (Starlink) e delle restrizioni imposte da SpaceX.</li>
+<li>Impatto economico delle operazioni droni sulla capacità di raffinazione del petrolio russo.</li>
+<li>Interferenze elettroniche e sistemi anti‑drone russi come risposta evolutiva.</li>
+<li>Rischio di dipendenza da fonti non verificate e potenziali bias nella narrazione.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #dc2626;"><a href="https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&utm_medium=rss&utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte" style="color: #dc2626; font-weight: 700;">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v17_https://irpimedia.irpi.eu/caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=caccia-alle-linee-di-rifornimento-russe-la-strategia-ucraina-per-stabilizzare-il-fronte</guid>
+    </item>
+    <item>
+      <title>[1000 Words] Between pose and presence: on Farren van Wyk’s Mixedness is My Mythology</title>
+      <link>https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="margin-bottom: 20px;"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2666.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #d97706; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: 1000 Words</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Fotografia</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Farren van Wyk</strong> porta la fotografia in un territorio intimo: la propria famiglia, ma la mette anche in dialogo con le storie più ampie dell’anthropologia, del colonialismo e della rappresentazione. La sua prima mostra al Fotomuseum Den Haag, <em>Mixedness is My Mythology</em>, si svolge in un unico spazio sobrio, dove le grandi immagini in bianco‑e‑nero, sospese a livello degli occhi, sembrano in primo piano una raccolta di momenti familiari, ma in realtà sono il risultato di una meticolosa composizione. La tensione tra “apparire naturale” e “essere arrangiato” è costante: i soggetti non sono sorpresi, i loro sguardi sono calmi e attenti, e la fotografia diventa un atto di costruzione identitaria più che di semplice documentazione.</p>
+
+<p>Il lavoro di van Wyk si inserisce in una pratica più ampia che interrogano le identità forgiate dall’apartheid, dalla migrazione e dal mestato. Le fotografie, pur adottando forme classiche come ritratti e composizioni frontali, non si collocano completamente in queste categorie; al contrario, oscillano tra il riconoscibile e l’alterato, creando un “spazio di sovrapposizione” dove scienza, politica e mito si intrecciano senza allinearsi completamente. Titoli come <em>Our Anthropological Golden Era</em> o <em>The Whole Picture</em> evocano riferimenti storici e culturali, ma la loro realizzazione visiva resta sempre una costruzione deliberata, che mette in luce la natura artificiale della legibilità stessa.</p>
+
+<p>Un esempio emblematico è la fotografia <em>Home</em>, dove i quattro fratelli si radunano davanti a uno specchio che riflette la fotografa con la fotocamera in mano. Qui l’atto di fotografare si fonde con l’immagine, suggerendo che l’identità è mediata e contestualizzata davanti a uno sguardo che può giudicare. La ripetizione di pose, gesti e incontri con la fotocamera mostra come l’identità emerga gradualmente, attraverso iterazioni, piuttosto che come qualcosa di stabile e dato. L’uso del bianco‑e‑nero accentua questa ambiguità, spostando l’attenzione su forma, contrasto e peso culturale dell’immagine.</p>
+
+<p>In sintesi, <em>Mixedness is My Mythology</em> non è tanto una presentazione di identità fisse quanto un’esplorazione di come queste si formino e si rendano visibili. La collocazione familiare sul campo di Putten, con il suo paesaggio rurale olandese, funge da sfondo neutro che permette di mettere in evidenza le diverse storie, riferimenti e modalità di osservazione. La mostra invita lo spettatore a interrogarsi sul ruolo della fotografia come strumento di costruzione e di critica delle narrazioni familiari e culturali.</p>
+
+<ol>
+<li>La fotografia di van Wyk è un atto di costruzione identitaria, non di semplice documentazione.</li>
+<li>Le immagini oscillano tra forme classiche e una tensione di “altro” che sfida le categorie tradizionali.</li>
+<li>Il titolo e la composizione spesso evocano riferimenti storici e culturali, ma la realizzazione visiva rimane deliberatamente artificiale.</li>
+<li>L’uso del bianco‑e‑nero enfatizza la forma e il contrasto, mantenendo l’attenzione sull’identità mediata.</li>
+<li>La mostra funge da spazio di riflessione sul ruolo della fotografia nella costruzione e nella critica delle narrazioni familiari e culturali.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #d97706;"><a href="https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/" style="color: #d97706; font-weight: 700;">Leggi originale su 1000 Words &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v17_https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/</guid>
+    </item>
+    <item>
+      <title>[1000 Words] The ethics of looking at a mother</title>
+      <link>https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="margin-bottom: 20px;"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2666.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #d97706; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: 1000 Words</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Fotografia</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>La mostra “The Great Room” di Katherine Hubbard</strong> si presenta come un moderno classico, con la sua prima esposizione solitaria istituzionale fuori dagli Stati Uniti, a Vienna. L’autrice, insieme al suo cerchio, affronta temi più complessi di un semplice documentario sulla demenza o sull’etica del consenso: la ricostruzione continua dei ruoli madre‑figlia, la ricerca di chi guarda, chi detiene il potere e il costo di rendere pubblico il dolore.</p>
+
+<p>Il progetto, realizzato in cinque anni nella casa di Philadelphia di Antonette Berger, si articola in due tipologie di immagini. Da una parte, fotografie in bianco‑nero di grande formato scattate all’interno della casa, con madre e figlia in scenari di routine quotidiana, che si trasformano in riflessi e specchi che frammentano lo spazio. Dall’altra, stampe di contatto senza fotocamera, dove la pelle della madre, coperta di vaselina, viene pressata direttamente sul foglio fotografico, eliminando la distanza tra soggetto e osservatore. La struttura architettonica della casa, riprodotta nella galleria, funge da cornice e da supporto per le immagini, creando un “Frankenstein” di elementi che si intrecciano con la memoria e l’obsolescenza.</p>
+
+<p>Hubbard descrive la fotocamera come una “presenza strutturante” che interrompe il flusso di cura, offrendo momenti di pausa oltre il necessario medico. Le immagini si avvicinano a un rituale circolare, con specchi che catturano l’autore stessa, rifiutando la prospettiva onnisciente tipica della fotografia. L’inversione di ruoli, dove la madre fotografa la figlia e viceversa, è una scelta deliberata per garantire alla madre il potere tipicamente attribuito al fotografo, evitando di ridurla a semplice oggetto di osservazione.</p>
+
+<p>Il dibattito etico non si limita al consenso: Hubbard ha interrotto il lavoro quando la madre non era più in grado di sostenere i rituali fotografici. L’autrice riflette su una forma di “madriamento queer”, una relazione bidirezionale che sfida la dinamica tradizionale di chi detiene la fotocamera. Alla fine della sua presentazione, la discussione si sposta sul ruolo di madre come amore non giudicante, lasciando il concetto di collaborazione aperto e rispettoso.</p>
+
+<ol>
+<li>La fotografia come strumento di potere e di resistenza, che permette alla madre di mantenere l’autonomia visiva.</li>
+<li>La trasformazione della casa in un palcoscenico di memoria, dove oggetti e spazio raccontano la progressiva perdita cognitiva.</li>
+<li>Il concetto di “madriamento queer” che rompe la gerarchia tradizionale tra fotografo e soggetto.</li>
+<li>L’importanza del consenso dinamico, che si interrompe quando la soglia cognitiva della madre è superata.</li>
+<li>Il ruolo della fotografia come mezzo di espressione pubblica del dolore, con il rischio di banalizzare la sofferenza.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #d97706;"><a href="https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/" style="color: #d97706; font-weight: 700;">Leggi originale su 1000 Words &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v17_https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/</guid>
     </item>
   </channel>
 </rss>
