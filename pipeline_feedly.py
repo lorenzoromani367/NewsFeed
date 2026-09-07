@@ -60,11 +60,11 @@ def salva_database(db):
     with open(DATABASE_FILE, "w", encoding="utf-8") as f: json.dump(db, f, ensure_ascii=False, indent=2)
 
 def scarica_bypass(url, timeout_diretto=12, timeout_proxy=15):
-    """Scarica un URL tentando, in ordine, accesso diretto e due proxy pubblici
-    (AllOrigins, corsproxy.io). A differenza della versione precedente non
-    inghiotte gli errori: stampa sempre lo status HTTP o l'eccezione reale,
-    per poter diagnosticare un blocco anti-bot invece di limitarsi a
-    saltarlo in silenzio."""
+    """Scarica un URL tentando, in ordine, accesso diretto e proxy AllOrigins.
+    (corsproxy.io è stato rimosso: richiede ora un'API key, risponde sempre
+    401 senza). Non inghiotte gli errori: stampa sempre lo status HTTP o
+    l'eccezione reale, per poter diagnosticare un blocco anti-bot invece di
+    limitarsi a saltarlo in silenzio."""
     try:
         res = scraper.get(url, timeout=timeout_diretto)
         if res.status_code == 200 and len(res.content) > 200:
@@ -73,20 +73,40 @@ def scarica_bypass(url, timeout_diretto=12, timeout_proxy=15):
     except Exception as e:
         print(f"    [DIRETTO] {url} -> {type(e).__name__}: {e}", flush=True)
 
-    safe_url = urllib.parse.quote(url, safe='')
-    for nome_proxy, proxy_url in [
-        ("allorigins", f"https://api.allorigins.win/raw?url={safe_url}"),
-        ("corsproxy", f"https://corsproxy.io/?url={safe_url}"),
-    ]:
-        try:
-            res = requests.get(proxy_url, headers=HEADERS, timeout=timeout_proxy)
-            if res.status_code == 200 and len(res.content) > 200:
-                return res.content, nome_proxy
-            print(f"    [{nome_proxy.upper()}] {url} -> HTTP {res.status_code}", flush=True)
-        except Exception as e:
-            print(f"    [{nome_proxy.upper()}] {url} -> {type(e).__name__}: {e}", flush=True)
+    try:
+        safe_url = urllib.parse.quote(url, safe='')
+        res = requests.get(f"https://api.allorigins.win/raw?url={safe_url}", headers=HEADERS, timeout=timeout_proxy)
+        if res.status_code == 200 and len(res.content) > 200:
+            return res.content, "allorigins"
+        print(f"    [ALLORIGINS] {url} -> HTTP {res.status_code}", flush=True)
+    except Exception as e:
+        print(f"    [ALLORIGINS] {url} -> {type(e).__name__}: {e}", flush=True)
 
     return None, "fallito"
+
+def _debug_candidati_link(soup, dominio, url):
+    """Diagnostica temporanea: quando l'euristica h1-h4 non trova nulla ma la
+    pagina è stata scaricata, stampa i link più promettenti (testo lungo,
+    stesso dominio) con il tag e la classe del loro contenitore diretto, per
+    capire come il sito marca i titoli e poter scrivere un selettore mirato."""
+    visti = set()
+    stampati = 0
+    for tag in soup.find_all("a", href=True):
+        testo = tag.get_text().strip()
+        href = urllib.parse.urljoin(url, tag["href"])
+        if len(testo) < 15 or urllib.parse.urlparse(href).netloc != dominio: continue
+        if href in visti: continue
+        visti.add(href)
+        genitore = tag.parent
+        percorso = " > ".join(
+            f'{t.name}.{".".join(t.get("class", []))}' if t.get("class") else t.name
+            for t in [genitore, genitore.parent if genitore else None] if t
+        )
+        print(f"    [DEBUG] \"{testo[:60]}\" href={href} contenitore={percorso}", flush=True)
+        stampati += 1
+        if stampati >= 8: break
+    if stampati == 0:
+        print(f"    [DEBUG] {url} -> nessun <a> con testo >= 15 caratteri sullo stesso dominio", flush=True)
 
 def recupera_feed_xml(url, fallback_url=None):
     for target in [u for u in [url, fallback_url] if u]:
@@ -131,6 +151,7 @@ def recupera_articoli_pagina(url, nome_fonte="", limite=2):
         risultato = filtra_e_deduplica(coppie)
         if risultato: return risultato
         print(f"    [PAGINA] {url} -> scaricato ({esito}) ma nessun link articolo riconosciuto", flush=True)
+        _debug_candidati_link(soup, dominio, url)
     else:
         print(f"    [PAGINA] {url} -> irraggiungibile ({esito})", flush=True)
 
