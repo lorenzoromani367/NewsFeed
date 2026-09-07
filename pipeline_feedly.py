@@ -60,10 +60,11 @@ def salva_database(db):
     with open(DATABASE_FILE, "w", encoding="utf-8") as f: json.dump(db, f, ensure_ascii=False, indent=2)
 
 def scarica_bypass(url, timeout_diretto=12, timeout_proxy=15):
-    """Scarica un URL tentando, in ordine, accesso diretto e proxy AllOrigins.
-    A differenza della versione precedente non inghiotte gli errori: stampa
-    sempre lo status HTTP o l'eccezione reale, per poter diagnosticare un
-    blocco anti-bot invece di limitarsi a saltarlo in silenzio."""
+    """Scarica un URL tentando, in ordine, accesso diretto e due proxy pubblici
+    (AllOrigins, corsproxy.io). A differenza della versione precedente non
+    inghiotte gli errori: stampa sempre lo status HTTP o l'eccezione reale,
+    per poter diagnosticare un blocco anti-bot invece di limitarsi a
+    saltarlo in silenzio."""
     try:
         res = scraper.get(url, timeout=timeout_diretto)
         if res.status_code == 200 and len(res.content) > 200:
@@ -72,14 +73,18 @@ def scarica_bypass(url, timeout_diretto=12, timeout_proxy=15):
     except Exception as e:
         print(f"    [DIRETTO] {url} -> {type(e).__name__}: {e}", flush=True)
 
-    try:
-        safe_url = urllib.parse.quote(url, safe='')
-        res = requests.get(f"https://api.allorigins.win/raw?url={safe_url}", headers=HEADERS, timeout=timeout_proxy)
-        if res.status_code == 200 and len(res.content) > 200:
-            return res.content, "allorigins"
-        print(f"    [ALLORIGINS] {url} -> HTTP {res.status_code}", flush=True)
-    except Exception as e:
-        print(f"    [ALLORIGINS] {url} -> {type(e).__name__}: {e}", flush=True)
+    safe_url = urllib.parse.quote(url, safe='')
+    for nome_proxy, proxy_url in [
+        ("allorigins", f"https://api.allorigins.win/raw?url={safe_url}"),
+        ("corsproxy", f"https://corsproxy.io/?url={safe_url}"),
+    ]:
+        try:
+            res = requests.get(proxy_url, headers=HEADERS, timeout=timeout_proxy)
+            if res.status_code == 200 and len(res.content) > 200:
+                return res.content, nome_proxy
+            print(f"    [{nome_proxy.upper()}] {url} -> HTTP {res.status_code}", flush=True)
+        except Exception as e:
+            print(f"    [{nome_proxy.upper()}] {url} -> {type(e).__name__}: {e}", flush=True)
 
     return None, "fallito"
 
@@ -92,14 +97,15 @@ def recupera_feed_xml(url, fallback_url=None):
             print(f"    [FEED] {target} scaricato ({esito}) ma senza voci valide", flush=True)
     return feedparser.parse(url)
 
-def recupera_articoli_pagina(url, limite=2):
+def recupera_articoli_pagina(url, nome_fonte="", limite=2):
     """Ricava (titolo, link) degli articoli veri e propri da UNA pagina/sezione
-    di un sito, senza bisogno di un feed RSS. Usa prima il Reader di Jina
-    (r.jina.ai), che restituisce solo il contenuto principale della pagina già
-    ripulito da menu/sidebar/pubblicità e spesso aggira anche i blocchi
-    anti-bot di base; se non è disponibile ripiega sullo scraping diretto
-    dell'HTML cercando i link dentro ai titoli (h1-h4)."""
+    di un sito, senza bisogno di un feed RSS. Prova prima lo scraping diretto
+    dell'HTML (cercando i link dentro ai titoli h1-h4, che nella pratica si è
+    rivelato più affidabile del Reader di Jina, spesso rate-limitato sugli IP
+    condivisi dei runner GitHub); se non trova nulla di utile, ripiega su
+    Jina (r.jina.ai) come ultima risorsa."""
     dominio = urllib.parse.urlparse(url).netloc
+    nome_fonte_norm = nome_fonte.strip().lower()
 
     def filtra_e_deduplica(coppie):
         visti, risultato = set(), []
@@ -109,11 +115,24 @@ def recupera_articoli_pagina(url, limite=2):
             if href == url.rstrip("/"): continue
             if urllib.parse.urlparse(href).netloc != dominio: continue
             testo_norm = testo.strip().lower()
-            if len(testo.strip()) < 8 or any(k in testo_norm for k in TESTI_DA_IGNORARE): continue
+            if len(testo.strip()) < 15: continue
+            if testo_norm == nome_fonte_norm: continue
+            if any(k in testo_norm for k in TESTI_DA_IGNORARE): continue
             visti.add(href)
             risultato.append((testo.strip(), href))
             if len(risultato) >= limite: break
         return risultato
+
+    contenuto, esito = scarica_bypass(url)
+    if contenuto:
+        soup = BeautifulSoup(contenuto, "html.parser")
+        coppie = [(tag.get_text(), urllib.parse.urljoin(url, tag.get("href", "")))
+                  for tag in soup.select("h1 a[href], h2 a[href], h3 a[href], h4 a[href]")]
+        risultato = filtra_e_deduplica(coppie)
+        if risultato: return risultato
+        print(f"    [PAGINA] {url} -> scaricato ({esito}) ma nessun link articolo riconosciuto", flush=True)
+    else:
+        print(f"    [PAGINA] {url} -> irraggiungibile ({esito})", flush=True)
 
     try:
         res = requests.get(f"https://r.jina.ai/{url}", headers=HEADERS, timeout=20)
@@ -127,16 +146,7 @@ def recupera_articoli_pagina(url, limite=2):
     except Exception as e:
         print(f"    [JINA] {url} -> {type(e).__name__}: {e}", flush=True)
 
-    contenuto, esito = scarica_bypass(url)
-    if not contenuto:
-        print(f"    [PAGINA] {url} -> irraggiungibile ({esito})", flush=True)
-        return []
-    soup = BeautifulSoup(contenuto, "html.parser")
-    coppie = []
-    for tag in soup.select("h1 a[href], h2 a[href], h3 a[href], h4 a[href]"):
-        href = urllib.parse.urljoin(url, tag.get("href", ""))
-        coppie.append((tag.get_text(), href))
-    return filtra_e_deduplica(coppie)
+    return []
 
 def genera_sintesi_e_traduzione(titolo, fonte, testo):
     if not client: return None
@@ -220,7 +230,7 @@ def main():
 
     for f in FONTI:
         if f.get("tipo") == "pagina":
-            for titolo, link in recupera_articoli_pagina(f["url"]):
+            for titolo, link in recupera_articoli_pagina(f["url"], nome_fonte=f["nome"]):
                 articoli.append(elabora_voce(db, f, link, titolo))
             continue
 
