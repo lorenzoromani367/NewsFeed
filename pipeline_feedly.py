@@ -142,7 +142,7 @@ def recupera_articoli_pagina(url, nome_fonte="", limite=2):
             if testo_norm == nome_fonte_norm: continue
             if any(k in testo_norm for k in TESTI_DA_IGNORARE): continue
             percorso = urllib.parse.urlparse(href).path
-            if len(percorso.strip("/")) < 15: continue  # scarta link brevi/generici (menu, sezioni)
+            if len(percorso.strip("/")) < 25: continue  # scarta link brevi/generici (menu, sezioni)
             visti.add(href)
             risultato.append((testo.strip(), href))
             if len(risultato) >= limite: break
