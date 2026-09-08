@@ -141,6 +141,8 @@ def recupera_articoli_pagina(url, nome_fonte="", limite=2):
             if len(testo.strip()) < 15: continue
             if testo_norm == nome_fonte_norm: continue
             if any(k in testo_norm for k in TESTI_DA_IGNORARE): continue
+            percorso = urllib.parse.urlparse(href).path
+            if len(percorso.strip("/")) < 15: continue  # scarta link brevi/generici (menu, sezioni)
             visti.add(href)
             risultato.append((testo.strip(), href))
             if len(risultato) >= limite: break
@@ -161,7 +163,7 @@ def recupera_articoli_pagina(url, nome_fonte="", limite=2):
     try:
         res = requests.get(f"https://r.jina.ai/{url}", headers=HEADERS_JINA, timeout=20)
         if res.status_code == 200 and len(res.text) > 200:
-            coppie = re.findall(r'\[([^\]]{8,200})\]\((https?://[^\s)]+)\)', res.text)
+            coppie = re.findall(r'(?<!!)\[([^\]]{8,200})\]\((https?://[^\s)]+)\)', res.text)
             risultato = filtra_e_deduplica(coppie)
             if risultato: return risultato
             print(f"    [JINA] {url} -> nessun link articolo riconosciuto", flush=True)
