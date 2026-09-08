@@ -49,6 +49,9 @@ TESTI_DA_IGNORARE = {
 scraper = cloudscraper.create_scraper(browser={'browser': 'chrome', 'platform': 'darwin', 'desktop': True})
 client = Groq(api_key=os.environ.get("GROQ_API_KEY")) if os.environ.get("GROQ_API_KEY") else None
 
+JINA_API_KEY = os.environ.get("JINA_API_KEY")
+HEADERS_JINA = {**HEADERS, "Authorization": f"Bearer {JINA_API_KEY}"} if JINA_API_KEY else HEADERS
+
 def carica_database():
     if os.path.exists(DATABASE_FILE):
         try:
@@ -156,7 +159,7 @@ def recupera_articoli_pagina(url, nome_fonte="", limite=2):
         print(f"    [PAGINA] {url} -> irraggiungibile ({esito})", flush=True)
 
     try:
-        res = requests.get(f"https://r.jina.ai/{url}", headers=HEADERS, timeout=20)
+        res = requests.get(f"https://r.jina.ai/{url}", headers=HEADERS_JINA, timeout=20)
         if res.status_code == 200 and len(res.text) > 200:
             coppie = re.findall(r'\[([^\]]{8,200})\]\((https?://[^\s)]+)\)', res.text)
             risultato = filtra_e_deduplica(coppie)

@@ -26,6 +26,7 @@ jobs:
       - name: Esegui pipeline Python
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          JINA_API_KEY: ${{ secrets.JINA_API_KEY }}
         run: python pipeline_feedly.py
 
       - name: Salva modifiche
