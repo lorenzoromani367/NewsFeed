@@ -138,7 +138,7 @@ def recupera_articoli_pagina(url, nome_fonte="", limite=2):
             if href == url.rstrip("/"): continue
             if urllib.parse.urlparse(href).netloc != dominio: continue
             testo_norm = testo.strip().lower()
-            if len(testo.strip()) < 15: continue
+            if len(testo.strip()) < 15 or testo.strip().startswith(("!", "[")): continue
             if testo_norm == nome_fonte_norm: continue
             if any(k in testo_norm for k in TESTI_DA_IGNORARE): continue
             percorso = urllib.parse.urlparse(href).path
