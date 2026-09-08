@@ -369,5 +369,12 @@
     "link": "https://aperture.org/magazine",
     "html_content": "<div style=\"font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;\">\n    \n    <div style=\"display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #b45309; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;\">FONTE: Aperture (Essays)</div>\n    <div style=\"font-size: 13px; color: #64748b; margin-bottom: 18px;\">Ambito: <em>Fotografia</em></div>\n    <div style=\"border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;\"><p>Non è stato fornito alcun testo da tradurre. Per favore, inserisci il contenuto che desideri tradurre in italiano.</p></div>\n    <div style=\"margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #b45309;\"><a href=\"https://aperture.org/magazine\" style=\"color: #b45309; font-weight: 700;\">Leggi originale su Aperture (Essays) &rarr;</a></div>\n</div>",
     "published": "2026-09-08T07:02:24.726015+00:00"
+  },
+  "v18_https://aperture.org/experience/events": {
+    "id": "v18_https://aperture.org/experience/events",
+    "title": "[Aperture (Essays)] Programs & Events",
+    "link": "https://aperture.org/experience/events",
+    "html_content": "<div style=\"font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;\">\n    \n    <div style=\"display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #b45309; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;\">FONTE: Aperture (Essays)</div>\n    <div style=\"font-size: 13px; color: #64748b; margin-bottom: 18px;\">Ambito: <em>Fotografia</em></div>\n    <div style=\"border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;\"><p>Nessun testo fornito per la traduzione.</p></div>\n    <div style=\"margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #b45309;\"><a href=\"https://aperture.org/experience/events\" style=\"color: #b45309; font-weight: 700;\">Leggi originale su Aperture (Essays) &rarr;</a></div>\n</div>",
+    "published": "2026-09-08T07:17:29.222653+00:00"
   }
 }
