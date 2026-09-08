@@ -31,6 +31,9 @@ FONTI = [
     {"nome": "Aperture (Essays)", "tipo": "pagina", "url": "https://aperture.org/editorial/essays", "categoria": "Fotografia", "colore": "#b45309"},
     {"nome": "Aperture (Reviews)", "tipo": "pagina", "url": "https://aperture.org/editorial/reviews/", "categoria": "Fotografia", "colore": "#92400e"},
     {"nome": "Mousse Magazine", "tipo": "pagina", "url": "https://www.moussemagazine.it/magazine/category/reviews/", "categoria": "Arte Contemporanea", "colore": "#be123c"},
+    {"nome": "Solomon", "tipo": "pagina", "url": "https://wearesolomon.com/en/", "categoria": "Cultura", "colore": "#0ea5e9"},
+
+    {"nome": "Contemporary Art Daily", "tipo": "immagini", "url": "https://www.contemporaryartdaily.com", "categoria": "Arte Contemporanea", "colore": "#18181b"},
 ]
 
 DATABASE_FILE = "feed_database.json"
@@ -250,11 +253,60 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
     time.sleep(8)
     return record
 
+def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
+    """Come elabora_voce ma senza sintesi/traduzione Groq: compone la voce
+    con le sole immagini trovate nella pagina dell'articolo."""
+    link = (link or "").strip()
+    titolo = (titolo or "Senza Titolo").strip()
+    item_id = f"{VERSIONE_CACHE}_{link or titolo}"
+
+    if item_id in db:
+        return db[item_id]
+
+    print(f"Elaborazione: {titolo[:40]}...", flush=True)
+
+    immagini = []
+    contenuto, _ = scarica_bypass(link) if link else (None, None)
+    if contenuto:
+        s = BeautifulSoup(contenuto, "html.parser")
+        for img in s.find_all("img"):
+            src = img.get("src") or img.get("data-src")
+            if not src: continue
+            src = urllib.parse.urljoin(link, src)
+            if src not in immagini:
+                immagini.append(src)
+            if len(immagini) >= limite_immagini: break
+
+    if immagini:
+        contenuto_html = "".join(
+            f'<div style="margin-bottom: 14px;"><img src="{i}" style="width: 100%; border-radius: 8px; display: block;" /></div>'
+            for i in immagini
+        )
+    else:
+        contenuto_html = "<p><em>Nessuna immagine trovata.</em></p>"
+
+    html = f"""<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: {f['colore']}; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: {f['nome']}</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>{f['categoria']}</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;">{contenuto_html}</div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid {f['colore']};"><a href="{link}" style="color: {f['colore']}; font-weight: 700;">Vedi originale su {f['nome']} &rarr;</a></div>
+</div>"""
+
+    record = {"id": item_id, "title": f"[{f['nome']}] {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
+    db[item_id] = record
+    time.sleep(2)
+    return record
+
 def main():
     db = carica_database()
     articoli = []
 
     for f in FONTI:
+        if f.get("tipo") == "immagini":
+            for titolo, link in recupera_articoli_pagina(f["url"], nome_fonte=f["nome"]):
+                articoli.append(elabora_voce_immagini(db, f, link, titolo))
+            continue
+
         if f.get("tipo") == "pagina":
             for titolo, link in recupera_articoli_pagina(f["url"], nome_fonte=f["nome"]):
                 articoli.append(elabora_voce(db, f, link, titolo))
