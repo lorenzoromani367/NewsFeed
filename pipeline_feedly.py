@@ -270,10 +270,22 @@ def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
     contenuto, _ = scarica_bypass(link) if link else (None, None)
     if contenuto:
         s = BeautifulSoup(contenuto, "html.parser")
-        for img in s.find_all("img"):
-            src = img.get("src") or img.get("data-src")
+        for tag in s.find_all(["img", "source"]):
+            src = None
+            for attr in ("data-src", "data-lazy-src", "src"):
+                val = tag.get(attr)
+                if val and not val.startswith("data:"):
+                    src = val
+                    break
+            if not src:
+                srcset = tag.get("srcset") or tag.get("data-srcset")
+                if srcset:
+                    candidati = [c.strip().split(" ")[0] for c in srcset.split(",") if c.strip()]
+                    candidati = [c for c in candidati if not c.startswith("data:")]
+                    if candidati: src = candidati[-1]  # l'ultima è di solito la risoluzione più alta
             if not src: continue
             src = urllib.parse.urljoin(link, src)
+            if "logo" in src.lower(): continue
             if src not in immagini:
                 immagini.append(src)
             if len(immagini) >= limite_immagini: break
