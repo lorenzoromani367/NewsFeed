@@ -266,9 +266,8 @@ def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
 
     print(f"Elaborazione: {titolo[:40]}...", flush=True)
 
-    immagini = []
-    contenuto, _ = scarica_bypass(link) if link else (None, None)
-    if contenuto:
+    def _estrai_da_html(contenuto):
+        trovate = []
         s = BeautifulSoup(contenuto, "html.parser")
         for tag in s.find_all(["img", "source"]):
             src = None
@@ -286,9 +285,35 @@ def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
             if not src: continue
             src = urllib.parse.urljoin(link, src)
             if "logo" in src.lower(): continue
-            if src not in immagini:
-                immagini.append(src)
-            if len(immagini) >= limite_immagini: break
+            if src not in trovate:
+                trovate.append(src)
+            if len(trovate) >= limite_immagini: break
+        return trovate
+
+    immagini = []
+    if link:
+        contenuto, _ = scarica_bypass(link)
+        if contenuto:
+            immagini = _estrai_da_html(contenuto)
+
+    if not immagini and link:
+        # Alcuni siti (es. Next.js con caricamento lato client) non mettono le
+        # immagini vere nell'HTML statico: Jina esegue un browser reale e le
+        # vede già renderizzate, restituendole come ![alt](url) nel markdown.
+        try:
+            res = requests.get(f"https://r.jina.ai/{link}", headers=HEADERS_JINA, timeout=20)
+            if res.status_code == 200 and len(res.text) > 200:
+                for u in re.findall(r'!\[[^\]]*\]\((https?://[^\s)]+)\)', res.text):
+                    if "logo" in u.lower(): continue
+                    if u not in immagini:
+                        immagini.append(u)
+                    if len(immagini) >= limite_immagini: break
+                if not immagini:
+                    print(f"    [JINA] {link} -> nessuna immagine riconosciuta", flush=True)
+            else:
+                print(f"    [JINA] {link} -> HTTP {res.status_code}", flush=True)
+        except Exception as e:
+            print(f"    [JINA] {link} -> {type(e).__name__}: {e}", flush=True)
 
     if immagini:
         contenuto_html = "".join(
