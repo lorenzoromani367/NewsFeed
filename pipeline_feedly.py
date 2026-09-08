@@ -136,18 +136,19 @@ def recupera_articoli_pagina(url, nome_fonte="", limite=2):
     def filtra_e_deduplica(coppie):
         visti, risultato = set(), []
         for testo, href in coppie:
+            testo = " ".join(testo.split())  # collassa newline/spazi multipli (es. righe markdown incollate)
             href = href.split("#")[0].rstrip("/")
             if not href or href in visti: continue
             if href == url.rstrip("/"): continue
             if urllib.parse.urlparse(href).netloc != dominio: continue
-            testo_norm = testo.strip().lower()
-            if len(testo.strip()) < 15 or testo.strip().startswith(("!", "[")): continue
+            testo_norm = testo.lower()
+            if len(testo) < 15 or testo.startswith(("!", "[")): continue
             if testo_norm == nome_fonte_norm: continue
             if any(k in testo_norm for k in TESTI_DA_IGNORARE): continue
             percorso = urllib.parse.urlparse(href).path
             if len(percorso.strip("/")) < 25: continue  # scarta link brevi/generici (menu, sezioni)
             visti.add(href)
-            risultato.append((testo.strip(), href))
+            risultato.append((testo, href))
             if len(risultato) >= limite: break
         return risultato
 
