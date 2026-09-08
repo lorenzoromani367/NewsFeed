@@ -324,14 +324,24 @@ def main():
             articoli.append(elabora_voce(db, f, link, titolo, testo_grezzo, img_url))
 
     salva_database(db)
-    
+
+    # Fonti diverse possono convergere sullo stesso link (fallback condivisi,
+    # o pagine che ripescano le stesse sezioni generiche di un sito): la
+    # cache in quel caso restituisce lo stesso record due volte. Deduplica
+    # per id prima di generare il feed.
+    visti_id, articoli_unici = set(), []
+    for a in articoli:
+        if a["id"] in visti_id: continue
+        visti_id.add(a["id"])
+        articoli_unici.append(a)
+
     fg = FeedGenerator()
     fg.title("Rassegna Personale Unificata")
     fg.link(href=FEED_SITE, rel="alternate")
     fg.description("Sintesi IA e proxy anti-blocco.")
     fg.language("it")
 
-    for item in sorted(articoli, key=lambda x: x.get("published", ""), reverse=True)[:30]:
+    for item in sorted(articoli_unici, key=lambda x: x.get("published", ""), reverse=True)[:30]:
         fe = fg.add_entry()
         fe.id(item["id"])
         fe.title(item["title"])
