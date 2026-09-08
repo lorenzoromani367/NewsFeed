@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss version="2.0">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>Rassegna Personale Unificata</title>
     <link>https://lorenzoromani367.github.io/NewsFeed/</link>
@@ -7,414 +7,411 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Tue, 08 Sep 2026 12:11:48 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 21:13:05 +0000</lastBuildDate>
     <item>
       <title>[Il Tascabile] L’illusione dei colori</title>
       <link>https://www.iltascabile.com/scienze/lillusione-colori/</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
     
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #059669; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: Il Tascabile&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Saggistica&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;Il celebre &lt;strong&gt;dressgate&lt;/strong&gt; del 2015, che ha fatto discutere milioni di persone su Facebook e Twitter, è stato più di un semplice scherzo: è stato un campanello d’allarme sulla nostra percezione dei colori. La foto, interpretata diversamente a seconda della luce e del cervello, ha messo in luce un problema evolutivo radicato: la nostra specie ha perso gran parte della capacità di distinguere i colori, un deficit che risale a milioni di anni fa.&lt;/p&gt;
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #059669; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Il Tascabile</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Saggistica</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Il celebre <strong>dressgate</strong> del 2015, che ha fatto discutere milioni di persone su Facebook e Twitter, è stato più di un semplice scherzo: è stato un campanello d’allarme sulla nostra percezione dei colori. La foto, interpretata diversamente a seconda della luce e del cervello, ha messo in luce un problema evolutivo radicato: la nostra specie ha perso gran parte della capacità di distinguere i colori, un deficit che risale a milioni di anni fa.</p>
 
-&lt;p&gt;La storia evolutiva dei mammiferi ci spiega perché la vista cromatica è così limitata. Dopo l’estinzione di massa tra Permiano e Triassico, i mammiferi si sono adattati a un mondo dominato da rettili notturni, sviluppando un &lt;strong&gt;collo di bottiglia notturno&lt;/strong&gt;. Questo ha favorito la perdita di coni e opsine, lasciando la maggior parte dei mammiferi dicromatica. Solo i primati, grazie alla necessità di distinguere verde e rosso in foreste ricche di frutti, hanno duplicato le opsine per ottenere la tricromia, ma questa evoluzione è stata incompleta in molte specie del Nuovo Mondo.&lt;/p&gt;
+<p>La storia evolutiva dei mammiferi ci spiega perché la vista cromatica è così limitata. Dopo l’estinzione di massa tra Permiano e Triassico, i mammiferi si sono adattati a un mondo dominato da rettili notturni, sviluppando un <strong>collo di bottiglia notturno</strong>. Questo ha favorito la perdita di coni e opsine, lasciando la maggior parte dei mammiferi dicromatica. Solo i primati, grazie alla necessità di distinguere verde e rosso in foreste ricche di frutti, hanno duplicato le opsine per ottenere la tricromia, ma questa evoluzione è stata incompleta in molte specie del Nuovo Mondo.</p>
 
-&lt;p&gt;Il risultato è una visione del colore che, sebbene migliorata rispetto ad altri mammiferi, resta ancora più ridotta rispetto a quella di uccelli, pesci e insetti. Le tecnologie moderne, come telecamere UV e progetti di ricerca su donne &lt;strong&gt;tetracromatiche&lt;/strong&gt;, stanno iniziando a colmare questo divario, ma la nostra percezione rimane intrinsecamente legata a un patrimonio evolutivo che ha privilegiato la sopravvivenza al buio piuttosto che la precisione cromatica.&lt;/p&gt;
+<p>Il risultato è una visione del colore che, sebbene migliorata rispetto ad altri mammiferi, resta ancora più ridotta rispetto a quella di uccelli, pesci e insetti. Le tecnologie moderne, come telecamere UV e progetti di ricerca su donne <strong>tetracromatiche</strong>, stanno iniziando a colmare questo divario, ma la nostra percezione rimane intrinsecamente legata a un patrimonio evolutivo che ha privilegiato la sopravvivenza al buio piuttosto che la precisione cromatica.</p>
 
-&lt;p&gt;In futuro, la comprensione dei meccanismi di percezione dei colori potrebbe rivoluzionare non solo la biologia comparata, ma anche la tecnologia visiva, la stampa e la comunicazione visiva. Se la nostra specie potesse evolvere o modificare i geni delle opsine, potremmo scoprire un nuovo modo di vedere il mondo, forse più ricco e più dettagliato di quello attuale.&lt;/p&gt;
+<p>In futuro, la comprensione dei meccanismi di percezione dei colori potrebbe rivoluzionare non solo la biologia comparata, ma anche la tecnologia visiva, la stampa e la comunicazione visiva. Se la nostra specie potesse evolvere o modificare i geni delle opsine, potremmo scoprire un nuovo modo di vedere il mondo, forse più ricco e più dettagliato di quello attuale.</p>
 
-&lt;ol&gt;
-&lt;li&gt;Il dressgate ha evidenziato la nostra limitata capacità cromatica.&lt;/li&gt;
-&lt;li&gt;Il “collo di bottiglia notturno” ha plasmato la dicromia nella maggior parte dei mammiferi.&lt;/li&gt;
-&lt;li&gt;I primati hanno evoluto la tricromia per distinguere verde e rosso in foreste.&lt;/li&gt;
-&lt;li&gt;Altri animali, come uccelli e insetti, percepiscono colori (incluso UV) che noi non vediamo.&lt;/li&gt;
-&lt;li&gt;La ricerca su donne tetracromatiche e tecnologie UV apre nuove prospettive per la percezione dei colori.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #059669;"&gt;&lt;a href="https://www.iltascabile.com/scienze/lillusione-colori/" style="color: #059669; font-weight: 700;"&gt;Leggi originale su Il Tascabile &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+<ol>
+<li>Il dressgate ha evidenziato la nostra limitata capacità cromatica.</li>
+<li>Il “collo di bottiglia notturno” ha plasmato la dicromia nella maggior parte dei mammiferi.</li>
+<li>I primati hanno evoluto la tricromia per distinguere verde e rosso in foreste.</li>
+<li>Altri animali, come uccelli e insetti, percepiscono colori (incluso UV) che noi non vediamo.</li>
+<li>La ricerca su donne tetracromatiche e tecnologie UV apre nuove prospettive per la percezione dei colori.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #059669;"><a href="https://www.iltascabile.com/scienze/lillusione-colori/" style="color: #059669; font-weight: 700;">Leggi originale su Il Tascabile &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://www.iltascabile.com/scienze/lillusione-colori/</guid>
     </item>
     <item>
       <title>[The Italian Review] VERSO LA FOCE, VERSO NOI</title>
       <link>https://www.theitalianreview.com/luigi-ghiri-e-gianni-celati-in-mostra-a-bologna/</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
     
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #4338ca; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: The Italian Review&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Critica&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;Il testo “Verso la foce, verso noi” si presenta come un omaggio poetico all’amicizia tra Luigi Ghirri e Gianni Celati, intrecciando la loro collaborazione con la memoria collettiva di un viaggio artistico che ha attraversato il panorama culturale italiano dal 1981 al 1991. L’autore, immerso nella mostra del Museo MamBo, utilizza la fotografia di Ghirri come metafora della percezione e della memoria, sottolineando come le immagini non siano solo rappresentazioni ma anche promesse di ritorno e di speranza. La narrazione si sviluppa in un flusso di pensieri che oscillano tra la contemplazione delle fotografie e la riflessione sul ruolo dell’arte come veicolo di continuità emotiva e culturale.&lt;/p&gt;
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #4338ca; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: The Italian Review</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Critica</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Il testo “Verso la foce, verso noi” si presenta come un omaggio poetico all’amicizia tra Luigi Ghirri e Gianni Celati, intrecciando la loro collaborazione con la memoria collettiva di un viaggio artistico che ha attraversato il panorama culturale italiano dal 1981 al 1991. L’autore, immerso nella mostra del Museo MamBo, utilizza la fotografia di Ghirri come metafora della percezione e della memoria, sottolineando come le immagini non siano solo rappresentazioni ma anche promesse di ritorno e di speranza. La narrazione si sviluppa in un flusso di pensieri che oscillano tra la contemplazione delle fotografie e la riflessione sul ruolo dell’arte come veicolo di continuità emotiva e culturale.</p>
 
-&lt;p&gt;La critica si concentra su tre elementi chiave: l’uso della fotografia come linguaggio di attesa e di ricostruzione, la dimensione poetica dell’amicizia artistica e la funzione narrativa del viaggio verso la foce come simbolo di ricerca e di ritorno. L’autore evidenzia come Ghirri, fotografando il quotidiano con un occhio attento ai confini dell’indefinito, abbia insegnato che la bellezza può essere trovata anche nelle vicinanze, mentre Celati, con la sua scrittura, ha trasformato quel viaggio in un poema collettivo che continua a vivere oltre la loro morte.&lt;/p&gt;
+<p>La critica si concentra su tre elementi chiave: l’uso della fotografia come linguaggio di attesa e di ricostruzione, la dimensione poetica dell’amicizia artistica e la funzione narrativa del viaggio verso la foce come simbolo di ricerca e di ritorno. L’autore evidenzia come Ghirri, fotografando il quotidiano con un occhio attento ai confini dell’indefinito, abbia insegnato che la bellezza può essere trovata anche nelle vicinanze, mentre Celati, con la sua scrittura, ha trasformato quel viaggio in un poema collettivo che continua a vivere oltre la loro morte.</p>
 
-&lt;p&gt;Il testo, pur ricco di riferimenti culturali e di dettagli evocativi, rischia di confondere il lettore con una narrazione troppo densa e poco strutturata. Una maggiore chiarezza nella distinzione tra le esperienze personali dell’autore e le opere di Ghirri e Celati avrebbe potuto rendere la lettura più accessibile. Inoltre, l’uso di citazioni e riferimenti a opere di altri artisti, seppur arricchente, appare talvolta dispersivo rispetto al filo conduttore principale.&lt;/p&gt;
+<p>Il testo, pur ricco di riferimenti culturali e di dettagli evocativi, rischia di confondere il lettore con una narrazione troppo densa e poco strutturata. Una maggiore chiarezza nella distinzione tra le esperienze personali dell’autore e le opere di Ghirri e Celati avrebbe potuto rendere la lettura più accessibile. Inoltre, l’uso di citazioni e riferimenti a opere di altri artisti, seppur arricchente, appare talvolta dispersivo rispetto al filo conduttore principale.</p>
 
-&lt;p&gt;In conclusione, l’articolo offre una riflessione intensa sull’importanza della memoria artistica e sull’amicizia come forza creativa. La sua forza risiede nella capacità di trasformare la fotografia e la scrittura in un dialogo intergenerazionale, ma la sua fragilità è la mancanza di una struttura narrativa più lineare che permetta al lettore di seguire con facilità il percorso emotivo proposto.&lt;/p&gt;
+<p>In conclusione, l’articolo offre una riflessione intensa sull’importanza della memoria artistica e sull’amicizia come forza creativa. La sua forza risiede nella capacità di trasformare la fotografia e la scrittura in un dialogo intergenerazionale, ma la sua fragilità è la mancanza di una struttura narrativa più lineare che permetta al lettore di seguire con facilità il percorso emotivo proposto.</p>
 
-&lt;ol&gt;
-&lt;li&gt;La fotografia di Ghirri come linguaggio di attesa e di ricostruzione.&lt;/li&gt;
-&lt;li&gt;La dimensione poetica dell’amicizia artistica tra Ghirri e Celati.&lt;/li&gt;
-&lt;li&gt;Il viaggio verso la foce come simbolo di ricerca, ritorno e continuità emotiva.&lt;/li&gt;
-&lt;li&gt;La necessità di una struttura narrativa più lineare per facilitare la comprensione.&lt;/li&gt;
-&lt;li&gt;Il potere della memoria artistica nel mantenere vivo il dialogo intergenerazionale.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #4338ca;"&gt;&lt;a href="https://www.theitalianreview.com/luigi-ghiri-e-gianni-celati-in-mostra-a-bologna/" style="color: #4338ca; font-weight: 700;"&gt;Leggi originale su The Italian Review &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+<ol>
+<li>La fotografia di Ghirri come linguaggio di attesa e di ricostruzione.</li>
+<li>La dimensione poetica dell’amicizia artistica tra Ghirri e Celati.</li>
+<li>Il viaggio verso la foce come simbolo di ricerca, ritorno e continuità emotiva.</li>
+<li>La necessità di una struttura narrativa più lineare per facilitare la comprensione.</li>
+<li>Il potere della memoria artistica nel mantenere vivo il dialogo intergenerazionale.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #4338ca;"><a href="https://www.theitalianreview.com/luigi-ghiri-e-gianni-celati-in-mostra-a-bologna/" style="color: #4338ca; font-weight: 700;">Leggi originale su The Italian Review &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://www.theitalianreview.com/luigi-ghiri-e-gianni-celati-in-mostra-a-bologna/</guid>
     </item>
     <item>
       <title>[The Italian Review] TRENT’ANNI SENZA SAPIENZA</title>
       <link>https://www.theitalianreview.com/trentanni-senza-goliarda-sapienza/</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
     
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #4338ca; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: The Italian Review&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Critica&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;Il brano si apre con un ricordo intimo delle conversazioni con due amiche, dove la lettura di &lt;em&gt;L’arte della gioia&lt;/em&gt; di Goliarda Sapienza diventa punto di riferimento per interrogarsi sul ruolo del sesso, della libertà e del privilegio sociale nelle vite femminili. L’autrice, che ha vissuto l’opera in un periodo di formazione, evidenzia come la protagonista Modesta si presenti come un personaggio scardinante, capace di spezzare i codici della tradizione catto‑borghese e di aprire spazi di libertà materiale e spirituale.&lt;/p&gt;
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #4338ca; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: The Italian Review</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Critica</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Il brano si apre con un ricordo intimo delle conversazioni con due amiche, dove la lettura di <em>L’arte della gioia</em> di Goliarda Sapienza diventa punto di riferimento per interrogarsi sul ruolo del sesso, della libertà e del privilegio sociale nelle vite femminili. L’autrice, che ha vissuto l’opera in un periodo di formazione, evidenzia come la protagonista Modesta si presenti come un personaggio scardinante, capace di spezzare i codici della tradizione catto‑borghese e di aprire spazi di libertà materiale e spirituale.</p>
 
-&lt;p&gt;Il testo si concentra poi sul rapporto ambivalente tra la letteratura e la crudeltà, illustrando come la narrazione di Modesta, con i suoi atti di violenza e desiderio, sia un esercizio di liberazione che sfida le strutture sociali e morali. L’autrice sottolinea l’importanza di riconoscere che l’esistenza è costruita da schemi organizzati che possono essere rifiutati, sostituiti o trasformati, un tema che si riflette nella resistenza di Modesta verso la morte e la rigenerazione.&lt;/p&gt;
+<p>Il testo si concentra poi sul rapporto ambivalente tra la letteratura e la crudeltà, illustrando come la narrazione di Modesta, con i suoi atti di violenza e desiderio, sia un esercizio di liberazione che sfida le strutture sociali e morali. L’autrice sottolinea l’importanza di riconoscere che l’esistenza è costruita da schemi organizzati che possono essere rifiutati, sostituiti o trasformati, un tema che si riflette nella resistenza di Modesta verso la morte e la rigenerazione.</p>
 
-&lt;p&gt;La pubblicazione dell’opera, avvenuta solo nel 1998, dopo vent'anni di rifiuto da parte delle case editrici italiane, testimonia la difficoltà di un romanzo che affronta la violenza, la sessualità e la ribellione femminile. L’autrice colloca l’opera in un contesto femminista degli anni ’70, dove la narrativa di donne borghesi si concentrava sul vissuto interno, mentre &lt;em&gt;L’arte della gioia&lt;/em&gt; rompe con questa tradizione, proponendo una prospettiva esterna e transgressiva.&lt;/p&gt;
+<p>La pubblicazione dell’opera, avvenuta solo nel 1998, dopo vent'anni di rifiuto da parte delle case editrici italiane, testimonia la difficoltà di un romanzo che affronta la violenza, la sessualità e la ribellione femminile. L’autrice colloca l’opera in un contesto femminista degli anni ’70, dove la narrativa di donne borghesi si concentrava sul vissuto interno, mentre <em>L’arte della gioia</em> rompe con questa tradizione, proponendo una prospettiva esterna e transgressiva.</p>
 
-&lt;p&gt;In conclusione, l’autrice riflette sul potere trasformativo della lettura, che permette di vedere l’esistenza come un campo di possibilità in cui le strutture sociali possono essere rielaborate. La sua analisi invita a considerare la letteratura non solo come un veicolo di narrazione, ma come un mezzo per interrogare e riformulare le norme culturali, soprattutto quando si tratta di donne e di desiderio.&lt;/p&gt;
+<p>In conclusione, l’autrice riflette sul potere trasformativo della lettura, che permette di vedere l’esistenza come un campo di possibilità in cui le strutture sociali possono essere rielaborate. La sua analisi invita a considerare la letteratura non solo come un veicolo di narrazione, ma come un mezzo per interrogare e riformulare le norme culturali, soprattutto quando si tratta di donne e di desiderio.</p>
 
-&lt;ol&gt;
-&lt;li&gt;Modesta come simbolo di ribellione contro le norme catto‑borghesi.&lt;/li&gt;
-&lt;li&gt;La rappresentazione cruda di violenza e desiderio come mezzo di liberazione.&lt;/li&gt;
-&lt;li&gt;La resistenza editoriale e la pubblicazione tardiva come riflesso della cultura dominante.&lt;/li&gt;
-&lt;li&gt;Il contributo dell’opera al dibattito femminista degli anni ’70.&lt;/li&gt;
-&lt;li&gt;Il potere trasformativo della lettura nella rielaborazione delle strutture sociali.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #4338ca;"&gt;&lt;a href="https://www.theitalianreview.com/trentanni-senza-goliarda-sapienza/" style="color: #4338ca; font-weight: 700;"&gt;Leggi originale su The Italian Review &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+<ol>
+<li>Modesta come simbolo di ribellione contro le norme catto‑borghesi.</li>
+<li>La rappresentazione cruda di violenza e desiderio come mezzo di liberazione.</li>
+<li>La resistenza editoriale e la pubblicazione tardiva come riflesso della cultura dominante.</li>
+<li>Il contributo dell’opera al dibattito femminista degli anni ’70.</li>
+<li>Il potere trasformativo della lettura nella rielaborazione delle strutture sociali.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #4338ca;"><a href="https://www.theitalianreview.com/trentanni-senza-goliarda-sapienza/" style="color: #4338ca; font-weight: 700;">Leggi originale su The Italian Review &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://www.theitalianreview.com/trentanni-senza-goliarda-sapienza/</guid>
     </item>
     <item>
       <title>[Valigia Blu] L’indifferenza russa che uccide i popoli: ricordando le due guerre cecene e riflettendo sull’invasione dell’Ucraina indipendente</title>
       <link>https://www.valigiablu.it/cecenia-ucraina-guerre-imperialismo-russia/</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
-    &lt;div style="margin-bottom: 20px;"&gt;&lt;img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #0284c7; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: Valigia Blu&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Geopolitica&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;Il testo si presenta come un monologo personale che, pur dichiarandosi “oggettivo”, è intriso di emozioni forti e di una visione critica della Russia post‑sovietica. L’autrice, cresciuta in una famiglia moscovita di ceto medio, descrive la libertà appena conquistata dopo la caduta dell’URSS e la successiva disillusione quando la stessa Russia si è trasformata in un aggressore nei confronti della Cecenia e dell’Ucraina. Il racconto si intreccia con testimonianze di guerra, propaganda e la continua indifferenza della società russa verso le vittime.&lt;/p&gt;
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="margin-bottom: 20px;"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/21a9.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #0284c7; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Valigia Blu</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Geopolitica</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Il testo si presenta come un monologo personale che, pur dichiarandosi “oggettivo”, è intriso di emozioni forti e di una visione critica della Russia post‑sovietica. L’autrice, cresciuta in una famiglia moscovita di ceto medio, descrive la libertà appena conquistata dopo la caduta dell’URSS e la successiva disillusione quando la stessa Russia si è trasformata in un aggressore nei confronti della Cecenia e dell’Ucraina. Il racconto si intreccia con testimonianze di guerra, propaganda e la continua indifferenza della società russa verso le vittime.</p>
 
-&lt;p&gt;Il filo conduttore è l’imperialismo russa, che si manifesta sia nella “prima guerra cecena” (1994‑2009) sia nell’invasione ucraina del 2014. In entrambe le occasioni la Federazione si presenta come difensore di un ordine “legittimo”, ma in realtà agisce per consolidare il proprio potere su territori periferici. La propaganda, dal Cremlino, dipinge i nemici come “terroristi” o “nazisti”, mentre i veri colpevoli sono nascosti dietro una narrativa di sicurezza nazionale.&lt;/p&gt;
+<p>Il filo conduttore è l’imperialismo russa, che si manifesta sia nella “prima guerra cecena” (1994‑2009) sia nell’invasione ucraina del 2014. In entrambe le occasioni la Federazione si presenta come difensore di un ordine “legittimo”, ma in realtà agisce per consolidare il proprio potere su territori periferici. La propaganda, dal Cremlino, dipinge i nemici come “terroristi” o “nazisti”, mentre i veri colpevoli sono nascosti dietro una narrativa di sicurezza nazionale.</p>
 
-&lt;p&gt;Un altro elemento cruciale è l’indifferenza collettiva. L’autrice sottolinea come la società russa, immersa nella vita quotidiana e nelle nuove libertà, abbia ignorato le sofferenze dei civili ceceni e ucraini. Questa apatia è alimentata da un’educazione mediatica che riduce la guerra a “blitzkrieg” e la “pace” a una forma di dittatura, facendo sì che la popolazione non percepisca la vera portata delle atrocità.&lt;/p&gt;
+<p>Un altro elemento cruciale è l’indifferenza collettiva. L’autrice sottolinea come la società russa, immersa nella vita quotidiana e nelle nuove libertà, abbia ignorato le sofferenze dei civili ceceni e ucraini. Questa apatia è alimentata da un’educazione mediatica che riduce la guerra a “blitzkrieg” e la “pace” a una forma di dittatura, facendo sì che la popolazione non percepisca la vera portata delle atrocità.</p>
 
-&lt;p&gt;In conclusione, l’autrice invita a riflettere sul fatto che la Russia post‑sovietica non ha ancora imparato la lezione delle guerre passate. Solo quando il valore della vita umana supererà l’indifferenza e la ricerca di potere, potrà emergere un vero senso di “pace” e di responsabilità verso i popoli colpiti.&lt;/p&gt;
+<p>In conclusione, l’autrice invita a riflettere sul fatto che la Russia post‑sovietica non ha ancora imparato la lezione delle guerre passate. Solo quando il valore della vita umana supererà l’indifferenza e la ricerca di potere, potrà emergere un vero senso di “pace” e di responsabilità verso i popoli colpiti.</p>
 
-&lt;ol&gt;
-&lt;li&gt;Il persistente spirito imperialistico della Federazione Russa, nonostante la caduta dell’Unione Sovietica.&lt;/li&gt;
-&lt;li&gt;La propaganda russa come strumento di manipolazione e di creazione di nemici ideologici.&lt;/li&gt;
-&lt;li&gt;L’indifferenza collettiva che consente la continuazione delle violenze senza resistenza pubblica.&lt;/li&gt;
-&lt;li&gt;La distorsione del concetto di “pace” in una giustificazione di dittatura e controllo totale.&lt;/li&gt;
-&lt;li&gt;La necessità di una trasformazione culturale che valorizzi la vita umana sopra gli interessi di potere.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #0284c7;"&gt;&lt;a href="https://www.valigiablu.it/cecenia-ucraina-guerre-imperialismo-russia/" style="color: #0284c7; font-weight: 700;"&gt;Leggi originale su Valigia Blu &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+<ol>
+<li>Il persistente spirito imperialistico della Federazione Russa, nonostante la caduta dell’Unione Sovietica.</li>
+<li>La propaganda russa come strumento di manipolazione e di creazione di nemici ideologici.</li>
+<li>L’indifferenza collettiva che consente la continuazione delle violenze senza resistenza pubblica.</li>
+<li>La distorsione del concetto di “pace” in una giustificazione di dittatura e controllo totale.</li>
+<li>La necessità di una trasformazione culturale che valorizzi la vita umana sopra gli interessi di potere.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #0284c7;"><a href="https://www.valigiablu.it/cecenia-ucraina-guerre-imperialismo-russia/" style="color: #0284c7; font-weight: 700;">Leggi originale su Valigia Blu &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://www.valigiablu.it/cecenia-ucraina-guerre-imperialismo-russia/</guid>
     </item>
     <item>
       <title>[IrpiMedia (Inchieste)] Contrasto alle Slapp, la legge (imperfetta) in onore di Daphne Caruana Galizia</title>
       <link>https://irpimedia.irpi.eu/contrasto-alle-slapp-la-legge-imperfetta-in-onore-di-daphne-caruana-galizia/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=contrasto-alle-slapp-la-legge-imperfetta-in-onore-di-daphne-caruana-galizia</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
-    &lt;div style="margin-bottom: 20px;"&gt;&lt;img src="https://www.facebook.com/tr?id=687106370171117&amp;ev=PageView&amp;noscript=1" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #dc2626; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: IrpiMedia (Inchieste)&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Inchiesta&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;&lt;strong&gt;Il contesto delle Slapp&lt;/strong&gt; – le cause strategiche contro la partecipazione pubblica, note come SLAPP (Strategic Lawsuits Against Public Participation), rappresentano una minaccia concreta alla libertà di stampa e alla democrazia. L’omicidio di Daphne Caruana Galizia a Malta ha fatto emergere la gravità di questo fenomeno, portando alla nascita di una campagna internazionale che ha culminato con la &lt;strong&gt;Direttiva “Legge Daphne”&lt;/strong&gt; dell’Unione Europea.&lt;/p&gt;
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="margin-bottom: 20px;"><img src="https://www.facebook.com/tr?id=687106370171117&ev=PageView&noscript=1" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #dc2626; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: IrpiMedia (Inchieste)</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Inchiesta</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Il contesto delle Slapp</strong> – le cause strategiche contro la partecipazione pubblica, note come SLAPP (Strategic Lawsuits Against Public Participation), rappresentano una minaccia concreta alla libertà di stampa e alla democrazia. L’omicidio di Daphne Caruana Galizia a Malta ha fatto emergere la gravità di questo fenomeno, portando alla nascita di una campagna internazionale che ha culminato con la <strong>Direttiva “Legge Daphne”</strong> dell’Unione Europea.</p>
 
-&lt;p&gt;La direttiva, adottata nel 2024, stabilisce tutele minime per chi subisce una SLAPP, tra cui la possibilità di ottenere un rapido rigetto della causa e la condanna del querelante a pagare le spese legali. Tuttavia, la sua applicazione è limitata ai casi transfrontalieri: le controversie nazionali rimangono spesso non tutelate, lasciando un vuoto che le ONG e le famiglie delle vittime devono colmare con azioni di lobbying e pressioni politiche.&lt;/p&gt;
+<p>La direttiva, adottata nel 2024, stabilisce tutele minime per chi subisce una SLAPP, tra cui la possibilità di ottenere un rapido rigetto della causa e la condanna del querelante a pagare le spese legali. Tuttavia, la sua applicazione è limitata ai casi transfrontalieri: le controversie nazionali rimangono spesso non tutelate, lasciando un vuoto che le ONG e le famiglie delle vittime devono colmare con azioni di lobbying e pressioni politiche.</p>
 
-&lt;p&gt;Nonostante l’obbligo di recepimento entro il 7 maggio 2026, molti Stati membri non hanno ancora tradotto la direttiva nelle proprie leggi, e alcuni hanno optato per soluzioni “minime” per evitare sanzioni. La Danimarca, per esempio, è esente per motivi storici, mentre Malta, paese di origine dell’omicidio, è stata criticata per la sua trasposizione insufficiente. Questa situazione evidenzia la necessità di un approccio più coerente e completo a livello europeo.&lt;/p&gt;
+<p>Nonostante l’obbligo di recepimento entro il 7 maggio 2026, molti Stati membri non hanno ancora tradotto la direttiva nelle proprie leggi, e alcuni hanno optato per soluzioni “minime” per evitare sanzioni. La Danimarca, per esempio, è esente per motivi storici, mentre Malta, paese di origine dell’omicidio, è stata criticata per la sua trasposizione insufficiente. Questa situazione evidenzia la necessità di un approccio più coerente e completo a livello europeo.</p>
 
-&lt;p&gt;In conclusione, la “Legge Daphne” è un passo fondamentale ma incompleto. La lotta contro le SLAPP richiede non solo normative vincolanti, ma anche un impegno costante da parte delle istituzioni, delle ONG e della società civile per garantire che la libertà di espressione non sia più un diritto fragile ma una realtà concreta e protetta.&lt;/p&gt;
+<p>In conclusione, la “Legge Daphne” è un passo fondamentale ma incompleto. La lotta contro le SLAPP richiede non solo normative vincolanti, ma anche un impegno costante da parte delle istituzioni, delle ONG e della società civile per garantire che la libertà di espressione non sia più un diritto fragile ma una realtà concreta e protetta.</p>
 
-&lt;ol&gt;
-&lt;li&gt;Definizione e impatto delle SLAPP sulla libertà di stampa.&lt;/li&gt;
-&lt;li&gt;La “Legge Daphne” e le sue tutele minime per i casi transfrontalieri.&lt;/li&gt;
-&lt;li&gt;Gap di implementazione: Stati membri con recepimento insufficiente o assente.&lt;/li&gt;
-&lt;li&gt;Ruolo delle ONG e delle famiglie nella pressione politica e nella diffusione della causa.&lt;/li&gt;
-&lt;li&gt;Necessità di un quadro normativo più ampio che includa anche le controversie nazionali.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #dc2626;"&gt;&lt;a href="https://irpimedia.irpi.eu/contrasto-alle-slapp-la-legge-imperfetta-in-onore-di-daphne-caruana-galizia/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=contrasto-alle-slapp-la-legge-imperfetta-in-onore-di-daphne-caruana-galizia" style="color: #dc2626; font-weight: 700;"&gt;Leggi originale su IrpiMedia (Inchieste) &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+<ol>
+<li>Definizione e impatto delle SLAPP sulla libertà di stampa.</li>
+<li>La “Legge Daphne” e le sue tutele minime per i casi transfrontalieri.</li>
+<li>Gap di implementazione: Stati membri con recepimento insufficiente o assente.</li>
+<li>Ruolo delle ONG e delle famiglie nella pressione politica e nella diffusione della causa.</li>
+<li>Necessità di un quadro normativo più ampio che includa anche le controversie nazionali.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #dc2626;"><a href="https://irpimedia.irpi.eu/contrasto-alle-slapp-la-legge-imperfetta-in-onore-di-daphne-caruana-galizia/?utm_source=rss&utm_medium=rss&utm_campaign=contrasto-alle-slapp-la-legge-imperfetta-in-onore-di-daphne-caruana-galizia" style="color: #dc2626; font-weight: 700;">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://irpimedia.irpi.eu/contrasto-alle-slapp-la-legge-imperfetta-in-onore-di-daphne-caruana-galizia/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=contrasto-alle-slapp-la-legge-imperfetta-in-onore-di-daphne-caruana-galizia</guid>
-    </item>
-    <item>
-      <title>[IrpiMedia (Inchieste)] Newsroom – Droni contro Mosca: la strategia ucraina e la guerra ibrida in Europa</title>
-      <link>https://irpimedia.irpi.eu/newsroom-droni-contro-mosca-strategia-ucraina-e-guerra-ibrida-in-europa/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=newsroom-droni-contro-mosca-strategia-ucraina-e-guerra-ibrida-in-europa</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
-    &lt;div style="margin-bottom: 20px;"&gt;&lt;img src="https://www.facebook.com/tr?id=687106370171117&amp;ev=PageView&amp;noscript=1" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #dc2626; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: IrpiMedia (Inchieste)&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Inchiesta&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;Il reportage di IrpiMedia mette in luce come la strategia ucraina di droni a medio e lungo raggio stia trasformando la guerra in un conflitto ibrido, con ripercussioni che vanno oltre il fronte orientale: infrastrutture critiche, crisi umanitarie e tensioni geopolitiche in tutta Europa. La narrazione, tuttavia, rischia di semplificare la complessità del conflitto, riducendolo a una serie di attacchi tecnologici e a una richiesta di aiuti economici, senza approfondire le dinamiche interne di Kiev, le motivazioni russe o le implicazioni per la sicurezza europea.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;La dipendenza crescente di Ucraina da droni come arma principale, con impatti devastanti su infrastrutture strategiche.&lt;/li&gt;
-&lt;li&gt;L’effetto isolante sulla Crimea e la sua conseguente vulnerabilità energetica.&lt;/li&gt;
-&lt;li&gt;Il ruolo degli attacchi ibridi in Europa, esemplificato dal caso dei droni esplosivi a Lipsia.&lt;/li&gt;
-&lt;li&gt;Le difficoltà economiche di Kiev e la richiesta di 23 miliardi di euro all’UE.&lt;/li&gt;
-&lt;li&gt;La necessità di un’analisi più equilibrata che includa le motivazioni e le conseguenze per tutte le parti coinvolte.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #dc2626;"&gt;&lt;a href="https://irpimedia.irpi.eu/newsroom-droni-contro-mosca-strategia-ucraina-e-guerra-ibrida-in-europa/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=newsroom-droni-contro-mosca-strategia-ucraina-e-guerra-ibrida-in-europa" style="color: #dc2626; font-weight: 700;"&gt;Leggi originale su IrpiMedia (Inchieste) &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
-      <guid isPermaLink="false">v18_https://irpimedia.irpi.eu/newsroom-droni-contro-mosca-strategia-ucraina-e-guerra-ibrida-in-europa/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=newsroom-droni-contro-mosca-strategia-ucraina-e-guerra-ibrida-in-europa</guid>
     </item>
     <item>
       <title>[1000 Words] Between pose and presence: on Farren van Wyk’s Mixedness is My Mythology</title>
       <link>https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
-    &lt;div style="margin-bottom: 20px;"&gt;&lt;img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2666.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #d97706; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: 1000 Words&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Fotografia&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;Farren van Wyk inaugura la sua prima mostra solista al Fotomuseum Den Haag con “Mixedness is My Mythology”, un progetto che porta la fotocamera sul territorio più intimo della sua famiglia, intrecciandolo con le storie visive dell’antropologia, della ritrattistica e della rappresentazione coloniale. Nata da madre sudafricana e padre olandese, la fotografa è stata classificata come “coloured” prima di trasferirsi nei Paesi Bassi a sei anni; la serie, realizzata sul cortile della fattoria di Putten con i genitori e i fratelli, esplora come l’identità si costruisca attraverso posa, performance e l’atto stesso della rappresentazione.&lt;/p&gt;
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="margin-bottom: 20px;"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2666.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #d97706; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: 1000 Words</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Fotografia</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Farren van Wyk inaugura la sua prima mostra solista al Fotomuseum Den Haag con “Mixedness is My Mythology”, un progetto che porta la fotocamera sul territorio più intimo della sua famiglia, intrecciandolo con le storie visive dell’antropologia, della ritrattistica e della rappresentazione coloniale. Nata da madre sudafricana e padre olandese, la fotografa è stata classificata come “coloured” prima di trasferirsi nei Paesi Bassi a sei anni; la serie, realizzata sul cortile della fattoria di Putten con i genitori e i fratelli, esplora come l’identità si costruisca attraverso posa, performance e l’atto stesso della rappresentazione.</p>
 
-&lt;p&gt;Le immagini, in bianco e nero, sono meticolosamente orchestrate: pose pensate, sguardi neutri e composizioni che oscillano tra l’apparente naturalezza e la chiaramente arrangiata intimità. Questa tensione tra “essere” e “essere mostrati” mette in luce la partecipazione attiva dei soggetti nella loro visibilità, lasciando però aperti i limiti di quel controllo. Van Wyk riprende i schemi della fotografia etnografica, ma li sovverte con abiti contemporanei e posture rilassate, creando un dialogo tra passato e presente, tra oggettività e costruzione.&lt;/p&gt;
+<p>Le immagini, in bianco e nero, sono meticolosamente orchestrate: pose pensate, sguardi neutri e composizioni che oscillano tra l’apparente naturalezza e la chiaramente arrangiata intimità. Questa tensione tra “essere” e “essere mostrati” mette in luce la partecipazione attiva dei soggetti nella loro visibilità, lasciando però aperti i limiti di quel controllo. Van Wyk riprende i schemi della fotografia etnografica, ma li sovverte con abiti contemporanei e posture rilassate, creando un dialogo tra passato e presente, tra oggettività e costruzione.</p>
 
-&lt;p&gt;Il tema della “mixedness” si sviluppa anche nella scelta dei titoli, che alternano riferimenti di parentela a riferimenti culturali, teorici e mitologici. In “Our Anthropological Golden Era” la famiglia è disposta in modo tipologico, mentre in “The Whole Picture” i fratelli si presentano quasi eroici, ma la composizione rimane troppo curata per trasmettere una verità completa. L’opera “Home” rompe la rigidità con un sorriso di Benjamin e un riflesso di Van Wyk che si occupa della fotocamera, suggerendo che l’identità si forma attraverso iter di ripetizione e di interazione con l’obiettivo.&lt;/p&gt;
+<p>Il tema della “mixedness” si sviluppa anche nella scelta dei titoli, che alternano riferimenti di parentela a riferimenti culturali, teorici e mitologici. In “Our Anthropological Golden Era” la famiglia è disposta in modo tipologico, mentre in “The Whole Picture” i fratelli si presentano quasi eroici, ma la composizione rimane troppo curata per trasmettere una verità completa. L’opera “Home” rompe la rigidità con un sorriso di Benjamin e un riflesso di Van Wyk che si occupa della fotocamera, suggerendo che l’identità si forma attraverso iter di ripetizione e di interazione con l’obiettivo.</p>
 
-&lt;p&gt;Il bianco e nero, oltre a enfatizzare forma e contrasto, sottolinea l’ambiguità della “mixedness”: la mancanza di colore non neutralizza la diversità, ma spinge lo spettatore a concentrarsi sulla struttura e sul peso culturale dell’immagine. La mostra, pur inserita in un paesaggio rurale olandese, si presenta come un laboratorio di visibilità, dove la famiglia non solo documenta la propria esistenza tra Sudafrica e Paesi Bassi, ma la rende visibile attraverso una lente critica e collaborativa.&lt;/p&gt;
+<p>Il bianco e nero, oltre a enfatizzare forma e contrasto, sottolinea l’ambiguità della “mixedness”: la mancanza di colore non neutralizza la diversità, ma spinge lo spettatore a concentrarsi sulla struttura e sul peso culturale dell’immagine. La mostra, pur inserita in un paesaggio rurale olandese, si presenta come un laboratorio di visibilità, dove la famiglia non solo documenta la propria esistenza tra Sudafrica e Paesi Bassi, ma la rende visibile attraverso una lente critica e collaborativa.</p>
 
-&lt;ol&gt;
-&lt;li&gt;Uso della fotografia analogica per interrogare l’identità e la rappresentazione.&lt;/li&gt;
-&lt;li&gt;Tensione costante tra posa naturale e composizione curata, evidenziando la costruzione della visibilità.&lt;/li&gt;
-&lt;li&gt;Riferimenti coloniali e antropologici che vengono sovvertiti con elementi contemporanei.&lt;/li&gt;
-&lt;li&gt;Collaborazione familiare che trasforma la documentazione in una performance condivisa.&lt;/li&gt;
-&lt;li&gt;Bianco e nero che accentua forma, contrasto e il peso culturale delle immagini.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #d97706;"&gt;&lt;a href="https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/" style="color: #d97706; font-weight: 700;"&gt;Leggi originale su 1000 Words &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+<ol>
+<li>Uso della fotografia analogica per interrogare l’identità e la rappresentazione.</li>
+<li>Tensione costante tra posa naturale e composizione curata, evidenziando la costruzione della visibilità.</li>
+<li>Riferimenti coloniali e antropologici che vengono sovvertiti con elementi contemporanei.</li>
+<li>Collaborazione familiare che trasforma la documentazione in una performance condivisa.</li>
+<li>Bianco e nero che accentua forma, contrasto e il peso culturale delle immagini.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #d97706;"><a href="https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/" style="color: #d97706; font-weight: 700;">Leggi originale su 1000 Words &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://1000wordsmag.com/between-pose-and-presence-on-farren-van-wyks-mixedness-is-my-mythology/</guid>
     </item>
     <item>
       <title>[1000 Words] The ethics of looking at a mother</title>
       <link>https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
-    &lt;div style="margin-bottom: 20px;"&gt;&lt;img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2666.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #d97706; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: 1000 Words&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Fotografia&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;&lt;strong&gt;Introduzione&lt;/strong&gt;&lt;br&gt;La mostra &lt;em&gt;The Great Room&lt;/em&gt; di Katherine Hubbard, inaugurata alla Secession di Vienna, si presenta come un moderno classico che sfida le convenzioni della fotografia documentaria. Attraverso una serie di immagini in bianco e nero e stampe di contatto senza fotocamera, Hubbard esplora la complessità delle relazioni madre-figlia, la perdita di identità e la difficoltà di rendere pubblica la sofferenza.&lt;/p&gt;
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="margin-bottom: 20px;"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/2666.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #d97706; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: 1000 Words</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Fotografia</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Introduzione</strong><br>La mostra <em>The Great Room</em> di Katherine Hubbard, inaugurata alla Secession di Vienna, si presenta come un moderno classico che sfida le convenzioni della fotografia documentaria. Attraverso una serie di immagini in bianco e nero e stampe di contatto senza fotocamera, Hubbard esplora la complessità delle relazioni madre-figlia, la perdita di identità e la difficoltà di rendere pubblica la sofferenza.</p>
 
-&lt;p&gt;&lt;strong&gt;Analisi della mostra&lt;/strong&gt;&lt;br&gt;L’opera si articola in due serie: fotografie di grande formato scattate nella casa di Philadelphia di Antonette Berger, e stampe di contatto in cui la madre è pressata direttamente sul foglio fotografico. Le prime mostrano la madre e la figlia in scenari quotidiani, mentre le seconde riducono la distanza tra soggetto e osservatore, trasformando la pelle in un contatto tangibile con il supporto fotografico. Hubbard inserisce specchi e una parete divisoria, elementi che frammentano lo spazio e riflettono la progressiva perdita cognitiva di Berger.&lt;/p&gt;
+<p><strong>Analisi della mostra</strong><br>L’opera si articola in due serie: fotografie di grande formato scattate nella casa di Philadelphia di Antonette Berger, e stampe di contatto in cui la madre è pressata direttamente sul foglio fotografico. Le prime mostrano la madre e la figlia in scenari quotidiani, mentre le seconde riducono la distanza tra soggetto e osservatore, trasformando la pelle in un contatto tangibile con il supporto fotografico. Hubbard inserisce specchi e una parete divisoria, elementi che frammentano lo spazio e riflettono la progressiva perdita cognitiva di Berger.</p>
 
-&lt;p&gt;&lt;strong&gt;Etica e consentimento&lt;/strong&gt;&lt;br&gt;Il tema centrale è il consenso: può una donna con demenza decidere di essere fotografata in stato di nudità? Hubbard risponde con una “homeopatia visiva”, amplificando l’inconforto anziché attenuarlo. Quando la madre non è più in grado di mantenere i rituali fotografici, l’opera si interrompe, evidenziando la necessità di un approccio etico dinamico. La mostra solleva la questione di chi detiene il potere della fotocamera e di come la maternità possa essere riformulata in termini queer, dove il ruolo di osservatore si alterna tra madre e figlia.&lt;/p&gt;
+<p><strong>Etica e consentimento</strong><br>Il tema centrale è il consenso: può una donna con demenza decidere di essere fotografata in stato di nudità? Hubbard risponde con una “homeopatia visiva”, amplificando l’inconforto anziché attenuarlo. Quando la madre non è più in grado di mantenere i rituali fotografici, l’opera si interrompe, evidenziando la necessità di un approccio etico dinamico. La mostra solleva la questione di chi detiene il potere della fotocamera e di come la maternità possa essere riformulata in termini queer, dove il ruolo di osservatore si alterna tra madre e figlia.</p>
 
-&lt;p&gt;&lt;strong&gt;Conclusione&lt;/strong&gt;&lt;br&gt;La mostra di Hubbard non è solo un documentario sulla perdita; è un dialogo visivo che mette in discussione le norme del potere e del consenso. La sua scelta di mantenere la propria presenza nella cornice sfida la visione passiva della madre, trasformando la fotografia in un atto di resistenza e di amore non giudicante.&lt;/p&gt;
+<p><strong>Conclusione</strong><br>La mostra di Hubbard non è solo un documentario sulla perdita; è un dialogo visivo che mette in discussione le norme del potere e del consenso. La sua scelta di mantenere la propria presenza nella cornice sfida la visione passiva della madre, trasformando la fotografia in un atto di resistenza e di amore non giudicante.</p>
 
-&lt;ol&gt;
-&lt;li&gt;Uso di specchi e pareti per frammentare lo spazio e riflettere la perdita cognitiva.&lt;/li&gt;
-&lt;li&gt;Stampe di contatto che eliminano la distanza tra soggetto e osservatore.&lt;/li&gt;
-&lt;li&gt;Approccio etico “homeopatico” che amplifica l’inconforto anziché attenuarlo.&lt;/li&gt;
-&lt;li&gt;Interruzione dell’opera quando la madre non può più partecipare ai rituali fotografici.&lt;/li&gt;
-&lt;li&gt;Riformulazione della maternità in termini queer, con ruoli di osservatore alternati.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #d97706;"&gt;&lt;a href="https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/" style="color: #d97706; font-weight: 700;"&gt;Leggi originale su 1000 Words &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+<ol>
+<li>Uso di specchi e pareti per frammentare lo spazio e riflettere la perdita cognitiva.</li>
+<li>Stampe di contatto che eliminano la distanza tra soggetto e osservatore.</li>
+<li>Approccio etico “homeopatico” che amplifica l’inconforto anziché attenuarlo.</li>
+<li>Interruzione dell’opera quando la madre non può più partecipare ai rituali fotografici.</li>
+<li>Riformulazione della maternità in termini queer, con ruoli di osservatore alternati.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #d97706;"><a href="https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/" style="color: #d97706; font-weight: 700;">Leggi originale su 1000 Words &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://1000wordsmag.com/the-ethics-of-looking-at-a-mother/</guid>
     </item>
     <item>
       <title>[Il Tascabile] Fare classe</title>
       <link>https://www.iltascabile.com/societa/fare-classe/</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
     
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #059669; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: Il Tascabile&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Saggistica&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;&lt;strong&gt;“Fare classe”&lt;/strong&gt; è un saggio che si propone di riconsiderare la nozione di classe in un contesto contemporaneo, dove le identità di genere, di etnia e di professione si intrecciano con le dinamiche economiche e culturali. L’autore, attraverso un’analisi di testi della collana &lt;em&gt;Quanti&lt;/em&gt; di Einaudi, mette in luce come la classe non sia più un semplice etichetta di appartenenza, ma un processo di costruzione collettiva che si manifesta soprattutto nella capacità di organizzarsi per trasformare le condizioni di lavoro e di vita. Il testo si articola in quattro paragrafi critici che esplorano i punti di forza e le limitazioni di questa prospettiva.&lt;/p&gt;
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #059669; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Il Tascabile</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Saggistica</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>“Fare classe”</strong> è un saggio che si propone di riconsiderare la nozione di classe in un contesto contemporaneo, dove le identità di genere, di etnia e di professione si intrecciano con le dinamiche economiche e culturali. L’autore, attraverso un’analisi di testi della collana <em>Quanti</em> di Einaudi, mette in luce come la classe non sia più un semplice etichetta di appartenenza, ma un processo di costruzione collettiva che si manifesta soprattutto nella capacità di organizzarsi per trasformare le condizioni di lavoro e di vita. Il testo si articola in quattro paragrafi critici che esplorano i punti di forza e le limitazioni di questa prospettiva.</p>
 
-&lt;p&gt;Il primo paragrafo si concentra sul ruolo della classe come &lt;strong&gt;strumento di riconoscimento e di azione&lt;/strong&gt;. L’autore evidenzia come le iniziative come lo sciopero generale della cultura dimostrino che la solidarietà può emergere anche tra gruppi con background diversi, senza la necessità di un’identità di classe condivisa. Tuttavia, la mancanza di un &lt;em&gt;spazio teorico comune&lt;/em&gt; tra gli autori della collana rischia di diluire l’impatto di questa visione, rendendo difficile la costruzione di un movimento unificato.&lt;/p&gt;
+<p>Il primo paragrafo si concentra sul ruolo della classe come <strong>strumento di riconoscimento e di azione</strong>. L’autore evidenzia come le iniziative come lo sciopero generale della cultura dimostrino che la solidarietà può emergere anche tra gruppi con background diversi, senza la necessità di un’identità di classe condivisa. Tuttavia, la mancanza di un <em>spazio teorico comune</em> tra gli autori della collana rischia di diluire l’impatto di questa visione, rendendo difficile la costruzione di un movimento unificato.</p>
 
-&lt;p&gt;Il secondo paragrafo analizza la &lt;strong&gt;tensione tra teoria e pratica&lt;/strong&gt; nei contributi di Muni, Pacifico e Piacenza. Muni propone una lettura della classe come ferita quotidiana, mentre Pacifico sottolinea la difficoltà di segmentare la povertà lavorativa in categorie rigide. Piacenza, invece, mette in luce la fragilità dell’identità collettiva quando si basa su esperienze personali. Queste prospettive, seppur complementari, evidenziano la necessità di un approccio più integrato che unisca l’analisi sociologica alla pratica organizzativa.&lt;/p&gt;
+<p>Il secondo paragrafo analizza la <strong>tensione tra teoria e pratica</strong> nei contributi di Muni, Pacifico e Piacenza. Muni propone una lettura della classe come ferita quotidiana, mentre Pacifico sottolinea la difficoltà di segmentare la povertà lavorativa in categorie rigide. Piacenza, invece, mette in luce la fragilità dell’identità collettiva quando si basa su esperienze personali. Queste prospettive, seppur complementari, evidenziano la necessità di un approccio più integrato che unisca l’analisi sociologica alla pratica organizzativa.</p>
 
-&lt;p&gt;Il terzo paragrafo si focalizza sulla &lt;strong&gt;necessità di organizzazione&lt;/strong&gt; come elemento chiave per trasformare la classe in un potere d’azione. L’autore sostiene che la mera dichiarazione di appartenenza non basta: è l’organizzazione sul posto di lavoro, la costruzione di piattaforme comuni e la capacità di trasformare le condizioni economiche in azioni concrete che determinano il successo di un movimento. In questo senso, la classe diventa un &lt;em&gt;processo dinamico&lt;/em&gt; piuttosto che una categoria statica.&lt;/p&gt;
+<p>Il terzo paragrafo si focalizza sulla <strong>necessità di organizzazione</strong> come elemento chiave per trasformare la classe in un potere d’azione. L’autore sostiene che la mera dichiarazione di appartenenza non basta: è l’organizzazione sul posto di lavoro, la costruzione di piattaforme comuni e la capacità di trasformare le condizioni economiche in azioni concrete che determinano il successo di un movimento. In questo senso, la classe diventa un <em>processo dinamico</em> piuttosto che una categoria statica.</p>
 
-&lt;p&gt;Infine, il quarto paragrafo propone una &lt;strong&gt;riflessione sul futuro della classe&lt;/strong&gt; in un mondo caratterizzato da identitarismi e divide-et-impera. L’autore invita a guardare oltre le identità individuali, a costruire una &lt;em&gt;coscienza collettiva&lt;/em&gt; che possa affrontare le sfide del capitalismo contemporaneo. La visione è ambiziosa, ma richiede un impegno costante verso la costruzione di strutture organizzative solide e inclusive.&lt;/p&gt;
+<p>Infine, il quarto paragrafo propone una <strong>riflessione sul futuro della classe</strong> in un mondo caratterizzato da identitarismi e divide-et-impera. L’autore invita a guardare oltre le identità individuali, a costruire una <em>coscienza collettiva</em> che possa affrontare le sfide del capitalismo contemporaneo. La visione è ambiziosa, ma richiede un impegno costante verso la costruzione di strutture organizzative solide e inclusive.</p>
 
-&lt;ol&gt;
-&lt;li&gt;La classe è più un processo di costruzione collettiva che un’etichetta di appartenenza.&lt;/li&gt;
-&lt;li&gt;La mancanza di un &lt;em&gt;spazio teorico comune&lt;/em&gt; tra gli autori può limitare l’impatto delle iniziative.&lt;/li&gt;
-&lt;li&gt;La teoria e la pratica devono essere integrate per creare un movimento unificato.&lt;/li&gt;
-&lt;li&gt;L’organizzazione sul posto di lavoro è essenziale per trasformare la classe in potere d’azione.&lt;/li&gt;
-&lt;li&gt;Il futuro della classe richiede una coscienza collettiva che superi gli identitarismi individuali.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #059669;"&gt;&lt;a href="https://www.iltascabile.com/societa/fare-classe/" style="color: #059669; font-weight: 700;"&gt;Leggi originale su Il Tascabile &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+<ol>
+<li>La classe è più un processo di costruzione collettiva che un’etichetta di appartenenza.</li>
+<li>La mancanza di un <em>spazio teorico comune</em> tra gli autori può limitare l’impatto delle iniziative.</li>
+<li>La teoria e la pratica devono essere integrate per creare un movimento unificato.</li>
+<li>L’organizzazione sul posto di lavoro è essenziale per trasformare la classe in potere d’azione.</li>
+<li>Il futuro della classe richiede una coscienza collettiva che superi gli identitarismi individuali.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #059669;"><a href="https://www.iltascabile.com/societa/fare-classe/" style="color: #059669; font-weight: 700;">Leggi originale su Il Tascabile &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://www.iltascabile.com/societa/fare-classe/</guid>
     </item>
     <item>
       <title>[Valigia Blu] Le ombre cinesi di cui si parla poco</title>
       <link>https://www.valigiablu.it/economia-cina-esportazioni-consumi-interni-ombre/</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
-    &lt;div style="margin-bottom: 20px;"&gt;&lt;img src="https://www.valigiablu.it/wp-content/uploads/2026/09/Cina-PIL-1024x887.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #0284c7; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: Valigia Blu&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Geopolitica&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;&lt;strong&gt;La Cina come superpotenza economica&lt;/strong&gt; ha consolidato la sua posizione grazie a riforme di Deng e al modello di Socialismo di Mercato di Xi. L’export, in particolare nei settori green e tecnologici, ha garantito una crescita del PIL del 5 % nel 2025, ma la dipendenza dalle esportazioni rimane un punto di vulnerabilità. La strategia “Made in China 2025” punta a ridurre la dipendenza da fornitori esteri e a rafforzare l’innovazione, ma l’equilibrio tra mercato interno e export è ancora fragile.&lt;/p&gt;
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="margin-bottom: 20px;"><img src="https://www.valigiablu.it/wp-content/uploads/2026/09/Cina-PIL-1024x887.png" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #0284c7; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Valigia Blu</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Geopolitica</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>La Cina come superpotenza economica</strong> ha consolidato la sua posizione grazie a riforme di Deng e al modello di Socialismo di Mercato di Xi. L’export, in particolare nei settori green e tecnologici, ha garantito una crescita del PIL del 5 % nel 2025, ma la dipendenza dalle esportazioni rimane un punto di vulnerabilità. La strategia “Made in China 2025” punta a ridurre la dipendenza da fornitori esteri e a rafforzare l’innovazione, ma l’equilibrio tra mercato interno e export è ancora fragile.</p>
 
-&lt;p&gt;&lt;strong&gt;Il mercato interno in crisi&lt;/strong&gt; si manifesta in consumi deboli, alta propensione al risparmio e una crescita degli investimenti in attività fisse che contrasta con la contrazione del settore immobiliare. Il tasso di disoccupazione urbana è salito al 5,2 % e la domanda interna rappresenta meno del 40 % del PIL, lontano dalla media OECD di quasi il 60 %. Questa debolezza interna rende la Cina vulnerabile a shock esterni e a politiche protezionistiche.&lt;/p&gt;
+<p><strong>Il mercato interno in crisi</strong> si manifesta in consumi deboli, alta propensione al risparmio e una crescita degli investimenti in attività fisse che contrasta con la contrazione del settore immobiliare. Il tasso di disoccupazione urbana è salito al 5,2 % e la domanda interna rappresenta meno del 40 % del PIL, lontano dalla media OECD di quasi il 60 %. Questa debolezza interna rende la Cina vulnerabile a shock esterni e a politiche protezionistiche.</p>
 
-&lt;p&gt;&lt;strong&gt;Le raccomandazioni dell’IMF&lt;/strong&gt; prevedono una politica macroeconomica più espansiva, con incentivi fiscali, una politica monetaria accomodante e un tasso di cambio più flessibile. Si suggerisce inoltre di ridurre la spesa pubblica in politiche industriali, concentrandosi su welfare e aiuti alle famiglie per stimolare la domanda aggregata. Tuttavia, questa transizione rischia di indebolire il modello di sviluppo che ha permesso la crescita cinese.&lt;/p&gt;
+<p><strong>Le raccomandazioni dell’IMF</strong> prevedono una politica macroeconomica più espansiva, con incentivi fiscali, una politica monetaria accomodante e un tasso di cambio più flessibile. Si suggerisce inoltre di ridurre la spesa pubblica in politiche industriali, concentrandosi su welfare e aiuti alle famiglie per stimolare la domanda aggregata. Tuttavia, questa transizione rischia di indebolire il modello di sviluppo che ha permesso la crescita cinese.</p>
 
-&lt;p&gt;&lt;strong&gt;L’equilibrio da trovare&lt;/strong&gt; è quello tra un mercato interno più forte e la competitività delle esportazioni. La Cina deve gestire la dipendenza dal dollaro e le tensioni geopolitiche, senza sacrificare la sua capacità di innovazione e la sua posizione dominante nella catena di approvvigionamento globale.&lt;/p&gt;
+<p><strong>L’equilibrio da trovare</strong> è quello tra un mercato interno più forte e la competitività delle esportazioni. La Cina deve gestire la dipendenza dal dollaro e le tensioni geopolitiche, senza sacrificare la sua capacità di innovazione e la sua posizione dominante nella catena di approvvigionamento globale.</p>
 
-&lt;ol&gt;
-&lt;li&gt;Export dominante ma vulnerabile a shock esterni.&lt;/li&gt;
-&lt;li&gt;Domanda interna debole e crescita degli investimenti in attività fisse in contraddizione con il settore immobiliare.&lt;/li&gt;
-&lt;li&gt;IMF propone politiche espansive e riduzione della spesa industriale statale.&lt;/li&gt;
-&lt;li&gt;Necessità di bilanciare crescita interna con competitività globale.&lt;/li&gt;
-&lt;li&gt;Rischio di indebolimento del modello di sviluppo cinese se si riduce la dipendenza dallo stato.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #0284c7;"&gt;&lt;a href="https://www.valigiablu.it/economia-cina-esportazioni-consumi-interni-ombre/" style="color: #0284c7; font-weight: 700;"&gt;Leggi originale su Valigia Blu &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+<ol>
+<li>Export dominante ma vulnerabile a shock esterni.</li>
+<li>Domanda interna debole e crescita degli investimenti in attività fisse in contraddizione con il settore immobiliare.</li>
+<li>IMF propone politiche espansive e riduzione della spesa industriale statale.</li>
+<li>Necessità di bilanciare crescita interna con competitività globale.</li>
+<li>Rischio di indebolimento del modello di sviluppo cinese se si riduce la dipendenza dallo stato.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #0284c7;"><a href="https://www.valigiablu.it/economia-cina-esportazioni-consumi-interni-ombre/" style="color: #0284c7; font-weight: 700;">Leggi originale su Valigia Blu &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://www.valigiablu.it/economia-cina-esportazioni-consumi-interni-ombre/</guid>
     </item>
     <item>
       <title>[ArtReview] Gabriele Stötzer Turning the Trap Around</title>
       <link>https://artreview.com/gabriele-stotzer-turning-the-trap-around</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
-    &lt;div style="margin-bottom: 20px;"&gt;&lt;img src="https://backend.artreview.com/wp-content/uploads/2026/09/Website-Menu-scaled.jpg" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #7c3aed; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: ArtReview&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Critica d'Arte&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;&lt;strong&gt;Gabriele Stötzer: la rivolta del corpo sotto la sorveglianza stalinista&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Nel 1982 la serie fotografica &lt;em&gt;Stegreifspiele – Das Loch&lt;/em&gt; di Stötzer si apre con la sua immagine nuda davanti a una parete bianca, dove la mano forma un cerchio che richiama la forma di un'arma. Il gesto si sposta sul corpo, culminando in un'immagine di caduta, simbolo della “Schießbefehl” della DDR che autorizzava i guardiani di confine a sparare ai fuggitivi. In un contesto in cui la GDR perseguitava gli artisti, la transgressione corporea divenne la forma più immediata di resistenza.&lt;/p&gt;
-&lt;p&gt;Stötzer, bloccata dall’esibizione pubblica e dall’accesso alle istituzioni d’arte statali, ha creato film Super 8 con il collettivo femminile Exterra XX. Questi lavori, spesso espliciti e distribuiti in spazi clandestini, affermano una visione utopica del piacere sessuale, ma possono anche essere letti come dichiarazioni anarchiche di sovranità corporea. Le sue “scribble” su fotografie, ceramiche e tessuti, così come le serie &lt;em&gt;Verschmelzung&lt;/em&gt; e &lt;em&gt;Urfrauengalerie&lt;/em&gt;, trasformano il corpo in un campo di battaglia visivo contro la censura.&lt;/p&gt;
-&lt;p&gt;Un episodio particolarmente audace è &lt;em&gt;Trans sitzend&lt;/em&gt;, dove Stötzer ha ingaggiato un informatore stasi per costringerla a produrre pornografia. Invece di cedere, ha vestito l’informatore con calze e tacchi, documentando la situazione e ribaltando la trappola. Questo gesto, insieme ai suoi &lt;em&gt;Künstlerbücher&lt;/em&gt; e al samizdat, dimostra come la portabilità e la discrezione dei media artigianali potessero sfuggire alla sorveglianza stasi.&lt;/p&gt;
-&lt;p&gt;La mostra &lt;em&gt;Gabriele Stötzer – Dabei sein und nicht schweigen&lt;/em&gt; al Gropius Bau, con il suo titolo che sottolinea l’importanza di &lt;em&gt;presentarsi&lt;/em&gt;, offre un modello di resistenza contemporanea contro la crescente censura e la sorveglianza algoritmica. Stötzer, con la sua volontà di essere vista, ci regala un esempio di coraggio artistico che continua a ispirare.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;La transgressione corporea come forma di resistenza politica.&lt;/li&gt;
-&lt;li&gt;Uso di media clandestini (Super 8, samizdat) per sfuggire alla censura.&lt;/li&gt;
-&lt;li&gt;Ribaltamento delle trappole di sorveglianza (es. &lt;em&gt;Trans sitzend&lt;/em&gt;).&lt;/li&gt;
-&lt;li&gt;Impegno per la visibilità e la presenza pubblica.&lt;/li&gt;
-&lt;li&gt;Influenza duratura su artisti contemporanei e movimenti di resistenza.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #7c3aed;"&gt;&lt;a href="https://artreview.com/gabriele-stotzer-turning-the-trap-around" style="color: #7c3aed; font-weight: 700;"&gt;Leggi originale su ArtReview &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="margin-bottom: 20px;"><img src="https://backend.artreview.com/wp-content/uploads/2026/09/Website-Menu-scaled.jpg" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #7c3aed; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: ArtReview</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Critica d'Arte</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Gabriele Stötzer: la rivolta del corpo sotto la sorveglianza stalinista</strong></p>
+<p>Nel 1982 la serie fotografica <em>Stegreifspiele – Das Loch</em> di Stötzer si apre con la sua immagine nuda davanti a una parete bianca, dove la mano forma un cerchio che richiama la forma di un'arma. Il gesto si sposta sul corpo, culminando in un'immagine di caduta, simbolo della “Schießbefehl” della DDR che autorizzava i guardiani di confine a sparare ai fuggitivi. In un contesto in cui la GDR perseguitava gli artisti, la transgressione corporea divenne la forma più immediata di resistenza.</p>
+<p>Stötzer, bloccata dall’esibizione pubblica e dall’accesso alle istituzioni d’arte statali, ha creato film Super 8 con il collettivo femminile Exterra XX. Questi lavori, spesso espliciti e distribuiti in spazi clandestini, affermano una visione utopica del piacere sessuale, ma possono anche essere letti come dichiarazioni anarchiche di sovranità corporea. Le sue “scribble” su fotografie, ceramiche e tessuti, così come le serie <em>Verschmelzung</em> e <em>Urfrauengalerie</em>, trasformano il corpo in un campo di battaglia visivo contro la censura.</p>
+<p>Un episodio particolarmente audace è <em>Trans sitzend</em>, dove Stötzer ha ingaggiato un informatore stasi per costringerla a produrre pornografia. Invece di cedere, ha vestito l’informatore con calze e tacchi, documentando la situazione e ribaltando la trappola. Questo gesto, insieme ai suoi <em>Künstlerbücher</em> e al samizdat, dimostra come la portabilità e la discrezione dei media artigianali potessero sfuggire alla sorveglianza stasi.</p>
+<p>La mostra <em>Gabriele Stötzer – Dabei sein und nicht schweigen</em> al Gropius Bau, con il suo titolo che sottolinea l’importanza di <em>presentarsi</em>, offre un modello di resistenza contemporanea contro la crescente censura e la sorveglianza algoritmica. Stötzer, con la sua volontà di essere vista, ci regala un esempio di coraggio artistico che continua a ispirare.</p>
+<ol>
+<li>La transgressione corporea come forma di resistenza politica.</li>
+<li>Uso di media clandestini (Super 8, samizdat) per sfuggire alla censura.</li>
+<li>Ribaltamento delle trappole di sorveglianza (es. <em>Trans sitzend</em>).</li>
+<li>Impegno per la visibilità e la presenza pubblica.</li>
+<li>Influenza duratura su artisti contemporanei e movimenti di resistenza.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #7c3aed;"><a href="https://artreview.com/gabriele-stotzer-turning-the-trap-around" style="color: #7c3aed; font-weight: 700;">Leggi originale su ArtReview &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://artreview.com/gabriele-stotzer-turning-the-trap-around</guid>
-    </item>
-    <item>
-      <title>[ArtReview] ‘Ukrainian Lessons’ by Charlotte Higgins, Reviewed</title>
-      <link>https://artreview.com/ukrainian-lessons-by-charlotte-higgins-reviewed</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
-    &lt;div style="margin-bottom: 20px;"&gt;&lt;img src="https://backend.artreview.com/wp-content/uploads/2026/09/Website-Menu-scaled.jpg" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #7c3aed; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: ArtReview&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Critica d'Arte&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;&lt;strong&gt;Ukrainian Lessons&lt;/strong&gt; di Charlotte Higgins è un viaggio che si svolge più come un diario di viaggio che come una guida di arte visiva in tempi di guerra. La scrittrice, che non aveva legami personali con la causa ucraina prima della Biennale di Venezia del 2022, si è trovata a confrontarsi con artisti, poeti e registi che, come Cassandra, predicono la distruzione senza essere ascoltati. Il libro si apre con l’incontro con Pavlo Makov, la cui scultura “Fountain of Exhaustion” evoca la scarsità d’acqua di Kharkiv e un decadenza percepita anche in Europa occidentale.&lt;/p&gt;
-
-&lt;p&gt;Il racconto si sviluppa attraverso una serie di incontri con figure come Yuliia Kishchuk, Sasha Dovzhyk e Victoria Amelina, la cui opera cerca di far emergere la realtà della guerra. Higgins racconta, con una certa distanza, la tragica storia di Amelina, uccisa in un caffè di Kramatorsk, e la sua ricerca di un diario di occupazione di Volodymyr Vakulenko. La narrazione è permeata da una sensazione di colpa e da un desiderio di imparare l’ukrainese, non tanto come atto di solidarietà, ma come segno di impegno a tornare.&lt;/p&gt;
-
-&lt;p&gt;Il libro perde, in parte, la sua forza quando si tenta di definire cosa siano “le lezioni ucraini”; la struttura frammentata e la molteplicità di metafore rendono difficile trarre una conclusione univoca. Tuttavia, quando Higgins si allontana dalla sua posizione giornalistica, la narrazione diventa più personale e toccante. Il racconto della madre di Vakulenko, Olena Ihnatenko, è un esempio di come l’autrice si lasci trasportare dalle emozioni, un gesto che, seppur inappropriato per un giornalista, arricchisce il testo di una dimensione più intima.&lt;/p&gt;
-
-&lt;p&gt;In definitiva, &lt;strong&gt;Ukrainian Lessons&lt;/strong&gt; si presenta come un omaggio sincero alle persone incontrate, più che come una cronaca di eventi. La sua forza risiede nella capacità di trasmettere l’umanità delle figure ucraini, anche se la struttura narrativa può risultare frammentaria e poco conclusiva.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Il libro è un diario di viaggio più che una guida d’arte.&lt;/li&gt;
-&lt;li&gt;Higgins utilizza la figura di Cassandra per descrivere la non ascoltata previsione della guerra.&lt;/li&gt;
-&lt;li&gt;La narrazione è arricchita da incontri con artisti e poeti meno noti.&lt;/li&gt;
-&lt;li&gt;La scrittura si sposta da un tono giornalistico a uno più personale e emotivo.&lt;/li&gt;
-&lt;li&gt;Il testo è un omaggio sincero, ma la sua struttura frammentata può confondere il lettore.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #7c3aed;"&gt;&lt;a href="https://artreview.com/ukrainian-lessons-by-charlotte-higgins-reviewed" style="color: #7c3aed; font-weight: 700;"&gt;Leggi originale su ArtReview &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
-      <guid isPermaLink="false">v18_https://artreview.com/ukrainian-lessons-by-charlotte-higgins-reviewed</guid>
     </item>
     <item>
       <title>[Aperture (Essays)] Gallery Installations</title>
       <link>https://aperture.org/exhibitions/aperture-loves-new-york</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
     
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #b45309; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: Aperture (Essays)&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Fotografia&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;Non è stato fornito alcun testo da tradurre.&lt;/p&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #b45309;"&gt;&lt;a href="https://aperture.org/exhibitions/aperture-loves-new-york" style="color: #b45309; font-weight: 700;"&gt;Leggi originale su Aperture (Essays) &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #b45309; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Aperture (Essays)</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Fotografia</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Non è stato fornito alcun testo da tradurre.</p></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #b45309;"><a href="https://aperture.org/exhibitions/aperture-loves-new-york" style="color: #b45309; font-weight: 700;">Leggi originale su Aperture (Essays) &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://aperture.org/exhibitions/aperture-loves-new-york</guid>
     </item>
     <item>
       <title>[Aperture (Essays)] Aperture On Sight</title>
       <link>https://aperture.org/curriculum/aperture-on-sight</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
     
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #b45309; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: Aperture (Essays)&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Fotografia&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;Per favore, fornisci il testo da tradurre.&lt;/p&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #b45309;"&gt;&lt;a href="https://aperture.org/curriculum/aperture-on-sight" style="color: #b45309; font-weight: 700;"&gt;Leggi originale su Aperture (Essays) &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #b45309; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Aperture (Essays)</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Fotografia</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Per favore, fornisci il testo da tradurre.</p></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #b45309;"><a href="https://aperture.org/curriculum/aperture-on-sight" style="color: #b45309; font-weight: 700;">Leggi originale su Aperture (Essays) &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://aperture.org/curriculum/aperture-on-sight</guid>
     </item>
     <item>
       <title>[Solomon] How Santorini became Royal Caribbean’s test case for bringing the Bahamas private destination model to Europe</title>
       <link>https://wearesolomon.com/en/mag/format/feature/how-santorini-became-royal-caribbeans-test-case-for-bringing-the-bahamas-private-destination-model-to-europe</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
-    &lt;div style="margin-bottom: 20px;"&gt;&lt;img src="https://wearesolomon.com/wp-content/themes/solomon/static/images/cross-white.svg" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #0ea5e9; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: Solomon&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Cultura&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;&lt;strong&gt;Come Santorini è diventata la prova di Royal Caribbean per portare il modello di destinazione privata delle Bahamas in Europa&lt;/strong&gt;&lt;/p&gt;
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="margin-bottom: 20px;"><img src="https://wearesolomon.com/wp-content/themes/solomon/static/images/cross-white.svg" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #0ea5e9; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Solomon</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Cultura</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Come Santorini è diventata la prova di Royal Caribbean per portare il modello di destinazione privata delle Bahamas in Europa</strong></p>
 
-&lt;p&gt;Royal Caribbean, una delle più grandi compagnie di crociera al mondo, ha introdotto il suo club beach privato “Royal Beach Club Santorini” per trasformare l’esperienza di disdetto dei passeggeri in un pacchetto all-inclusive. Mentre la compagnia promuove l’idea di un “modo più semplice” di godersi l’isola, la realtà è che la maggior parte del tempo, del denaro e dell’attenzione dei visitatori viene concentrazione in un unico spazio controllato dalla stessa azienda. Questo modello, già testato nelle Bahamas, in Messico e nel Pacifico, è stato adottato a Santorini, un’area con un’economia basata su imprese indipendenti, e ha sollevato interrogativi su chi realmente beneficia del turismo di crociera.&lt;/p&gt;
+<p>Royal Caribbean, una delle più grandi compagnie di crociera al mondo, ha introdotto il suo club beach privato “Royal Beach Club Santorini” per trasformare l’esperienza di disdetto dei passeggeri in un pacchetto all-inclusive. Mentre la compagnia promuove l’idea di un “modo più semplice” di godersi l’isola, la realtà è che la maggior parte del tempo, del denaro e dell’attenzione dei visitatori viene concentrazione in un unico spazio controllato dalla stessa azienda. Questo modello, già testato nelle Bahamas, in Messico e nel Pacifico, è stato adottato a Santorini, un’area con un’economia basata su imprese indipendenti, e ha sollevato interrogativi su chi realmente beneficia del turismo di crociera.</p>
 
-&lt;p&gt;Il club, che offre un pacchetto di 3,5 ore per circa 200 € (≈ 175 €), include trasporto, cibo, bevande, accesso alla spiaggia e intrattenimento. Royal Caribbean sostiene che questo approccio “massimizza l’esperienza” per i passeggeri, ma la municipalità di Thira ha osservato che la concentrazione di visitatori in un unico luogo riduce i benefici per le attività locali e crea pressioni su infrastrutture, traffico e servizi pubblici. Nonostante l’interesse del governo greco per il settore, le autorità locali non dispongono di dati concreti sul reale impatto economico delle crociere, lasciando il dibattito aperto su quanto i passeggeri spendano effettivamente in loco.&lt;/p&gt;
+<p>Il club, che offre un pacchetto di 3,5 ore per circa 200 € (≈ 175 €), include trasporto, cibo, bevande, accesso alla spiaggia e intrattenimento. Royal Caribbean sostiene che questo approccio “massimizza l’esperienza” per i passeggeri, ma la municipalità di Thira ha osservato che la concentrazione di visitatori in un unico luogo riduce i benefici per le attività locali e crea pressioni su infrastrutture, traffico e servizi pubblici. Nonostante l’interesse del governo greco per il settore, le autorità locali non dispongono di dati concreti sul reale impatto economico delle crociere, lasciando il dibattito aperto su quanto i passeggeri spendano effettivamente in loco.</p>
 
-&lt;p&gt;Il caso di Santorini riflette una tensione più ampia tra crescita turistica e sostenibilità. Con oltre un milione di passeggeri previsti tra aprile e dicembre, la pressione su strade, spazi pubblici e infrastrutture è enorme. Le misure adottate, come il sistema di allocazione delle banchine, la tassa di 20 € per passeggeri e la “regola 70‑30” di distribuzione tra porto antico e commerciale, cercano di gestire il flusso, ma non risolvono il problema della concentrazione di spesa in strutture controllate dalle compagnie di crociera.&lt;/p&gt;
+<p>Il caso di Santorini riflette una tensione più ampia tra crescita turistica e sostenibilità. Con oltre un milione di passeggeri previsti tra aprile e dicembre, la pressione su strade, spazi pubblici e infrastrutture è enorme. Le misure adottate, come il sistema di allocazione delle banchine, la tassa di 20 € per passeggeri e la “regola 70‑30” di distribuzione tra porto antico e commerciale, cercano di gestire il flusso, ma non risolvono il problema della concentrazione di spesa in strutture controllate dalle compagnie di crociera.</p>
 
-&lt;p&gt;In sintesi, l’introduzione del Royal Beach Club a Santorini ha evidenziato le sfide di un modello di turismo di crociera sempre più orientato al profitto corporativo, ponendo interrogativi sulla distribuzione del valore economico, sulla sostenibilità delle infrastrutture locali e sulla necessità di dati trasparenti per valutare l’effettivo beneficio per le comunità ospitanti.&lt;/p&gt;
+<p>In sintesi, l’introduzione del Royal Beach Club a Santorini ha evidenziato le sfide di un modello di turismo di crociera sempre più orientato al profitto corporativo, ponendo interrogativi sulla distribuzione del valore economico, sulla sostenibilità delle infrastrutture locali e sulla necessità di dati trasparenti per valutare l’effettivo beneficio per le comunità ospitanti.</p>
 
-&lt;ol&gt;
-&lt;li&gt;Royal Caribbean ha esteso il modello di destinazione privata delle Bahamas in Europa, concentrando la spesa dei passeggeri in un unico club beach.&lt;/li&gt;
-&lt;li&gt;La municipalità di Thira sostiene che questa concentrazione riduce i benefici per le imprese locali e aumenta la pressione su infrastrutture e servizi pubblici.&lt;/li&gt;
-&lt;li&gt;Non esistono dati concreti sul reale impatto economico delle crociere a Santorini, rendendo difficile verificare l’effettivo beneficio per la comunità.&lt;/li&gt;
-&lt;li&gt;Le misure di gestione del flusso turistico (allocazione banchine, tassa di 20 €, regola 70‑30) non risolvono il problema della concentrazione di spesa e delle infrastrutture sovraccariche.&lt;/li&gt;
-&lt;li&gt;Il caso di Santorini evidenzia la tensione tra crescita turistica e sostenibilità, richiedendo una valutazione più trasparente e dati affidabili per bilanciare gli interessi delle compagnie di crociera e delle comunità locali.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #0ea5e9;"&gt;&lt;a href="https://wearesolomon.com/en/mag/format/feature/how-santorini-became-royal-caribbeans-test-case-for-bringing-the-bahamas-private-destination-model-to-europe" style="color: #0ea5e9; font-weight: 700;"&gt;Leggi originale su Solomon &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+<ol>
+<li>Royal Caribbean ha esteso il modello di destinazione privata delle Bahamas in Europa, concentrando la spesa dei passeggeri in un unico club beach.</li>
+<li>La municipalità di Thira sostiene che questa concentrazione riduce i benefici per le imprese locali e aumenta la pressione su infrastrutture e servizi pubblici.</li>
+<li>Non esistono dati concreti sul reale impatto economico delle crociere a Santorini, rendendo difficile verificare l’effettivo beneficio per la comunità.</li>
+<li>Le misure di gestione del flusso turistico (allocazione banchine, tassa di 20 €, regola 70‑30) non risolvono il problema della concentrazione di spesa e delle infrastrutture sovraccariche.</li>
+<li>Il caso di Santorini evidenzia la tensione tra crescita turistica e sostenibilità, richiedendo una valutazione più trasparente e dati affidabili per bilanciare gli interessi delle compagnie di crociera e delle comunità locali.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #0ea5e9;"><a href="https://wearesolomon.com/en/mag/format/feature/how-santorini-became-royal-caribbeans-test-case-for-bringing-the-bahamas-private-destination-model-to-europe" style="color: #0ea5e9; font-weight: 700;">Leggi originale su Solomon &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://wearesolomon.com/en/mag/format/feature/how-santorini-became-royal-caribbeans-test-case-for-bringing-the-bahamas-private-destination-model-to-europe</guid>
     </item>
     <item>
       <title>[Solomon] “Smiles Don’t Lie” – Israeli Propaganda Targets Greece, EU Countries</title>
       <link>https://wearesolomon.com/en/mag/format/feature/smiles-dont-lie-israeli-propaganda-targets-greece-eu-countries</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
-    &lt;div style="margin-bottom: 20px;"&gt;&lt;img src="https://wearesolomon.com/wp-content/themes/solomon/static/images/cross-white.svg" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #0ea5e9; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: Solomon&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Cultura&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;p&gt;&lt;strong&gt;“Smiles Don’t Lie” – Propaganda israeliana mira Grecia e paesi UE&lt;/strong&gt;&lt;/p&gt;
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="margin-bottom: 20px;"><img src="https://wearesolomon.com/wp-content/themes/solomon/static/images/cross-white.svg" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #0ea5e9; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Solomon</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Cultura</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>“Smiles Don’t Lie” – Propaganda israeliana mira Grecia e paesi UE</strong></p>
 
-&lt;p&gt;Con l’attenzione europea che si concentra sul Marciata per Gaza, lo Stato di Israele ha lanciato una campagna mirata verso il pubblico regionale. Attraverso annunci sponsorizzati su YouTube che promuovono le sue “operazioni umanitarie”, il governo israeliano sta rapidamente aumentando la visibilità dei suoi video in Grecia e nei paesi dell’UE.&lt;/p&gt;
+<p>Con l’attenzione europea che si concentra sul Marciata per Gaza, lo Stato di Israele ha lanciato una campagna mirata verso il pubblico regionale. Attraverso annunci sponsorizzati su YouTube che promuovono le sue “operazioni umanitarie”, il governo israeliano sta rapidamente aumentando la visibilità dei suoi video in Grecia e nei paesi dell’UE.</p>
 
-&lt;p&gt;Gli utenti greci hanno segnalato di aver visto frequentemente video promozionali del Ministero degli Affari Esteri israeliano. Questi spot presentano “livelli record di aiuti umanitari” consegnati a Gaza, descrivendo la situazione come “una delle più grandi operazioni umanitarie al mondo” senza menzionare la causa della crisi, la campagna militare israeliana o la blocco dei camion di aiuti. Mentre l’Organizzazione Mondiale della Sanità avverte di una “situazione catastrofica” di fame e malnutrizione, il video mostra civili sorridenti che ricevono aiuti, con il narratore che afferma: “I sorrisi non mentono, Hamas sì.”&lt;/p&gt;
+<p>Gli utenti greci hanno segnalato di aver visto frequentemente video promozionali del Ministero degli Affari Esteri israeliano. Questi spot presentano “livelli record di aiuti umanitari” consegnati a Gaza, descrivendo la situazione come “una delle più grandi operazioni umanitarie al mondo” senza menzionare la causa della crisi, la campagna militare israeliana o la blocco dei camion di aiuti. Mentre l’Organizzazione Mondiale della Sanità avverte di una “situazione catastrofica” di fame e malnutrizione, il video mostra civili sorridenti che ricevono aiuti, con il narratore che afferma: “I sorrisi non mentono, Hamas sì.”</p>
 
-&lt;p&gt;Negli ultimi dieci giorni, il canale ufficiale YouTube del Ministero ha pubblicato diversi video con sottotitoli greci o interamente in greco, narrati da una voce generata da AI. Nessun altro contenuto in greco è stato pubblicato nell’anno precedente. Il più recente, intitolato “Livelli record di aiuti umanitari a Gaza”, mostra Israel come grande donatore, contrapposto alla realtà documentata: per 11 settimane, Israele ha impedito l’ingresso di cibo, medicine e altri beni essenziali in Gaza. Il video è stato tradotto in inglese, francese, italiano e tedesco, raggiungendo oltre 6 milioni di visualizzazioni in quattro giorni.&lt;/p&gt;
+<p>Negli ultimi dieci giorni, il canale ufficiale YouTube del Ministero ha pubblicato diversi video con sottotitoli greci o interamente in greco, narrati da una voce generata da AI. Nessun altro contenuto in greco è stato pubblicato nell’anno precedente. Il più recente, intitolato “Livelli record di aiuti umanitari a Gaza”, mostra Israel come grande donatore, contrapposto alla realtà documentata: per 11 settimane, Israele ha impedito l’ingresso di cibo, medicine e altri beni essenziali in Gaza. Il video è stato tradotto in inglese, francese, italiano e tedesco, raggiungendo oltre 6 milioni di visualizzazioni in quattro giorni.</p>
 
-&lt;p&gt;Contemporaneamente, le strade di Roma, Parigi, Berlino e altre città sono state riempite da protestanti che chiedono la fine della guerra a Gaza e criticano l’intercettazione della barca Madleen. In Grecia, la versione greca del video ha superato i 500.000 visualizzazioni in quattro giorni. Il video mostra anche il logo della Gaza Humanitarian Foundation (GHF), un’organizzazione con sede in Delaware, USA, sostenuta ufficialmente dai governi degli Stati Uniti e di Israele. La GHF è stata accusata di servire gli interessi politici di Israele, limitando la distribuzione degli aiuti a quattro zone e contribuendo alla dislocazione di popolazioni. Organizzazioni umanitarie e l’ONU hanno criticato la sua indipendenza e la sua strategia di distribuzione.&lt;/p&gt;
+<p>Contemporaneamente, le strade di Roma, Parigi, Berlino e altre città sono state riempite da protestanti che chiedono la fine della guerra a Gaza e criticano l’intercettazione della barca Madleen. In Grecia, la versione greca del video ha superato i 500.000 visualizzazioni in quattro giorni. Il video mostra anche il logo della Gaza Humanitarian Foundation (GHF), un’organizzazione con sede in Delaware, USA, sostenuta ufficialmente dai governi degli Stati Uniti e di Israele. La GHF è stata accusata di servire gli interessi politici di Israele, limitando la distribuzione degli aiuti a quattro zone e contribuendo alla dislocazione di popolazioni. Organizzazioni umanitarie e l’ONU hanno criticato la sua indipendenza e la sua strategia di distribuzione.</p>
 
-&lt;p&gt;Le autorità israeliane hanno negato di finanziare la GHF, nonostante le accuse di leader politici e di media pubblici. Il direttore precedente, Jake Wood, ha dimostrato di non poter rispettare i principi di umanità, neutralità, imparzialità e indipendenza. Nel frattempo, almeno 127 persone sono state uccise e centinaia ferite da fuoco da parte della GHF, secondo le autorità palestinesi.&lt;/p&gt;
+<p>Le autorità israeliane hanno negato di finanziare la GHF, nonostante le accuse di leader politici e di media pubblici. Il direttore precedente, Jake Wood, ha dimostrato di non poter rispettare i principi di umanità, neutralità, imparzialità e indipendenza. Nel frattempo, almeno 127 persone sono state uccise e centinaia ferite da fuoco da parte della GHF, secondo le autorità palestinesi.</p>
 
-&lt;ol&gt;
-&lt;li&gt;Campagna YouTube mirata a presentare Israele come forza umanitaria.&lt;/li&gt;
-&lt;li&gt;Video omettono la causa della crisi e la campagna militare israeliana.&lt;/li&gt;
-&lt;li&gt;GHF, sostenuta da USA e Israele, è accusata di manipolare la distribuzione degli aiuti.&lt;/li&gt;
-&lt;li&gt;Proteste in Europa contro la guerra a Gaza e l’intercettazione della barca Madleen.&lt;/li&gt;
-&lt;li&gt;Controversie sulla finanza e l’indipendenza della GHF.&lt;/li&gt;
-&lt;/ol&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #0ea5e9;"&gt;&lt;a href="https://wearesolomon.com/en/mag/format/feature/smiles-dont-lie-israeli-propaganda-targets-greece-eu-countries" style="color: #0ea5e9; font-weight: 700;"&gt;Leggi originale su Solomon &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+<ol>
+<li>Campagna YouTube mirata a presentare Israele come forza umanitaria.</li>
+<li>Video omettono la causa della crisi e la campagna militare israeliana.</li>
+<li>GHF, sostenuta da USA e Israele, è accusata di manipolare la distribuzione degli aiuti.</li>
+<li>Proteste in Europa contro la guerra a Gaza e l’intercettazione della barca Madleen.</li>
+<li>Controversie sulla finanza e l’indipendenza della GHF.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #0ea5e9;"><a href="https://wearesolomon.com/en/mag/format/feature/smiles-dont-lie-israeli-propaganda-targets-greece-eu-countries" style="color: #0ea5e9; font-weight: 700;">Leggi originale su Solomon &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://wearesolomon.com/en/mag/format/feature/smiles-dont-lie-israeli-propaganda-targets-greece-eu-countries</guid>
+    </item>
+    <item>
+      <title>[IrpiMedia (Inchieste)] Sassonia-Anhalt: la vittoria della remigrazione</title>
+      <link>https://irpimedia.irpi.eu/germania-sassonia-anhalt-la-vittoria-della-remigrazione/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=germania-sassonia-anhalt-la-vittoria-della-remigrazione</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="margin-bottom: 20px;"><img src="https://www.facebook.com/tr?id=687106370171117&ev=PageView&noscript=1" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #dc2626; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: IrpiMedia (Inchieste)</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Inchiesta</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Il risultato delle elezioni nella Sassonia-Anhalt, con la vittoria schiacciante dell’AfD, segna un punto di svolta per la politica migratoria tedesca e per la stabilità delle istituzioni democratiche. La coalizione di destra, già in grado di influenzare la politica nazionale, ora si trova a gestire un territorio dove le norme di accoglienza sono minacciate da un programma che prevede la cancellazione dei finanziamenti anti‑razzismo, la creazione di classi separate per i figli dei rifugiati e, in teoria, la promozione di programmi di ritorno volontario per gli immigrati irregolari.</p>
+
+<p>Le reazioni delle comunità siriane, ucraina e di altri migranti sono state immediate e preoccupanti. Giornalisti e attivisti come Ihab al‑Rawi e Agnes Lisa Wegner hanno denunciato la perdita di protezione internazionale e l’aumento delle deportazioni, sottolineando come la normalizzazione del razzismo sia ormai parte integrante del discorso politico. Il BAMF, infatti, ha registrato oltre il 60% di respinte nel 2025, un dato che evidenzia la crisi di fiducia nel sistema di accoglienza tedesco.</p>
+
+<p>Il contesto europeo amplifica la preoccupazione: la stessa retorica anti‑immigrazione che ha spinto l’AfD</div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #dc2626;"><a href="https://irpimedia.irpi.eu/germania-sassonia-anhalt-la-vittoria-della-remigrazione/?utm_source=rss&utm_medium=rss&utm_campaign=germania-sassonia-anhalt-la-vittoria-della-remigrazione" style="color: #dc2626; font-weight: 700;">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v18_https://irpimedia.irpi.eu/germania-sassonia-anhalt-la-vittoria-della-remigrazione/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=germania-sassonia-anhalt-la-vittoria-della-remigrazione</guid>
+    </item>
+    <item>
+      <title>[ArtReview] Chicago’s ‘Slacker’ Artists</title>
+      <link>https://artreview.com/its-about-time-counterproductive-conceptualisms-in-chicago-gray-chicago-review-pia-singh</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="margin-bottom: 20px;"><img src="https://backend.artreview.com/wp-content/uploads/2026/09/Website-Menu-scaled.jpg" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #7c3aed; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: ArtReview</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Critica d'Arte</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Chicago’s ‘Slacker’ Artists</strong> è un’esposizione che mette in luce un gruppo di artisti concettuali di Chicago che, contro la domanda di produttività costante della cultura contemporanea, invitano lo spettatore a rallentare. Le opere, spesso in forma di oggetti non aperti o di installazioni che richiedono tempo per essere compresi, si presentano come un gesto di resistenza verso la frenesia del mercato dell’arte.</p>
+
+<p>Tra le opere più emblematiche troviamo i “tre regali” non aperti indirizzati al defunto Papa, la sedia in legno di Iñigo Manglano‑Ovalle e la “Package Received But Never Opened #75” di Pia Singh. Questi oggetti, sospesi su mensole di legno, rimangono in sospeso, in attesa di un destinatario, e fungono da metafora della pausa e dell’attesa. Altri artisti, come Alex Chitty con i suoi nove barattoli di limone conservato, o Max Guy con la “Matrix #2”, trasformano la produzione artistica in un’odissea di deferimento, dove il valore nasce dal tempo stesso.</p>
+
+<p>Il testo curatario, intitolato “slacker conceptualism”, sottolinea come la città di Chicago abbia sviluppato una reputazione di artisti tecnicamente competenti ma auto‑svalutanti, che spostano il lavoro fuori dalle istituzioni e verso le strade. La critica si concentra sull’antipatia diffusa verso il lavoro e sui mercati immobiliari costosi, sostenendo che Chicago sia il luogo ideale per un’arte più riflessiva e “leisurely”. Gli artisti partecipanti, tra cui Shir Ende, Jinn Bronwen Lee, Dave Lloyd e Miao Wang, dimostrano che la loro “pazienza” non è una mancanza di impegno, ma un’attenta scelta di resistere alla pressione di produrre continuamente.</p>
+
+<p>In definitiva, l’esposizione evidenzia la “magia sociale” della vita artistica: artisti che condividono spazi, competenze e risorse, ponendo in discussione la necessità di separare arte e vita quotidiana. L’integrazione di oggetti quotidiani, come una cucina prefabbricata o un soffitto a denti di sega, con opere astratte, mostra come l’arte possa essere un’estensione naturale dell’esperienza umana, invitando lo spettatore a rimanere presente fino a quando la percezione non cambia.</p>
+
+<ol>
+<li>La mostra sfida la cultura della produttività costante, proponendo la pausa come valore artistico.</li>
+<li>Gli oggetti non aperti e le installazioni che richiedono tempo incarnano la resistenza contro la frenesia del mercato.</li>
+<li>Il concetto di “slacker conceptualism” nasce da una critica ai mercati immobiliari e alla pressione culturale di produrre continuamente.</li>
+<li>La comunità artistica di Chicago dimostra che arte e vita quotidiana possono coesistere senza separazione.</li>
+<li>Le opere utilizzano materiali di uso quotidiano, trasformandoli in esperienze contemplative e condivise.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #7c3aed;"><a href="https://artreview.com/its-about-time-counterproductive-conceptualisms-in-chicago-gray-chicago-review-pia-singh" style="color: #7c3aed; font-weight: 700;">Leggi originale su ArtReview &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v18_https://artreview.com/its-about-time-counterproductive-conceptualisms-in-chicago-gray-chicago-review-pia-singh</guid>
+    </item>
+    <item>
+      <title>[Contemporary Art Daily] Deshaun Price Deshaun Price Galerie Buchholz, Cologne August 20 – September 26, 2026</title>
+      <link>https://www.contemporaryartdaily.com/project/deshaun-price-at-galerie-buchholz-cologne-97806</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #18181b; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Contemporary Art Daily</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Arte Contemporanea</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1077878/imagefile/caq_thumb-200a8a56b1eccc7126cb9707a8fba694.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1077877/imagefile/caq_thumb-6488905a5c01aedfd12078a693886231.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1077879/imagefile/caq_thumb-e01d5197520a60300e592b1202d9b986.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1058770/imagefile/cad_ad-5ac69e545f08ac29ff4cde6afa1f8021.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/608574/imagefile/cad_ad-0a9de7e3ebdaaf5e8be7267d71a99b26.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/988414/imagefile/cad_ad-577ccfae97a9d64d8f43454e5b258dee.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/255233/imagefile/cad_ad-8a99ae7c776142247b8f89aa17c0996c.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/254703/imagefile/cad_ad-441659118692063fc5191f2276754e72.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/604403/imagefile/cad_ad-ae9da2e0742ce07b14414b616c48ae11.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/254755/imagefile/cad_ad-99b6738d64eda8bc1876ca70afc98805.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #18181b;"><a href="https://www.contemporaryartdaily.com/project/deshaun-price-at-galerie-buchholz-cologne-97806" style="color: #18181b; font-weight: 700;">Vedi originale su Contemporary Art Daily &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v18_https://www.contemporaryartdaily.com/project/deshaun-price-at-galerie-buchholz-cologne-97806</guid>
     </item>
     <item>
       <title>[Contemporary Art Daily] Nina Beier, Torbjørn Rødland Sam &amp; Sara STANDARD (OSLO) August 13 – September 19, 2026</title>
       <link>https://www.contemporaryartdaily.com/project/nina-beier-torbjorn-rodland-at-standard-oslo-97937</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #18181b; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: Contemporary Art Daily&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Arte Contemporanea&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;div style="margin-bottom: 14px;"&gt;&lt;img src="https://www.contemporaryartdaily.com/logo1.png" style="width: 100%; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;&lt;div style="margin-bottom: 14px;"&gt;&lt;img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201304.5098770033546%201000%22%3E%3C%2Fsvg%3E" style="width: 100%; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;&lt;div style="margin-bottom: 14px;"&gt;&lt;img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201333.3333333333333%201000%22%3E%3C%2Fsvg%3E" style="width: 100%; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;&lt;div style="margin-bottom: 14px;"&gt;&lt;img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201335.3681800839374%201000%22%3E%3C%2Fsvg%3E" style="width: 100%; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;&lt;div style="margin-bottom: 14px;"&gt;&lt;img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201332.8255902513329%201000%22%3E%3C%2Fsvg%3E" style="width: 100%; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;&lt;div style="margin-bottom: 14px;"&gt;&lt;img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20750.2857142857143%201000%22%3E%3C%2Fsvg%3E" style="width: 100%; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;&lt;div style="margin-bottom: 14px;"&gt;&lt;img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20750.5714285714286%201000%22%3E%3C%2Fsvg%3E" style="width: 100%; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;&lt;div style="margin-bottom: 14px;"&gt;&lt;img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20748%201000%22%3E%3C%2Fsvg%3E" style="width: 100%; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;&lt;div style="margin-bottom: 14px;"&gt;&lt;img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20750%201000%22%3E%3C%2Fsvg%3E" style="width: 100%; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #18181b;"&gt;&lt;a href="https://www.contemporaryartdaily.com/project/nina-beier-torbjorn-rodland-at-standard-oslo-97937" style="color: #18181b; font-weight: 700;"&gt;Vedi originale su Contemporary Art Daily &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #18181b; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Contemporary Art Daily</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Arte Contemporanea</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1074841/imagefile/caq_thumb-8271c2e5cf06592cb3252a66ca1e321b.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1074842/imagefile/caq_thumb-bb6f646dcf7db42bf19dbccc43954a2d.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1074843/imagefile/caq_thumb-2b7ea77b054d190122b8b2cb96fae1ba.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1074844/imagefile/caq_thumb-e31cfaca93349a28001a88e45b1dbe3d.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1074845/imagefile/caq_thumb-4ac67bb68fcfdf75ba8d5b2a7b9a1591.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1058770/imagefile/cad_ad-5ac69e545f08ac29ff4cde6afa1f8021.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/907903/imagefile/cad_ad-5f2bbf700cd487d45e5e7566c04265c4.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1078108/imagefile/cad_ad-9d3ac01b4c80ff25f04db89153bd986d.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/984111/imagefile/cad_ad-b50a5e0b3f7b06be1e85ea03c190af49.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/723566/imagefile/cad_ad-4d55d40c0c81f668d791254f39128f79.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #18181b;"><a href="https://www.contemporaryartdaily.com/project/nina-beier-torbjorn-rodland-at-standard-oslo-97937" style="color: #18181b; font-weight: 700;">Vedi originale su Contemporary Art Daily &rarr;</a></div>
+</div>]]></description>
       <guid isPermaLink="false">v18_https://www.contemporaryartdaily.com/project/nina-beier-torbjorn-rodland-at-standard-oslo-97937</guid>
-    </item>
-    <item>
-      <title>[Contemporary Art Daily] Ali Cherri To Fall, Patiently Oakville Galleries June 13 – October 3, 2026</title>
-      <link>https://www.contemporaryartdaily.com/project/ali-cherri-at-oakville-galleries-84430</link>
-      <description>&lt;div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;"&gt;
-    &lt;div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #18181b; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;"&gt;FONTE: Contemporary Art Daily&lt;/div&gt;
-    &lt;div style="font-size: 13px; color: #64748b; margin-bottom: 18px;"&gt;Ambito: &lt;em&gt;Arte Contemporanea&lt;/em&gt;&lt;/div&gt;
-    &lt;div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"&gt;&lt;div style="margin-bottom: 14px;"&gt;&lt;img src="https://www.contemporaryartdaily.com/logo1.png" style="width: 100%; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;&lt;div style="margin-bottom: 14px;"&gt;&lt;img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201500.2143163309045%201000%22%3E%3C%2Fsvg%3E" style="width: 100%; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;&lt;div style="margin-bottom: 14px;"&gt;&lt;img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201499.5715509854329%201000%22%3E%3C%2Fsvg%3E" style="width: 100%; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;&lt;div style="margin-bottom: 14px;"&gt;&lt;img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20666.5714285714286%201000%22%3E%3C%2Fsvg%3E" style="width: 100%; border-radius: 8px; display: block;" /&gt;&lt;/div&gt;&lt;/div&gt;
-    &lt;div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #18181b;"&gt;&lt;a href="https://www.contemporaryartdaily.com/project/ali-cherri-at-oakville-galleries-84430" style="color: #18181b; font-weight: 700;"&gt;Vedi originale su Contemporary Art Daily &amp;rarr;&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;</description>
-      <guid isPermaLink="false">v18_https://www.contemporaryartdaily.com/project/ali-cherri-at-oakville-galleries-84430</guid>
     </item>
   </channel>
 </rss>
