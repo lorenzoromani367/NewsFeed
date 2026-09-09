@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Wed, 09 Sep 2026 16:16:02 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 22:23:59 +0000</lastBuildDate>
     <item>
       <title>[The Italian Review] VERSO LA FOCE, VERSO NOI</title>
       <link>https://www.theitalianreview.com/luigi-ghiri-e-gianni-celati-in-mostra-a-bologna/</link>
@@ -174,18 +174,6 @@
     <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #b45309;"><a href="https://aperture.org/exhibitions/aperture-loves-new-york" style="color: #b45309; font-weight: 700;">Leggi originale su Aperture (Essays) &rarr;</a></div>
 </div>]]></description>
       <guid isPermaLink="false">v18_https://aperture.org/exhibitions/aperture-loves-new-york</guid>
-    </item>
-    <item>
-      <title>[Aperture (Essays)] Aperture On Sight</title>
-      <link>https://aperture.org/curriculum/aperture-on-sight</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #b45309; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Aperture (Essays)</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Fotografia</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Per favore, fornisci il testo da tradurre.</p></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #b45309;"><a href="https://aperture.org/curriculum/aperture-on-sight" style="color: #b45309; font-weight: 700;">Leggi originale su Aperture (Essays) &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v18_https://aperture.org/curriculum/aperture-on-sight</guid>
     </item>
     <item>
       <title>[Solomon] How Santorini became Royal Caribbean’s test case for bringing the Bahamas private destination model to Europe</title>
@@ -419,6 +407,18 @@
     <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #18181b;"><a href="https://www.contemporaryartdaily.com/project/judith-hopf-alf-lechner-at-lechner-museum-ingolstadt-92855" style="color: #18181b; font-weight: 700;">Vedi originale su Contemporary Art Daily &rarr;</a></div>
 </div>]]></description>
       <guid isPermaLink="false">v18_https://www.contemporaryartdaily.com/project/judith-hopf-alf-lechner-at-lechner-museum-ingolstadt-92855</guid>
+    </item>
+    <item>
+      <title>[Aperture (Essays)] 380 Columbus Avenue</title>
+      <link>https://aperture.org/editorial/aperture-welcomes-the-public-to-its-new-home-this-september</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #b45309; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Aperture (Essays)</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Fotografia</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Per poter procedere con la traduzione, avrei bisogno del testo originale in inglese. Potresti gentilmente fornirmelo?</p></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #b45309;"><a href="https://aperture.org/editorial/aperture-welcomes-the-public-to-its-new-home-this-september" style="color: #b45309; font-weight: 700;">Leggi originale su Aperture (Essays) &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v18_https://aperture.org/editorial/aperture-welcomes-the-public-to-its-new-home-this-september</guid>
     </item>
   </channel>
 </rss>
