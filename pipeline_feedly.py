@@ -34,6 +34,8 @@ FONTI = [
     {"nome": "Solomon", "tipo": "pagina", "url": "https://wearesolomon.com/en/", "categoria": "Cultura", "colore": "#0ea5e9"},
 
     {"nome": "Contemporary Art Daily", "tipo": "immagini", "url": "https://www.contemporaryartdaily.com", "categoria": "Arte Contemporanea", "colore": "#18181b"},
+
+    {"nome": "Filosofia Stramba", "tipo": "telegram", "url": "https://t.me/s/filosofiastramba", "categoria": "Filosofia", "colore": "#eab308"},
 ]
 
 DATABASE_FILE = "feed_database.json"
@@ -206,6 +208,36 @@ REGOLE TASSATIVE:
             time.sleep(10)
     return None
 
+def genera_sintesi_breve(testo, fonte):
+    """Come genera_sintesi_e_traduzione ma senza traduzione: per fonti già in
+    italiano (es. un canale Telegram), dove serve solo applicare sintesi e
+    punti chiave, anche a un messaggio corto."""
+    if not client: return None
+    prompt_sistema = """Sei un analista editoriale italiano. Il testo è già in italiano: NON tradurlo, lavora sul testo originale così com'è.
+REGOLE TASSATIVE:
+1. Fornisci una sintesi breve (anche solo 2-3 frasi se il testo originale è corto) e SEMPRE un elenco di 2-4 PUNTI CHIAVE, anche per messaggi molto brevi.
+2. FORMATO: Solo codice HTML (<p>, <strong>, <ol>, <li>). Nessun markdown."""
+
+    prompt_utente = f"FONTE: {fonte}\nTESTO:\n{testo[:8000]}"
+
+    for tentativo in range(3):
+        try:
+            completion = client.chat.completions.create(
+                model="openai/gpt-oss-20b",
+                messages=[
+                    {"role": "system", "content": prompt_sistema},
+                    {"role": "user", "content": prompt_utente}
+                ],
+                temperature=0.3,
+                max_tokens=800
+            )
+            ris = completion.choices[0].message.content.strip()
+            return ris.replace("```html", "").replace("```", "").strip()
+        except Exception as e:
+            print(f"    [Groq Fallito] {e}", flush=True)
+            time.sleep(10)
+    return None
+
 def componi_html_finale(fonte, categoria, colore, contenuto, link, immagine_url):
     img_tag = f'<div style="margin-bottom: 20px;"><img src="{immagine_url}" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>' if immagine_url else ""
     return f"""<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
@@ -335,11 +367,67 @@ def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
     time.sleep(2)
     return record
 
+def recupera_messaggi_telegram(url, limite=3):
+    """Legge l'anteprima web pubblica di un canale Telegram (https://t.me/s/<canale>),
+    che non richiede bot né API key, ed estrae gli ultimi messaggi con testo,
+    link diretto e un'eventuale immagine allegata."""
+    contenuto, esito = scarica_bypass(url)
+    if not contenuto:
+        print(f"    [TELEGRAM] {url} -> irraggiungibile ({esito})", flush=True)
+        return []
+
+    s = BeautifulSoup(contenuto, "html.parser")
+    messaggi = []
+    for blocco in s.select("div.tgme_widget_message"):
+        post_id = blocco.get("data-post")
+        testo_tag = blocco.select_one(".tgme_widget_message_text")
+        if not post_id or not testo_tag: continue
+        testo = testo_tag.get_text("\n").strip()
+        if len(testo) < 10: continue
+
+        img_url = None
+        img_tag = blocco.select_one(".tgme_widget_message_photo_wrap")
+        if img_tag and img_tag.get("style"):
+            m = re.search(r"url\('([^']+)'\)", img_tag["style"])
+            if m: img_url = m.group(1)
+
+        messaggi.append((testo, f"https://t.me/{post_id}", img_url))
+
+    if not messaggi:
+        print(f"    [TELEGRAM] {url} -> scaricato ({esito}) ma nessun messaggio riconosciuto", flush=True)
+    return messaggi[-limite:]  # la pagina elenca i messaggi dal più vecchio al più recente
+
+def elabora_messaggio_telegram(db, f, testo_originale, link, img_url=None):
+    item_id = f"{VERSIONE_CACHE}_{link}"
+    if item_id in db:
+        return db[item_id]
+
+    titolo_breve = " ".join(testo_originale.split())[:60]
+    print(f"Elaborazione: {titolo_breve[:40]}...", flush=True)
+
+    sintesi = genera_sintesi_breve(testo_originale, f["nome"])
+    trad_ok = True
+    if not sintesi:
+        trad_ok = False
+        sintesi = f"<p>{testo_originale}</p>"
+
+    html = componi_html_finale(f["nome"], f["categoria"], f["colore"], sintesi, link, img_url)
+    record = {"id": item_id, "title": f"[{f['nome']}] {titolo_breve}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
+
+    if trad_ok: db[item_id] = record
+    time.sleep(5)
+    return record
+
 def main():
     db = carica_database()
     articoli = []
 
     for f in FONTI:
+        if f.get("tipo") == "telegram":
+            for testo, link, img_url in recupera_messaggi_telegram(f["url"]):
+                articoli.append(elabora_messaggio_telegram(db, f, testo, link, img_url))
+            continue
+
         if f.get("tipo") == "immagini":
             for titolo, link in recupera_articoli_pagina(f["url"], nome_fonte=f["nome"]):
                 articoli.append(elabora_voce_immagini(db, f, link, titolo))
