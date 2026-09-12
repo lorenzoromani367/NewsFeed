@@ -472,6 +472,14 @@ def main():
         fe.title(item["title"])
         fe.link(href=item["link"])
         fe.content(item["html_content"], type="CDATA")
+        # Senza pubDate esplicito, un reader (Feedly incluso) non ha modo di
+        # sapere l'ordine cronologico reale e si affida all'ordine fisico nel
+        # documento — che feedgen inverte di default (ogni add_entry() fa un
+        # "prepend"), facendo apparire in fondo gli articoli più recenti.
+        try:
+            fe.pubDate(datetime.fromisoformat(item["published"]))
+        except (KeyError, ValueError):
+            pass
     fg.rss_file(FEED_OUTPUT, pretty=True)
 
 if __name__ == "__main__":
