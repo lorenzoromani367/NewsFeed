@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Sat, 19 Sep 2026 08:42:45 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Sep 2026 15:40:28 +0000</lastBuildDate>
     <item>
       <title>[Aperture (Essays)] Gallery Installations</title>
       <link>https://aperture.org/exhibitions/aperture-loves-new-york</link>
@@ -109,6 +109,32 @@
       <pubDate>Sat, 12 Sep 2026 09:43:33 +0000</pubDate>
     </item>
     <item>
+      <title>[Mousse Magazine] Terms and Conditions</title>
+      <link>https://www.moussemagazine.it/wp-content/uploads/2021/09/Terms-and-Conditions.pdf</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #be123c; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Mousse Magazine</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Arte Contemporanea</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Mi servirebbe il testo completo dei “Terms and Conditions” di Mousse Magazine per poterlo tradurre. Potresti per favore fornirmelo?</p></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #be123c;"><a href="https://www.moussemagazine.it/wp-content/uploads/2021/09/Terms-and-Conditions.pdf" style="color: #be123c; font-weight: 700;">Leggi originale su Mousse Magazine &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v18_https://www.moussemagazine.it/wp-content/uploads/2021/09/Terms-and-Conditions.pdf</guid>
+      <pubDate>Sun, 13 Sep 2026 18:40:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>[Mousse Magazine] Shipping Policy</title>
+      <link>https://www.moussemagazine.it/wp-content/uploads/2024/03/Shipping-Policy.pdf</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #be123c; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Mousse Magazine</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Arte Contemporanea</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Per procedere con la traduzione, avrei bisogno del testo originale in inglese. Potresti gentilmente fornirmelo?</p></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #be123c;"><a href="https://www.moussemagazine.it/wp-content/uploads/2024/03/Shipping-Policy.pdf" style="color: #be123c; font-weight: 700;">Leggi originale su Mousse Magazine &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v18_https://www.moussemagazine.it/wp-content/uploads/2024/03/Shipping-Policy.pdf</guid>
+      <pubDate>Sun, 13 Sep 2026 18:40:27 +0000</pubDate>
+    </item>
+    <item>
       <title>[The Italian Review] AMARE ANCORA LA MERCE</title>
       <link>https://www.theitalianreview.com/amare-ancora-la-merce/</link>
       <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
@@ -163,25 +189,6 @@
       <pubDate>Mon, 14 Sep 2026 14:53:29 +0000</pubDate>
     </item>
     <item>
-      <title>[Filosofia Stramba] Ho provato a ragionare sui recenti risultati di OpenAI in ma</title>
-      <link>https://t.me/filosofiastramba/1399</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #eab308; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Filosofia Stramba</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Filosofia</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Il testo analizza l’evoluzione delle capacità dei modelli di OpenAI in matematica, evidenziando come la loro crescita sia stata spesso accompagnata da scenari apocalittici. L’autore mette in discussione la giustificazione di tali allarmi, suggerendo che la narrazione sia in parte alimentata dalle stesse aziende che sviluppano i sistemi più potenti. Si sottolinea il rischio di trascurare problemi reali come la concentrazione di potere e infrastrutture.</p>
-<ol>
-<li><strong>Progressi in matematica:</strong> i modelli ora risolvono problemi complessi, superando le limitazioni di prima.</li>
-<li><strong>Allarmi apocalittici:</strong> spesso esagerati e motivati da narrazioni di settore.</li>
-<li><strong>Concentrazione di potere:</strong> rischio reale di dominio di poche aziende su infrastrutture e conoscenza.</li>
-<li><strong>Focalizzazione sul futuro:</strong> attenzione eccessiva al “possibile” può distogliere dalle sfide attuali.</li>
-</ol></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #eab308;"><a href="https://t.me/filosofiastramba/1399" style="color: #eab308; font-weight: 700;">Leggi originale su Filosofia Stramba &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v18_https://t.me/filosofiastramba/1399</guid>
-      <pubDate>Tue, 15 Sep 2026 13:21:16 +0000</pubDate>
-    </item>
-    <item>
       <title>[Filosofia Stramba] Un bell'articolo di Alessia Dulbecco sulla lunga storia cult</title>
       <link>https://t.me/filosofiastramba/1400</link>
       <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
@@ -224,6 +231,34 @@
 </div>]]></description>
       <guid isPermaLink="false">v18_https://irpimedia.irpi.eu/cosa-sappiamo-della-truffa-ai-danni-di-revolut-partita-dallitalia/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=cosa-sappiamo-della-truffa-ai-danni-di-revolut-partita-dallitalia</guid>
       <pubDate>Wed, 16 Sep 2026 19:26:52 +0000</pubDate>
+    </item>
+    <item>
+      <title>[ArtReview] Anna Moreno’s Futures That Never Came</title>
+      <link>https://artreview.com/anna-moreno-the-third-twist-macba-barcelona-review-caroline-elbaor</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="margin-bottom: 20px;"><img src="https://backend.artreview.com/wp-content/uploads/2026/09/Website-Menu-scaled.jpg" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #7c3aed; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: ArtReview</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Critica d'Arte</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>Caroline Elbaor, in una recensione pubblicata su ArtReview il 16 settembre 2026, analizza il film di 32 minuti di Anna Moreno intitolato <em>The Terminal Beach</em> (2024–25). Il lavoro documenta il Villaggio Agricolo Houari Boumedienne, situato nel Sahara algerino, iniziato nel 1979 come progetto abitativo socialista utopico dell’architetto catalano Ricardo Bofill per l’iniziativa “1000 villaggi socialisti” dell’Algeria. Il sito, ormai in stato di decadenza, è stato abbandonato e, sebbene la sua popolazione nel 2008 fosse di 3.091 abitanti, molti lo considererebbero una rovina. Moreno, tuttavia, rifiuta questa etichetta, evidenziando come le cosiddette rovine fungano da archivi viventi di valore contemporaneo.</p>
+
+<p>Il film chiude la trilogia spagnola di Moreno, iniziata nel 2017, che mette in dialogo la scrittura di J.G. Ballard con le iniziative architettoniche fantastiche promosse in epoca da Bofill e dal suo studio, il Taller de Arquitectura, parte della coterie di giovani creativi del 1970s noti a Barcellona come la Gauche Divine. Questi ultimi si consideravano in grado di realizzare una società utopica, una aspirazione popolare dell’architettura degli anni ’60 e ’70, ma in realtà si trattava di una parodia superficiale di politiche di sinistra illuminata. <em>The Terminal Beach</em> presenta questa ideologia con tono neutro, senza essere didattico sul destino limbo del progetto sahariano, che Moreno descrive come “avvolto dalle dune”.</p>
+
+<p>Il film è proiettato su una grande tela insieme a due nuove opere (2026) che potrebbero costituire un’unica installazione: <em>Untitled (Mercy)</em>, con vinili che riproducono l’estetica architettonica del villaggio, e una scultura inclinata che ricorda le dune di sabbia. <em>A Question of Re-entry</em>, montata sulla parete opposta, amplia il contesto storico con vecchi filmati Super 8 di altri progetti utopici di Bofill e video di Moreno in sella a una moto, con la sua stessa fotocamera Super 8 in mano. La regia di Moreno è ritmica, con riprese di dieci secondi interrotte da momenti di attività, che ci fanno rimanere sugli scenari di dune arancioni al crepuscolo viola o su facciate solari sbiadite, mentre si mostrano i residenti: un uomo che disegna sulla sabbia o bambini che cercano di negoziare con i cineasti in dialetto arabo e francese.</p>
+
+<p>La corrispondenza con la novella di Ballard del 1964, anch’essa intitolata <em>The Terminal Beach</em>, in cui gli edifici decadenti di un ex sito di test nucleari declinano insieme alla salute del protagonista, offre una conclusione adatta alla trilogia di Moreno. Il riferimento rimodella la percezione di Bofill di un’utopia architettonica come pura fantascienza, un progetto per realizzare la sua fantasia personale. Secondo Jean Baudrillard, la preoccupazione vuota ma auto-congratulativa della Gauche Divine per l’utopia ha dato il via al neoliberalismo e alla ricerca della stella come iperprofessionista creativo senza il serio pensiero. Questa mentalità si risveglia tra i creativi cosmopoliti di oggi, da Dean Kissick, che respinge la politica, a Luce deLire, che chiama una “utopia surreale” in cui sesso caldo e canto comunitario sono radicali. Entrambi portano la bandiera dell’intellettualismo senza offrire un quadro sostanziale per un’utopia, rispecchiando la filosofia della Gauche Divine che si concluse in un villaggio dimenticato.</p>
+
+<strong>Punti chiave</strong>
+<ol>
+<li>Moreno rifiuta di etichettare il Villaggio Agricolo Houari Boumedienne come rovina, evidenziando il suo valore archiviario contemporaneo.</li>
+<li>Il film chiude una trilogia che mette in dialogo la scrittura di Ballard con le aspirazioni utopiche di Bofill e del Taller de Arquitectura.</li>
+<li>La proiezione è accompagnata da opere d’arte che riproducono l’estetica del villaggio, creando un’installazione coerente.</li>
+<li>La narrazione ritmica e le interazioni con i residenti mostrano la complessità della vita in un progetto utopico fallito.</li>
+<li>Il lavoro di Moreno evidenzia come le ideologie politiche influenzino l’arte e come le aspirazioni utopiche si trasformino in realtà concrete o in fantasie fantascientifiche.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #7c3aed;"><a href="https://artreview.com/anna-moreno-the-third-twist-macba-barcelona-review-caroline-elbaor" style="color: #7c3aed; font-weight: 700;">Leggi originale su ArtReview &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v18_https://artreview.com/anna-moreno-the-third-twist-macba-barcelona-review-caroline-elbaor</guid>
+      <pubDate>Wed, 16 Sep 2026 19:27:35 +0000</pubDate>
     </item>
     <item>
       <title>[1000 Words] Against nostalgia: Tish Murtha and Kuba Ryniewicz at Baltic, Gateshead</title>
@@ -331,6 +366,33 @@
       <pubDate>Fri, 18 Sep 2026 08:56:26 +0000</pubDate>
     </item>
     <item>
+      <title>[ArtReview] ‘Saffron Crossings’: Rajinder Singh’s Still, Complicated Seas</title>
+      <link>https://artreview.com/rajinder-singh-saffron-crossings-wei-ling-gallery-kuala-lumpur-review-sharmilla-ganesan</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="margin-bottom: 20px;"><img src="https://backend.artreview.com/wp-content/uploads/2026/09/Website-Menu-1.jpg" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #7c3aed; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: ArtReview</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Critica d'Arte</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Saffron Crossings</strong> di Rajinder Singh, esposto alla Wei‑Ling Gallery di Kuala Lumpur, trasforma la storia migratoria dei malaysiani indiani in un rituale visivo. L’artista, nato in Malesia e residente a Londra, ha ricostruito il viaggio del SS Rajula, nave che trasportò migliaia di migranti dal 1926 al 1973, intrecciando memoria familiare con una mitologia collettiva.</p>
+
+<p>La mostra si apre con un modello di bambù a due metri di lunghezza della SS Rajula, posto su un supporto di legno davanti a due schermi che riproducono video in bianco‑nero dell'oceano. Accanto al modello, dipinti in tonalità di ocra, argilla e nero si allineano come se fossero bocchette di una nave, mentre le immagini in movimento creano un’atmosfera quasi sacra. L’installazione, pur avvolta da suoni di acqua, rimane sorprendentemente immobile, come se l’arte fosse un altar per la memoria.</p>
+
+<p>Singh impiega la tradizione tessile Phulkari del Punjab, un motivo geometrico e ripetitivo che conferisce ai dipinti un carattere cerimoniale. Le opere, tuttavia, variano da scene di festival a pitture rupestri, passando per treni e ruote di Ferris, creando un mosaico di ricordi che si sovrappongono come passeggeri affollati su una nave. L’opera “Passenger Manifest” (2026) raffigura 63 perle di legno su una griglia, rimuovendo una perle ogni martedì per simboleggiare la partenza di un passeggero, un gesto che evidenzia la tensione tra permanenza e movimento.</p>
+
+<p>Il rischio di trasformare la migrazione in mito è evidente: la nave diventa reliquia, i dipinti, seppur dinamici, si fissano in schemi fissi, trasformando esperienze vissute in oggetti contemplativi. Questo contrasta con la sua precedente mostra “Saffron Surrender” (2024), dove la migrazione era rappresentata come violenza e conflitto, spingendo il pubblico a confrontarsi con il presente. In “Saffron Crossings” la migrazione è contemplata, preservata e trasmessa, ma il presente rimane in gran parte al di fuori del quadro, evidenziando la complessità di un’eredità che continua a evolversi.</p>
+
+<ol>
+<li>La nave SS Rajula è simbolo totemico della migrazione malaysiana-indiana.</li>
+<li>Il Phulkari conferisce un tono cerimoniale e ricordo collettivo alle opere.</li>
+<li>L’installazione mescola movimento e staticità, creando un’alternanza di memoria e mito.</li>
+<li>Il progetto evidenzia la tensione tra preservazione del passato e la necessità di affrontare il presente.</li>
+<li>La mostra si distingue dalla precedente di Singh per la sua enfasi sulla contemplazione piuttosto che sul confronto diretto con la violenza coloniale.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #7c3aed;"><a href="https://artreview.com/rajinder-singh-saffron-crossings-wei-ling-gallery-kuala-lumpur-review-sharmilla-ganesan" style="color: #7c3aed; font-weight: 700;">Leggi originale su ArtReview &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v18_https://artreview.com/rajinder-singh-saffron-crossings-wei-ling-gallery-kuala-lumpur-review-sharmilla-ganesan</guid>
+      <pubDate>Fri, 18 Sep 2026 16:07:16 +0000</pubDate>
+    </item>
+    <item>
       <title>[Aperture (Reviews)] Bookstore Collaborations</title>
       <link>https://aperture.org/exhibitions/bookstore-collaborations</link>
       <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
@@ -342,30 +404,6 @@
 </div>]]></description>
       <guid isPermaLink="false">v18_https://aperture.org/exhibitions/bookstore-collaborations</guid>
       <pubDate>Fri, 18 Sep 2026 16:08:35 +0000</pubDate>
-    </item>
-    <item>
-      <title>[Contemporary Art Daily] Maggie Lee New Life Édouard Montassut, Paris September 5 – October 3, 2026</title>
-      <link>https://www.contemporaryartdaily.com/project/maggie-lee-at-edouard-montassut-paris-101205</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #18181b; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Contemporary Art Daily</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Arte Contemporanea</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1079969/imagefile/caq_thumb-95d27250a63efc3cda4646c2c732e523.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1079970/imagefile/caq_thumb-7d601c24a8f11ee726c7f195e5ed9491.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1079971/imagefile/caq_thumb-5433ea85e716bd5c5a9055944fa62bd6.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1079968/imagefile/caq_thumb-c68b310fdeb2d6d73cca45f0443034fa.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1079972/imagefile/caq_thumb-436f51a5b109d5cfa80ba669477ca3c9.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1079973/imagefile/caq_thumb-69b29e3f6c8aaccf7879f2ad4c9098ec.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1058770/imagefile/cad_ad-5ac69e545f08ac29ff4cde6afa1f8021.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/421757/imagefile/cad_ad-6557876bb37f122de70670196cd4afa2.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/853971/imagefile/cad_ad-f6ab6fd4359217ca99e8bdd037a99aba.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/928578/imagefile/cad_ad-ee35321f97f98aceb7f002dbe6de0098.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #18181b;"><a href="https://www.contemporaryartdaily.com/project/maggie-lee-at-edouard-montassut-paris-101205" style="color: #18181b; font-weight: 700;">Vedi originale su Contemporary Art Daily &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v18_https://www.contemporaryartdaily.com/project/maggie-lee-at-edouard-montassut-paris-101205</guid>
-      <pubDate>Fri, 18 Sep 2026 16:09:12 +0000</pubDate>
-    </item>
-    <item>
-      <title>[Contemporary Art Daily] Kate Mosher Hall Hollywood Forever Trautwein Herleth, Berlin September 10 – October 24, 2026</title>
-      <link>https://www.contemporaryartdaily.com/project/kate-mosher-hall-at-trautwein-herleth-berlin-101501</link>
-      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #18181b; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Contemporary Art Daily</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Arte Contemporanea</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1082069/imagefile/caq_thumb-d45aac0f26b8e96f74b821a7ca31744e.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1082070/imagefile/caq_thumb-f232502222a5352c209fbc1fb984d7a6.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1082068/imagefile/caq_thumb-36923351c1af36a6e1a89318a28a7095.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1082071/imagefile/caq_thumb-25c04de86e5617d4dfbd70130cc6f944.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1082072/imagefile/caq_thumb-ad88918100c01850695003dd210a73e3.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1082073/imagefile/caq_thumb-a98f4aeac29eced0778876b376f76d66.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1079726/imagefile/cad_ad-b9ec98d02fcbe06bfdc7d7238ae27e77.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1082056/imagefile/cad_ad-c82c9575fbde1947d0aee8f4273dea03.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1002206/imagefile/cad_ad-830e5d25287feaa4384d3b13a29db34a.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/551848/imagefile/cad_ad-6a7c1191143fed0887ffeab9d719f47e.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #18181b;"><a href="https://www.contemporaryartdaily.com/project/kate-mosher-hall-at-trautwein-herleth-berlin-101501" style="color: #18181b; font-weight: 700;">Vedi originale su Contemporary Art Daily &rarr;</a></div>
-</div>]]></description>
-      <guid isPermaLink="false">v18_https://www.contemporaryartdaily.com/project/kate-mosher-hall-at-trautwein-herleth-berlin-101501</guid>
-      <pubDate>Fri, 18 Sep 2026 16:09:17 +0000</pubDate>
     </item>
     <item>
       <title>[Filosofia Stramba] Un articolo interessante ma forse nato vecchio: i LLM sono l</title>
@@ -440,24 +478,47 @@
       <pubDate>Sat, 19 Sep 2026 03:53:46 +0000</pubDate>
     </item>
     <item>
-      <title>[ArtReview] Venice Biennale: Artist Q&amp;As</title>
-      <link>https://artreview.com/category/venice-questionnaire</link>
+      <title>[Contemporary Art Daily] Group Exhibition mauer, Cologne September 3 – October 3, 2026</title>
+      <link>https://www.contemporaryartdaily.com/project/group-show-at-mauer-cologne-100446</link>
       <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    <div style="margin-bottom: 20px;"><img src="https://backend.artreview.com/wp-content/uploads/2026/09/Website-Menu-1.jpg" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #7c3aed; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: ArtReview</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Critica d'Arte</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p>© 2020 ArtReview. Utilizziamo i cookie per comprendere come utilizzi il nostro sito e per migliorare la tua esperienza. Ciò include la personalizzazione dei contenuti. Continuando a utilizzare il sito, accetti l'uso dei cookie e la revisione della nostra Informativa sulla privacy.</p>
-<ol>
-<li>Il sito raccoglie dati per analizzare l'uso e migliorare l'esperienza dell'utente.</li>
-<li>I cookie consentono la personalizzazione dei contenuti visualizzati.</li>
-<li>Utilizzando il sito, l'utente accetta l'uso dei cookie e la revisione della privacy.</li>
-<li>La comunicazione è in conformità con le normative sulla privacy.</li>
-<li>Il testo è una dichiarazione di consenso implicito all'uso dei cookie.</li>
-</ol></div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #7c3aed;"><a href="https://artreview.com/category/venice-questionnaire" style="color: #7c3aed; font-weight: 700;">Leggi originale su ArtReview &rarr;</a></div>
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #18181b; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Contemporary Art Daily</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Arte Contemporanea</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1078730/imagefile/caq_thumb-0c422b147ff485329b6e64455855db67.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1078731/imagefile/caq_thumb-ce7b1bbf315484024da309099ff6867b.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1078732/imagefile/caq_thumb-1967dd345ff8757028643d780e44cd0d.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1078733/imagefile/caq_thumb-9943137335c52554deaaaac586e615bd.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1078734/imagefile/caq_thumb-cbd8c5f2ecd0695c30d1a0da0fa52220.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1078735/imagefile/caq_thumb-a070d15923af94a8b734ca02279afe5c.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1079726/imagefile/cad_ad-b9ec98d02fcbe06bfdc7d7238ae27e77.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/254802/imagefile/cad_ad-ca789137f1bc7c82a7055532f0b4ce8f.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/988414/imagefile/cad_ad-577ccfae97a9d64d8f43454e5b258dee.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/426802/imagefile/cad_ad-6b77973b277bee4b726de7504c15701d.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #18181b;"><a href="https://www.contemporaryartdaily.com/project/group-show-at-mauer-cologne-100446" style="color: #18181b; font-weight: 700;">Vedi originale su Contemporary Art Daily &rarr;</a></div>
 </div>]]></description>
-      <guid isPermaLink="false">v18_https://artreview.com/category/venice-questionnaire</guid>
-      <pubDate>Sat, 19 Sep 2026 03:54:20 +0000</pubDate>
+      <guid isPermaLink="false">v18_https://www.contemporaryartdaily.com/project/group-show-at-mauer-cologne-100446</guid>
+      <pubDate>Sat, 19 Sep 2026 15:40:15 +0000</pubDate>
+    </item>
+    <item>
+      <title>[Contemporary Art Daily] Modes of Emergence Whistle, Seoul September 1 – October 17, 2026</title>
+      <link>https://www.contemporaryartdaily.com/project/modes-of-emergence-at-whistle-seoul-98467</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #18181b; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Contemporary Art Daily</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Arte Contemporanea</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1078436/imagefile/caq_thumb-c04435530d772e2ff9bdabfb2cab5336.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1078437/imagefile/caq_thumb-e14602e1dd290c5b36232dabdb82d288.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1078438/imagefile/caq_thumb-384abe0a842cd79e5172c3e320c5d938.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1078435/imagefile/caq_thumb-e940729e94a6ec75f2ca18c251c0d216.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1078439/imagefile/caq_thumb-6a9fa24ba163d6d12caa800bb9711bb7.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/1079726/imagefile/cad_ad-b9ec98d02fcbe06bfdc7d7238ae27e77.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/608574/imagefile/cad_ad-0a9de7e3ebdaaf5e8be7267d71a99b26.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/940233/imagefile/cad_ad-5975128b7488cc49c0f00ada0341243f.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/746717/imagefile/cad_ad-79f088ba65fde685e5d1bab79aeebe29.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div><div style="margin-bottom: 14px;"><img src="https://cdn.contemporaryartlibrary.org/store/image/254752/imagefile/cad_ad-1e63f5f7d212081d1903cd0b327eeacb.jpg" style="width: 100%; border-radius: 8px; display: block;" /></div></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #18181b;"><a href="https://www.contemporaryartdaily.com/project/modes-of-emergence-at-whistle-seoul-98467" style="color: #18181b; font-weight: 700;">Vedi originale su Contemporary Art Daily &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v18_https://www.contemporaryartdaily.com/project/modes-of-emergence-at-whistle-seoul-98467</guid>
+      <pubDate>Sat, 19 Sep 2026 15:40:19 +0000</pubDate>
+    </item>
+    <item>
+      <title>[Filosofia Stramba] Per SEPAI ho scritto quanto sia problematico il concetto di </title>
+      <link>https://t.me/filosofiastramba/1402</link>
+      <description><![CDATA[<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
+    
+    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #eab308; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Filosofia Stramba</div>
+    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Filosofia</em></div>
+    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Riassunto:</strong> L’autore di SEPAI critica l’uso eccessivo del termine “AGI”, definendolo problematico e affermando che la corsa con le macchine è infantile. Sottolinea come le discussioni sull’AGI siano spesso affrettate e poco fondate.</p>
+<ol>
+<li>Il concetto di AGI è spesso frainteso e contestato.</li>
+<li>La competizione con le macchine è descritta come una “gara infantile”.</li>
+<li>Il testo invita a riflettere criticamente sull’uso del termine AGI.</li>
+<li>La fonte è il sito SEPAI International.</li>
+</ol></div>
+    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid #eab308;"><a href="https://t.me/filosofiastramba/1402" style="color: #eab308; font-weight: 700;">Leggi originale su Filosofia Stramba &rarr;</a></div>
+</div>]]></description>
+      <guid isPermaLink="false">v18_https://t.me/filosofiastramba/1402</guid>
+      <pubDate>Sat, 19 Sep 2026 15:40:23 +0000</pubDate>
     </item>
   </channel>
 </rss>
