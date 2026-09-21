@@ -32,7 +32,7 @@ FONTI = [
     {"nome": "Aperture (Reviews)", "tipo": "pagina", "url": "https://aperture.org/editorial/reviews/", "categoria": "Fotografia", "colore": "#92400e"},
     {"nome": "Mousse Magazine", "tipo": "pagina", "url": "https://www.moussemagazine.it/magazine/category/reviews/", "categoria": "Arte Contemporanea", "colore": "#be123c"},
     {"nome": "Solomon", "tipo": "pagina", "url": "https://wearesolomon.com/en/", "categoria": "Cultura", "colore": "#0ea5e9"},
-    {"nome": "Narratively", "tipo": "pagina", "url": "https://www.narratively.com/s/secret-lives", "categoria": "Narrativa", "colore": "#0f766e"},
+    {"nome": "Narratively", "tipo": "rss", "url": "https://www.narratively.com/feed", "categoria": "Narrativa", "colore": "#0f766e"},
 
     {"nome": "Contemporary Art Daily", "tipo": "immagini", "url": "https://www.contemporaryartdaily.com", "categoria": "Arte Contemporanea", "colore": "#18181b"},
 
@@ -182,14 +182,17 @@ def recupera_articoli_pagina(url, nome_fonte="", limite=2):
     return []
 
 def genera_sintesi_e_traduzione(titolo, fonte, testo):
-    if not client: return None
-    prompt_sistema = """Sei un analista editoriale. Se il testo originale è in inglese, TRADUCILO IN ITALIANO.
+    if not client: return None, None
+    prompt_sistema = """Sei un analista editoriale. Se il testo originale è in inglese, TRADUCILO IN ITALIANO sia il titolo che il testo.
 REGOLE TASSATIVE:
 1. LINGUA: Esclusivamente ITALIANO.
-2. LUNGHEZZA PROPORZIONALE: Adatta la densità. Testo breve: 1 paragrafo critico. Saggio lungo: 3-4 paragrafi critici. Fornisci sempre 3-5 PUNTI CHIAVE.
-3. FORMATO: Solo codice HTML (<p>, <strong>, <ol>, <li>). Nessun markdown."""
+2. FORMATO DI RISPOSTA: Devi rispondere ESCLUSIVAMENTE con questo formato esatto:
+TITOLO_TRADOTTO: [Inserisci qui il titolo tradotto]
+---
+[Inserisci qui il riassunto HTML con <p>, <strong>, <ol>, <li>]
+3. LUNGHEZZA: Adatta la densità. Fornisci sempre 3-5 PUNTI CHIAVE alla fine del riassunto."""
 
-    prompt_utente = f"FONTE: {fonte}\nTITOLO: {titolo}\nTESTO:\n{testo[:15000]}"
+    prompt_utente = f"FONTE: {fonte}\nTITOLO ORIGINALE: {titolo}\nTESTO:\n{testo[:15000]}"
 
     for tentativo in range(3):
         try:
@@ -203,11 +206,17 @@ REGOLE TASSATIVE:
                 max_tokens=1500
             )
             ris = completion.choices[0].message.content.strip()
-            return ris.replace("```html", "").replace("```", "").strip()
+            ris = ris.replace("```html", "").replace("```", "").strip()
+            if "---" in ris:
+                parts = ris.split("---", 1)
+                t = parts[0].replace("TITOLO_TRADOTTO:", "").strip()
+                s = parts[1].strip()
+                return t, s
+            return titolo, ris
         except Exception as e:
             print(f"    [Groq Fallito] {e}", flush=True)
             time.sleep(10)
-    return None
+    return None, None
 
 def genera_sintesi_breve(testo, fonte):
     """Come genera_sintesi_e_traduzione ma senza traduzione: per fonti già in
@@ -240,14 +249,13 @@ REGOLE TASSATIVE:
     return None
 
 def componi_html_finale(fonte, categoria, colore, contenuto, link, immagine_url):
-    img_tag = f'<div style="margin-bottom: 20px;"><img src="{immagine_url}" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>' if immagine_url else ""
-    return f"""<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    {img_tag}
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: {colore}; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: {fonte}</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>{categoria}</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;">{contenuto}</div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid {colore};"><a href="{link}" style="color: {colore}; font-weight: 700;">Leggi originale su {fonte} &rarr;</a></div>
-</div>"""
+    return f"""
+    <p><strong>FONTE:</strong> {fonte} | <strong>Ambito:</strong> <em>{categoria}</em></p>
+    <hr>
+    {contenuto}
+    <hr>
+    <p><a href="{link}">Leggi originale su {fonte} &rarr;</a></p>
+    """
 
 def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
     link = (link or "").strip()
@@ -288,15 +296,16 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
 
     if not img_url and soup.find("img"): img_url = soup.find("img").get("src")
 
-    sintesi = genera_sintesi_e_traduzione(titolo, f["nome"], testo_pulito)
+    titolo_tradotto, sintesi = genera_sintesi_e_traduzione(titolo, f["nome"], testo_pulito)
 
     trad_ok = True
     if not sintesi:
         trad_ok = False
+        titolo_tradotto = titolo
         sintesi = f"<p><em>Traduzione non disponibile.</em></p><p>{testo_pulito[:800]}...</p>"
 
     html = componi_html_finale(f["nome"], f["categoria"], f["colore"], sintesi, link, img_url)
-    record = {"id": item_id, "title": f"{f['nome']}: {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
+    record = {"id": item_id, "title": f"{f['nome']}: {titolo_tradotto}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat(), "image_url": img_url}
 
     if trad_ok: db[item_id] = record
     time.sleep(8)
@@ -378,7 +387,8 @@ def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
     <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid {f['colore']};"><a href="{link}" style="color: {f['colore']}; font-weight: 700;">Vedi originale su {f['nome']} &rarr;</a></div>
 </div>"""
 
-    record = {"id": item_id, "title": f"{f['nome']}: {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
+    immagine_copertina = immagini[0] if immagini else None
+    record = {"id": item_id, "title": f"{f['nome']}: {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat(), "image_url": immagine_copertina}
     db[item_id] = record
     time.sleep(2)
     return record
@@ -428,7 +438,7 @@ def elabora_messaggio_telegram(db, f, testo_originale, link, img_url=None):
         sintesi = f"<p>{testo_originale}</p>"
 
     html = componi_html_finale(f["nome"], f["categoria"], f["colore"], sintesi, link, img_url)
-    record = {"id": item_id, "title": f"{f['nome']}: {titolo_breve}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
+    record = {"id": item_id, "title": f"{f['nome']}: {titolo_breve}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat(), "image_url": img_url}
 
     if trad_ok: db[item_id] = record
     time.sleep(5)
@@ -488,6 +498,8 @@ def main():
         fe.title(item["title"])
         fe.link(href=item["link"])
         fe.content(item["html_content"], type="CDATA")
+        if item.get("image_url"):
+            fe.enclosure(item["image_url"], 0, 'image/jpeg')
         # Senza pubDate esplicito, un reader (Feedly incluso) non ha modo di
         # sapere l'ordine cronologico reale e si affida all'ordine fisico nel
         # documento — che feedgen inverte di default (ogni add_entry() fa un
