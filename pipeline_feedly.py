@@ -32,6 +32,7 @@ FONTI = [
     {"nome": "Aperture (Reviews)", "tipo": "pagina", "url": "https://aperture.org/editorial/reviews/", "categoria": "Fotografia", "colore": "#92400e"},
     {"nome": "Mousse Magazine", "tipo": "pagina", "url": "https://www.moussemagazine.it/magazine/category/reviews/", "categoria": "Arte Contemporanea", "colore": "#be123c"},
     {"nome": "Solomon", "tipo": "pagina", "url": "https://wearesolomon.com/en/", "categoria": "Cultura", "colore": "#0ea5e9"},
+    {"nome": "Narratively", "tipo": "pagina", "url": "https://www.narratively.com/s/secret-lives", "categoria": "Narrativa", "colore": "#0f766e"},
 
     {"nome": "Contemporary Art Daily", "tipo": "immagini", "url": "https://www.contemporaryartdaily.com", "categoria": "Arte Contemporanea", "colore": "#18181b"},
 
@@ -280,7 +281,7 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
         sintesi = f"<p><em>Traduzione non disponibile.</em></p><p>{testo_pulito[:800]}...</p>"
 
     html = componi_html_finale(f["nome"], f["categoria"], f["colore"], sintesi, link, img_url)
-    record = {"id": item_id, "title": f"[{f['nome']}] {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
+    record = {"id": item_id, "title": f"{f['nome']}: {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
 
     if trad_ok: db[item_id] = record
     time.sleep(8)
@@ -362,7 +363,7 @@ def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
     <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid {f['colore']};"><a href="{link}" style="color: {f['colore']}; font-weight: 700;">Vedi originale su {f['nome']} &rarr;</a></div>
 </div>"""
 
-    record = {"id": item_id, "title": f"[{f['nome']}] {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
+    record = {"id": item_id, "title": f"{f['nome']}: {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
     db[item_id] = record
     time.sleep(2)
     return record
@@ -412,7 +413,7 @@ def elabora_messaggio_telegram(db, f, testo_originale, link, img_url=None):
         sintesi = f"<p>{testo_originale}</p>"
 
     html = componi_html_finale(f["nome"], f["categoria"], f["colore"], sintesi, link, img_url)
-    record = {"id": item_id, "title": f"[{f['nome']}] {titolo_breve}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
+    record = {"id": item_id, "title": f"{f['nome']}: {titolo_breve}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
 
     if trad_ok: db[item_id] = record
     time.sleep(5)
