@@ -271,6 +271,21 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
             if len(testo_estratto) > len(testo_pulito): testo_pulito = testo_estratto
             if not img_url and s.find("img"): img_url = s.find("img").get("src")
 
+        if len(testo_pulito) < 400:
+            # Se anche l'HTML diretto/proxy non basta (spesso un blocco 403),
+            # Jina esegue un browser reale e restituisce il testo già
+            # renderizzato: meglio un testo "sporco" (con qualche menu/nav
+            # residuo) che nessun testo, che lascerebbe Groq senza nulla da
+            # sintetizzare.
+            try:
+                res = requests.get(f"https://r.jina.ai/{link}", headers=HEADERS_JINA, timeout=20)
+                if res.status_code == 200 and len(res.text) > len(testo_pulito):
+                    testo_pulito = res.text
+                elif res.status_code != 200:
+                    print(f"    [JINA] {link} -> HTTP {res.status_code}", flush=True)
+            except Exception as e:
+                print(f"    [JINA] {link} -> {type(e).__name__}: {e}", flush=True)
+
     if not img_url and soup.find("img"): img_url = soup.find("img").get("src")
 
     sintesi = genera_sintesi_e_traduzione(titolo, f["nome"], testo_pulito)
