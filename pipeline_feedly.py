@@ -32,6 +32,7 @@ FONTI = [
     {"nome": "Aperture (Reviews)", "tipo": "pagina", "url": "https://aperture.org/editorial/reviews/", "categoria": "Fotografia", "colore": "#92400e"},
     {"nome": "Mousse Magazine", "tipo": "pagina", "url": "https://www.moussemagazine.it/magazine/category/reviews/", "categoria": "Arte Contemporanea", "colore": "#be123c"},
     {"nome": "Solomon", "tipo": "pagina", "url": "https://wearesolomon.com/en/", "categoria": "Cultura", "colore": "#0ea5e9"},
+    {"nome": "Narratively", "tipo": "pagina", "url": "https://www.narratively.com/s/secret-lives", "categoria": "Narrativa", "colore": "#0f766e"},
 
     {"nome": "Contemporary Art Daily", "tipo": "immagini", "url": "https://www.contemporaryartdaily.com", "categoria": "Arte Contemporanea", "colore": "#18181b"},
 
@@ -270,6 +271,21 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
             if len(testo_estratto) > len(testo_pulito): testo_pulito = testo_estratto
             if not img_url and s.find("img"): img_url = s.find("img").get("src")
 
+        if len(testo_pulito) < 400:
+            # Se anche l'HTML diretto/proxy non basta (spesso un blocco 403),
+            # Jina esegue un browser reale e restituisce il testo già
+            # renderizzato: meglio un testo "sporco" (con qualche menu/nav
+            # residuo) che nessun testo, che lascerebbe Groq senza nulla da
+            # sintetizzare.
+            try:
+                res = requests.get(f"https://r.jina.ai/{link}", headers=HEADERS_JINA, timeout=20)
+                if res.status_code == 200 and len(res.text) > len(testo_pulito):
+                    testo_pulito = res.text
+                elif res.status_code != 200:
+                    print(f"    [JINA] {link} -> HTTP {res.status_code}", flush=True)
+            except Exception as e:
+                print(f"    [JINA] {link} -> {type(e).__name__}: {e}", flush=True)
+
     if not img_url and soup.find("img"): img_url = soup.find("img").get("src")
 
     sintesi = genera_sintesi_e_traduzione(titolo, f["nome"], testo_pulito)
@@ -280,7 +296,7 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
         sintesi = f"<p><em>Traduzione non disponibile.</em></p><p>{testo_pulito[:800]}...</p>"
 
     html = componi_html_finale(f["nome"], f["categoria"], f["colore"], sintesi, link, img_url)
-    record = {"id": item_id, "title": f"[{f['nome']}] {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
+    record = {"id": item_id, "title": f"{f['nome']}: {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
 
     if trad_ok: db[item_id] = record
     time.sleep(8)
@@ -362,7 +378,7 @@ def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
     <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid {f['colore']};"><a href="{link}" style="color: {f['colore']}; font-weight: 700;">Vedi originale su {f['nome']} &rarr;</a></div>
 </div>"""
 
-    record = {"id": item_id, "title": f"[{f['nome']}] {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
+    record = {"id": item_id, "title": f"{f['nome']}: {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
     db[item_id] = record
     time.sleep(2)
     return record
@@ -412,7 +428,7 @@ def elabora_messaggio_telegram(db, f, testo_originale, link, img_url=None):
         sintesi = f"<p>{testo_originale}</p>"
 
     html = componi_html_finale(f["nome"], f["categoria"], f["colore"], sintesi, link, img_url)
-    record = {"id": item_id, "title": f"[{f['nome']}] {titolo_breve}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
+    record = {"id": item_id, "title": f"{f['nome']}: {titolo_breve}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat()}
 
     if trad_ok: db[item_id] = record
     time.sleep(5)
