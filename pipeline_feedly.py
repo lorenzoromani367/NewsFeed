@@ -41,6 +41,7 @@ FONTI = [
 
 DATABASE_FILE = "feed_database.json"
 FEED_OUTPUT = "feed_sintesi.xml"
+FEED_OUTPUT_IMMAGINI = "feed_contemporary_art_daily.xml"
 FEED_SITE = "https://lorenzoromani367.github.io/NewsFeed/"
 VERSIONE_CACHE = "v18"
 
@@ -444,9 +445,46 @@ def elabora_messaggio_telegram(db, f, testo_originale, link, img_url=None):
     time.sleep(5)
     return record
 
+def genera_feed(articoli, output_file, titolo, descrizione):
+    # Fonti diverse possono convergere sullo stesso link (fallback condivisi,
+    # o pagine che ripescano le stesse sezioni generiche di un sito): la
+    # cache in quel caso restituisce lo stesso record due volte. Deduplica
+    # per id prima di generare il feed.
+    visti_id, articoli_unici = set(), []
+    for a in articoli:
+        if a["id"] in visti_id: continue
+        visti_id.add(a["id"])
+        articoli_unici.append(a)
+
+    fg = FeedGenerator()
+    fg.title(titolo)
+    fg.link(href=FEED_SITE, rel="alternate")
+    fg.description(descrizione)
+    fg.language("it")
+
+    for item in sorted(articoli_unici, key=lambda x: x.get("published", ""), reverse=True)[:30]:
+        fe = fg.add_entry()
+        fe.id(item["id"])
+        fe.title(item["title"])
+        fe.link(href=item["link"])
+        fe.content(item["html_content"], type="CDATA")
+        if item.get("image_url"):
+            fe.enclosure(item["image_url"], 0, 'image/jpeg')
+        # Senza pubDate esplicito, un reader (Feedly incluso) non ha modo di
+        # sapere l'ordine cronologico reale e si affida all'ordine fisico nel
+        # documento — che feedgen inverte di default (ogni add_entry() fa un
+        # "prepend"), facendo apparire in fondo gli articoli più recenti.
+        try:
+            fe.pubDate(datetime.fromisoformat(item["published"]))
+        except (KeyError, ValueError):
+            pass
+    fg.rss_file(output_file, pretty=True)
+
+
 def main():
     db = carica_database()
     articoli = []
+    articoli_immagini = []
 
     for f in FONTI:
         if f.get("tipo") == "telegram":
@@ -456,7 +494,7 @@ def main():
 
         if f.get("tipo") == "immagini":
             for titolo, link in recupera_articoli_pagina(f["url"], nome_fonte=f["nome"]):
-                articoli.append(elabora_voce_immagini(db, f, link, titolo))
+                articoli_immagini.append(elabora_voce_immagini(db, f, link, titolo))
             continue
 
         if f.get("tipo") == "pagina":
@@ -476,39 +514,8 @@ def main():
 
     salva_database(db)
 
-    # Fonti diverse possono convergere sullo stesso link (fallback condivisi,
-    # o pagine che ripescano le stesse sezioni generiche di un sito): la
-    # cache in quel caso restituisce lo stesso record due volte. Deduplica
-    # per id prima di generare il feed.
-    visti_id, articoli_unici = set(), []
-    for a in articoli:
-        if a["id"] in visti_id: continue
-        visti_id.add(a["id"])
-        articoli_unici.append(a)
-
-    fg = FeedGenerator()
-    fg.title("Rassegna Personale Unificata")
-    fg.link(href=FEED_SITE, rel="alternate")
-    fg.description("Sintesi IA e proxy anti-blocco.")
-    fg.language("it")
-
-    for item in sorted(articoli_unici, key=lambda x: x.get("published", ""), reverse=True)[:30]:
-        fe = fg.add_entry()
-        fe.id(item["id"])
-        fe.title(item["title"])
-        fe.link(href=item["link"])
-        fe.content(item["html_content"], type="CDATA")
-        if item.get("image_url"):
-            fe.enclosure(item["image_url"], 0, 'image/jpeg')
-        # Senza pubDate esplicito, un reader (Feedly incluso) non ha modo di
-        # sapere l'ordine cronologico reale e si affida all'ordine fisico nel
-        # documento — che feedgen inverte di default (ogni add_entry() fa un
-        # "prepend"), facendo apparire in fondo gli articoli più recenti.
-        try:
-            fe.pubDate(datetime.fromisoformat(item["published"]))
-        except (KeyError, ValueError):
-            pass
-    fg.rss_file(FEED_OUTPUT, pretty=True)
+    genera_feed(articoli, FEED_OUTPUT, "Rassegna Personale Unificata", "Sintesi IA e proxy anti-blocco.")
+    genera_feed(articoli_immagini, FEED_OUTPUT_IMMAGINI, "Contemporary Art Daily", "Solo immagini, senza sintesi né traduzione.")
 
 if __name__ == "__main__":
     main()
