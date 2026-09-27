@@ -7,7 +7,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Sun, 27 Sep 2026 04:33:40 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2026 13:43:18 +0000</lastBuildDate>
     <item>
       <title>Aperture (Essays): Gallery Installations</title>
       <link>https://aperture.org/exhibitions/aperture-loves-new-york</link>
@@ -112,27 +112,6 @@
 </div>]]></description>
       <guid isPermaLink="false">v18_https://t.me/filosofiastramba/1403</guid>
       <pubDate>Mon, 21 Sep 2026 21:11:46 +0000</pubDate>
-    </item>
-    <item>
-      <title>Narratively: L'Epica del Domenica: Una Rom-Com che si Trasforma in Thriller</title>
-      <link>https://www.narratively.com/p/the-sunday-epic-a-rom-com-turned</link>
-      <description><![CDATA[
-    <p><strong>FONTE:</strong> Narratively | <strong>Ambito:</strong> <em>Narrativa</em></p>
-    <hr>
-    <p>Questa settimana non troviamo una notizia approfondita, ma un saggio personale che si presenta come un vero e proprio capolavoro. Melissa Johnson utilizza abilmente gli strumenti del copione per tenere i lettori incollati a ogni momento di questa storia intensa e allo stesso tempo esilarante.</p>  
-<p>Se hai bisogno di una lettura divertente e leggera per il weekend, questa è la scelta giusta. Puoi anche ascoltarla: la versione audio, posizionata in cima alla pagina, è letta con grande piacere dalla stessa Melissa.</p>  
-<p>Come sempre, ringraziamo i nostri abbonati paganti, che rendono possibile la narrazione creativa e di lunga durata come questa.</p>  
-<ol>  
-<li>Stile narrativo unico che mescola commedia romantica e thriller.</li>  
-<li>Uso di tecniche cinematografiche per mantenere alta l'attenzione.</li>  
-<li>Disponibilità sia in formato scritto che audio.</li>  
-<li>Supporto fondamentale degli abbonati per la produzione di contenuti di qualità.</li>  
-</ol>
-    <hr>
-    <p><a href="https://www.narratively.com/p/the-sunday-epic-a-rom-com-turned">Leggi originale su Narratively &rarr;</a></p>
-    ]]></description>
-      <guid isPermaLink="false">v18_https://www.narratively.com/p/the-sunday-epic-a-rom-com-turned</guid>
-      <pubDate>Mon, 21 Sep 2026 22:36:17 +0000</pubDate>
     </item>
     <item>
       <title>1000 Words: Contro la nostalgia: Tish Murtha e Kuba Ryniewicz al Baltic, Gateshead</title>
@@ -500,6 +479,26 @@
     ]]></description>
       <guid isPermaLink="false">v18_https://t.me/filosofiastramba/1405</guid>
       <pubDate>Sat, 26 Sep 2026 12:50:54 +0000</pubDate>
+    </item>
+    <item>
+      <title>Narratively: L'Epico del Domenica: L'Invenzione delle Fake News</title>
+      <link>https://www.narratively.com/p/the-sunday-epic-the-invention-of</link>
+      <description><![CDATA[
+    <p><strong>FONTE:</strong> Narratively | <strong>Ambito:</strong> <em>Narrativa</em></p>
+    <hr>
+    <p>Con i leader mondiali in conflitto all'ONU la settimana scorsa e la stagione elettorale imminente che porta con sé una marea di disinformazione, mi sono trovato a riflettere su questo straordinario pezzo di <strong>Storia Nascosta</strong>. Chiamarlo un epico è un sottovalutamento: è la storia più lunga e ambiziosa che abbiamo mai pubblicato.</p>  
+<p>Gli eventi incredibili, avvenuti circa 70 anni fa, sembrano tutt'altro che del passato: la loro rilevanza è palpabile anche oggi, in un mondo dove la verità è spesso travolta da notizie false.</p>  
+<p>Come sempre, ringraziamo i nostri abbonati paganti, che rendono possibile la narrazione approfondita e ambiziosa di cui sopra.</p>  
+<ol>  
+<li>Conflitto tra leader mondiali all'ONU e ondata di disinformazione.</li>  
+<li>Storia epica di 70 anni di eventi che rimangono attuali.</li>  
+<li>Importanza degli abbonati paganti per la produzione di contenuti di qualità.</li>  
+</ol>
+    <hr>
+    <p><a href="https://www.narratively.com/p/the-sunday-epic-the-invention-of">Leggi originale su Narratively &rarr;</a></p>
+    ]]></description>
+      <guid isPermaLink="false">v18_https://www.narratively.com/p/the-sunday-epic-the-invention-of</guid>
+      <pubDate>Sun, 27 Sep 2026 13:43:02 +0000</pubDate>
     </item>
   </channel>
 </rss>
