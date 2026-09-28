@@ -468,7 +468,9 @@ def genera_feed(articoli, output_file, titolo, descrizione):
         fe.id(item["id"])
         fe.title(item["title"])
         fe.link(href=item["link"])
-        fe.content(item["html_content"], type="CDATA")
+        # Alcuni reader (es. Bulletin) mostrano il codice HTML come testo se il
+        # contenuto non inizia direttamente con un tag: niente spazi/righe vuote iniziali.
+        fe.content("<div>" + item["html_content"].strip() + "</div>", type="CDATA")
         if item.get("image_url"):
             fe.enclosure(item["image_url"], 0, 'image/jpeg')
         # Senza pubDate esplicito, un reader (Feedly incluso) non ha modo di
