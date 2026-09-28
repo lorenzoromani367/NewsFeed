@@ -40,6 +40,6 @@ jobs:
       - name: Aggiorna cache CDN jsDelivr
         continue-on-error: true
         run: |
-          for f in feed_sintesi.xml feed_contemporary_art_daily.xml; do
+          for f in feed_sintesi.xml feed_contemporary_art_daily.xml rassegna.opml; do
             curl -s "https://purge.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/$f" || true
           done

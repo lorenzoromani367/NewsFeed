@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head><title>Rassegna Personale</title></head>
+  <body>
+    <outline text="Rassegna Personale" title="Rassegna Personale">
+      <outline type="rss" text="Rassegna Personale Unificata" title="Rassegna Personale Unificata" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feed_sintesi.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+    </outline>
+    <outline text="Contemporary Art Daily" title="Contemporary Art Daily">
+      <outline type="rss" text="Contemporary Art Daily" title="Contemporary Art Daily" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feed_contemporary_art_daily.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+    </outline>
+  </body>
+</opml>
