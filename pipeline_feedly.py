@@ -459,6 +459,7 @@ def genera_feed(articoli, output_file, titolo, descrizione):
     fg = FeedGenerator()
     fg.title(titolo)
     fg.link(href=FEED_SITE, rel="alternate")
+    fg.link(href=FEED_SITE + output_file, rel="self", type="application/rss+xml")
     fg.description(descrizione)
     fg.language("it")
 
