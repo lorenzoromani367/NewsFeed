@@ -509,6 +509,20 @@ def scrivi_pagina(item):
     with open(os.path.join(PAGINE_DIR, nome), "w", encoding="utf-8") as f:
         f.write(html)
 
+def estratto_testo(item):
+    """Testo semplice della sintesi per il campo <description>: alcuni reader
+    (es. Bulletin) mostrano il <description> come testo puro, quindi li' non
+    deve esserci HTML (l'HTML completo va in content:encoded)."""
+    soup = BeautifulSoup(item["html_content"], "html.parser")
+    righe = []
+    for el in soup.find_all(["p", "li"]):
+        t = " ".join(el.get_text(" ", strip=True).split())
+        if not t or t.startswith("FONTE:") or "originale" in t.lower(): continue
+        righe.append(("• " if el.name == "li" else "") + t)
+    if righe: return "\n\n".join(righe)
+    n = len(soup.find_all("img"))
+    return f"{n} immagini" if n else item["title"]
+
 def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
     # Fonti diverse possono convergere sullo stesso link (fallback condivisi,
     # o pagine che ripescano le stesse sezioni generiche di un sito): la
@@ -537,6 +551,7 @@ def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
         # Alcuni reader (es. Bulletin) mostrano il codice HTML come testo se il
         # contenuto non inizia direttamente con un tag: niente spazi/righe vuote iniziali.
         fe.content("<div>" + item["html_content"].strip() + "</div>", type="CDATA")
+        fe.description(estratto_testo(item))
         if item.get("image_url"):
             fe.enclosure(item["image_url"], 0, 'image/png' if item["image_url"].endswith('.png') else 'image/jpeg')
         # Senza pubDate esplicito, un reader (Feedly incluso) non ha modo di
