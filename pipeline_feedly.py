@@ -3,6 +3,9 @@ import re
 import json
 import time
 import urllib.parse
+import hashlib
+import shutil
+from html import escape
 from datetime import datetime, timezone
 import requests
 import cloudscraper
@@ -144,6 +147,7 @@ def recupera_articoli_pagina(url, nome_fonte="", limite=2):
             href = href.split("#")[0].rstrip("/")
             if not href or href in visti: continue
             if href == url.rstrip("/"): continue
+            if re.search(r"\.(pdf|jpe?g|png|gif|zip)$", href, re.I) or "/wp-content/uploads/" in href: continue
             if urllib.parse.urlparse(href).netloc != dominio: continue
             testo_norm = testo.lower()
             if len(testo) < 15 or testo.startswith(("!", "[")): continue
@@ -445,6 +449,26 @@ def elabora_messaggio_telegram(db, f, testo_originale, link, img_url=None):
     time.sleep(5)
     return record
 
+PAGINE_DIR = "articoli"
+
+def url_pagina(item_id):
+    return f"{FEED_SITE}{PAGINE_DIR}/{hashlib.sha1(item_id.encode()).hexdigest()[:16]}.html"
+
+def scrivi_pagina(item):
+    """Pagina HTML statica con la sintesi: alcuni reader (es. Bulletin) ignorano
+    il contenuto del feed e scaricano la pagina del link, quindi il link
+    dell'item punta a questa pagina invece che all'articolo originale."""
+    contenuto = item["html_content"].strip()
+    img = item.get("image_url")
+    immagine = f'<p><img src="{escape(img)}" alt="" style="max-width:100%"></p>' if img and img not in contenuto else ""
+    titolo = escape(item["title"])
+    html = (f'<!doctype html><html lang="it"><head><meta charset="utf-8">'
+            f'<meta name="viewport" content="width=device-width,initial-scale=1">'
+            f'<title>{titolo}</title></head><body><article><h1>{titolo}</h1>{immagine}{contenuto}</article></body></html>')
+    nome = url_pagina(item["id"]).rsplit("/", 1)[-1]
+    with open(os.path.join(PAGINE_DIR, nome), "w", encoding="utf-8") as f:
+        f.write(html)
+
 def genera_feed(articoli, output_file, titolo, descrizione):
     # Fonti diverse possono convergere sullo stesso link (fallback condivisi,
     # o pagine che ripescano le stesse sezioni generiche di un sito): la
@@ -467,7 +491,8 @@ def genera_feed(articoli, output_file, titolo, descrizione):
         fe = fg.add_entry()
         fe.id(item["id"])
         fe.title(item["title"])
-        fe.link(href=item["link"])
+        scrivi_pagina(item)
+        fe.link(href=url_pagina(item["id"]))
         # Alcuni reader (es. Bulletin) mostrano il codice HTML come testo se il
         # contenuto non inizia direttamente con un tag: niente spazi/righe vuote iniziali.
         fe.content("<div>" + item["html_content"].strip() + "</div>", type="CDATA")
@@ -517,6 +542,8 @@ def main():
 
     salva_database(db)
 
+    shutil.rmtree(PAGINE_DIR, ignore_errors=True)
+    os.makedirs(PAGINE_DIR)
     genera_feed(articoli, FEED_OUTPUT, "Rassegna Personale Unificata", "Sintesi IA e proxy anti-blocco.")
     genera_feed(articoli_immagini, FEED_OUTPUT_IMMAGINI, "Contemporary Art Daily", "Solo immagini, senza sintesi né traduzione.")
 
