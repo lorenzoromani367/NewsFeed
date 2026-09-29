@@ -450,6 +450,46 @@ def elabora_messaggio_telegram(db, f, testo_originale, link, img_url=None):
     return record
 
 PAGINE_DIR = "articoli"
+IMMAGINI_DIR = os.path.join(PAGINE_DIR, "img")
+IMMAGINI_USATE = set()
+
+def ospita_immagine(url_originale, referer):
+    """Scarica un'immagine e la ripubblica su Pages: molti CDN bloccano il
+    hotlinking (Referer diverso) e in reader come Bulletin l'immagine non si
+    carica. Se il download fallisce restituisce l'URL originale."""
+    if not url_originale or url_originale.startswith(FEED_SITE): return url_originale
+    base = hashlib.sha1(url_originale.encode()).hexdigest()[:16]
+    for ext in ("jpg", "png", "webp", "gif"):
+        if os.path.exists(os.path.join(IMMAGINI_DIR, f"{base}.{ext}")):
+            IMMAGINI_USATE.add(f"{base}.{ext}")
+            return f"{FEED_SITE}{IMMAGINI_DIR}/{base}.{ext}"
+    try:
+        res = scraper.get(url_originale, headers={"Referer": referer}, timeout=20)
+        tipo = res.headers.get("Content-Type", "").lower()
+        if res.status_code != 200 or not tipo.startswith("image/") or len(res.content) > 8_000_000:
+            print(f"    [IMG] {url_originale} -> HTTP {res.status_code} {tipo}", flush=True)
+            return url_originale
+        ext = "png" if "png" in tipo else "webp" if "webp" in tipo else "gif" if "gif" in tipo else "jpg"
+        nome = f"{base}.{ext}"
+        os.makedirs(IMMAGINI_DIR, exist_ok=True)
+        with open(os.path.join(IMMAGINI_DIR, nome), "wb") as f:
+            f.write(res.content)
+        IMMAGINI_USATE.add(nome)
+        return f"{FEED_SITE}{IMMAGINI_DIR}/{nome}"
+    except Exception as e:
+        print(f"    [IMG] {url_originale} -> {type(e).__name__}: {e}", flush=True)
+        return url_originale
+
+def ospita_immagini_item(item):
+    item = dict(item)
+    referer = item["link"]
+    item["html_content"] = re.sub(
+        r'(<img\b[^>]*?\bsrc=")([^"]+)(")',
+        lambda m: m.group(1) + ospita_immagine(m.group(2), referer) + m.group(3),
+        item["html_content"])
+    if item.get("image_url"):
+        item["image_url"] = ospita_immagine(item["image_url"], referer)
+    return item
 
 def url_pagina(item_id):
     return f"{FEED_SITE}{PAGINE_DIR}/{hashlib.sha1(item_id.encode()).hexdigest()[:16]}.html"
@@ -464,12 +504,12 @@ def scrivi_pagina(item):
     titolo = escape(item["title"])
     html = (f'<!doctype html><html lang="it"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>{titolo}</title></head><body><article><h1>{titolo}</h1>{immagine}{contenuto}</article></body></html>')
+            f'<meta name="referrer" content="no-referrer"><title>{titolo}</title></head><body><article><h1>{titolo}</h1>{immagine}{contenuto}</article></body></html>')
     nome = url_pagina(item["id"]).rsplit("/", 1)[-1]
     with open(os.path.join(PAGINE_DIR, nome), "w", encoding="utf-8") as f:
         f.write(html)
 
-def genera_feed(articoli, output_file, titolo, descrizione):
+def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
     # Fonti diverse possono convergere sullo stesso link (fallback condivisi,
     # o pagine che ripescano le stesse sezioni generiche di un sito): la
     # cache in quel caso restituisce lo stesso record due volte. Deduplica
@@ -488,6 +528,7 @@ def genera_feed(articoli, output_file, titolo, descrizione):
     fg.language("it")
 
     for item in sorted(articoli_unici, key=lambda x: x.get("published", ""), reverse=True)[:30]:
+        if ospita_img: item = ospita_immagini_item(item)
         fe = fg.add_entry()
         fe.id(item["id"])
         fe.title(item["title"])
@@ -497,7 +538,7 @@ def genera_feed(articoli, output_file, titolo, descrizione):
         # contenuto non inizia direttamente con un tag: niente spazi/righe vuote iniziali.
         fe.content("<div>" + item["html_content"].strip() + "</div>", type="CDATA")
         if item.get("image_url"):
-            fe.enclosure(item["image_url"], 0, 'image/jpeg')
+            fe.enclosure(item["image_url"], 0, 'image/png' if item["image_url"].endswith('.png') else 'image/jpeg')
         # Senza pubDate esplicito, un reader (Feedly incluso) non ha modo di
         # sapere l'ordine cronologico reale e si affida all'ordine fisico nel
         # documento — che feedgen inverte di default (ogni add_entry() fa un
@@ -542,10 +583,13 @@ def main():
 
     salva_database(db)
 
-    shutil.rmtree(PAGINE_DIR, ignore_errors=True)
-    os.makedirs(PAGINE_DIR)
+    os.makedirs(IMMAGINI_DIR, exist_ok=True)
+    for nome in os.listdir(PAGINE_DIR):
+        if nome.endswith(".html"): os.remove(os.path.join(PAGINE_DIR, nome))
     genera_feed(articoli, FEED_OUTPUT, "Rassegna Personale Unificata", "Sintesi IA e proxy anti-blocco.")
-    genera_feed(articoli_immagini, FEED_OUTPUT_IMMAGINI, "Contemporary Art Daily", "Solo immagini, senza sintesi né traduzione.")
+    genera_feed(articoli_immagini, FEED_OUTPUT_IMMAGINI, "Contemporary Art Daily", "Solo immagini, senza sintesi né traduzione.", ospita_img=True)
+    for nome in os.listdir(IMMAGINI_DIR):
+        if nome not in IMMAGINI_USATE: os.remove(os.path.join(IMMAGINI_DIR, nome))
 
 if __name__ == "__main__":
     main()
