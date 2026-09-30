@@ -57,6 +57,8 @@ VERSIONE_CACHE = "v18"
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"}
 
+BLOCCO_ANTIBOT = re.compile(r"robot challenge|captcha|just a moment|verify you are human|checking your browser|attention required|enable javascript and cookies", re.I)
+
 TESTI_DA_IGNORARE = {
     "read more", "continue reading", "share", "subscribe", "home", "next",
     "previous", "next page", "menu", "search", "leggi tutto", "leggi di più",
@@ -302,6 +304,7 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
     for tag in soup(["script", "style"]): tag.decompose()
     testo_pulito = " ".join(soup.get_text().split())
 
+    testo_feed = testo_pulito
     if len(testo_pulito) < 400 and link:
         contenuto, _ = scarica_bypass(link)
         if contenuto:
@@ -327,7 +330,14 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
 
     if not img_url and soup.find("img"): img_url = soup.find("img").get("src")
 
-    titolo_tradotto, sintesi = genera_sintesi_e_traduzione(titolo, f["nome"], testo_pulito, traduci=not f.get("italiano"))
+    if BLOCCO_ANTIBOT.search(testo_pulito[:3000]):
+        print(f"    [BLOCCO] {link} -> pagina anti-bot, uso solo il testo del feed", flush=True)
+        testo_pulito = testo_feed
+
+    if len(testo_pulito) < 150:
+        titolo_tradotto, sintesi = titolo, None
+    else:
+        titolo_tradotto, sintesi = genera_sintesi_e_traduzione(titolo, f["nome"], testo_pulito, traduci=not f.get("italiano"))
 
     trad_ok = True
     if not sintesi:
