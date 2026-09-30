@@ -598,6 +598,21 @@ def estratto_testo(item):
     n = len(soup.find_all("img"))
     return f"{n} immagini" if n else item["title"]
 
+VOCI_PER_FONTE = 3
+VOCI_PER_FONTE_IMMAGINI = 10
+
+def voci_recenti(db, articoli_giro, fonti, per_fonte):
+    """Le ultime per_fonte voci di ogni fonte, dalla cache più quelle di questo giro."""
+    tutte = dict(db)
+    for a in articoli_giro: tutte[a["id"]] = a
+    risultato = []
+    for f in fonti:
+        prefisso = f"{f['nome']}: "
+        voci = sorted((a for a in tutte.values() if a["title"].startswith(prefisso)),
+                      key=lambda x: x.get("published", ""), reverse=True)
+        risultato += voci[:per_fonte]
+    return risultato
+
 def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
     # Fonti diverse possono convergere sullo stesso link (fallback condivisi,
     # o pagine che ripescano le stesse sezioni generiche di un sito): la
@@ -616,7 +631,7 @@ def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
     fg.description(descrizione)
     fg.language("it")
 
-    for item in sorted(articoli_unici, key=lambda x: x.get("published", ""), reverse=True)[:30]:
+    for item in sorted(articoli_unici, key=lambda x: x.get("published", ""), reverse=True)[:120]:
         if ospita_img: item = ospita_immagini_item(item)
         fe = fg.add_entry()
         fe.id(item["id"])
@@ -681,8 +696,14 @@ def main():
     os.makedirs(IMMAGINI_DIR, exist_ok=True)
     for nome in os.listdir(PAGINE_DIR):
         if nome.endswith(".html"): os.remove(os.path.join(PAGINE_DIR, nome))
-    genera_feed(articoli, FEED_OUTPUT, "Rassegna Personale Unificata", "Sintesi IA e proxy anti-blocco.")
-    genera_feed(articoli_immagini, FEED_OUTPUT_IMMAGINI, "Contemporary Art Daily", "Solo immagini, senza sintesi né traduzione.", ospita_img=True)
+    # Il feed si costruisce da cache + voci di questo giro (non solo da quelle
+    # appena scaricate): se un sito blocca o va in timeout in un giro, le sue
+    # ultime voci restano nel feed invece di sparire (e con un tetto globale, le
+    # fonti più vecchie non vengono più spinte fuori da quelle nuove).
+    fonti_std = [f for f in FONTI if f.get("tipo") != "immagini"]
+    fonti_img = [f for f in FONTI if f.get("tipo") == "immagini"]
+    genera_feed(voci_recenti(db, articoli, fonti_std, VOCI_PER_FONTE), FEED_OUTPUT, "Rassegna Personale Unificata", "Sintesi IA e proxy anti-blocco.")
+    genera_feed(voci_recenti(db, articoli_immagini, fonti_img, VOCI_PER_FONTE_IMMAGINI), FEED_OUTPUT_IMMAGINI, "Contemporary Art Daily", "Solo immagini, senza sintesi né traduzione.", ospita_img=True)
     for nome in os.listdir(IMMAGINI_DIR):
         if nome not in IMMAGINI_USATE: os.remove(os.path.join(IMMAGINI_DIR, nome))
 
