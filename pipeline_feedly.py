@@ -93,6 +93,16 @@ def scarica_bypass(url, timeout_diretto=12, timeout_proxy=15):
     except Exception as e:
         print(f"    [DIRETTO] {url} -> {type(e).__name__}: {e}", flush=True)
 
+    # Alcuni siti (es. indiscreto.org) rifiutano l'handshake TLS di cloudscraper:
+    # una richiesta con le impostazioni TLS standard di requests passa.
+    try:
+        res = requests.get(url, headers=HEADERS, timeout=timeout_diretto)
+        if res.status_code == 200 and len(res.content) > 200:
+            return res.content, "requests"
+        print(f"    [REQUESTS] {url} -> HTTP {res.status_code}", flush=True)
+    except Exception as e:
+        print(f"    [REQUESTS] {url} -> {type(e).__name__}: {e}", flush=True)
+
     try:
         safe_url = urllib.parse.quote(url, safe='')
         res = requests.get(f"https://api.allorigins.win/raw?url={safe_url}", headers=HEADERS, timeout=timeout_proxy)
@@ -154,6 +164,7 @@ def recupera_articoli_pagina(url, nome_fonte="", limite=2):
             href = href.split("#")[0].rstrip("/")
             if not href or href in visti: continue
             if href == url.rstrip("/"): continue
+            if re.search(r"/(category|tag|author|page)/", urllib.parse.urlparse(href).path): continue
             if re.search(r"\.(pdf|jpe?g|png|gif|zip)$", href, re.I) or "/wp-content/uploads/" in href: continue
             if urllib.parse.urlparse(href).netloc != dominio: continue
             testo_norm = testo.lower()
