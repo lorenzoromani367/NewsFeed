@@ -37,6 +37,8 @@ FONTI = [
     {"nome": "Solomon", "tipo": "pagina", "url": "https://wearesolomon.com/en/", "categoria": "Cultura", "colore": "#0ea5e9"},
     {"nome": "Narratively", "tipo": "rss", "url": "https://www.narratively.com/feed", "categoria": "Narrativa", "colore": "#0f766e"},
 
+    {"nome": "Italia che Cambia", "tipo": "pagina", "italiano": True, "url": "https://www.italiachecambia.org/cose%20da%20sapere/", "categoria": "Attualità", "colore": "#16a34a"},
+
     {"nome": "Contemporary Art Daily", "tipo": "immagini", "url": "https://www.contemporaryartdaily.com", "categoria": "Arte Contemporanea", "colore": "#18181b"},
 
     {"nome": "Filosofia Stramba", "tipo": "telegram", "url": "https://t.me/s/filosofiastramba", "categoria": "Filosofia", "colore": "#eab308"},
@@ -186,7 +188,7 @@ def recupera_articoli_pagina(url, nome_fonte="", limite=2):
 
     return []
 
-def genera_sintesi_e_traduzione(titolo, fonte, testo):
+def genera_sintesi_e_traduzione(titolo, fonte, testo, traduci=True):
     if not client: return None, None
     prompt_sistema = """Sei un analista editoriale. Se il testo originale è in inglese, TRADUCILO IN ITALIANO sia il titolo che il testo.
 REGOLE TASSATIVE:
@@ -196,6 +198,12 @@ TITOLO_TRADOTTO: [Inserisci qui il titolo tradotto]
 ---
 [Inserisci qui il riassunto HTML con <p>, <strong>, <ol>, <li>]
 3. LUNGHEZZA: Adatta la densità. Fornisci sempre 3-5 PUNTI CHIAVE alla fine del riassunto."""
+
+    if not traduci:
+        prompt_sistema = prompt_sistema.replace(
+            "Se il testo originale è in inglese, TRADUCILO IN ITALIANO sia il titolo che il testo.",
+            "Il testo è già in italiano: NON tradurlo, lavora sul testo originale così com'è.").replace(
+            "TITOLO_TRADOTTO: [Inserisci qui il titolo tradotto]", "TITOLO_TRADOTTO: [Ripeti qui il titolo originale, invariato]")
 
     prompt_utente = f"FONTE: {fonte}\nTITOLO ORIGINALE: {titolo}\nTESTO:\n{testo[:15000]}"
 
@@ -301,13 +309,13 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
 
     if not img_url and soup.find("img"): img_url = soup.find("img").get("src")
 
-    titolo_tradotto, sintesi = genera_sintesi_e_traduzione(titolo, f["nome"], testo_pulito)
+    titolo_tradotto, sintesi = genera_sintesi_e_traduzione(titolo, f["nome"], testo_pulito, traduci=not f.get("italiano"))
 
     trad_ok = True
     if not sintesi:
         trad_ok = False
         titolo_tradotto = titolo
-        sintesi = f"<p><em>Traduzione non disponibile.</em></p><p>{testo_pulito[:800]}...</p>"
+        sintesi = f"<p><em>Sintesi non disponibile.</em></p><p>{testo_pulito[:800]}...</p>"
 
     html = componi_html_finale(f["nome"], f["categoria"], f["colore"], sintesi, link, img_url)
     record = {"id": item_id, "title": f"{f['nome']}: {titolo_tradotto}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat(), "image_url": img_url}
