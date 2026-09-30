@@ -6,7 +6,7 @@ import urllib.parse
 import hashlib
 import shutil
 from html import escape
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import requests
 import cloudscraper
 import feedparser
@@ -599,7 +599,54 @@ def estratto_testo(item):
     return f"{n} immagini" if n else item["title"]
 
 VOCI_PER_FONTE = 3
-VOCI_PER_FONTE_IMMAGINI = 10
+MESI_IT = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio",
+           "agosto", "settembre", "ottobre", "novembre", "dicembre"]
+
+def finestra_digest(dt):
+    """Finestra a cui appartiene dt: lun-mer esce giovedì, gio-dom esce lunedì (UTC)."""
+    giorno = dt.replace(hour=0, minute=0, second=0, microsecond=0)
+    if dt.weekday() <= 2:
+        inizio = giorno - timedelta(days=dt.weekday())
+        return inizio, inizio + timedelta(days=3)
+    inizio = giorno - timedelta(days=dt.weekday() - 3)
+    return inizio, inizio + timedelta(days=4)
+
+def digest_immagini(db, nome_fonte, ora=None, max_digest=8, img_per_mostra=3):
+    """Raggruppa le voci di una fonte solo-immagini in riepiloghi due volte a
+    settimana (una voce per finestra conclusa), con poche immagini per mostra."""
+    ora = ora or datetime.now(timezone.utc)
+    prefisso = f"{nome_fonte}: "
+    finestre = {}
+    for v in db.values():
+        if not v["title"].startswith(prefisso): continue
+        try: dt = datetime.fromisoformat(v["published"])
+        except (KeyError, ValueError): continue
+        inizio, fine = finestra_digest(dt)
+        if fine <= ora: finestre.setdefault((inizio, fine), []).append(v)
+
+    risultato = []
+    for (inizio, fine), voci in sorted(finestre.items(), reverse=True)[:max_digest]:
+        voci.sort(key=lambda x: x["published"])
+        titoli = [v["title"][len(prefisso):] for v in voci]
+        corpo = "<p>Mostre: " + "; ".join(titoli) + "</p>"
+        for v, titolo in zip(voci, titoli):
+            immagini = re.findall(r'<img[^>]*?\bsrc="([^"]+)"', v["html_content"])[:img_per_mostra]
+            corpo += f"<h2>{escape(titolo)}</h2>" + "".join(f'<p><img src="{escape(u)}" style="max-width:100%"></p>' for u in immagini)
+            corpo += f'<p><a href="{escape(v["link"])}">Vedi originale su {escape(nome_fonte)} &rarr;</a></p>'
+        ultimo = fine - timedelta(days=1)
+        if inizio.month == ultimo.month:
+            periodo = f"dal {inizio.day} al {ultimo.day} {MESI_IT[ultimo.month - 1]}"
+        else:
+            periodo = f"dal {inizio.day} {MESI_IT[inizio.month - 1]} al {ultimo.day} {MESI_IT[ultimo.month - 1]}"
+        risultato.append({
+            "id": f"{VERSIONE_CACHE}_digest-{nome_fonte}-{inizio.date()}",
+            "title": f"{nome_fonte}: mostre {periodo}",
+            "link": voci[0]["link"],
+            "html_content": corpo,
+            "published": fine.isoformat(),
+            "image_url": None,
+        })
+    return risultato
 
 def voci_recenti(db, articoli_giro, fonti, per_fonte):
     """Le ultime per_fonte voci di ogni fonte, dalla cache più quelle di questo giro."""
@@ -703,7 +750,8 @@ def main():
     fonti_std = [f for f in FONTI if f.get("tipo") != "immagini"]
     fonti_img = [f for f in FONTI if f.get("tipo") == "immagini"]
     genera_feed(voci_recenti(db, articoli, fonti_std, VOCI_PER_FONTE), FEED_OUTPUT, "Rassegna Personale Unificata", "Sintesi IA e proxy anti-blocco.")
-    genera_feed(voci_recenti(db, articoli_immagini, fonti_img, VOCI_PER_FONTE_IMMAGINI), FEED_OUTPUT_IMMAGINI, "Contemporary Art Daily", "Solo immagini, senza sintesi né traduzione.", ospita_img=True)
+    digest = [d for f in fonti_img for d in digest_immagini(db, f["nome"])]
+    genera_feed(digest, FEED_OUTPUT_IMMAGINI, "Contemporary Art Daily", "Riepilogo di immagini due volte a settimana, senza sintesi né traduzione.", ospita_img=True)
     for nome in os.listdir(IMMAGINI_DIR):
         if nome not in IMMAGINI_USATE: os.remove(os.path.join(IMMAGINI_DIR, nome))
 
