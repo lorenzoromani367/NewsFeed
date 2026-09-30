@@ -39,6 +39,11 @@ FONTI = [
 
     {"nome": "Italia che Cambia", "tipo": "pagina", "italiano": True, "url": "https://www.italiachecambia.org/cose%20da%20sapere/", "categoria": "Attualità", "colore": "#16a34a"},
 
+    {"nome": "Pangea", "tipo": "rss", "italiano": True, "url": "https://www.pangea.news/feed/", "pagina_fallback": "https://www.pangea.news/", "categoria": "Cultura", "colore": "#9333ea"},
+    {"nome": "Indiscreto", "tipo": "rss", "italiano": True, "url": "https://www.indiscreto.org/feed/", "pagina_fallback": "https://www.indiscreto.org/", "categoria": "Cultura", "colore": "#b91c1c"},
+    {"nome": "Gli Asini", "tipo": "rss", "italiano": True, "url": "https://gliasinirivista.org/feed/", "pagina_fallback": "https://gliasinirivista.org/", "categoria": "Cultura", "colore": "#a16207"},
+    {"nome": "Doppiozero (Filosofia)", "tipo": "pagina", "italiano": True, "url": "https://www.doppiozero.com/filosofia", "categoria": "Filosofia", "colore": "#0369a1"},
+
     {"nome": "Contemporary Art Daily", "tipo": "immagini", "url": "https://www.contemporaryartdaily.com", "categoria": "Arte Contemporanea", "colore": "#18181b"},
 
     {"nome": "Filosofia Stramba", "tipo": "telegram", "url": "https://t.me/s/filosofiastramba", "categoria": "Filosofia", "colore": "#eab308"},
@@ -197,7 +202,8 @@ REGOLE TASSATIVE:
 TITOLO_TRADOTTO: [Inserisci qui il titolo tradotto]
 ---
 [Inserisci qui il riassunto HTML con <p>, <strong>, <ol>, <li>]
-3. LUNGHEZZA: Adatta la densità. Fornisci sempre 3-5 PUNTI CHIAVE alla fine del riassunto."""
+3. LUNGHEZZA: Adatta la densità. Fornisci sempre 3-5 PUNTI CHIAVE alla fine del riassunto.
+4. FEDELTÀ: riporta SOLO ciò che è scritto nel testo. Non aggiungere fatti, giudizi, nomi, date o numeri che non compaiono; se un'informazione manca, omettila. Mantieni esatti nomi propri, cifre e citazioni. Non inserire opinioni o interpretazioni tue."""
 
     if not traduci:
         prompt_sistema = prompt_sistema.replace(
@@ -239,7 +245,8 @@ def genera_sintesi_breve(testo, fonte):
     prompt_sistema = """Sei un analista editoriale italiano. Il testo è già in italiano: NON tradurlo, lavora sul testo originale così com'è.
 REGOLE TASSATIVE:
 1. Fornisci una sintesi breve (anche solo 2-3 frasi se il testo originale è corto) e SEMPRE un elenco di 2-4 PUNTI CHIAVE, anche per messaggi molto brevi.
-2. FORMATO: Solo codice HTML (<p>, <strong>, <ol>, <li>). Nessun markdown."""
+2. FORMATO: Solo codice HTML (<p>, <strong>, <ol>, <li>). Nessun markdown.
+3. FEDELTÀ: riporta SOLO ciò che è scritto nel testo. Non aggiungere fatti, nomi, date o numeri che non compaiono. Non inserire opinioni tue."""
 
     prompt_utente = f"FONTE: {fonte}\nTESTO:\n{testo[:8000]}"
 
@@ -595,6 +602,11 @@ def main():
             continue
 
         parsed = recupera_feed_xml(f["url"], f.get("fallback"))
+        if (not hasattr(parsed, "entries") or not parsed.entries) and f.get("pagina_fallback"):
+            print(f"    [FEED] {f['nome']}: nessun feed RSS utilizzabile, ripiego sulla pagina", flush=True)
+            for titolo, link in recupera_articoli_pagina(f["pagina_fallback"], nome_fonte=f["nome"]):
+                articoli.append(elabora_voce(db, f, link, titolo))
+            continue
         if not hasattr(parsed, "entries"): continue
 
         for entry in parsed.entries[:2]:
