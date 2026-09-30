@@ -206,6 +206,60 @@ def recupera_articoli_pagina(url, nome_fonte="", limite=2):
 
     return []
 
+MODELLO_GROQ = "openai/gpt-oss-120b"
+TPM_LIMITE = 7000  # tetto gratuito Groq ~8000 token/minuto, con un po' di margine
+CARATTERI_PER_PARTE = 12000
+MAX_CARATTERI_ARTICOLO = 60000
+_finestra_token = []
+
+def _attendi_tpm(stimati):
+    """Rispetta il tetto di token al minuto: aspetta finché la richiesta ci sta."""
+    while True:
+        ora = time.time()
+        _finestra_token[:] = [(t, n) for t, n in _finestra_token if ora - t < 60]
+        if not _finestra_token or sum(n for _, n in _finestra_token) + stimati <= TPM_LIMITE:
+            break
+        time.sleep(max(1, 60 - (ora - _finestra_token[0][0]) + 0.5))
+    _finestra_token.append((time.time(), stimati))
+
+def chiama_groq(prompt_sistema, prompt_utente, max_tokens):
+    if not client: return None
+    stimati = min((len(prompt_sistema) + len(prompt_utente)) // 3 + max_tokens, TPM_LIMITE)
+    for tentativo in range(4):
+        try:
+            _attendi_tpm(stimati)
+            completion = client.chat.completions.create(
+                model=MODELLO_GROQ,
+                messages=[
+                    {"role": "system", "content": prompt_sistema},
+                    {"role": "user", "content": prompt_utente}
+                ],
+                temperature=0.2,
+                max_tokens=max_tokens
+            )
+            return (completion.choices[0].message.content or "").strip() or None
+        except Exception as e:
+            print(f"    [Groq Fallito] {e}", flush=True)
+            m = re.search(r"try again in (?:(\d+)m)?(\d+(?:\.\d+)?)(ms|s)", str(e))
+            attesa = 15
+            if m:
+                attesa = (int(m.group(1) or 0) * 60 + float(m.group(2))) / (1000 if m.group(3) == "ms" else 1) + 1
+            time.sleep(min(attesa, 90))
+    return None
+
+def dividi_testo(testo, max_car):
+    """Divide il testo in parti di al massimo max_car caratteri, spezzando a fine frase."""
+    parti, corrente = [], ""
+    for frase in re.split(r"(?<=[.!?])\s+|\n+", testo):
+        while len(frase) > max_car:
+            if corrente: parti.append(corrente); corrente = ""
+            parti.append(frase[:max_car]); frase = frase[max_car:]
+        if corrente and len(corrente) + len(frase) + 1 > max_car:
+            parti.append(corrente); corrente = ""
+        corrente = f"{corrente} {frase}".strip()
+    if corrente: parti.append(corrente)
+    return parti
+
 def genera_sintesi_e_traduzione(titolo, fonte, testo, traduci=True):
     if not client: return None, None
     prompt_sistema = """Sei un analista editoriale. Se il testo originale è in inglese, TRADUCILO IN ITALIANO sia il titolo che il testo.
@@ -224,31 +278,33 @@ TITOLO_TRADOTTO: [Inserisci qui il titolo tradotto]
             "Il testo è già in italiano: NON tradurlo, lavora sul testo originale così com'è.").replace(
             "TITOLO_TRADOTTO: [Inserisci qui il titolo tradotto]", "TITOLO_TRADOTTO: [Ripeti qui il titolo originale, invariato]")
 
-    prompt_utente = f"FONTE: {fonte}\nTITOLO ORIGINALE: {titolo}\nTESTO:\n{testo[:15000]}"
+    testo = testo[:MAX_CARATTERI_ARTICOLO]
+    if len(testo) > CARATTERI_PER_PARTE:
+        # Articolo lungo: riassunto per parti (ognuna sotto il tetto di token/minuto
+        # di Groq) e poi riassunto finale dei riassunti parziali.
+        parti = dividi_testo(testo, CARATTERI_PER_PARTE)
+        parziali = []
+        for n, parte in enumerate(parti, 1):
+            print(f"    [PARTI] riassunto parte {n}/{len(parti)}", flush=True)
+            ris = chiama_groq(
+                "Riassumi in ITALIANO, in modo fedele, questa parte di un articolo (150-250 parole). Mantieni esatti nomi propri, cifre e citazioni; non aggiungere nulla che non sia nel testo. Solo testo semplice, nessun commento.",
+                f"PARTE {n} DI {len(parti)} DELL'ARTICOLO \"{titolo}\":\n{parte}", 700)
+            if not ris: return None, None
+            parziali.append(f"[Parte {n}/{len(parti)}] {ris}")
+        prompt_utente = (f"FONTE: {fonte}\nTITOLO ORIGINALE: {titolo}\n"
+                         f"L'articolo è lungo: qui sotto i riassunti parziali in ordine. Componi un unico riassunto coerente e completo.\nTESTO:\n" + "\n\n".join(parziali))
+    else:
+        prompt_utente = f"FONTE: {fonte}\nTITOLO ORIGINALE: {titolo}\nTESTO:\n{testo}"
 
-    for tentativo in range(3):
-        try:
-            completion = client.chat.completions.create(
-                model="openai/gpt-oss-20b", 
-                messages=[
-                    {"role": "system", "content": prompt_sistema},
-                    {"role": "user", "content": prompt_utente}
-                ],
-                temperature=0.3,
-                max_tokens=1500
-            )
-            ris = completion.choices[0].message.content.strip()
-            ris = ris.replace("```html", "").replace("```", "").strip()
-            if "---" in ris:
-                parts = ris.split("---", 1)
-                t = parts[0].replace("TITOLO_TRADOTTO:", "").strip()
-                s = parts[1].strip()
-                return t, s
-            return titolo, ris
-        except Exception as e:
-            print(f"    [Groq Fallito] {e}", flush=True)
-            time.sleep(10)
-    return None, None
+    ris = chiama_groq(prompt_sistema, prompt_utente, 1800)
+    if not ris: return None, None
+    ris = ris.replace("```html", "").replace("```", "").strip()
+    if "---" in ris:
+        parts = ris.split("---", 1)
+        t = parts[0].replace("TITOLO_TRADOTTO:", "").strip()
+        s = parts[1].strip()
+        return t, s
+    return titolo, ris
 
 def genera_sintesi_breve(testo, fonte):
     """Come genera_sintesi_e_traduzione ma senza traduzione: per fonti già in
@@ -261,25 +317,8 @@ REGOLE TASSATIVE:
 2. FORMATO: Solo codice HTML (<p>, <strong>, <ol>, <li>). Nessun markdown.
 3. FEDELTÀ: riporta SOLO ciò che è scritto nel testo. Non aggiungere fatti, nomi, date o numeri che non compaiono. Non inserire opinioni tue."""
 
-    prompt_utente = f"FONTE: {fonte}\nTESTO:\n{testo[:8000]}"
-
-    for tentativo in range(3):
-        try:
-            completion = client.chat.completions.create(
-                model="openai/gpt-oss-20b",
-                messages=[
-                    {"role": "system", "content": prompt_sistema},
-                    {"role": "user", "content": prompt_utente}
-                ],
-                temperature=0.3,
-                max_tokens=800
-            )
-            ris = completion.choices[0].message.content.strip()
-            return ris.replace("```html", "").replace("```", "").strip()
-        except Exception as e:
-            print(f"    [Groq Fallito] {e}", flush=True)
-            time.sleep(10)
-    return None
+    ris = chiama_groq(prompt_sistema, f"FONTE: {fonte}\nTESTO:\n{testo[:CARATTERI_PER_PARTE]}", 800)
+    return ris.replace("```html", "").replace("```", "").strip() if ris else None
 
 def componi_html_finale(fonte, categoria, colore, contenuto, link, immagine_url):
     return f"""
