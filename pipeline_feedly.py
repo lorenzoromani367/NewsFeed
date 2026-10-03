@@ -44,6 +44,8 @@ FONTI = [
     {"nome": "Gli Asini", "tipo": "rss", "italiano": True, "url": "https://gliasinirivista.org/feed/", "pagina_fallback": "https://gliasinirivista.org/", "categoria": "Cultura", "colore": "#a16207"},
     {"nome": "Doppiozero (Filosofia)", "tipo": "pagina", "italiano": True, "url": "https://www.doppiozero.com/filosofia", "categoria": "Filosofia", "colore": "#0369a1"},
 
+    {"nome": "Aeon", "tipo": "rss", "url": "https://aeon.co/feed.rss", "solo_link": "/essays/", "pagina_fallback": "https://aeon.co/essays", "categoria": "Saggi", "colore": "#1d4ed8"},
+
     {"nome": "Contemporary Art Daily", "tipo": "immagini", "url": "https://www.contemporaryartdaily.com", "categoria": "Arte Contemporanea", "colore": "#18181b"},
 
     {"nome": "Filosofia Stramba", "tipo": "telegram", "url": "https://t.me/s/filosofiastramba", "categoria": "Filosofia", "colore": "#eab308"},
@@ -283,20 +285,25 @@ TITOLO_TRADOTTO: [Inserisci qui il titolo tradotto]
         # Articolo lungo: riassunto per parti (ognuna sotto il tetto di token/minuto
         # di Groq) e poi riassunto finale dei riassunti parziali.
         parti = dividi_testo(testo, CARATTERI_PER_PARTE)
+        # Saggio molto lungo (3+ parti, ~4.000+ parole): riassunti parziali e finale più ampi.
+        approfondito = len(parti) >= 3
+        parole = "250-350" if approfondito else "150-250"
         parziali = []
         for n, parte in enumerate(parti, 1):
             print(f"    [PARTI] riassunto parte {n}/{len(parti)}", flush=True)
             ris = chiama_groq(
-                "Riassumi in ITALIANO, in modo fedele, questa parte di un articolo (150-250 parole). Mantieni esatti nomi propri, cifre e citazioni; non aggiungere nulla che non sia nel testo. Solo testo semplice, nessun commento.",
-                f"PARTE {n} DI {len(parti)} DELL'ARTICOLO \"{titolo}\":\n{parte}", 700)
+                f"Riassumi in ITALIANO, in modo fedele, questa parte di un articolo ({parole} parole): segui lo sviluppo dell'argomentazione, gli esempi e le tesi. Mantieni esatti nomi propri, cifre e citazioni; non aggiungere nulla che non sia nel testo. Solo testo semplice, nessun commento.",
+                f"PARTE {n} DI {len(parti)} DELL'ARTICOLO \"{titolo}\":\n{parte}", 1000 if approfondito else 700)
             if not ris: return None, None
             parziali.append(f"[Parte {n}/{len(parti)}] {ris}")
+        if approfondito:
+            prompt_sistema += "\n5. SAGGIO LUNGO: scrivi un riassunto approfondito di circa 600-900 parole che segua lo sviluppo dell'argomentazione dall'inizio alla fine (tesi, passaggi, esempi, conclusione), poi 4-6 PUNTI CHIAVE."
         prompt_utente = (f"FONTE: {fonte}\nTITOLO ORIGINALE: {titolo}\n"
                          f"L'articolo è lungo: qui sotto i riassunti parziali in ordine. Componi un unico riassunto coerente e completo.\nTESTO:\n" + "\n\n".join(parziali))
     else:
         prompt_utente = f"FONTE: {fonte}\nTITOLO ORIGINALE: {titolo}\nTESTO:\n{testo}"
 
-    ris = chiama_groq(prompt_sistema, prompt_utente, 1800)
+    ris = chiama_groq(prompt_sistema, prompt_utente, 3000 if len(testo) > 2 * CARATTERI_PER_PARTE else 1800)
     if not ris: return None, None
     ris = ris.replace("```html", "").replace("```", "").strip()
     if "---" in ris:
@@ -731,7 +738,8 @@ def main():
             continue
         if not hasattr(parsed, "entries"): continue
 
-        for entry in parsed.entries[:2]:
+        entries = [e for e in parsed.entries if not f.get("solo_link") or f["solo_link"] in e.get("link", "")]
+        for entry in entries[:2]:
             link = entry.get("link", "")
             titolo = entry.get("title", "Senza Titolo")
             testo_grezzo = entry.get("content", [{}])[0].get("value", entry.get("summary", ""))
