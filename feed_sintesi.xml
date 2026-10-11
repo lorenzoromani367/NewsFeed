@@ -2,13 +2,13 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>Rassegna Personale Unificata</title>
-    <link>https://lorenzoromani367.github.io/NewsFeed/feed_sintesi.xml</link>
+    <link>https://lorenzoromani367.github.io/NewsFeed/</link>
     <description>Sintesi IA e proxy anti-blocco.</description>
     <atom:link href="https://lorenzoromani367.github.io/NewsFeed/feed_sintesi.xml" rel="self" type="application/rss+xml"/>
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Sun, 11 Oct 2026 14:50:49 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2026 14:59:50 +0000</lastBuildDate>
     <item>
       <title>Aperture (Reviews): In France, an Exhibition Focuses on the Power of Truth</title>
       <link>https://lorenzoromani367.github.io/NewsFeed/articoli/66f9d9f6a09bda32.html</link>
@@ -44,7 +44,7 @@ La mostra dimostra che la fotografia può essere più di un semplice strumento d
 
 • L’eredità di questi artisti continua a influenzare la fotografia contemporanea, sottolineando l’importanza della tecnica e dell’introspezione.</description>
       <content:encoded><![CDATA[<div><div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    <div style="margin-bottom: 20px;"><img src="https://www.facebook.com/tr?id=1357435647608496&ev=PageView&noscript=1" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="margin-bottom: 20px;"></div>
     <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #92400e; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Aperture (Reviews)</div>
     <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Fotografia</em></div>
     <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>Photography as a Way of Life</strong> è una mostra che riunisce le opere di Minor White, Aaron Siskind e Harry Callahan, tre pionieri della fotografia americana del XX secolo. La curatrice Brendan Fay, con una ricerca meticolosa e una selezione ponderata dal museo di Princeton, traccia le convergenze tra le loro carriere, dal club fotografico alla docenza in istituzioni accademiche, mostrando come ciascuno abbia trasformato la fotografia in un mezzo di espressione personale e spirituale.</p>
@@ -92,7 +92,7 @@ Le autorità israeliane hanno negato di finanziare la GHF, nonostante le accuse 
 
 • Controversie sulla finanza e l’indipendenza della GHF.</description>
       <content:encoded><![CDATA[<div><div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    <div style="margin-bottom: 20px;"><img src="https://wearesolomon.com/wp-content/themes/solomon/static/images/cross-white.svg" style="width: 100%; max-height: 480px; object-fit: cover; border-radius: 8px; display: block;" /></div>
+    <div style="margin-bottom: 20px;"></div>
     <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: #0ea5e9; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: Solomon</div>
     <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>Cultura</em></div>
     <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;"><p><strong>“Smiles Don’t Lie” – Propaganda israeliana mira Grecia e paesi UE</strong></p>
@@ -198,6 +198,8 @@ In definitiva, Close to Home propone una storia più plurale e in evoluzione del
 • Il formato non lineare invita a una lettura dinamica e interconnessa delle opere.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> 1000 Words | <strong>Ambito:</strong> <em>Fotografia</em></p>
     <hr>
+    <p><img src="https://1000wordsmag.com/wp-content/uploads/2026/07/Youth-Unemployment-Tish-Murtha-©-Ella-Murtha-all-rights-reserved-1-1.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p><strong>Close to Home</strong> è la più recente mostra del Baltic Centre for Contemporary Art che mette fianco a fianco le fotografie sociali di Tish Murtha con le visioni queer e gioiose di Kuba Ryniewicz. L’esposizione, inaugurata a Gateshead, invita a riflettere su chi racconta la storia di una comunità e su come questa venga rappresentata, sfidando le narrazioni tradizionali di povertà e degrado del Nord‑Est britannico.</p>  
 <p>Il progetto nasce dalla collaborazione tra la Side Gallery, storica istituzione dedicata alla fotografia della classe operaia, e il Baltic. Dopo la chiusura della Side Gallery nel 2023, la partnership curataria ha permesso di dare nuova vita a opere di Murtha, spesso trascurate, e di introdurre il lavoro di Ryniewicz, che ha documentato la vita queer di Newcastle e oltre.</p>  
 <p>Murtha, con la sua sensibilità documentaristica, ha catturato la resilienza e la solidarietà delle famiglie di Tyneside, evidenziando la violenza quotidiana dello Stato e le conseguenze della deindustrializzazione. Ryniewicz, invece, celebra la gioia, l’intimità e la resistenza delle comunità queer, mostrando che la vita notturna è anch’essa una forma di protesta.</p>  
@@ -210,10 +212,11 @@ In definitiva, Close to Home propone una storia più plurale e in evoluzione del
 <li>La collaborazione Side‑Baltic diversifica la storia fotografica del Nord‑Est.</li>  
 <li>Il formato non lineare invita a una lettura dinamica e interconnessa delle opere.</li>  
 </ol>
+    <p><img src="https://1000wordsmag.com/wp-content/uploads/2026/07/Kuba-Ryniewicz-The-Daily-Weeding-2020-2021-c-the-artist-4-1304x1600.jpeg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/07/Kuba-Ryniewicz-Good-Eggs-Neck-c-the-artist-1-1365x1600.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/07/Elswick-Kids-Tish-Murtha-©-Ella-Murtha-all-rights-reserved-1.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/07/Elswick-Kids-Tish-Murtha-©-Ella-Murtha-all-rights-reserved-3.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/07/Kuba-Ryniewicz-Cornered-Study-2022-ongoing-c-the-artist-2-1-1288x1600.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/07/Kuba-Ryniewicz-Cornered-Study-2022-ongoing-c-the-artist-8-1286x1600.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/07/Youth-Unemployment-Tish-Murtha-©-Ella-Murtha-all-rights-reserved-4.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
     <hr>
     <p><a href="https://1000wordsmag.com/against-nostalgia-tish-murtha-and-kuba-ryniewicz-at-baltic-gateshead/">Leggi originale su 1000 Words &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://1000wordsmag.com/against-nostalgia-tish-murtha-and-kuba-ryniewicz-at-baltic-gateshead/</guid>
-      <enclosure url="https://s.w.org/images/core/emoji/17.0.2/72x72/2666.png" length="0" type="image/png"/>
+      <enclosure url="https://1000wordsmag.com/wp-content/uploads/2026/07/Youth-Unemployment-Tish-Murtha-©-Ella-Murtha-all-rights-reserved-1-1.jpg" length="0" type="image/jpeg"/>
       <pubDate>Tue, 22 Sep 2026 12:56:49 +0000</pubDate>
     </item>
     <item>
@@ -252,6 +255,8 @@ Queste esposizioni offrono un panorama variegato di riflessioni sulla memoria, i
 • Storie di migrazione, identità e trasformazione urbana.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> 1000 Words | <strong>Ambito:</strong> <em>Fotografia</em></p>
     <hr>
+    <p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/mikhael-subotzky-wendy-house-8-161690-547421-front-1.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>Un nuovo ciclo d'arte è in corso e la nostra guida trimestrale presenta le mostre di fotografia e gli eventi da seguire quest'autunno. Dalle opere di Carrie Mae Weems e Sanlé Sory a quelle di Taryn Simon, Rhiannon Adam e Mikhael Subotzky, la selezione spazia tra archivi intimi e storie planetarie, case abbandonate e lune immaginarie, memoria familiare e paesaggi fratturati delle città.</p>  
 <p><strong>Mikhael Subotzky – “A Johannesburg Landscape (or Thirteen Tons Settled to Brick)”</strong> (Goodman Gallery, 27 Aug – 31 Oct): un ritratto stratificato della città, che fonde mappe archivistiche, storia mineraria e fotografie personali per esplorare il movimento di persone, oggetti e storie attraverso il paesaggio.</p>  
 <p><strong>Taryn Simon – “Father Country I Do Love You”</strong> (Guggenheim, 18 Sep – 14 Mar): la più ampia esposizione monografica di Simon, che ricostruisce la vita di un agente federale e interroga la memoria personale e lo stato di potere in un contesto di 42 capitoli multimediali.</p>  
@@ -270,10 +275,11 @@ Queste esposizioni offrono un panorama variegato di riflessioni sulla memoria, i
 <li>Riflessione sul rapporto tra uomo e natura.</li>  
 <li>Storie di migrazione, identità e trasformazione urbana.</li>  
 </ol>
+    <p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/mikhael-subotzky-wendy-house-8-161690-547421-front-1.avif" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/TS-1-1600x902.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/CMW-2.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/Sanle-Sory-Volta-Photo-Studio-Bobo-Dioulasso-Burkina-Faso-©-Sanle-Sory-2026.-Courtesy-of-Tezeta.1.webp" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/Luce-1.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/PhotoIreland.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/Renhui.avif" referrerpolicy="no-referrer" style="max-width:100%"></p>
     <hr>
     <p><a href="https://1000wordsmag.com/10-must-see-exhibitions-autumn-2026/">Leggi originale su 1000 Words &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://1000wordsmag.com/10-must-see-exhibitions-autumn-2026/</guid>
-      <enclosure url="https://s.w.org/images/core/emoji/17.0.2/72x72/2666.png" length="0" type="image/png"/>
+      <enclosure url="https://1000wordsmag.com/wp-content/uploads/2026/09/mikhael-subotzky-wendy-house-8-161690-547421-front-1.jpg" length="0" type="image/jpeg"/>
       <pubDate>Thu, 24 Sep 2026 16:48:23 +0000</pubDate>
     </item>
     <item>
@@ -298,6 +304,8 @@ Per chi vive oggi in un mondo dominato da algoritmi e big data, le fotografie di
 • Riflessione sulla differenza tra la fama degli anni ’90 e quella contemporanea dominata da algoritmi.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Aperture (Essays) | <strong>Ambito:</strong> <em>Fotografia</em></p>
     <hr>
+    <p><img src="https://aperture.org/wp-content/uploads/2026/09/264MAG027_Redux_AufderMaur_HR.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>Melissa Auf der Maur, ex bassista di Hole e Smashing Pumpkins, ha trasformato la sua passione per la fotografia in un archivio visivo di quasi diecimila scatti realizzati durante i tour degli anni ’90. Con una Nikon 28 mm e un laboratorio fotografico di poche ore, ha catturato momenti di vita backstage, performance e intimità con i colleghi, offrendo uno sguardo crudo e spontaneo sulla scena rock di quel decennio.</p>  
 <p>Nel settembre scorso l’esposizione <em>Melissa Auf der Maur: My ’90s Rock Photographs</em> è stata inaugurata alla Art Gallery of Ontario, dove 200 fotografie sono state esposte. L’evento segue la pubblicazione del suo memoir <em>Even the Good Girls Will Cry: A ’90s Rock Memoir</em>, che racconta la sua esperienza di artista in un’epoca in cui la fama non era ancora completamente assorbita dal capitalismo digitale.</p>  
 <p>Auf der Maur sottolinea come la cultura giovanile degli anni ’90 fosse caratterizzata da “una perdita brutale di innocenza” e da un profondo cinismo verso le corporazioni. Le sue immagini, spesso in bianco e nero o con tonalità saturate, mostrano la vulnerabilità dei musicisti, come Courtney Love in momenti di rilassamento, e la loro lotta contro la crescente mercificazione del rock.</p>  
@@ -309,10 +317,11 @@ Per chi vive oggi in un mondo dominato da algoritmi e big data, le fotografie di
 <li>Immagini che evidenziano la vulnerabilità e l’autenticità dei musicisti.</li>  
 <li>Riflessione sulla differenza tra la fama degli anni ’90 e quella contemporanea dominata da algoritmi.</li>  
 </ol>
+    <p><img src="https://aperture.org/wp-content/uploads/2026/09/Melissa-Auf-der-Maur-Self-Portrait-on-Stage-with-the-Smashing-Pumpkins-Cape-Town-South-Africa-2000.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://aperture.org/wp-content/uploads/2026/09/Melissa-Auf-der-Maur-Self-Portrait-with-Hole-Lollapalooza-USA-1995.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://aperture.org/wp-content/uploads/2026/09/2026_Aperture264_1600x900_Fan_gray-copy.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://aperture.org/wp-content/uploads/2026/09/264MAG026_Redux_AufderMaur_HR.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://aperture.org/wp-content/uploads/2026/09/264MAG028_Redux_AufderMaur_HR.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
     <hr>
     <p><a href="https://aperture.org/editorial/melissa-auf-der-maurs-90s-grunge-diary">Leggi originale su Aperture (Essays) &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://aperture.org/editorial/melissa-auf-der-maurs-90s-grunge-diary</guid>
-      <enclosure url="https://www.facebook.com/tr?id=1357435647608496&amp;ev=PageView&amp;noscript=1" length="0" type="image/jpeg"/>
+      <enclosure url="https://aperture.org/wp-content/uploads/2026/09/264MAG027_Redux_AufderMaur_HR.jpg" length="0" type="image/jpeg"/>
       <pubDate>Sun, 27 Sep 2026 22:54:00 +0000</pubDate>
     </item>
     <item>
@@ -354,7 +363,6 @@ La mancanza di trasparenza impedisce alle comunità di valutare l’effettivo im
     <hr>
     <p><a href="https://wearesolomon.com/en/mag/format/investigation/eu-chooses-secrecy-over-transparency-on-data-centers-environmental-cost">Leggi originale su Solomon &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://wearesolomon.com/en/mag/format/investigation/eu-chooses-secrecy-over-transparency-on-data-centers-environmental-cost</guid>
-      <enclosure url="https://wearesolomon.com/wp-content/themes/solomon/static/images/cross-white.svg" length="0" type="image/jpeg"/>
       <pubDate>Wed, 30 Sep 2026 04:49:34 +0000</pubDate>
     </item>
     <item>
@@ -460,7 +468,6 @@ Il contributo del libro consiste nel rendere politicamente urgente la tensione t
     <hr>
     <p><a href="https://www.doppiozero.com/hartmut-rosa-la-democrazia-e-la-religione">Leggi originale su Doppiozero (Filosofia) &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://www.doppiozero.com/hartmut-rosa-la-democrazia-e-la-religione</guid>
-      <enclosure url="/themes/custom/doppiozero/img/dona-modali/maggio-2024-dona-2.webp" length="0" type="image/jpeg"/>
       <pubDate>Wed, 30 Sep 2026 05:46:22 +0000</pubDate>
     </item>
     <item>
@@ -531,6 +538,8 @@ Dettagli editoriali: pubblicazione prevista per settembre 2026, copertina morbid
 • Distribuzione globale tramite Public Knowledge Books, twelvebooks e Perimeter Distribution.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> 1000 Words | <strong>Ambito:</strong> <em>Fotografia</em></p>
     <hr>
+    <p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/Photography-in-Parallel-spreads-scaled.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>Il volume <em>Photography in Parallel: Japanese and Western Critical Perspectives since the 1960s</em> è disponibile per l’acquisto a £17,99. Esamina come la fotografia abbia conquistato il suo ruolo nell’arte contemporanea, confrontando percorsi critici euro‑americani con quelli giapponesi.</p>
 
 <p>Il libro raccoglie due saggi commissionati a Takanao Seki e Megumu Takashima, oltre a cinque testi storici selezionati da Miyuki Endo e Gen Umezu, originariamente pubblicati dagli anni ’60 in poi e recentemente tradotti in inglese. Tra gli autori dei testi storici figurano Toshiaki Minemura e Yusuke Nakahara, che analizzano la fotografia in Giappone in relazione a pittura, scultura, stampa e altre forme artistiche.</p>
@@ -548,10 +557,11 @@ Dettagli editoriali: pubblicazione prevista per settembre 2026, copertina morbid
 <li>Pubblicazione prevista per settembre 2026, con ISBN 978‑1‑0369‑9058‑9 e formato 14,2 × 21,2 cm.</li>
 <li>Distribuzione globale tramite Public Knowledge Books, twelvebooks e Perimeter Distribution.</li>
 </ol>
+    <p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/Photography-in-Parallel-spreads-1600x1131.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/Photography-in-Parallel-spreads3-1600x1131.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/Photography-in-Parallel-spreads4-1600x1131.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/Photography-in-Parallel-spreads5-1600x1131.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/Photography-in-Parallel-spreads6-1600x1131.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/Photography-in-Parallel-spreads7-1600x1131.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://1000wordsmag.com/wp-content/uploads/2026/09/Photography-in-Parallel-spreads8-1600x1131.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
     <hr>
     <p><a href="https://1000wordsmag.com/photography-in-parallel/">Leggi originale su 1000 Words &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://1000wordsmag.com/photography-in-parallel/</guid>
-      <enclosure url="https://1000wordsmag.com/wp-content/uploads/2026/09/Logos-Japan.png" length="0" type="image/png"/>
+      <enclosure url="https://1000wordsmag.com/wp-content/uploads/2026/09/Photography-in-Parallel-spreads-scaled.jpg" length="0" type="image/jpeg"/>
       <pubDate>Wed, 30 Sep 2026 09:15:19 +0000</pubDate>
     </item>
     <item>
@@ -622,7 +632,6 @@ L’articolo è pubblicato su Interstizio con i dati editoriali: © 2011‑2025 
     <hr>
     <p><a href="https://www.doppiozero.com/foucault-che-punto-siamo-con-la-verita">Leggi originale su Doppiozero (Filosofia) &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://www.doppiozero.com/foucault-che-punto-siamo-con-la-verita</guid>
-      <enclosure url="/themes/custom/doppiozero/img/dona-modali/maggio-2024-dona-2.webp" length="0" type="image/jpeg"/>
       <pubDate>Fri, 02 Oct 2026 14:46:25 +0000</pubDate>
     </item>
     <item>
@@ -651,6 +660,8 @@ Il concetto ricorrente è che il focus è il nesso che collega fotografia, mondo
 • La foto Breakfast Room at Belle Grove Plantation è presentata come esempio di come il focus guidi lo spettatore dal superficiale all’interiorità dell’immagine.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Aperture (Essays) | <strong>Ambito:</strong> <em>Fotografia</em></p>
     <hr>
+    <p><img src="https://aperture.org/wp-content/uploads/2026/09/264MAG020_Notebook_Shore_HR-1024x678.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>La fotografia ha una nuova sede a New York, al 380 Columbus Avenue. L’articolo ricorda l’importante mostra di Walker Evans al Museum of Modern Art nel 1971 e l’intervista realizzata nello stesso anno con Leslie George Katz, pubblicata poi in <em>Art in America</em> e raccolta nel libro <em>Walker Evans: Incognito</em> (1995, Eakins Press).</p>  
 
 <p>Charles Baudelaire, citato da Evans, definiva l’osservatore “un principe che viaggia incognito”, suggerendo una posizione privilegiata di chi vede il mondo senza essere visto. Evans applica questo concetto alla fotografia, affermando che la macchina assume il carattere del suo operatore e che “la mente lavora sulla macchina”.</p>  
@@ -670,10 +681,11 @@ Il concetto ricorrente è che il focus è il nesso che collega fotografia, mondo
 <li>La <strong>trascendenza</strong> dell’esperienza creativa è collegata alla profondità nascosta nei documenti fotografici, distinguendo precisione da verità.</li>
 <li>La foto <em>Breakfast Room at Belle Grove Plantation</em> è presentata come esempio di come il <strong>focus</strong> guidi lo spettatore dal superficiale all’interiorità dell’immagine.</li>
 </ol>
+    <p><img src="https://aperture.org/wp-content/uploads/2026/09/2026_Aperture264_1600x900_Fan_gray-copy.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://aperture.org/wp-content/uploads/2026/09/264MAG021_Notebook_Shore_HR.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://aperture.org/wp-content/uploads/2026/09/264MAG022_Notebook_Shore_HR.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
     <hr>
     <p><a href="https://aperture.org/editorial/stephen-shore-on-how-to-sharpen-your-minds-eye">Leggi originale su Aperture (Essays) &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://aperture.org/editorial/stephen-shore-on-how-to-sharpen-your-minds-eye</guid>
-      <enclosure url="https://www.facebook.com/tr?id=1357435647608496&amp;ev=PageView&amp;noscript=1" length="0" type="image/jpeg"/>
+      <enclosure url="https://aperture.org/wp-content/uploads/2026/09/264MAG020_Notebook_Shore_HR-1024x678.jpg" length="0" type="image/jpeg"/>
       <pubDate>Fri, 02 Oct 2026 20:32:56 +0000</pubDate>
     </item>
     <item>
@@ -700,6 +712,8 @@ L’autore dell’articolo, dopo aver visto il film a Palermo il 28 settembre 20
 • L’autore critica la percezione occidentale del film, ritenendolo poco efficace nel rendere visibili le vittime palestinesi.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> The Italian Review | <strong>Ambito:</strong> <em>Critica</em></p>
     <hr>
+    <p><img src="https://www.theitalianreview.com/wp-content/uploads/2026/10/91_Nadotti_Cover.png" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>Il titolo del documentario <strong>Naza</strong> (anno di grazia 2026) è spiegato come “danni collaterali”, ovvero le sofferenze “secondarie” prodotte dagli eserciti in guerra, soprattutto in un territorio densamente popolato come la Striscia di Gaza.</p>  
 <p>Il film, realizzato dai registi israeliani Yuval Abraham e Rachel Szor, si basa su un’inchiesta giornalistica di tre anni condotta da +972 Magazine e co‑finanziata dal <em>The Guardian</em>. L’obiettivo dichiarato è dimostrare, attraverso testimonianze dirette, che a Gaza si sta perpetrando un genocidio pianificato con tecnologie avanzate.</p>  
 <p>Le voci degli ufficiali dell’IDF, provenienti dalla divisione di signal‑intelligence (Unità 8200), sono presentate in italiano e descrivono con freddezza il loro “lavoro” a Gaza, dove la popolazione è di circa 2,3 milioni, con un’età media di 19 anni e il 40 % dei residenti sotto i 14 anni.</p>  
@@ -712,9 +726,11 @@ L’autore dell’articolo, dopo aver visto il film a Palermo il 28 settembre 20
 <li><strong>Paula Gaviria Betancour ha definito illegale il trasferimento forzato di popolazione a Gaza, qualificandolo come crimine contro l’umanità.</strong></li>  
 <li><strong>L’autore critica la percezione occidentale del film, ritenendolo poco efficace nel rendere visibili le vittime palestinesi.</strong></li>  
 </ol>
+    
     <hr>
     <p><a href="https://www.theitalianreview.com/naza-danni-collaterali/">Leggi originale su The Italian Review &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://www.theitalianreview.com/naza-danni-collaterali/</guid>
+      <enclosure url="https://www.theitalianreview.com/wp-content/uploads/2026/10/91_Nadotti_Cover.png" length="0" type="image/png"/>
       <pubDate>Sat, 03 Oct 2026 13:11:16 +0000</pubDate>
     </item>
     <item>
@@ -808,6 +824,8 @@ La libraria col caschetto, incontrata per la decima volta, riceve la tenerezza d
 • Conclusione del viaggio: L’autrice prepara il ritorno a Roma, riflettendo sulla destrutturazione dell’esperienza libraria.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> The Italian Review | <strong>Ambito:</strong> <em>Critica</em></p>
     <hr>
+    <p><img src="https://www.theitalianreview.com/wp-content/uploads/2026/10/88_Mancini_Cover.png" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>L’autrice riprende il suo viaggio a San Francisco nel luglio 2026, immaginando di riempire la valigia di libri provenienti da Green Apple Books, riconoscibili per il segnalibro fumettistico e il numero scritto a matita sull’ultima pagina. Ricorda il labirinto di volumi nuovi e usati, le scale di legno e i librai “giovani e punk”, dove aveva acquistato titoli come <em>Big Sur</em> di Kerouac, <em>Gasoline</em> di Gregory Corso, <em>A Visit from the Goon Squad</em> e <em>Americanah</em> di Chimamanda Ngozi Adichie.</p>  
 
 <p>Dopo più di dieci anni torna in città e osserva l’assenza visibile dei senzatetto, la trasformazione del Tenderloin, la chiusura dei grandi negozi post‑COVID e la proliferazione di aziende AI nel South of Market, con prezzi triplicati rispetto al passato. Nel quartiere Inner Richmond, Green Apple è ora un unico negozio con un secondo punto vendita oltre il Golden Gate Park e una sede all’aeroporto.</p>  
@@ -825,9 +843,11 @@ La libraria col caschetto, incontrata per la decima volta, riceve la tenerezza d
 <li><strong>Messaggi della mascotte:</strong> Un clown con mela verde comunica che, nonostante le difficoltà sociali, la lettura può continuare, trasformando la promessa in una minaccia.</li>
 <li><strong>Conclusione del viaggio:</strong> L’autrice prepara il ritorno a Roma, riflettendo sulla destrutturazione dell’esperienza libraria.</li>
 </ol>
+    
     <hr>
     <p><a href="https://www.theitalianreview.com/che-cosa-ho-imparato-dalle-librerie-indipendenti-stati-uniti/">Leggi originale su The Italian Review &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://www.theitalianreview.com/che-cosa-ho-imparato-dalle-librerie-indipendenti-stati-uniti/</guid>
+      <enclosure url="https://www.theitalianreview.com/wp-content/uploads/2026/10/88_Mancini_Cover.png" length="0" type="image/png"/>
       <pubDate>Mon, 05 Oct 2026 17:00:32 +0000</pubDate>
     </item>
     <item>
@@ -854,6 +874,8 @@ Il cambiamento di orientamento è stato ulteriormente evidenziato dal 12 marzo 2
 • Blocchi reiterati della proposta di commissione d’inchiesta – aumento delle tensioni tra maggioranza e opposizione.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> IrpiMedia (Inchieste) | <strong>Ambito:</strong> <em>Inchiesta</em></p>
     <hr>
+    <p><img src="https://irpimedia.irpi.eu/public/uploads/2026/10/slovenia-come-il-paese-ha-improvvisamente-cambiato-posizione-su-israele-cover.webp" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>Il 27 agosto 2026 il governo sloveno ha posto il veto a una dichiarazione congiunta dell’Unione europea e dei suoi 27 Stati membri sul progetto di insediamento israeliano E1 in Cisgiordania, definito “colonia illegale”. Il comunicato, firmato dall’Alto Rappresentante dell’UE per gli Affari esteri Kaja Kallas, affermava che il progetto “danneggia profondamente la prospettiva di una soluzione con due Stati”.</p>  
 <p>Fino a quel momento la posizione slovena era stata costantemente a favore dei diritti palestinesi: dal 2021 la Slovenia aveva bloccato risoluzioni contro Israele, aveva riconosciuto lo Stato palestinese (giugno 2024) e, nell’estate 2025, aveva imposto un embargo totale alla vendita di armi a Israele, oltre a boicottare la partecipazione israeliana all’Eurovision 2026.</p>  
 <p>Il cambiamento è avvenuto dopo le elezioni amministrative di marzo 2026, quando il Partito democratico sloveno (SDS) di Janez Janša, pur con un risultato elettorale inferiore, è riuscito a formare il nuovo governo (giugno 2026) e ha subito adottato una linea filo‑israeliana. Il ministro degli Esteri Tone Kajzer ha giustificato il veto sostenendo che la dichiarazione dell’UE “non avrebbe apportato alcun valore aggiunto in questo momento”.</p>  
@@ -866,10 +888,11 @@ Il cambiamento di orientamento è stato ulteriormente evidenziato dal 12 marzo 2
 <li><strong>Rifiuto della Slovenia di sostenere la causa sudafricana alla CIG (12 marzo 2026)</strong> – segnale di distacco dalle posizioni europee.</li>  
 <li><strong>Blocchi reiterati della proposta di commissione d’inchiesta</strong> – aumento delle tensioni tra maggioranza e opposizione.</li>  
 </ol>
+    
     <hr>
     <p><a href="https://irpimedia.irpi.eu/slovenia-come-il-paese-ha-improvvisamente-cambiato-posizione-su-israele/?utm_source=rss&utm_medium=rss&utm_campaign=slovenia-come-il-paese-ha-improvvisamente-cambiato-posizione-su-israele">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://irpimedia.irpi.eu/slovenia-come-il-paese-ha-improvvisamente-cambiato-posizione-su-israele/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=slovenia-come-il-paese-ha-improvvisamente-cambiato-posizione-su-israele</guid>
-      <enclosure url="https://www.facebook.com/tr?id=687106370171117&amp;ev=PageView&amp;noscript=1" length="0" type="image/jpeg"/>
+      <enclosure url="https://irpimedia.irpi.eu/public/uploads/2026/10/slovenia-come-il-paese-ha-improvvisamente-cambiato-posizione-su-israele-cover.webp" length="0" type="image/webp"/>
       <pubDate>Mon, 05 Oct 2026 17:05:45 +0000</pubDate>
     </item>
     <item>
@@ -1066,6 +1089,8 @@ Palomar, The Renaissance Society, Chicago : 2 maggio – 7 giugno (Parte 1); 10 
 • Il progetto suggerisce che documentare il cielo è un atto di controllo, non solo di osservazione.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> ArtReview | <strong>Ambito:</strong> <em>Critica d'Arte</em></p>
     <hr>
+    <p><img src="https://backend.artreview.com/wp-content/uploads/2026/09/006_BOB00320_v2.png" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>La mostra collettiva “Palomar”, presentata in due fasi presso la Renaissance Society di Chicago, prende il nome dall’Osservatorio Palomar del California Institute of Technology e tenta di tradurre in arte ciò che l’osservatorio realizza con il suo telescopio di montagna.</p>  
 <p>Le opere, distribuite nella galleria, nella Cobb Lecture Hall dell’Università di Chicago e sulla facciata dell’edificio, includono una camera solargrafica artigianale di Sarah e Joseph Belknap, destinata a produrre un’esposizione di un anno del sole.</p>  
 <p>Tra i lavori più evidenti troviamo <strong>Moon</strong> (2010) di Erin Shirreff, un video a canale singolo su un televisore su piedistallo; i disegni stenografici di Tony Lewis raggruppati a coppie o a terzine; la serie <em>Sun/Sky</em> (2011/2026) di John Opera, sospesa in alto. Due pezzi di ancoraggio rimangono in mostra da maggio a luglio: la collotipo <em>Animal Locomotion‑Plate 755</em> (1887) di Eadweard Muybridge, che cattura un battito d’ala di un piccione, e la scultura <em>Satellite in Repose</em> (2018) di Kathleen Ryan, un piatto paraboloide metallico abitato da un gregge surreale di corpi ceramici schiacciati.</p>  
@@ -1082,10 +1107,11 @@ Palomar, The Renaissance Society, Chicago : 2 maggio – 7 giugno (Parte 1); 10 
 <li>Le stampe dei Belknap passano dal bianco‑nero al colore tra le due parti della mostra.</li>
 <li>Il progetto suggerisce che documentare il cielo è un atto di controllo, non solo di osservazione.</li>
 </ol>
+    <p><img src="https://backend.artreview.com/wp-content/uploads/2026/09/Trevor_Paglen.png" referrerpolicy="no-referrer" style="max-width:100%"></p>
     <hr>
     <p><a href="https://artreview.com/what-can-art-do-that-an-observatory-cannot">Leggi originale su ArtReview &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://artreview.com/what-can-art-do-that-an-observatory-cannot</guid>
-      <enclosure url="https://backend.artreview.com/wp-content/uploads/2026/09/Website-Menu-1.jpg" length="0" type="image/jpeg"/>
+      <enclosure url="https://backend.artreview.com/wp-content/uploads/2026/09/006_BOB00320_v2.png" length="0" type="image/png"/>
       <pubDate>Tue, 06 Oct 2026 18:08:42 +0000</pubDate>
     </item>
     <item>
@@ -1132,6 +1158,8 @@ Questa evoluzione segna il passaggio da un modello di estrazione di dati a uno d
 • Riorganizzazione finanziaria (MANGOS) : il passaggio da GAFAM a MANGOS segna il passaggio da estrazione di dati a creazione di mondi sintetici, rendendo l’immagine parte di un flusso di attenzione monetizzato.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
     <hr>
+    <p><img src="https://www.iltascabile.com/wp-content/uploads/2026/10/Divenire-flusso.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>Nel decimo anniversario del <em>Tascabile</em>, le collaboratrici e i collaboratori tracciano un percorso che collega le trasformazioni culturali e sociali degli ultimi dieci anni a una “apocalisse culturale” iniziata nel 2016. Il punto di partenza è l’episodio virale della pandemia che vedeva delfini nella laguna veneziana – in realtà ripresa dal porto di Cagliari – e che ha fornito alle masse “anestetizzate” un “carburante emotivo” per la condivisione. Questo episodio dimostra che, oggi, il valore dell’informazione risiede più nella sua velocità di ricircolo nei feed che nella verifica della verità.</p>  
 
 <p>Il 2016 è stato segnato da eventi politici e mediatici – la parola dell’anno del Merriam‑Webster “surreale”, la Brexit, l’elezione di Donald Trump, le dimissioni di Matteo Renzi – tutti vissuti interamente nella temporalità dei social network. Da qui nasce la “memification”: la realtà si svuota del suo significato originario per trasformarsi in unità informative modulari, altamente replicabili e virali. I meme, dal controverso <strong>Pepe the Frog</strong> a <strong>Federico Palmaroli</strong>, primo meme‑maker italiano a diventare opinion leader politico, incarnano questa dinamica.</p>  
@@ -1169,9 +1197,11 @@ Questa evoluzione segna il passaggio da un modello di estrazione di dati a uno d
 <li><strong>Intelligenza artificiale e immagine senza corpo</strong>: DALL‑E, Midjourney e i meme generati dall’AI mostrano una nuova autonomia dell’immagine, con impatti ambientali e di esclusione economica.</li>
 <li><strong>Riorganizzazione finanziaria (MANGOS)</strong>: il passaggio da GAFAM a MANGOS segna il passaggio da estrazione di dati a creazione di mondi sintetici, rendendo l’immagine parte di un flusso di attenzione monetizzato.</li>
 </ol>
+    
     <hr>
     <p><a href="https://www.iltascabile.com/linguaggi/divenire-flusso/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://www.iltascabile.com/linguaggi/divenire-flusso/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/10/Divenire-flusso.jpg" length="0" type="image/jpeg"/>
       <pubDate>Wed, 07 Oct 2026 15:23:57 +0000</pubDate>
     </item>
     <item>
@@ -1202,6 +1232,8 @@ Studiosi non palestinesi, come Esteban Klor (Università ebraica di Gerusalemme,
 • Gli esperti avvertono che la prolungata interruzione dei permessi di lavoro e l’uso di lavoratori stranieri aumentano l’instabilità politica palestinese e provocano inflazione e rincari nei settori israeliani.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> IrpiMedia (Inchieste) | <strong>Ambito:</strong> <em>Inchiesta</em></p>
     <hr>
+    <p><img src="https://irpimedia.irpi.eu/public/uploads/2026/10/cisgiordania-senza-lavoro-esodo-palestinese-cover.webp" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>Il 27 ottobre gli israeliani voteranno, per la prima volta dall’attacco di Hamas del 7 ottobre 2023, in quello che appare un plebiscito su Benjamin Netanyahu; la questione palestinese è quasi assente nel dibattito, soprattutto tra le forze di centro‑destra ed estrema destra.</p>
 
 <p>Dopo il 7 ottobre, il quasi totale blocco dei permessi di lavoro ha provocato un crollo occupazionale per i palestinesi della Cisgiordania, estranei agli attacchi di Hamas, alimentando il timore di un esodo forzato. L’Autorità nazionale palestinese dipende dal sistema bancario israeliano: lo shekel è l’unica moneta, le banche palestinesi operano solo tramite corrispondenti israeliani, e fino al 2026 vigora una deroga che immunizza questi ultimi da responsabilità legali in caso di sanzioni ai beneficiari.</p>
@@ -1223,10 +1255,11 @@ Studiosi non palestinesi, come Esteban Klor (Università ebraica di Gerusalemme,
 <li>Il passaggio all’economia informale ha ridotto i salari giornalieri da circa 75 euro a 33 euro, alimentando la disperazione e l’emigrazione volontaria.</li>
 <li>Gli esperti avvertono che la prolungata interruzione dei permessi di lavoro e l’uso di lavoratori stranieri aumentano l’instabilità politica palestinese e provocano inflazione e rincari nei settori israeliani.</li>
 </ol>
+    
     <hr>
     <p><a href="https://irpimedia.irpi.eu/cisgiordania-senza-lavoro-esodo-palestinese/?utm_source=rss&utm_medium=rss&utm_campaign=cisgiordania-senza-lavoro-esodo-palestinese">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://irpimedia.irpi.eu/cisgiordania-senza-lavoro-esodo-palestinese/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=cisgiordania-senza-lavoro-esodo-palestinese</guid>
-      <enclosure url="https://www.facebook.com/tr?id=687106370171117&amp;ev=PageView&amp;noscript=1" length="0" type="image/jpeg"/>
+      <enclosure url="https://irpimedia.irpi.eu/public/uploads/2026/10/cisgiordania-senza-lavoro-esodo-palestinese-cover.webp" length="0" type="image/webp"/>
       <pubDate>Wed, 07 Oct 2026 15:25:56 +0000</pubDate>
     </item>
     <item>
@@ -1251,6 +1284,8 @@ Il tema della pesante partecipazione del “sistema famiglia” è illustrato at
 • Altissimo tasso di mortalità: “L’anoressia mima la morte”, confermato dall’esperienza di caregiver.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
     <hr>
+    <p><img src="https://www.iltascabile.com/wp-content/uploads/2026/10/Lanoressia-mima-la-morte.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>Nel racconto vengono descritte le esperienze vissute in strutture terapeutiche per i disturbi alimentari, dove la maggior parte dei pazienti è femminile (Francesca, Giulia, Sofia) e gli uomini sono rari (solo Giovanni, quarantenne ossessionato dagli esami del sangue). Giovanni, isolato per il regolamento di genere, trascorreva il tempo libero da solo davanti a documentari, evidenziando la solitudine dei maschi in questi contesti.</p>
 
 <p>In Italia circa 3,5 milioni di persone (6 % della popolazione) soffrono di psicopatologie alimentari; le donne rappresentano il 90 % dei casi, ma il numero di uomini, soprattutto adolescenti tra 12 e 17 anni, è in crescita, accelerato dal lockdown e dall’abbassamento dell’età di insorgenza. Nonostante ciò, l’immaginario collettivo, i media e la letteratura autobiografica associano ancora questi disturbi al femminile.</p>
@@ -1266,9 +1301,11 @@ Il tema della pesante partecipazione del “sistema famiglia” è illustrato at
 <li><strong>Il libro di Giannetta evidenzia vigoressia maschile, solitudine e pressione dei social.</strong></li>
 <li><strong>Altissimo tasso di mortalità: “L’anoressia mima la morte”, confermato dall’esperienza di caregiver.</strong></li>
 </ol>
+    
     <hr>
     <p><a href="https://www.iltascabile.com/linguaggi/anoressia-mima-morte/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://www.iltascabile.com/linguaggi/anoressia-mima-morte/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/10/Lanoressia-mima-la-morte.jpg" length="0" type="image/jpeg"/>
       <pubDate>Thu, 08 Oct 2026 15:25:28 +0000</pubDate>
     </item>
     <item>
@@ -1303,6 +1340,8 @@ Infine, l’articolo riporta brevi riferimenti ad altri contenuti di ArtReview e
 • L’esposizione “The Heart of My Machine is Golden Lead” è in corso a Vienna dal 26 giugno al 26 agosto 2026.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> ArtReview | <strong>Ambito:</strong> <em>Critica d'Arte</em></p>
     <hr>
+    <p><img src="https://backend.artreview.com/wp-content/uploads/2026/10/1784033348_Mire-Lee-The-Heart-of-My-Machine-is-Golden-Lead-Ausstellungsansicht-Secession-2026.-Foto-Iris-Ranzinger_02-scaled.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>Nel suo articolo del 8 ottobre 2026 per <em>ArtReview</em>, Mark Rappolt descrive l’installazione di Mire Lee alla Secession di Vienna, intitolata <strong>The Heart of My Machine is Golden Lead</strong>, in mostra dal 26 giugno al 26 agosto.</p>  
 <p>L’opera trasforma la galleria principale in un “abattoio”: un flusso di liquido rosso, composto da acqua, ossido di ferro, metilcellulosa e segatura, scorre lungo una parete di lamiera incrostata e si raccoglie su un pavimento a griglia metallica. Al centro si trova il barile sbiancato di un camion betoniera, tagliato a metà per mostrare le costole rosse e spirali che ruotano, evocando “il cadavere gonfio di una balena eviscerata in agonia perpetua”.</p>  
 <p>Il tutto è collegato da cavi e tubi, creando un sistema chiuso a forma di ouroboros che riconfigura la galleria come macchina industriale, la macchina come forma organica e l’edificio come ecosistema. Sulla parete opposta, una fila di striscioni promozionali sbiancati di mostre precedenti è stata sovrapposta da parole come <em>GOLD</em>, <em>MUTTERNAME</em>, <em>GALLENSAFT</em> in foglia di ottone e da caratteri coreani graffiati in nero, formando un palinsesto multilingue e multiculturale.</p>  
@@ -1321,10 +1360,11 @@ Infine, l’articolo riporta brevi riferimenti ad altri contenuti di ArtReview e
 <li>L’autrice giudica l’opera più una forma poetica brutale che un messaggio esplicito, ma riconosce una maggiore profondità nei video.</li>  
 <li>L’esposizione “The Heart of My Machine is Golden Lead” è in corso a Vienna dal 26 giugno al 26 agosto 2026.</li>  
 </ol>
+    
     <hr>
     <p><a href="https://artreview.com/mire-lee-the-heart-of-my-machine-is-golden-lead-secession-vienna-review-mark-rappolt">Leggi originale su ArtReview &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://artreview.com/mire-lee-the-heart-of-my-machine-is-golden-lead-secession-vienna-review-mark-rappolt</guid>
-      <enclosure url="https://backend.artreview.com/wp-content/uploads/2026/10/Website-Menu.jpg" length="0" type="image/jpeg"/>
+      <enclosure url="https://backend.artreview.com/wp-content/uploads/2026/10/1784033348_Mire-Lee-The-Heart-of-My-Machine-is-Golden-Lead-Ausstellungsansicht-Secession-2026.-Foto-Iris-Ranzinger_02-scaled.jpg" length="0" type="image/jpeg"/>
       <pubDate>Thu, 08 Oct 2026 15:26:18 +0000</pubDate>
     </item>
     <item>
@@ -1398,7 +1438,6 @@ Nonostante l’entusiasmo, persistono spopolamento, necessità di servizi e sfid
     <hr>
     <p><a href="https://www.italiachecambia.org/2026/10/due-settimane-abitante-valle-soana">Leggi originale su Italia che Cambia &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://www.italiachecambia.org/2026/10/due-settimane-abitante-valle-soana</guid>
-      <enclosure url="https://www.italiachecambia.org/wp-content/themes/icc/assets/img/logo/ICC_Logo_Extended.svg" length="0" type="image/jpeg"/>
       <pubDate>Thu, 08 Oct 2026 15:29:21 +0000</pubDate>
     </item>
     <item>
@@ -1547,6 +1586,8 @@ Il libro esplora anche analogie con il regno animale: le formiche del genere Myr
 • La proposta dell’autore è un equilibrio tra protezione ambientale e diplomazia per evitare ulteriori guerre.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
     <hr>
+    <p><img src="https://www.iltascabile.com/wp-content/uploads/2026/10/Guerra-alla-Terra-di-Danilo-Zagaria.png" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>Il saggio <strong>Guerra alla Terra. Conflitti armati e crisi ecologica (2026)</strong> di Danilo Zagaria analizza l’impatto ambientale delle guerre dal ventesimo secolo a oggi, concentrandosi sul continente euroasiatico e sugli Stati Uniti. Il testo è suddiviso in quattro parti – <em>Trittico della Grande Guerra</em>, <em>Rapsodia del bombardamento aereo</em>, <em>Contaminazioni</em> e <em>A volo di drone</em> – che tracciano l’evoluzione delle strategie e delle tecnologie belliche e le loro conseguenze ecologiche.</p>  
 
 <p>Attraverso narrazioni storiche, citazioni artistiche (da Picasso a Von Negut) e dati di organizzazioni internazionali, l’autore mostra come le attività militari contribuiscano alle emissioni di gas serra, alla distruzione di habitat e alla contaminazione di suolo, acqua e aria. Vengono citati esempi emblematici, come le bombe atomiche su Hiroshima e Nagasaki, gli agenti chimici in Vietnam, le mine nelle Dolomiti, lo sversamento di petrolio nel Golfo Persico, i test nucleari nelle Isole Marshall e l’inquinamento da plastica in Ucraina.</p>  
@@ -1562,9 +1603,11 @@ Il libro esplora anche analogie con il regno animale: le formiche del genere Myr
   <li>Studi su animali (formiche, scimpanzé) suggeriscono possibili strategie di evitamento del conflitto.</li>
   <li>La proposta dell’autore è un equilibrio tra protezione ambientale e diplomazia per evitare ulteriori guerre.</li>
 </ol>
+    
     <hr>
     <p><a href="https://www.iltascabile.com/recensioni/guerra-terra-danilo-zagaria/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://www.iltascabile.com/recensioni/guerra-terra-danilo-zagaria/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/10/Guerra-alla-Terra-di-Danilo-Zagaria.png" length="0" type="image/png"/>
       <pubDate>Fri, 09 Oct 2026 15:06:08 +0000</pubDate>
     </item>
     <item>
@@ -1589,6 +1632,8 @@ Carson utilizza forme classiche come la sestina per affrontare temi attuali (es.
 • Il linguaggio è visto come l’unico argine alla distruttività del presente, capace di recuperare la sua natura potenziale attraverso forme poetiche e saggistiche.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> The Italian Review | <strong>Ambito:</strong> <em>Critica</em></p>
     <hr>
+    <p><img src="https://www.theitalianreview.com/wp-content/uploads/2026/10/94_Barone_Cover.png" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>Diversi anni fa, mentre lavoravo nella redazione di un giornale, trovai per caso un libro dimenticato su un piano superiore dove erano ammassate copie di libri in esubero. Il caporedattore mi invitò a tornare al piano terra, ma io presi il libro “Economia dell’imperduto” di Anne Carson (edizione Utopia, traduzione di Patrizio Ceccagnoli) e lo infilai nella mia borsa come piccolo gesto di ribellione.</p>
 
 <p>Il testo di Carson mette in relazione Simonide di Ceo e Paul Celan, esplorando l’idea del linguaggio come valore di scambio e la traiettoria dell’artista trasformato in impiegato del proprio talento. Carson sostiene che ciò che eccede e viene scartato supera la prova del tempo più della materia concreta, e che l’«imperduto» – il residuo incalcolabile – è l’unico elemento permanente al di là delle contingenze materiali.</p>
@@ -1604,9 +1649,11 @@ Carson utilizza forme classiche come la sestina per affrontare temi attuali (es.
 <li><strong>Il tema della perdita e della permanenza</strong> è esplorato attraverso la metafora dell’oro e del greto di un fiume, evidenziando la transitorietà contro la stabilità dell’imperduto.</li>
 <li><strong>Il linguaggio</strong> è visto come l’unico argine alla distruttività del presente, capace di recuperare la sua natura potenziale attraverso forme poetiche e saggistiche.</li>
 </ol>
+    
     <hr>
     <p><a href="https://www.theitalianreview.com/a-proposito-di-anne-carson/">Leggi originale su The Italian Review &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://www.theitalianreview.com/a-proposito-di-anne-carson/</guid>
+      <enclosure url="https://www.theitalianreview.com/wp-content/uploads/2026/10/94_Barone_Cover.png" length="0" type="image/png"/>
       <pubDate>Fri, 09 Oct 2026 15:07:08 +0000</pubDate>
     </item>
     <item>
@@ -1637,6 +1684,8 @@ Il contesto spagnolo è citato come conferma della tesi di Peter Thiel (2009) su
 • Prospettive future: la percezione popolare delle riforme economiche è cruciale; una sconfitta di Sanchez potrebbe indebolire sia la sinistra spagnola sia l’UE.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Valigia Blu | <strong>Ambito:</strong> <em>Geopolitica</em></p>
     <hr>
+    <p><img src="https://www.valigiablu.it/wp-content/uploads/2026/10/Pedro-Sanchez-.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>Il governo di Pedro Sanchez ha approvato due decreti per fronteggiare l’emergenza abitativa, introducendo la protezione degli sfratti fino al 2030, la regolamentazione degli affitti brevi, il divieto di acquisto di immobili da parte di fondi speculativi e il rinnovo automatico dei contratti di locazione.</p>  
 <p>Il provvedimento è stato scatenato dall’espulsione in diretta televisiva dell’87‑enne María del Carmen Abascal Martín, vittima di un aumento d’affitto a 2 650 euro, ben al di sopra della sua pensione di 1 400 euro, che ha generato una mobilitazione a Puerta del Sol per difendere il diritto alla casa.</p>  
 <p>Il parlamento ha bocciato i decreti, con Vox, PP e Junts contro, e Sanchez ha indetto elezioni anticipate per il 29 novembre, puntando a una “rimonta sociale” simile a quella del 2023. Il blocco di sinistra (PSOE‑Sumar) non possiede maggioranza assoluta e dipende dal sostegno di partiti indipendentisti; le tensioni con Junts, che chiedeva amnistia per il referendum catalano, hanno paralizzato l’approvazione di una legge finanziaria del 2023 e di un bilancio per il 2025.</p>  
@@ -1652,9 +1701,11 @@ Il contesto spagnolo è citato come conferma della tesi di Peter Thiel (2009) su
 <li><strong>Strategia internazionale:</strong> Sanchez si presenta come “bussola morale” contro Trump e il sovranismo, cercando di tradurre il ruolo estero in vantaggio elettorale.</li>  
 <li><strong>Prospettive future:</strong> la percezione popolare delle riforme economiche è cruciale; una sconfitta di Sanchez potrebbe indebolire sia la sinistra spagnola sia l’UE.</li>  
 </ol>
+    <p><img src="https://lorenzoromani367.github.io/NewsFeed/articoli/img/1b08311f378b8223.png" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://www.valigiablu.it/wp-content/plugins/securimage-wp/lib/images/refresh.png" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://www.valigiablu.it/pictures/crowdfunding/card-2026-b.jpg?v=4" referrerpolicy="no-referrer" style="max-width:100%"></p>
     <hr>
     <p><a href="https://www.valigiablu.it/spagna-scommessa-sanchez-crisi-casa-elezioni/">Leggi originale su Valigia Blu &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://www.valigiablu.it/spagna-scommessa-sanchez-crisi-casa-elezioni/</guid>
+      <enclosure url="https://www.valigiablu.it/wp-content/uploads/2026/10/Pedro-Sanchez-.jpg" length="0" type="image/jpeg"/>
       <pubDate>Fri, 09 Oct 2026 15:09:10 +0000</pubDate>
     </item>
     <item>
@@ -1687,6 +1738,8 @@ Immagine: mercato dei libri di Kyiv in fiamme il 16 agosto – foto di Claudia B
 • Il ritorno a Kyiv comporta la riattivazione dell’app di allerta e l’accettazione di una nuova, costante paura quotidiana.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Valigia Blu | <strong>Ambito:</strong> <em>Geopolitica</em></p>
     <hr>
+    <p><img src="https://www.valigiablu.it/wp-content/uploads/2026/10/Mercato-libri-Kyiv.jpeg" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>Durante gran parte della guerra russa gli attacchi a Kyiv avvenivano di notte; i cittadini si adattavano dormendo in corridoio o in bagno, controllando i canali Telegram e riprendendo la routine al mattino. Da fine agosto la Russia ha avviato una nuova “campagna” con droni a reazione Geran lanciati a tutte le ore, provocando allarmi, fuoco della difesa aerea ed esplosioni anche durante le giornate lavorative.</p>  
 <p>La capitale, pur distante dalla linea del fronte, è ormai una città in prima linea: gli ultimi giorni di settembre e i primi di ottobre hanno visto 13 allarmi in un solo giorno (27 agosto) e 17 ore di allerta l’8 settembre. Le autorità hanno introdotto regole di coprifuoco e livelli di allarme che obbligano la chiusura di locali e la modifica di eventi pubblici, come la fiera del libro rinviata ad aprile 2027 e la “Unbroken Marathon 2026” spostata a Chmel’nyc’kyj.</p>  
 <p>I bersagli si sono ampliati a supermercati, mercati (es. Počajna, incendiato il 16 agosto), depositi, stazioni di servizio, centri dati, musei, cliniche, scuole e ponti sul Dnipro, con l’obiettivo di spezzare la continuità della città. L’autore descrive il ritorno in Ucraina come un bisogno viscerale, ma la paura è palpabile: vibrazioni costanti del telefono, mappe di allarmi gialle (droni) e rosse (balistici). La vita quotidiana è diventata un’impresa, i treni sono bersagli e si preferisce l’autobus; il “corridor refuge” è la regola dei “due muri”. Kyiv, pur avendo goduto finora di una “bolla” difensiva, ora soffre di carenza di missili intercettori e di una crescente stanchezza della popolazione.</p>  
@@ -1703,10 +1756,11 @@ Immagine: mercato dei libri di Kyiv in fiamme il 16 agosto – foto di Claudia B
 <li>L’autrice denuncia la scarsa copertura della crisi da parte della stampa occidentale e la marginalizzazione dei civili nei dibattiti internazionali.</li>
 <li>Il ritorno a Kyiv comporta la riattivazione dell’app di allerta e l’accettazione di una nuova, costante paura quotidiana.</li>
 </ol>
+    <p><img src="https://www.valigiablu.it/wp-content/uploads/2026/10/screen-mappa-allarmi.jpeg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://www.valigiablu.it/wp-content/uploads/2026/10/palazzo-bombardato-kyiv.jpeg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://www.valigiablu.it/wp-content/uploads/2026/10/Calendario-ucraini.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://lorenzoromani367.github.io/NewsFeed/articoli/img/7249098f188f7285.png" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://www.valigiablu.it/wp-content/plugins/securimage-wp/lib/images/refresh.png" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://www.valigiablu.it/pictures/crowdfunding/card-2026-b.jpg?v=4" referrerpolicy="no-referrer" style="max-width:100%"></p>
     <hr>
     <p><a href="https://www.valigiablu.it/cosa-significa-vivere-e-resistere-a-kyiv/">Leggi originale su Valigia Blu &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://www.valigiablu.it/cosa-significa-vivere-e-resistere-a-kyiv/</guid>
-      <enclosure url="https://www.valigiablu.it/wp-content/uploads/2026/10/screen-mappa-allarmi-1024x991.jpeg" length="0" type="image/jpeg"/>
+      <enclosure url="https://www.valigiablu.it/wp-content/uploads/2026/10/Mercato-libri-Kyiv.jpeg" length="0" type="image/jpeg"/>
       <pubDate>Fri, 09 Oct 2026 15:11:12 +0000</pubDate>
     </item>
     <item>
@@ -1737,6 +1791,8 @@ La Regione Veneto, però, non ha rimosso le norme sulle specie alloctone invasiv
 • Il mercato di Donada rimane il principale punto di vendita, ma le dinamiche di prezzo e le accuse di contrabbando alimentano tensioni tra le diverse categorie di pescatori.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> IrpiMedia (Inchieste) | <strong>Ambito:</strong> <em>Inchiesta</em></p>
     <hr>
+    <p><img src="https://irpimedia.irpi.eu/public/uploads/2026/10/pesca-delta-del-po-cover.webp" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>Da circa dieci anni le testate locali del delta del Po pubblicano titoli allarmanti che dipingono i pescatori rumeni del delta del Danubio come bracconieri. In realtà il conflitto si svolge tra pescatori sportivi italiani e pescatori professionisti delle acque interne, in un contesto di economie fragili, criminalità e xenofobia, con l’ecosistema del delta in crisi.</p>
 
 <p>Fino al 2014 il bracconaggio era sporadico; a partire da allora aumentano sequestri e segnalazioni, con la maggior parte dei colti provenienti dall’est Europa, soprattutto dalla Romania. Claudio Castagnoli, ex comandante della polizia provinciale di Ferrara, definisce i bracconieri “vampiri” che operano di notte con reti illecite ed elettrostorditori, ma l’Università di Ferrara segnala la difficoltà di dimostrare una relazione di causa‑effetto con il calo dei popolamenti ittici.</p>
@@ -1758,10 +1814,11 @@ La Regione Veneto, però, non ha rimosso le norme sulle specie alloctone invasiv
 <li>Modifica legislativa del 2026 che vieta la pesca professionale in acque interne a livello nazionale, ma con deroghe regionali.</li>
 <li>Il mercato di Donada rimane il principale punto di vendita, ma le dinamiche di prezzo e le accuse di contrabbando alimentano tensioni tra le diverse categorie di pescatori.</li>
 </ol>
+    
     <hr>
     <p><a href="https://irpimedia.irpi.eu/pesca-delta-del-po/?utm_source=rss&utm_medium=rss&utm_campaign=pesca-delta-del-po">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://irpimedia.irpi.eu/pesca-delta-del-po/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=pesca-delta-del-po</guid>
-      <enclosure url="https://www.facebook.com/tr?id=687106370171117&amp;ev=PageView&amp;noscript=1" length="0" type="image/jpeg"/>
+      <enclosure url="https://irpimedia.irpi.eu/public/uploads/2026/10/pesca-delta-del-po-cover.webp" length="0" type="image/webp"/>
       <pubDate>Fri, 09 Oct 2026 15:14:13 +0000</pubDate>
     </item>
     <item>
@@ -1792,6 +1849,8 @@ L’esposizione “Maren Karlson: LAG” è stata inaugurata a Londra dal 11 set
 • L’esposizione è stata presentata a Londra dal 11 settembre al 17 ottobre 2026.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> ArtReview | <strong>Ambito:</strong> <em>Critica d'Arte</em></p>
     <hr>
+    <p><img src="https://backend.artreview.com/wp-content/uploads/2026/10/SO_10_09_2026_45_web-copy.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p><strong>LAG</strong> è il titolo della serie di sei dipinti a olio e grafite (LAG #1–6, tutti del 2026) dell’artista tedesca residente a Los Angeles, Maren Karlson. Il nome deriva dalle ultime tre lettere di <em>Axel Springer Verlag</em>, il cui archivio è la fonte materiale per le opere.</p>  
 <p>In questi dipinti, Karlson rielabora in modo onirico e digitalmente distorto immagini di giornale dei protestanti studenteschi del 1968, in particolare l’attentato a Rudi Dutschke, sostenendo che i titoli di Springer fossero usati per manipolare l’opinione pubblica. Gli eventi del 1968 sono presentati come catalizzatori della nascita della <strong>Red Army Faction</strong> (RAF).</p>  
 <p>Ai lati opposti della sala, due tele a forma di L rappresentano un’assassinio con auto bomba durante il “rinascimento” militante della RAF negli anni ’80. Nella stessa stanza, le fotografie LAG #7–8, disposte sotto plexiglass, ricreano il trucco spionistico del film studentesco di Harun Farocki, <em>Their Newspapers</em> (1968), con giornalisti sotto copertura che osservano guerriglieri urbani attraverso fori nei giornali.</p>  
@@ -1807,10 +1866,11 @@ L’esposizione “Maren Karlson: LAG” è stata inaugurata a Londra dal 11 set
 <li>Karlson espande la teoria di Klaus Theweleit sulla RAF come entità “fantasma” costruita dai media.</li>
 <li>L’esposizione è stata presentata a Londra dal 11 settembre al 17 ottobre 2026.</li>
 </ol>
+    <p><img src="https://backend.artreview.com/wp-content/uploads/2026/10/SO_10_09_2026_38_web-copy.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
     <hr>
     <p><a href="https://artreview.com/maren-karlson-lag-soft-opening-london-review-lydia-eliza-trail">Leggi originale su ArtReview &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://artreview.com/maren-karlson-lag-soft-opening-london-review-lydia-eliza-trail</guid>
-      <enclosure url="https://backend.artreview.com/wp-content/uploads/2026/10/Website-Menu.jpg" length="0" type="image/jpeg"/>
+      <enclosure url="https://backend.artreview.com/wp-content/uploads/2026/10/SO_10_09_2026_45_web-copy.jpg" length="0" type="image/jpeg"/>
       <pubDate>Fri, 09 Oct 2026 15:15:14 +0000</pubDate>
     </item>
     <item>
@@ -1870,7 +1930,6 @@ Nel 2019, intervistata da Fraenkel per una retrospettiva, Maria ha parlato apert
     <hr>
     <p><a href="https://aperture.org/editorial/lee-friedlanders-seven-decade-portrait-of-a-marriage">Leggi originale su Aperture (Reviews) &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://aperture.org/editorial/lee-friedlanders-seven-decade-portrait-of-a-marriage</guid>
-      <enclosure url="https://www.facebook.com/tr?id=1357435647608496&amp;ev=PageView&amp;noscript=1" length="0" type="image/jpeg"/>
       <pubDate>Fri, 09 Oct 2026 15:16:14 +0000</pubDate>
     </item>
     <item>
@@ -1922,7 +1981,6 @@ La governance è frammentata (cinque comuni, due regioni, politiche nazionali in
     <hr>
     <p><a href="https://wearesolomon.com/en/mag/focus-area/environment/the-national-park-choked-by-fish-farms">Leggi originale su Solomon &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://wearesolomon.com/en/mag/focus-area/environment/the-national-park-choked-by-fish-farms</guid>
-      <enclosure url="https://wearesolomon.com/wp-content/themes/solomon/static/images/cross-white.svg" length="0" type="image/jpeg"/>
       <pubDate>Fri, 09 Oct 2026 15:19:17 +0000</pubDate>
     </item>
     <item>
@@ -2166,6 +2224,8 @@ Il testo conclude che la commemorazione deve essere accompagnata da una “polit
 • Una “politica della cura” è proposta come necessaria per superare la paura e garantire assistenza concreta ai sopravvissuti.</description>
       <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Valigia Blu | <strong>Ambito:</strong> <em>Geopolitica</em></p>
     <hr>
+    <p><img src="https://www.valigiablu.it/wp-content/uploads/2026/10/commemorazione-7-ottobre.jpg" referrerpolicy="no-referrer" style="max-width:100%"></p>
+
     <p>In vista delle elezioni, Israele ha commemorato per la terza volta le vittime dei massacri dell’ottobre 2023. Le cerimonie e i media hanno riportato nuovamente le storie dei morti e degli ostaggi, accentuando la percezione di stanchezza e incertezza nella popolazione, mentre la crisi umanitaria di Gaza rimane censurata.</p>
 
 <p>Durante la settimana sono stati trasmessi diversi documentari che mostrano la tragedia da prospettive diverse:</p>
@@ -2192,9 +2252,11 @@ Il testo conclude che la commemorazione deve essere accompagnata da una “polit
 <li>Il rischio di trasformare il dolore in strumento elettorale è evidenziato dalla forte carica emotiva delle storie raccontate.</li>
 <li>Una “politica della cura” è proposta come necessaria per superare la paura e garantire assistenza concreta ai sopravvissuti.</li>
 </ol>
+    <p><img src="https://lorenzoromani367.github.io/NewsFeed/articoli/img/4cf32faa5699c7b6.png" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://www.valigiablu.it/wp-content/plugins/securimage-wp/lib/images/refresh.png" referrerpolicy="no-referrer" style="max-width:100%"></p><p><img src="https://www.valigiablu.it/pictures/crowdfunding/card-2026-b.jpg?v=4" referrerpolicy="no-referrer" style="max-width:100%"></p>
     <hr>
     <p><a href="https://www.valigiablu.it/memoria-israele-trauma-7-ottobre-elezioni/">Leggi originale su Valigia Blu &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://www.valigiablu.it/memoria-israele-trauma-7-ottobre-elezioni/</guid>
+      <enclosure url="https://www.valigiablu.it/wp-content/uploads/2026/10/commemorazione-7-ottobre.jpg" length="0" type="image/jpeg"/>
       <pubDate>Sat, 10 Oct 2026 05:06:04 +0000</pubDate>
     </item>
     <item>
