@@ -248,6 +248,12 @@ def _src_da_tag(tag):
         if val and not val.startswith("data:"): return val
     return None
 
+def normalizza_url_immagine(url):
+    """CDN che avvolgono l'originale (es. Substack: .../fetch/w_1456/https%3A%2F%2Fbucket.s3...jpeg,
+    spesso con 403 fuori dal sito): usa direttamente l'URL originale incorporato."""
+    m = re.search(r"/(https?%3A%2F%2F.+)$", url, re.I)
+    return urllib.parse.unquote(m.group(1)) if m else url
+
 def estrai_immagini(html, base_url, og=True, limite=MAX_IMMAGINI):
     """Immagini del corpo dell'articolo, in ordine (prima og:image se richiesto),
     senza loghi/icone/pixel e senza duplicati."""
@@ -257,7 +263,7 @@ def estrai_immagini(html, base_url, og=True, limite=MAX_IMMAGINI):
 
     def aggiungi(src):
         if not src: return
-        url = urllib.parse.urljoin(base_url or "", src.strip())
+        url = normalizza_url_immagine(urllib.parse.urljoin(base_url or "", src.strip()))
         if not url.startswith("http") or immagine_scartata(url): return
         k = _chiave_immagine(url)
         if k in posizione:
@@ -287,6 +293,7 @@ def immagini_markdown(testo):
     """Immagini ![alt](url) nel markdown restituito da Jina Reader."""
     risultato = []
     for u in re.findall(r"!\[[^\]]*\]\((https?://[^\s)]+)\)", testo):
+        u = normalizza_url_immagine(u)
         if not immagine_scartata(u) and u not in risultato: risultato.append(u)
     return risultato[:MAX_IMMAGINI]
 
@@ -828,8 +835,14 @@ def voci_recenti(db, articoli_giro, fonti, per_fonte):
     return risultato
 
 def pulisci_immagini_html(html):
-    """Toglie da una scheda (anche vecchia) le immagini che non sono contenuto: pixel, icone, loghi."""
-    return re.sub(r'<img\b[^>]*?\bsrc="([^"]+)"[^>]*>', lambda m: "" if immagine_scartata(m.group(1)) else m.group(0), html)
+    """Toglie da una scheda (anche vecchia) le immagini che non sono contenuto
+    (pixel, icone, loghi) e scarta il wrapper dei CDN che avvolgono l'originale."""
+    def tag(m):
+        src = unescape(m.group(1))
+        if immagine_scartata(src): return ""
+        nuovo = normalizza_url_immagine(src)
+        return m.group(0).replace(m.group(1), escape(nuovo)) if nuovo != src else m.group(0)
+    return re.sub(r'<img\b[^>]*?\bsrc="([^"]+)"[^>]*>', tag, html)
 
 def completa_immagini(db, voci, max_per_giro=20):
     """Per le voci già in cache create prima del supporto alle immagini: recupera
@@ -877,6 +890,12 @@ def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
     for item in sorted(articoli_unici, key=lambda x: x.get("published", ""), reverse=True)[:120]:
         if ospita_img: item = ospita_immagini_item(item)
         item = {**item, "html_content": pulisci_immagini_html(item["html_content"])}
+        copertina = item.get("image_url")
+        if copertina: copertina = normalizza_url_immagine(copertina)
+        if copertina and immagine_scartata(copertina): copertina = None
+        if copertina and copertina not in unescape(item["html_content"]):
+            item["html_content"] = aggiungi_immagini_html(item["html_content"], [copertina])
+        item["image_url"] = copertina
         fe = fg.add_entry()
         fe.id(item["id"])
         fe.title(item["title"])
@@ -886,8 +905,8 @@ def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
         # contenuto non inizia direttamente con un tag: niente spazi/righe vuote iniziali.
         fe.content("<div>" + item["html_content"].strip() + "</div>", type="CDATA")
         fe.description(estratto_testo(item))
-        copertina = item.get("image_url")
-        if copertina and not immagine_scartata(copertina):
+        copertina = item["image_url"]
+        if copertina:
             ext = copertina.split("?")[0].rsplit(".", 1)[-1].lower()
             tipo = {"png": "image/png", "webp": "image/webp", "gif": "image/gif"}.get(ext, "image/jpeg")
             fe.enclosure(copertina, 0, tipo)
