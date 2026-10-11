@@ -2,10 +2,11 @@ import os
 import re
 import json
 import time
+import socket
 import urllib.parse
 import hashlib
 import shutil
-from html import escape
+from html import escape, unescape
 from datetime import datetime, timezone, timedelta
 import requests
 import cloudscraper
@@ -13,6 +14,10 @@ import feedparser
 from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
 from groq import Groq
+
+# feedparser.parse(url) non ha timeout proprio: senza questo un sito che non
+# risponde potrebbe bloccare l'intera esecuzione.
+socket.setdefaulttimeout(30)
 
 # ---------------------------------------------------------------------------
 # CONFIGURAZIONE FONTI
@@ -74,14 +79,17 @@ JINA_API_KEY = os.environ.get("JINA_API_KEY")
 HEADERS_JINA = {**HEADERS, "Authorization": f"Bearer {JINA_API_KEY}"} if JINA_API_KEY else HEADERS
 
 def carica_database():
-    if os.path.exists(DATABASE_FILE):
-        try:
-            with open(DATABASE_FILE, "r", encoding="utf-8") as f: return json.load(f)
-        except: pass
-    return {}
+    if not os.path.exists(DATABASE_FILE): return {}
+    try:
+        with open(DATABASE_FILE, "r", encoding="utf-8") as f: return json.load(f)
+    except (json.JSONDecodeError, OSError) as e:
+        # Meglio fermarsi che ripartire da un database vuoto e sovrascrivere la cache.
+        raise SystemExit(f"{DATABASE_FILE} illeggibile ({e}): correggilo o ripristinalo prima di rilanciare.")
 
 def salva_database(db):
-    with open(DATABASE_FILE, "w", encoding="utf-8") as f: json.dump(db, f, ensure_ascii=False, indent=2)
+    tmp = DATABASE_FILE + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f: json.dump(db, f, ensure_ascii=False, indent=2)
+    os.replace(tmp, DATABASE_FILE)
 
 def scarica_bypass(url, timeout_diretto=12, timeout_proxy=15):
     """Scarica un URL tentando, in ordine, accesso diretto e proxy AllOrigins.
@@ -208,6 +216,123 @@ def recupera_articoli_pagina(url, nome_fonte="", limite=2):
 
     return []
 
+MAX_IMMAGINI = 8
+
+def immagine_scartata(url):
+    """True per immagini che non sono contenuto dell'articolo: pixel di
+    tracciamento, emoji, icone e loghi dell'interfaccia, banner, SVG."""
+    u = url.lower()
+    if re.search(r"emoji|gravatar|spinner|1x1|doubleclick|facebook\.com/tr|googletagmanager|wp-content/themes|\.svg(\?|$)|/static/images/|donate|dona-modali|sprite|pixel\.", u):
+        return True
+    if "/uploads/" in u: return False
+    return bool(re.search(r"(^|[-_/.])(logos?|icons?|avatars?|placeholder|banner)([-_./]|$)", u))
+
+def _chiave_immagine(url):
+    u = url.split("?")[0].lower()
+    return re.sub(r"-\d+x\d+(?=\.\w+$)", "", u)  # WordPress: foto-300x200.jpg e foto.jpg sono la stessa
+
+def _src_da_tag(tag):
+    # srcset (la versione più grande) > attributi lazy-load > src, che spesso è la miniatura
+    srcset = tag.get("srcset") or tag.get("data-srcset")
+    if srcset:
+        migliore, peso = None, -1
+        for parte in srcset.split(","):
+            pezzi = parte.strip().split()
+            if not pezzi or pezzi[0].startswith("data:"): continue
+            m = re.match(r"(\d+)w", pezzi[1]) if len(pezzi) > 1 else None
+            w = int(m.group(1)) if m else 0
+            if w >= peso: migliore, peso = pezzi[0], w
+        if migliore: return migliore
+    for attr in ("data-src", "data-lazy-src", "data-original", "src"):
+        val = tag.get(attr)
+        if val and not val.startswith("data:"): return val
+    return None
+
+def estrai_immagini(html, base_url, og=True, limite=MAX_IMMAGINI):
+    """Immagini del corpo dell'articolo, in ordine (prima og:image se richiesto),
+    senza loghi/icone/pixel e senza duplicati."""
+    if isinstance(html, bytes): html = html.decode("utf-8", errors="ignore")
+    soup = BeautifulSoup(html or "", "html.parser")
+    trovate, posizione = [], {}
+
+    def aggiungi(src):
+        if not src: return
+        url = urllib.parse.urljoin(base_url or "", src.strip())
+        if not url.startswith("http") or immagine_scartata(url): return
+        k = _chiave_immagine(url)
+        if k in posizione:
+            # stessa foto già vista: tieni la versione senza suffisso -LxA (l'originale, non la miniatura)
+            i = posizione[k]
+            if re.search(r"-\d+x\d+\.\w+$", trovate[i].split("?")[0]) and not re.search(r"-\d+x\d+\.\w+$", url.split("?")[0]):
+                trovate[i] = url
+            return
+        posizione[k] = len(trovate); trovate.append(url)
+
+    if og:
+        meta = soup.find("meta", attrs={"property": "og:image"}) or soup.find("meta", attrs={"name": "twitter:image"})
+        if meta: aggiungi(meta.get("content"))
+    radice = soup.find("article") or soup.select_one(".entry-content, .post-content, .article-content, .article__body, main") or soup
+    for tag in radice.find_all("img"):
+        if tag.find_parent(["nav", "header", "footer", "aside", "noscript"]): continue
+        piccolo = False
+        for dim in ("width", "height"):
+            m = re.match(r"\d+", str(tag.get(dim, "")))
+            if m and int(m.group()) < 120: piccolo = True
+        if piccolo: continue
+        aggiungi(_src_da_tag(tag))
+        if len(trovate) >= limite: break
+    return trovate[:limite]
+
+def immagini_markdown(testo):
+    """Immagini ![alt](url) nel markdown restituito da Jina Reader."""
+    risultato = []
+    for u in re.findall(r"!\[[^\]]*\]\((https?://[^\s)]+)\)", testo):
+        if not immagine_scartata(u) and u not in risultato: risultato.append(u)
+    return risultato[:MAX_IMMAGINI]
+
+def pulisci_markdown(testo):
+    """Toglie immagini e URL dei link dal markdown di Jina: nel testo da riassumere sono solo rumore."""
+    testo = re.sub(r"!\[[^\]]*\]\([^)]*\)", " ", testo)
+    return re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", testo)
+
+def immagini_da_pagina(link):
+    """(immagini, pagina_letta): scarica la pagina dell'articolo e ne estrae le immagini;
+    se il sito blocca il download ripiega su Jina (browser reale)."""
+    contenuto, _ = scarica_bypass(link)
+    if contenuto and not BLOCCO_ANTIBOT.search(contenuto[:3000].decode("utf-8", errors="ignore")):
+        return estrai_immagini(contenuto, link), True
+    try:
+        res = requests.get(f"https://r.jina.ai/{link}", headers=HEADERS_JINA, timeout=20)
+        if res.status_code == 200 and not BLOCCO_ANTIBOT.search(res.text[:3000]):
+            return immagini_markdown(res.text), True
+    except Exception as e:
+        print(f"    [JINA] {link} -> {type(e).__name__}: {e}", flush=True)
+    return [], False
+
+def immagine_utilizzabile(url, link_articolo):
+    """URL da mettere nel feed: l'originale se si carica anche da un altro sito
+    (senza Referer del sito di origine), altrimenti una copia ospitata su Pages.
+    None se l'immagine è un pixel/file minuscolo."""
+    try:
+        r = requests.get(url, headers={**HEADERS, "Referer": FEED_SITE}, timeout=15, stream=True)
+        tipo = r.headers.get("Content-Type", "").lower()
+        peso = int(r.headers.get("Content-Length", "0") or 0)
+        ok = r.status_code == 200 and tipo.startswith("image/")
+        r.close()
+        if ok:
+            return None if 0 < peso < 3000 else url
+    except Exception:
+        pass
+    ospitata = ospita_immagine(url, link_articolo)
+    return ospitata  # se anche il download fallisce resta l'URL originale (può funzionare per il lettore)
+
+def immagini_per_feed(candidate, link_articolo):
+    finali = []
+    for u in candidate[:MAX_IMMAGINI]:
+        v = immagine_utilizzabile(u, link_articolo)
+        if v and v not in finali: finali.append(v)
+    return finali
+
 MODELLO_GROQ = "openai/gpt-oss-120b"
 TPM_LIMITE = 7000  # tetto gratuito Groq ~8000 token/minuto, con un po' di margine
 CARATTERI_PER_PARTE = 12000
@@ -306,11 +431,13 @@ TITOLO_TRADOTTO: [Inserisci qui il titolo tradotto]
     ris = chiama_groq(prompt_sistema, prompt_utente, 3000 if len(testo) > 2 * CARATTERI_PER_PARTE else 1800)
     if not ris: return None, None
     ris = ris.replace("```html", "").replace("```", "").strip()
-    if "---" in ris:
+    parts = None
+    if ris.startswith("TITOLO_TRADOTTO") and "---" in ris:
         parts = ris.split("---", 1)
+    if parts:
         t = parts[0].replace("TITOLO_TRADOTTO:", "").strip()
         s = parts[1].strip()
-        return t, s
+        return (t or titolo), s
     return titolo, ris
 
 def genera_sintesi_breve(testo, fonte):
@@ -327,14 +454,29 @@ REGOLE TASSATIVE:
     ris = chiama_groq(prompt_sistema, f"FONTE: {fonte}\nTESTO:\n{testo[:CARATTERI_PER_PARTE]}", 800)
     return ris.replace("```html", "").replace("```", "").strip() if ris else None
 
-def componi_html_finale(fonte, categoria, colore, contenuto, link, immagine_url):
+def componi_html_finale(fonte, categoria, colore, contenuto, link, immagini):
+    """Scheda finale: copertina, riassunto, poi le altre immagini dell'articolo."""
+    def tag(u): return f'<p><img src="{escape(u)}" referrerpolicy="no-referrer" style="max-width:100%"></p>'
+    immagini = immagini or []
+    copertina = tag(immagini[0]) if immagini else ""
+    galleria = "".join(tag(u) for u in immagini[1:])
     return f"""
     <p><strong>FONTE:</strong> {fonte} | <strong>Ambito:</strong> <em>{categoria}</em></p>
     <hr>
+    {copertina}
     {contenuto}
+    {galleria}
     <hr>
-    <p><a href="{link}">Leggi originale su {fonte} &rarr;</a></p>
+    <p><a href="{escape(link)}">Leggi originale su {fonte} &rarr;</a></p>
     """
+
+def aggiungi_immagini_html(html, immagini):
+    """Inserisce copertina e galleria in una scheda già composta (senza immagini)."""
+    testa, sep1, resto = html.partition("<hr>")
+    mezzo, sep2, coda = resto.rpartition("<hr>")
+    if not (sep1 and sep2): return html
+    def tag(u): return f'<p><img src="{escape(u)}" referrerpolicy="no-referrer" style="max-width:100%"></p>'
+    return f"{testa}<hr>\n    {tag(immagini[0])}\n{mezzo}{''.join(tag(u) for u in immagini[1:])}\n    <hr>{coda}"
 
 def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
     link = (link or "").strip()
@@ -345,6 +487,9 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
         return db[item_id]
 
     print(f"Elaborazione: {titolo[:40]}...", flush=True)
+
+    candidate = ([img_url] if img_url else []) + estrai_immagini(testo_grezzo, link, og=False)
+    pagina_letta = False
 
     soup = BeautifulSoup(testo_grezzo, "html.parser")
     for tag in soup(["script", "style"]): tag.decompose()
@@ -357,7 +502,9 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
             s = BeautifulSoup(contenuto, "html.parser")
             testo_estratto = " ".join(p.get_text() for p in s.find_all("p"))
             if len(testo_estratto) > len(testo_pulito): testo_pulito = testo_estratto
-            if not img_url and s.find("img"): img_url = s.find("img").get("src")
+            if not BLOCCO_ANTIBOT.search(contenuto[:3000].decode("utf-8", errors="ignore")):
+                candidate = estrai_immagini(contenuto, link) + candidate
+                pagina_letta = True
 
         if len(testo_pulito) < 400:
             # Se anche l'HTML diretto/proxy non basta (spesso un blocco 403),
@@ -368,13 +515,24 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
             try:
                 res = requests.get(f"https://r.jina.ai/{link}", headers=HEADERS_JINA, timeout=20)
                 if res.status_code == 200 and len(res.text) > len(testo_pulito):
-                    testo_pulito = res.text
+                    testo_pulito = pulisci_markdown(res.text)
+                    if not pagina_letta and not BLOCCO_ANTIBOT.search(res.text[:3000]):
+                        candidate += immagini_markdown(res.text)
+                        pagina_letta = True
                 elif res.status_code != 200:
                     print(f"    [JINA] {link} -> HTTP {res.status_code}", flush=True)
             except Exception as e:
                 print(f"    [JINA] {link} -> {type(e).__name__}: {e}", flush=True)
 
-    if not img_url and soup.find("img"): img_url = soup.find("img").get("src")
+    if not candidate and link and not pagina_letta:
+        candidate, pagina_letta = immagini_da_pagina(link)
+
+    # elimina duplicati mantenendo l'ordine (copertina per prima)
+    viste, uniche = set(), []
+    for u in candidate:
+        k = _chiave_immagine(u)
+        if k not in viste: viste.add(k); uniche.append(u)
+    immagini = immagini_per_feed(uniche, link)
 
     if BLOCCO_ANTIBOT.search(testo_pulito[:3000]):
         print(f"    [BLOCCO] {link} -> pagina anti-bot, uso solo il testo del feed", flush=True)
@@ -389,10 +547,10 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
     if not sintesi:
         trad_ok = False
         titolo_tradotto = titolo
-        sintesi = f"<p><em>Sintesi non disponibile.</em></p><p>{testo_pulito[:800]}...</p>"
+        sintesi = f"<p><em>Sintesi non disponibile.</em></p><p>{escape(testo_pulito[:800])}...</p>"
 
-    html = componi_html_finale(f["nome"], f["categoria"], f["colore"], sintesi, link, img_url)
-    record = {"id": item_id, "title": f"{f['nome']}: {titolo_tradotto}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat(), "image_url": img_url}
+    html = componi_html_finale(f["nome"], f["categoria"], f["colore"], sintesi, link, immagini)
+    record = {"id": item_id, "title": f"{f['nome']}: {titolo_tradotto}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat(), "image_url": immagini[0] if immagini else None, "img_v": 1}
 
     if trad_ok: db[item_id] = record
     time.sleep(8)
@@ -428,7 +586,7 @@ def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
                     if candidati: src = candidati[-1]  # l'ultima è di solito la risoluzione più alta
             if not src: continue
             src = urllib.parse.urljoin(link, src)
-            if "logo" in src.lower(): continue
+            if immagine_scartata(src): continue
             if src not in trovate:
                 trovate.append(src)
             if len(trovate) >= limite_immagini: break
@@ -448,7 +606,7 @@ def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
             res = requests.get(f"https://r.jina.ai/{link}", headers=HEADERS_JINA, timeout=20)
             if res.status_code == 200 and len(res.text) > 200:
                 for u in re.findall(r'!\[[^\]]*\]\((https?://[^\s)]+)\)', res.text):
-                    if "logo" in u.lower(): continue
+                    if immagine_scartata(u): continue
                     if u not in immagini:
                         immagini.append(u)
                     if len(immagini) >= limite_immagini: break
@@ -498,19 +656,18 @@ def recupera_messaggi_telegram(url, limite=3):
         testo = testo_tag.get_text("\n").strip()
         if len(testo) < 10: continue
 
-        img_url = None
-        img_tag = blocco.select_one(".tgme_widget_message_photo_wrap")
-        if img_tag and img_tag.get("style"):
-            m = re.search(r"url\('([^']+)'\)", img_tag["style"])
-            if m: img_url = m.group(1)
+        img_urls = []
+        for img_tag in blocco.select(".tgme_widget_message_photo_wrap"):
+            m = re.search(r"url\('([^']+)'\)", img_tag.get("style", ""))
+            if m and m.group(1) not in img_urls: img_urls.append(m.group(1))
 
-        messaggi.append((testo, f"https://t.me/{post_id}", img_url))
+        messaggi.append((testo, f"https://t.me/{post_id}", img_urls))
 
     if not messaggi:
         print(f"    [TELEGRAM] {url} -> scaricato ({esito}) ma nessun messaggio riconosciuto", flush=True)
     return messaggi[-limite:]  # la pagina elenca i messaggi dal più vecchio al più recente
 
-def elabora_messaggio_telegram(db, f, testo_originale, link, img_url=None):
+def elabora_messaggio_telegram(db, f, testo_originale, link, img_urls=None):
     item_id = f"{VERSIONE_CACHE}_{link}"
     if item_id in db:
         return db[item_id]
@@ -522,10 +679,11 @@ def elabora_messaggio_telegram(db, f, testo_originale, link, img_url=None):
     trad_ok = True
     if not sintesi:
         trad_ok = False
-        sintesi = f"<p>{testo_originale}</p>"
+        sintesi = f"<p>{escape(testo_originale)}</p>"
 
-    html = componi_html_finale(f["nome"], f["categoria"], f["colore"], sintesi, link, img_url)
-    record = {"id": item_id, "title": f"{f['nome']}: {titolo_breve}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat(), "image_url": img_url}
+    immagini = immagini_per_feed(img_urls or [], link)
+    html = componi_html_finale(f["nome"], f["categoria"], f["colore"], sintesi, link, immagini)
+    record = {"id": item_id, "title": f"{f['nome']}: {titolo_breve}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat(), "image_url": immagini[0] if immagini else None, "img_v": 1}
 
     if trad_ok: db[item_id] = record
     time.sleep(5)
@@ -582,7 +740,8 @@ def scrivi_pagina(item):
     dell'item punta a questa pagina invece che all'articolo originale."""
     contenuto = item["html_content"].strip()
     img = item.get("image_url")
-    immagine = f'<p><img src="{escape(img)}" alt="" style="max-width:100%"></p>' if img and img not in contenuto else ""
+    if img and immagine_scartata(img): img = None
+    immagine = f'<p><img src="{escape(img)}" alt="" referrerpolicy="no-referrer" style="max-width:100%"></p>' if img and img not in contenuto else ""
     titolo = escape(item["title"])
     html = (f'<!doctype html><html lang="it"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
@@ -599,7 +758,8 @@ def estratto_testo(item):
     righe = []
     for el in soup.find_all(["p", "li"]):
         t = " ".join(el.get_text(" ", strip=True).split())
-        if not t or t.startswith("FONTE:") or "originale" in t.lower(): continue
+        if not t or t.startswith("FONTE:"): continue
+        if el.find("a") and "originale" in t.lower(): continue  # riga "Leggi/Vedi originale su ..."
         righe.append(("• " if el.name == "li" else "") + t)
     if righe: return "\n\n".join(righe)
     n = len(soup.find_all("img"))
@@ -667,6 +827,34 @@ def voci_recenti(db, articoli_giro, fonti, per_fonte):
         risultato += voci[:per_fonte]
     return risultato
 
+def pulisci_immagini_html(html):
+    """Toglie da una scheda (anche vecchia) le immagini che non sono contenuto: pixel, icone, loghi."""
+    return re.sub(r'<img\b[^>]*?\bsrc="([^"]+)"[^>]*>', lambda m: "" if immagine_scartata(m.group(1)) else m.group(0), html)
+
+def completa_immagini(db, voci, max_per_giro=20):
+    """Per le voci già in cache create prima del supporto alle immagini: recupera
+    le immagini dell'articolo e le inserisce nella scheda, senza rifare il riassunto."""
+    fatte = 0
+    for v in voci:
+        if v.get("img_v") or v.get("id") not in db or not v.get("link"): continue
+        if v["link"].startswith("https://t.me/"):
+            v["img_v"] = 1
+            continue
+        if fatte >= max_per_giro: break
+        fatte += 1
+        candidate, letta = immagini_da_pagina(v["link"])
+        if not letta:
+            v["img_tentativi"] = v.get("img_tentativi", 0) + 1
+            if v["img_tentativi"] >= 2: v["img_v"] = 1
+            continue
+        v["html_content"] = pulisci_immagini_html(v["html_content"])
+        presenti = {_chiave_immagine(u) for u in re.findall(r'src="([^"]+)"', unescape(v["html_content"]))}
+        immagini = immagini_per_feed([u for u in candidate if _chiave_immagine(u) not in presenti], v["link"])
+        if immagini: v["html_content"] = aggiungi_immagini_html(v["html_content"], immagini)
+        v["image_url"] = (immagini or [None])[0] or next(iter(re.findall(r'src="([^"]+)"', unescape(v["html_content"]))), None)
+        v["img_v"] = 1
+        print(f"    [IMG] {v['title'][:50]} -> {len(immagini)} immagini aggiunte", flush=True)
+
 def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
     # Fonti diverse possono convergere sullo stesso link (fallback condivisi,
     # o pagine che ripescano le stesse sezioni generiche di un sito): la
@@ -680,13 +868,15 @@ def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
 
     fg = FeedGenerator()
     fg.title(titolo)
-    fg.link(href=FEED_SITE, rel="alternate")
     fg.link(href=FEED_SITE + output_file, rel="self", type="application/rss+xml")
+    # feedgen usa come <link> del canale l'ULTIMO link aggiunto: il sito va per ultimo.
+    fg.link(href=FEED_SITE, rel="alternate")
     fg.description(descrizione)
     fg.language("it")
 
     for item in sorted(articoli_unici, key=lambda x: x.get("published", ""), reverse=True)[:120]:
         if ospita_img: item = ospita_immagini_item(item)
+        item = {**item, "html_content": pulisci_immagini_html(item["html_content"])}
         fe = fg.add_entry()
         fe.id(item["id"])
         fe.title(item["title"])
@@ -696,8 +886,11 @@ def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
         # contenuto non inizia direttamente con un tag: niente spazi/righe vuote iniziali.
         fe.content("<div>" + item["html_content"].strip() + "</div>", type="CDATA")
         fe.description(estratto_testo(item))
-        if item.get("image_url"):
-            fe.enclosure(item["image_url"], 0, 'image/png' if item["image_url"].endswith('.png') else 'image/jpeg')
+        copertina = item.get("image_url")
+        if copertina and not immagine_scartata(copertina):
+            ext = copertina.split("?")[0].rsplit(".", 1)[-1].lower()
+            tipo = {"png": "image/png", "webp": "image/webp", "gif": "image/gif"}.get(ext, "image/jpeg")
+            fe.enclosure(copertina, 0, tipo)
         # Senza pubDate esplicito, un reader (Feedly incluso) non ha modo di
         # sapere l'ordine cronologico reale e si affida all'ordine fisico nel
         # documento — che feedgen inverte di default (ogni add_entry() fa un
@@ -716,8 +909,8 @@ def main():
 
     for f in FONTI:
         if f.get("tipo") == "telegram":
-            for testo, link, img_url in recupera_messaggi_telegram(f["url"]):
-                articoli.append(elabora_messaggio_telegram(db, f, testo, link, img_url))
+            for testo, link, img_urls in recupera_messaggi_telegram(f["url"]):
+                articoli.append(elabora_messaggio_telegram(db, f, testo, link, img_urls))
             continue
 
         if f.get("tipo") == "immagini":
@@ -746,6 +939,10 @@ def main():
             img_url = entry.media_content[0].get("url") if "media_content" in entry and len(entry.media_content) > 0 else None
             articoli.append(elabora_voce(db, f, link, titolo, testo_grezzo, img_url))
 
+    fonti_std = [f for f in FONTI if f.get("tipo") != "immagini"]
+    fonti_img = [f for f in FONTI if f.get("tipo") == "immagini"]
+    voci_std = voci_recenti(db, articoli, fonti_std, VOCI_PER_FONTE)
+    completa_immagini(db, voci_std)
     salva_database(db)
 
     os.makedirs(IMMAGINI_DIR, exist_ok=True)
@@ -755,13 +952,15 @@ def main():
     # appena scaricate): se un sito blocca o va in timeout in un giro, le sue
     # ultime voci restano nel feed invece di sparire (e con un tetto globale, le
     # fonti più vecchie non vengono più spinte fuori da quelle nuove).
-    fonti_std = [f for f in FONTI if f.get("tipo") != "immagini"]
-    fonti_img = [f for f in FONTI if f.get("tipo") == "immagini"]
-    genera_feed(voci_recenti(db, articoli, fonti_std, VOCI_PER_FONTE), FEED_OUTPUT, "Rassegna Personale Unificata", "Sintesi IA e proxy anti-blocco.")
+    genera_feed(voci_std, FEED_OUTPUT, "Rassegna Personale Unificata", "Sintesi IA e proxy anti-blocco.")
     digest = [d for f in fonti_img for d in digest_immagini(db, f["nome"])]
     genera_feed(digest, FEED_OUTPUT_IMMAGINI, "Contemporary Art Daily", "Riepilogo di immagini due volte a settimana, senza sintesi né traduzione.", ospita_img=True)
+
+    # Elimina le copie ospitate non più usate da nessuna voce in cache.
+    usate = set(IMMAGINI_USATE)
+    for v in db.values(): usate.update(re.findall(rf"{IMMAGINI_DIR}/([\w.]+)", v.get("html_content", "")))
     for nome in os.listdir(IMMAGINI_DIR):
-        if nome not in IMMAGINI_USATE: os.remove(os.path.join(IMMAGINI_DIR, nome))
+        if nome not in usate: os.remove(os.path.join(IMMAGINI_DIR, nome))
 
 if __name__ == "__main__":
     main()
