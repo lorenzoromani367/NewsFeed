@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Mon, 12 Oct 2026 17:51:49 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 01:57:14 +0000</lastBuildDate>
     <item>
       <title>Aperture (Reviews): In France, an Exhibition Focuses on the Power of Truth</title>
       <link>https://lorenzoromani367.github.io/NewsFeed/articoli/66f9d9f6a09bda32.html</link>
@@ -2404,22 +2404,6 @@ Francesco Codello, pedagogista e promotore della REL, ha spiegato su MicroMega (
       <pubDate>Mon, 12 Oct 2026 17:46:09 +0000</pubDate>
     </item>
     <item>
-      <title>Indiscreto: La magia della tecnica e la paura del potere</title>
-      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/0526c64a2172ecdc.html</link>
-      <description>Sintesi non disponibile.
-
-...</description>
-      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Indiscreto | <strong>Ambito:</strong> <em>Cultura</em></p>
-    <hr>
-    
-    <p><em>Sintesi non disponibile.</em></p><p>...</p>
-    
-    <hr>
-    <p><a href="https://www.indiscreto.org/la-magia-della-tecnica-e-la-paura-del-potere">Leggi originale su Indiscreto &rarr;</a></p></div>]]></content:encoded>
-      <guid isPermaLink="false">v18_https://www.indiscreto.org/la-magia-della-tecnica-e-la-paura-del-potere</guid>
-      <pubDate>Mon, 12 Oct 2026 17:47:28 +0000</pubDate>
-    </item>
-    <item>
       <title>Aeon: È tutto cosciente?</title>
       <link>https://lorenzoromani367.github.io/NewsFeed/articoli/b96056d4f3399747.html</link>
       <description>Il filosofo che scrive parte da un principio semplice: quando un’esposizione rende un fatto intelligibile, il mistero scompare. Usa l’esempio banale di “uno più uno fa due” per illustrare come la filosofia cerchi di rendere altre caratteristiche fondamentali della realtà altrettanto inevitabili. Questo desiderio di intelligibilità è espresso da Gottfried Wilhelm Leibniz , che afferma che non esiste alcun fatto vero o esistente senza una ragione sufficiente per il suo essere così e non altrimenti, e da Baruch Spinoza , che sostiene che a ogni cosa occorre attribuire una causa sia per la sua esistenza sia per la sua non‑esistenza. Michael Della Rocca riassume il progetto: “rendere il mondo e il nostro posto in esso intelligibili”.
@@ -2526,6 +2510,22 @@ Chi è interessato può votare tramite il link fornito e può anche esplorare il
     <p><a href="https://t.me/filosofiastramba/1414">Leggi originale su Filosofia Stramba &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://t.me/filosofiastramba/1414</guid>
       <pubDate>Mon, 12 Oct 2026 17:51:44 +0000</pubDate>
+    </item>
+    <item>
+      <title>Indiscreto: La magia della tecnica e la paura del potere</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/0526c64a2172ecdc.html</link>
+      <description>Sintesi non disponibile.
+
+...</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Indiscreto | <strong>Ambito:</strong> <em>Cultura</em></p>
+    <hr>
+    
+    <p><em>Sintesi non disponibile.</em></p><p>...</p>
+    
+    <hr>
+    <p><a href="https://www.indiscreto.org/la-magia-della-tecnica-e-la-paura-del-potere">Leggi originale su Indiscreto &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.indiscreto.org/la-magia-della-tecnica-e-la-paura-del-potere</guid>
+      <pubDate>Tue, 13 Oct 2026 01:56:52 +0000</pubDate>
     </item>
   </channel>
 </rss>
