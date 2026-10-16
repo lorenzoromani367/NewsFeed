@@ -475,7 +475,7 @@ def componi_html_finale(fonte, categoria, colore, contenuto, link, immagini):
     {contenuto}
     {galleria}
     <hr>
-    <p><a href="{escape(link)}">Leggi originale su {fonte} &rarr;</a></p>
+    <p><a href="{escape(urllib.parse.quote(link, safe="%/:?#[]@!$&'()*+,;=~"))}">Leggi originale su {fonte} &rarr;</a></p>
     """
 
 def aggiungi_immagini_html(html, immagini):
