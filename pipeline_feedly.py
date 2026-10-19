@@ -244,7 +244,7 @@ def immagine_scartata(url):
     """True per immagini che non sono contenuto dell'articolo: pixel di
     tracciamento, emoji, icone e loghi dell'interfaccia, banner, SVG."""
     u = url.lower()
-    if re.search(r"emoji|gravatar|spinner|1x1|doubleclick|facebook\.com/tr|googletagmanager|wp-content/themes|\.svg(\?|$)|/static/images/|donate|dona-modali|sprite|pixel\.", u):
+    if re.search(r"emoji|gravatar|spinner|1x1|doubleclick|facebook\.com/tr|googletagmanager|wp-content/themes|\.svg(\?|$)|/static/images/|donate|dona-modali|sprite|pixel\.|/imagefile/cad_ad-", u):
         return True
     if "/uploads/" in u: return False
     return bool(re.search(r"(^|[-_/.])(logos?|icons?|avatars?|placeholder|banner)\d*([-_./]|$)", u))
@@ -594,6 +594,40 @@ def _diagnostica_immagini(testo, origine, link):
     print(f"    [DIAG] {origine} {link}: {len(urls)} URL immagine; next_data={'__NEXT_DATA__' in testo}", flush=True)
     for forma, n in forme.most_common(8): print(f"    [DIAG]   {n}x {forma[:160]}", flush=True)
 
+def _diagnostica_next_data(html, link):
+    """Diagnostica: dove, dentro __NEXT_DATA__, si trovano le immagini del progetto."""
+    if isinstance(html, bytes): html = html.decode("utf-8", errors="ignore")
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
+    if not m:
+        print(f"    [DIAG] {link}: nessun __NEXT_DATA__", flush=True)
+        return
+    try: data = json.loads(m.group(1))
+    except ValueError as e:
+        print(f"    [DIAG] {link}: __NEXT_DATA__ non valido ({e})", flush=True)
+        return
+    trovati = []
+
+    def walk(o, path):
+        if isinstance(o, dict):
+            for k, v in o.items(): walk(v, path + [str(k)])
+        elif isinstance(o, list):
+            for i, v in enumerate(o): walk(v, path + [str(i)])
+        elif isinstance(o, str) and "/imagefile/" in o:
+            trovati.append((path, o))
+    walk(data, [])
+    forme = collections.Counter(".".join("*" if x.isdigit() else x for x in path) for path, _ in trovati)
+    pp = data.get("props", {}).get("pageProps", {})
+    print(f"    [DIAG] {link}: {len(trovati)} URL in NEXT_DATA; pageProps keys: {list(pp)[:12]}", flush=True)
+    for forma, n in forme.most_common(8): print(f"    [DIAG]   {n}x {forma[:170]}", flush=True)
+    ids = []
+    for path, u in trovati:
+        m2 = re.search(r"/image/(\d+)/imagefile/(?:xlarge)-", u)
+        if m2 and m2.group(1) not in ids: ids.append(m2.group(1))
+    print(f"    [DIAG]   id xlarge in ordine: {ids[:25]}", flush=True)
+    pid = re.search(r"-(\d+)/?$", urllib.parse.urlparse(link).path)
+    if pid:
+        print(f"    [DIAG]   id progetto {pid.group(1)}: compare come valore {json.dumps(data).count(pid.group(1))} volte", flush=True)
+
 def trova_immagini_progetto(link, limite_immagini=10):
     """Immagini di una pagina-progetto (es. una mostra di Contemporary Art Daily):
     prima l'HTML statico, poi Jina (browser reale) per i siti che caricano le
@@ -608,12 +642,15 @@ def trova_immagini_progetto(link, limite_immagini=10):
     contenuto, _ = scarica_bypass(link)
     if contenuto:
         _diagnostica_immagini(contenuto, 'html', link)
+        _diagnostica_next_data(contenuto, link)
         immagini = valide(estrai_immagini(contenuto, link, og=False, limite=60))
     if not immagini:
         try:
             res = requests.get(f"https://r.jina.ai/{link}", headers=HEADERS_JINA, timeout=20)
             if res.status_code == 200 and len(res.text) > 200:
                 _diagnostica_immagini(res.text, 'jina', link)
+                ids_jina = list(dict.fromkeys(re.findall(r'/image/(\d+)/imagefile/caq_thumb-', res.text)))[:25]
+                print(f"    [DIAG]   id caq_thumb (jina) in ordine: {ids_jina}", flush=True)
                 immagini = valide(immagini_markdown(res.text, limite=60))
                 if not immagini:
                     print(f"    [JINA] {link} -> nessuna immagine riconosciuta", flush=True)
