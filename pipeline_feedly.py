@@ -219,6 +219,26 @@ def recupera_articoli_pagina(url, nome_fonte="", limite=2):
 
 MAX_IMMAGINI = 8
 
+def url_sicuro(link):
+    """URL con spazi e caratteri speciali codificati (alcuni siti hanno slug con spazi)."""
+    return urllib.parse.quote(link, safe="%/:?#[]@!$&'()*+,;=~")
+
+def immagini_valide_html(html, link=""):
+    """Immagini <img> di una scheda che sono contenuto: non loghi/icone e non del dominio del sito."""
+    host = urllib.parse.urlparse(link).netloc
+    valide = []
+    for u in re.findall(r'<img\b[^>]*?\bsrc="([^"]+)"', html):
+        u = unescape(u)
+        if immagine_scartata(u) or (host and urllib.parse.urlparse(u).netloc == host): continue
+        if u not in valide: valide.append(u)
+    return valide
+
+def incornicia_immagini(html):
+    """Avvolge ogni immagine in un link all'immagine stessa: toccandola si apre a
+    tutto schermo (lightbox nelle nostre pagine; nei reader apre l'immagine nel browser)."""
+    return re.sub(r'(<img\b[^>]*?\bsrc=")([^"]+)("[^>]*>)',
+                  lambda m: f'<a class="zoom" href="{m.group(2)}">{m.group(0)}</a>', html)
+
 def immagine_scartata(url):
     """True per immagini che non sono contenuto dell'articolo: pixel di
     tracciamento, emoji, icone e loghi dell'interfaccia, banner, SVG."""
@@ -226,7 +246,7 @@ def immagine_scartata(url):
     if re.search(r"emoji|gravatar|spinner|1x1|doubleclick|facebook\.com/tr|googletagmanager|wp-content/themes|\.svg(\?|$)|/static/images/|donate|dona-modali|sprite|pixel\.", u):
         return True
     if "/uploads/" in u: return False
-    return bool(re.search(r"(^|[-_/.])(logos?|icons?|avatars?|placeholder|banner)([-_./]|$)", u))
+    return bool(re.search(r"(^|[-_/.])(logos?|icons?|avatars?|placeholder|banner)\d*([-_./]|$)", u))
 
 def _chiave_immagine(url):
     u = url.split("?")[0].lower()
@@ -290,13 +310,13 @@ def estrai_immagini(html, base_url, og=True, limite=MAX_IMMAGINI):
         if len(trovate) >= limite: break
     return trovate[:limite]
 
-def immagini_markdown(testo):
+def immagini_markdown(testo, limite=MAX_IMMAGINI):
     """Immagini ![alt](url) nel markdown restituito da Jina Reader."""
     risultato = []
     for u in re.findall(r"!\[[^\]]*\]\((https?://[^\s)]+)\)", testo):
         u = normalizza_url_immagine(u)
         if not immagine_scartata(u) and u not in risultato: risultato.append(u)
-    return risultato[:MAX_IMMAGINI]
+    return risultato[:limite]
 
 def pulisci_markdown(testo):
     """Toglie immagini e URL dei link dal markdown di Jina: nel testo da riassumere sono solo rumore."""
@@ -475,7 +495,7 @@ def componi_html_finale(fonte, categoria, colore, contenuto, link, immagini):
     {contenuto}
     {galleria}
     <hr>
-    <p><a href="{escape(urllib.parse.quote(link, safe="%/:?#[]@!$&'()*+,;=~"))}">Leggi originale su {fonte} &rarr;</a></p>
+    <p><a href="{escape(url_sicuro(link))}">Leggi originale su {fonte} &rarr;</a></p>
     """
 
 def aggiungi_immagini_html(html, immagini):
@@ -564,6 +584,33 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
     time.sleep(8)
     return record
 
+def trova_immagini_progetto(link, limite_immagini=10):
+    """Immagini di una pagina-progetto (es. una mostra di Contemporary Art Daily):
+    prima l'HTML statico, poi Jina (browser reale) per i siti che caricano le
+    immagini via JavaScript. Gli asset del sito (loghi, icone) stanno sul suo
+    dominio, i contenuti su un CDN: le immagini del dominio vengono scartate."""
+    host_sito = urllib.parse.urlparse(link).netloc
+
+    def valide(urls):
+        return [u for u in urls if not immagine_scartata(u) and urllib.parse.urlparse(u).netloc != host_sito]
+
+    immagini = []
+    contenuto, _ = scarica_bypass(link)
+    if contenuto:
+        immagini = valide(estrai_immagini(contenuto, link, og=False, limite=60))
+    if not immagini:
+        try:
+            res = requests.get(f"https://r.jina.ai/{link}", headers=HEADERS_JINA, timeout=20)
+            if res.status_code == 200 and len(res.text) > 200:
+                immagini = valide(immagini_markdown(res.text, limite=60))
+                if not immagini:
+                    print(f"    [JINA] {link} -> nessuna immagine riconosciuta", flush=True)
+            else:
+                print(f"    [JINA] {link} -> HTTP {res.status_code}", flush=True)
+        except Exception as e:
+            print(f"    [JINA] {link} -> {type(e).__name__}: {e}", flush=True)
+    return immagini[:limite_immagini]
+
 def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
     """Come elabora_voce ma senza sintesi/traduzione Groq: compone la voce
     con le sole immagini trovate nella pagina dell'articolo."""
@@ -575,76 +622,30 @@ def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
         return db[item_id]
 
     print(f"Elaborazione: {titolo[:40]}...", flush=True)
-
-    def _estrai_da_html(contenuto):
-        trovate = []
-        s = BeautifulSoup(contenuto, "html.parser")
-        for tag in s.find_all(["img", "source"]):
-            src = None
-            for attr in ("data-src", "data-lazy-src", "src"):
-                val = tag.get(attr)
-                if val and not val.startswith("data:"):
-                    src = val
-                    break
-            if not src:
-                srcset = tag.get("srcset") or tag.get("data-srcset")
-                if srcset:
-                    candidati = [c.strip().split(" ")[0] for c in srcset.split(",") if c.strip()]
-                    candidati = [c for c in candidati if not c.startswith("data:")]
-                    if candidati: src = candidati[-1]  # l'ultima è di solito la risoluzione più alta
-            if not src: continue
-            src = urllib.parse.urljoin(link, src)
-            if immagine_scartata(src): continue
-            if src not in trovate:
-                trovate.append(src)
-            if len(trovate) >= limite_immagini: break
-        return trovate
-
-    immagini = []
-    if link:
-        contenuto, _ = scarica_bypass(link)
-        if contenuto:
-            immagini = _estrai_da_html(contenuto)
-
-    if not immagini and link:
-        # Alcuni siti (es. Next.js con caricamento lato client) non mettono le
-        # immagini vere nell'HTML statico: Jina esegue un browser reale e le
-        # vede già renderizzate, restituendole come ![alt](url) nel markdown.
-        try:
-            res = requests.get(f"https://r.jina.ai/{link}", headers=HEADERS_JINA, timeout=20)
-            if res.status_code == 200 and len(res.text) > 200:
-                for u in re.findall(r'!\[[^\]]*\]\((https?://[^\s)]+)\)', res.text):
-                    if immagine_scartata(u): continue
-                    if u not in immagini:
-                        immagini.append(u)
-                    if len(immagini) >= limite_immagini: break
-                if not immagini:
-                    print(f"    [JINA] {link} -> nessuna immagine riconosciuta", flush=True)
-            else:
-                print(f"    [JINA] {link} -> HTTP {res.status_code}", flush=True)
-        except Exception as e:
-            print(f"    [JINA] {link} -> {type(e).__name__}: {e}", flush=True)
-
-    if immagini:
-        contenuto_html = "".join(
-            f'<div style="margin-bottom: 14px;"><img src="{i}" style="width: 100%; border-radius: 8px; display: block;" /></div>'
-            for i in immagini
-        )
-    else:
-        contenuto_html = "<p><em>Nessuna immagine trovata.</em></p>"
-
-    html = f"""<div style="font-family: 'Atkinson Hyperlegible', sans-serif; font-size: 16px; line-height: 1.65; color: #1e293b;">
-    <div style="display: inline-block; padding: 4px 12px; margin-bottom: 8px; background-color: {f['colore']}; color: #ffffff; font-weight: 700; font-size: 12px; border-radius: 4px;">FONTE: {f['nome']}</div>
-    <div style="font-size: 13px; color: #64748b; margin-bottom: 18px;">Ambito: <em>{f['categoria']}</em></div>
-    <div style="border-top: 1px solid #e2e8f0; padding-top: 16px; margin-top: 12px;">{contenuto_html}</div>
-    <div style="margin-top: 30px; padding: 14px 18px; background-color: #f8fafc; border-left: 4px solid {f['colore']};"><a href="{link}" style="color: {f['colore']}; font-weight: 700;">Vedi originale su {f['nome']} &rarr;</a></div>
-</div>"""
-
-    immagine_copertina = immagini[0] if immagini else None
-    record = {"id": item_id, "title": f"{f['nome']}: {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat(), "image_url": immagine_copertina}
+    immagini = trova_immagini_progetto(link, limite_immagini) if link else []
+    corpo = "" if immagini else "<p><em>Nessuna immagine trovata.</em></p>"
+    html = componi_html_finale(f["nome"], f["categoria"], f["colore"], corpo, link, immagini)
+    record = {"id": item_id, "title": f"{f['nome']}: {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat(), "image_url": immagini[0] if immagini else None, "img_tentativi": 0 if immagini else 1}
     db[item_id] = record
     time.sleep(2)
     return record
+
+def ripara_immagini_progetti(db, fonte, max_per_giro=20):
+    """Rifà la ricerca delle immagini per le voci di una fonte solo-immagini che
+    ne sono rimaste senza (es. contenevano soltanto il logo del sito)."""
+    fatte = 0
+    for v in db.values():
+        if not v["title"].startswith(f"{fonte['nome']}: ") or not v.get("link"): continue
+        if immagini_valide_html(v["html_content"], v["link"]) or v.get("img_tentativi", 0) >= 3: continue
+        if fatte >= max_per_giro: break
+        fatte += 1
+        immagini = trova_immagini_progetto(v["link"])
+        if not immagini:
+            v["img_tentativi"] = v.get("img_tentativi", 0) + 1
+            continue
+        v["html_content"] = componi_html_finale(fonte["nome"], fonte["categoria"], fonte["colore"], "", v["link"], immagini)
+        v["image_url"] = immagini[0]
+        print(f"    [IMG] {v['title'][:50]} -> {len(immagini)} immagini ritrovate", flush=True)
 
 def recupera_messaggi_telegram(url, limite=3):
     """Legge l'anteprima web pubblica di un canale Telegram (https://t.me/s/<canale>),
@@ -742,19 +743,60 @@ def ospita_immagini_item(item):
 def url_pagina(item_id):
     return f"{FEED_SITE}{PAGINE_DIR}/{hashlib.sha1(item_id.encode()).hexdigest()[:16]}.html"
 
+PAGINE_SCRITTE = set()
+
+PAGINA_STILE = (
+    "<style>"
+    ":root{color-scheme:light dark}"
+    "body{max-width:46rem;margin:0 auto;padding:1rem 1.1rem 3rem;font:18px/1.65 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Georgia,serif}"
+    "h1{font-size:1.5rem;line-height:1.25}h2{font-size:1.2rem;margin-top:1.8rem}"
+    "img{max-width:100%;height:auto;border-radius:6px}"
+    "a.zoom{display:block;cursor:zoom-in}"
+    "a.originale{display:inline-block;padding:.65rem .95rem;border:1px solid currentColor;border-radius:9px;font-weight:600;text-decoration:none}"
+    "#lb{display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:99;background:rgba(0,0,0,.95);align-items:center;justify-content:center;cursor:zoom-out}"
+    "#lb.on{display:flex}"
+    "#lb img{max-width:100vw;max-height:100vh;border-radius:0;object-fit:contain}"
+    "</style>"
+)
+
+PAGINA_SCRIPT = (
+    "<script>(function(){var lb=document.getElementById('lb'),big=lb.querySelector('img');"
+    "function chiudi(){lb.className='';big.removeAttribute('src');}"
+    "document.addEventListener('click',function(e){"
+    "var a=e.target.closest?e.target.closest('a.zoom'):null;"
+    "if(a){e.preventDefault();big.src=a.href;lb.className='on';}"
+    "else if(lb.className==='on'){chiudi();}});"
+    "document.addEventListener('keydown',function(e){if(e.key==='Escape')chiudi();});})();</script>"
+)
+
 def scrivi_pagina(item):
     """Pagina HTML statica con la sintesi: alcuni reader (es. Bulletin) ignorano
     il contenuto del feed e scaricano la pagina del link, quindi il link
-    dell'item punta a questa pagina invece che all'articolo originale."""
-    contenuto = item["html_content"].strip()
+    dell'item punta a questa pagina invece che all'articolo originale. In cima
+    c'è il pulsante per l'articolo integrale; toccando un'immagine si apre a tutto schermo."""
+    contenuto = pulisci_immagini_html(item["html_content"]).strip()
     img = item.get("image_url")
     if img and immagine_scartata(img): img = None
-    immagine = f'<p><img src="{escape(img)}" alt="" referrerpolicy="no-referrer" style="max-width:100%"></p>' if img and img not in contenuto else ""
+    immagine = ""
+    if img and img not in unescape(contenuto):
+        immagine = f'<p><img src="{escape(img)}" alt="" style="max-width:100%;height:auto"></p>'
     titolo = escape(item["title"])
+    link = item.get("link") or ""
+    banner = ""
+    if link and not item.get("digest"):
+        host = urllib.parse.urlparse(link).netloc
+        etichetta = "Apri il post su Telegram" if host == "t.me" else f"Leggi l'articolo integrale su {escape(host)}"
+        banner = f'<p><a class="originale" href="{escape(url_sicuro(link))}" target="_blank" rel="noopener">{etichetta} &rarr;</a></p>'
+        if host != "t.me":
+            banner += f'<p><small><a href="https://r.jina.ai/{escape(url_sicuro(link))}" target="_blank" rel="noopener">Se non si apre: versione solo testo</a></small></p>'
+    corpo = incornicia_immagini(immagine + contenuto)
     html = (f'<!doctype html><html lang="it"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<meta name="referrer" content="no-referrer"><title>{titolo}</title></head><body><article><h1>{titolo}</h1>{immagine}{contenuto}</article></body></html>')
+            f'<meta name="referrer" content="no-referrer"><title>{titolo}</title>{PAGINA_STILE}</head>'
+            f'<body><article><h1>{titolo}</h1>{banner}{corpo}</article>'
+            f'<div id="lb"><img alt=""></div>{PAGINA_SCRIPT}</body></html>')
     nome = url_pagina(item["id"]).rsplit("/", 1)[-1]
+    PAGINE_SCRITTE.add(nome)
     with open(os.path.join(PAGINE_DIR, nome), "w", encoding="utf-8") as f:
         f.write(html)
 
@@ -786,6 +828,13 @@ def finestra_digest(dt):
     inizio = giorno - timedelta(days=dt.weekday() - 3)
     return inizio, inizio + timedelta(days=4)
 
+DIGEST_REVISIONE_DA = datetime(2026, 10, 12, tzinfo=timezone.utc)  # i riepiloghi da questa data erano rimasti con il solo logo: nuovo GUID
+
+def html_mostra(nome_fonte, titolo, link, immagini):
+    corpo = f"<h2>{escape(titolo)}</h2>"
+    corpo += "".join(f'<p><img src="{escape(u)}" style="max-width:100%;height:auto"></p>' for u in immagini)
+    return corpo + f'<p><a href="{escape(url_sicuro(link))}">Vedi originale su {escape(nome_fonte)} &rarr;</a></p>'
+
 def digest_immagini(db, nome_fonte, ora=None, max_digest=8, img_per_mostra=3):
     """Raggruppa le voci di una fonte solo-immagini in riepiloghi due volte a
     settimana (una voce per finestra conclusa), con poche immagini per mostra."""
@@ -802,26 +851,39 @@ def digest_immagini(db, nome_fonte, ora=None, max_digest=8, img_per_mostra=3):
     risultato = []
     for (inizio, fine), voci in sorted(finestre.items(), reverse=True)[:max_digest]:
         voci.sort(key=lambda x: x["published"])
-        titoli = [v["title"][len(prefisso):] for v in voci]
-        corpo = "<p>Mostre: " + "; ".join(titoli) + "</p>"
-        for v, titolo in zip(voci, titoli):
-            immagini = re.findall(r'<img[^>]*?\bsrc="([^"]+)"', v["html_content"])[:img_per_mostra]
-            corpo += f"<h2>{escape(titolo)}</h2>" + "".join(f'<p><img src="{escape(u)}" style="max-width:100%"></p>' for u in immagini)
-            corpo += f'<p><a href="{escape(v["link"])}">Vedi originale su {escape(nome_fonte)} &rarr;</a></p>'
+        mostre = [(v["title"][len(prefisso):], v["link"], immagini_valide_html(v["html_content"], v["link"])[:img_per_mostra]) for v in voci]
+        corpo = "<p>Mostre: " + "; ".join(escape(t) for t, _, _ in mostre) + "</p>"
+        corpo += "".join(html_mostra(nome_fonte, t, l, im) for t, l, im in mostre)
         ultimo = fine - timedelta(days=1)
         if inizio.month == ultimo.month:
             periodo = f"dal {inizio.day} al {ultimo.day} {MESI_IT[ultimo.month - 1]}"
         else:
             periodo = f"dal {inizio.day} {MESI_IT[inizio.month - 1]} al {ultimo.day} {MESI_IT[ultimo.month - 1]}"
         risultato.append({
-            "id": f"{VERSIONE_CACHE}_digest-{nome_fonte}-{inizio.date()}",
+            "id": f"{VERSIONE_CACHE}_digest-{nome_fonte}-{inizio.date()}" + ("-r2" if inizio >= DIGEST_REVISIONE_DA else ""),
             "title": f"{nome_fonte}: mostre {periodo}",
             "link": voci[0]["link"],
             "html_content": corpo,
             "published": fine.isoformat(),
-            "image_url": None,
+            "image_url": next((im[0] for _, _, im in mostre if im), None),
+            "digest": True,
         })
     return risultato
+
+def scrivi_pagine_cache(db, fonti_img):
+    """Una pagina per ogni voce in cache: i reader conservano le voci vecchie e i
+    loro link devono continuare a funzionare anche dopo che escono dal feed."""
+    nomi_img = [f["nome"] for f in fonti_img]
+    for v in db.values():
+        item = dict(v)
+        nome = next((n for n in nomi_img if v["title"].startswith(n + ": ")), None)
+        if nome:
+            # singola mostra di una fonte solo-immagini: titolo, link e prime 3 immagini
+            immagini = immagini_valide_html(v["html_content"], v["link"])[:3]
+            item["html_content"] = html_mostra(nome, v["title"][len(nome) + 2:], v["link"], immagini)
+            item["image_url"] = immagini[0] if immagini else None
+            item = ospita_immagini_item(item)
+        scrivi_pagina(item)
 
 def voci_recenti(db, articoli_giro, fonti, per_fonte):
     """Le ultime per_fonte voci di ogni fonte, dalla cache più quelle di questo giro."""
@@ -881,6 +943,7 @@ def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
         articoli_unici.append(a)
 
     fg = FeedGenerator()
+    fg.load_extension("media")
     fg.title(titolo)
     fg.link(href=FEED_SITE + output_file, rel="self", type="application/rss+xml")
     # feedgen usa come <link> del canale l'ULTIMO link aggiunto: il sito va per ultimo.
@@ -904,13 +967,14 @@ def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
         fe.link(href=url_pagina(item["id"]))
         # Alcuni reader (es. Bulletin) mostrano il codice HTML come testo se il
         # contenuto non inizia direttamente con un tag: niente spazi/righe vuote iniziali.
-        fe.content("<div>" + item["html_content"].strip() + "</div>", type="CDATA")
+        fe.content("<div>" + incornicia_immagini(item["html_content"].strip()) + "</div>", type="CDATA")
         fe.description(estratto_testo(item))
-        copertina = item["image_url"]
         if copertina:
             ext = copertina.split("?")[0].rsplit(".", 1)[-1].lower()
             tipo = {"png": "image/png", "webp": "image/webp", "gif": "image/gif"}.get(ext, "image/jpeg")
             fe.enclosure(copertina, 0, tipo)
+            fe.media.thumbnail({"url": copertina})
+            fe.media.content({"url": copertina, "medium": "image", "type": tipo})
         # Senza pubDate esplicito, un reader (Feedly incluso) non ha modo di
         # sapere l'ordine cronologico reale e si affida all'ordine fisico nel
         # documento — che feedgen inverte di default (ogni add_entry() fa un
@@ -925,7 +989,6 @@ def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
 def main():
     db = carica_database()
     articoli = []
-    articoli_immagini = []
 
     for f in FONTI:
         if f.get("tipo") == "telegram":
@@ -935,7 +998,7 @@ def main():
 
         if f.get("tipo") == "immagini":
             for titolo, link in recupera_articoli_pagina(f["url"], nome_fonte=f["nome"]):
-                articoli_immagini.append(elabora_voce_immagini(db, f, link, titolo))
+                elabora_voce_immagini(db, f, link, titolo)
             continue
 
         if f.get("tipo") == "pagina":
@@ -963,19 +1026,23 @@ def main():
     fonti_img = [f for f in FONTI if f.get("tipo") == "immagini"]
     voci_std = voci_recenti(db, articoli, fonti_std, VOCI_PER_FONTE)
     completa_immagini(db, voci_std)
+    for f in fonti_img: ripara_immagini_progetti(db, f)
     salva_database(db)
 
     os.makedirs(IMMAGINI_DIR, exist_ok=True)
-    for nome in os.listdir(PAGINE_DIR):
-        if nome.endswith(".html"): os.remove(os.path.join(PAGINE_DIR, nome))
+    # Pagine di TUTTE le voci in cache e di tutti i riepiloghi, non solo di quelle ancora
+    # nel feed: i reader conservano le voci vecchie e i loro link non devono dare 404.
+    scrivi_pagine_cache(db, fonti_img)
+    digest_tutti = [d for f in fonti_img for d in digest_immagini(db, f["nome"], max_digest=None)]
+    for d in digest_tutti: scrivi_pagina(ospita_immagini_item(d))
     # Il feed si costruisce da cache + voci di questo giro (non solo da quelle
     # appena scaricate): se un sito blocca o va in timeout in un giro, le sue
-    # ultime voci restano nel feed invece di sparire (e con un tetto globale, le
-    # fonti più vecchie non vengono più spinte fuori da quelle nuove).
+    # ultime voci restano nel feed invece di sparire.
     genera_feed(voci_std, FEED_OUTPUT, "Rassegna Personale Unificata", "Sintesi IA e proxy anti-blocco.")
-    digest = [d for f in fonti_img for d in digest_immagini(db, f["nome"])]
-    genera_feed(digest, FEED_OUTPUT_IMMAGINI, "Contemporary Art Daily", "Riepilogo di immagini due volte a settimana, senza sintesi né traduzione.", ospita_img=True)
+    genera_feed(digest_tutti[:8], FEED_OUTPUT_IMMAGINI, "Contemporary Art Daily", "Riepilogo di immagini due volte a settimana, senza sintesi né traduzione.", ospita_img=True)
 
+    for nome in os.listdir(PAGINE_DIR):
+        if nome.endswith(".html") and nome not in PAGINE_SCRITTE: os.remove(os.path.join(PAGINE_DIR, nome))
     # Elimina le copie ospitate non più usate da nessuna voce in cache.
     usate = set(IMMAGINI_USATE)
     for v in db.values(): usate.update(re.findall(rf"{IMMAGINI_DIR}/([\w.]+)", v.get("html_content", "")))
