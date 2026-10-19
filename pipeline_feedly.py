@@ -587,9 +587,11 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
     time.sleep(8)
     return record
 
-IMG_V_PROGETTI = 2  # 2 = foto lette dall'elenco ufficiale della pagina (prima: miniature e inserzioni)
-VARIANTI_VISUALIZZA = ("large", "medium", "caq_thumb")  # versione mostrata nella pagina, dalla preferita
-VARIANTI_ZOOM = ("xlarge", "original_jpeg")             # versione a tutto schermo
+IMG_V_PROGETTI = 3  # 3 = foto lette dall'elenco ufficiale della pagina in versione medium (prima: miniature, inserzioni, large)
+# Misure rilevate su Contemporary Art Daily: caq_thumb 267x400 (35 KB), medium 750x1125 (112 KB),
+# large 1280x1920 (268 KB), xlarge 2333x3500 (827 KB), original_jpeg 4480x6720 (5 MB).
+VARIANTI_VISUALIZZA = ("medium", "large", "caq_thumb")  # copia mostrata (e ospitata): basta per lo schermo di un telefono
+VARIANTI_ZOOM = ("xlarge", "large")                     # a tutto schermo: resta sul sito d'origine (il CDN la serve anche a noi)
 
 def immagini_progetto_next_data(html, link):
     """Foto di una pagina-progetto Next.js (Contemporary Art Daily): stanno nell'elenco
@@ -635,8 +637,7 @@ def trova_immagini_progetto(link, limite_immagini=10):
     if contenuto:
         coppie = [(u, z) for u, z in immagini_progetto_next_data(contenuto, link) if valide([u])][:limite_immagini]
         if coppie:
-            _diagnostica_varianti(link, contenuto)
-            return [u for u, _ in coppie], {u: z for u, z in coppie if z}
+            return [u for u, _ in coppie], {u: z for u, z in coppie if z and z != u}
         immagini = valide(estrai_immagini(contenuto, link, og=False, limite=60))
         if immagini: return immagini[:limite_immagini], {}
     try:
@@ -650,35 +651,6 @@ def trova_immagini_progetto(link, limite_immagini=10):
     except Exception as e:
         print(f"    [JINA] {link} -> {type(e).__name__}: {e}", flush=True)
     return [], {}
-
-_DIAG_VARIANTI = []
-
-def _dim_jpeg(dati):
-    i = 2
-    while i + 9 < len(dati):
-        if dati[i] != 0xFF: i += 1; continue
-        if dati[i + 1] in (0xC0, 0xC1, 0xC2): return int.from_bytes(dati[i + 7:i + 9], "big"), int.from_bytes(dati[i + 5:i + 7], "big")
-        i += 2 + int.from_bytes(dati[i + 2:i + 4], "big")
-    return None
-
-def _diagnostica_varianti(link, html):
-    """TEMPORANEA: peso e dimensioni di ogni versione della prima foto, e se il CDN
-    la serve anche a chi la richiede dal nostro sito (hotlink)."""
-    if _DIAG_VARIANTI: return
-    _DIAG_VARIANTI.append(link)
-    if isinstance(html, bytes): html = html.decode("utf-8", errors="ignore")
-    try:
-        dati = json.loads(re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S).group(1))
-        img = dati["props"]["pageProps"]["projectObject"]["images"]
-        img = img[0] if isinstance(img, list) else list(img.values())[0]
-        print(f"    [DIAG] chiavi della prima immagine: {sorted(img)}", flush=True)
-        for nome in ("caq_thumb", "medium", "large", "xlarge", "original_jpeg"):
-            if not isinstance(img.get(nome), str): continue
-            for etichetta, extra in (("senza Referer", {}), ("Referer nostro sito", {"Referer": FEED_SITE})):
-                r = requests.get(img[nome], headers={**HEADERS, **extra}, timeout=30)
-                print(f"    [DIAG] {nome} ({etichetta}): HTTP {r.status_code} {r.headers.get('Content-Type')} {len(r.content) // 1024} KB {_dim_jpeg(r.content)}", flush=True)
-    except Exception as e:
-        print(f"    [DIAG] varianti: {type(e).__name__}: {e}", flush=True)
 
 def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
     """Come elabora_voce ma senza sintesi/traduzione Groq: compone la voce
@@ -700,7 +672,7 @@ def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
     time.sleep(2)
     return record
 
-def ripara_immagini_progetti(db, fonte, max_per_giro=8):
+def ripara_immagini_progetti(db, fonte, max_per_giro=60):
     """Rifà la ricerca delle immagini per le voci di una fonte solo-immagini rimaste
     senza o trovate con la vecchia ricerca (miniature, inserzioni), dalla più recente."""
     voci = sorted((v for v in db.values() if v["title"].startswith(f"{fonte['nome']}: ") and v.get("link")),
@@ -815,8 +787,6 @@ def ospita_immagini_item(item):
 def url_pagina(item_id):
     return f"{FEED_SITE}{PAGINE_DIR}/{hashlib.sha1(item_id.encode()).hexdigest()[:16]}.html"
 
-PAGINE_SCRITTE = set()
-
 PAGINA_STILE = (
     "<style>"
     ":root{color-scheme:light dark}"
@@ -870,7 +840,6 @@ def scrivi_pagina(item):
             f'<body><article><h1>{titolo}</h1>{banner}{corpo}</article>'
             f'<div id="lb"><img alt=""></div>{PAGINA_SCRIPT}</body></html>')
     nome = url_pagina(item["id"]).rsplit("/", 1)[-1]
-    PAGINE_SCRITTE.add(nome)
     with open(os.path.join(PAGINE_DIR, nome), "w", encoding="utf-8") as f:
         f.write(html)
 
@@ -1112,18 +1081,27 @@ def main():
     # nel feed: i reader conservano le voci vecchie e i loro link non devono dare 404.
     scrivi_pagine_cache(db, fonti_img)
     digest_tutti = [d for f in fonti_img for d in digest_immagini(db, f["nome"], max_digest=None)]
-    for d in digest_tutti: scrivi_pagina(ospita_immagini_item(d))
+    for d in digest_tutti:
+        d = ospita_immagini_item(d)
+        scrivi_pagina(d)
+        if d["id"].endswith("-r2"):
+            # il riepilogo con il GUID precedente (senza revisione) è ancora nei reader: anche il suo link deve aprire la pagina
+            scrivi_pagina({**d, "id": d["id"][:-len("-r2")]})
     # Il feed si costruisce da cache + voci di questo giro (non solo da quelle
     # appena scaricate): se un sito blocca o va in timeout in un giro, le sue
     # ultime voci restano nel feed invece di sparire.
     genera_feed(voci_std, FEED_OUTPUT, "Rassegna Personale Unificata", "Sintesi IA e proxy anti-blocco.")
     genera_feed(digest_tutti[:8], FEED_OUTPUT_IMMAGINI, "Contemporary Art Daily", "Riepilogo di immagini due volte a settimana, senza sintesi né traduzione.", ospita_img=True)
 
-    for nome in os.listdir(PAGINE_DIR):
-        if nome.endswith(".html") and nome not in PAGINE_SCRITTE: os.remove(os.path.join(PAGINE_DIR, nome))
-    # Elimina le copie ospitate non più usate da nessuna voce in cache.
+    # Le pagine non si cancellano mai: i reader conservano le voci vecchie (anche di versioni
+    # precedenti della cache) e i loro link devono continuare ad aprirsi. Si eliminano solo le
+    # copie ospitate che nessuna pagina e nessuna voce in cache usa più.
     usate = set(IMMAGINI_USATE)
     for v in db.values(): usate.update(re.findall(rf"{IMMAGINI_DIR}/([\w.]+)", v.get("html_content", "")))
+    for nome in os.listdir(PAGINE_DIR):
+        if nome.endswith(".html"):
+            with open(os.path.join(PAGINE_DIR, nome), encoding="utf-8") as f:
+                usate.update(re.findall(rf"{IMMAGINI_DIR}/([\w.]+)", f.read()))
     for nome in os.listdir(IMMAGINI_DIR):
         if nome not in usate: os.remove(os.path.join(IMMAGINI_DIR, nome))
 
