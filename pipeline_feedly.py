@@ -3,7 +3,6 @@ import re
 import json
 import time
 import socket
-import collections
 import urllib.parse
 import hashlib
 import shutil
@@ -236,9 +235,12 @@ def immagini_valide_html(html, link=""):
 
 def incornicia_immagini(html):
     """Avvolge ogni immagine in un link all'immagine stessa: toccandola si apre a
-    tutto schermo (lightbox nelle nostre pagine; nei reader apre l'immagine nel browser)."""
-    return re.sub(r'(<img\b[^>]*?\bsrc=")([^"]+)("[^>]*>)',
-                  lambda m: f'<a class="zoom" href="{m.group(2)}">{m.group(0)}</a>', html)
+    tutto schermo (lightbox nelle nostre pagine; nei reader apre l'immagine nel browser).
+    Se l'<img> ha data-zoom (versione più grande), il lightbox mostra quella."""
+    def avvolgi(m):
+        z = re.search(r'\bdata-zoom="([^"]+)"', m.group(0))
+        return f'<a class="zoom" href="{m.group(2)}"' + (f' data-zoom="{z.group(1)}"' if z else "") + f'>{m.group(0)}</a>'
+    return re.sub(r'(<img\b[^>]*?\bsrc=")([^"]+)("[^>]*>)', avvolgi, html)
 
 def immagine_scartata(url):
     """True per immagini che non sono contenuto dell'articolo: pixel di
@@ -585,80 +587,98 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
     time.sleep(8)
     return record
 
-def _diagnostica_immagini(testo, origine, link):
-    """Diagnostica: stampa in che forma la pagina offre le immagini (varianti di
-    dimensione, __NEXT_DATA__), per capire se esistono versioni più grandi."""
-    if isinstance(testo, bytes): testo = testo.decode("utf-8", errors="ignore")
-    urls = set(re.findall(r"https?://[^\s\"'<>)\\]+?\.(?:jpe?g|png|webp)", testo))
-    forme = collections.Counter(re.sub(r"[0-9a-f]{16,}", "<h>", re.sub(r"/\d+/", "/<n>/", u)) for u in urls)
-    print(f"    [DIAG] {origine} {link}: {len(urls)} URL immagine; next_data={'__NEXT_DATA__' in testo}", flush=True)
-    for forma, n in forme.most_common(8): print(f"    [DIAG]   {n}x {forma[:160]}", flush=True)
+IMG_V_PROGETTI = 2  # 2 = foto lette dall'elenco ufficiale della pagina (prima: miniature e inserzioni)
+VARIANTI_VISUALIZZA = ("large", "medium", "caq_thumb")  # versione mostrata nella pagina, dalla preferita
+VARIANTI_ZOOM = ("xlarge", "original_jpeg")             # versione a tutto schermo
 
-def _diagnostica_next_data(html, link):
-    """Diagnostica: dove, dentro __NEXT_DATA__, si trovano le immagini del progetto."""
+def immagini_progetto_next_data(html, link):
+    """Foto di una pagina-progetto Next.js (Contemporary Art Daily): stanno nell'elenco
+    projectObject.images dei dati della pagina (__NEXT_DATA__), in ordine e in più
+    dimensioni; le inserzioni (sponsorData) sono altrove. [(da mostrare, a tutto schermo o None)]"""
     if isinstance(html, bytes): html = html.decode("utf-8", errors="ignore")
     m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S)
-    if not m:
-        print(f"    [DIAG] {link}: nessun __NEXT_DATA__", flush=True)
-        return
-    try: data = json.loads(m.group(1))
-    except ValueError as e:
-        print(f"    [DIAG] {link}: __NEXT_DATA__ non valido ({e})", flush=True)
-        return
-    trovati = []
+    if not m: return []
+    try: dati = json.loads(m.group(1))
+    except ValueError: return []
+    for chiave in ("props", "pageProps", "projectObject"):
+        dati = dati.get(chiave) if isinstance(dati, dict) else None
+    elenco = dati.get("images") if isinstance(dati, dict) else None
+    if isinstance(elenco, dict): elenco = list(elenco.values())
 
-    def walk(o, path):
-        if isinstance(o, dict):
-            for k, v in o.items(): walk(v, path + [str(k)])
-        elif isinstance(o, list):
-            for i, v in enumerate(o): walk(v, path + [str(i)])
-        elif isinstance(o, str) and "/imagefile/" in o:
-            trovati.append((path, o))
-    walk(data, [])
-    forme = collections.Counter(".".join("*" if x.isdigit() else x for x in path) for path, _ in trovati)
-    pp = data.get("props", {}).get("pageProps", {})
-    print(f"    [DIAG] {link}: {len(trovati)} URL in NEXT_DATA; pageProps keys: {list(pp)[:12]}", flush=True)
-    for forma, n in forme.most_common(8): print(f"    [DIAG]   {n}x {forma[:170]}", flush=True)
-    ids = []
-    for path, u in trovati:
-        m2 = re.search(r"/image/(\d+)/imagefile/(?:xlarge)-", u)
-        if m2 and m2.group(1) not in ids: ids.append(m2.group(1))
-    print(f"    [DIAG]   id xlarge in ordine: {ids[:25]}", flush=True)
-    pid = re.search(r"-(\d+)/?$", urllib.parse.urlparse(link).path)
-    if pid:
-        print(f"    [DIAG]   id progetto {pid.group(1)}: compare come valore {json.dumps(data).count(pid.group(1))} volte", flush=True)
+    def scegli(img, nomi):
+        for nome in nomi:
+            u = img.get(nome)
+            u = urllib.parse.urljoin(link, u.strip()) if isinstance(u, str) else ""
+            if u.startswith("http"): return u
+        return None
+
+    coppie = []
+    for img in elenco if isinstance(elenco, list) else []:
+        if not isinstance(img, dict): continue
+        vista = scegli(img, VARIANTI_VISUALIZZA)
+        if vista and all(vista != c[0] for c in coppie): coppie.append((vista, scegli(img, VARIANTI_ZOOM)))
+    return coppie
 
 def trova_immagini_progetto(link, limite_immagini=10):
     """Immagini di una pagina-progetto (es. una mostra di Contemporary Art Daily):
-    prima l'HTML statico, poi Jina (browser reale) per i siti che caricano le
-    immagini via JavaScript. Gli asset del sito (loghi, icone) stanno sul suo
-    dominio, i contenuti su un CDN: le immagini del dominio vengono scartate."""
+    (immagini, zoom) con gli URL da mostrare e, per ciascuno, quello della versione più
+    grande se la pagina la offre. Prima i dati della pagina (__NEXT_DATA__), poi l'HTML
+    statico, infine Jina (browser reale) per i siti che caricano le immagini via
+    JavaScript. Gli asset del sito (loghi, icone) stanno sul suo dominio, i contenuti
+    su un CDN: le immagini del dominio vengono scartate."""
     host_sito = urllib.parse.urlparse(link).netloc
 
     def valide(urls):
         return [u for u in urls if not immagine_scartata(u) and urllib.parse.urlparse(u).netloc != host_sito]
 
-    immagini = []
     contenuto, _ = scarica_bypass(link)
     if contenuto:
-        _diagnostica_immagini(contenuto, 'html', link)
-        _diagnostica_next_data(contenuto, link)
+        coppie = [(u, z) for u, z in immagini_progetto_next_data(contenuto, link) if valide([u])][:limite_immagini]
+        if coppie:
+            _diagnostica_varianti(link, contenuto)
+            return [u for u, _ in coppie], {u: z for u, z in coppie if z}
         immagini = valide(estrai_immagini(contenuto, link, og=False, limite=60))
-    if not immagini:
-        try:
-            res = requests.get(f"https://r.jina.ai/{link}", headers=HEADERS_JINA, timeout=20)
-            if res.status_code == 200 and len(res.text) > 200:
-                _diagnostica_immagini(res.text, 'jina', link)
-                ids_jina = list(dict.fromkeys(re.findall(r'/image/(\d+)/imagefile/caq_thumb-', res.text)))[:25]
-                print(f"    [DIAG]   id caq_thumb (jina) in ordine: {ids_jina}", flush=True)
-                immagini = valide(immagini_markdown(res.text, limite=60))
-                if not immagini:
-                    print(f"    [JINA] {link} -> nessuna immagine riconosciuta", flush=True)
-            else:
-                print(f"    [JINA] {link} -> HTTP {res.status_code}", flush=True)
-        except Exception as e:
-            print(f"    [JINA] {link} -> {type(e).__name__}: {e}", flush=True)
-    return immagini[:limite_immagini]
+        if immagini: return immagini[:limite_immagini], {}
+    try:
+        res = requests.get(f"https://r.jina.ai/{link}", headers=HEADERS_JINA, timeout=20)
+        if res.status_code == 200 and len(res.text) > 200:
+            immagini = valide(immagini_markdown(res.text, limite=60))
+            if immagini: return immagini[:limite_immagini], {}
+            print(f"    [JINA] {link} -> nessuna immagine riconosciuta", flush=True)
+        else:
+            print(f"    [JINA] {link} -> HTTP {res.status_code}", flush=True)
+    except Exception as e:
+        print(f"    [JINA] {link} -> {type(e).__name__}: {e}", flush=True)
+    return [], {}
+
+_DIAG_VARIANTI = []
+
+def _dim_jpeg(dati):
+    i = 2
+    while i + 9 < len(dati):
+        if dati[i] != 0xFF: i += 1; continue
+        if dati[i + 1] in (0xC0, 0xC1, 0xC2): return int.from_bytes(dati[i + 7:i + 9], "big"), int.from_bytes(dati[i + 5:i + 7], "big")
+        i += 2 + int.from_bytes(dati[i + 2:i + 4], "big")
+    return None
+
+def _diagnostica_varianti(link, html):
+    """TEMPORANEA: peso e dimensioni di ogni versione della prima foto, e se il CDN
+    la serve anche a chi la richiede dal nostro sito (hotlink)."""
+    if _DIAG_VARIANTI: return
+    _DIAG_VARIANTI.append(link)
+    if isinstance(html, bytes): html = html.decode("utf-8", errors="ignore")
+    try:
+        dati = json.loads(re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html, re.S).group(1))
+        img = dati["props"]["pageProps"]["projectObject"]["images"]
+        img = img[0] if isinstance(img, list) else list(img.values())[0]
+        print(f"    [DIAG] chiavi della prima immagine: {sorted(img)}", flush=True)
+        for nome in ("caq_thumb", "medium", "large", "xlarge", "original_jpeg"):
+            if not isinstance(img.get(nome), str): continue
+            for etichetta, extra in (("senza Referer", {}), ("Referer nostro sito", {"Referer": FEED_SITE})):
+                r = requests.get(img[nome], headers={**HEADERS, **extra}, timeout=30)
+                print(f"    [DIAG] {nome} ({etichetta}): HTTP {r.status_code} {r.headers.get('Content-Type')} {len(r.content) // 1024} KB {_dim_jpeg(r.content)}", flush=True)
+    except Exception as e:
+        print(f"    [DIAG] varianti: {type(e).__name__}: {e}", flush=True)
 
 def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
     """Come elabora_voce ma senza sintesi/traduzione Groq: compone la voce
@@ -671,29 +691,32 @@ def elabora_voce_immagini(db, f, link, titolo, limite_immagini=10):
         return db[item_id]
 
     print(f"Elaborazione: {titolo[:40]}...", flush=True)
-    immagini = trova_immagini_progetto(link, limite_immagini) if link else []
+    immagini, zoom = trova_immagini_progetto(link, limite_immagini) if link else ([], {})
     corpo = "" if immagini else "<p><em>Nessuna immagine trovata.</em></p>"
     html = componi_html_finale(f["nome"], f["categoria"], f["colore"], corpo, link, immagini)
     record = {"id": item_id, "title": f"{f['nome']}: {titolo}", "link": link, "html_content": html, "published": datetime.now(timezone.utc).isoformat(), "image_url": immagini[0] if immagini else None, "img_tentativi": 0 if immagini else 1}
+    if zoom: record.update(zoom=zoom, img_v=IMG_V_PROGETTI)
     db[item_id] = record
     time.sleep(2)
     return record
 
-def ripara_immagini_progetti(db, fonte, max_per_giro=20):
-    """Rifà la ricerca delle immagini per le voci di una fonte solo-immagini che
-    ne sono rimaste senza (es. contenevano soltanto il logo del sito)."""
+def ripara_immagini_progetti(db, fonte, max_per_giro=8):
+    """Rifà la ricerca delle immagini per le voci di una fonte solo-immagini rimaste
+    senza o trovate con la vecchia ricerca (miniature, inserzioni), dalla più recente."""
+    voci = sorted((v for v in db.values() if v["title"].startswith(f"{fonte['nome']}: ") and v.get("link")),
+                  key=lambda x: x.get("published", ""), reverse=True)
+    voci.sort(key=lambda x: bool(immagini_valide_html(x["html_content"], x["link"])))  # prima quelle senza immagini
     fatte = 0
-    for v in db.values():
-        if not v["title"].startswith(f"{fonte['nome']}: ") or not v.get("link"): continue
-        if immagini_valide_html(v["html_content"], v["link"]) or v.get("img_tentativi", 0) >= 3: continue
+    for v in voci:
+        if v.get("img_v", 0) >= IMG_V_PROGETTI or v.get("img_tentativi", 0) >= 3: continue
         if fatte >= max_per_giro: break
         fatte += 1
-        immagini = trova_immagini_progetto(v["link"])
-        if not immagini:
-            v["img_tentativi"] = v.get("img_tentativi", 0) + 1
-            continue
+        v["img_tentativi"] = v.get("img_tentativi", 0) + 1
+        immagini, zoom = trova_immagini_progetto(v["link"])
+        if not immagini: continue
         v["html_content"] = componi_html_finale(fonte["nome"], fonte["categoria"], fonte["colore"], "", v["link"], immagini)
         v["image_url"] = immagini[0]
+        if zoom: v.update(zoom=zoom, img_v=IMG_V_PROGETTI)
         print(f"    [IMG] {v['title'][:50]} -> {len(immagini)} immagini ritrovate", flush=True)
 
 def recupera_messaggi_telegram(url, limite=3):
@@ -813,7 +836,9 @@ PAGINA_SCRIPT = (
     "function chiudi(){lb.className='';big.removeAttribute('src');}"
     "document.addEventListener('click',function(e){"
     "var a=e.target.closest?e.target.closest('a.zoom'):null;"
-    "if(a){e.preventDefault();big.src=a.href;lb.className='on';}"
+    "if(a){e.preventDefault();var h=a.href,z=a.getAttribute('data-zoom');big.src=h;lb.className='on';"
+    # la versione grande sta sul sito d'origine: sostituisce la copia solo quando è scaricata, se non si carica resta la copia
+    "if(z){var g=new Image();g.onload=function(){if(big.getAttribute('src')===h)big.src=z;};g.src=z;}}"
     "else if(lb.className==='on'){chiudi();}});"
     "document.addEventListener('keydown',function(e){if(e.key==='Escape')chiudi();});})();</script>"
 )
@@ -879,9 +904,13 @@ def finestra_digest(dt):
 
 DIGEST_REVISIONE_DA = datetime(2026, 10, 12, tzinfo=timezone.utc)  # i riepiloghi da questa data erano rimasti con il solo logo: nuovo GUID
 
-def html_mostra(nome_fonte, titolo, link, immagini):
-    corpo = f"<h2>{escape(titolo)}</h2>"
-    corpo += "".join(f'<p><img src="{escape(u)}" style="max-width:100%;height:auto"></p>' for u in immagini)
+def html_mostra(nome_fonte, titolo, link, immagini, zoom=None):
+    """Scheda di una mostra; zoom = {url immagine: url della versione più grande}."""
+    zoom = zoom or {}
+    def tag(u):
+        z = f' data-zoom="{escape(zoom[u])}"' if u in zoom else ""
+        return f'<p><img src="{escape(u)}"{z} style="max-width:100%;height:auto"></p>'
+    corpo = f"<h2>{escape(titolo)}</h2>" + "".join(tag(u) for u in immagini)
     return corpo + f'<p><a href="{escape(url_sicuro(link))}">Vedi originale su {escape(nome_fonte)} &rarr;</a></p>'
 
 def digest_immagini(db, nome_fonte, ora=None, max_digest=8, img_per_mostra=3):
@@ -900,9 +929,9 @@ def digest_immagini(db, nome_fonte, ora=None, max_digest=8, img_per_mostra=3):
     risultato = []
     for (inizio, fine), voci in sorted(finestre.items(), reverse=True)[:max_digest]:
         voci.sort(key=lambda x: x["published"])
-        mostre = [(v["title"][len(prefisso):], v["link"], immagini_valide_html(v["html_content"], v["link"])[:img_per_mostra]) for v in voci]
-        corpo = "<p>Mostre: " + "; ".join(escape(t) for t, _, _ in mostre) + "</p>"
-        corpo += "".join(html_mostra(nome_fonte, t, l, im) for t, l, im in mostre)
+        mostre = [(v["title"][len(prefisso):], v["link"], immagini_valide_html(v["html_content"], v["link"])[:img_per_mostra], v.get("zoom")) for v in voci]
+        corpo = "<p>Mostre: " + "; ".join(escape(t) for t, _, _, _ in mostre) + "</p>"
+        corpo += "".join(html_mostra(nome_fonte, t, l, im, z) for t, l, im, z in mostre)
         ultimo = fine - timedelta(days=1)
         if inizio.month == ultimo.month:
             periodo = f"dal {inizio.day} al {ultimo.day} {MESI_IT[ultimo.month - 1]}"
@@ -914,7 +943,7 @@ def digest_immagini(db, nome_fonte, ora=None, max_digest=8, img_per_mostra=3):
             "link": voci[0]["link"],
             "html_content": corpo,
             "published": fine.isoformat(),
-            "image_url": next((im[0] for _, _, im in mostre if im), None),
+            "image_url": next((im[0] for _, _, im, _ in mostre if im), None),
             "digest": True,
         })
     return risultato
@@ -929,7 +958,7 @@ def scrivi_pagine_cache(db, fonti_img):
         if nome:
             # singola mostra di una fonte solo-immagini: titolo, link e prime 3 immagini
             immagini = immagini_valide_html(v["html_content"], v["link"])[:3]
-            item["html_content"] = html_mostra(nome, v["title"][len(nome) + 2:], v["link"], immagini)
+            item["html_content"] = html_mostra(nome, v["title"][len(nome) + 2:], v["link"], immagini, v.get("zoom"))
             item["image_url"] = immagini[0] if immagini else None
             item = ospita_immagini_item(item)
         scrivi_pagina(item)
