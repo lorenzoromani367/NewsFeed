@@ -3,6 +3,7 @@ import re
 import json
 import time
 import socket
+import collections
 import urllib.parse
 import hashlib
 import shutil
@@ -584,6 +585,15 @@ def elabora_voce(db, f, link, titolo, testo_grezzo="", img_url=None):
     time.sleep(8)
     return record
 
+def _diagnostica_immagini(testo, origine, link):
+    """Diagnostica: stampa in che forma la pagina offre le immagini (varianti di
+    dimensione, __NEXT_DATA__), per capire se esistono versioni più grandi."""
+    if isinstance(testo, bytes): testo = testo.decode("utf-8", errors="ignore")
+    urls = set(re.findall(r"https?://[^\s\"'<>)\\]+?\.(?:jpe?g|png|webp)", testo))
+    forme = collections.Counter(re.sub(r"[0-9a-f]{16,}", "<h>", re.sub(r"/\d+/", "/<n>/", u)) for u in urls)
+    print(f"    [DIAG] {origine} {link}: {len(urls)} URL immagine; next_data={'__NEXT_DATA__' in testo}", flush=True)
+    for forma, n in forme.most_common(8): print(f"    [DIAG]   {n}x {forma[:160]}", flush=True)
+
 def trova_immagini_progetto(link, limite_immagini=10):
     """Immagini di una pagina-progetto (es. una mostra di Contemporary Art Daily):
     prima l'HTML statico, poi Jina (browser reale) per i siti che caricano le
@@ -597,11 +607,13 @@ def trova_immagini_progetto(link, limite_immagini=10):
     immagini = []
     contenuto, _ = scarica_bypass(link)
     if contenuto:
+        _diagnostica_immagini(contenuto, 'html', link)
         immagini = valide(estrai_immagini(contenuto, link, og=False, limite=60))
     if not immagini:
         try:
             res = requests.get(f"https://r.jina.ai/{link}", headers=HEADERS_JINA, timeout=20)
             if res.status_code == 200 and len(res.text) > 200:
+                _diagnostica_immagini(res.text, 'jina', link)
                 immagini = valide(immagini_markdown(res.text, limite=60))
                 if not immagini:
                     print(f"    [JINA] {link} -> nessuna immagine riconosciuta", flush=True)
