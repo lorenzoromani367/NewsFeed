@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Thu, 22 Oct 2026 23:08:13 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 04:02:51 +0000</lastBuildDate>
     <item>
       <title>Aperture (Reviews): In France, an Exhibition Focuses on the Power of Truth</title>
       <link>https://lorenzoromani367.github.io/NewsFeed/articoli/66f9d9f6a09bda32.html</link>
@@ -1275,6 +1275,34 @@ Il testo sottolinea anche i limiti di un approccio basato esclusivamente sul buo
         <media:content url="https://www.theitalianreview.com/wp-content/uploads/2021/02/tir.jpg" type="image/jpeg" medium="image"/>
         <media:thumbnail url="https://www.theitalianreview.com/wp-content/uploads/2021/02/tir.jpg"/>
       </media:group>
+    </item>
+    <item>
+      <title>Indiscreto: Salviamo i matematici o la matematica?</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/d93c4452af54528d.html</link>
+      <description>Il testo si interroga sul rapporto tra il valore della conoscenza e la fatica necessaria per produrla, suggerendo la necessità di criticare quello che definisce «ponocentrismo epistemico». Propone di distinguere la comprensione dalla difesa di concetti o pratiche, e segnala che l’articolo «Salviamo i matematici o la matematica?» è il primo pubblicato su L’INDISCRETO.
+
+• Domanda se il valore della conoscenza dipenda dallo sforzo richiesto per ottenerla.
+
+• Invito a criticare il «ponocentrismo epistemico».
+
+• Necessità di separare la comprensione dalla difesa di idee.
+
+• L’articolo è il primo contributo su L’INDISCRETO.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Indiscreto | <strong>Ambito:</strong> <em>Cultura</em></p>
+    <hr>
+    
+    <p>Il testo si interroga sul rapporto tra il valore della conoscenza e la fatica necessaria per produrla, suggerendo la necessità di criticare quello che definisce «ponocentrismo epistemico». Propone di distinguere la comprensione dalla difesa di concetti o pratiche, e segnala che l’articolo «Salviamo i matematici o la matematica?» è il primo pubblicato su L’INDISCRETO.</p>
+<ol>
+<li>Domanda se il valore della conoscenza dipenda dallo sforzo richiesto per ottenerla.</li>
+<li>Invito a criticare il «ponocentrismo epistemico».</li>
+<li>Necessità di separare la comprensione dalla difesa di idee.</li>
+<li>L’articolo è il primo contributo su L’INDISCRETO.</li>
+</ol>
+    
+    <hr>
+    <p><a href="https://www.indiscreto.org/salviamo-i-matematici-o-la-matematica/">Leggi originale su Indiscreto &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.indiscreto.org/salviamo-i-matematici-o-la-matematica/</guid>
+      <pubDate>Mon, 19 Oct 2026 07:43:02 +0000</pubDate>
     </item>
     <item>
       <title>Filosofia Stramba: Il matematico Steven Strogatz scoppia a piangere in un podca</title>
@@ -3008,27 +3036,6 @@ Le opere di Marcovinicio, intitolate “Kamlanie” (riferimento a un rito sciam
       <media:group>
         <media:content url="https://www.pangea.news/pan/wp-content/uploads/2026/10/Marcovinicio-Kamlanie-olio-su-tela-cm-180x150-2017-e1792416248500.jpg" type="image/jpeg" medium="image"/>
         <media:thumbnail url="https://www.pangea.news/pan/wp-content/uploads/2026/10/Marcovinicio-Kamlanie-olio-su-tela-cm-180x150-2017-e1792416248500.jpg"/>
-      </media:group>
-    </item>
-    <item>
-      <title>Indiscreto: Ingeborg Bachmann e tutte le donne che muoiono senza essere uccise</title>
-      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/63355f7efc12f451.html</link>
-      <description>Sintesi non disponibile.
-
-...</description>
-      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Indiscreto | <strong>Ambito:</strong> <em>Cultura</em></p>
-    <hr>
-    <p><a class="zoom" href="https://www.indiscreto.org/wp-content/uploads/2026/10/5e34e417d28c36cc4029a73ce31235e9-l.webp"><img src="https://www.indiscreto.org/wp-content/uploads/2026/10/5e34e417d28c36cc4029a73ce31235e9-l.webp" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
-    <p><em>Sintesi non disponibile.</em></p><p>...</p>
-    
-    <hr>
-    <p><a href="https://www.indiscreto.org/ingeborg-bachmann-e-tutte-le-donne-che-muoiono-senza-essere-uccise">Leggi originale su Indiscreto &rarr;</a></p></div>]]></content:encoded>
-      <guid isPermaLink="false">v18_https://www.indiscreto.org/ingeborg-bachmann-e-tutte-le-donne-che-muoiono-senza-essere-uccise</guid>
-      <enclosure url="https://www.indiscreto.org/wp-content/uploads/2026/10/5e34e417d28c36cc4029a73ce31235e9-l.webp" length="0" type="image/webp"/>
-      <pubDate>Thu, 22 Oct 2026 23:07:54 +0000</pubDate>
-      <media:group>
-        <media:content url="https://www.indiscreto.org/wp-content/uploads/2026/10/5e34e417d28c36cc4029a73ce31235e9-l.webp" type="image/webp" medium="image"/>
-        <media:thumbnail url="https://www.indiscreto.org/wp-content/uploads/2026/10/5e34e417d28c36cc4029a73ce31235e9-l.webp"/>
       </media:group>
     </item>
   </channel>
