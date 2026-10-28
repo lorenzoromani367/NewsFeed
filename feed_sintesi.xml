@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Wed, 28 Oct 2026 15:07:30 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 20:54:21 +0000</lastBuildDate>
     <item>
       <title>Aperture (Reviews): In France, an Exhibition Focuses on the Power of Truth</title>
       <link>https://lorenzoromani367.github.io/NewsFeed/articoli/66f9d9f6a09bda32.html</link>
@@ -772,42 +772,6 @@ L’inchiesta è stata diffusa attraverso pubblicazioni su Altreconomia (9 ottob
       <media:group>
         <media:content url="http://static1.squarespace.com/static/69affde61d0bd25652642543/69d7863903b8bf69f5671a25/6a43cb423273596b616048f5/1790843518266/2025_Studio+Figure_Data+Center_01.jpg?format=1500w" type="image/jpeg" medium="image"/>
         <media:thumbnail url="http://static1.squarespace.com/static/69affde61d0bd25652642543/69d7863903b8bf69f5671a25/6a43cb423273596b616048f5/1790843518266/2025_Studio+Figure_Data+Center_01.jpg?format=1500w"/>
-      </media:group>
-    </item>
-    <item>
-      <title>Narratively: L'Epico della Domenica: Da un Omicidio alla Scuola Media</title>
-      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/f4efac0047fbf2ce.html</link>
-      <description>Come avrete sperato di sapere, è uno dei periodi dell'anno che più ci entusiasma: il Premio Narratively Memoir 2026 è ora aperto alle candidature. Non vediamo l'ora di leggere tutte le storie che arriveranno da persone comuni di tutto il mondo.
-
-Il vincitore del nostro primo Memoir Prize è stato un racconto straordinario di Laura Green‑Russell , che ci ha lasciati senza parole con questo pezzo — il primo articolo che ha mai pubblicato! Non è difficile capire perché la storia di Laura Green‑Russell sia emersa come vincitrice del gran premio nel nostro primo Narratively Memoir Prize .
-
-• Il Premio Narratively Memoir 2026 è aperto alle iscrizioni.
-
-• Il primo vincitore è stato Laura Green‑Russell.
-
-• Il racconto vincente è stato il primo articolo pubblicato da Laura.
-
-• Il giudizio è stato che la storia si è distinta nettamente come gran premio.</description>
-      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Narratively | <strong>Ambito:</strong> <em>Narrativa</em></p>
-    <hr>
-    <p><a class="zoom" href="https://substack-post-media.s3.amazonaws.com/public/images/8dd75c12-31b0-4066-a411-fe205da5e329_1456x588.jpeg"><img src="https://substack-post-media.s3.amazonaws.com/public/images/8dd75c12-31b0-4066-a411-fe205da5e329_1456x588.jpeg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
-    <p>Come avrete sperato di sapere, è uno dei periodi dell'anno che più ci entusiasma: il <strong>Premio Narratively Memoir 2026</strong> è ora aperto alle candidature. Non vediamo l'ora di leggere tutte le storie che arriveranno da persone comuni di tutto il mondo.</p>
-<p>Il vincitore del nostro primo <em>Memoir Prize</em> è stato un racconto straordinario di <strong>Laura Green‑Russell</strong>, che ci ha lasciati senza parole con questo pezzo — il primo articolo che ha mai pubblicato! Non è difficile capire perché la storia di Laura Green‑Russell sia emersa come vincitrice del gran premio nel nostro primo <em>Narratively Memoir Prize</em>.</p>
-<ol>
-<li>Il Premio Narratively Memoir 2026 è aperto alle iscrizioni.</li>
-<li>Il primo vincitore è stato Laura Green‑Russell.</li>
-<li>Il racconto vincente è stato il primo articolo pubblicato da Laura.</li>
-<li>Il giudizio è stato che la storia si è distinta nettamente come gran premio.</li>
-</ol>
-    <p><a class="zoom" href="https://substack-post-media.s3.amazonaws.com/public/images/bc59d933-e48d-4302-ac05-ba2a68ed7b90_2580x1042.jpeg"><img src="https://substack-post-media.s3.amazonaws.com/public/images/bc59d933-e48d-4302-ac05-ba2a68ed7b90_2580x1042.jpeg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
-    <hr>
-    <p><a href="https://www.narratively.com/p/the-sunday-epic-murder-to-middle">Leggi originale su Narratively &rarr;</a></p></div>]]></content:encoded>
-      <guid isPermaLink="false">v18_https://www.narratively.com/p/the-sunday-epic-murder-to-middle</guid>
-      <enclosure url="https://substack-post-media.s3.amazonaws.com/public/images/8dd75c12-31b0-4066-a411-fe205da5e329_1456x588.jpeg" length="0" type="image/jpeg"/>
-      <pubDate>Sun, 18 Oct 2026 15:37:39 +0000</pubDate>
-      <media:group>
-        <media:content url="https://substack-post-media.s3.amazonaws.com/public/images/8dd75c12-31b0-4066-a411-fe205da5e329_1456x588.jpeg" type="image/jpeg" medium="image"/>
-        <media:thumbnail url="https://substack-post-media.s3.amazonaws.com/public/images/8dd75c12-31b0-4066-a411-fe205da5e329_1456x588.jpeg"/>
       </media:group>
     </item>
     <item>
@@ -3076,6 +3040,54 @@ La menzogna sciamanica è descritta come una medicina paradossale che, pur crean
       <media:group>
         <media:content url="https://www.indiscreto.org/wp-content/uploads/2026/10/wZNS-36Dcm7lKwnrMohHogu-adyDifrqgjG5BX5QSrHEtg-TOTgn99FUxzg8igtf4BLlgNQ-pUmObKxTZR83F0jGowS5iAUEavBMMTkmllz7VeF6pm7vmFBPV6u0orVjuzd5KRNmKnL6-0jOYcNQVgx0cM1fecbKr7uGIGYz8_dyan-96p9sWJas0PWpdcdg.jpg" type="image/jpeg" medium="image"/>
         <media:thumbnail url="https://www.indiscreto.org/wp-content/uploads/2026/10/wZNS-36Dcm7lKwnrMohHogu-adyDifrqgjG5BX5QSrHEtg-TOTgn99FUxzg8igtf4BLlgNQ-pUmObKxTZR83F0jGowS5iAUEavBMMTkmllz7VeF6pm7vmFBPV6u0orVjuzd5KRNmKnL6-0jOYcNQVgx0cM1fecbKr7uGIGYz8_dyan-96p9sWJas0PWpdcdg.jpg"/>
+      </media:group>
+    </item>
+    <item>
+      <title>Narratively: Senza tetto alla “Harvard High School”</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/409e0997a616d4db.html</link>
+      <description>Questa storia è stata finalista per il Premio Narratively Memoir 2025 ed è anche una delle nostre storie più condivise e più commentate dell'ultimo anno.
+
+Scopri cosa hanno detto alcuni lettori di Narratively: se non hai ancora avuto l'opportunità di leggerla, trovala qui sotto.
+
+Hai una tua storia da raccontare? Il Premio Narratively Memoir 2026 è ora aperto per le candidature! Invia la tua storia
+
+Hai bisogno di aiuto per raccontare la tua storia? Il nostro Personal Essay Sprint è un percorso di scrittura autogestito che include conversazioni settimanali dal vivo con scrittori e insegnanti di fama, oltre a una vivace comunità di supporto.
+
+Unisciti allo Sprint.
+
+• Finalista del Premio Narratively Memoir 2025.
+
+• Una delle storie più condivise e commentate dell'anno.
+
+• Invito a leggere la storia completa.
+
+• Apertura delle candidature per il Premio Narratively Memoir 2026.
+
+• Disponibilità del Personal Essay Sprint per supportare gli scrittori.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Narratively | <strong>Ambito:</strong> <em>Narrativa</em></p>
+    <hr>
+    <p><a class="zoom" href="https://substack-post-media.s3.amazonaws.com/public/images/d6a7c768-b14e-49f3-a633-d222b915c173_790x250.png"><img src="https://substack-post-media.s3.amazonaws.com/public/images/d6a7c768-b14e-49f3-a633-d222b915c173_790x250.png" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Questa storia è stata finalista per il <strong>Premio Narratively Memoir 2025</strong> ed è anche una delle nostre storie più condivise e più commentate dell'ultimo anno.</p>
+<p>Scopri cosa hanno detto alcuni lettori di Narratively: se non hai ancora avuto l'opportunità di leggerla, trovala qui sotto.</p>
+<p>Hai una tua storia da raccontare? Il <strong>Premio Narratively Memoir 2026</strong> è ora aperto per le candidature! <a href="#">Invia la tua storia</a></p>
+<p>Hai bisogno di aiuto per raccontare la tua storia? Il nostro <strong>Personal Essay Sprint</strong> è un percorso di scrittura autogestito che include conversazioni settimanali dal vivo con scrittori e insegnanti di fama, oltre a una vivace comunità di supporto.</p>
+<p>Unisciti allo Sprint.</p>
+<ol>
+<li>Finalista del Premio Narratively Memoir 2025.</li>
+<li>Una delle storie più condivise e commentate dell'anno.</li>
+<li>Invito a leggere la storia completa.</li>
+<li>Apertura delle candidature per il Premio Narratively Memoir 2026.</li>
+<li>Disponibilità del Personal Essay Sprint per supportare gli scrittori.</li>
+</ol>
+    <p><a class="zoom" href="https://substack-post-media.s3.amazonaws.com/public/images/0fdee00a-9bd7-4399-865a-2c81c5277f94_801x274.png"><img src="https://substack-post-media.s3.amazonaws.com/public/images/0fdee00a-9bd7-4399-865a-2c81c5277f94_801x274.png" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <hr>
+    <p><a href="https://www.narratively.com/p/homeless-at-harvard-high-school-6c9">Leggi originale su Narratively &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.narratively.com/p/homeless-at-harvard-high-school-6c9</guid>
+      <enclosure url="https://substack-post-media.s3.amazonaws.com/public/images/d6a7c768-b14e-49f3-a633-d222b915c173_790x250.png" length="0" type="image/png"/>
+      <pubDate>Wed, 28 Oct 2026 20:53:28 +0000</pubDate>
+      <media:group>
+        <media:content url="https://substack-post-media.s3.amazonaws.com/public/images/d6a7c768-b14e-49f3-a633-d222b915c173_790x250.png" type="image/png" medium="image"/>
+        <media:thumbnail url="https://substack-post-media.s3.amazonaws.com/public/images/d6a7c768-b14e-49f3-a633-d222b915c173_790x250.png"/>
       </media:group>
     </item>
   </channel>
