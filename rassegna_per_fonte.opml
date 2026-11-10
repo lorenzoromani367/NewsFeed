@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head><title>Rassegna Personale per fonte</title></head>
+  <body>
+    <outline text="Rassegna Personale" title="Rassegna Personale">
+      <outline type="rss" text="Il Tascabile" title="Il Tascabile" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/il-tascabile.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="The Italian Review" title="The Italian Review" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/the-italian-review.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Valigia Blu" title="Valigia Blu" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/valigia-blu.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="IrpiMedia (Inchieste)" title="IrpiMedia (Inchieste)" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/irpimedia-inchieste.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="IrpiMedia (Editoriali)" title="IrpiMedia (Editoriali)" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/irpimedia-editoriali.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="1000 Words" title="1000 Words" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/1000-words.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Frieze" title="Frieze" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/frieze.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="ArtReview" title="ArtReview" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/artreview.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Aperture (Essays)" title="Aperture (Essays)" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/aperture-essays.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Aperture (Reviews)" title="Aperture (Reviews)" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/aperture-reviews.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Mousse Magazine" title="Mousse Magazine" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/mousse-magazine.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Solomon" title="Solomon" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/solomon.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="FADA Collective" title="FADA Collective" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/fada-collective.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Narratively" title="Narratively" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/narratively.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Italia che Cambia" title="Italia che Cambia" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/italia-che-cambia.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Pangea" title="Pangea" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/pangea.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Indiscreto" title="Indiscreto" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/indiscreto.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Gli Asini" title="Gli Asini" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/gli-asini.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Doppiozero (Filosofia)" title="Doppiozero (Filosofia)" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/doppiozero-filosofia.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Aeon" title="Aeon" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/aeon.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Contemporary Art Daily" title="Contemporary Art Daily" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feed_contemporary_art_daily.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+      <outline type="rss" text="Filosofia Stramba" title="Filosofia Stramba" xmlUrl="https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/feeds/filosofia-stramba.xml" htmlUrl="https://lorenzoromani367.github.io/NewsFeed/"/>
+    </outline>
+  </body>
+</opml>

@@ -1,0 +1,687 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Il Tascabile</title>
+    <link>https://lorenzoromani367.github.io/NewsFeed/</link>
+    <description>Il Tascabile (Saggistica): sintesi in italiano.</description>
+    <atom:link href="https://lorenzoromani367.github.io/NewsFeed/feeds/il-tascabile.xml" rel="self" type="application/rss+xml"/>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <language>it</language>
+    <lastBuildDate>Tue, 10 Nov 2026 06:49:06 +0000</lastBuildDate>
+    <item>
+      <title>Spazzatura spaziale</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/f0152a41cfe7fbdd.html</link>
+      <description>Nel 2018 un professore universitario avvertiva gli studenti del pericolo rappresentato dai detriti spaziali – lanciatori esausti, satelliti spenti e frammenti di collisioni che viaggiano a chilometri al secondo, costringendo i satelliti attivi a continue correzioni. Temeva l’attivazione della sindrome di Kessler , una reazione a catena di collisioni che creerebbe una cintura impenetrabile di frammenti, bloccando l’accesso allo spazio e compromettendo geolocalizzazione, TV satellitare e monitoraggio climatico per secoli.
+
+Nel 2018 erano circa 2 000 satelliti attivi ; oggi ne contiamo 16 000 , spinti da megacostellazioni private come Starlink (10 000 satelliti, in espansione a 42 000) e da progetti cinesi (15 000‑12 000) e russi, oltre a piani per data‑center IA con costellazioni da 50 000‑1 000 000 di unità in orbita bassa (160‑2 000 km). L’aumento dei lanci ha moltiplicato le “congiunzioni” reali, richiedendo migliaia di manovre evasive: SpaceX prevede circa 300 000 correzioni nel 2025 , oltre 800 al giorno.
+
+Il paper *An Orbital House of Cards* introduce il “ CRASH clock ”, che in assenza di controlli prevede la prima collisione in 2,5 giorni (nel 2018 era 164 giorni). Il CRASH clock considera solo i 69 000 oggetti tracciabili, ma milioni di frammenti più piccoli, invisibili, minacciano satelliti, come il probabile colpo a Shenzhou‑20 nel novembre 2025.
+
+Per mitigare il problema, la IADC (dal 1993) e le Nazioni Unite (2021) hanno pubblicato linee guida – rientro controllato entro 25 anni, con l’ESA che punta a 5 anni e a “debris neutral” entro il 2030 – ma le regole restano volontarie e poco vincolanti, mentre gli operatori preferiscono scudi passivi a soluzioni più costose.
+
+La “malattia” della spazzatura spaziale si sviluppa lentamente: un piccolo frammento rilasciato in quota rimane in orbita per sempre, rendendo inevitabile l’effetto cumulativo. Pubblicazioni, tra cui una del 2025 a firma di Donald J. Kessler, indicano che nella fascia tra 520 e 1000 km la sindrome di Kessler potrebbe già essere in corso.
+
+Chi vuole trarre profitto dallo spazio, prevedendo mega‑costellazioni con vita utile di circa cinque anni, ha ancora tempo per operare in un ambiente non ancora ostile, ma gli enti che pianificano decine di migliaia di satelliti in orbita bassa saranno i primi a subire le conseguenze se non agiscono per ridurre il problema e stabilire regole comuni.
+
+Tre fattori influenzano la dinamica dei detriti:
+
+• Finitezza dello spazio : chi arriva prima occupa le orbite più vantaggiose. Starlink opera intorno ai 550 km, dove un sottile strato di aria riduce i detriti ma richiede consumo continuo di propellente; le megacostellazioni cinesi si posizioneranno tra 700 e 1200 km, zone più a rischio.
+
+• Sociopsicologico : la “shifting baseline syndrome” sposta la soglia di accettabilità verso condizioni peggiori, facendo apparire non problematico il sovraffollamento delle orbite in assenza di grandi incidenti.
+
+• Indicatore visivo : il CRASH clock vuole fungere da segnale dell’evoluzione dell’ambiente orbitale e della gravità della situazione.
+
+L’autore conclude che, per affrontare la sfida, non basta la consapevolezza informativa; è necessario un salto cognitivo e culturale che renda il problema visibile e collegato alla nostra natura, poiché la sfida è sia esterna che interna.
+
+• Da 2 000 a 16 000 satelliti attivi in poco più di un decennio.
+
+• Il CRASH clock prevede una collisione in 2,5 giorni senza interventi.
+
+• Le linee guida internazionali sono volontarie e poco vincolanti.
+
+• La sindrome di Kessler potrebbe già manifestarsi tra 520 e 1000 km di altitudine.
+
+• Fattori di finitezza, sociopsicologia e mancanza di regole comuni aggravano il rischio di detriti.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/11/Spazzatura-spazialeOK.jpg"><img src="https://www.iltascabile.com/wp-content/uploads/2026/11/Spazzatura-spazialeOK.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Nel 2018 un professore universitario avvertiva gli studenti del pericolo rappresentato dai detriti spaziali – lanciatori esausti, satelliti spenti e frammenti di collisioni che viaggiano a chilometri al secondo, costringendo i satelliti attivi a continue correzioni. Temeva l’attivazione della <strong>sindrome di Kessler</strong>, una reazione a catena di collisioni che creerebbe una cintura impenetrabile di frammenti, bloccando l’accesso allo spazio e compromettendo geolocalizzazione, TV satellitare e monitoraggio climatico per secoli.</p>  
+
+<p>Nel 2018 erano circa <strong>2 000 satelliti attivi</strong>; oggi ne contiamo <strong>16 000</strong>, spinti da megacostellazioni private come <strong>Starlink</strong> (10 000 satelliti, in espansione a 42 000) e da progetti cinesi (15 000‑12 000) e russi, oltre a piani per data‑center IA con costellazioni da 50 000‑1 000 000 di unità in orbita bassa (160‑2 000 km). L’aumento dei lanci ha moltiplicato le “congiunzioni” reali, richiedendo migliaia di manovre evasive: SpaceX prevede circa <strong>300 000 correzioni nel 2025</strong>, oltre 800 al giorno.</p>  
+
+<p>Il paper *An Orbital House of Cards* introduce il “<strong>CRASH clock</strong>”, che in assenza di controlli prevede la prima collisione in <strong>2,5 giorni</strong> (nel 2018 era 164 giorni). Il CRASH clock considera solo i 69 000 oggetti tracciabili, ma milioni di frammenti più piccoli, invisibili, minacciano satelliti, come il probabile colpo a <strong>Shenzhou‑20</strong> nel novembre 2025.</p>  
+
+<p>Per mitigare il problema, la <strong>IADC</strong> (dal 1993) e le <strong>Nazioni Unite</strong> (2021) hanno pubblicato linee guida – rientro controllato entro 25 anni, con l’ESA che punta a 5 anni e a “debris neutral” entro il 2030 – ma le regole restano volontarie e poco vincolanti, mentre gli operatori preferiscono scudi passivi a soluzioni più costose.</p>  
+
+<p>La “malattia” della spazzatura spaziale si sviluppa lentamente: un piccolo frammento rilasciato in quota rimane in orbita per sempre, rendendo inevitabile l’effetto cumulativo. Pubblicazioni, tra cui una del 2025 a firma di Donald J. Kessler, indicano che nella fascia tra <strong>520 e 1000 km</strong> la sindrome di Kessler potrebbe già essere in corso.</p>  
+
+<p>Chi vuole trarre profitto dallo spazio, prevedendo mega‑costellazioni con vita utile di circa cinque anni, ha ancora tempo per operare in un ambiente non ancora ostile, ma gli enti che pianificano decine di migliaia di satelliti in orbita bassa saranno i primi a subire le conseguenze se non agiscono per ridurre il problema e stabilire regole comuni.</p>  
+
+<p>Tre fattori influenzano la dinamica dei detriti:</p>  
+<ol>  
+<li><strong>Finitezza dello spazio</strong>: chi arriva prima occupa le orbite più vantaggiose. Starlink opera intorno ai 550 km, dove un sottile strato di aria riduce i detriti ma richiede consumo continuo di propellente; le megacostellazioni cinesi si posizioneranno tra 700 e 1200 km, zone più a rischio.</li>  
+<li><strong>Sociopsicologico</strong>: la “shifting baseline syndrome” sposta la soglia di accettabilità verso condizioni peggiori, facendo apparire non problematico il sovraffollamento delle orbite in assenza di grandi incidenti.</li>  
+<li><strong>Indicatore visivo</strong>: il CRASH clock vuole fungere da segnale dell’evoluzione dell’ambiente orbitale e della gravità della situazione.</li>  
+</ol>  
+
+<p>L’autore conclude che, per affrontare la sfida, non basta la consapevolezza informativa; è necessario un salto cognitivo e culturale che renda il problema visibile e collegato alla nostra natura, poiché la sfida è sia esterna che interna.</p>  
+
+<ol>  
+<li>Da 2 000 a 16 000 satelliti attivi in poco più di un decennio.</li>  
+<li>Il CRASH clock prevede una collisione in 2,5 giorni senza interventi.</li>  
+<li>Le linee guida internazionali sono volontarie e poco vincolanti.</li>  
+<li>La sindrome di Kessler potrebbe già manifestarsi tra 520 e 1000 km di altitudine.</li>  
+<li>Fattori di finitezza, sociopsicologia e mancanza di regole comuni aggravano il rischio di detriti.</li>  
+</ol>
+    
+    <hr>
+    <p><a href="https://www.iltascabile.com/scienze/spazzatura-spaziale/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.iltascabile.com/scienze/spazzatura-spaziale/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/11/Spazzatura-spazialeOK.jpg" length="0" type="image/jpeg"/>
+      <pubDate>Mon, 09 Nov 2026 18:32:09 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/11/Spazzatura-spazialeOK.jpg" type="image/jpeg" medium="image"/>
+        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/11/Spazzatura-spazialeOK.jpg"/>
+      </media:group>
+    </item>
+    <item>
+      <title>L’Internazionale del rifiuto di Mikkel Bolt Rasmussen</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/7009c3abd466b5ec.html</link>
+      <description>Contesto e obiettivo del pamphlet . Mikkel Bolt Rasmussen, professore di estetica politica all’Università di Copenaghen, pubblica in Italia, nella collana Piume di Edizioni Malamente, L’Internazionale del rifiuto . Dopo i precedenti studi sul “fasciocapitalismo” (2019‑2024), il nuovo scritto non propone una teoria di alleanza tra fascismo e capitalismo, ma una panoramica del movimento del rifiuto , inteso come un ciclo globale di proteste che rifiutano totalmente lo stato di cose senza perseguire cambiamenti tradizionali o programmi politici.
+
+Influenze teoriche . Rasmussen si richiama a Herbert Marcuse (1964), secondo cui in società con tendenze totalitarie i mezzi tradizionali di protesta sono inefficaci; la resistenza deve “colpire il sistema dal di fuori”. Il nuovo soggetto politico è costituito dagli “esclusi”, gli emarginati che rifiutano il sistema senza ricorrere a modelli di trasformazione operaia o a compromessi leninisti. Elias Canetti (1960) fornisce la metafora del fuoco: “improvvisamente divampa, si spegne e irrompe altrove”, simbolo di una massa contagiosa ma incapace di produrre cambiamenti tradizionali.
+
+Caratteristiche del movimento . Il rifiuto si manifesta in una serie di proteste – Primavera araba, Occupy Wall Street, Gezi Park, Maidan, Hong Kong, Gilets jaunes, rivolte in Cile, proteste per George Floyd, insurrezione libanese, movimento femminista in Argentina, intifade studentesche palestinesi, ecc. – che, pur nascendo da cause locali specifiche, si trasformano in un rifiuto globale dell’ordine dominante. Queste lotte sono sineddotiche : da un episodio locale nasce un rifiuto totale che si diffonde. Non eleggono rappresentanti, non costruiscono un linguaggio comune né un’organizzazione stabile; non sono né rivolta né rivoluzione né movimento sociale tradizionale, ma “destituenti” (Marcello Tarì). Il rifiuto è un atto politico violento, privo di una comunità politica positiva, il cui punto di partenza è sempre il rifiuto dell’organizzazione statale.
+
+Il “partito extrapolitico” e le azioni recenti . Citato Fred Moten, Rasmussen descrive un nuovo partito extrapolitico di “coloro che non sono nessuno”, destinato a porre fine a tutti i partiti. Il rifiuto è assoluto, anonimo e afasico, rifiutando sia il riformismo sia l’opportunismo del movimento operaio istituzionalizzato, perché è impossibile essere coerentemente rivoluzionari e anticapitalisti all’interno della società capitalista. Il pamphlet, originariamente pubblicato in inglese da Polity Press a fine 2025, è stato lanciato in Italia durante le proteste autunnali del 2025 a sostegno della Global Sumud Flotilla verso Gaza. Azioni come l’assedio della Galleria delle Carrozze di Milano e il blocco della tangenziale il 3 ottobre hanno mostrato masse disorganizzate che, come il fuoco di Canetti, si frammentano e ricompongono, evidenziando la natura imprevedibile del “movimento del rifiuto”.
+
+Declino e fattori di attenuazione . Dopo il 14 ottobre, con la contestazione a Udine contro la nazionale israeliana, le piazze pro‑Palestina in Italia hanno iniziato a svuotarsi. Tra le cause citate vi sono la tregua negoziata con la mediazione di Trump, la fine della missione della Global Sumud Flotilla, il calo di attenzione dei media mainstream e la volontà di gruppi convergenti di sfruttare la marea per affermare egemonia. Rasmussen definisce lo Stato “mediatore della rabbia” e osserva che il fuoco della protesta si accende e si spegne naturalmente, come una “febbre cronica in un sistema in crisi”. In Italia, la repressione (decreti sicurezza), lo svuotamento di spazi alternativi (Leoncavallo, Askatasuna, SpinTime), la violenza razziale (omicidio di Abderrahim Fakir) e il conflitto territoriale (contro la TAV e il ponte sullo Stretto) aggravano la “malattia del capitalismo in policrisi”. A livello globale, si susseguono insurrezioni contro il fascismo di Trump, omicidi dell’ICE, guerre imperialiste in Iran, svendita della laguna di Narta (“rivoluzione dei fenicotteri”), scandali dei concorsi truccati in India (“rivoluzione degli scarafaggi”) e costruzione di data‑center, sempre senza parlare di formare un nuovo governo o conquistare il potere statale.
+
+Iperpolitica e potenziale rivoluzionario . Rasmussen richiama l’iperpolitica di Anton Jäger, definita “politicizzazione in assenza delle forme tradizionali della partecipazione politica” in un’epoca di smobilitazione. L’iperpolitica è “bassa, a basso costo, con basse barriere all’ingresso, di breve durata e, troppo spesso, di basso valore”. Le persone sono più sole ma più eccitate, più atomizzate ma più connesse, più arrabbiate ma più confuse. Nonostante ciò, il rifiuto delle nuove mobilitazioni può contenere possibilità rivoluzionarie: la vulnerabilità e la capacità d’azione sono intrecciate, come sostiene Judith Butler, e il sabotaggio del sistema parte dal rifiuto del compromesso formale.
+
+Strategie per evitare la strumentalizzazione . Rasmussen avverte che pensare a alternative programmatiche può rivelarsi una trappola; le alternative al capitalismo si praticano nell’immediatezza del rifiuto, fuori dalla razionalità capitalista. L’“Internazionale del rifiuto” che rifiuta i programmi ma si realizza ovunque potrebbe creare le condizioni per l’alternativa senza fornire al nemico l’immaginazione necessaria. Tuttavia, il rifiuto rischia di diventare “un ingranaggio meccanico della struttura stessa”, strumentalizzabile dalle destre (esempi: Trump negli USA, Netanyahu in Israele). Per evitare ciò, la lotta deve radicarsi in comunità positive già esistenti – centri sociali, occupazione del Collettivo di Fabbrica ex GKN a Campi Bisenzio, altre forme di autonomia. Solo attraverso queste comunità il rifiuto può assumere un contenuto rivoluzionario, trasformando le infrastrutture del movimento (partiti, sindacati, realtà informali) in una proliferazione di spazi di autodifesa e di ecologia organizzativa, come suggerisce Rodrigo Nunes in *Né verticale né orizzontale* (2025).
+
+Analisi finale dell’articolo . L’articolo pubblicato nella collana Il Tascabile definisce la protesta contemporanea come una “pura e cruda guerriglia”. L’opinione pubblica e le istituzioni si concentrano sulle vetrine distrutte, perché tali atti rappresentano il rifiuto dell’ordine costituito e una minaccia esistenziale per il sistema dominante. La sfida non è egemonica ma organizzativa: occorre comprendere quali mutamenti del mercato del lavoro, crisi ambientali e trasformazioni tecnologiche generino queste forme di rifiuto. Rasmussen interroga se la violenza simbolica verso le vetrine possa aprire spazi per una riorganizzazione delle relazioni sociali, nuovi modelli di governance o forme alternative di partecipazione civica. Conclude che la risposta istituzionale dovrebbe andare oltre la repressione dei danni materiali, concentrandosi sull’analisi delle condizioni strutturali che rendono possibile il rifiuto e valutando il potenziale trasformativo insito in queste azioni.
+
+• Il rifiuto totale è il nucleo del nuovo movimento globale, guidato dagli “esclusi” e privo di programmi o organizzazioni tradizionali.
+
+• Le proteste sono sineddotiche : da cause locali nasce un rifiuto globale che si diffonde come fuoco contagioso, ma non genera cambiamenti istituzionali tradizionali.
+
+• L’iperpolitica caratterizza l’attuale epoca di smobilitazione: bassa soglia d’ingresso, breve durata e valore limitato, ma con potenziale di vulnerabilità rivoluzionaria.
+
+• Il rischio di strumentalizzazione è reale; il rifiuto può diventare un ingranaggio della struttura di potere se non radicato in comunità autonome e positive.
+
+• La risposta istituzionale deve spostarsi dall’oppressione materiale all’analisi delle condizioni strutturali (lavoro, ambiente, tecnologia) che alimentano il movimento del rifiuto, valutandone il potenziale trasformativo.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/11/Linternazionale-del-rifiuto-di-Mikkel-Bolt-Rasmussen.png"><img src="https://www.iltascabile.com/wp-content/uploads/2026/11/Linternazionale-del-rifiuto-di-Mikkel-Bolt-Rasmussen.png" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p><strong>Contesto e obiettivo del pamphlet</strong>. Mikkel Bolt Rasmussen, professore di estetica politica all’Università di Copenaghen, pubblica in Italia, nella collana Piume di Edizioni Malamente, <em>L’Internazionale del rifiuto</em>. Dopo i precedenti studi sul “fasciocapitalismo” (2019‑2024), il nuovo scritto non propone una teoria di alleanza tra fascismo e capitalismo, ma una <em>panoramica del movimento del rifiuto</em>, inteso come un ciclo globale di proteste che rifiutano totalmente lo stato di cose senza perseguire cambiamenti tradizionali o programmi politici.</p>  
+
+<p><strong>Influenze teoriche</strong>. Rasmussen si richiama a Herbert Marcuse (1964), secondo cui in società con tendenze totalitarie i mezzi tradizionali di protesta sono inefficaci; la resistenza deve “colpire il sistema dal di fuori”. Il nuovo soggetto politico è costituito dagli “esclusi”, gli emarginati che rifiutano il sistema senza ricorrere a modelli di trasformazione operaia o a compromessi leninisti. Elias Canetti (1960) fornisce la metafora del fuoco: “improvvisamente divampa, si spegne e irrompe altrove”, simbolo di una massa contagiosa ma incapace di produrre cambiamenti tradizionali.</p>  
+
+<p><strong>Caratteristiche del movimento</strong>. Il rifiuto si manifesta in una serie di proteste – Primavera araba, Occupy Wall Street, Gezi Park, Maidan, Hong Kong, Gilets jaunes, rivolte in Cile, proteste per George Floyd, insurrezione libanese, movimento femminista in Argentina, intifade studentesche palestinesi, ecc. – che, pur nascendo da cause locali specifiche, si trasformano in un rifiuto globale dell’ordine dominante. Queste lotte sono <em>sineddotiche</em>: da un episodio locale nasce un rifiuto totale che si diffonde. Non eleggono rappresentanti, non costruiscono un linguaggio comune né un’organizzazione stabile; non sono né rivolta né rivoluzione né movimento sociale tradizionale, ma “destituenti” (Marcello Tarì). Il rifiuto è un atto politico violento, privo di una comunità politica positiva, il cui punto di partenza è sempre il rifiuto dell’organizzazione statale.</p>  
+
+<p><strong>Il “partito extrapolitico” e le azioni recenti</strong>. Citato Fred Moten, Rasmussen descrive un nuovo partito extrapolitico di “coloro che non sono nessuno”, destinato a porre fine a tutti i partiti. Il rifiuto è assoluto, anonimo e afasico, rifiutando sia il riformismo sia l’opportunismo del movimento operaio istituzionalizzato, perché è impossibile essere coerentemente rivoluzionari e anticapitalisti all’interno della società capitalista. Il pamphlet, originariamente pubblicato in inglese da Polity Press a fine 2025, è stato lanciato in Italia durante le proteste autunnali del 2025 a sostegno della Global Sumud Flotilla verso Gaza. Azioni come l’assedio della Galleria delle Carrozze di Milano e il blocco della tangenziale il 3 ottobre hanno mostrato masse disorganizzate che, come il fuoco di Canetti, si frammentano e ricompongono, evidenziando la natura imprevedibile del “movimento del rifiuto”.</p>  
+
+<p><strong>Declino e fattori di attenuazione</strong>. Dopo il 14 ottobre, con la contestazione a Udine contro la nazionale israeliana, le piazze pro‑Palestina in Italia hanno iniziato a svuotarsi. Tra le cause citate vi sono la tregua negoziata con la mediazione di Trump, la fine della missione della Global Sumud Flotilla, il calo di attenzione dei media mainstream e la volontà di gruppi convergenti di sfruttare la marea per affermare egemonia. Rasmussen definisce lo Stato “mediatore della rabbia” e osserva che il fuoco della protesta si accende e si spegne naturalmente, come una “febbre cronica in un sistema in crisi”. In Italia, la repressione (decreti sicurezza), lo svuotamento di spazi alternativi (Leoncavallo, Askatasuna, SpinTime), la violenza razziale (omicidio di Abderrahim Fakir) e il conflitto territoriale (contro la TAV e il ponte sullo Stretto) aggravano la “malattia del capitalismo in policrisi”. A livello globale, si susseguono insurrezioni contro il fascismo di Trump, omicidi dell’ICE, guerre imperialiste in Iran, svendita della laguna di Narta (“rivoluzione dei fenicotteri”), scandali dei concorsi truccati in India (“rivoluzione degli scarafaggi”) e costruzione di data‑center, sempre senza parlare di formare un nuovo governo o conquistare il potere statale.</p>  
+
+<p><strong>Iperpolitica e potenziale rivoluzionario</strong>. Rasmussen richiama l’iperpolitica di Anton Jäger, definita “politicizzazione in assenza delle forme tradizionali della partecipazione politica” in un’epoca di smobilitazione. L’iperpolitica è “bassa, a basso costo, con basse barriere all’ingresso, di breve durata e, troppo spesso, di basso valore”. Le persone sono più sole ma più eccitate, più atomizzate ma più connesse, più arrabbiate ma più confuse. Nonostante ciò, il rifiuto delle nuove mobilitazioni può contenere possibilità rivoluzionarie: la vulnerabilità e la capacità d’azione sono intrecciate, come sostiene Judith Butler, e il sabotaggio del sistema parte dal rifiuto del compromesso formale.</p>  
+
+<p><strong>Strategie per evitare la strumentalizzazione</strong>. Rasmussen avverte che pensare a alternative programmatiche può rivelarsi una trappola; le alternative al capitalismo si praticano nell’immediatezza del rifiuto, fuori dalla razionalità capitalista. L’“Internazionale del rifiuto” che rifiuta i programmi ma si realizza ovunque potrebbe creare le condizioni per l’alternativa senza fornire al nemico l’immaginazione necessaria. Tuttavia, il rifiuto rischia di diventare “un ingranaggio meccanico della struttura stessa”, strumentalizzabile dalle destre (esempi: Trump negli USA, Netanyahu in Israele). Per evitare ciò, la lotta deve radicarsi in comunità positive già esistenti – centri sociali, occupazione del Collettivo di Fabbrica ex GKN a Campi Bisenzio, altre forme di autonomia. Solo attraverso queste comunità il rifiuto può assumere un contenuto rivoluzionario, trasformando le infrastrutture del movimento (partiti, sindacati, realtà informali) in una proliferazione di spazi di autodifesa e di ecologia organizzativa, come suggerisce Rodrigo Nunes in *Né verticale né orizzontale* (2025).</p>  
+
+<p><strong>Analisi finale dell’articolo</strong>. L’articolo pubblicato nella collana Il Tascabile definisce la protesta contemporanea come una “pura e cruda guerriglia”. L’opinione pubblica e le istituzioni si concentrano sulle vetrine distrutte, perché tali atti rappresentano il rifiuto dell’ordine costituito e una minaccia esistenziale per il sistema dominante. La sfida non è egemonica ma organizzativa: occorre comprendere quali mutamenti del mercato del lavoro, crisi ambientali e trasformazioni tecnologiche generino queste forme di rifiuto. Rasmussen interroga se la violenza simbolica verso le vetrine possa aprire spazi per una riorganizzazione delle relazioni sociali, nuovi modelli di governance o forme alternative di partecipazione civica. Conclude che la risposta istituzionale dovrebbe andare oltre la repressione dei danni materiali, concentrandosi sull’analisi delle condizioni strutturali che rendono possibile il rifiuto e valutando il potenziale trasformativo insito in queste azioni.</p>  
+
+<ol>
+<li><strong>Il rifiuto totale</strong> è il nucleo del nuovo movimento globale, guidato dagli “esclusi” e privo di programmi o organizzazioni tradizionali.</li>
+<li><strong>Le proteste sono sineddotiche</strong>: da cause locali nasce un rifiuto globale che si diffonde come fuoco contagioso, ma non genera cambiamenti istituzionali tradizionali.</li>
+<li><strong>L’iperpolitica</strong> caratterizza l’attuale epoca di smobilitazione: bassa soglia d’ingresso, breve durata e valore limitato, ma con potenziale di vulnerabilità rivoluzionaria.</li>
+<li><strong>Il rischio di strumentalizzazione</strong> è reale; il rifiuto può diventare un ingranaggio della struttura di potere se non radicato in comunità autonome e positive.</li>
+<li><strong>La risposta istituzionale</strong> deve spostarsi dall’oppressione materiale all’analisi delle condizioni strutturali (lavoro, ambiente, tecnologia) che alimentano il movimento del rifiuto, valutandone il potenziale trasformativo.</li>
+</ol>
+    
+    <hr>
+    <p><a href="https://www.iltascabile.com/recensioni/internazionale-rifiuto-mikkel-bolt-rasmussen/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.iltascabile.com/recensioni/internazionale-rifiuto-mikkel-bolt-rasmussen/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/11/Linternazionale-del-rifiuto-di-Mikkel-Bolt-Rasmussen.png" length="0" type="image/png"/>
+      <pubDate>Fri, 06 Nov 2026 11:58:05 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/11/Linternazionale-del-rifiuto-di-Mikkel-Bolt-Rasmussen.png" type="image/png" medium="image"/>
+        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/11/Linternazionale-del-rifiuto-di-Mikkel-Bolt-Rasmussen.png"/>
+      </media:group>
+    </item>
+    <item>
+      <title>Stati di salute</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/4655a1fbcf2eb308.html</link>
+      <description>Il libro Stati di salute , ottavo volume poetico di Lidia Riviello (2025), è presentato con una copertina di Maria Grazia Calandrone e ha partecipato alla prima fase del Premio Strega Poesia 2026 . L’autrice scrive un’introduzione “di pugno” che descrive un’umanità “senza futuro”, dove i sentimenti sono “lanciati in un’altra parte del tempo” e la società è immersa in una trasformazione “che ci vuole vivi e malati”.
+
+Riviello esplora le “esistenze finte” assorbite dallo schermo digitale, usando metafore di “specchi digitali”, frammenti “spezzettati e pixellati” e una “galleria di profili TikTok” che mostrano caos informativo, feed frenetici, avatar e vite “spesso inventate o laccate”.
+
+Tra i riferimenti del libro vi sono i dati di un profilo “BUGALALLA lady crime dalla Romagna alla Florida” con Iscritti 133.0000 , visualizzazioni 152.324 , commenti 6736 , e la sezione “SANTI E PECCATORI DEL WEB 2” con visualizzazioni 38.407 , commenti 3982 . Vengono citati luoghi reali come il “Bar Italia di Tirana” e la “City di New York”, nonché un tour in Albania ( ALBANIANTOUR 6 ).
+
+Un tema ricorrente è la ricerca della “parola poetica” come “ancora di salvezza” dalle patologie fisiche e psicologiche, incarnata dalla figura della “bambina con l’apparecchio ai denti”. La poesia è descritta come un tentativo di “riesaminare il male della realtà” e di trovare un “antidoto allo stato di salute globale”.
+
+L’articolo conclude che, di fronte a “informazione distorta”, “politica miope” e una “salute di stato” osservata “con lo sguardo fisso in camera”, la poesia di Riviello invita a riconoscere “l’importanza del nostro esistere” come vero antidoto.
+
+• Il libro è introdotto da una visione cruda di un futuro privo di sentimenti e da una trasformazione sociale “che ci vuole vivi e malati”.
+
+• Riviello denuncia le vite “finte” e la confusione digitale, usando esempi di profili TikTok e dati di visualizzazioni.
+
+• La “bambina con l’apparecchio ai denti” simboleggia l’innocenza che persiste nella poesia.
+
+• Il viaggio dell’autrice attraversa luoghi virtuali e reali (Albania, Stati Uniti) per esplorare stati di salute irreversibili.
+
+• La poesia è proposta come “ancora di salvezza” contro le patologie contemporanee e come antidoto alla distorsione dell’informazione.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/11/Stati-di-salute.jpg"><img src="https://www.iltascabile.com/wp-content/uploads/2026/11/Stati-di-salute.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Il libro <strong>Stati di salute</strong>, ottavo volume poetico di Lidia Riviello (2025), è presentato con una copertina di Maria Grazia Calandrone e ha partecipato alla prima fase del <em>Premio Strega Poesia 2026</em>. L’autrice scrive un’introduzione “di pugno” che descrive un’umanità “senza futuro”, dove i sentimenti sono “lanciati in un’altra parte del tempo” e la società è immersa in una trasformazione “che ci vuole vivi e malati”.</p>
+
+<p>Riviello esplora le “esistenze finte” assorbite dallo schermo digitale, usando metafore di “specchi digitali”, frammenti “spezzettati e pixellati” e una “galleria di profili TikTok” che mostrano caos informativo, feed frenetici, avatar e vite “spesso inventate o laccate”.</p>
+
+<p>Tra i riferimenti del libro vi sono i dati di un profilo “BUGALALLA lady crime dalla Romagna alla Florida” con <strong>Iscritti 133.0000</strong>, <strong>visualizzazioni 152.324</strong>, <strong>commenti 6736</strong>, e la sezione “SANTI E PECCATORI DEL WEB 2” con <strong>visualizzazioni 38.407</strong>, <strong>commenti 3982</strong>. Vengono citati luoghi reali come il “Bar Italia di Tirana” e la “City di New York”, nonché un tour in Albania (<strong>ALBANIANTOUR 6</strong>).</p>
+
+<p>Un tema ricorrente è la ricerca della “parola poetica” come “ancora di salvezza” dalle patologie fisiche e psicologiche, incarnata dalla figura della “bambina con l’apparecchio ai denti”. La poesia è descritta come un tentativo di “riesaminare il male della realtà” e di trovare un “antidoto allo stato di salute globale”.</p>
+
+<p>L’articolo conclude che, di fronte a “informazione distorta”, “politica miope” e una “salute di stato” osservata “con lo sguardo fisso in camera”, la poesia di Riviello invita a riconoscere “l’importanza del nostro esistere” come vero antidoto.</p>
+
+<ol>
+<li>Il libro è introdotto da una visione cruda di un futuro privo di sentimenti e da una trasformazione sociale “che ci vuole vivi e malati”.</li>
+<li>Riviello denuncia le vite “finte” e la confusione digitale, usando esempi di profili TikTok e dati di visualizzazioni.</li>
+<li>La “bambina con l’apparecchio ai denti” simboleggia l’innocenza che persiste nella poesia.</li>
+<li>Il viaggio dell’autrice attraversa luoghi virtuali e reali (Albania, Stati Uniti) per esplorare stati di salute irreversibili.</li>
+<li>La poesia è proposta come “ancora di salvezza” contro le patologie contemporanee e come antidoto alla distorsione dell’informazione.</li>
+</ol>
+    
+    <hr>
+    <p><a href="https://www.iltascabile.com/letterature/stati-salute/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.iltascabile.com/letterature/stati-salute/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/11/Stati-di-salute.jpg" length="0" type="image/jpeg"/>
+      <pubDate>Thu, 05 Nov 2026 11:59:26 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/11/Stati-di-salute.jpg" type="image/jpeg" medium="image"/>
+        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/11/Stati-di-salute.jpg"/>
+      </media:group>
+    </item>
+    <item>
+      <title>Sogno un carnevale del rimosso</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/5921b14c8603b085.html</link>
+      <description>Per celebrare i dieci anni di Il Tascabile , l’archivio viene riaperto per confrontare i testi passati con le trasformazioni culturali e sociali recenti. L’autrice, Marcello Conti, descrive il suo “file di idee” denominato inizialmente “aborti” e poi tradotto in inglese “miscarriages”, dove raccoglie pezzi mai pubblicati.
+
+Una delle critiche ricorrenti ai testi è la mancanza di “rilevanza per il presente”, intesa come legame con mostre o eventi attuali. Il Tascabile rompe questa regola perché tratta l’arte come linguaggio , inserendola nella sezione “Linguaggi” insieme a fumetto, architettura, cinema, musica e fantascienza, e privilegia l’analisi della logica interna dell’opera rispetto al contesto materiale.
+
+Nel decennio la rivista ha mantenuto una “postura obliqua”, ovvero una logica da collage che accosta discipline diverse: da Claudia Bruno su Carolee Schneemann, a Federico Stoto su James Hoff, fino a collegamenti tra arte e città (Bologna, Roma) o tra artisti e luoghi (Bill Viola, Firenze). Questa strategia si manifesta sia in saggi classici sia in interviste legate a mostre o biennali.
+
+Il testo distingue la critica giornalistica, rapida e legata all’attualità, dalla critica saggistica, più meditata e priva di urgenza. Tuttavia, nei pezzi del Tascabile le due forme si contaminano, facendo della mostra un’occasione per costruire un discorso più che per semplicemente commentarla.
+
+Infine, l’autrice immagina un “carnevale del rimosso”, una celebrazione degli scarti editoriali – i “aborti” – che abitano i computer di chi fa cultura, proponendo una rivista che dia loro voce.
+
+• Il Tascabile Una “postura obliqua” e una logica da collage guidano i collegamenti tra arte, scienze, letterature e società. La rivista combina critica giornalistica e saggistica, mescolando recensioni, saggi e interviste. Il concetto di “aborti”/“miscarriages” raccoglie testi non pubblicati, suggerendo la creazione di un “carnevale del rimosso”. Esempi concreti includono analisi su Carolee Schneemann, James Hoff, Bologna, Bill Viola e altri, dimostrando la varietà tematica del decennio.
+
+• Una “postura obliqua” e una logica da collage guidano i collegamenti tra arte, scienze, letterature e società.
+
+• La rivista combina critica giornalistica e saggistica, mescolando recensioni, saggi e interviste.
+
+• Il concetto di “aborti”/“miscarriages” raccoglie testi non pubblicati, suggerendo la creazione di un “carnevale del rimosso”.
+
+• Esempi concreti includono analisi su Carolee Schneemann, James Hoff, Bologna, Bill Viola e altri, dimostrando la varietà tematica del decennio.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/11/Sogno-un-carnevale-del-rimosso.jpg"><img src="https://www.iltascabile.com/wp-content/uploads/2026/11/Sogno-un-carnevale-del-rimosso.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Per celebrare i dieci anni di <em>Il Tascabile</em>, l’archivio viene riaperto per confrontare i testi passati con le trasformazioni culturali e sociali recenti. L’autrice, Marcello Conti, descrive il suo “file di idee” denominato inizialmente “aborti” e poi tradotto in inglese “miscarriages”, dove raccoglie pezzi mai pubblicati.</p>
+
+<p>Una delle critiche ricorrenti ai testi è la mancanza di “rilevanza per il presente”, intesa come legame con mostre o eventi attuali. <strong>Il Tascabile</strong> rompe questa regola perché tratta l’arte come <strong>linguaggio</strong>, inserendola nella sezione “Linguaggi” insieme a fumetto, architettura, cinema, musica e fantascienza, e privilegia l’analisi della logica interna dell’opera rispetto al contesto materiale.</p>
+
+<p>Nel decennio la rivista ha mantenuto una “postura obliqua”, ovvero una logica da collage che accosta discipline diverse: da Claudia Bruno su Carolee Schneemann, a Federico Stoto su James Hoff, fino a collegamenti tra arte e città (Bologna, Roma) o tra artisti e luoghi (Bill Viola, Firenze). Questa strategia si manifesta sia in saggi classici sia in interviste legate a mostre o biennali.</p>
+
+<p>Il testo distingue la critica giornalistica, rapida e legata all’attualità, dalla critica saggistica, più meditata e priva di urgenza. Tuttavia, nei pezzi del <em>Tascabile</em> le due forme si contaminano, facendo della mostra un’occasione per costruire un discorso più che per semplicemente commentarla.</p>
+
+<p>Infine, l’autrice immagina un “carnevale del rimosso”, una celebrazione degli scarti editoriali – i “aborti” – che abitano i computer di chi fa cultura, proponendo una rivista che dia loro voce.</p>
+
+<ol>
+<li><strong>Il Tascabile</strong tratta l’arte come linguaggio, focalizzandosi sulla logica interna dell’opera anziché sull’attualità degli eventi.</li>
+<li>Una “postura obliqua” e una logica da collage guidano i collegamenti tra arte, scienze, letterature e società.</li>
+<li>La rivista combina critica giornalistica e saggistica, mescolando recensioni, saggi e interviste.</li>
+<li>Il concetto di “aborti”/“miscarriages” raccoglie testi non pubblicati, suggerendo la creazione di un “carnevale del rimosso”.</li>
+<li>Esempi concreti includono analisi su Carolee Schneemann, James Hoff, Bologna, Bill Viola e altri, dimostrando la varietà tematica del decennio.</li>
+</ol>
+    
+    <hr>
+    <p><a href="https://www.iltascabile.com/linguaggi/sogno-carnevale-rimosso/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.iltascabile.com/linguaggi/sogno-carnevale-rimosso/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/11/Sogno-un-carnevale-del-rimosso.jpg" length="0" type="image/jpeg"/>
+      <pubDate>Wed, 04 Nov 2026 11:56:31 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/11/Sogno-un-carnevale-del-rimosso.jpg" type="image/jpeg" medium="image"/>
+        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/11/Sogno-un-carnevale-del-rimosso.jpg"/>
+      </media:group>
+    </item>
+    <item>
+      <title>L’odio come contenuto</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/05d030628f2b12a9.html</link>
+      <description>Il 8 settembre, lungo la strada per il porto di Dover, un gruppo di uomini a volto coperto ha bloccato la via cantando slogan anti‑immigrazione come “Stop the boats” e “England until I die”. L’azione, rivendicata da Patriot platform , è stata trasmessa in streaming da Daniel Thomas, alias Danny Tommo, ex guardia del corpo di Tommy Robinson. Tommo è un “info‑attivista” con 167 000 iscritti su YouTube; i suoi video mescolano immagini generate dall’intelligenza artificiale, thumbnail con il suo volto e titoli che spaziano da litigi in strada a presunti “exposé” su telefoni di migranti, fino a contenuti di reclutamento per il suo gruppo patriottico.
+
+Patriot platform si presenta come “un diverso tipo di cristiano” che vuole fermare l’immigrazione per proteggere le donne bianche inglesi. Il messaggio xenofobo viene trasformato in content : una serie di video e podcast che si avvalgono di riferimenti alla morale cristiana, alla difesa delle donne e alla lotta contro la migrazione. Questa strategia non è isolata in Inghilterra; le nuove reclute della destra sfruttano le reti sociali per raggiungere numeri elevati e diffondere idee violente, “calmierando” la violenza mediante il contagocce e rendendo accettabile anche il contenuto più estremo.
+
+L’autore richiama l’esempio di Matteo Salvini, che nel 2020 ha mescolato la presunzione di colpevolezza a uno show televisivo, creando un “buon senso” retorico che sposta il dibattito fuori dalla politica. Un altro caso è quello di Lorenzo Caccialupi, influencer di destra legato a Charlie Kirk, che in uno short su YouTube dichiara che la deportazione è “common sense”, dimostrando come il “buon senso” diventi arma per normalizzare politiche violente.
+
+La propaganda opera su due fronti, interno ed esterno, costruendo un’immagine nazionale che combina forza militare e ordine interno. I suoi principi – semplificazione, saturazione e assertività parziale – sono stati potenziati dal digitale. Leonardo Bianchi individua due momenti chiave: dal 2014‑2016 l’uso dei meme e del “just joking” da parte dell’alt‑right, e il ritorno di Trump, che ha introdotto la “slopaganda” basata sull’intelligenza artificiale. Questi strumenti, adattati alle logiche algoritmiche delle piattaforme, hanno amplificato la diffusione di fake news e discorsi d’odio, creando camere dell’eco in cui l’odio cresce e la stabilità sociale si erode, favorendo l’ascesa di destre sempre più estreme, come dimostra il caso di Roberto Vannacci, ora europarlamentare, e la normalizzazione delle idee di Anders Breivik. La propaganda, dunque, serve a rendere accettabili messaggi estremisti, indebolendo la democrazia.
+
+Il termine “remigrazione” è oggi accettato come descrittore di una policy perché, dopo le stragi norvegesi, l’impunità delle ultra‑destre è aumentata di livello. Trasformare odio e violenza in programma politico richiede una manipolazione fine dei termini: parole nuove diventano “gusci vaghi” che, una volta assorbiti, creano realtà alternative dove il pensiero diventa motore dell’azione. Un esempio è Ebbw Vale, città gallese di case uniformi. Nel 2002 la Ebbw Vale Steelwork chiuse; il territorio ricevette i massimi fondi UE per lo sviluppo strutturale, ma nel 2016 il 62 % dei residenti votò per l’uscita dalla Brexit. Il Guardian cita un abitante che chiede “cosa ha fatto l’UE per noi?”. La percezione di un’UE distante e favorevole alle élite economiche rese plausibile il risultato.
+
+Cambridge Analytica, società di consulenza, scelse Ebbw Vale come target della campagna pro‑Brexit. L’azienda non solo costruì una comunicazione, ma esercitò una vera influenza elettorale: estrasse dati, li analizzò e sfruttò la capacità predittiva per individuare i “persuadables”, utenti indecisi o altamente persuadibili. Con bolle informative di messaggi semplici, emotivi e ripetitivi, trasformò l’indecisione in voto, creando realtà alternative personalizzate. Lo stesso modello fu usato negli Stati Uniti, dove Cambridge Analytica contribuì alla vittoria di Donald Trump, combinando persuasione digitale e sessismo sistemico per diffondere notizie false su Hillary Clinton, dipingendola come “arrivista”, “cattiva” e “inaffidabile”. Trump, nel 2016 su “60 Minutes”, rispose a Lesley Stahl che “non gli importava” se le critiche a Clinton fossero state “errori legittimati”. Oggi Ebbw Vale resta disoccupata, priva di turismo, mentre la propaganda digitalizzata continua a guidare la politica britannica e americana.
+
+La propaganda, prodotta da attori istituzionali, privati e individuali, si diffonde su tutti i media, inclusi gli influencer di destra, che trasformano contenuti di intrattenimento in spazi propagandistici. Questi video mostrano degrado apparente e soluzioni altrettanto superficiali, rafforzando fratture sociali, diffidenza verso poveri, migranti e minoranze. Il “noi” contro “loro” attinge a odi preesistenti – antisemitismo, islamofobia, aporofobia, sessismo – e li intensifica, offrendo una base stabile per una propaganda che convince le persone che le soluzioni siano limitate a sostenere tiranni, partiti o influencer.
+
+La propaganda efficace è quella che non solo genera seguito, ma soprattutto orienta il pensiero di chi la riceve in modo coerente ai propri scopi, indirizzando una frustrazione sociale verso soluzioni innocue rispetto alla causa originaria di tale frustrazione. Il testo cita diversi esempi: gli inglesi che si scagliano contro i migranti perché la vita in tempi di capitalismo è costosa, gli italiani che imputano al caldo estivo crescente la produzione industriale di India e Cina, gli europei bianchi che si attivano contro le persone in movimento a causa della privatizzazione che incalza e dei servizi che muoiono, e, ancor prima, i coloni che attaccano i colonizzati per giustificare la loro presenza.
+
+La storia della propaganda avanza in costante accelerazione, al punto che anche il singolo può trarne profitto diventando “emanatore di propaganda”, fenomeno particolarmente visibile negli influencer della politica. Per ridimensionare, se non neutralizzare, gli effetti della propaganda si propongono strategie di diffusione di messaggi, idee e debunking; l’insieme di queste iniziative è definito contropropaganda , intesa come ripristino del dibattito e risignificazione delle parole. Oggi più che mai la contropropaganda è il luogo in cui le parole devono essere spiegate nei loro significati reali, dove simbolo, vettore e significato vengono ricomposti nella loro legittima espressione per mostrare la realtà così com’è.
+
+La proposta propagandistica, tuttavia, non si limita a riconoscere la presenza di un contrasto, ma si attiva per smontarlo. Lo scontro avviene da posizioni impari: la propaganda è solitamente emessa da chi detiene il potere, con maggiori risorse che consentono una più ampia diffusione e una maggiore credibilità. La propaganda delle destre si muove in spazi di vantaggio, sta allargando le sue maglie e, dopo decenni di capillarizzazione, è pronta a “tirare i nodi”; chi si trova al centro degli intrighi rischia di essere tagliato fisicamente via dallo spazio sociale.
+
+• La trasformazione dell’odio in “content” è la strategia centrale di gruppi come Patriot platform, che usano video, podcast e riferimenti cristiani per normalizzare messaggi xenofobi.
+
+• Il digitale amplifica la propaganda attraverso meme, “just joking”, intelligenza artificiale e algoritmi, creando camere dell’eco che indeboliscono la democrazia.
+
+• Cambridge Analytica dimostra come i dati e la micro‑targettizzazione possano convertire indecisione in voto, sia in contesti britannici (Ebbw Vale) che americani (Trump).
+
+• Il “buon senso” retorico è usato da figure come Salvini e Caccialupi per rendere politiche violente apparentemente naturali.
+
+• La contropropaganda è proposta come risposta necessaria: debunking, risignificazione delle parole e ricostruzione del dibattito per contrastare la diffusione di odio.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/11/Lodio-come-content.jpg"><img src="https://www.iltascabile.com/wp-content/uploads/2026/11/Lodio-come-content.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Il 8 settembre, lungo la strada per il porto di Dover, un gruppo di uomini a volto coperto ha bloccato la via cantando slogan anti‑immigrazione come “Stop the boats” e “England until I die”. L’azione, rivendicata da <strong>Patriot platform</strong>, è stata trasmessa in streaming da Daniel Thomas, alias Danny Tommo, ex guardia del corpo di Tommy Robinson. Tommo è un “info‑attivista” con 167 000 iscritti su YouTube; i suoi video mescolano immagini generate dall’intelligenza artificiale, thumbnail con il suo volto e titoli che spaziano da litigi in strada a presunti “exposé” su telefoni di migranti, fino a contenuti di reclutamento per il suo gruppo patriottico.</p>  
+
+<p>Patriot platform si presenta come “un diverso tipo di cristiano” che vuole fermare l’immigrazione per proteggere le donne bianche inglesi. Il messaggio xenofobo viene trasformato in <em>content</em>: una serie di video e podcast che si avvalgono di riferimenti alla morale cristiana, alla difesa delle donne e alla lotta contro la migrazione. Questa strategia non è isolata in Inghilterra; le nuove reclute della destra sfruttano le reti sociali per raggiungere numeri elevati e diffondere idee violente, “calmierando” la violenza mediante il contagocce e rendendo accettabile anche il contenuto più estremo.</p>  
+
+<p>L’autore richiama l’esempio di Matteo Salvini, che nel 2020 ha mescolato la presunzione di colpevolezza a uno show televisivo, creando un “buon senso” retorico che sposta il dibattito fuori dalla politica. Un altro caso è quello di Lorenzo Caccialupi, influencer di destra legato a Charlie Kirk, che in uno short su YouTube dichiara che la deportazione è “common sense”, dimostrando come il “buon senso” diventi arma per normalizzare politiche violente.</p>  
+
+<p>La propaganda opera su due fronti, interno ed esterno, costruendo un’immagine nazionale che combina forza militare e ordine interno. I suoi principi – semplificazione, saturazione e assertività parziale – sono stati potenziati dal digitale. Leonardo Bianchi individua due momenti chiave: dal 2014‑2016 l’uso dei meme e del “just joking” da parte dell’alt‑right, e il ritorno di Trump, che ha introdotto la “slopaganda” basata sull’intelligenza artificiale. Questi strumenti, adattati alle logiche algoritmiche delle piattaforme, hanno amplificato la diffusione di fake news e discorsi d’odio, creando camere dell’eco in cui l’odio cresce e la stabilità sociale si erode, favorendo l’ascesa di destre sempre più estreme, come dimostra il caso di Roberto Vannacci, ora europarlamentare, e la normalizzazione delle idee di Anders Breivik. La propaganda, dunque, serve a rendere accettabili messaggi estremisti, indebolendo la democrazia.</p>  
+
+<p>Il termine “remigrazione” è oggi accettato come descrittore di una policy perché, dopo le stragi norvegesi, l’impunità delle ultra‑destre è aumentata di livello. Trasformare odio e violenza in programma politico richiede una manipolazione fine dei termini: parole nuove diventano “gusci vaghi” che, una volta assorbiti, creano realtà alternative dove il pensiero diventa motore dell’azione. Un esempio è Ebbw Vale, città gallese di case uniformi. Nel 2002 la Ebbw Vale Steelwork chiuse; il territorio ricevette i massimi fondi UE per lo sviluppo strutturale, ma nel 2016 il 62 % dei residenti votò per l’uscita dalla Brexit. Il Guardian cita un abitante che chiede “cosa ha fatto l’UE per noi?”. La percezione di un’UE distante e favorevole alle élite economiche rese plausibile il risultato.</p>  
+
+<p>Cambridge Analytica, società di consulenza, scelse Ebbw Vale come target della campagna pro‑Brexit. L’azienda non solo costruì una comunicazione, ma esercitò una vera influenza elettorale: estrasse dati, li analizzò e sfruttò la capacità predittiva per individuare i “persuadables”, utenti indecisi o altamente persuadibili. Con bolle informative di messaggi semplici, emotivi e ripetitivi, trasformò l’indecisione in voto, creando realtà alternative personalizzate. Lo stesso modello fu usato negli Stati Uniti, dove Cambridge Analytica contribuì alla vittoria di Donald Trump, combinando persuasione digitale e sessismo sistemico per diffondere notizie false su Hillary Clinton, dipingendola come “arrivista”, “cattiva” e “inaffidabile”. Trump, nel 2016 su “60 Minutes”, rispose a Lesley Stahl che “non gli importava” se le critiche a Clinton fossero state “errori legittimati”. Oggi Ebbw Vale resta disoccupata, priva di turismo, mentre la propaganda digitalizzata continua a guidare la politica britannica e americana.</p>  
+
+<p>La propaganda, prodotta da attori istituzionali, privati e individuali, si diffonde su tutti i media, inclusi gli influencer di destra, che trasformano contenuti di intrattenimento in spazi propagandistici. Questi video mostrano degrado apparente e soluzioni altrettanto superficiali, rafforzando fratture sociali, diffidenza verso poveri, migranti e minoranze. Il “noi” contro “loro” attinge a odi preesistenti – antisemitismo, islamofobia, aporofobia, sessismo – e li intensifica, offrendo una base stabile per una propaganda che convince le persone che le soluzioni siano limitate a sostenere tiranni, partiti o influencer.</p>  
+
+<p>La propaganda efficace è quella che non solo genera seguito, ma soprattutto orienta il pensiero di chi la riceve in modo coerente ai propri scopi, indirizzando una frustrazione sociale verso soluzioni innocue rispetto alla causa originaria di tale frustrazione. Il testo cita diversi esempi: gli inglesi che si scagliano contro i migranti perché la vita in tempi di capitalismo è costosa, gli italiani che imputano al caldo estivo crescente la produzione industriale di India e Cina, gli europei bianchi che si attivano contro le persone in movimento a causa della privatizzazione che incalza e dei servizi che muoiono, e, ancor prima, i coloni che attaccano i colonizzati per giustificare la loro presenza.</p>  
+
+<p>La storia della propaganda avanza in costante accelerazione, al punto che anche il singolo può trarne profitto diventando “emanatore di propaganda”, fenomeno particolarmente visibile negli influencer della politica. Per ridimensionare, se non neutralizzare, gli effetti della propaganda si propongono strategie di diffusione di messaggi, idee e debunking; l’insieme di queste iniziative è definito <strong>contropropaganda</strong>, intesa come ripristino del dibattito e risignificazione delle parole. Oggi più che mai la contropropaganda è il luogo in cui le parole devono essere spiegate nei loro significati reali, dove simbolo, vettore e significato vengono ricomposti nella loro legittima espressione per mostrare la realtà così com’è.</p>  
+
+<p>La proposta propagandistica, tuttavia, non si limita a riconoscere la presenza di un contrasto, ma si attiva per smontarlo. Lo scontro avviene da posizioni impari: la propaganda è solitamente emessa da chi detiene il potere, con maggiori risorse che consentono una più ampia diffusione e una maggiore credibilità. La propaganda delle destre si muove in spazi di vantaggio, sta allargando le sue maglie e, dopo decenni di capillarizzazione, è pronta a “tirare i nodi”; chi si trova al centro degli intrighi rischia di essere tagliato fisicamente via dallo spazio sociale.</p>  
+
+<ol>  
+<li><strong>La trasformazione dell’odio in “content”</strong> è la strategia centrale di gruppi come Patriot platform, che usano video, podcast e riferimenti cristiani per normalizzare messaggi xenofobi.</li>  
+<li><strong>Il digitale amplifica la propaganda</strong> attraverso meme, “just joking”, intelligenza artificiale e algoritmi, creando camere dell’eco che indeboliscono la democrazia.</li>  
+<li><strong>Cambridge Analytica dimostra come i dati e la micro‑targettizzazione</strong> possano convertire indecisione in voto, sia in contesti britannici (Ebbw Vale) che americani (Trump).</li>  
+<li><strong>Il “buon senso” retorico</strong> è usato da figure come Salvini e Caccialupi per rendere politiche violente apparentemente naturali.</li>  
+<li><strong>La contropropaganda</strong> è proposta come risposta necessaria: debunking, risignificazione delle parole e ricostruzione del dibattito per contrastare la diffusione di odio.</li>  
+</ol>
+    
+    <hr>
+    <p><a href="https://www.iltascabile.com/societa/odio-content/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.iltascabile.com/societa/odio-content/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/11/Lodio-come-content.jpg" length="0" type="image/jpeg"/>
+      <pubDate>Tue, 03 Nov 2026 11:46:09 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/11/Lodio-come-content.jpg" type="image/jpeg" medium="image"/>
+        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/11/Lodio-come-content.jpg"/>
+      </media:group>
+    </item>
+    <item>
+      <title>Il greenwashing della caccia</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/0fe3ee09bd9eb06e.html</link>
+      <description>Il disegno di legge 1552, attualmente in votazione, modifica la legge 157/1992 sulla gestione della caccia in Italia. Già approvato al Senato, il testo prevede numerose agevolazioni per i cacciatori, tanto da essere soprannominato “ddl sparatutto”. Tra le novità vi sono l’aumento del numero di specie cacciabili, l’estensione delle aree consentite (incluse spiagge e zone prima protette), la reintroduzione della caccia notturna per alcune specie, l’uso di esche vive e la possibilità di catturare animali durante periodi di migrazione e nidificazione.
+
+L’ISPRA perde il ruolo vincolante, sostituito da un Comitato tecnico faunistico‑venatorio in cui l’istituto è solo consulente; le regioni otterranno maggiore autonomia decisionale. Il governo Meloni sostiene il provvedimento, presentandolo come un modo per trasformare la percezione pubblica della caccia: i cacciatori dovrebbero diventare “bioregolatori”, definiti dal ddl come “contributori alla tutela della biodiversità e dell’ecosistema”. Le associazioni venatorie hanno adottato termini ambientali (wilderness, gestione sostenibile) e, nel 2024, il presidente di Federcaccia Massimo Buconi li ha definiti “custodi della biodiversità”. Parallelamente, le associazioni collegano la caccia alla tutela del paesaggio, alla pulizia dei sentieri e alla valorizzazione della montagna, citando anche il linguaggio decoloniale dell’AIW.
+
+Il settore è fortemente legato a interessi economici: il mercato delle armi da caccia vale circa 8,5 miliardi di euro annui, con 88 000 occupati, e le associazioni ricevono finanziamenti da produttori di armi e accessori. Un sondaggio Ipsos Doxa 2026 per la Fondazione Cappellino mostra che solo il 3 % degli italiani sostiene le nuove norme, mentre il 91 % vuole mantenere la legge attuale e il 75 % desidera ridurre o abolire la caccia amatoriale. La mancanza di studi scientifici su larga scala sull’impatto della caccia ricreativa rende difficile valutare se le affermazioni ambientali siano un vero contributo o un caso di greenwashing.
+
+Quando i dati sono disponibili, i risultati sono contrastanti: una review di 26 studi del Department of Fish, Wildlife and Conservation Biology (USA) evidenzia effetti sia positivi che negativi a seconda delle circostanze; una review del James Hutton Institute sulla caccia degli uccelli giunge a conclusioni analoghe. L’analisi più ampia (oltre 1000 articoli dal 1953 al 2020) su grandi mammiferi e uccelli in Europa, Nord‑America e Africa dichiara “assenza di prove per rispondere alla domanda sul dove e come la caccia ricreativa contribuisca a sforzi di conservazione equi e sostenibili”.
+
+Il ragionamento dei fautori parte dall’assunto che, senza cacciatori, mancherebbero fattori di controllo e la fauna crescerebbe fuori misura. Tuttavia, il solo Paese senza caccia ricreativa, il Costa Rica, è ecologicamente diverso dall’Italia. Studi della no‑profit svizzera IG Wild su dieci grandi aree protette in Svizzera, Germania, Austria e Italia mostrano scenari non apocalittici: nel Parco Nazionale Svizzero (senza caccia dal 1914) cervi e camosci sono in equilibrio; nei Kalkalpen austriaci la foresta si rigenera meglio; lince, lupo e gatto selvatico hanno rioccupato le loro nicchie.
+
+Il caso del cinghiale evidenzia la complessità: la pressione dei lupi regola la popolazione, ma la caccia elimina i maschi dominanti, spingendo le femmine a accoppiarsi con più maschi non dominanti e aumentando la natalità. Dal 2015‑2021 il prelievo di cinghiali è aumentato del 45 % (≈300 000 abbattimenti annui), ma la popolazione è cresciuta, con danni agricoli. In Cabañeros (Spagna), l’assenza di lupi e il divieto di caccia dal 2020 hanno provocato una crescita incontrollata dei cinghiali.
+
+Queste evidenze suggeriscono che la gestione scientifica della fauna richiede abbattimenti mirati da parte di organismi di monitoraggio, non una ricetta unica. L’ISPRA segnala, però, un calo cronico dei finanziamenti, con un ulteriore taglio di 14 milioni di euro nel 2023, minacciando più di 100 lavoratori precari. Senza risorse adeguate per ricerche a lungo termine, è più facile per i gruppi di pressione dell’industria venatoria sostenere la caccia ricreativa, avvolgendola in una patina di “green”.
+
+• Il ddl 1552 amplia drasticamente le possibilità di caccia, riducendo il ruolo vincolante dell’ISPRA.
+
+• Le associazioni venatorie promuovono la caccia con un linguaggio ambientale, ma il settore è strettamente legato a interessi economici del mercato delle armi.
+
+• Le indagini d’opinione mostrano un forte scetticismo pubblico verso le nuove norme.
+
+• Le evidenze scientifiche disponibili sono contrastanti e non confermano un contributo positivo della caccia alla conservazione.
+
+• La carenza di finanziamenti per l’ISPRA limita la ricerca a lungo termine, favorendo il discorso di “greenwashing” da parte dei gruppi di pressione.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-greenwashing-della-caccia.jpg"><img src="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-greenwashing-della-caccia.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Il disegno di legge 1552, attualmente in votazione, modifica la legge 157/1992 sulla gestione della caccia in Italia. Già approvato al Senato, il testo prevede numerose agevolazioni per i cacciatori, tanto da essere soprannominato “ddl sparatutto”. Tra le novità vi sono l’aumento del numero di specie cacciabili, l’estensione delle aree consentite (incluse spiagge e zone prima protette), la reintroduzione della caccia notturna per alcune specie, l’uso di esche vive e la possibilità di catturare animali durante periodi di migrazione e nidificazione.</p>
+
+<p>L’ISPRA perde il ruolo vincolante, sostituito da un Comitato tecnico faunistico‑venatorio in cui l’istituto è solo consulente; le regioni otterranno maggiore autonomia decisionale. Il governo Meloni sostiene il provvedimento, presentandolo come un modo per trasformare la percezione pubblica della caccia: i cacciatori dovrebbero diventare “bioregolatori”, definiti dal ddl come “contributori alla tutela della biodiversità e dell’ecosistema”. Le associazioni venatorie hanno adottato termini ambientali (wilderness, gestione sostenibile) e, nel 2024, il presidente di Federcaccia Massimo Buconi li ha definiti “custodi della biodiversità”. Parallelamente, le associazioni collegano la caccia alla tutela del paesaggio, alla pulizia dei sentieri e alla valorizzazione della montagna, citando anche il linguaggio decoloniale dell’AIW.</p>
+
+<p>Il settore è fortemente legato a interessi economici: il mercato delle armi da caccia vale circa 8,5 miliardi di euro annui, con 88 000 occupati, e le associazioni ricevono finanziamenti da produttori di armi e accessori. Un sondaggio Ipsos Doxa 2026 per la Fondazione Cappellino mostra che solo il 3 % degli italiani sostiene le nuove norme, mentre il 91 % vuole mantenere la legge attuale e il 75 % desidera ridurre o abolire la caccia amatoriale. La mancanza di studi scientifici su larga scala sull’impatto della caccia ricreativa rende difficile valutare se le affermazioni ambientali siano un vero contributo o un caso di greenwashing.</p>
+
+<p>Quando i dati sono disponibili, i risultati sono contrastanti: una review di 26 studi del Department of Fish, Wildlife and Conservation Biology (USA) evidenzia effetti sia positivi che negativi a seconda delle circostanze; una review del James Hutton Institute sulla caccia degli uccelli giunge a conclusioni analoghe. L’analisi più ampia (oltre 1000 articoli dal 1953 al 2020) su grandi mammiferi e uccelli in Europa, Nord‑America e Africa dichiara “assenza di prove per rispondere alla domanda sul dove e come la caccia ricreativa contribuisca a sforzi di conservazione equi e sostenibili”.</p>
+
+<p>Il ragionamento dei fautori parte dall’assunto che, senza cacciatori, mancherebbero fattori di controllo e la fauna crescerebbe fuori misura. Tuttavia, il solo Paese senza caccia ricreativa, il Costa Rica, è ecologicamente diverso dall’Italia. Studi della no‑profit svizzera IG Wild su dieci grandi aree protette in Svizzera, Germania, Austria e Italia mostrano scenari non apocalittici: nel Parco Nazionale Svizzero (senza caccia dal 1914) cervi e camosci sono in equilibrio; nei Kalkalpen austriaci la foresta si rigenera meglio; lince, lupo e gatto selvatico hanno rioccupato le loro nicchie.</p>
+
+<p>Il caso del cinghiale evidenzia la complessità: la pressione dei lupi regola la popolazione, ma la caccia elimina i maschi dominanti, spingendo le femmine a accoppiarsi con più maschi non dominanti e aumentando la natalità. Dal 2015‑2021 il prelievo di cinghiali è aumentato del 45 % (≈300 000 abbattimenti annui), ma la popolazione è cresciuta, con danni agricoli. In Cabañeros (Spagna), l’assenza di lupi e il divieto di caccia dal 2020 hanno provocato una crescita incontrollata dei cinghiali.</p>
+
+<p>Queste evidenze suggeriscono che la gestione scientifica della fauna richiede abbattimenti mirati da parte di organismi di monitoraggio, non una ricetta unica. L’ISPRA segnala, però, un calo cronico dei finanziamenti, con un ulteriore taglio di 14 milioni di euro nel 2023, minacciando più di 100 lavoratori precari. Senza risorse adeguate per ricerche a lungo termine, è più facile per i gruppi di pressione dell’industria venatoria sostenere la caccia ricreativa, avvolgendola in una patina di “green”.</p>
+
+<ol>
+<li><strong>Il ddl 1552 amplia drasticamente le possibilità di caccia, riducendo il ruolo vincolante dell’ISPRA.</strong></li>
+<li><strong>Le associazioni venatorie promuovono la caccia con un linguaggio ambientale, ma il settore è strettamente legato a interessi economici del mercato delle armi.</strong></li>
+<li><strong>Le indagini d’opinione mostrano un forte scetticismo pubblico verso le nuove norme.</strong></li>
+<li><strong>Le evidenze scientifiche disponibili sono contrastanti e non confermano un contributo positivo della caccia alla conservazione.</strong></li>
+<li><strong>La carenza di finanziamenti per l’ISPRA limita la ricerca a lungo termine, favorendo il discorso di “greenwashing” da parte dei gruppi di pressione.</strong></li>
+</ol>
+    
+    <hr>
+    <p><a href="https://www.iltascabile.com/scienze/greenwashing-caccia/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.iltascabile.com/scienze/greenwashing-caccia/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-greenwashing-della-caccia.jpg" length="0" type="image/jpeg"/>
+      <pubDate>Mon, 02 Nov 2026 18:02:55 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-greenwashing-della-caccia.jpg" type="image/jpeg" medium="image"/>
+        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-greenwashing-della-caccia.jpg"/>
+      </media:group>
+    </item>
+    <item>
+      <title>Il mondo e la terra. Come preservarli?</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/7ae708a76e17c3b8.html</link>
+      <description>Nel contesto della “notte più buia” della democrazia europea, è stata accesa una piccola luce: una delle due proposte grafiche per le nuove banconote dell’area euro è stata sviluppata intorno al tema dei fiumi e dell’avifauna del continente, scelta estetica ma anche simbolicamente rilevante, che celebra un’estetica “più‑che‑umana” e suggerisce una ibridazione concettuale tra mondo naturale e mondo culturale.
+
+David Van Reybrouck, nella collana Idee di Feltrinelli, ha dedicato un breve pamphlet, Il mondo e la terra. Come preservarli? , alla necessità di superare lo scisma tra “mondo” e “Terra”. L’autore parte dall’assunto che “non può esserci una politica mondiale senza una politica della terra”, sostenendo che la diplomazia planetaria debba mettere al centro la raison de Terre anziché la tradizionale raison d’État .
+
+Van Reybrouck ricostruisce l’evoluzione della diplomazia europea, dal bilaterismo a un concerto multilaterale di sovranità nazionali, evidenziandone le fallacie. Evidenzia che ora la Terra stessa, con fenomeni come eventi meteorologici estremi, acidificazione degli oceani, innalzamento del livello dei mari, scarsità d’acqua dolce, migrazioni di massa, pandemie, intelligenza artificiale e questioni di riservatezza digitale, sta facendo sentire le proprie necessità diplomatiche.
+
+Un esempio virtuoso è l’ Assemblea mondiale avviata nel 2021: 675 candidati rappresentativi della popolazione mondiale hanno partecipato per dodici settimane al primo panel climatico di persone comuni, firmando la Dichiarazione dell’Assemblea mondiale dei popoli per il futuro sostenibile del pianeta Terra. L’autore collega questo progetto a un paradigma ecosocialista, in cui il tempo dedicato all’Assemblea sia riconosciuto e retribuito.
+
+L’analisi di Van Reybrouck, però, manca di un esplicito posizionamento politico: sebbene nomini le lobby finanziarie e industriali che erodono la Conferenza delle Parti (COP), non attribuisce apertamente la responsabilità della crisi climatica al sistema capitalista. Il testo richiama anche pratiche femministe, conflitti di distribuzione, e la necessità di una nuova visione della legge in cui la natura sia soggetto, oltre che oggetto e risorsa.
+
+Vengono citati esempi di violenza contro attivisti ambientali (Chico Mendes in Brasile, 1988; Ken Saro‑Wiwa in Nigeria, 1995) e il “decennio della temerarietà” segnalato da Global Witness (2022) con 1 700 attivisti uccisi. Si menziona inoltre il primo Tribunale internazionale per i Diritti della Natura, riunitosi nel 2014 a Quito, con successivi incontri in Ecuador, Stati Uniti, Australia, Perù e Francia.
+
+• Design delle nuove banconote euro basato su fiumi e avifauna, simbolo di integrazione natura‑cultura.
+
+• Diplomazia planetaria necessaria per affrontare le emergenze ambientali e tecnologiche contemporanee.
+
+• Assemblea mondiale 2021 come modello di partecipazione globale e di rappresentanza popolare.
+
+• Critica al mancato posizionamento politico del pamphlet rispetto al ruolo del capitalismo nella crisi climatica.
+
+• Riconoscimento dei diritti della natura attraverso tribunali internazionali e la necessità di una legge che consideri la natura come soggetto.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-mondo-e-la-terra_1.png"><img src="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-mondo-e-la-terra_1.png" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Nel contesto della “notte più buia” della democrazia europea, è stata accesa una piccola luce: una delle due proposte grafiche per le nuove banconote dell’area euro è stata sviluppata intorno al tema dei fiumi e dell’avifauna del continente, scelta estetica ma anche simbolicamente rilevante, che celebra un’estetica “più‑che‑umana” e suggerisce una ibridazione concettuale tra mondo naturale e mondo culturale.</p>
+
+<p>David Van Reybrouck, nella collana <em>Idee</em> di Feltrinelli, ha dedicato un breve pamphlet, <strong>Il mondo e la terra. Come preservarli?</strong>, alla necessità di superare lo scisma tra “mondo” e “Terra”. L’autore parte dall’assunto che “non può esserci una politica mondiale senza una politica della terra”, sostenendo che la diplomazia planetaria debba mettere al centro la <em>raison de Terre</em> anziché la tradizionale <em>raison d’État</em>.</p>
+
+<p>Van Reybrouck ricostruisce l’evoluzione della diplomazia europea, dal bilaterismo a un concerto multilaterale di sovranità nazionali, evidenziandone le fallacie. Evidenzia che ora la Terra stessa, con fenomeni come eventi meteorologici estremi, acidificazione degli oceani, innalzamento del livello dei mari, scarsità d’acqua dolce, migrazioni di massa, pandemie, intelligenza artificiale e questioni di riservatezza digitale, sta facendo sentire le proprie necessità diplomatiche.</p>
+
+<p>Un esempio virtuoso è l’<strong>Assemblea mondiale</strong> avviata nel 2021: 675 candidati rappresentativi della popolazione mondiale hanno partecipato per dodici settimane al primo panel climatico di persone comuni, firmando la Dichiarazione dell’Assemblea mondiale dei popoli per il futuro sostenibile del pianeta Terra. L’autore collega questo progetto a un paradigma ecosocialista, in cui il tempo dedicato all’Assemblea sia riconosciuto e retribuito.</p>
+
+<p>L’analisi di Van Reybrouck, però, manca di un esplicito posizionamento politico: sebbene nomini le lobby finanziarie e industriali che erodono la Conferenza delle Parti (COP), non attribuisce apertamente la responsabilità della crisi climatica al sistema capitalista. Il testo richiama anche pratiche femministe, conflitti di distribuzione, e la necessità di una nuova visione della legge in cui la natura sia soggetto, oltre che oggetto e risorsa.</p>
+
+<p>Vengono citati esempi di violenza contro attivisti ambientali (Chico Mendes in Brasile, 1988; Ken Saro‑Wiwa in Nigeria, 1995) e il “decennio della temerarietà” segnalato da Global Witness (2022) con 1 700 attivisti uccisi. Si menziona inoltre il primo Tribunale internazionale per i Diritti della Natura, riunitosi nel 2014 a Quito, con successivi incontri in Ecuador, Stati Uniti, Australia, Perù e Francia.</p>
+
+<ol>
+<li><strong>Design delle nuove banconote euro</strong> basato su fiumi e avifauna, simbolo di integrazione natura‑cultura.</li>
+<li><strong>Diplomazia planetaria</strong> necessaria per affrontare le emergenze ambientali e tecnologiche contemporanee.</li>
+<li><strong>Assemblea mondiale 2021</strong> come modello di partecipazione globale e di rappresentanza popolare.</li>
+<li><strong>Critica al mancato posizionamento politico</strong> del pamphlet rispetto al ruolo del capitalismo nella crisi climatica.</li>
+<li><strong>Riconoscimento dei diritti della natura</strong> attraverso tribunali internazionali e la necessità di una legge che consideri la natura come soggetto.</li>
+</ol>
+    
+    <hr>
+    <p><a href="https://www.iltascabile.com/recensioni/mondo-terra-preservarli-david-van-reybrouck/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.iltascabile.com/recensioni/mondo-terra-preservarli-david-van-reybrouck/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-mondo-e-la-terra_1.png" length="0" type="image/png"/>
+      <pubDate>Fri, 30 Oct 2026 14:55:41 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-mondo-e-la-terra_1.png" type="image/png" medium="image"/>
+        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-mondo-e-la-terra_1.png"/>
+      </media:group>
+    </item>
+    <item>
+      <title>La fauna cadaverica delle controculture</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/eafa89b9c1bd32da.html</link>
+      <description>Per celebrare i dieci anni del Tascabile , l’archivio viene riaperto e le collaboratrici e i collaboratori confrontano i pezzi del passato per ricostruire le trasformazioni culturali e sociali avvenute nell’ultimo decennio. Giulia Moriconi, curatrice dello speciale, apre con un ricordo personale: a diciassette anni, attratta dall’estetica goth di EMP, incontra su Internet un “punkabbestia” che la porta in una casa occupata, ex manicomio riconvertito a spazio autogestito. Lì, tra jam improvvisate, fumo, mascara e la consapevolezza che il punk poteva trasformare ospedali psichiatrici in luoghi gratuiti di espressione, nasce la percezione di un movimento privo di gerarchie, dove “senza dio né stato né patriarcato” il punk è “una cosa in cui ti trovi fottutamente male quando sei una pezza cencia con una mano infilata nel culo chiamata paura”.
+
+Dieci anni dopo, Moriconi risponde all’invito di collegare i vecchi articoli del Tascabile al presente, criticando l’articolo “No future” di Alessandro Siciliano (2020). Siciliano sostiene che il grido “No future” di Johnny Rotten (1977) non spiega più la produzione delle avanguardie, riducendo il punk a “puro edonismo kitsch senza futuro”. L’autrice contesta questa tesi, evidenziando che Siciliano confonde controcultura e subcultura: i Sex Pistols, secondo Torazine 666, sono più un’espressione di subcultura, già sussunte dal mainstream, che una vera controcultura dialettica.
+
+Il punk, inteso come controcultura, si fonda su pratiche libertarie: lo “squatting” (occupazione di immobili sfitto) come contestazione della proprietà privata e mutuo aiuto comunitario, collegato al DIY (autoproduzione, artigianato, erbe medicinali). Come scrive Eduardo Galeano, “L’utopia è come l’orizzonte… l’orizzonte è irraggiungibile. E allora, a cosa serve l’utopia? A questo serve, per continuare a camminare”. Questo camminare si manifesta in spazi come il Mezcal Squat a Torino, la Palestra Lupo a Catania, l’L38 e il Bencivenga a Roma, tutti minacciati da sgomberi e repressione statale (es. maxi‑operazione del 16 giugno contro anarchiche italiane).
+
+Il testo denuncia la narrazione dominante che dipinge gli squat come “parassiti”, mentre lo Stato ne riconosce il potenziale sovversivo. Vengono citati esempi di pratiche radicali – hackmeeting, TAZ nei parchetti, autodeterminazione anche nell’autodistruzione – contrapponendoli a una visione più tradizionale, come quella di Graziano Graziani (2018), che glorifica gli spazi occupati come incubatori artistici ma resta legata a una teleologia filoaristotelica. In sintesi, il decennio ha visto il punk evolversi da subcultura musicale a rete di pratiche libertarie, ancora in lotta con il potere e con la sua stessa immagine nel discorso pubblico.
+
+Graziani osserva che è paradossale il fatto che nessuno abbia ancora sfruttato il patrimonio di spazi, idee, energie e socialità delle controculture, come avviene in altre città europee (Berlino, Zurigo, Praga). Consolidare questo “strato intermedio” significherebbe renderlo più forte, evitando che a ogni tornata elettorale vengano annullati percorsi di venti o trent’anni, ma implicherebbe anche che la politica rinunci al “diritto di vita o di morte” che oggi esercita con burocrazia e finanziamenti instabili. Gli spazi sociali nati dal basso dovrebbero essere considerati patrimonio della città e della cittadinanza, non frutto di un’intercessione politica.
+
+Graziani cita l’ex occupazione del Köpi a Berlino, “un recinto zoologico dove la mattina trotterellano bimbx in gita ammiccando ai graffiti e la sera si scalmano a suon di punk”, ma dove “se durante un corteo tenti con la bomboletta un cerchio e una saetta non autorizzati vieni ridancianamente obliterato dalla pula”. Allo stesso modo menziona le “aspre critiche di intrallazzi con la giunta comunale all’ex‑OPG a Napoli”, città esempio per la legalizzazione dei centri sociali.
+
+Ibáñez, citato nell’articolo, afferma: “L’anarchismo è il suo tempo espresso nelle lotte contro i domini… l’anarchismo è necessariamente mutevole e che i suoi cambiamenti sono in fase con quelli che attraversano i domini stessi”. Nell’epilogo ribadisce che l’anarchismo si basa “sull’assenza di principi”, cioè non trascendenti, né universali, né immutabili, ma contingenti e immanenti alle pratiche storicamente situate. Da qui nasce l’idea che la resistenza debba mutare con il potere, forse riappropriandosi del processo di decomposizione per sopravvivere.
+
+Faida Acquifera, illustrando una mostra della palude, scrive: “in un mondo che ci obbliga alla perfezione a vivere i nostri corpi‑mente come eterni work‑in‑progress… io preferisco marcire”. Il “galeone” nato dal poema di Belgrado Pedrini (Fossombrone, 1967) fu messo in musica da Paola Nicolazzi con il titolo originale “Schiavi!”.
+
+Daniele Cassandro, nel Tascabile (2016), collega la morte di David Bowie, Prince, Leonard Cohen e George Michael alla trasformazione della cultura giovanile in “un canone” museale, prevedendo che gli artisti saranno studiati all’università e non più visti sul palco. Egli descrive il 2016 come “surreale” per l’ascesa di Trump, la diffusione di fake news, la tecnosorveglianza e la perdita di un nome per il nemico, che diventa anche “noi stessi”.
+
+Il testo critica le strategie di “media intimi” o di “creatività veramente distruttiva” proposte da Hakim Bey, e mette in dubbio la mercificazione della soggettività. L’“immediatismo” di Immediatismo è definito come “l’unico vero stato possibile dell’arte”, una pratica di détournement situazionista che si autodistrugge come un torneo a due‑tre‑stella.
+
+Viene poi elencata la crescente digitalizzazione e archiviazione della controcultura: il micromapping della club culture su Zero.eu, l’archivio delle fanzine punk su Fanzinet, l’elenco di occupazioni su Radarsquat, il calendario su Gancio, le riedizioni di Torazine, mostre su Frigidaire, festival vari.
+
+Il saggio, pubblicato da pochi mesi, riprende la teoria della trilogia *Il problema dei tre corpi* di Liu Cixin: ogni manifestazione della propria esistenza nel cosmo diventa bersaglio di un’intelligenza aliena ostile, riconducibile al cyberspazio e a un algoritmo eldritchiano. Poiché non possiamo esimerci dal comunicare, la questione va intesa come “militanza linguistica”, come affermavano William Burroughs e Kathy Acker (vedi l’approfondimento di Tiziana Lo Porto nella prefazione di *Sangue e viscere al liceo*, 2023, sul Tascabile ). Con il linguaggio sperimentale cercavano di rimuovere o rimischiare il senso per sfuggire al dominio del Verbo, che “crea, e se sei creatx sei rimagnabile dal Media”.
+
+Per sconfiggere Valis (citazione di Philip Dick) occorre accettare che la parola “punk” è ormai in avanzata decomposizione. Un articolo del 2020 sul Tascabile descrive i Qashqa’i, comunità nomade dell’altopiano iranico, come “punk inconsapevoli”. Cristina Cecchi osserva che “la terra che occupano… è dello Stato o è di qualcuno a cui pagano un affitto simbolico… non hanno proprietà privata e vengono lasciati in pace da chi ha un pezzo di carta con sopra scritto che quella montagna è sua”. Prima degli anni Settanta “punk” significava semplicemente “teppista”, intersezione tra bassa criminalità e iconoclastia, ripudio delle leggi legislative e del buon costume. Dagli anni Settanta il termine è stato risignificato in un insieme di connotati musicali e pratiche libertarie, mantenendo il rifiuto delle gerarchie; oggi, a partire dai Sex Pistols e Vivienne Westwood, si è ricodificato soprattutto in un’estetica mediatica e beffa delle norme, permettendo di essere iconoclasti senza mettere realmente in pericolo il sistema.
+
+Negli articoli più recenti, il Tascabile si sta svincolando dall’ansia di mappatura e museologizzazione, puntando a una critica più onesta della sussunzione delle controculture. Tra questi: “California, cannabis e capitale” di Franco Cimei (23 giugno 2025), “Controculture hippie e cyber, ‘comune’ e sussunzione capitalistica” di Antonio Semproni (4 giugno 2026), e “Da Castelporziano all’eternità crip” di Diana Ligorio (5 agosto 2026), che riporta la citazione di Ginsberg: “I corpi di Ginsberg… sono brutti, insanguinati e sofferenti, e sembrano sempre alla ricerca di qualcosa nel viaggio attraverso l’America che la poesia descrive”. Nella zine *Il quartino* (estate, 7 chakras) ABAC scrive: “l’illuminismo psichedelico è appena cominciato e già finito, siamo dei drogati e ammetterlo senza fronzoli forse ci aiuterebbe ad avanzare come umanità”. L’autore ricorda il proprio pezzo “Misticismo sufi e rock’n’roll” (19 novembre).
+
+• Il punk è passato da subcultura musicale a rete di pratiche libertarie basate su squatting, DIY e mutuo aiuto.
+
+• Le controculture continuano a essere criminalizzate dallo Stato, nonostante il loro potenziale sovversivo e il riconoscimento di spazi occupati come patrimonio urbano.
+
+• L’anarchismo è presentato come pratica contingente, priva di principi universali, che deve mutare in risposta al potere dominante.
+
+• La digitalizzazione (micromapping, archivi online, riedizioni) sta trasformando la memoria delle controculture, ma rischia di musealizzarle.
+
+• Il significato di “punk” è in decomposizione: da “teppista” a estetica mediatica, con il rischio di perdere la capacità di minacciare realmente il sistema.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/10/La-fauna-cadaverica-delle-controculture_Testo.png"><img src="https://www.iltascabile.com/wp-content/uploads/2026/10/La-fauna-cadaverica-delle-controculture_Testo.png" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Per celebrare i dieci anni del <em>Tascabile</em>, l’archivio viene riaperto e le collaboratrici e i collaboratori confrontano i pezzi del passato per ricostruire le trasformazioni culturali e sociali avvenute nell’ultimo decennio. Giulia Moriconi, curatrice dello speciale, apre con un ricordo personale: a diciassette anni, attratta dall’estetica goth di EMP, incontra su Internet un “punkabbestia” che la porta in una casa occupata, ex manicomio riconvertito a spazio autogestito. Lì, tra jam improvvisate, fumo, mascara e la consapevolezza che il punk poteva trasformare ospedali psichiatrici in luoghi gratuiti di espressione, nasce la percezione di un movimento privo di gerarchie, dove “senza dio né stato né patriarcato” il punk è “una cosa in cui ti trovi fottutamente male quando sei una pezza cencia con una mano infilata nel culo chiamata paura”.</p>  
+
+<p>Dieci anni dopo, Moriconi risponde all’invito di collegare i vecchi articoli del <em>Tascabile</em> al presente, criticando l’articolo “No future” di Alessandro Siciliano (2020). Siciliano sostiene che il grido “No future” di Johnny Rotten (1977) non spiega più la produzione delle avanguardie, riducendo il punk a “puro edonismo kitsch senza futuro”. L’autrice contesta questa tesi, evidenziando che Siciliano confonde controcultura e subcultura: i Sex Pistols, secondo Torazine 666, sono più un’espressione di subcultura, già sussunte dal mainstream, che una vera controcultura dialettica.</p>  
+
+<p>Il punk, inteso come controcultura, si fonda su pratiche libertarie: lo “squatting” (occupazione di immobili sfitto) come contestazione della proprietà privata e mutuo aiuto comunitario, collegato al DIY (autoproduzione, artigianato, erbe medicinali). Come scrive Eduardo Galeano, “L’utopia è come l’orizzonte… l’orizzonte è irraggiungibile. E allora, a cosa serve l’utopia? A questo serve, per continuare a camminare”. Questo camminare si manifesta in spazi come il Mezcal Squat a Torino, la Palestra Lupo a Catania, l’L38 e il Bencivenga a Roma, tutti minacciati da sgomberi e repressione statale (es. maxi‑operazione del 16 giugno contro anarchiche italiane).</p>  
+
+<p>Il testo denuncia la narrazione dominante che dipinge gli squat come “parassiti”, mentre lo Stato ne riconosce il potenziale sovversivo. Vengono citati esempi di pratiche radicali – hackmeeting, TAZ nei parchetti, autodeterminazione anche nell’autodistruzione – contrapponendoli a una visione più tradizionale, come quella di Graziano Graziani (2018), che glorifica gli spazi occupati come incubatori artistici ma resta legata a una teleologia filoaristotelica. In sintesi, il decennio ha visto il punk evolversi da subcultura musicale a rete di pratiche libertarie, ancora in lotta con il potere e con la sua stessa immagine nel discorso pubblico.</p>  
+
+<p>Graziani osserva che è paradossale il fatto che nessuno abbia ancora sfruttato il patrimonio di spazi, idee, energie e socialità delle controculture, come avviene in altre città europee (Berlino, Zurigo, Praga). Consolidare questo “strato intermedio” significherebbe renderlo più forte, evitando che a ogni tornata elettorale vengano annullati percorsi di venti o trent’anni, ma implicherebbe anche che la politica rinunci al “diritto di vita o di morte” che oggi esercita con burocrazia e finanziamenti instabili. Gli spazi sociali nati dal basso dovrebbero essere considerati patrimonio della città e della cittadinanza, non frutto di un’intercessione politica.</p>  
+
+<p>Graziani cita l’ex occupazione del Köpi a Berlino, “un recinto zoologico dove la mattina trotterellano bimbx in gita ammiccando ai graffiti e la sera si scalmano a suon di punk”, ma dove “se durante un corteo tenti con la bomboletta un cerchio e una saetta non autorizzati vieni ridancianamente obliterato dalla pula”. Allo stesso modo menziona le “aspre critiche di intrallazzi con la giunta comunale all’ex‑OPG a Napoli”, città esempio per la legalizzazione dei centri sociali.</p>  
+
+<p>Ibáñez, citato nell’articolo, afferma: “L’anarchismo è il suo tempo espresso nelle lotte contro i domini… l’anarchismo è necessariamente mutevole e che i suoi cambiamenti sono in fase con quelli che attraversano i domini stessi”. Nell’epilogo ribadisce che l’anarchismo si basa “sull’assenza di principi”, cioè non trascendenti, né universali, né immutabili, ma contingenti e immanenti alle pratiche storicamente situate. Da qui nasce l’idea che la resistenza debba mutare con il potere, forse riappropriandosi del processo di decomposizione per sopravvivere.</p>  
+
+<p>Faida Acquifera, illustrando una mostra della palude, scrive: “in un mondo che ci obbliga alla perfezione a vivere i nostri corpi‑mente come eterni work‑in‑progress… io preferisco marcire”. Il “galeone” nato dal poema di Belgrado Pedrini (Fossombrone, 1967) fu messo in musica da Paola Nicolazzi con il titolo originale “Schiavi!”.</p>  
+
+<p>Daniele Cassandro, nel <em>Tascabile</em> (2016), collega la morte di David Bowie, Prince, Leonard Cohen e George Michael alla trasformazione della cultura giovanile in “un canone” museale, prevedendo che gli artisti saranno studiati all’università e non più visti sul palco. Egli descrive il 2016 come “surreale” per l’ascesa di Trump, la diffusione di fake news, la tecnosorveglianza e la perdita di un nome per il nemico, che diventa anche “noi stessi”.</p>  
+
+<p>Il testo critica le strategie di “media intimi” o di “creatività veramente distruttiva” proposte da Hakim Bey, e mette in dubbio la mercificazione della soggettività. L’“immediatismo” di Immediatismo è definito come “l’unico vero stato possibile dell’arte”, una pratica di détournement situazionista che si autodistrugge come un torneo a due‑tre‑stella.</p>  
+
+<p>Viene poi elencata la crescente digitalizzazione e archiviazione della controcultura: il micromapping della club culture su Zero.eu, l’archivio delle fanzine punk su Fanzinet, l’elenco di occupazioni su Radarsquat, il calendario su Gancio, le riedizioni di Torazine, mostre su Frigidaire, festival vari.</p>  
+
+<p>Il saggio, pubblicato da pochi mesi, riprende la teoria della trilogia *Il problema dei tre corpi* di Liu Cixin: ogni manifestazione della propria esistenza nel cosmo diventa bersaglio di un’intelligenza aliena ostile, riconducibile al cyberspazio e a un algoritmo eldritchiano. Poiché non possiamo esimerci dal comunicare, la questione va intesa come “militanza linguistica”, come affermavano William Burroughs e Kathy Acker (vedi l’approfondimento di Tiziana Lo Porto nella prefazione di *Sangue e viscere al liceo*, 2023, sul <em>Tascabile</em>). Con il linguaggio sperimentale cercavano di rimuovere o rimischiare il senso per sfuggire al dominio del Verbo, che “crea, e se sei creatx sei rimagnabile dal Media”.</p>  
+
+<p>Per sconfiggere Valis (citazione di Philip Dick) occorre accettare che la parola “punk” è ormai in avanzata decomposizione. Un articolo del 2020 sul <em>Tascabile</em> descrive i Qashqa’i, comunità nomade dell’altopiano iranico, come “punk inconsapevoli”. Cristina Cecchi osserva che “la terra che occupano… è dello Stato o è di qualcuno a cui pagano un affitto simbolico… non hanno proprietà privata e vengono lasciati in pace da chi ha un pezzo di carta con sopra scritto che quella montagna è sua”. Prima degli anni Settanta “punk” significava semplicemente “teppista”, intersezione tra bassa criminalità e iconoclastia, ripudio delle leggi legislative e del buon costume. Dagli anni Settanta il termine è stato risignificato in un insieme di connotati musicali e pratiche libertarie, mantenendo il rifiuto delle gerarchie; oggi, a partire dai Sex Pistols e Vivienne Westwood, si è ricodificato soprattutto in un’estetica mediatica e beffa delle norme, permettendo di essere iconoclasti senza mettere realmente in pericolo il sistema.</p>  
+
+<p>Negli articoli più recenti, il <em>Tascabile</em> si sta svincolando dall’ansia di mappatura e museologizzazione, puntando a una critica più onesta della sussunzione delle controculture. Tra questi: “California, cannabis e capitale” di Franco Cimei (23 giugno 2025), “Controculture hippie e cyber, ‘comune’ e sussunzione capitalistica” di Antonio Semproni (4 giugno 2026), e “Da Castelporziano all’eternità crip” di Diana Ligorio (5 agosto 2026), che riporta la citazione di Ginsberg: “I corpi di Ginsberg… sono brutti, insanguinati e sofferenti, e sembrano sempre alla ricerca di qualcosa nel viaggio attraverso l’America che la poesia descrive”. Nella zine *Il quartino* (estate, 7 chakras) ABAC scrive: “l’illuminismo psichedelico è appena cominciato e già finito, siamo dei drogati e ammetterlo senza fronzoli forse ci aiuterebbe ad avanzare come umanità”. L’autore ricorda il proprio pezzo “Misticismo sufi e rock’n’roll” (19 novembre).</p>  
+
+<ol>
+<li><strong>Il punk è passato da subcultura musicale a rete di pratiche libertarie basate su squatting, DIY e mutuo aiuto.</strong></li>
+<li><strong>Le controculture continuano a essere criminalizzate dallo Stato, nonostante il loro potenziale sovversivo e il riconoscimento di spazi occupati come patrimonio urbano.</strong></li>
+<li><strong>L’anarchismo è presentato come pratica contingente, priva di principi universali, che deve mutare in risposta al potere dominante.</strong></li>
+<li><strong>La digitalizzazione (micromapping, archivi online, riedizioni) sta trasformando la memoria delle controculture, ma rischia di musealizzarle.</strong></li>
+<li><strong>Il significato di “punk” è in decomposizione: da “teppista” a estetica mediatica, con il rischio di perdere la capacità di minacciare realmente il sistema.</strong></li>
+</ol>
+    
+    <hr>
+    <p><a href="https://www.iltascabile.com/linguaggi/fauna-cadaverica-controculture/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.iltascabile.com/linguaggi/fauna-cadaverica-controculture/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/10/La-fauna-cadaverica-delle-controculture_Testo.png" length="0" type="image/png"/>
+      <pubDate>Thu, 29 Oct 2026 15:05:37 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/10/La-fauna-cadaverica-delle-controculture_Testo.png" type="image/png" medium="image"/>
+        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/10/La-fauna-cadaverica-delle-controculture_Testo.png"/>
+      </media:group>
+    </item>
+    <item>
+      <title>La Torre che crolla</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/8843d637f09cb385.html</link>
+      <description>Nel racconto di The Soft Machine (1961) l’agente senza nome, capace di saltare da un corpo all’altro, si infiltra nella civiltà maya e scopre che i sacerdoti governano con un “calendario‑macchina” che predetermina sentimenti e desideri. Quando l’agente lo manomette, il sistema crolla: i contadini rompono le file, la folla assalta il tempio, i sacerdoti sono travolti e i libri sacri bruciano. La prosa, già frammentata dal cut‑up, si riduce a grida mantra – “bruciate i libri, uccidete i sacerdoti” – fino al rumore di qualcosa che crolla, la carta dei tarocchi XVI, la Torre.
+
+Nei mazzi di Marsiglia, belgi e Rider‑Waite la Torre è rappresentata da un edificio colpito da un fulmine, con due figure che cadono, simbolo di catastrofe imprevista e di decapitazione del pensiero materialista. La carta indica non condanna ma liberazione improvvisa, perché ciò che cade è costruito male e deve essere ricostruito.
+
+L’autrice collega questa immagine alle proteste italiane del 17 ottobre a Piazza Duomo, dove giovani neri hanno lanciato petardi e “bombe carta”, mentre sotto le vetrine di Corso Vittorio Emanuele si celebravano le esequie di un patto infranto. I media hanno etichettato i manifestanti con termini zoologici (“baby gang”, “giovani barbari”), ignorando le ragioni profonde. Lo Stato ha risposto con leggi repressive, tra cui il nuovo reato di “violenza organizzata nelle manifestazioni pubbliche”, punibile fino a cinque anni, e il fermo preventivo per i sedicenni.
+
+Burroughs, in The Limits of Control (1978), avverte che il controllo serve a mantenere un vantaggio relativo; oggi il calendario dei sacerdoti è il nuovo ordine che stabilisce in anticipo quale rabbia è tollerabile. La generazione attuale, definita “snowflake”, è stata anestetizzata da un flusso continuo di contenuti, ma la rabbia accumulata è emersa come una febbre lenta, alimentata da promesse infrante, crisi abitativa, climatica e migratoria. L’autrice conclude che l’attuale era dell’Acquario, con Plutone in Acquario fino al 2044, segna un periodo di collettivo e disobbedienza, in cui “la parola è ormai un virus”, capace di replicarsi senza catene e di colpire direttamente i nervi e i desideri.
+
+Nel secondo segmento si ribadisce che i sacerdoti maya non governano con le armi ma con il tempo, tramite libri illeggibili al popolo: codici privi di verità se non di incomprensibilità. I contadini vivono dentro il calendario come se fosse aria, credendo in un ordine naturale, eterno, divino; questa invisibilità rende il controllo efficace.
+
+Gilles Deleuze, nel Post‑scriptum sur les sociétés de contrôle (1990), individua il nuovo potere, ereditato da Burroughs, non più basato su spazi chiusi (fabbrica, prigione, scuola) ma su una modulazione continua di codici, accessi e password. L’individuo diventa “dividuale”, frammentato in dati e campioni di mercato, immerso in calendari di notifiche e algoritmi che decidono ciò che vediamo, desideriamo e temiamo. Una nuova casta di sacerdoti – ingegneri, investitori, proprietari di piattaforme – celebra messe in auditorium immacolati, promette un futuro luminoso mentre consuma il pianeta e stringe patti con governi repressivi.
+
+L’agente di The Soft Machine osserva che “i sacerdoti stessi non capiscono esattamente come funziona il sistema”. La rabbia attuale, non improvvisa ma sedimentata, è politica, lucida e irrefrenabile. Burroughs afferma in Naked Lunch (1962) che “il controllo non può mai essere un mezzo per un fine pratico… solo per altro controllo”. Quando il calendario diventa visibile, i sacerdoti crollano: la generazione riprende ciò che le è stato tolto.
+
+In Serbia, il movimento studentesco nato dalla tragedia della pensilina di Novi Sad ha vinto le elezioni parlamentari, dimostrando che la rabbia, con una grammatica, può diventare governo. Deleuze avverte che non è tempo di paura né di speranza, ma di cercare nuove armi. Nelle piazze del 23 venerdì, il potere appare come una muraglia immobile; una ragazza alzava un lenzuolo giallo con la parola “ASCOLTO” in rosso sbavato, simbolo di disponibilità che frantuma il muro e costruisce un ponte. Il fiume in piena sotto il ponte, pur travolgente, porta un limo fertile da cui, prima o poi, germoglierà qualcosa di nuovo.
+
+• Il “calendario‑macchina” dei sacerdoti maya rappresenta un controllo del tempo che, una volta sabotato, provoca il crollo del potere.
+
+• Le proteste italiane del 17 ottobre e la risposta repressiva dello Stato illustrano la dinamica di etichettatura mediatica e criminalizzazione della dissidenza.
+
+• Secondo Burroughs e Deleuze, il controllo contemporaneo si esercita attraverso codici, algoritmi e piattaforme, trasformando gli individui in “dividu​ali”.
+
+• La carta dei tarocchi “La Torre” simboleggia una liberazione improvvisa da strutture costruite male, parallelamente alle rivolte studentesche in Serbia.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/10/La-Torre-che-crolla.jpg"><img src="https://www.iltascabile.com/wp-content/uploads/2026/10/La-Torre-che-crolla.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Nel racconto di <em>The Soft Machine</em> (1961) l’agente senza nome, capace di saltare da un corpo all’altro, si infiltra nella civiltà maya e scopre che i sacerdoti governano con un “calendario‑macchina” che predetermina sentimenti e desideri. Quando l’agente lo manomette, il sistema crolla: i contadini rompono le file, la folla assalta il tempio, i sacerdoti sono travolti e i libri sacri bruciano. La prosa, già frammentata dal cut‑up, si riduce a grida mantra – “bruciate i libri, uccidete i sacerdoti” – fino al rumore di qualcosa che crolla, la carta dei tarocchi XVI, la Torre.</p>  
+
+<p>Nei mazzi di Marsiglia, belgi e Rider‑Waite la Torre è rappresentata da un edificio colpito da un fulmine, con due figure che cadono, simbolo di catastrofe imprevista e di decapitazione del pensiero materialista. La carta indica non condanna ma liberazione improvvisa, perché ciò che cade è costruito male e deve essere ricostruito.</p>  
+
+<p>L’autrice collega questa immagine alle proteste italiane del 17 ottobre a Piazza Duomo, dove giovani neri hanno lanciato petardi e “bombe carta”, mentre sotto le vetrine di Corso Vittorio Emanuele si celebravano le esequie di un patto infranto. I media hanno etichettato i manifestanti con termini zoologici (“baby gang”, “giovani barbari”), ignorando le ragioni profonde. Lo Stato ha risposto con leggi repressive, tra cui il nuovo reato di “violenza organizzata nelle manifestazioni pubbliche”, punibile fino a cinque anni, e il fermo preventivo per i sedicenni.</p>  
+
+<p>Burroughs, in <em>The Limits of Control</em> (1978), avverte che il controllo serve a mantenere un vantaggio relativo; oggi il calendario dei sacerdoti è il nuovo ordine che stabilisce in anticipo quale rabbia è tollerabile. La generazione attuale, definita “snowflake”, è stata anestetizzata da un flusso continuo di contenuti, ma la rabbia accumulata è emersa come una febbre lenta, alimentata da promesse infrante, crisi abitativa, climatica e migratoria. L’autrice conclude che l’attuale era dell’Acquario, con Plutone in Acquario fino al 2044, segna un periodo di collettivo e disobbedienza, in cui “la parola è ormai un virus”, capace di replicarsi senza catene e di colpire direttamente i nervi e i desideri.</p>  
+
+<p>Nel secondo segmento si ribadisce che i sacerdoti maya non governano con le armi ma con il tempo, tramite libri illeggibili al popolo: codici privi di verità se non di incomprensibilità. I contadini vivono dentro il calendario come se fosse aria, credendo in un ordine naturale, eterno, divino; questa invisibilità rende il controllo efficace.</p>  
+
+<p>Gilles Deleuze, nel <em>Post‑scriptum sur les sociétés de contrôle</em> (1990), individua il nuovo potere, ereditato da Burroughs, non più basato su spazi chiusi (fabbrica, prigione, scuola) ma su una modulazione continua di codici, accessi e password. L’individuo diventa “dividuale”, frammentato in dati e campioni di mercato, immerso in calendari di notifiche e algoritmi che decidono ciò che vediamo, desideriamo e temiamo. Una nuova casta di sacerdoti – ingegneri, investitori, proprietari di piattaforme – celebra messe in auditorium immacolati, promette un futuro luminoso mentre consuma il pianeta e stringe patti con governi repressivi.</p>  
+
+<p>L’agente di <em>The Soft Machine</em> osserva che “i sacerdoti stessi non capiscono esattamente come funziona il sistema”. La rabbia attuale, non improvvisa ma sedimentata, è politica, lucida e irrefrenabile. Burroughs afferma in <em>Naked Lunch</em> (1962) che “il controllo non può mai essere un mezzo per un fine pratico… solo per altro controllo”. Quando il calendario diventa visibile, i sacerdoti crollano: la generazione riprende ciò che le è stato tolto.</p>  
+
+<p>In Serbia, il movimento studentesco nato dalla tragedia della pensilina di Novi Sad ha vinto le elezioni parlamentari, dimostrando che la rabbia, con una grammatica, può diventare governo. Deleuze avverte che non è tempo di paura né di speranza, ma di cercare nuove armi. Nelle piazze del 23 venerdì, il potere appare come una muraglia immobile; una ragazza alzava un lenzuolo giallo con la parola “ASCOLTO” in rosso sbavato, simbolo di disponibilità che frantuma il muro e costruisce un ponte. Il fiume in piena sotto il ponte, pur travolgente, porta un limo fertile da cui, prima o poi, germoglierà qualcosa di nuovo.</p>  
+
+<ol>
+<li><strong>Il “calendario‑macchina” dei sacerdoti maya rappresenta un controllo del tempo che, una volta sabotato, provoca il crollo del potere.</strong></li>
+<li><strong>Le proteste italiane del 17 ottobre e la risposta repressiva dello Stato illustrano la dinamica di etichettatura mediatica e criminalizzazione della dissidenza.</strong></li>
+<li><strong>Secondo Burroughs e Deleuze, il controllo contemporaneo si esercita attraverso codici, algoritmi e piattaforme, trasformando gli individui in “dividu​ali”.</strong></li>
+<li><strong>La carta dei tarocchi “La Torre” simboleggia una liberazione improvvisa da strutture costruite male, parallelamente alle rivolte studentesche in Serbia.</strong></li>
+<li><strong>L’era dell’Acquario (Plutone in Acquario fino al 2044) è descritta come un periodo di disobbedienza collettiva, dove la parola diventa un “virus” capace di ricostruire il futuro
+    
+    <hr>
+    <p><a href="https://www.iltascabile.com/letterature/torre-crolla/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.iltascabile.com/letterature/torre-crolla/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/10/La-Torre-che-crolla.jpg" length="0" type="image/jpeg"/>
+      <pubDate>Wed, 28 Oct 2026 14:58:33 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/10/La-Torre-che-crolla.jpg" type="image/jpeg" medium="image"/>
+        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/10/La-Torre-che-crolla.jpg"/>
+      </media:group>
+    </item>
+    <item>
+      <title>L’immagine qualunquista della politica</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/aa31e2a16adc0801.html</link>
+      <description>Origini e sviluppo del qualunquismo . Il primo articolo di fondo di L’Uomo qualunque (Roma, dicembre 1944) si concludeva con la frase “Io sono quello che non crede più a niente e a nessuno. Io sono l’Uomo Qualunque”, firmata dal direttore Guglielmo Giannini (1891‑1960). Questo segna l’avvento del qualunquismo, un fenomeno dirompente che, in pochi anni, conquistò centinaia di migliaia di copie, fondò il Fronte dell’Uomo qualunque (FUQ) e ottenne più di un milione di voti alle elezioni dell’Assemblea costituente del 1946, superando azionisti, repubblicani e monarchici. Il frontespizio del settimanale mostrava un torchio gigante che schiaccia un pover’uomo, con la scritta “Abbasso tutti!”, a simboleggere il potere politico come pericolo sociale da cui difendersi.
+
+Giannini presentava il movimento come una reazione alla rapida partitizzazione della transizione democratica, definendolo un “ombrello” per antidemocratici (anche neofascisti) mascherati da corsari controcorrente. Dopo la guerra, costruì un “porto franco” per l’individuo dissociato dalla collettività, difensore dei propri interessi patrimoniali. Il suo messaggio interclassista si rivolgeva a chi era allergico alla sovraesposizione politica, diffidente verso le istanze progressiste e temeva che l’antifascismo nascondesse una vena oltranzista. Giannini proponeva di “disciplinare i disciplinatori” (L’Uomo qualunque, 7 feb 1945) e affermava che “l’ineguaglianza è la legge fatale… solo davanti alla morte gli uomini sono uguali” (24 ott 1945).
+
+Il qualunquismo, definito da *L’Arno* come “Folla”, lanciava una requisitoria contro gli “Uomini Politici Professionali” (UPP). Giannini esaltava la “Folla” apolitica, ritenuta più virtuosa perché priva di potere, e chiedeva che nessuno “ci rompa più i coglioni”. Proponeva un’autogestione antipolitica resa possibile dal progresso tecnico, con un “buon ragioniere” che entra in carica per un anno e poi se ne va, e ipotizzava l’estrazione a sorte di rappresentanti non politici, capaci di amministrare senza condizionamenti esterni. Il suo progetto limitava le prerogative di partiti e sindacati, riduceva le funzioni statali (anche la vendita di tabacchi e sale) e voleva depurare la politica da ideologie e slanci emotivi.
+
+Alle elezioni del 1948 Giannini aderì al Blocco nazionale, ma i risultati furono deludenti e il FUQ scomparve nella Guerra Fredda. Il qualunquismo italiano, però, anticipa la moderna fascinazione post‑democratica per la depoliticizzazione del potere. La vignetta del torchio rimane un simbolo irriverente della percezione contemporanea del potere politico come fonte di disgrazie.
+
+Risonanze culturali contemporanee . Il film V per Vendetta (James McTeigue, 2005), divenuto manifesto di rivolta, presenta una forte carica iconoclasta – “il potere deturpa, piega, sporca” – ma si discosta dal fumetto di Alan Moore (1982‑85) soprattutto nel finale: nel film la liberazione si realizza distruggendo lo spazio politico (esplosione del Parlamento britannico), mentre nel fumetto l’assenza di potere politico rischia una regressione verso un vuoto antimoderno privo di giustizia e uguaglianza, lasciando il futuro “tragicamente aperto” (Wu Ming).
+
+La meritocrazia è descritta come il riflesso del sogno qualunquista: una democrazia spoliticizzata con un potere stabile e uniforme, priva del fastidio della scelta. In M. Il figlio del secolo (2025) il Mussolini di Antonio Scurati è mostrato come un opportunista, ipocrita e demagogo, un “UPP senza vergogna” che cerca il potere per il potere, per poi essere fagocitato da esso. La narrazione insiste sulla necessità di tenersi alla larga dal potere politico per salvare la pluralità non politica, identificata con la cittadinanza.
+
+Nel XXI secolo si osserva un crescente disincanto per la politica affiancato da un incanto per la tecnica, basato sull’idea che la gestione efficiente delle società avanzate possa prescindere da conflitti e compromessi. Questa “immunizzazione del potere dal politico” è legata al qualunquismo e a una cultura liberal‑liberista che vuole tutelare la libertà privata dall’invadenza della politica. La tradizione liberale, da Ludwig von Mises e Friedrich von Hayek a Joseph Schumpeter, Raymond Aron e Karl Popper, ha elogiato il disimpegno politico come freno al potere.
+
+Michele Cento (2023, *Ideologia atlantica*) descrive un’ideologia anti‑ideologica che, nella “guerra fredda culturale”, ridimensiona la legittimità dei costrutti politici‑ideologici. Il liberalismo contemporaneo, antitrasformativo, promuove libertà d’espressione, d’impresa e di consumo, celebrando la moderazione antipolitica per evitare destabilizzazioni. Con il neoliberal turn degli anni ’70‑’80 e il neoconservatorismo, il legame tra potere e politica si è sfilacciato; Milton Friedman (1972) afferma che non si può essere simultaneamente difensori dei principi egualitari e di quelli liberali.
+
+Il risultato è una democrazia ridotta a meccanismo selettivo, dove l’individualismo possessivo sostituisce l’individualismo democratico. Nadia Urbinati (2012) denuncia un’“utopia antipolitica” priva di fondamento, mentre Michele Prospero (2018, *La Ribellione conservatrice*) evidenzia la convergenza tra l’antipolitica del mercato e quella degli attori irregolari, entrambi ostili alla casta del potere.
+
+Prospettive post‑democratiche e criticità attuali . Nel contesto attuale, caratterizzato da nuove incognite quali il cambiamento climatico e l’intelligenza artificiale, si stanno promuovendo soluzioni post‑democratiche che richiamano un razionalismo scientifico estremo. Si cita l’epistocrazia proposta dalle scienze sociali statunitensi, secondo cui il diritto di voto dovrebbe essere subordinato all’acquisizione di conoscenze specialistiche per migliorare la qualità delle decisioni pubbliche. Parallelamente, emergono scenari ambigui che evocano un “feudalesimo ingegneristico”, di cui il Dark Enlightenment è l’ultimo prodotto. Il motto aziendale della Silicon Valley “Move fast and break things” è divenuto un inno all’innovazione che rompe regole e cautele in nome dell’avvenire, contribuendo a spazzare via le “pastoie democratiche”.
+
+Fuori dalla politica si assiste a un caotico processo di selezione innaturale, mascherato da prototipo di convivenza civile. L’autore individua il problema centrale come un’asimmetria di potere: la democrazia, ormai matura e depoliticizzata, si riduce a un dispositivo di contenimento che gerarchizza le scelte sulla testa delle collettività, diventando una forma di governo passiva, un “argine di sabbia” incapace di trattenere le onde in arrivo. La disarticolazione della politica non controlla più gli interessi forti, ma favorisce la disintermediazione degli interessi deboli, frammentati e incapaci di contarsi.
+
+Ne risulta una concentrazione insidiosa di ricchezza, risorse e relazioni, accompagnata da un linguaggio di rassegnazione veicolato da narrazioni geopolitiche deterministiche e da immaginari cospirazionisti. La distanza tra chi detiene o può aspirare al potere e chi, una volta indeboliti i contropoteri democratici, fatica a trattenerlo o a usarlo, si allarga. Si approfondisce la voragine tra i pochi che possono perseguire la felicità e i molti che non la nominano più.
+
+Per invertire questa rotta, l’autore propone di pensare storicamente il presente e di immaginare ipotesi di futuro critiche, alzando le ambizioni senza temere di spiazzare chi credeva che la democrazia costituzionale, pluralista e propulsiva potesse avere un domani senza ambizioni. È necessario mettere da parte le immagini sedative e regressive della democrazia. Come scrisse nel 1946 *La nuova Europa*, la rivista fondata dallo storico antifascista Luigi Salvatorelli, “la vecchia scemenza dell’antipoliticismo, dello Stato puramente tecnico o amministrativo”, oggi definita tecnocrazia, nella pratica “sotto pretesto politicamente, e nel dominio di questa amministrazione per conto del partito unico qualunquista: fascismo, cioè, al cento per cento”.
+
+• Il qualunquismo nasce come risposta al caos partitico post‑bellico, proponendo una “Folla” apolitica e l’autogestione tramite sorteggio.
+
+• Le proposte di Giannini miravano a ridurre il ruolo di partiti, sindacati e funzioni statali, immaginando un potere “non intralciatore”.
+
+• Il sogno qualunquista si riflette nella cultura contemporanea: meritocrazia, film come V per Vendetta , serie M. Il figlio del secolo e la crescente fiducia nella tecnica rispetto alla politica.
+
+• Il liberalismo e il neoliberalismo hanno rafforzato l’antipolitica, promuovendo una democrazia selettiva e un individualismo possessivo.
+
+• Le attuali proposte post‑democratiche (epistocrazia, Dark Enlightenment, “feudalesimo ingegneristico”) accentuano l’asimmetria di potere, minando la capacità della democrazia di contenere gli interessi forti.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/10/Limmagine-qualunquista-della-politica.jpg"><img src="https://www.iltascabile.com/wp-content/uploads/2026/10/Limmagine-qualunquista-della-politica.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p><strong>Origini e sviluppo del qualunquismo</strong>. Il primo articolo di fondo di <em>L’Uomo qualunque</em> (Roma, dicembre 1944) si concludeva con la frase “Io sono quello che non crede più a niente e a nessuno. Io sono l’Uomo Qualunque”, firmata dal direttore Guglielmo Giannini (1891‑1960). Questo segna l’avvento del qualunquismo, un fenomeno dirompente che, in pochi anni, conquistò centinaia di migliaia di copie, fondò il Fronte dell’Uomo qualunque (FUQ) e ottenne più di un milione di voti alle elezioni dell’Assemblea costituente del 1946, superando azionisti, repubblicani e monarchici. Il frontespizio del settimanale mostrava un torchio gigante che schiaccia un pover’uomo, con la scritta “Abbasso tutti!”, a simboleggere il potere politico come pericolo sociale da cui difendersi.</p>  
+
+<p>Giannini presentava il movimento come una reazione alla rapida partitizzazione della transizione democratica, definendolo un “ombrello” per antidemocratici (anche neofascisti) mascherati da corsari controcorrente. Dopo la guerra, costruì un “porto franco” per l’individuo dissociato dalla collettività, difensore dei propri interessi patrimoniali. Il suo messaggio interclassista si rivolgeva a chi era allergico alla sovraesposizione politica, diffidente verso le istanze progressiste e temeva che l’antifascismo nascondesse una vena oltranzista. Giannini proponeva di “disciplinare i disciplinatori” (L’Uomo qualunque, 7 feb 1945) e affermava che “l’ineguaglianza è la legge fatale… solo davanti alla morte gli uomini sono uguali” (24 ott 1945).</p>  
+
+<p>Il qualunquismo, definito da *L’Arno* come “Folla”, lanciava una requisitoria contro gli “Uomini Politici Professionali” (UPP). Giannini esaltava la “Folla” apolitica, ritenuta più virtuosa perché priva di potere, e chiedeva che nessuno “ci rompa più i coglioni”. Proponeva un’autogestione antipolitica resa possibile dal progresso tecnico, con un “buon ragioniere” che entra in carica per un anno e poi se ne va, e ipotizzava l’estrazione a sorte di rappresentanti non politici, capaci di amministrare senza condizionamenti esterni. Il suo progetto limitava le prerogative di partiti e sindacati, riduceva le funzioni statali (anche la vendita di tabacchi e sale) e voleva depurare la politica da ideologie e slanci emotivi.</p>  
+
+<p>Alle elezioni del 1948 Giannini aderì al Blocco nazionale, ma i risultati furono deludenti e il FUQ scomparve nella Guerra Fredda. Il qualunquismo italiano, però, anticipa la moderna fascinazione post‑democratica per la depoliticizzazione del potere. La vignetta del torchio rimane un simbolo irriverente della percezione contemporanea del potere politico come fonte di disgrazie.</p>  
+
+<p><strong>Risonanze culturali contemporanee</strong>. Il film <em>V per Vendetta</em> (James McTeigue, 2005), divenuto manifesto di rivolta, presenta una forte carica iconoclasta – “il potere deturpa, piega, sporca” – ma si discosta dal fumetto di Alan Moore (1982‑85) soprattutto nel finale: nel film la liberazione si realizza distruggendo lo spazio politico (esplosione del Parlamento britannico), mentre nel fumetto l’assenza di potere politico rischia una regressione verso un vuoto antimoderno privo di giustizia e uguaglianza, lasciando il futuro “tragicamente aperto” (Wu Ming).</p>  
+
+<p>La meritocrazia è descritta come il riflesso del sogno qualunquista: una democrazia spoliticizzata con un potere stabile e uniforme, priva del fastidio della scelta. In <em>M. Il figlio del secolo</em> (2025) il Mussolini di Antonio Scurati è mostrato come un opportunista, ipocrita e demagogo, un “UPP senza vergogna” che cerca il potere per il potere, per poi essere fagocitato da esso. La narrazione insiste sulla necessità di tenersi alla larga dal potere politico per salvare la pluralità non politica, identificata con la cittadinanza.</p>  
+
+<p>Nel XXI secolo si osserva un crescente disincanto per la politica affiancato da un incanto per la tecnica, basato sull’idea che la gestione efficiente delle società avanzate possa prescindere da conflitti e compromessi. Questa “immunizzazione del potere dal politico” è legata al qualunquismo e a una cultura liberal‑liberista che vuole tutelare la libertà privata dall’invadenza della politica. La tradizione liberale, da Ludwig von Mises e Friedrich von Hayek a Joseph Schumpeter, Raymond Aron e Karl Popper, ha elogiato il disimpegno politico come freno al potere.</p>  
+
+<p>Michele Cento (2023, *Ideologia atlantica*) descrive un’ideologia anti‑ideologica che, nella “guerra fredda culturale”, ridimensiona la legittimità dei costrutti politici‑ideologici. Il liberalismo contemporaneo, antitrasformativo, promuove libertà d’espressione, d’impresa e di consumo, celebrando la moderazione antipolitica per evitare destabilizzazioni. Con il neoliberal turn degli anni ’70‑’80 e il neoconservatorismo, il legame tra potere e politica si è sfilacciato; Milton Friedman (1972) afferma che non si può essere simultaneamente difensori dei principi egualitari e di quelli liberali.</p>  
+
+<p>Il risultato è una democrazia ridotta a meccanismo selettivo, dove l’individualismo possessivo sostituisce l’individualismo democratico. Nadia Urbinati (2012) denuncia un’“utopia antipolitica” priva di fondamento, mentre Michele Prospero (2018, *La Ribellione conservatrice*) evidenzia la convergenza tra l’antipolitica del mercato e quella degli attori irregolari, entrambi ostili alla casta del potere.</p>  
+
+<p><strong>Prospettive post‑democratiche e criticità attuali</strong>. Nel contesto attuale, caratterizzato da nuove incognite quali il cambiamento climatico e l’intelligenza artificiale, si stanno promuovendo soluzioni post‑democratiche che richiamano un razionalismo scientifico estremo. Si cita l’epistocrazia proposta dalle scienze sociali statunitensi, secondo cui il diritto di voto dovrebbe essere subordinato all’acquisizione di conoscenze specialistiche per migliorare la qualità delle decisioni pubbliche. Parallelamente, emergono scenari ambigui che evocano un “feudalesimo ingegneristico”, di cui il Dark Enlightenment è l’ultimo prodotto. Il motto aziendale della Silicon Valley “Move fast and break things” è divenuto un inno all’innovazione che rompe regole e cautele in nome dell’avvenire, contribuendo a spazzare via le “pastoie democratiche”.</p>  
+
+<p>Fuori dalla politica si assiste a un caotico processo di selezione innaturale, mascherato da prototipo di convivenza civile. L’autore individua il problema centrale come un’asimmetria di potere: la democrazia, ormai matura e depoliticizzata, si riduce a un dispositivo di contenimento che gerarchizza le scelte sulla testa delle collettività, diventando una forma di governo passiva, un “argine di sabbia” incapace di trattenere le onde in arrivo. La disarticolazione della politica non controlla più gli interessi forti, ma favorisce la disintermediazione degli interessi deboli, frammentati e incapaci di contarsi.</p>  
+
+<p>Ne risulta una concentrazione insidiosa di ricchezza, risorse e relazioni, accompagnata da un linguaggio di rassegnazione veicolato da narrazioni geopolitiche deterministiche e da immaginari cospirazionisti. La distanza tra chi detiene o può aspirare al potere e chi, una volta indeboliti i contropoteri democratici, fatica a trattenerlo o a usarlo, si allarga. Si approfondisce la voragine tra i pochi che possono perseguire la felicità e i molti che non la nominano più.</p>  
+
+<p>Per invertire questa rotta, l’autore propone di pensare storicamente il presente e di immaginare ipotesi di futuro critiche, alzando le ambizioni senza temere di spiazzare chi credeva che la democrazia costituzionale, pluralista e propulsiva potesse avere un domani senza ambizioni. È necessario mettere da parte le immagini sedative e regressive della democrazia. Come scrisse nel 1946 *La nuova Europa*, la rivista fondata dallo storico antifascista Luigi Salvatorelli, “la vecchia scemenza dell’antipoliticismo, dello Stato puramente tecnico o amministrativo”, oggi definita tecnocrazia, nella pratica “sotto pretesto politicamente, e nel dominio di questa amministrazione per conto del partito unico qualunquista: fascismo, cioè, al cento per cento”.</p>  
+
+<ol>
+<li><strong>Il qualunquismo nasce come risposta al caos partitico post‑bellico, proponendo una “Folla” apolitica e l’autogestione tramite sorteggio.</strong></li>
+<li><strong>Le proposte di Giannini miravano a ridurre il ruolo di partiti, sindacati e funzioni statali, immaginando un potere “non intralciatore”.</strong></li>
+<li><strong>Il sogno qualunquista si riflette nella cultura contemporanea: meritocrazia, film come <em>V per Vendetta</em>, serie <em>M. Il figlio del secolo</em> e la crescente fiducia nella tecnica rispetto alla politica.</strong></li>
+<li><strong>Il liberalismo e il neoliberalismo hanno rafforzato l’antipolitica, promuovendo una democrazia selettiva e un individualismo possessivo.</strong></li>
+<li><strong>Le attuali proposte post‑democratiche (epistocrazia, Dark Enlightenment, “feudalesimo ingegneristico”) accentuano l’asimmetria di potere, minando la capacità della democrazia di contenere gli interessi forti.</strong></li>
+</ol>
+    
+    <hr>
+    <p><a href="https://www.iltascabile.com/societa/limmagine-qualunquista-politica/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.iltascabile.com/societa/limmagine-qualunquista-politica/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/10/Limmagine-qualunquista-della-politica.jpg" length="0" type="image/jpeg"/>
+      <pubDate>Tue, 27 Oct 2026 14:14:28 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/10/Limmagine-qualunquista-della-politica.jpg" type="image/jpeg" medium="image"/>
+        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/10/Limmagine-qualunquista-della-politica.jpg"/>
+      </media:group>
+    </item>
+  </channel>
+</rss>
