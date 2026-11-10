@@ -3,11 +3,13 @@ import re
 import json
 import time
 import socket
+import unicodedata
 import urllib.parse
 import hashlib
 import shutil
 from html import escape, unescape
 from datetime import datetime, timezone, timedelta
+from zoneinfo import ZoneInfo
 import requests
 import cloudscraper
 import feedparser
@@ -60,6 +62,10 @@ FONTI = [
 DATABASE_FILE = "feed_database.json"
 FEED_OUTPUT = "feed_sintesi.xml"
 FEED_OUTPUT_IMMAGINI = "feed_contemporary_art_daily.xml"
+FEED_OUTPUT_PER_FONTE = "feed_per_fonte.xml"  # stesse voci del feed principale, raggruppate per fonte
+FEEDS_DIR = "feeds"                           # un feed per ogni fonte
+OPML_PER_FONTE = "rassegna_per_fonte.opml"
+CDN_SITE = "https://cdn.jsdelivr.net/gh/lorenzoromani367/NewsFeed@main/"
 FEED_SITE = "https://lorenzoromani367.github.io/NewsFeed/"
 VERSIONE_CACHE = "v18"
 
@@ -944,6 +950,98 @@ def voci_recenti(db, articoli_giro, fonti, per_fonte):
         risultato += voci[:per_fonte]
     return risultato
 
+VOCI_PER_FONTE_SINGOLA = 10  # voci nel feed di una singola fonte
+
+def slug_fonte(nome):
+    """'IrpiMedia (Inchieste)' -> 'irpimedia-inchieste': nome del file del feed di una fonte."""
+    base = unicodedata.normalize("NFKD", nome).encode("ascii", "ignore").decode()
+    return re.sub(r"[^a-z0-9]+", "-", base.lower()).strip("-")
+
+def percorso_feed_fonte(fonte):
+    return f"{FEEDS_DIR}/{slug_fonte(fonte['nome'])}.xml"
+
+def data_italiana(iso):
+    try:
+        dt = datetime.fromisoformat(iso)
+    except (TypeError, ValueError):
+        return ""
+    try: dt = dt.astimezone(ZoneInfo("Europe/Rome"))
+    except Exception: pass
+    return f"{dt.day} {MESI_IT[dt.month - 1]} {dt.year}"
+
+def ordina_per_fonte(voci, fonti, passo=timedelta(minutes=1), soglia=timedelta(minutes=45)):
+    """Copie delle voci con una data di ordinamento (pubdate_feed) che tiene insieme
+    quelle di una stessa fonte: un reader che sa ordinare solo per data le mostra
+    raggruppate. Le fonti con voci nuove nello stesso giro (teste a meno di `soglia`
+    l'una dall'altra) formano un blocco, nell'ordine di FONTI; i blocchi vanno dal più
+    recente. Nel gruppo le voci stanno a un minuto di distanza dalla più recente.
+    La data vera resta in published."""
+    gruppi = []
+    for i, f in enumerate(fonti):
+        prefisso = f"{f['nome']}: "
+        g = sorted((v for v in voci if v["title"].startswith(prefisso) and v.get("published")),
+                   key=lambda x: x["published"], reverse=True)
+        if g: gruppi.append((i, g))
+    gruppi.sort(key=lambda ig: ig[1][0]["published"], reverse=True)
+    blocchi = []  # ogni blocco: data della testa più recente, data dell'ultima testa aggiunta, gruppi
+    for i, g in gruppi:
+        testa = datetime.fromisoformat(g[0]["published"])
+        if blocchi and blocchi[-1][1] - testa <= soglia:
+            blocchi[-1][1] = testa
+            blocchi[-1][2].append((i, g))
+        else:
+            blocchi.append([testa, testa, [(i, g)]])
+    risultato, tetto = [], None  # tetto: la data più bassa usata dal gruppo precedente
+    for cima, _, gruppi_blocco in blocchi:
+        for _, g in sorted(gruppi_blocco, key=lambda ig: ig[0]):
+            testa = cima if tetto is None or cima < tetto else tetto - passo
+            risultato += [{**v, "pubdate_feed": (testa - passo * j).isoformat()} for j, v in enumerate(g)]
+            tetto = testa - passo * (len(g) - 1)
+    return risultato
+
+def scrivi_opml_per_fonte(fonti):
+    """OPML con un feed per ogni fonte (e Contemporary Art Daily): importandolo nel reader
+    ogni fonte diventa una sorgente a sé, che si può aprire, nascondere o spostare in una categoria."""
+    righe = "".join(
+        f'      <outline type="rss" text="{escape(f["nome"])}" title="{escape(f["nome"])}" '
+        f'xmlUrl="{CDN_SITE}{FEED_OUTPUT_IMMAGINI if f.get("tipo") == "immagini" else percorso_feed_fonte(f)}" htmlUrl="{FEED_SITE}"/>\n'
+        for f in fonti)
+    with open(OPML_PER_FONTE, "w", encoding="utf-8") as out:
+        out.write('<?xml version="1.0" encoding="UTF-8"?>\n<opml version="2.0">\n'
+                  '  <head><title>Rassegna Personale per fonte</title></head>\n  <body>\n'
+                  '    <outline text="Rassegna Personale" title="Rassegna Personale">\n' + righe +
+                  '    </outline>\n  </body>\n</opml>\n')
+
+def scrivi_index(fonti_std):
+    """Pagina iniziale del sito: elenco dei feed, e link <alternate> per i reader a cui si dà l'indirizzo del sito."""
+    feed = ([("Rassegna Personale Unificata", FEED_OUTPUT), ("Contemporary Art Daily", FEED_OUTPUT_IMMAGINI),
+             ("Rassegna Personale per fonte", FEED_OUTPUT_PER_FONTE)] + [(f["nome"], percorso_feed_fonte(f)) for f in fonti_std])
+    alternate = "".join(f'<link rel="alternate" type="application/rss+xml" title="{escape(t)}" href="{h}">\n' for t, h in feed)
+    elenco = "".join(f'<li><a href="{percorso_feed_fonte(f)}">{escape(f["nome"])}</a></li>\n' for f in fonti_std)
+    pagina = f"""<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rassegna Personale</title>
+{alternate}</head><body style="font-family:sans-serif;max-width:560px;margin:40px auto;padding:0 16px">
+<h1>Rassegna Personale</h1>
+<h2>Un solo feed</h2>
+<ul>
+<li><a href="{FEED_OUTPUT}">Feed principale</a>: tutte le fonti, in ordine di data</li>
+<li><a href="{FEED_OUTPUT_PER_FONTE}">Raggruppato per fonte</a>: le stesse voci, una fonte dopo l'altra</li>
+<li><a href="{FEED_OUTPUT_IMMAGINI}">Contemporary Art Daily</a></li>
+</ul>
+<h2>Una fonte alla volta</h2>
+<ul>
+{elenco}</ul>
+<h2>Tutto in uno (OPML)</h2>
+<ul>
+<li><a href="rassegna.opml">Feed principale e Contemporary Art Daily</a></li>
+<li><a href="{OPML_PER_FONTE}">Un feed per ogni fonte</a></li>
+</ul>
+</body></html>
+"""
+    with open("index.html", "w", encoding="utf-8") as out:
+        out.write(pagina)
+
 def pulisci_immagini_html(html):
     """Toglie da una scheda (anche vecchia) le immagini che non sono contenuto
     (pixel, icone, loghi) e scarta il wrapper dei CDN che avvolgono l'originale."""
@@ -978,7 +1076,7 @@ def completa_immagini(db, voci, max_per_giro=20):
         v["img_v"] = 1
         print(f"    [IMG] {v['title'][:50]} -> {len(immagini)} immagini aggiunte", flush=True)
 
-def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
+def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False, ordine_documento="prepend"):
     # Fonti diverse possono convergere sullo stesso link (fallback condivisi,
     # o pagine che ripescano le stesse sezioni generiche di un sito): la
     # cache in quel caso restituisce lo stesso record due volte. Deduplica
@@ -998,7 +1096,8 @@ def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
     fg.description(descrizione)
     fg.language("it")
 
-    for item in sorted(articoli_unici, key=lambda x: x.get("published", ""), reverse=True)[:120]:
+    # pubdate_feed (se presente) è la data di ordinamento del feed raggruppato per fonte; la data vera resta in published.
+    for item in sorted(articoli_unici, key=lambda x: x.get("pubdate_feed") or x.get("published", ""), reverse=True)[:120]:
         if ospita_img: item = ospita_immagini_item(item)
         item = {**item, "html_content": pulisci_immagini_html(item["html_content"])}
         copertina = item.get("image_url")
@@ -1007,15 +1106,17 @@ def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
         if copertina and copertina not in unescape(item["html_content"]):
             item["html_content"] = aggiungi_immagini_html(item["html_content"], [copertina])
         item["image_url"] = copertina
-        fe = fg.add_entry()
+        fe = fg.add_entry(order=ordine_documento)
         fe.id(item["id"])
-        fe.title(item["title"])
+        fe.title(item.get("titolo_feed") or item["title"])
         scrivi_pagina(item)
         fe.link(href=url_pagina(item["id"]))
         # Alcuni reader (es. Bulletin) mostrano il codice HTML come testo se il
         # contenuto non inizia direttamente con un tag: niente spazi/righe vuote iniziali.
         fe.content("<div>" + incornicia_immagini(item["html_content"].strip()) + "</div>", type="CDATA")
-        fe.description(estratto_testo(item))
+        riassunto = estratto_testo(item)
+        if item.get("pubdate_feed"): riassunto = f"Pubblicato il {data_italiana(item['published'])}\n\n{riassunto}"
+        fe.description(riassunto)
         if copertina:
             ext = copertina.split("?")[0].rsplit(".", 1)[-1].lower()
             tipo = {"png": "image/png", "webp": "image/webp", "gif": "image/gif"}.get(ext, "image/jpeg")
@@ -1027,7 +1128,7 @@ def genera_feed(articoli, output_file, titolo, descrizione, ospita_img=False):
         # documento — che feedgen inverte di default (ogni add_entry() fa un
         # "prepend"), facendo apparire in fondo gli articoli più recenti.
         try:
-            fe.pubDate(datetime.fromisoformat(item["published"]))
+            fe.pubDate(datetime.fromisoformat(item.get("pubdate_feed") or item["published"]))
         except (KeyError, ValueError):
             pass
     fg.rss_file(output_file, pretty=True)
@@ -1072,7 +1173,9 @@ def main():
     fonti_std = [f for f in FONTI if f.get("tipo") != "immagini"]
     fonti_img = [f for f in FONTI if f.get("tipo") == "immagini"]
     voci_std = voci_recenti(db, articoli, fonti_std, VOCI_PER_FONTE)
-    completa_immagini(db, voci_std)
+    id_std = {v["id"] for v in voci_std}
+    voci_fonti = voci_std + [v for v in voci_recenti(db, articoli, fonti_std, VOCI_PER_FONTE_SINGOLA) if v["id"] not in id_std]
+    completa_immagini(db, voci_fonti)
     for f in fonti_img: ripara_immagini_progetti(db, f)
     salva_database(db)
 
@@ -1091,6 +1194,16 @@ def main():
     # appena scaricate): se un sito blocca o va in timeout in un giro, le sue
     # ultime voci restano nel feed invece di sparire.
     genera_feed(voci_std, FEED_OUTPUT, "Rassegna Personale Unificata", "Sintesi IA e proxy anti-blocco.")
+    genera_feed(ordina_per_fonte(voci_std, fonti_std), FEED_OUTPUT_PER_FONTE, "Rassegna Personale per fonte",
+                "Le stesse voci del feed principale, raggruppate per fonte: in cima la fonte con l'articolo più recente. "
+                "Le date sono ravvicinate per tenere insieme le voci di una fonte; la data vera è nella prima riga.",
+                ordine_documento="append")
+    os.makedirs(FEEDS_DIR, exist_ok=True)
+    for f in fonti_std:
+        voci_f = [{**v, "titolo_feed": v["title"][len(f["nome"]) + 2:]} for v in voci_recenti(db, articoli, [f], VOCI_PER_FONTE_SINGOLA)]
+        genera_feed(voci_f, percorso_feed_fonte(f), f["nome"], f"{f['nome']} ({f['categoria']}): sintesi in italiano.", ordine_documento="append")
+    scrivi_opml_per_fonte(FONTI)
+    scrivi_index(fonti_std)
     genera_feed(digest_tutti[:8], FEED_OUTPUT_IMMAGINI, "Contemporary Art Daily", "Riepilogo di immagini due volte a settimana, senza sintesi né traduzione.", ospita_img=True)
 
     # Le pagine non si cancellano mai: i reader conservano le voci vecchie (anche di versioni
