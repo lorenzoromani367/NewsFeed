@@ -8,7 +8,80 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Wed, 11 Nov 2026 07:05:39 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 08:13:25 +0000</lastBuildDate>
+    <item>
+      <title>Spiati dai governi con spyware israeliani: perché in Europa nessuno paga</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/294ebc0552ac523d.html</link>
+      <description>IrpiMedia ha documentato una serie di casi di spionaggio digitale in Europa mediante spyware di origine israeliana, in particolare il software Predator venduto da Intellexa. Il caso più emblematico è quello del giornalista greco Thanasis Koukakis , che ha impiegato quasi cinque anni per ottenere una sentenza penale che riconoscesse lo spionaggio subito. Il 26 febbraio scorso, quattro manager di Intellexa, tra cui il fondatore Tal Dilian , ex comandante di un’unità dell’intelligence militare israeliana, sono stati condannati fino a otto anni di carcere per accesso illecito a sistemi informatici, violazione dei dati personali e della segretezza delle telecomunicazioni.
+
+Questa è la prima condanna penale di questo tipo in Europa, ma rimane un’eccezione. In Grecia è l’unico caso con sentenza penale; in Spagna, Ungheria, Polonia e Italia le vittime non hanno ottenuto nemmeno informazioni di base sulla sorveglianza, invocate con la motivazione di “sicurezza nazionale”. Rebecca White di Amnesty International denuncia una “doppia vittimizzazione”: violazione della privacy seguita da ostacoli giuridici dovuti a procedimenti lunghi, costosi e psicologicamente gravosi.
+
+Le raccomandazioni della commissione d’inchiesta parlamentare europea (PEGA), approvate il 15 giugno 2023, prevedevano un fondo europeo per le spese legali, un laboratorio indipendente per assistenza tecnica e forense, e l’obbligo per gli Stati di rafforzare garanzie, indagare sugli abusi e garantire ricorsi effettivi. A tre anni di distanza, Saskia Bricmont (Verdi) denuncia “il più grande fallimento” perché né la Commissione né gli Stati hanno attuato le misure. Sophie in ’t Veld , ex relatrice PEGA, afferma che i governi, sentendosi “intoccabili”, hanno continuato a usare spyware senza conseguenze, mentre la Commissione è stata “debole e codarda”.
+
+Il caso polacco di Krzysztof Brejza illustra l’uso di Pegasus per manipolare l’opinione pubblica: 85 000 messaggi rubati furono diffusi dalla TV nazionale per screditarlo durante la campagna elettorale contro il partito Diritto e Giustizia. La sorveglianza fu giustificata dal CBA con pretesti infondati. La commissione d’inchiesta istituita dopo l’insediamento di Donald Tusk ha confermato l’acquisto illegale di Pegasus, ma le vittime hanno ottenuto solo risarcimenti civili.
+
+Koukakis ha evidenziato che quasi un terzo delle vittime di Predator (2020‑2021) era stato anche intercettato telefonicamente dai servizi segreti greci, suggerendo una operazione coordinata: prima la sorveglianza digitale, poi l’invio di link contraffatti (es. messaggi su vaccinazioni Covid). Le autorità greche negano l’uso di Predator, sostenendo l’assenza di normativa all’epoca. Il tribunale di Atene ha trasmesso gli atti ai pubblici ministeri, ma il procuratore della Corte suprema ha rifiutato di riaprire l’indagine; Koukakis ha quindi presentato ricorso alla Corte europea dei diritti dell’uomo, denunciando l’inefficacia e la segretezza delle indagini statali.
+
+In Ungheria la legge consente la sorveglianza “nel rispetto della legge” senza rimedi per chi è preso di mira. In Spagna, nonostante la necessità di autorizzazione preventiva di un giudice del Tribunale supremo, Pegasus ha colpito membri del movimento indipendentista catalano, come documentato dal Citizen Lab (18 aprile 2022) in almeno 65 casi tra il 2017 e il 2020, inclusi esponenti di Òmnium Cultural. Elena Jiménez ha elencato le vittime, tra cui il vicepresidente Marcel Mauri e la moglie di Jordi Cuixart. Ron Deibert , fondatore del Citizen Lab, definisce il fenomeno una “pandemia di abusi”, sottolineando che gli spyware violano non solo la privacy ma anche i processi democratici, provocando trauma, PTSD e autocensura.
+
+In Italia, l’attivista Luca Casarini (Mediterranea Saving Humans) denuncia di essere stato classificato “minaccia per la sicurezza nazionale” e spiato con lo spyware Graphite dal governo Meloni, con motivazioni legate al presunto favoreggiamento dell’immigrazione clandestina. Casarini ritiene che l’obiettivo fosse raccogliere prove sui crimini contro i migranti in Libia e Tunisia, includendo gli abusi nel carcere di Mitiga. Anche David Yambio , rifugiato sudanese e presidente di Refugees in Libya, è finito nel mirino degli “007 italiani”.
+
+Il Copasir , organismo parlamentare che controlla i servizi segreti italiani, ha stabilito che la sorveglianza di Casarini, Caccia e Yambio è stata regolare e autorizzata dal procuratore generale della Corte d’appello di Roma, come previsto dalla legge. Casarini risponde: «Se è lecito spiare gli attivisti politici per cinque anni, significa che siamo uno Stato di polizia», lanciando un allarme sulla sorveglianza di massa.
+
+A livello europeo, il garante della protezione dei dati Wojciech Wiewiórowski afferma che mancano garanzie sufficienti per l’uso degli spyware nel rispetto del diritto alla privacy, soprattutto per prodotti come Pegasus. Non crede in una moratoria, sostenendo che gli Stati UE non rinunceranno mai a queste capacità e che occorre una soluzione che combini il diritto europeo con le decisioni dei Paesi membri.
+
+Koukakis propone una tracciabilità a livello europeo del “utilizzatore finale” dello spyware, per identificare chi ordina e chi esegue la sorveglianza in tempo reale. Rosita Rijtano , Bertha Challenge Fellow 2026, ricorda che l’inchiesta è stata realizzata con il supporto della Bertha Challenge Fellowship. Circa 7 500 persone hanno partecipato a una marcia di protesta contro la sorveglianza dei cittadini a Berlino l’11 settembre 2010.
+
+• La condanna penale di Intellexa in Grecia è l’unica in Europa, mentre in altri paesi le vittime non hanno ottenuto nemmeno informazioni di base sulla sorveglianza.
+
+• Le raccomandazioni della PEGA del 2023 non sono state attuate, lasciando le vittime senza supporto legale né garanzie tecniche.
+
+• Spyware come Predator, Pegasus e Graphite sono stati usati per scopi politici, elettorali e di controllo dell’immigrazione, spesso giustificati con la “sicurezza nazionale”.
+
+• Le autorità nazionali, dall’Ungheria all’Italia, hanno autorizzato la sorveglianza senza fornire rimedi efficaci alle vittime, creando una percezione di impunità.
+
+• Esperti europei chiedono una normativa comune che imponga tracciabilità e responsabilità per l’uso degli spyware, ma temono che una moratoria sia inefficace.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> IrpiMedia (Inchieste) | <strong>Ambito:</strong> <em>Inchiesta</em></p>
+    <hr>
+    <p><a class="zoom" href="https://irpimedia.irpi.eu/public/uploads/2026/11/europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti-cover.webp"><img src="https://irpimedia.irpi.eu/public/uploads/2026/11/europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti-cover.webp" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p><strong>IrpiMedia</strong> ha documentato una serie di casi di spionaggio digitale in Europa mediante spyware di origine israeliana, in particolare il software <em>Predator</em> venduto da Intellexa. Il caso più emblematico è quello del giornalista greco <strong>Thanasis Koukakis</strong>, che ha impiegato quasi cinque anni per ottenere una sentenza penale che riconoscesse lo spionaggio subito. Il 26 febbraio scorso, quattro manager di Intellexa, tra cui il fondatore <strong>Tal Dilian</strong>, ex comandante di un’unità dell’intelligence militare israeliana, sono stati condannati fino a otto anni di carcere per accesso illecito a sistemi informatici, violazione dei dati personali e della segretezza delle telecomunicazioni.</p>  
+
+<p>Questa è la prima condanna penale di questo tipo in Europa, ma rimane un’eccezione. In Grecia è l’unico caso con sentenza penale; in Spagna, Ungheria, Polonia e Italia le vittime non hanno ottenuto nemmeno informazioni di base sulla sorveglianza, invocate con la motivazione di “sicurezza nazionale”. <strong>Rebecca White</strong> di Amnesty International denuncia una “doppia vittimizzazione”: violazione della privacy seguita da ostacoli giuridici dovuti a procedimenti lunghi, costosi e psicologicamente gravosi.</p>  
+
+<p>Le raccomandazioni della commissione d’inchiesta parlamentare europea (PEGA), approvate il 15 giugno 2023, prevedevano un fondo europeo per le spese legali, un laboratorio indipendente per assistenza tecnica e forense, e l’obbligo per gli Stati di rafforzare garanzie, indagare sugli abusi e garantire ricorsi effettivi. A tre anni di distanza, <strong>Saskia Bricmont</strong> (Verdi) denuncia “il più grande fallimento” perché né la Commissione né gli Stati hanno attuato le misure. <strong>Sophie in ’t Veld</strong>, ex relatrice PEGA, afferma che i governi, sentendosi “intoccabili”, hanno continuato a usare spyware senza conseguenze, mentre la Commissione è stata “debole e codarda”.</p>  
+
+<p>Il caso polacco di <strong>Krzysztof Brejza</strong> illustra l’uso di <em>Pegasus</em> per manipolare l’opinione pubblica: 85 000 messaggi rubati furono diffusi dalla TV nazionale per screditarlo durante la campagna elettorale contro il partito Diritto e Giustizia. La sorveglianza fu giustificata dal CBA con pretesti infondati. La commissione d’inchiesta istituita dopo l’insediamento di Donald Tusk ha confermato l’acquisto illegale di Pegasus, ma le vittime hanno ottenuto solo risarcimenti civili.</p>  
+
+<p>Koukakis ha evidenziato che quasi un terzo delle vittime di Predator (2020‑2021) era stato anche intercettato telefonicamente dai servizi segreti greci, suggerendo una operazione coordinata: prima la sorveglianza digitale, poi l’invio di link contraffatti (es. messaggi su vaccinazioni Covid). Le autorità greche negano l’uso di Predator, sostenendo l’assenza di normativa all’epoca. Il tribunale di Atene ha trasmesso gli atti ai pubblici ministeri, ma il procuratore della Corte suprema ha rifiutato di riaprire l’indagine; Koukakis ha quindi presentato ricorso alla Corte europea dei diritti dell’uomo, denunciando l’inefficacia e la segretezza delle indagini statali.</p>  
+
+<p>In Ungheria la legge consente la sorveglianza “nel rispetto della legge” senza rimedi per chi è preso di mira. In Spagna, nonostante la necessità di autorizzazione preventiva di un giudice del Tribunale supremo, <em>Pegasus</em> ha colpito membri del movimento indipendentista catalano, come documentato dal Citizen Lab (18 aprile 2022) in almeno 65 casi tra il 2017 e il 2020, inclusi esponenti di Òmnium Cultural. <strong>Elena Jiménez</strong> ha elencato le vittime, tra cui il vicepresidente Marcel Mauri e la moglie di Jordi Cuixart. <strong>Ron Deibert</strong>, fondatore del Citizen Lab, definisce il fenomeno una “pandemia di abusi”, sottolineando che gli spyware violano non solo la privacy ma anche i processi democratici, provocando trauma, PTSD e autocensura.</p>  
+
+<p>In Italia, l’attivista <strong>Luca Casarini</strong> (Mediterranea Saving Humans) denuncia di essere stato classificato “minaccia per la sicurezza nazionale” e spiato con lo spyware <em>Graphite</em> dal governo Meloni, con motivazioni legate al presunto favoreggiamento dell’immigrazione clandestina. Casarini ritiene che l’obiettivo fosse raccogliere prove sui crimini contro i migranti in Libia e Tunisia, includendo gli abusi nel carcere di Mitiga. Anche <strong>David Yambio</strong>, rifugiato sudanese e presidente di Refugees in Libya, è finito nel mirino degli “007 italiani”.</p>  
+
+<p>Il <strong>Copasir</strong>, organismo parlamentare che controlla i servizi segreti italiani, ha stabilito che la sorveglianza di Casarini, Caccia e Yambio è stata regolare e autorizzata dal procuratore generale della Corte d’appello di Roma, come previsto dalla legge. Casarini risponde: «Se è lecito spiare gli attivisti politici per cinque anni, significa che siamo uno Stato di polizia», lanciando un allarme sulla sorveglianza di massa.</p>  
+
+<p>A livello europeo, il garante della protezione dei dati <strong>Wojciech Wiewiórowski</strong> afferma che mancano garanzie sufficienti per l’uso degli spyware nel rispetto del diritto alla privacy, soprattutto per prodotti come Pegasus. Non crede in una moratoria, sostenendo che gli Stati UE non rinunceranno mai a queste capacità e che occorre una soluzione che combini il diritto europeo con le decisioni dei Paesi membri.</p>  
+
+<p>Koukakis propone una tracciabilità a livello europeo del “utilizzatore finale” dello spyware, per identificare chi ordina e chi esegue la sorveglianza in tempo reale. <strong>Rosita Rijtano</strong>, Bertha Challenge Fellow 2026, ricorda che l’inchiesta è stata realizzata con il supporto della Bertha Challenge Fellowship. Circa 7 500 persone hanno partecipato a una marcia di protesta contro la sorveglianza dei cittadini a Berlino l’11 settembre 2010.</p>  
+
+<ol>  
+<li>La condanna penale di Intellexa in Grecia è l’unica in Europa, mentre in altri paesi le vittime non hanno ottenuto nemmeno informazioni di base sulla sorveglianza.</li>  
+<li>Le raccomandazioni della PEGA del 2023 non sono state attuate, lasciando le vittime senza supporto legale né garanzie tecniche.</li>  
+<li>Spyware come Predator, Pegasus e Graphite sono stati usati per scopi politici, elettorali e di controllo dell’immigrazione, spesso giustificati con la “sicurezza nazionale”.</li>  
+<li>Le autorità nazionali, dall’Ungheria all’Italia, hanno autorizzato la sorveglianza senza fornire rimedi efficaci alle vittime, creando una percezione di impunità.</li>  
+<li>Esperti europei chiedono una normativa comune che imponga tracciabilità e responsabilità per l’uso degli spyware, ma temono che una moratoria sia inefficace.</li>  
+</ol>
+    <p><a class="zoom" href="https://irpimedia.irpi.eu/public/uploads/2026/11/europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti-1.webp"><img src="https://irpimedia.irpi.eu/public/uploads/2026/11/europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti-1.webp" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://irpimedia.irpi.eu/public/uploads/2026/11/europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti-2.webp"><img src="https://irpimedia.irpi.eu/public/uploads/2026/11/europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti-2.webp" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://irpimedia.irpi.eu/public/uploads/2026/11/europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti-3.webp"><img src="https://irpimedia.irpi.eu/public/uploads/2026/11/europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti-3.webp" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <hr>
+    <p><a href="https://irpimedia.irpi.eu/europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://irpimedia.irpi.eu/europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti</guid>
+      <enclosure url="https://irpimedia.irpi.eu/public/uploads/2026/11/europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti-cover.webp" length="0" type="image/webp"/>
+      <pubDate>Wed, 11 Nov 2026 08:11:27 +0000</pubDate>
+      <media:group>
+        <media:content url="https://irpimedia.irpi.eu/public/uploads/2026/11/europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti-cover.webp" type="image/webp" medium="image"/>
+        <media:thumbnail url="https://irpimedia.irpi.eu/public/uploads/2026/11/europa-spyware-israeliani-per-spiare-attivisti-e-giornalisti-cover.webp"/>
+      </media:group>
+    </item>
     <item>
       <title>No Tav, circa 300 manifestanti ripresi dalla testa ai piedi: «Schedatura di massa»</title>
       <link>https://lorenzoromani367.github.io/NewsFeed/articoli/f7852e87c02a7abd.html</link>
@@ -508,57 +581,6 @@ La vicenda solleva interrogativi sul ruolo di Agcom, che non ha risposto alle ri
       <media:group>
         <media:content url="https://irpimedia.irpi.eu/public/uploads/2026/10/naza-google-rimuove-finto-documentario-cover.webp" type="image/webp" medium="image"/>
         <media:thumbnail url="https://irpimedia.irpi.eu/public/uploads/2026/10/naza-google-rimuove-finto-documentario-cover.webp"/>
-      </media:group>
-    </item>
-    <item>
-      <title>Costruire fiducia. Il ruolo cruciale di Mario Paciolla per l’accordo di pace in Colombia</title>
-      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/aaa34def40d07b91.html</link>
-      <description>IrpiMedia racconta, attraverso l’intervista ad Adriana Villa – ex combattente delle Farc – il percorso di pace avviato nel 2016 tra il gruppo guerrigliero e lo Stato colombiano. L’accordo si basa sulla riconsegna delle armi e sul reintegro degli ex combattenti nella vita civile.
-
-Mario Paciolla, volontario napoletano della Missione di verifica delle Nazioni Unite a San Vicente del Caguán, è stato incaricato, dal 2018, di supervisionare gli spazi sicuri di Miravalle, nel Caquetà, dove gli ex guerriglieri potevano trovare lavoro, formazione e protezione.
-
-Secondo le testimonianze, Paciolla è stato l’unico a instaurare un rapporto di fiducia reale con gli ex combattenti, parlando loro “come una persona normale” e partecipando attivamente alla realizzazione di progetti come Hijos de paz , un censimento e un programma sanitario‑educativo per i bambini nati dopo la firma dell’accordo.
-
-La sua morte, avvenuta il 15 luglio 2020 a San Vicente del Caguán, è stata archiviata come suicidio dalle autorità italiane e colombiane, ma i genitori di Mario hanno sempre contestato tale versione, chiedendo verità e giustizia.
-
-Dopo la sua scomparsa, la missione di verifica è stata gradualmente smantellata; lo spazio sicuro di Miravalle è rimasto attivo fino al 2024, quando le minacce dei dissidenti hanno costretto gli ex combattenti, tra cui Adriana, a trasferirsi a El Doncello, con la protezione della Missione ONU.
-
-Il racconto evidenzia come il lavoro di Paciolla abbia contribuito al rispetto degli accordi e al mantenimento dei rapporti con le comunità locali, nonostante le difficoltà e la successiva erosione dei progetti sociali.
-
-• Mario Paciolla ha svolto un ruolo chiave nella costruzione della fiducia tra governo e ex guerriglieri nel Caquetà.
-
-• Ha co‑ideato e sostenuto il progetto Hijos de paz , volto a censire e assistere i bambini nati dopo la pace.
-
-• La sua morte è stata classificata come suicidio, ma la famiglia ne contesta la versione.
-
-• La missione ONU ha gradualmente perso capacità operative, e lo spazio sicuro di Miravalle è stato chiuso nel 2024 a causa delle minacce dei dissidenti.
-
-• Gli ex combattenti, ora trasferiti a El Doncello, vivono in incertezza, temendo il ritorno della violenza.</description>
-      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> IrpiMedia (Inchieste) | <strong>Ambito:</strong> <em>Inchiesta</em></p>
-    <hr>
-    <p><a class="zoom" href="https://irpimedia.irpi.eu/public/uploads/2026/10/mario-paciolla-colombia-pace-farc-cover.webp"><img src="https://irpimedia.irpi.eu/public/uploads/2026/10/mario-paciolla-colombia-pace-farc-cover.webp" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
-    <p>IrpiMedia racconta, attraverso l’intervista ad Adriana Villa – ex combattente delle Farc – il percorso di pace avviato nel 2016 tra il gruppo guerrigliero e lo Stato colombiano. L’accordo si basa sulla riconsegna delle armi e sul reintegro degli ex combattenti nella vita civile.</p>  
-<p>Mario Paciolla, volontario napoletano della Missione di verifica delle Nazioni Unite a San Vicente del Caguán, è stato incaricato, dal 2018, di supervisionare gli spazi sicuri di Miravalle, nel Caquetà, dove gli ex guerriglieri potevano trovare lavoro, formazione e protezione.</p>  
-<p>Secondo le testimonianze, Paciolla è stato l’unico a instaurare un rapporto di fiducia reale con gli ex combattenti, parlando loro “come una persona normale” e partecipando attivamente alla realizzazione di progetti come <strong>Hijos de paz</strong>, un censimento e un programma sanitario‑educativo per i bambini nati dopo la firma dell’accordo.</p>  
-<p>La sua morte, avvenuta il 15 luglio 2020 a San Vicente del Caguán, è stata archiviata come suicidio dalle autorità italiane e colombiane, ma i genitori di Mario hanno sempre contestato tale versione, chiedendo verità e giustizia.</p>  
-<p>Dopo la sua scomparsa, la missione di verifica è stata gradualmente smantellata; lo spazio sicuro di Miravalle è rimasto attivo fino al 2024, quando le minacce dei dissidenti hanno costretto gli ex combattenti, tra cui Adriana, a trasferirsi a El Doncello, con la protezione della Missione ONU.</p>  
-<p>Il racconto evidenzia come il lavoro di Paciolla abbia contribuito al rispetto degli accordi e al mantenimento dei rapporti con le comunità locali, nonostante le difficoltà e la successiva erosione dei progetti sociali.</p>  
-<ol>  
-  <li><strong>Mario Paciolla</strong> ha svolto un ruolo chiave nella costruzione della fiducia tra governo e ex guerriglieri nel Caquetà.</li>  
-  <li>Ha co‑ideato e sostenuto il progetto <em>Hijos de paz</em>, volto a censire e assistere i bambini nati dopo la pace.</li>  
-  <li>La sua morte è stata classificata come suicidio, ma la famiglia ne contesta la versione.</li>  
-  <li>La missione ONU ha gradualmente perso capacità operative, e lo spazio sicuro di Miravalle è stato chiuso nel 2024 a causa delle minacce dei dissidenti.</li>  
-  <li>Gli ex combattenti, ora trasferiti a El Doncello, vivono in incertezza, temendo il ritorno della violenza.</li>  
-</ol>
-    <p><a class="zoom" href="https://irpimedia.irpi.eu/public/uploads/2026/10/mario-paciolla-colombia-pace-farc-2.webp"><img src="https://irpimedia.irpi.eu/public/uploads/2026/10/mario-paciolla-colombia-pace-farc-2.webp" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://irpimedia.irpi.eu/public/uploads/2026/10/mario-paciolla-colombia-pace-farc-1.webp"><img src="https://irpimedia.irpi.eu/public/uploads/2026/10/mario-paciolla-colombia-pace-farc-1.webp" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
-    <hr>
-    <p><a href="https://irpimedia.irpi.eu/mario-paciolla-colombia-pace-farc/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=mario-paciolla-colombia-pace-farc">Leggi originale su IrpiMedia (Inchieste) &rarr;</a></p></div>]]></content:encoded>
-      <guid isPermaLink="false">v18_https://irpimedia.irpi.eu/mario-paciolla-colombia-pace-farc/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=mario-paciolla-colombia-pace-farc</guid>
-      <enclosure url="https://irpimedia.irpi.eu/public/uploads/2026/10/mario-paciolla-colombia-pace-farc-cover.webp" length="0" type="image/webp"/>
-      <pubDate>Thu, 29 Oct 2026 15:07:34 +0000</pubDate>
-      <media:group>
-        <media:content url="https://irpimedia.irpi.eu/public/uploads/2026/10/mario-paciolla-colombia-pace-farc-cover.webp" type="image/webp" medium="image"/>
-        <media:thumbnail url="https://irpimedia.irpi.eu/public/uploads/2026/10/mario-paciolla-colombia-pace-farc-cover.webp"/>
       </media:group>
     </item>
   </channel>

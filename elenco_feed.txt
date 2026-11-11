@@ -1,0 +1,74 @@
+Rassegna Personale: elenco dei feed
+
+UN SOLO FEED
+
+Rassegna Personale Unificata (tutte le fonti, in ordine di data)
+https://lorenzoromani367.github.io/NewsFeed/feed_sintesi.xml
+
+Rassegna Personale per fonte (le stesse voci, una fonte dopo l'altra)
+https://lorenzoromani367.github.io/NewsFeed/feed_per_fonte.xml
+
+Contemporary Art Daily (riepilogo di immagini due volte a settimana)
+https://lorenzoromani367.github.io/NewsFeed/feed_contemporary_art_daily.xml
+
+UNA FONTE ALLA VOLTA
+
+Il Tascabile (Saggistica)
+https://lorenzoromani367.github.io/NewsFeed/feeds/il-tascabile.xml
+
+The Italian Review (Critica)
+https://lorenzoromani367.github.io/NewsFeed/feeds/the-italian-review.xml
+
+Valigia Blu (Geopolitica)
+https://lorenzoromani367.github.io/NewsFeed/feeds/valigia-blu.xml
+
+IrpiMedia (Inchieste) (Inchiesta)
+https://lorenzoromani367.github.io/NewsFeed/feeds/irpimedia-inchieste.xml
+
+IrpiMedia (Editoriali) (Opinione)
+https://lorenzoromani367.github.io/NewsFeed/feeds/irpimedia-editoriali.xml
+
+1000 Words (Fotografia)
+https://lorenzoromani367.github.io/NewsFeed/feeds/1000-words.xml
+
+Frieze (Arte Contemporanea)
+https://lorenzoromani367.github.io/NewsFeed/feeds/frieze.xml
+
+ArtReview (Critica d'Arte)
+https://lorenzoromani367.github.io/NewsFeed/feeds/artreview.xml
+
+Aperture (Essays) (Fotografia)
+https://lorenzoromani367.github.io/NewsFeed/feeds/aperture-essays.xml
+
+Aperture (Reviews) (Fotografia)
+https://lorenzoromani367.github.io/NewsFeed/feeds/aperture-reviews.xml
+
+Mousse Magazine (Arte Contemporanea)
+https://lorenzoromani367.github.io/NewsFeed/feeds/mousse-magazine.xml
+
+Solomon (Cultura)
+https://lorenzoromani367.github.io/NewsFeed/feeds/solomon.xml
+
+FADA Collective (Reportage)
+https://lorenzoromani367.github.io/NewsFeed/feeds/fada-collective.xml
+
+Narratively (Narrativa)
+https://lorenzoromani367.github.io/NewsFeed/feeds/narratively.xml
+
+Pangea (Cultura)
+https://lorenzoromani367.github.io/NewsFeed/feeds/pangea.xml
+
+Indiscreto (Cultura)
+https://lorenzoromani367.github.io/NewsFeed/feeds/indiscreto.xml
+
+Gli Asini (Cultura)
+https://lorenzoromani367.github.io/NewsFeed/feeds/gli-asini.xml
+
+Doppiozero (Filosofia) (Filosofia)
+https://lorenzoromani367.github.io/NewsFeed/feeds/doppiozero-filosofia.xml
+
+Aeon (Saggi)
+https://lorenzoromani367.github.io/NewsFeed/feeds/aeon.xml
+
+Filosofia Stramba (Filosofia)
+https://lorenzoromani367.github.io/NewsFeed/feeds/filosofia-stramba.xml
