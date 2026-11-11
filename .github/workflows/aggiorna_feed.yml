@@ -2,6 +2,7 @@ name: Aggiorna Feed Sintesi
 
 on:
   push:
+    branches: [main]  # sui branch di lavoro non serve un giro completo (e i commit dei dati li farebbero divergere)
   schedule:
     - cron: "0 */4 * * *"
   workflow_dispatch:
