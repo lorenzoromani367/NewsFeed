@@ -42,7 +42,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A feed_sintesi.xml feed_contemporary_art_daily.xml feed_per_fonte.xml feeds rassegna_per_fonte.opml index.html feed_database.json articoli
+          git add -A feed_sintesi.xml feed_contemporary_art_daily.xml feed_per_fonte.xml feeds rassegna_per_fonte.opml elenco_feed.txt index.html feed_database.json articoli
           git diff --staged --quiet || (git commit -m "Feed aggiornato" && git pull --rebase -X theirs origin "${GITHUB_REF_NAME}" && git push)
 
       - name: Aggiorna cache CDN jsDelivr

@@ -45,8 +45,6 @@ FONTI = [
     {"nome": "FADA Collective", "tipo": "pagina", "url": "https://www.fadacollective.com/report", "categoria": "Reportage", "colore": "#ea580c"},
     {"nome": "Narratively", "tipo": "rss", "url": "https://www.narratively.com/feed", "categoria": "Narrativa", "colore": "#0f766e"},
 
-    {"nome": "Italia che Cambia", "tipo": "pagina", "italiano": True, "url": "https://www.italiachecambia.org/cose%20da%20sapere/", "categoria": "Attualità", "colore": "#16a34a"},
-
     {"nome": "Pangea", "tipo": "rss", "italiano": True, "url": "https://www.pangea.news/feed/", "pagina_fallback": "https://www.pangea.news/", "categoria": "Cultura", "colore": "#9333ea"},
     {"nome": "Indiscreto", "tipo": "rss", "italiano": True, "url": "https://www.indiscreto.org/feed/", "pagina_fallback": "https://www.indiscreto.org/", "categoria": "Cultura", "colore": "#b91c1c"},
     {"nome": "Gli Asini", "tipo": "rss", "italiano": True, "url": "https://gliasinirivista.org/feed/", "pagina_fallback": "https://gliasinirivista.org/", "categoria": "Cultura", "colore": "#a16207"},
@@ -1012,35 +1010,74 @@ def scrivi_opml_per_fonte(fonti):
                   '    <outline text="Rassegna Personale" title="Rassegna Personale">\n' + righe +
                   '    </outline>\n  </body>\n</opml>\n')
 
+ELENCO_TXT = "elenco_feed.txt"
+
+INDEX_STILE = (
+    "<style>:root{color-scheme:light dark}"
+    "body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;max-width:560px;margin:40px auto;padding:0 16px;line-height:1.5}"
+    "ul{padding:0}li{margin:0 0 1rem;list-style:none}"
+    "code{display:block;font-size:.75rem;word-break:break-all;opacity:.75;margin:.15rem 0 .4rem}"
+    "button{font:inherit;padding:.3rem .8rem;border-radius:8px;border:1px solid currentColor;background:none;color:inherit}"
+    "small{opacity:.7}</style>"
+)
+
+INDEX_SCRIPT = (
+    "<script>(function(){"
+    "function ok(b){var t=b.textContent;b.textContent='Copiato ✓';setTimeout(function(){b.textContent=t},1500)}"
+    "function vecchio(t,b){var a=document.createElement('textarea');a.value=t;a.style.cssText='position:fixed;opacity:0';"
+    "document.body.appendChild(a);a.select();a.setSelectionRange(0,t.length);"
+    "try{document.execCommand('copy');ok(b)}catch(e){}document.body.removeChild(a)}"
+    "function copia(t,b){if(navigator.clipboard&&navigator.clipboard.writeText){"
+    "navigator.clipboard.writeText(t).then(function(){ok(b)},function(){vecchio(t,b)})}else{vecchio(t,b)}}"
+    "document.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;"
+    "if(b.dataset.url)copia(b.dataset.url,b);"
+    "else if(b.id==='tutti')copia([].map.call(document.querySelectorAll('button[data-url]'),function(x){return x.dataset.url}).join('\\n'),b)});"
+    "})();</script>"
+)
+
+def elenco_feed(fonti_std):
+    """((titolo, indirizzo, nota) dei feed unici, id. delle singole fonti): le voci dell'elenco dei feed."""
+    unici = [("Rassegna Personale Unificata", FEED_SITE + FEED_OUTPUT, "tutte le fonti, in ordine di data"),
+             ("Rassegna Personale per fonte", FEED_SITE + FEED_OUTPUT_PER_FONTE, "le stesse voci, una fonte dopo l'altra"),
+             ("Contemporary Art Daily", FEED_SITE + FEED_OUTPUT_IMMAGINI, "riepilogo di immagini due volte a settimana")]
+    singoli = [(f["nome"], FEED_SITE + percorso_feed_fonte(f), f["categoria"]) for f in fonti_std]
+    return unici, singoli
+
+def scrivi_elenco_txt(fonti_std):
+    """Elenco dei feed in testo semplice (nome e indirizzo), per chi non puo' importare un OPML."""
+    unici, singoli = elenco_feed(fonti_std)
+    righe = ["Rassegna Personale: elenco dei feed", "", "UN SOLO FEED", ""]
+    for titolo, url, nota in unici: righe += [f"{titolo} ({nota})", url, ""]
+    righe += ["UNA FONTE ALLA VOLTA", ""]
+    for titolo, url, nota in singoli: righe += [f"{titolo} ({nota})", url, ""]
+    with open(ELENCO_TXT, "w", encoding="utf-8") as out:
+        out.write("\n".join(righe))
+
 def scrivi_index(fonti_std):
-    """Pagina iniziale del sito: elenco dei feed, e link <alternate> per i reader a cui si dà l'indirizzo del sito."""
-    feed = ([("Rassegna Personale Unificata", FEED_OUTPUT), ("Contemporary Art Daily", FEED_OUTPUT_IMMAGINI),
-             ("Rassegna Personale per fonte", FEED_OUTPUT_PER_FONTE)] + [(f["nome"], percorso_feed_fonte(f)) for f in fonti_std])
-    alternate = "".join(f'<link rel="alternate" type="application/rss+xml" title="{escape(t)}" href="{h}">\n' for t, h in feed)
-    elenco = "".join(f'<li><a href="{percorso_feed_fonte(f)}">{escape(f["nome"])}</a></li>\n' for f in fonti_std)
-    pagina = f"""<!doctype html>
-<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rassegna Personale</title>
-{alternate}</head><body style="font-family:sans-serif;max-width:560px;margin:40px auto;padding:0 16px">
-<h1>Rassegna Personale</h1>
-<h2>Un solo feed</h2>
-<ul>
-<li><a href="{FEED_OUTPUT}">Feed principale</a>: tutte le fonti, in ordine di data</li>
-<li><a href="{FEED_OUTPUT_PER_FONTE}">Raggruppato per fonte</a>: le stesse voci, una fonte dopo l'altra</li>
-<li><a href="{FEED_OUTPUT_IMMAGINI}">Contemporary Art Daily</a></li>
-</ul>
-<h2>Una fonte alla volta</h2>
-<p>Tieni premuto sul nome, scegli «Copia link» e incollalo in «Aggiungi feed».</p>
-<ul>
-{elenco}</ul>
-<h2>Tutto in uno (OPML)</h2>
-<p>Un OPML non si incolla in «Aggiungi feed»: va scaricato e importato dall'app, se ha la funzione di importazione.</p>
-<ul>
-<li><a href="rassegna.opml" download>Feed principale e Contemporary Art Daily</a></li>
-<li><a href="{OPML_PER_FONTE}" download>Un feed per ogni fonte</a></li>
-</ul>
-</body></html>
-"""
+    """Pagina iniziale del sito: elenco dei feed con indirizzo e pulsante Copia (Bulletin non importa gli
+    OPML), e link <alternate> per i reader a cui si dà l'indirizzo del sito."""
+    unici, singoli = elenco_feed(fonti_std)
+    alternate_ordine = [unici[0], unici[2], unici[1]] + singoli  # il feed principale e Contemporary Art Daily restano i primi
+    alternate = "".join(f'<link rel="alternate" type="application/rss+xml" title="{escape(t)}" href="{u[len(FEED_SITE):]}">\n'
+                        for t, u, _ in alternate_ordine)
+
+    def voci(elenco):
+        return "".join(f'<li><b>{escape(t)}</b> <small>{escape(n)}</small><code>{escape(u)}</code>'
+                       f'<button data-url="{escape(u)}">Copia</button></li>\n' for t, u, n in elenco)
+
+    pagina = ("<!doctype html>\n"
+              '<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">\n'
+              "<title>Rassegna Personale</title>\n" + alternate + INDEX_STILE + "</head><body>\n"
+              "<h1>Rassegna Personale</h1>\n"
+              "<p>In «Aggiungi feed» incolla l'indirizzo del feed: tocca Copia, poi passa all'app.</p>\n"
+              '<p><button id="tutti">Copia tutti gli indirizzi (uno per riga)</button></p>\n'
+              "<h2>Un solo feed</h2>\n<ul>\n" + voci(unici) + "</ul>\n"
+              "<h2>Una fonte alla volta</h2>\n<ul>\n" + voci(singoli) + "</ul>\n"
+              "<h2>Altri formati</h2>\n<ul>\n"
+              f'<li><a href="{ELENCO_TXT}">Elenco in testo semplice</a></li>\n'
+              f'<li><a href="{OPML_PER_FONTE}" download>OPML: un feed per ogni fonte</a> (per i reader che lo importano)</li>\n'
+              '<li><a href="rassegna.opml" download>OPML: feed principale e Contemporary Art Daily</a></li>\n'
+              "</ul>\n" + INDEX_SCRIPT + "</body></html>\n")
     with open("index.html", "w", encoding="utf-8") as out:
         out.write(pagina)
 
@@ -1204,7 +1241,11 @@ def main():
     for f in fonti_std:
         voci_f = [{**v, "titolo_feed": v["title"][len(f["nome"]) + 2:]} for v in voci_recenti(db, articoli, [f], VOCI_PER_FONTE_SINGOLA)]
         genera_feed(voci_f, percorso_feed_fonte(f), f["nome"], f"{f['nome']} ({f['categoria']}): sintesi in italiano.", ordine_documento="append")
+    attesi = {os.path.basename(percorso_feed_fonte(f)) for f in fonti_std}
+    for nome in os.listdir(FEEDS_DIR):  # feed di una fonte tolta da FONTI: non si aggiorna piu'
+        if nome not in attesi: os.remove(os.path.join(FEEDS_DIR, nome))
     scrivi_opml_per_fonte(FONTI)
+    scrivi_elenco_txt(fonti_std)
     scrivi_index(fonti_std)
     genera_feed(digest_tutti[:8], FEED_OUTPUT_IMMAGINI, "Contemporary Art Daily", "Riepilogo di immagini due volte a settimana, senza sintesi né traduzione.", ospita_img=True)
 
