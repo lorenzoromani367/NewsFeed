@@ -1030,12 +1030,14 @@ def scrivi_index(fonti_std):
 <li><a href="{FEED_OUTPUT_IMMAGINI}">Contemporary Art Daily</a></li>
 </ul>
 <h2>Una fonte alla volta</h2>
+<p>Tieni premuto sul nome, scegli «Copia link» e incollalo in «Aggiungi feed».</p>
 <ul>
 {elenco}</ul>
 <h2>Tutto in uno (OPML)</h2>
+<p>Un OPML non si incolla in «Aggiungi feed»: va scaricato e importato dall'app, se ha la funzione di importazione.</p>
 <ul>
-<li><a href="rassegna.opml">Feed principale e Contemporary Art Daily</a></li>
-<li><a href="{OPML_PER_FONTE}">Un feed per ogni fonte</a></li>
+<li><a href="rassegna.opml" download>Feed principale e Contemporary Art Daily</a></li>
+<li><a href="{OPML_PER_FONTE}" download>Un feed per ogni fonte</a></li>
 </ul>
 </body></html>
 """
