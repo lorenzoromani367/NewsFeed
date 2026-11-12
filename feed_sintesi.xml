@@ -8,7 +8,7 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Thu, 12 Nov 2026 06:32:25 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 16:50:08 +0000</lastBuildDate>
     <item>
       <title>Aperture (Reviews): In France, an Exhibition Focuses on the Power of Truth</title>
       <link>https://lorenzoromani367.github.io/NewsFeed/articoli/66f9d9f6a09bda32.html</link>
@@ -1394,71 +1394,6 @@ In conclusione, l’autore sostiene che tutti i problemi – diritto d’autore,
       </media:group>
     </item>
     <item>
-      <title>Aeon: Seccatura celeste</title>
-      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/42c1130c6ae56013.html</link>
-      <description>Nel racconto della storia cosmica la polvere interstellare è presentata come uno dei personaggi di supporto più importanti: quando le nubi di gas si raffreddano e condensano nell’Universo primordiale, i granuli di polvere assorbono e riemettono radiazione, favorendo la formazione di stelle, pianeti e, forse, delle prime molecole organiche complesse. Tuttavia, per la maggior parte dei cosmologi la polvere è una “seccatura”. In astrofisica il termine “nuisance” indica qualsiasi fenomeno che ostacola lo studio dell’oggetto di interesse; la luce polarizzata dalla polvere può imitare i deboli segnali del fondo cosmico a microonde, che i cosmologi cercano da decenni. Per questo motivo gli astrofisici studiano la polvere non per comprenderne il ruolo, ma per sottrarla – “spazzarla sotto il tappeto”.
-
-Questa dicotomia “segnale‑seccatura” si riscontra in molti campi. Chi studia il weak lensing usa le leggere distorsioni della luce dovute alla gravità per mappare la materia oscura; per loro la materia ordinaria è una seccatura. I cronometri a pulsar, invece, considerano il gas ionizzato interstellare una seccatura perché disperde il segnale dei pulsar. Paradossalmente, la stessa “seccatura” può diventare tesoro: i pulsar rivelano la struttura fine del mezzo interstellare, risorsa preziosa per chi vuole capire l’evoluzione della galassia.
-
-In astronomia moderna la distinzione tra “segnale” e “seccatura” dipende dall’interesse del ricercatore, ma le priorità devono essere condivise. La disciplina è altamente specializzata e basata su grandi collaborazioni; l’accesso ai telescopi – progettati, costruiti e mantenuti da centinaia di scienziati – è competitivo e guidato da “Big Questions” stabilite dalla comunità. Progetti di punta come il Square Kilometre Array , il James Webb Space Telescope , il Vera C. Rubin Observatory , il Nancy Grace Roman Space Telescope e il Laser Interferometer Space Antenna , tutti da miliardi di dollari, mostrano una costante enfasi su Universo primordiale, onde gravitazionali, energia oscura e cosmologia, relegando stelle, mezzo interstellare e vita a ruoli secondari.
-
-Questa gerarchia riflette una divisione tra “fisica fondamentale” (pulita, elegante) e “astrofisica disordinata”, dove la prima è vista come più prestigiosa. Tale percezione è radicata nella storia: dal dopoguerra la fisica ha assorbito l’astronomia, trasformandola in “astrofisica” e usando il cielo come laboratorio per testare teorie fondamentali. Dopo la fine della Guerra Fredda, con la cancellazione del Superconducting Super Collider, gli astrofisici hanno trovato nell’Universo un acceleratore di particelle naturale, rafforzando l’idea che la fisica fondamentale sia al vertice della piramide scientifica, mentre le domande “astronomiche” rimangono “nuisance”.
-
-Il ragionamento di base è che, con una quantità sufficiente di dati, i fenomeni astrofisici ricchi e diversificati che si manifestano in particolari ambienti cosmici possano essere modellati statisticamente e “mediati via”, lasciando solo ciò che è fondamentale. Le pipeline di analisi dei moderni survey di weak lensing appiattiscono la complessa fisica degli ambienti astrofisici in un insieme di “nuisance parameters” che, con abbastanza dati, possono essere mediati. Fin dalla progettazione del survey, i ricchi fenomeni astrofisici sono quindi inquadrati come ostacoli statistici a verità fondamentali. Un’immagine Hubble del cluster di galassie Abell 2813 illustra il concetto di lente gravitazionale: tra i punti, le spirali e gli ovali dei membri del cluster compaiono archi lunari, galassie distanti la cui luce è amplificata e distorta dal forte campo gravitazionale del cluster (courtesy NASA/ESA/Dan Coe).
-
-Il paradigma è rafforzato dall’avvicinamento all’intelligenza artificiale (IA). I petabyte di dati prodotti dagli osservatori moderni si adattano ai grandi dataset richiesti per addestrare architetture di deep learning. Il clamore attorno all’IA attira finanziamenti e risorse computazionali, anche quando la sua capacità di scoperta reale rimane incerta. I modelli di IA sono presentati come il modo migliore per digerire dataset troppo massivi per l’analisi umana, promettendo di inferire automaticamente l’astrofisica complessa da immagini grezze del cielo. Tuttavia, esiste un divario fondamentale tra i pattern statistici che queste tecnologie apprendono e i meccanismi fisici sottostanti. A differenza di un modello che impara cosa è un gatto da immagini etichettate, non esiste un set di immagini galattiche con tutta l’astrofisica nota; i modelli devono essere addestrati con dati sintetici tratti da simulazioni astrofisiche, le quali, per limiti computazionali, usano approssimazioni semplificate. Di conseguenza, i modelli di IA ereditano assunzioni non verificate sui processi fisici.
-
-Se l’obiettivo è solo contabilizzare l’astrofisica complessa per inferire la fisica fondamentale, questi modelli sono eccellenti nel rilevare e correggere sottili correlazioni nei dati. Ma se lo scopo è comprendere la fisica complessa dei fenomeni stessi, il beneficio è meno evidente. Così l’astrofisica moderna appare orientata a modellare enormi dataset per scoprire costanti fondamentali, un paradigma rinforzato dalle domande istituzionalmente prioritarie e dagli strumenti usati per rispondervi. Questo ciclo crea un’illusione di consenso sul “cosa sia importante”, oscurando la realtà quotidiana di molti astronomi, evidente nella discussione sulla “Hubble tension”. Sebbene la tensione sia presentata nei white paper e nella divulgazione come una crisi profonda, nei colloqui di ricerca la reazione è sorprendentemente tiepida: molti astronomi sono più appassionati di polvere, dinamica dei gas o campi magnetici cosmici che di risolvere la discrepanza nella costante di Hubble. La pressione istituzionale spinge gli scienziati a collegare il proprio lavoro alle “Big Questions” per ottenere finanziamenti, incarichi o pubblicazioni, anche quando le motivazioni personali sono diverse. In questo contesto, le “Big Questions” non sono intrinsecamente più giustificate dei fenomeni di “nuisance” che le ostacolano; sono scelte storiche e arbitrarie.
-
-L’articolo “Celestial nuisance” è stato scritto da Jim Baggott per Aeon, nella sezione “Follow”. Il titolo completo dell’articolo è “Theoretical physicists who say the multiverse exists set a dangerous precedent: science based on zero empirical evidence”. L’articolo è accompagnato da un pulsante per iscriversi alla newsletter di Aeon (“Updates on everything new at Aeon”). Il copyright è attribuito a Aeon Media Group Ltd per il periodo 2012‑2026, con riferimento alla Privacy Policy e ai Terms of Use. Aeon è pubblicato da Aeon Media Group Ltd, ente di beneficenza registrato, in associazione con Aeon America, una organizzazione 501(c)(3).
-
-• Polvere interstellare è fondamentale per la formazione di stelle e pianeti, ma è trattata come “seccatura” perché interferisce con le misurazioni cosmiche.
-
-• La distinzione tra “segnale” e “seccatura” dipende dagli interessi dei ricercatori; ciò che è ostacolo per uno può diventare risorsa per un altro.
-
-• Le grandi collaborazioni e i progetti multimiliardari privilegiano le “Big Questions” della fisica fondamentale, relegando astro‑fisica “disordinata” a ruolo secondario.
-
-• L’uso crescente dell’intelligenza artificiale per analizzare petabyte di dati tende a mediare via la complessità astrofisica, rischiando di trascurare la comprensione dei fenomeni stessi.
-
-• La pressione istituzionale spinge gli astronomi a collegare il proprio lavoro a queste “Big Questions”, anche quando le loro passioni scientifiche riguardano fenomeni considerati “nuisance”.</description>
-      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Aeon | <strong>Ambito:</strong> <em>Saggi</em></p>
-    <hr>
-    <p><a class="zoom" href="https://images.aeonmedia.co/images/7129c5df-be79-48ee-bcbd-f31854ec3aa3/essay-weic2425c.jpg?width=1200&amp;quality=75&amp;format=jpeg"><img src="https://images.aeonmedia.co/images/7129c5df-be79-48ee-bcbd-f31854ec3aa3/essay-weic2425c.jpg?width=1200&amp;quality=75&amp;format=jpeg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
-    <p>Nel racconto della storia cosmica la <strong>polvere interstellare</strong> è presentata come uno dei personaggi di supporto più importanti: quando le nubi di gas si raffreddano e condensano nell’Universo primordiale, i granuli di polvere assorbono e riemettono radiazione, favorendo la formazione di stelle, pianeti e, forse, delle prime molecole organiche complesse. Tuttavia, per la maggior parte dei cosmologi la polvere è una “seccatura”. In astrofisica il termine “nuisance” indica qualsiasi fenomeno che ostacola lo studio dell’oggetto di interesse; la luce polarizzata dalla polvere può imitare i deboli segnali del fondo cosmico a microonde, che i cosmologi cercano da decenni. Per questo motivo gli astrofisici studiano la polvere non per comprenderne il ruolo, ma per sottrarla – “spazzarla sotto il tappeto”.</p>  
-
-<p>Questa dicotomia “segnale‑seccatura” si riscontra in molti campi. Chi studia il <strong>weak lensing</strong> usa le leggere distorsioni della luce dovute alla gravità per mappare la materia oscura; per loro la materia ordinaria è una seccatura. I cronometri a pulsar, invece, considerano il gas ionizzato interstellare una seccatura perché disperde il segnale dei pulsar. Paradossalmente, la stessa “seccatura” può diventare tesoro: i pulsar rivelano la struttura fine del mezzo interstellare, risorsa preziosa per chi vuole capire l’evoluzione della galassia.</p>  
-
-<p>In astronomia moderna la distinzione tra “segnale” e “seccatura” dipende dall’interesse del ricercatore, ma le priorità devono essere condivise. La disciplina è altamente specializzata e basata su grandi collaborazioni; l’accesso ai telescopi – progettati, costruiti e mantenuti da centinaia di scienziati – è competitivo e guidato da “Big Questions” stabilite dalla comunità. Progetti di punta come il <strong>Square Kilometre Array</strong>, il <strong>James Webb Space Telescope</strong>, il <strong>Vera C. Rubin Observatory</strong>, il <strong>Nancy Grace Roman Space Telescope</strong> e il <strong>Laser Interferometer Space Antenna</strong>, tutti da miliardi di dollari, mostrano una costante enfasi su Universo primordiale, onde gravitazionali, energia oscura e cosmologia, relegando stelle, mezzo interstellare e vita a ruoli secondari.</p>  
-
-<p>Questa gerarchia riflette una divisione tra “fisica fondamentale” (pulita, elegante) e “astrofisica disordinata”, dove la prima è vista come più prestigiosa. Tale percezione è radicata nella storia: dal dopoguerra la fisica ha assorbito l’astronomia, trasformandola in “astrofisica” e usando il cielo come laboratorio per testare teorie fondamentali. Dopo la fine della Guerra Fredda, con la cancellazione del Superconducting Super Collider, gli astrofisici hanno trovato nell’Universo un acceleratore di particelle naturale, rafforzando l’idea che la fisica fondamentale sia al vertice della piramide scientifica, mentre le domande “astronomiche” rimangono “nuisance”.</p>  
-
-<p>Il ragionamento di base è che, con una quantità sufficiente di dati, i fenomeni astrofisici ricchi e diversificati che si manifestano in particolari ambienti cosmici possano essere modellati statisticamente e “mediati via”, lasciando solo ciò che è fondamentale. Le pipeline di analisi dei moderni survey di weak lensing appiattiscono la complessa fisica degli ambienti astrofisici in un insieme di “nuisance parameters” che, con abbastanza dati, possono essere mediati. Fin dalla progettazione del survey, i ricchi fenomeni astrofisici sono quindi inquadrati come ostacoli statistici a verità fondamentali. Un’immagine Hubble del cluster di galassie Abell 2813 illustra il concetto di lente gravitazionale: tra i punti, le spirali e gli ovali dei membri del cluster compaiono archi lunari, galassie distanti la cui luce è amplificata e distorta dal forte campo gravitazionale del cluster (courtesy NASA/ESA/Dan Coe).</p>  
-
-<p>Il paradigma è rafforzato dall’avvicinamento all’intelligenza artificiale (IA). I petabyte di dati prodotti dagli osservatori moderni si adattano ai grandi dataset richiesti per addestrare architetture di deep learning. Il clamore attorno all’IA attira finanziamenti e risorse computazionali, anche quando la sua capacità di scoperta reale rimane incerta. I modelli di IA sono presentati come il modo migliore per digerire dataset troppo massivi per l’analisi umana, promettendo di inferire automaticamente l’astrofisica complessa da immagini grezze del cielo. Tuttavia, esiste un divario fondamentale tra i pattern statistici che queste tecnologie apprendono e i meccanismi fisici sottostanti. A differenza di un modello che impara cosa è un gatto da immagini etichettate, non esiste un set di immagini galattiche con tutta l’astrofisica nota; i modelli devono essere addestrati con dati sintetici tratti da simulazioni astrofisiche, le quali, per limiti computazionali, usano approssimazioni semplificate. Di conseguenza, i modelli di IA ereditano assunzioni non verificate sui processi fisici.</p>  
-
-<p>Se l’obiettivo è solo contabilizzare l’astrofisica complessa per inferire la fisica fondamentale, questi modelli sono eccellenti nel rilevare e correggere sottili correlazioni nei dati. Ma se lo scopo è comprendere la fisica complessa dei fenomeni stessi, il beneficio è meno evidente. Così l’astrofisica moderna appare orientata a modellare enormi dataset per scoprire costanti fondamentali, un paradigma rinforzato dalle domande istituzionalmente prioritarie e dagli strumenti usati per rispondervi. Questo ciclo crea un’illusione di consenso sul “cosa sia importante”, oscurando la realtà quotidiana di molti astronomi, evidente nella discussione sulla “Hubble tension”. Sebbene la tensione sia presentata nei white paper e nella divulgazione come una crisi profonda, nei colloqui di ricerca la reazione è sorprendentemente tiepida: molti astronomi sono più appassionati di polvere, dinamica dei gas o campi magnetici cosmici che di risolvere la discrepanza nella costante di Hubble. La pressione istituzionale spinge gli scienziati a collegare il proprio lavoro alle “Big Questions” per ottenere finanziamenti, incarichi o pubblicazioni, anche quando le motivazioni personali sono diverse. In questo contesto, le “Big Questions” non sono intrinsecamente più giustificate dei fenomeni di “nuisance” che le ostacolano; sono scelte storiche e arbitrarie.</p>  
-
-<p>L’articolo “Celestial nuisance” è stato scritto da Jim Baggott per Aeon, nella sezione “Follow”. Il titolo completo dell’articolo è “Theoretical physicists who say the multiverse exists set a dangerous precedent: science based on zero empirical evidence”. L’articolo è accompagnato da un pulsante per iscriversi alla newsletter di Aeon (“Updates on everything new at Aeon”). Il copyright è attribuito a Aeon Media Group Ltd per il periodo 2012‑2026, con riferimento alla Privacy Policy e ai Terms of Use. Aeon è pubblicato da Aeon Media Group Ltd, ente di beneficenza registrato, in associazione con Aeon America, una organizzazione 501(c)(3).</p>  
-
-<ol>  
-<li><strong>Polvere interstellare</strong> è fondamentale per la formazione di stelle e pianeti, ma è trattata come “seccatura” perché interferisce con le misurazioni cosmiche.</li>  
-<li>La distinzione tra “segnale” e “seccatura” dipende dagli interessi dei ricercatori; ciò che è ostacolo per uno può diventare risorsa per un altro.</li>  
-<li>Le grandi collaborazioni e i progetti multimiliardari privilegiano le “Big Questions” della fisica fondamentale, relegando astro‑fisica “disordinata” a ruolo secondario.</li>  
-<li>L’uso crescente dell’intelligenza artificiale per analizzare petabyte di dati tende a mediare via la complessità astrofisica, rischiando di trascurare la comprensione dei fenomeni stessi.</li>  
-<li>La pressione istituzionale spinge gli astronomi a collegare il proprio lavoro a queste “Big Questions”, anche quando le loro passioni scientifiche riguardano fenomeni considerati “nuisance”.</li>  
-</ol>
-    <p><a class="zoom" href="https://images.aeonmedia.co/user_image_upload/324398cd-f068-4585-ab84-288aba666d68/chile-original.jpg?width=3840&amp;quality=75&amp;format=auto"><img src="https://images.aeonmedia.co/user_image_upload/324398cd-f068-4585-ab84-288aba666d68/chile-original.jpg?width=3840&amp;quality=75&amp;format=auto" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://images.aeonmedia.co/user_image_upload/2b1f3230-b139-4fa3-b02b-68edffc4b5e0/inset-hubble-abell2813-aco2813-potw2115a.jpg?width=3840&amp;quality=75&amp;format=auto"><img src="https://images.aeonmedia.co/user_image_upload/2b1f3230-b139-4fa3-b02b-68edffc4b5e0/inset-hubble-abell2813-aco2813-potw2115a.jpg?width=3840&amp;quality=75&amp;format=auto" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://images.aeonmedia.co/user_image_upload/ec8f36c3-eb5d-4ac4-8c0e-eda7c7f778c3/sz-intricacies-of-nebula.jpg?width=3840&amp;quality=75&amp;format=auto"><img src="https://images.aeonmedia.co/user_image_upload/ec8f36c3-eb5d-4ac4-8c0e-eda7c7f778c3/sz-intricacies-of-nebula.jpg?width=3840&amp;quality=75&amp;format=auto" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://images.aeonmedia.co/images/7b3e11c4-fd97-46f2-a2d9-ca0ada24406d/essay-vaishnav-munda-5lrrpj4x0hm-unsplash.jpg?width=3840&amp;quality=75&amp;format=auto"><img src="https://images.aeonmedia.co/images/7b3e11c4-fd97-46f2-a2d9-ca0ada24406d/essay-vaishnav-munda-5lrrpj4x0hm-unsplash.jpg?width=3840&amp;quality=75&amp;format=auto" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://images.aeonmedia.co/images/590847b3-16e6-46f0-9311-f05bf2945e91/essay-nyc8679.jpg?width=3840&amp;quality=75&amp;format=auto"><img src="https://images.aeonmedia.co/images/590847b3-16e6-46f0-9311-f05bf2945e91/essay-nyc8679.jpg?width=3840&amp;quality=75&amp;format=auto" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://images.aeonmedia.co/images/a084814d-210d-4441-a41c-905b5694b5e5/essay-jupiter.jpg?width=3840&amp;quality=75&amp;format=auto"><img src="https://images.aeonmedia.co/images/a084814d-210d-4441-a41c-905b5694b5e5/essay-jupiter.jpg?width=3840&amp;quality=75&amp;format=auto" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://images.aeonmedia.co/images/e9fdd361-0c27-413a-950b-0a9be2654f58/essay-1-stsci-01g8h1jfqbstc5zkddapjmfkf9.jpg?width=3840&amp;quality=75&amp;format=auto"><img src="https://images.aeonmedia.co/images/e9fdd361-0c27-413a-950b-0a9be2654f58/essay-1-stsci-01g8h1jfqbstc5zkddapjmfkf9.jpg?width=3840&amp;quality=75&amp;format=auto" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
-    <hr>
-    <p><a href="https://aeon.co/essays/why-astrophysics-needs-to-abandon-the-big-questions">Leggi originale su Aeon &rarr;</a></p></div>]]></content:encoded>
-      <guid isPermaLink="false">v18_https://aeon.co/essays/why-astrophysics-needs-to-abandon-the-big-questions</guid>
-      <enclosure url="https://images.aeonmedia.co/images/7129c5df-be79-48ee-bcbd-f31854ec3aa3/essay-weic2425c.jpg?width=1200&amp;quality=75&amp;format=jpeg" length="0" type="image/jpeg"/>
-      <pubDate>Fri, 06 Nov 2026 12:22:56 +0000</pubDate>
-      <media:group>
-        <media:content url="https://images.aeonmedia.co/images/7129c5df-be79-48ee-bcbd-f31854ec3aa3/essay-weic2425c.jpg?width=1200&amp;quality=75&amp;format=jpeg" type="image/jpeg" medium="image"/>
-        <media:thumbnail url="https://images.aeonmedia.co/images/7129c5df-be79-48ee-bcbd-f31854ec3aa3/essay-weic2425c.jpg?width=1200&amp;quality=75&amp;format=jpeg"/>
-      </media:group>
-    </item>
-    <item>
       <title>Narratively: Come il mio brillante trucco per saltare la lezione è diventato tossico</title>
       <link>https://lorenzoromani367.github.io/NewsFeed/articoli/e352e1f7def90e98.html</link>
       <description>Per il nostro ultimo concorso di flash essay sul sito gemello, ispirato al pezzo “Personals” di Phillip Vance Smith II, abbiamo chiesto di inviare una storia che vi perseguitasse da anni. Alcuni hanno interpretato letteralmente, regalandoci racconti di fantasmi; alla fine, la storia che abbiamo scelto si avvicinava di più a ciò che intendevamo: un racconto piccolo ma che rimane a lungo nella mente.
@@ -1586,82 +1521,6 @@ Iscriviti ora per supportare ulteriori storie.
       </media:group>
     </item>
     <item>
-      <title>Il Tascabile: Spazzatura spaziale</title>
-      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/f0152a41cfe7fbdd.html</link>
-      <description>Nel 2018 un professore universitario avvertiva gli studenti del pericolo rappresentato dai detriti spaziali – lanciatori esausti, satelliti spenti e frammenti di collisioni che viaggiano a chilometri al secondo, costringendo i satelliti attivi a continue correzioni. Temeva l’attivazione della sindrome di Kessler , una reazione a catena di collisioni che creerebbe una cintura impenetrabile di frammenti, bloccando l’accesso allo spazio e compromettendo geolocalizzazione, TV satellitare e monitoraggio climatico per secoli.
-
-Nel 2018 erano circa 2 000 satelliti attivi ; oggi ne contiamo 16 000 , spinti da megacostellazioni private come Starlink (10 000 satelliti, in espansione a 42 000) e da progetti cinesi (15 000‑12 000) e russi, oltre a piani per data‑center IA con costellazioni da 50 000‑1 000 000 di unità in orbita bassa (160‑2 000 km). L’aumento dei lanci ha moltiplicato le “congiunzioni” reali, richiedendo migliaia di manovre evasive: SpaceX prevede circa 300 000 correzioni nel 2025 , oltre 800 al giorno.
-
-Il paper *An Orbital House of Cards* introduce il “ CRASH clock ”, che in assenza di controlli prevede la prima collisione in 2,5 giorni (nel 2018 era 164 giorni). Il CRASH clock considera solo i 69 000 oggetti tracciabili, ma milioni di frammenti più piccoli, invisibili, minacciano satelliti, come il probabile colpo a Shenzhou‑20 nel novembre 2025.
-
-Per mitigare il problema, la IADC (dal 1993) e le Nazioni Unite (2021) hanno pubblicato linee guida – rientro controllato entro 25 anni, con l’ESA che punta a 5 anni e a “debris neutral” entro il 2030 – ma le regole restano volontarie e poco vincolanti, mentre gli operatori preferiscono scudi passivi a soluzioni più costose.
-
-La “malattia” della spazzatura spaziale si sviluppa lentamente: un piccolo frammento rilasciato in quota rimane in orbita per sempre, rendendo inevitabile l’effetto cumulativo. Pubblicazioni, tra cui una del 2025 a firma di Donald J. Kessler, indicano che nella fascia tra 520 e 1000 km la sindrome di Kessler potrebbe già essere in corso.
-
-Chi vuole trarre profitto dallo spazio, prevedendo mega‑costellazioni con vita utile di circa cinque anni, ha ancora tempo per operare in un ambiente non ancora ostile, ma gli enti che pianificano decine di migliaia di satelliti in orbita bassa saranno i primi a subire le conseguenze se non agiscono per ridurre il problema e stabilire regole comuni.
-
-Tre fattori influenzano la dinamica dei detriti:
-
-• Finitezza dello spazio : chi arriva prima occupa le orbite più vantaggiose. Starlink opera intorno ai 550 km, dove un sottile strato di aria riduce i detriti ma richiede consumo continuo di propellente; le megacostellazioni cinesi si posizioneranno tra 700 e 1200 km, zone più a rischio.
-
-• Sociopsicologico : la “shifting baseline syndrome” sposta la soglia di accettabilità verso condizioni peggiori, facendo apparire non problematico il sovraffollamento delle orbite in assenza di grandi incidenti.
-
-• Indicatore visivo : il CRASH clock vuole fungere da segnale dell’evoluzione dell’ambiente orbitale e della gravità della situazione.
-
-L’autore conclude che, per affrontare la sfida, non basta la consapevolezza informativa; è necessario un salto cognitivo e culturale che renda il problema visibile e collegato alla nostra natura, poiché la sfida è sia esterna che interna.
-
-• Da 2 000 a 16 000 satelliti attivi in poco più di un decennio.
-
-• Il CRASH clock prevede una collisione in 2,5 giorni senza interventi.
-
-• Le linee guida internazionali sono volontarie e poco vincolanti.
-
-• La sindrome di Kessler potrebbe già manifestarsi tra 520 e 1000 km di altitudine.
-
-• Fattori di finitezza, sociopsicologia e mancanza di regole comuni aggravano il rischio di detriti.</description>
-      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
-    <hr>
-    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/11/Spazzatura-spazialeOK.jpg"><img src="https://www.iltascabile.com/wp-content/uploads/2026/11/Spazzatura-spazialeOK.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
-    <p>Nel 2018 un professore universitario avvertiva gli studenti del pericolo rappresentato dai detriti spaziali – lanciatori esausti, satelliti spenti e frammenti di collisioni che viaggiano a chilometri al secondo, costringendo i satelliti attivi a continue correzioni. Temeva l’attivazione della <strong>sindrome di Kessler</strong>, una reazione a catena di collisioni che creerebbe una cintura impenetrabile di frammenti, bloccando l’accesso allo spazio e compromettendo geolocalizzazione, TV satellitare e monitoraggio climatico per secoli.</p>  
-
-<p>Nel 2018 erano circa <strong>2 000 satelliti attivi</strong>; oggi ne contiamo <strong>16 000</strong>, spinti da megacostellazioni private come <strong>Starlink</strong> (10 000 satelliti, in espansione a 42 000) e da progetti cinesi (15 000‑12 000) e russi, oltre a piani per data‑center IA con costellazioni da 50 000‑1 000 000 di unità in orbita bassa (160‑2 000 km). L’aumento dei lanci ha moltiplicato le “congiunzioni” reali, richiedendo migliaia di manovre evasive: SpaceX prevede circa <strong>300 000 correzioni nel 2025</strong>, oltre 800 al giorno.</p>  
-
-<p>Il paper *An Orbital House of Cards* introduce il “<strong>CRASH clock</strong>”, che in assenza di controlli prevede la prima collisione in <strong>2,5 giorni</strong> (nel 2018 era 164 giorni). Il CRASH clock considera solo i 69 000 oggetti tracciabili, ma milioni di frammenti più piccoli, invisibili, minacciano satelliti, come il probabile colpo a <strong>Shenzhou‑20</strong> nel novembre 2025.</p>  
-
-<p>Per mitigare il problema, la <strong>IADC</strong> (dal 1993) e le <strong>Nazioni Unite</strong> (2021) hanno pubblicato linee guida – rientro controllato entro 25 anni, con l’ESA che punta a 5 anni e a “debris neutral” entro il 2030 – ma le regole restano volontarie e poco vincolanti, mentre gli operatori preferiscono scudi passivi a soluzioni più costose.</p>  
-
-<p>La “malattia” della spazzatura spaziale si sviluppa lentamente: un piccolo frammento rilasciato in quota rimane in orbita per sempre, rendendo inevitabile l’effetto cumulativo. Pubblicazioni, tra cui una del 2025 a firma di Donald J. Kessler, indicano che nella fascia tra <strong>520 e 1000 km</strong> la sindrome di Kessler potrebbe già essere in corso.</p>  
-
-<p>Chi vuole trarre profitto dallo spazio, prevedendo mega‑costellazioni con vita utile di circa cinque anni, ha ancora tempo per operare in un ambiente non ancora ostile, ma gli enti che pianificano decine di migliaia di satelliti in orbita bassa saranno i primi a subire le conseguenze se non agiscono per ridurre il problema e stabilire regole comuni.</p>  
-
-<p>Tre fattori influenzano la dinamica dei detriti:</p>  
-<ol>  
-<li><strong>Finitezza dello spazio</strong>: chi arriva prima occupa le orbite più vantaggiose. Starlink opera intorno ai 550 km, dove un sottile strato di aria riduce i detriti ma richiede consumo continuo di propellente; le megacostellazioni cinesi si posizioneranno tra 700 e 1200 km, zone più a rischio.</li>  
-<li><strong>Sociopsicologico</strong>: la “shifting baseline syndrome” sposta la soglia di accettabilità verso condizioni peggiori, facendo apparire non problematico il sovraffollamento delle orbite in assenza di grandi incidenti.</li>  
-<li><strong>Indicatore visivo</strong>: il CRASH clock vuole fungere da segnale dell’evoluzione dell’ambiente orbitale e della gravità della situazione.</li>  
-</ol>  
-
-<p>L’autore conclude che, per affrontare la sfida, non basta la consapevolezza informativa; è necessario un salto cognitivo e culturale che renda il problema visibile e collegato alla nostra natura, poiché la sfida è sia esterna che interna.</p>  
-
-<ol>  
-<li>Da 2 000 a 16 000 satelliti attivi in poco più di un decennio.</li>  
-<li>Il CRASH clock prevede una collisione in 2,5 giorni senza interventi.</li>  
-<li>Le linee guida internazionali sono volontarie e poco vincolanti.</li>  
-<li>La sindrome di Kessler potrebbe già manifestarsi tra 520 e 1000 km di altitudine.</li>  
-<li>Fattori di finitezza, sociopsicologia e mancanza di regole comuni aggravano il rischio di detriti.</li>  
-</ol>
-    
-    <hr>
-    <p><a href="https://www.iltascabile.com/scienze/spazzatura-spaziale/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
-      <guid isPermaLink="false">v18_https://www.iltascabile.com/scienze/spazzatura-spaziale/</guid>
-      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/11/Spazzatura-spazialeOK.jpg" length="0" type="image/jpeg"/>
-      <pubDate>Mon, 09 Nov 2026 18:32:09 +0000</pubDate>
-      <media:group>
-        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/11/Spazzatura-spazialeOK.jpg" type="image/jpeg" medium="image"/>
-        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/11/Spazzatura-spazialeOK.jpg"/>
-      </media:group>
-    </item>
-    <item>
       <title>The Italian Review: LE LONTANANZE VICINE DI PAOLO DI PAOLO</title>
       <link>https://lorenzoromani367.github.io/NewsFeed/articoli/97abe1f84b5b8e86.html</link>
       <description>Appena fuori da un teatro un giovane tedesco sente le critiche feroci di una piccola accogliente sul nuovo spettacolo, e la sua timidezza si trasforma in coraggio. Questo episodio introduce il primo incontro decisivo tra Wilhelm Zimmer e Jules de Marville, protagonisti di Tremare , il nuovo romanzo di Paolo Di Paolo, pubblicato da La Nave di Teseo.
@@ -1710,63 +1569,6 @@ La presentazione di Tremare avverrà il 9 novembre a Roma, al Teatro de’ Servi
       <media:group>
         <media:content url="https://www.theitalianreview.com/wp-content/uploads/2026/11/105_Massari_Cover.png" type="image/png" medium="image"/>
         <media:thumbnail url="https://www.theitalianreview.com/wp-content/uploads/2026/11/105_Massari_Cover.png"/>
-      </media:group>
-    </item>
-    <item>
-      <title>Valigia Blu: India, cancellati 130 milioni di elettori: esplode la protesta contro Modi</title>
-      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/97de7befd71005ee.html</link>
-      <description>La domenica scorsa decine di migliaia di persone si sono radunate a New Delhi per protestare contro la Special Intensive Revision (SIR) della Commissione Elettorale indiana, ritenuta dal partito del Congresso e da una coalizione di opposizione un’operazione a vantaggio del Bharatiya Janata Party (BJP) di Narendra Modi.
-
-Il 31 agosto la Commissione elettorale (ECI) ha pubblicato le liste elettorali provvisorie dopo la SIR, cancellando più di 130 milioni di nomi . Il governo sostiene che si tratti di una “pulizia” per rimuovere elettori deceduti, trasferiti o doppiamente registrati, ma il processo di ricorso è complesso e richiede udienze personali.
-
-La SIR, introdotta nel 2025 nello stato del Bihar e poi estesa a tutti gli stati, prevede tre fasi, tra cui una verifica porta‑a‑porta con richieste di documenti come certificati di nascita e di proprietà. Chi non riesce a fornire la documentazione viene classificato come “deceduto”, “trasferito/assente” o “registrato altrove”.
-
-Le critiche sottolineano che la maggior parte dei cancellati appartiene a gruppi tradizionalmente opposti al BJP: minoranze religiose (soprattutto musulmani), Dalit, caste basse, lavoratori migranti e persone indigenti. In West Bengal, circa il 70 % dei non idonei è musulmano, nonostante i musulmani rappresentino il 25 % dell’elettorato totale dello Stato.
-
-Le proteste, avviate dal 6 ottobre, includono la Gen Z del Cockroach Janata Party (CJP), movimenti femministi guidati dall’All India Student Association (AISA) e il blocco politico INDIA guidato dal Congresso di Rahul Gandhi. Il governo di Modi ha risposto con una massiccia militarizzazione: blocco di treni, chiusura di stazioni della metropolitana, limitazioni della rete mobile, divieto di assembramenti e uso della storica piazza Jantar Mantar.
-
-Le autorità hanno effettuato più di diecimila arresti , includendo studenti, attivisti, avvocati, giornalisti e parlamentari dell’opposizione, con operazioni anche a bordo di aerei appena atterrati. Amnesty International e l’Alto Commissariato ONU per i diritti umani hanno condannato la repressione, ma il governo ha respinto le critiche come interferenze esterne.
-
-• 130 milioni di elettori cancellati a seguito della SIR, con un iter di ricorso estremamente oneroso.
-
-• Le proteste sono guidate da Rahul Gandhi, dal CJP, dall’AISA e dal blocco INDIA, chiedendo dimissioni del presidente della Commissione elettorale, Gyanesh Kumar.
-
-• Il governo di Modi ha risposto con un blocco di infrastrutture, restrizioni di comunicazione e una campagna di arresti di massa.
-
-• Le accuse indicano una discriminazione sproporzionata contro minoranze religiose, Dalit e caste basse, con potenziali effetti sulla demografia elettorale.
-
-• Le organizzazioni internazionali hanno denunciato violazioni dei diritti umani, ma il governo ha definito le critiche come ingerenze nella sovranità.</description>
-      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Valigia Blu | <strong>Ambito:</strong> <em>Geopolitica</em></p>
-    <hr>
-    <p><a class="zoom" href="https://www.valigiablu.it/wp-content/uploads/2026/11/india-proteste-modi.jpg"><img src="https://www.valigiablu.it/wp-content/uploads/2026/11/india-proteste-modi.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
-    <p>La domenica scorsa decine di migliaia di persone si sono radunate a New Delhi per protestare contro la <strong>Special Intensive Revision (SIR)</strong> della Commissione Elettorale indiana, ritenuta dal partito del Congresso e da una coalizione di opposizione un’operazione a vantaggio del Bharatiya Janata Party (BJP) di Narendra Modi.</p>
-
-<p>Il 31 agosto la Commissione elettorale (ECI) ha pubblicato le liste elettorali provvisorie dopo la SIR, cancellando più di <strong>130 milioni di nomi</strong>. Il governo sostiene che si tratti di una “pulizia” per rimuovere elettori deceduti, trasferiti o doppiamente registrati, ma il processo di ricorso è complesso e richiede udienze personali.</p>
-
-<p>La SIR, introdotta nel 2025 nello stato del Bihar e poi estesa a tutti gli stati, prevede tre fasi, tra cui una verifica porta‑a‑porta con richieste di documenti come certificati di nascita e di proprietà. Chi non riesce a fornire la documentazione viene classificato come “deceduto”, “trasferito/assente” o “registrato altrove”.</p>
-
-<p>Le critiche sottolineano che la maggior parte dei cancellati appartiene a gruppi tradizionalmente opposti al BJP: minoranze religiose (soprattutto musulmani), Dalit, caste basse, lavoratori migranti e persone indigenti. In West Bengal, circa il 70 % dei non idonei è musulmano, nonostante i musulmani rappresentino il 25 % dell’elettorato totale dello Stato.</p>
-
-<p>Le proteste, avviate dal 6 ottobre, includono la Gen Z del Cockroach Janata Party (CJP), movimenti femministi guidati dall’All India Student Association (AISA) e il blocco politico INDIA guidato dal Congresso di Rahul Gandhi. Il governo di Modi ha risposto con una massiccia militarizzazione: blocco di treni, chiusura di stazioni della metropolitana, limitazioni della rete mobile, divieto di assembramenti e uso della storica piazza Jantar Mantar.</p>
-
-<p>Le autorità hanno effettuato più di <strong>diecimila arresti</strong>, includendo studenti, attivisti, avvocati, giornalisti e parlamentari dell’opposizione, con operazioni anche a bordo di aerei appena atterrati. Amnesty International e l’Alto Commissariato ONU per i diritti umani hanno condannato la repressione, ma il governo ha respinto le critiche come interferenze esterne.</p>
-
-<ol>
-<li><strong>130 milioni di elettori cancellati</strong> a seguito della SIR, con un iter di ricorso estremamente oneroso.</li>
-<li><strong>Le proteste</strong> sono guidate da Rahul Gandhi, dal CJP, dall’AISA e dal blocco INDIA, chiedendo dimissioni del presidente della Commissione elettorale, Gyanesh Kumar.</li>
-<li><strong>Il governo di Modi</strong> ha risposto con un blocco di infrastrutture, restrizioni di comunicazione e una campagna di arresti di massa.</li>
-<li><strong>Le accuse</strong> indicano una discriminazione sproporzionata contro minoranze religiose, Dalit e caste basse, con potenziali effetti sulla demografia elettorale.</li>
-<li><strong>Le organizzazioni internazionali</strong> hanno denunciato violazioni dei diritti umani, ma il governo ha definito le critiche come ingerenze nella sovranità.</li>
-</ol>
-    <p><a class="zoom" href="https://www.valigiablu.it/?_siwp_captcha&amp;id=186ad09d01e0c3e3909a40064ce8902f1f5d8fc5"><img src="https://www.valigiablu.it/?_siwp_captcha&amp;id=186ad09d01e0c3e3909a40064ce8902f1f5d8fc5" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://www.valigiablu.it/wp-content/plugins/securimage-wp/lib/images/refresh.png"><img src="https://www.valigiablu.it/wp-content/plugins/securimage-wp/lib/images/refresh.png" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://www.valigiablu.it/pictures/crowdfunding/card-2026-b.jpg?v=4"><img src="https://www.valigiablu.it/pictures/crowdfunding/card-2026-b.jpg?v=4" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
-    <hr>
-    <p><a href="https://www.valigiablu.it/india-studenti-femministe-proteste-modi-elezioni/">Leggi originale su Valigia Blu &rarr;</a></p></div>]]></content:encoded>
-      <guid isPermaLink="false">v18_https://www.valigiablu.it/india-studenti-femministe-proteste-modi-elezioni/</guid>
-      <enclosure url="https://www.valigiablu.it/wp-content/uploads/2026/11/india-proteste-modi.jpg" length="0" type="image/jpeg"/>
-      <pubDate>Mon, 09 Nov 2026 18:34:10 +0000</pubDate>
-      <media:group>
-        <media:content url="https://www.valigiablu.it/wp-content/uploads/2026/11/india-proteste-modi.jpg" type="image/jpeg" medium="image"/>
-        <media:thumbnail url="https://www.valigiablu.it/wp-content/uploads/2026/11/india-proteste-modi.jpg"/>
       </media:group>
     </item>
     <item>
@@ -2066,70 +1868,6 @@ L’assessora Cianca preferisce focalizzarsi sui problemi comuni del comune – 
       <media:group>
         <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/11/La-memoria-sconveniente-degli-alberi_Testo.jpg" type="image/jpeg" medium="image"/>
         <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/11/La-memoria-sconveniente-degli-alberi_Testo.jpg"/>
-      </media:group>
-    </item>
-    <item>
-      <title>Valigia Blu: Perché i colloqui di Abu Dhabi non metteranno fine alla guerra della Russia contro l’Ucraina</title>
-      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/07e52e18d8b5e22e.html</link>
-      <description>La guerra russo‑ucraina, ormai in una fase di logoramento, continua senza sosta. Gli Stati Uniti hanno mediato un ciclo di colloqui trilaterali tra Russia, Ucraina e USA ad Abu Dhabi, capitale degli Emirati Arabi Uniti, il 10 e 11 novembre.
-
-L’incontro, se si svolgerà, segue i progressi umanitari registrati a Oleshky, cittadina dell’Ucraina meridionale occupata dalle forze russe dal 2022. A partire dal dicembre 2025 Oleshky ha vissuto una grave crisi alimentare, aggravatasi quest’estate. La popolazione è scesa da 25 000 a 2 000 abitanti, e la carenza di cibo minacciava di cancellare la cittadina.
-
-In estate, le intelligence ucraine e russe hanno concordato una tregua locale per evacuare i residenti, qualora lo desiderassero, verso l’Ucraina o la Russia. La missione umanitaria è stata condotta con regolarità: entrambe le parti hanno rispettato il cessate‑il‑fuoco, centinaia di persone sono state evacuate (in gran parte verso l’Ucraina) e i rappresentanti per i diritti umani, l’ucraino Dmytro Lubinets e la russa Yana Lantratova, hanno coordinato l’operazione in modo pacifico.
-
-Il successo di Oleshky, tuttavia, non sarebbe derivato da reali intenzioni distensive di Mosca, ma dalla volontà di assecondare la vanità di Donald Trump, noto per la sua ostilità verso il presidente ucraino Volodymyr Zelensky. Trump avrebbe aspirato al Premio Nobel per la Pace; la strategia della famiglia Trump sembrerebbe ora orientata a garantire il Nobel a Melania Trump, la cui “intermediazione esclusiva” è stata proclamata dalla Casa Bianca pochi giorni prima del cessate‑il‑fuoco.
-
-Russia e Ucraina hanno entrambi cercato di avvicinare Donald Trump, presentando la First Lady come “mediatrice di pace”. Mosca, secondo il testo, avrebbe calcolato che il successo di Oleshky potesse rafforzare l’insofferenza di Trump verso Zelensky, favorendo così la propria posizione.
-
-Un ulteriore elemento di pessimismo è la nomina da parte di Mosca di Vladimir Medinsky, consigliere di Putin, a capo della delegazione russa negli EAU. Medinsky ha guidato le delegazioni russe nei negoziati di Istanbul nel 2022 e nel 2025; la sua riconferma indica che la posizione di Mosca è rimasta invariata, con l’unico esito accettabile della guerra rappresentato dalla resa dell’Ucraina.
-
-Il testo evidenzia inoltre difficoltà occidentali: le riserve strategiche americane sono state intaccate dal conflitto con l’Iran, limitando la capacità di rifornimento di armi, soprattutto per la difesa aerea ucraina. La vittoria del Partito Democratico alle elezioni di metà mandato non dovrebbe cambiare questo quadro.
-
-Il futuro sostegno europeo è incerto. La Francia, con le elezioni presidenziali e legislative previste nella prima metà del 2027, potrebbe vedere la vittoria del Rassemblement National guidato da Marine Le Pen, la quale ha dichiarato che la Francia non può più permettersi di erogare aiuti finanziari all’Ucraina. Un’interruzione del supporto francese potrebbe innescare un effetto domino in altri paesi europei.
-
-In Germania, l’Alternative für Deutschland (AfD) è in forte ascesa e rappresenta una forza apertamente filo‑Putin e filo‑Trump all’interno dell’UE. Nonostante le sconfitte elettorali di Trump nel 2026, egli resta un tassello cruciale nei calcoli strategici della Russia.
-
-Secondo l’articolo, la partecipazione della Russia ai colloqui di Abu Dhabi non indica una reale disponibilità alla pace, ma la speranza che il sostegno occidentale a Kyiv si esaurisca, confidando di poter attendere quel momento.
-
-• Il successo umanitario a Oleshky è stato attribuito a motivi politici legati a Donald e Melania Trump, non a una reale volontà di pace di Mosca.
-
-• Vladimir Medinsky guida la delegazione russa, segnalando la continuità della posizione di Mosca che mira alla resa dell’Ucraina.
-
-• Le riserve di armi degli Stati Uniti sono limitate a causa del conflitto con l’Iran, riducendo il supporto militare all’Ucraina.
-
-• Le prossime elezioni in Francia e la crescita dell’AfD in Germania potrebbero indebolire ulteriormente l’aiuto europeo all’Ucraina.
-
-• La Russia partecipa ai colloqui di Abu Dhabi sperando che il sostegno occidentale a Kyiv si esaurisca, non per avviare una pace duratura.</description>
-      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Valigia Blu | <strong>Ambito:</strong> <em>Geopolitica</em></p>
-    <hr>
-    <p><a class="zoom" href="https://www.valigiablu.it/wp-content/uploads/2026/11/trump-zelensky-colloqui.jpg"><img src="https://www.valigiablu.it/wp-content/uploads/2026/11/trump-zelensky-colloqui.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
-    <p>La guerra russo‑ucraina, ormai in una fase di logoramento, continua senza sosta. Gli Stati Uniti hanno mediato un ciclo di colloqui trilaterali tra Russia, Ucraina e USA ad Abu Dhabi, capitale degli Emirati Arabi Uniti, il 10 e 11 novembre.</p>  
-<p>L’incontro, se si svolgerà, segue i progressi umanitari registrati a Oleshky, cittadina dell’Ucraina meridionale occupata dalle forze russe dal 2022. A partire dal dicembre 2025 Oleshky ha vissuto una grave crisi alimentare, aggravatasi quest’estate. La popolazione è scesa da 25 000 a 2 000 abitanti, e la carenza di cibo minacciava di cancellare la cittadina.</p>  
-<p>In estate, le intelligence ucraine e russe hanno concordato una tregua locale per evacuare i residenti, qualora lo desiderassero, verso l’Ucraina o la Russia. La missione umanitaria è stata condotta con regolarità: entrambe le parti hanno rispettato il cessate‑il‑fuoco, centinaia di persone sono state evacuate (in gran parte verso l’Ucraina) e i rappresentanti per i diritti umani, l’ucraino Dmytro Lubinets e la russa Yana Lantratova, hanno coordinato l’operazione in modo pacifico.</p>  
-<p>Il successo di Oleshky, tuttavia, non sarebbe derivato da reali intenzioni distensive di Mosca, ma dalla volontà di assecondare la vanità di Donald Trump, noto per la sua ostilità verso il presidente ucraino Volodymyr Zelensky. Trump avrebbe aspirato al Premio Nobel per la Pace; la strategia della famiglia Trump sembrerebbe ora orientata a garantire il Nobel a Melania Trump, la cui “intermediazione esclusiva” è stata proclamata dalla Casa Bianca pochi giorni prima del cessate‑il‑fuoco.</p>  
-<p>Russia e Ucraina hanno entrambi cercato di avvicinare Donald Trump, presentando la First Lady come “mediatrice di pace”. Mosca, secondo il testo, avrebbe calcolato che il successo di Oleshky potesse rafforzare l’insofferenza di Trump verso Zelensky, favorendo così la propria posizione.</p>  
-<p>Un ulteriore elemento di pessimismo è la nomina da parte di Mosca di Vladimir Medinsky, consigliere di Putin, a capo della delegazione russa negli EAU. Medinsky ha guidato le delegazioni russe nei negoziati di Istanbul nel 2022 e nel 2025; la sua riconferma indica che la posizione di Mosca è rimasta invariata, con l’unico esito accettabile della guerra rappresentato dalla resa dell’Ucraina.</p>  
-<p>Il testo evidenzia inoltre difficoltà occidentali: le riserve strategiche americane sono state intaccate dal conflitto con l’Iran, limitando la capacità di rifornimento di armi, soprattutto per la difesa aerea ucraina. La vittoria del Partito Democratico alle elezioni di metà mandato non dovrebbe cambiare questo quadro.</p>  
-<p>Il futuro sostegno europeo è incerto. La Francia, con le elezioni presidenziali e legislative previste nella prima metà del 2027, potrebbe vedere la vittoria del Rassemblement National guidato da Marine Le Pen, la quale ha dichiarato che la Francia non può più permettersi di erogare aiuti finanziari all’Ucraina. Un’interruzione del supporto francese potrebbe innescare un effetto domino in altri paesi europei.</p>  
-<p>In Germania, l’Alternative für Deutschland (AfD) è in forte ascesa e rappresenta una forza apertamente filo‑Putin e filo‑Trump all’interno dell’UE. Nonostante le sconfitte elettorali di Trump nel 2026, egli resta un tassello cruciale nei calcoli strategici della Russia.</p>  
-<p>Secondo l’articolo, la partecipazione della Russia ai colloqui di Abu Dhabi non indica una reale disponibilità alla pace, ma la speranza che il sostegno occidentale a Kyiv si esaurisca, confidando di poter attendere quel momento.</p>  
-
-<ol>
-<li><strong>Il successo umanitario a Oleshky è stato attribuito a motivi politici legati a Donald e Melania Trump, non a una reale volontà di pace di Mosca.</strong></li>
-<li><strong>Vladimir Medinsky guida la delegazione russa, segnalando la continuità della posizione di Mosca che mira alla resa dell’Ucraina.</strong></li>
-<li><strong>Le riserve di armi degli Stati Uniti sono limitate a causa del conflitto con l’Iran, riducendo il supporto militare all’Ucraina.</strong></li>
-<li><strong>Le prossime elezioni in Francia e la crescita dell’AfD in Germania potrebbero indebolire ulteriormente l’aiuto europeo all’Ucraina.</strong></li>
-<li><strong>La Russia partecipa ai colloqui di Abu Dhabi sperando che il sostegno occidentale a Kyiv si esaurisca, non per avviare una pace duratura.</strong></li>
-</ol>
-    <p><a class="zoom" href="https://www.valigiablu.it/?_siwp_captcha&amp;id=7c1c57225965a9c62211600dcc7343b02ca09a60"><img src="https://www.valigiablu.it/?_siwp_captcha&amp;id=7c1c57225965a9c62211600dcc7343b02ca09a60" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://www.valigiablu.it/wp-content/plugins/securimage-wp/lib/images/refresh.png"><img src="https://www.valigiablu.it/wp-content/plugins/securimage-wp/lib/images/refresh.png" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://www.valigiablu.it/pictures/crowdfunding/card-2026-b.jpg?v=4"><img src="https://www.valigiablu.it/pictures/crowdfunding/card-2026-b.jpg?v=4" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
-    <hr>
-    <p><a href="https://www.valigiablu.it/colloqui-abu-dhabi-guerra-russia-ucraina-pace/">Leggi originale su Valigia Blu &rarr;</a></p></div>]]></content:encoded>
-      <guid isPermaLink="false">v18_https://www.valigiablu.it/colloqui-abu-dhabi-guerra-russia-ucraina-pace/</guid>
-      <enclosure url="https://www.valigiablu.it/wp-content/uploads/2026/11/trump-zelensky-colloqui.jpg" length="0" type="image/jpeg"/>
-      <pubDate>Tue, 10 Nov 2026 12:21:01 +0000</pubDate>
-      <media:group>
-        <media:content url="https://www.valigiablu.it/wp-content/uploads/2026/11/trump-zelensky-colloqui.jpg" type="image/jpeg" medium="image"/>
-        <media:thumbnail url="https://www.valigiablu.it/wp-content/uploads/2026/11/trump-zelensky-colloqui.jpg"/>
       </media:group>
     </item>
     <item>
@@ -3192,6 +2930,221 @@ Hirschhorn, secondo l’articolo, “ha ragione a considerare Simone Weil una cu
       <media:group>
         <media:content url="https://www.pangea.news/pan/wp-content/uploads/2026/11/Medaillon_051-768x1024-1.jpg" type="image/jpeg" medium="image"/>
         <media:thumbnail url="https://www.pangea.news/pan/wp-content/uploads/2026/11/Medaillon_051-768x1024-1.jpg"/>
+      </media:group>
+    </item>
+    <item>
+      <title>Il Tascabile: L’alchimista del suono</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/46e368cbb84af167.html</link>
+      <description>Cinquant’anni dopo la nascita di Oxygène (1976), l’album più celebre di Jean‑Michel Jarre, l’artista si definisce ancora “alchimista del segnale elettrico”. Il disco fu registrato in una cucina trasformata in studio nella Rue de la Trémoille, dove combinò per la prima volta una melodia pop con sperimentazione d’avanguardia, creando una “Wunderkammer” di organi Farfisa ed Eminent 310, passati attraverso un pedale phaser Electro‑Harmonix Small Stone, e usando i delay a nastro del Revox per ampliare gli spazi sonori dell’EMS VCS3, affiancati da Minimoog, Mellotron e dalla drum machine Korg Mini Pops. Questo “patching” è descritto come un rituale quasi esoterico che ha influenzato artisti come Oneohtrix Point Never, Daft Punk e Autechre.
+
+Nel concerto di Modena, Jarre ha celebrato i cinquant’anni di Oxygène con una performance digitale che ha unito realtà aumentata, avatar e suono immersivo, dimostrando che l’attuale universo virtuale è la prosecuzione del futuro analogico iniziato nel 1976. L’artista sostiene che lo strumento – violino, synth o algoritmo – è neutro; ciò che conta è l’emozione e l’approccio organico dell’uomo che lo utilizza. Per lui la musica elettronica è “cucinare”: si mescolano texture, armonie e forme d’onda come in un piatto di pasta, e l’innovazione tecnologica (dal sintetizzatore analogico all’intelligenza artificiale e al Dolby Atmos) è solo un nuovo “giocattolo” che mantiene viva la curiosità.
+
+Jarre paragona il processo creativo alla scelta di una formazione orchestrale, scegliendo strumenti elettronici in modo “biologico”, guidato dall’istinto più che da calcoli. Evidenzia due album estremi nella sua carriera: Oxygène (1976), realizzato entro i limiti dell’hardware analogico, e Oxymore (2022), costruito a partire dai suoni di musique concrète di Pierre Henry, proiettati nella città virtuale di Oxville . Questo passaggio dal nastro magnetico ai “loop” fino alla scultura sonora in una sfera virtuale apre la domanda su come il suono interagisca con la coscienza umana.
+
+L’autore ritiene che la psicoacustica – la relazione tra psicologia, acustica, rumore e suono – sia ancora un territorio misterioso da esplorare per catturare emozioni, prima proprie, poi del pubblico, con l’obiettivo di esprimerle e condividerle. Spiega che, pur cercando lo strumento più adatto, l’esplorazione di sintetizzatori, algoritmi o strumenti virtuali può portare a dimenticare l’idea originale, creando un dialogo imprevedibile tra macchina e intuizione.
+
+Quando ha ricevuto la Stephen Hawking Medal for Science Communication , ha dichiarato che l’umanità sta diventando una comunità di “ zingari del tempo e dello spazio ”. Nell’attuale corsa allo spazio, l’eredità sonora che sceglierebbe di lasciare è il suono della pioggia, “la cosa più naturale legata al nostro pianeta, qualcosa che probabilmente non esiste da nessun’altra parte nell’universo”.
+
+• Jarre continua a definirsi “alchimista del segnale elettrico” a cinquant’anni da Oxygène .
+
+• Il disco fu registrato in una cucina‑studio, usando organi, synth, phaser, delay a nastro e drum machine in un “patching” esoterico.
+
+• La performance di Modena ha combinato realtà aumentata, avatar e suono immersivo, sottolineando la neutralità dello strumento.
+
+• Due album chiave: Oxygène (1976, hardware analogico) e Oxymore (2022, suoni di Pierre Henry in una città virtuale).
+
+• Jarre evidenzia la psicoacustica come frontiera ancora da esplorare e sceglie il suono della pioggia come possibile eredità sonora dell’umanità.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/11/Lalchimista-del-suono.jpg"><img src="https://www.iltascabile.com/wp-content/uploads/2026/11/Lalchimista-del-suono.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Cinquant’anni dopo la nascita di <em>Oxygène</em> (1976), l’album più celebre di Jean‑Michel Jarre, l’artista si definisce ancora “alchimista del segnale elettrico”. Il disco fu registrato in una cucina trasformata in studio nella Rue de la Trémoille, dove combinò per la prima volta una melodia pop con sperimentazione d’avanguardia, creando una “Wunderkammer” di organi Farfisa ed Eminent 310, passati attraverso un pedale phaser Electro‑Harmonix Small Stone, e usando i delay a nastro del Revox per ampliare gli spazi sonori dell’EMS VCS3, affiancati da Minimoog, Mellotron e dalla drum machine Korg Mini Pops. Questo “patching” è descritto come un rituale quasi esoterico che ha influenzato artisti come Oneohtrix Point Never, Daft Punk e Autechre.</p>
+
+<p>Nel concerto di Modena, Jarre ha celebrato i cinquant’anni di <em>Oxygène</em> con una performance digitale che ha unito realtà aumentata, avatar e suono immersivo, dimostrando che l’attuale universo virtuale è la prosecuzione del futuro analogico iniziato nel 1976. L’artista sostiene che lo strumento – violino, synth o algoritmo – è neutro; ciò che conta è l’emozione e l’approccio organico dell’uomo che lo utilizza. Per lui la musica elettronica è “cucinare”: si mescolano texture, armonie e forme d’onda come in un piatto di pasta, e l’innovazione tecnologica (dal sintetizzatore analogico all’intelligenza artificiale e al Dolby Atmos) è solo un nuovo “giocattolo” che mantiene viva la curiosità.</p>
+
+<p>Jarre paragona il processo creativo alla scelta di una formazione orchestrale, scegliendo strumenti elettronici in modo “biologico”, guidato dall’istinto più che da calcoli. Evidenzia due album estremi nella sua carriera: <strong>Oxygène</strong> (1976), realizzato entro i limiti dell’hardware analogico, e <strong>Oxymore</strong> (2022), costruito a partire dai suoni di <em>musique concrète</em> di Pierre Henry, proiettati nella città virtuale di <strong>Oxville</strong>. Questo passaggio dal nastro magnetico ai “loop” fino alla scultura sonora in una sfera virtuale apre la domanda su come il suono interagisca con la coscienza umana.</p>
+
+<p>L’autore ritiene che la <strong>psicoacustica</strong> – la relazione tra psicologia, acustica, rumore e suono – sia ancora un territorio misterioso da esplorare per catturare emozioni, prima proprie, poi del pubblico, con l’obiettivo di esprimerle e condividerle. Spiega che, pur cercando lo strumento più adatto, l’esplorazione di sintetizzatori, algoritmi o strumenti virtuali può portare a dimenticare l’idea originale, creando un dialogo imprevedibile tra macchina e intuizione.</p>
+
+<p>Quando ha ricevuto la <strong>Stephen Hawking Medal for Science Communication</strong>, ha dichiarato che l’umanità sta diventando una comunità di “<strong>zingari del tempo e dello spazio</strong>”. Nell’attuale corsa allo spazio, l’eredità sonora che sceglierebbe di lasciare è il suono della pioggia, “la cosa più naturale legata al nostro pianeta, qualcosa che probabilmente non esiste da nessun’altra parte nell’universo”.</p>
+
+<ol>
+<li>Jarre continua a definirsi “alchimista del segnale elettrico” a cinquant’anni da <em>Oxygène</em>.</li>
+<li>Il disco fu registrato in una cucina‑studio, usando organi, synth, phaser, delay a nastro e drum machine in un “patching” esoterico.</li>
+<li>La performance di Modena ha combinato realtà aumentata, avatar e suono immersivo, sottolineando la neutralità dello strumento.</li>
+<li>Due album chiave: <strong>Oxygène</strong> (1976, hardware analogico) e <strong>Oxymore</strong> (2022, suoni di Pierre Henry in una città virtuale).</li>
+<li>Jarre evidenzia la psicoacustica come frontiera ancora da esplorare e sceglie il suono della pioggia come possibile eredità sonora dell’umanità.</li>
+</ol>
+    
+    <hr>
+    <p><a href="https://www.iltascabile.com/linguaggi/alchimista-suono/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.iltascabile.com/linguaggi/alchimista-suono/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/11/Lalchimista-del-suono.jpg" length="0" type="image/jpeg"/>
+      <pubDate>Thu, 12 Nov 2026 16:41:40 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/11/Lalchimista-del-suono.jpg" type="image/jpeg" medium="image"/>
+        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/11/Lalchimista-del-suono.jpg"/>
+      </media:group>
+    </item>
+    <item>
+      <title>Valigia Blu: Basi russe in Libia e rotte verso il Sahel: la morsa di Mosca nel Mediterraneo</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/7d2fc79a67f82c44.html</link>
+      <description>Alla fine di agosto‑settembre due convogli russi carichi di materiale militare sono entrati nel Mediterraneo; uno di essi ha attraccato a Tobruk, nella Libia orientale controllata dal clan di Haftar. I due mercantili, la Anastasiia e la Yuriy Arshenevskiy , sono stati scortati dalla nave da sbarco Aleksandr Shabalin e hanno scaricato blindati per il trasporto truppe, mezzi antimina, camion e altro materiale logistico, come mostrano le foto di Militarnyi. Il 14 settembre è stato filmato un convoglio di mezzi militari che attraversava la città.
+
+A gennaio la nave Mys Zhelaniya , soggetta a sanzioni USA, aveva già sostato a Tobruk con veicoli militari sul molo. Le immagini satellitari di Vantor, pubblicate dal Corriere della Sera, indicano circa 3 000 tonnellate di materiale: 50 camion Tornado‑U , 30 mezzi antimina, 10 blindati, munizioni, autobotti, cucine da campo, unità sanitarie e officine mobili, secondo l’analista Jalel Harchaoui (RUSI). Finora Mosca si è appoggiata a quattro basi libiche (vicino a Bengasi, Sirte, Al‑Jufra e Brak al‑Shati) e a Maaten al‑Sarra , riattivata nel dicembre 2024 con soldati siriani, da cui rifornire Burkina Faso, Mali e Sudan.
+
+Nel contesto del conflitto in Sudan, Zaidan, tornato a Khartoum, ha descritto la città al buio, con le centrali elettriche distrutte, definendola “un laboratorio della guerra dei droni, grazie ad Abu Dhabi”. Gli attacchi colpiscono rifugi, mercati, ospedali, impianti idrici ed energetici, violando i principi di distinzione, proporzionalità e precauzione del diritto umanitario, come avvertito a marzo dall’Ufficio ONU per i diritti umani, e potrebbero costituire crimini di guerra.
+
+I droni più rudimentali, quadricotteri con componenti commerciali e proiettili di mortaio da 120 mm, sono i più indiscriminati. I droni in Sudan non sono nati con il conflitto: nel 2008 i ribelli del Darfur abbattervero un velivolo iraniano, mentre Khartoum lo definì drone sudanese per pesticidi; lo stesso anno il governo parlò di “Zagil”, versione dell’Ababil‑3. Oggi la scala è diversa: le RSF usano droni a corto raggio, l’esercito li arma con l’aiuto dell’Ucraina, e provengono da Iran, Turchia (via Egitto), Cina, Emirati Arabi Uniti e altri.
+
+L’Africa Center for Strategic Studies segnala che almeno 40 Paesi africani hanno acquisito droni, 17 li usano attori non statali, e 11 li producono, incluso il Sudan. Un DJI Mavic 3 costa 2‑5 mila dollari, un Bayraktar TB2 2‑5 milioni, un Wing Loong II 1‑2 milioni, frazione del costo di un aereo da combattimento; un drone economico può distruggere centrali elettriche o depositi di carburante, con danni incalcolabili per i civili.
+
+Il Centre for Information Resilience elenca 21 modelli di droni stranieri impiegati, prodotti in Bielorussia, Iran, Cina, Russia, Sudan e Turchia; le RSF ne avrebbero usati dieci, le SAF cinque (Al Jazeera). Le rotte di approvvigionamento passano per gli Emirati, con droni cinesi CH‑95, FH‑95, Wing Loong II, droni serbi Yugoimport e sistemi basati su Starlink, e attraversano la Libia di Haftar. Il battaglione Subul al‑Salam, dell’Esercito nazionale libico di Haftar, ha facilitato il passaggio di reclute, mercenari colombiani, armi e carburante verso le RSF, e una base a 75 km da Kufra fungeva da transito e officina. Il triangolo Sudan‑Egitto‑Libia è conteso per miniere d’oro e per il controllo di…
+
+• Due convogli russi hanno consegnato circa 3 000 tonnellate di materiale militare a Tobruk, includendo blindati, camion Tornado‑U e mezzi antimina.
+
+• Mosca utilizza quattro basi libiche e la base siriana di Maaten al‑Sarra per rifornire gruppi armati in Burkina Faso, Mali e Sudan.
+
+• Il conflitto in Sudan è caratterizzato da un’intensa guerra dei droni , con armi provenienti da Iran, Turchia, Cina, Emirati e altri, e con costi molto inferiori rispetto a velivoli da combattimento.
+
+• Le rotte di approvvigionamento dei droni attraversano la Libia di Haftar e passano per gli Emirati, coinvolgendo anche sistemi di comunicazione satellitare come Starlink.
+
+• Il battaglione Subul al‑Salam dell’Esercito nazionale libico di Haftar facilita il transito di reclute, mercenari, armi e carburante verso le RSF, con una base di transito a 75 km da Kufra.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Valigia Blu | <strong>Ambito:</strong> <em>Geopolitica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.valigiablu.it/wp-content/uploads/2026/11/cargo-russia-libia.jpg"><img src="https://www.valigiablu.it/wp-content/uploads/2026/11/cargo-russia-libia.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Alla fine di agosto‑settembre due convogli russi carichi di materiale militare sono entrati nel Mediterraneo; uno di essi ha attraccato a Tobruk, nella Libia orientale controllata dal clan di Haftar. I due mercantili, la <strong>Anastasiia</strong> e la <strong>Yuriy Arshenevskiy</strong>, sono stati scortati dalla nave da sbarco <strong>Aleksandr Shabalin</strong> e hanno scaricato blindati per il trasporto truppe, mezzi antimina, camion e altro materiale logistico, come mostrano le foto di Militarnyi. Il 14 settembre è stato filmato un convoglio di mezzi militari che attraversava la città.</p>  
+<p>A gennaio la nave <strong>Mys Zhelaniya</strong>, soggetta a sanzioni USA, aveva già sostato a Tobruk con veicoli militari sul molo. Le immagini satellitari di Vantor, pubblicate dal Corriere della Sera, indicano circa <strong>3 000 tonnellate</strong> di materiale: 50 camion <em>Tornado‑U</em>, 30 mezzi antimina, 10 blindati, munizioni, autobotti, cucine da campo, unità sanitarie e officine mobili, secondo l’analista <strong>Jalel Harchaoui</strong> (RUSI). Finora Mosca si è appoggiata a quattro basi libiche (vicino a Bengasi, Sirte, Al‑Jufra e Brak al‑Shati) e a <strong>Maaten al‑Sarra</strong>, riattivata nel dicembre 2024 con soldati siriani, da cui rifornire Burkina Faso, Mali e Sudan.</p>  
+<p>Nel contesto del conflitto in Sudan, Zaidan, tornato a Khartoum, ha descritto la città al buio, con le centrali elettriche distrutte, definendola “un laboratorio della guerra dei droni, grazie ad Abu Dhabi”. Gli attacchi colpiscono rifugi, mercati, ospedali, impianti idrici ed energetici, violando i principi di distinzione, proporzionalità e precauzione del diritto umanitario, come avvertito a marzo dall’Ufficio ONU per i diritti umani, e potrebbero costituire crimini di guerra.</p>  
+<p>I droni più rudimentali, quadricotteri con componenti commerciali e proiettili di mortaio da 120 mm, sono i più indiscriminati. I droni in Sudan non sono nati con il conflitto: nel 2008 i ribelli del Darfur abbattervero un velivolo iraniano, mentre Khartoum lo definì drone sudanese per pesticidi; lo stesso anno il governo parlò di “Zagil”, versione dell’Ababil‑3. Oggi la scala è diversa: le RSF usano droni a corto raggio, l’esercito li arma con l’aiuto dell’Ucraina, e provengono da Iran, Turchia (via Egitto), Cina, Emirati Arabi Uniti e altri.</p>  
+<p>L’Africa Center for Strategic Studies segnala che almeno 40 Paesi africani hanno acquisito droni, 17 li usano attori non statali, e 11 li producono, incluso il Sudan. Un DJI Mavic 3 costa 2‑5 mila dollari, un Bayraktar TB2 2‑5 milioni, un Wing Loong II 1‑2 milioni, frazione del costo di un aereo da combattimento; un drone economico può distruggere centrali elettriche o depositi di carburante, con danni incalcolabili per i civili.</p>  
+<p>Il Centre for Information Resilience elenca 21 modelli di droni stranieri impiegati, prodotti in Bielorussia, Iran, Cina, Russia, Sudan e Turchia; le RSF ne avrebbero usati dieci, le SAF cinque (Al Jazeera). Le rotte di approvvigionamento passano per gli Emirati, con droni cinesi CH‑95, FH‑95, Wing Loong II, droni serbi Yugoimport e sistemi basati su Starlink, e attraversano la Libia di Haftar. Il battaglione Subul al‑Salam, dell’Esercito nazionale libico di Haftar, ha facilitato il passaggio di reclute, mercenari colombiani, armi e carburante verso le RSF, e una base a 75 km da Kufra fungeva da transito e officina. Il triangolo Sudan‑Egitto‑Libia è conteso per miniere d’oro e per il controllo di…</p>  
+
+<ol>
+<li><strong>Due convogli russi</strong> hanno consegnato circa 3 000 tonnellate di materiale militare a Tobruk, includendo blindati, camion Tornado‑U e mezzi antimina.</li>
+<li>Mosca utilizza <strong>quattro basi libiche</strong> e la base siriana di Maaten al‑Sarra per rifornire gruppi armati in Burkina Faso, Mali e Sudan.</li>
+<li>Il conflitto in Sudan è caratterizzato da un’intensa <strong>guerra dei droni</strong>, con armi provenienti da Iran, Turchia, Cina, Emirati e altri, e con costi molto inferiori rispetto a velivoli da combattimento.</li>
+<li>Le rotte di approvvigionamento dei droni attraversano la Libia di Haftar e passano per gli Emirati, coinvolgendo anche sistemi di comunicazione satellitare come Starlink.</li>
+<li>Il battaglione Subul al‑Salam dell’Esercito nazionale libico di Haftar facilita il transito di reclute, mercenari, armi e carburante verso le RSF, con una base di transito a 75 km da Kufra.</li>
+</ol>
+    <p><a class="zoom" href="https://www.valigiablu.it/?_siwp_captcha&amp;id=14a949095270cd35353564e6879ddce046bc1ddb"><img src="https://www.valigiablu.it/?_siwp_captcha&amp;id=14a949095270cd35353564e6879ddce046bc1ddb" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://www.valigiablu.it/wp-content/plugins/securimage-wp/lib/images/refresh.png"><img src="https://www.valigiablu.it/wp-content/plugins/securimage-wp/lib/images/refresh.png" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://www.valigiablu.it/pictures/crowdfunding/card-2026-b.jpg?v=4"><img src="https://www.valigiablu.it/pictures/crowdfunding/card-2026-b.jpg?v=4" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <hr>
+    <p><a href="https://www.valigiablu.it/basi-russe-libia-africa-corps-mediterraneo/">Leggi originale su Valigia Blu &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.valigiablu.it/basi-russe-libia-africa-corps-mediterraneo/</guid>
+      <enclosure url="https://www.valigiablu.it/wp-content/uploads/2026/11/cargo-russia-libia.jpg" length="0" type="image/jpeg"/>
+      <pubDate>Thu, 12 Nov 2026 16:44:42 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.valigiablu.it/wp-content/uploads/2026/11/cargo-russia-libia.jpg" type="image/jpeg" medium="image"/>
+        <media:thumbnail url="https://www.valigiablu.it/wp-content/uploads/2026/11/cargo-russia-libia.jpg"/>
+      </media:group>
+    </item>
+    <item>
+      <title>Valigia Blu: Il futuro dell’Ucraina non spetta a Trump e Putin deciderlo</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/3e3c517e3f92ea16.html</link>
+      <description>Durante il nuovo ciclo di “colloqui” a Abu Dhabi tra Stati Uniti, Russia e Ucraina, la copertura mediatica dell’invasione russa rimane inquadrata da una prospettiva russo‑centrica: si discute delle pretese di Mosca e delle pressioni statunitensi, ma non si esige il ritiro immediato delle truppe russe.
+
+L’autore ribadisce che l’Ucraina è uno Stato sovrano con una Costituzione che vieta qualsiasi cessione di territorio senza un referendum popolare (Articolo 73) e proibisce riforme costituzionali che compromettano l’integrità territoriale (Articolo 157). Lo stato di emergenza, in vigore, impedisce anche la convocazione di un referendum.
+
+Trump e i suoi alleati non possono costringere Zelensky a cedere terra, né gli Stati Uniti possono legittimare un accordo che violi la Costituzione ucraina. La resistenza della società civile ucraina, dimostrata nelle rivoluzioni del 2004, 2013‑2014 e nella guerra in corso, è presentata come la vera garante del futuro del Paese.
+
+Il testo denuncia la propaganda russa e la manipolazione dell’informazione occidentale, che spostano il dibattito dalla responsabilità russa verso richieste di “negoziati” con Mosca. L’unica richiesta legittima, secondo l’autore, è il ritiro incondizionato delle forze russe dall’Ucraina.
+
+• La sovranità ucraina è tutelata dalla Costituzione (Articoli 73 e 157) e non può essere ceduta da Zelensky.
+
+• Gli Stati Uniti esercitano pressioni su Kiev, ma non possono legittimare la cessione di territorio.
+
+• La Russia continua a commettere crimini di guerra; la soluzione è il suo ritiro immediato, non negoziati.
+
+• La società civile ucraina ha una storia di resistenza e decide il proprio futuro.
+
+• Il dibattito mediatico occidentale è influenzato dalla propaganda russa, spostando l’attenzione dalle responsabilità russe alle pretese territoriali.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Valigia Blu | <strong>Ambito:</strong> <em>Geopolitica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.valigiablu.it/wp-content/uploads/2026/11/incontro-abu-dhabi.jpg"><img src="https://www.valigiablu.it/wp-content/uploads/2026/11/incontro-abu-dhabi.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Durante il nuovo ciclo di “colloqui” a Abu Dhabi tra Stati Uniti, Russia e Ucraina, la copertura mediatica dell’invasione russa rimane inquadrata da una prospettiva russo‑centrica: si discute delle pretese di Mosca e delle pressioni statunitensi, ma non si esige il ritiro immediato delle truppe russe.</p>  
+<p>L’autore ribadisce che l’Ucraina è uno Stato sovrano con una Costituzione che vieta qualsiasi cessione di territorio senza un referendum popolare (Articolo 73) e proibisce riforme costituzionali che compromettano l’integrità territoriale (Articolo 157). Lo stato di emergenza, in vigore, impedisce anche la convocazione di un referendum.</p>  
+<p>Trump e i suoi alleati non possono costringere Zelensky a cedere terra, né gli Stati Uniti possono legittimare un accordo che violi la Costituzione ucraina. La resistenza della società civile ucraina, dimostrata nelle rivoluzioni del 2004, 2013‑2014 e nella guerra in corso, è presentata come la vera garante del futuro del Paese.</p>  
+<p>Il testo denuncia la propaganda russa e la manipolazione dell’informazione occidentale, che spostano il dibattito dalla responsabilità russa verso richieste di “negoziati” con Mosca. L’unica richiesta legittima, secondo l’autore, è il ritiro incondizionato delle forze russe dall’Ucraina.</p>  
+<ol>  
+<li><strong>La sovranità ucraina è tutelata dalla Costituzione (Articoli 73 e 157) e non può essere ceduta da Zelensky.</strong></li>  
+<li><strong>Gli Stati Uniti esercitano pressioni su Kiev, ma non possono legittimare la cessione di territorio.</strong></li>  
+<li><strong>La Russia continua a commettere crimini di guerra; la soluzione è il suo ritiro immediato, non negoziati.</strong></li>  
+<li><strong>La società civile ucraina ha una storia di resistenza e decide il proprio futuro.</strong></li>  
+<li><strong>Il dibattito mediatico occidentale è influenzato dalla propaganda russa, spostando l’attenzione dalle responsabilità russe alle pretese territoriali.</strong></li>  
+</ol>
+    <p><a class="zoom" href="https://www.valigiablu.it/?_siwp_captcha&amp;id=76ae2c92f39529c18016968be4b374e876131bbf"><img src="https://www.valigiablu.it/?_siwp_captcha&amp;id=76ae2c92f39529c18016968be4b374e876131bbf" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://www.valigiablu.it/wp-content/plugins/securimage-wp/lib/images/refresh.png"><img src="https://www.valigiablu.it/wp-content/plugins/securimage-wp/lib/images/refresh.png" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://www.valigiablu.it/pictures/crowdfunding/card-2026-b.jpg?v=4"><img src="https://www.valigiablu.it/pictures/crowdfunding/card-2026-b.jpg?v=4" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <hr>
+    <p><a href="https://www.valigiablu.it/colloqui-abu-dhabi-futuro-ucraina-putin-trump/">Leggi originale su Valigia Blu &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.valigiablu.it/colloqui-abu-dhabi-futuro-ucraina-putin-trump/</guid>
+      <enclosure url="https://www.valigiablu.it/wp-content/uploads/2026/11/incontro-abu-dhabi.jpg" length="0" type="image/jpeg"/>
+      <pubDate>Thu, 12 Nov 2026 16:45:41 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.valigiablu.it/wp-content/uploads/2026/11/incontro-abu-dhabi.jpg" type="image/jpeg" medium="image"/>
+        <media:thumbnail url="https://www.valigiablu.it/wp-content/uploads/2026/11/incontro-abu-dhabi.jpg"/>
+      </media:group>
+    </item>
+    <item>
+      <title>Aeon: Perché esiste qualcosa</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/6b51a827f0422d7e.html</link>
+      <description>Nel 1714 Gottfried Wilhelm Leibniz pose la domanda “Perché c’è qualcosa anziché nulla?”. Da allora filosofi come Ludwig Wittgenstein, Arthur Schopenhauer e il Rigveda hanno espresso stupore per il fatto che il mondo “è”. Carl Hempel (1973) ha sostenuto che spiegare l’esistenza di qualcosa non può ricorrere a qualcosa già esistente, poiché l’oggetto della spiegazione è proprio quel qualcosa.
+
+L’autore critica le risposte che cercano una spiegazione “senza assumere l’esistenza di qualcosa”, perché non affrontano il ragionamento di Leibniz secondo cui il nulla sarebbe “molto più semplice e più facile” del qualcosa, in linea con il rasoio di Ockham. Propone di considerare verità “non ontologiche” (logiche, matematiche, morali). John Leslie le usa per affermare che è “buono” che ci sia qualcosa; Tyron Goldschmidt ne contesta l’applicazione, sostenendo che la domanda riguarda l’esistenza, non le verità.
+
+Un mondo possibile privo di cose potrebbe comunque contenere molte verità non ontologiche, rendendo il “nulla” più complesso di quanto sembri. Se un’entità esistente potesse spiegare tali verità, la realtà complessiva sarebbe più semplice, analogamente a come Darwin semplificò la biologia con l’ipotesi di un antenato comune.
+
+Tre opzioni sono esaminate:
+
+• Dio : inteso come l’essere onnipotente e onnisciente delle religioni monoteistiche. La dottrina della semplicità divina (Maimonide, Tommaso d’Aquino, Ibn Sina) rende Dio un candidato particolarmente semplice per spiegare molte verità non ontologiche. Richard Swinburne sostiene che gli attributi divini deriverebbero da uno o due attributi fondamentali.
+
+• Singolarità cosmica : un oggetto naturale di densità infinita da cui l’universo è nato. Le sue condizioni iniziali e le leggi naturali determinerebbero le verità non ontologiche. Quentin Smith afferma che una singolarità è la spiegazione più semplice perché priva di estensione spaziale, massa (in alcuni modelli) e leggi fisiche.
+
+• Umanità : gli esseri umani rendono vere molte verità non ontologiche. Moralanti anti‑realisti (es. Sharon Street), convenzionalisti logici (es. Jared Warren) e intuizionisti matematici (es. L E J Brouwer) le attribuiscono a atteggiamenti, pratiche linguistiche o costruzioni mentali.
+
+Confrontando le tre opzioni, le prime due (Dio e singolarità) sembrano più semplici perché spiegano molte verità ricorrendo a un unico ente potenzialmente molto semplice, mentre gli esseri umani sono oggetti complessi e numerosi, rendendo difficile una spiegazione elegante e priva di contraddizioni.
+
+• Le verità non ontologiche (logiche, matematiche, morali) devono essere spiegate da qualcosa che esiste.
+
+• Tre possibili spiegazioni: Dio (ente semplice), singolarità cosmica (oggetto naturale privo di estensione) o l’umanità (costruttori di verità).
+
+• Dio e la singolarità sono valutati come più semplici perché riducono la molteplicità di entità necessarie.
+
+• La semplicità è intesa in senso occamistico: la spiegazione più semplice è preferibile.
+
+• Le opzioni che coinvolgono entità complesse (gli esseri umani) risultano meno eleganti secondo il criterio di semplicità.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Aeon | <strong>Ambito:</strong> <em>Saggi</em></p>
+    <hr>
+    <p><a class="zoom" href="https://images.aeonmedia.co/images/72b5e07e-102f-40ec-b0e7-0f8234e7ae07/essay-v1-dp279306.jpg?width=1200&amp;quality=75&amp;format=jpeg"><img src="https://images.aeonmedia.co/images/72b5e07e-102f-40ec-b0e7-0f8234e7ae07/essay-v1-dp279306.jpg?width=1200&amp;quality=75&amp;format=jpeg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Nel 1714 Gottfried Wilhelm Leibniz pose la domanda “Perché c’è qualcosa anziché nulla?”. Da allora filosofi come Ludwig Wittgenstein, Arthur Schopenhauer e il Rigveda hanno espresso stupore per il fatto che il mondo “è”. Carl Hempel (1973) ha sostenuto che spiegare l’esistenza di qualcosa non può ricorrere a qualcosa già esistente, poiché l’oggetto della spiegazione è proprio quel qualcosa.</p>
+
+<p>L’autore critica le risposte che cercano una spiegazione “senza assumere l’esistenza di qualcosa”, perché non affrontano il ragionamento di Leibniz secondo cui il nulla sarebbe “molto più semplice e più facile” del qualcosa, in linea con il rasoio di Ockham. Propone di considerare verità “non ontologiche” (logiche, matematiche, morali). John Leslie le usa per affermare che è “buono” che ci sia qualcosa; Tyron Goldschmidt ne contesta l’applicazione, sostenendo che la domanda riguarda l’esistenza, non le verità.</p>
+
+<p>Un mondo possibile privo di cose potrebbe comunque contenere molte verità non ontologiche, rendendo il “nulla” più complesso di quanto sembri. Se un’entità esistente potesse spiegare tali verità, la realtà complessiva sarebbe più semplice, analogamente a come Darwin semplificò la biologia con l’ipotesi di un antenato comune.</p>
+
+<p>Tre opzioni sono esaminate:</p>
+<ol>
+<li><strong>Dio</strong>: inteso come l’essere onnipotente e onnisciente delle religioni monoteistiche. La dottrina della semplicità divina (Maimonide, Tommaso d’Aquino, Ibn Sina) rende Dio un candidato particolarmente semplice per spiegare molte verità non ontologiche. Richard Swinburne sostiene che gli attributi divini deriverebbero da uno o due attributi fondamentali.</li>
+<li><strong>Singolarità cosmica</strong>: un oggetto naturale di densità infinita da cui l’universo è nato. Le sue condizioni iniziali e le leggi naturali determinerebbero le verità non ontologiche. Quentin Smith afferma che una singolarità è la spiegazione più semplice perché priva di estensione spaziale, massa (in alcuni modelli) e leggi fisiche.</li>
+<li><strong>Umanità</strong>: gli esseri umani rendono vere molte verità non ontologiche. Moralanti anti‑realisti (es. Sharon Street), convenzionalisti logici (es. Jared Warren) e intuizionisti matematici (es. L E J Brouwer) le attribuiscono a atteggiamenti, pratiche linguistiche o costruzioni mentali.</li>
+</ol>
+
+<p>Confrontando le tre opzioni, le prime due (Dio e singolarità) sembrano più semplici perché spiegano molte verità ricorrendo a un unico ente potenzialmente molto semplice, mentre gli esseri umani sono oggetti complessi e numerosi, rendendo difficile una spiegazione elegante e priva di contraddizioni.</p>
+
+<strong>Punti chiave</strong>
+<ol>
+<li>Le verità non ontologiche (logiche, matematiche, morali) devono essere spiegate da qualcosa che esiste.</li>
+<li>Tre possibili spiegazioni: Dio (ente semplice), singolarità cosmica (oggetto naturale privo di estensione) o l’umanità (costruttori di verità).</li>
+<li>Dio e la singolarità sono valutati come più semplici perché riducono la molteplicità di entità necessarie.</li>
+<li>La semplicità è intesa in senso occamistico: la spiegazione più semplice è preferibile.</li>
+<li>Le opzioni che coinvolgono entità complesse (gli esseri umani) risultano meno eleganti secondo il criterio di semplicità.</li>
+</ol>
+    <p><a class="zoom" href="https://images.aeonmedia.co/images/6a71baba-fc59-4424-b96e-604e06c4b556/essay-measurement-of-the-earth.jpg?width=3840&amp;quality=75&amp;format=auto"><img src="https://images.aeonmedia.co/images/6a71baba-fc59-4424-b96e-604e06c4b556/essay-measurement-of-the-earth.jpg?width=3840&amp;quality=75&amp;format=auto" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://images.aeonmedia.co/images/42dc3834-4749-49f4-af71-82dd5b2bbc77/essay-poole-teleology-gl001738.jpg?width=3840&amp;quality=75&amp;format=auto"><img src="https://images.aeonmedia.co/images/42dc3834-4749-49f4-af71-82dd5b2bbc77/essay-poole-teleology-gl001738.jpg?width=3840&amp;quality=75&amp;format=auto" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://images.aeonmedia.co/images/bec1dfcc-28fe-4a77-8345-e232c4bcd475/essay-panos_00227070.jpg?width=3840&amp;quality=75&amp;format=auto"><img src="https://images.aeonmedia.co/images/bec1dfcc-28fe-4a77-8345-e232c4bcd475/essay-panos_00227070.jpg?width=3840&amp;quality=75&amp;format=auto" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://images.aeonmedia.co/images/565bfdaa-2e1c-4c84-b6eb-30ce89226209/Older-559006455.jpg?width=3840&amp;quality=75&amp;format=auto"><img src="https://images.aeonmedia.co/images/565bfdaa-2e1c-4c84-b6eb-30ce89226209/Older-559006455.jpg?width=3840&amp;quality=75&amp;format=auto" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://images.aeonmedia.co/images/dc2a1f04-03af-418b-838c-54fb27354a3e/essay-nyc50319.jpg?width=3840&amp;quality=75&amp;format=auto"><img src="https://images.aeonmedia.co/images/dc2a1f04-03af-418b-838c-54fb27354a3e/essay-nyc50319.jpg?width=3840&amp;quality=75&amp;format=auto" referrerpolicy="no-referrer" style="max-width:100%"></a></p><p><a class="zoom" href="https://images.aeonmedia.co/images/f4d2a066-afc1-429e-a665-9ad8c351df17/essay-v1-gettyimages-1266300844.jpg?width=3840&amp;quality=75&amp;format=auto"><img src="https://images.aeonmedia.co/images/f4d2a066-afc1-429e-a665-9ad8c351df17/essay-v1-gettyimages-1266300844.jpg?width=3840&amp;quality=75&amp;format=auto" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <hr>
+    <p><a href="https://aeon.co/essays/a-new-answer-to-why-there-is-something-rather-than-nothing">Leggi originale su Aeon &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://aeon.co/essays/a-new-answer-to-why-there-is-something-rather-than-nothing</guid>
+      <enclosure url="https://images.aeonmedia.co/images/72b5e07e-102f-40ec-b0e7-0f8234e7ae07/essay-v1-dp279306.jpg?width=1200&amp;quality=75&amp;format=jpeg" length="0" type="image/jpeg"/>
+      <pubDate>Thu, 12 Nov 2026 16:49:48 +0000</pubDate>
+      <media:group>
+        <media:content url="https://images.aeonmedia.co/images/72b5e07e-102f-40ec-b0e7-0f8234e7ae07/essay-v1-dp279306.jpg?width=1200&amp;quality=75&amp;format=jpeg" type="image/jpeg" medium="image"/>
+        <media:thumbnail url="https://images.aeonmedia.co/images/72b5e07e-102f-40ec-b0e7-0f8234e7ae07/essay-v1-dp279306.jpg?width=1200&amp;quality=75&amp;format=jpeg"/>
       </media:group>
     </item>
   </channel>
