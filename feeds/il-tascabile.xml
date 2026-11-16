@@ -8,7 +8,64 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Mon, 16 Nov 2026 05:39:40 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 18:20:06 +0000</lastBuildDate>
+    <item>
+      <title>Conoscere il mondo a memoria</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/a3a5c21398979f92.html</link>
+      <description>Sotto le luci del Tempodrom di Berlino, l’ungherese Szabolcs Attila Debre (21 anni) e il francese Mathieu “Blinky” Huet (27 anni) hanno disputato il tie‑break della finale del campionato mondiale 2026 di GeoGuessr. Dopo che Blinky, campione del mondo 2024, ha vinto i primi due set, Debre ha pareggiato con una serie di “5K” (avvicinamenti a non più di 25 metri). Nell’ultimo spareggio, Debre ha puntato il Nord della Namibia, mentre Blinky ha spostato il cursore dall’Africa del Sud all’Argentina; la risposta di Debre si è rivelata a circa 240 km dallo scatto, contro gli oltre 8 000 km di Blinky, decretando il titolo mondiale a Debre.
+
+L’articolo collega questa competizione a una più ampia evoluzione della geolocalizzazione fotografica, da passatempo a strumento forense usato da comunità OSINT come Bellingcat. GeoGuessr nasce nel 2013 da una versione browser di Anton Wallén; dal 2019 è passato a un modello in abbonamento e, nel 2023, ha lanciato la prima Coppa del Mondo a Stoccolma, superando i cento milioni di utenti registrati, prevalentemente tra i 16 e i 24 anni. Mikael Falgard, Head of Esports, attribuisce il successo alla “universalità tematica” e alla trasparenza cognitiva del gioco.
+
+I professionisti non si affidano solo all’intuito: osservano strade, segnaletica, vegetazione, cassonetti, alfabeti, prefissi telefonici e domini web, memorizzando questi dettagli in un “palazzo della memoria”. Questo processo, definito “vibe guessing”, corrisponde al “gist” o “spatial envelope” studiato da Aude Oliva e Antonio Torralba del MIT, che descrive la capacità dell’occhio umano di estrarre l’essenza globale di un ambiente in meno di un quinto di secondo. I giocatori usano anche indizi “meta” legati a sensori e artefatti della Google Car per identificare luoghi come Sisimiut in Groenlandia.
+
+Parallelamente, la dipendenza da dettagli microscopici ha favorito lo sviluppo di sistemi automatici. Dopo i primi tentativi IM2GPS (2008) e PlaNet di Google (2016), il vero “momento Deep Blue” di GeoGuessr è arrivato nel 2024 con PIGEON (Predicting Image GEOlocatioNs) e il suo gemello PIGEOTTO, sviluppati da quattro ricercatori dell’Università di Stanford. PIGEON è stato addestrato su un dataset originale di 100 000 posizioni globali, con innovazioni quali celle “semantiche”, gradiente di probabilità per continuità geografica, inferenza di parametri ausiliari (mese, zona climatica, altitudine, direzione della bussola) e un meccanismo di recupero gerarchico.
+
+Su un test di 5 000 località mai viste, PIGEON ha indovinato il Paese esatto in oltre il 91 % dei casi, ha collocato il 40 % dei pronostici entro 25 km dal bersaglio e ha registrato un errore mediano globale di 44 km. In 458 partite contro giocatori umani, il bot si è piazzato nello 0,01 % mondiale (Champion Division) e, in una diretta, ha battuto Trevor Rainbolt sei volte su sei, con una sola vittoria di Rainbolt in un round limitato al Laos.
+
+L’analisi delle mappe di attenzione ha mostrato che, per localizzare una regione del Canada, il modello si è focalizzato su una macchia di sporco sulla lente della telecamera, ignorando altri elementi visivi, evidenziando la differenza tra l’indovinare il luogo e spiegare il “come”. Nel 2026, ricercatori del Georgia Institute of Technology hanno pubblicato “GeoRC: A Benchmark for Geolocation Reasoning Chains”, chiedendo a 800 catene di ragionamento di giocatori d’élite di esplicitare passo passo gli attributi visivi usati. Hanno scoperto che gli umani deducono dal generale al particolare usando indizi “fortemente diagnostici” (infrastrutture, vegetazione, architettura, morfologia, clima, meta, veicoli, geologia), mentre i modelli generali (Gemini, GPT, Llama, Qwen) mostrano una qualità di ragionamento notevolmente inferiore.
+
+• Debre vince il campionato mondiale 2026 di GeoGuessr, superando Blinky con una differenza di circa 8 000 km.
+
+• GeoGuessr è passato da passatempo a strumento forense, con oltre 100 milioni di utenti registrati.
+
+• I giocatori esperti usano un “palazzo della memoria” per memorizzare dettagli ambientali, un processo definito “vibe guessing”.
+
+• Il modello PIGEON (2024) supera i precedenti sistemi di geolocalizzazione, raggiungendo oltre il 91 % di precisione a livello di Paese.
+
+• Studi recenti mostrano che gli umani ragionano con catene di attributi diagnostici, mentre i modelli AI attuali hanno capacità di ragionamento inferiore.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/11/Conoscere-il-mondo-a-memoria.png"><img src="https://www.iltascabile.com/wp-content/uploads/2026/11/Conoscere-il-mondo-a-memoria.png" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Sotto le luci del Tempodrom di Berlino, l’ungherese Szabolcs Attila Debre (21 anni) e il francese Mathieu “Blinky” Huet (27 anni) hanno disputato il tie‑break della finale del campionato mondiale 2026 di GeoGuessr. Dopo che Blinky, campione del mondo 2024, ha vinto i primi due set, Debre ha pareggiato con una serie di “5K” (avvicinamenti a non più di 25 metri). Nell’ultimo spareggio, Debre ha puntato il Nord della Namibia, mentre Blinky ha spostato il cursore dall’Africa del Sud all’Argentina; la risposta di Debre si è rivelata a circa 240 km dallo scatto, contro gli oltre 8 000 km di Blinky, decretando il titolo mondiale a Debre.</p>
+
+<p>L’articolo collega questa competizione a una più ampia evoluzione della geolocalizzazione fotografica, da passatempo a strumento forense usato da comunità OSINT come Bellingcat. GeoGuessr nasce nel 2013 da una versione browser di Anton Wallén; dal 2019 è passato a un modello in abbonamento e, nel 2023, ha lanciato la prima Coppa del Mondo a Stoccolma, superando i cento milioni di utenti registrati, prevalentemente tra i 16 e i 24 anni. Mikael Falgard, Head of Esports, attribuisce il successo alla “universalità tematica” e alla trasparenza cognitiva del gioco.</p>
+
+<p>I professionisti non si affidano solo all’intuito: osservano strade, segnaletica, vegetazione, cassonetti, alfabeti, prefissi telefonici e domini web, memorizzando questi dettagli in un “palazzo della memoria”. Questo processo, definito “vibe guessing”, corrisponde al “gist” o “spatial envelope” studiato da Aude Oliva e Antonio Torralba del MIT, che descrive la capacità dell’occhio umano di estrarre l’essenza globale di un ambiente in meno di un quinto di secondo. I giocatori usano anche indizi “meta” legati a sensori e artefatti della Google Car per identificare luoghi come Sisimiut in Groenlandia.</p>
+
+<p>Parallelamente, la dipendenza da dettagli microscopici ha favorito lo sviluppo di sistemi automatici. Dopo i primi tentativi IM2GPS (2008) e PlaNet di Google (2016), il vero “momento Deep Blue” di GeoGuessr è arrivato nel 2024 con PIGEON (Predicting Image GEOlocatioNs) e il suo gemello PIGEOTTO, sviluppati da quattro ricercatori dell’Università di Stanford. PIGEON è stato addestrato su un dataset originale di 100 000 posizioni globali, con innovazioni quali celle “semantiche”, gradiente di probabilità per continuità geografica, inferenza di parametri ausiliari (mese, zona climatica, altitudine, direzione della bussola) e un meccanismo di recupero gerarchico.</p>
+
+<p>Su un test di 5 000 località mai viste, PIGEON ha indovinato il Paese esatto in oltre il 91 % dei casi, ha collocato il 40 % dei pronostici entro 25 km dal bersaglio e ha registrato un errore mediano globale di 44 km. In 458 partite contro giocatori umani, il bot si è piazzato nello 0,01 % mondiale (Champion Division) e, in una diretta, ha battuto Trevor Rainbolt sei volte su sei, con una sola vittoria di Rainbolt in un round limitato al Laos.</p>
+
+<p>L’analisi delle mappe di attenzione ha mostrato che, per localizzare una regione del Canada, il modello si è focalizzato su una macchia di sporco sulla lente della telecamera, ignorando altri elementi visivi, evidenziando la differenza tra l’indovinare il luogo e spiegare il “come”. Nel 2026, ricercatori del Georgia Institute of Technology hanno pubblicato “GeoRC: A Benchmark for Geolocation Reasoning Chains”, chiedendo a 800 catene di ragionamento di giocatori d’élite di esplicitare passo passo gli attributi visivi usati. Hanno scoperto che gli umani deducono dal generale al particolare usando indizi “fortemente diagnostici” (infrastrutture, vegetazione, architettura, morfologia, clima, meta, veicoli, geologia), mentre i modelli generali (Gemini, GPT, Llama, Qwen) mostrano una qualità di ragionamento notevolmente inferiore.</p>
+
+<ol>
+<li><strong>Debre vince il campionato mondiale 2026 di GeoGuessr, superando Blinky con una differenza di circa 8 000 km.</strong></li>
+<li><strong>GeoGuessr è passato da passatempo a strumento forense, con oltre 100 milioni di utenti registrati.</strong></li>
+<li><strong>I giocatori esperti usano un “palazzo della memoria” per memorizzare dettagli ambientali, un processo definito “vibe guessing”.</strong></li>
+<li><strong>Il modello PIGEON (2024) supera i precedenti sistemi di geolocalizzazione, raggiungendo oltre il 91 % di precisione a livello di Paese.</strong></li>
+<li><strong>Studi recenti mostrano che gli umani ragionano con catene di attributi diagnostici, mentre i modelli AI attuali hanno capacità di ragionamento inferiore.</strong></li>
+</ol>
+    
+    <hr>
+    <p><a href="https://www.iltascabile.com/scienze/conoscere-mondo-memoria/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.iltascabile.com/scienze/conoscere-mondo-memoria/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/11/Conoscere-il-mondo-a-memoria.png" length="0" type="image/png"/>
+      <pubDate>Mon, 16 Nov 2026 18:10:31 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/11/Conoscere-il-mondo-a-memoria.png" type="image/png" medium="image"/>
+        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/11/Conoscere-il-mondo-a-memoria.png"/>
+      </media:group>
+    </item>
     <item>
       <title>Una splendida rovina di Vincenzo Latronico</title>
       <link>https://lorenzoromani367.github.io/NewsFeed/articoli/30d6c822033a1f45.html</link>
@@ -583,67 +640,6 @@ La proposta propagandistica, tuttavia, non si limita a riconoscere la presenza d
       <media:group>
         <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/11/Lodio-come-content.jpg" type="image/jpeg" medium="image"/>
         <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/11/Lodio-come-content.jpg"/>
-      </media:group>
-    </item>
-    <item>
-      <title>Il greenwashing della caccia</title>
-      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/0fe3ee09bd9eb06e.html</link>
-      <description>Il disegno di legge 1552, attualmente in votazione, modifica la legge 157/1992 sulla gestione della caccia in Italia. Già approvato al Senato, il testo prevede numerose agevolazioni per i cacciatori, tanto da essere soprannominato “ddl sparatutto”. Tra le novità vi sono l’aumento del numero di specie cacciabili, l’estensione delle aree consentite (incluse spiagge e zone prima protette), la reintroduzione della caccia notturna per alcune specie, l’uso di esche vive e la possibilità di catturare animali durante periodi di migrazione e nidificazione.
-
-L’ISPRA perde il ruolo vincolante, sostituito da un Comitato tecnico faunistico‑venatorio in cui l’istituto è solo consulente; le regioni otterranno maggiore autonomia decisionale. Il governo Meloni sostiene il provvedimento, presentandolo come un modo per trasformare la percezione pubblica della caccia: i cacciatori dovrebbero diventare “bioregolatori”, definiti dal ddl come “contributori alla tutela della biodiversità e dell’ecosistema”. Le associazioni venatorie hanno adottato termini ambientali (wilderness, gestione sostenibile) e, nel 2024, il presidente di Federcaccia Massimo Buconi li ha definiti “custodi della biodiversità”. Parallelamente, le associazioni collegano la caccia alla tutela del paesaggio, alla pulizia dei sentieri e alla valorizzazione della montagna, citando anche il linguaggio decoloniale dell’AIW.
-
-Il settore è fortemente legato a interessi economici: il mercato delle armi da caccia vale circa 8,5 miliardi di euro annui, con 88 000 occupati, e le associazioni ricevono finanziamenti da produttori di armi e accessori. Un sondaggio Ipsos Doxa 2026 per la Fondazione Cappellino mostra che solo il 3 % degli italiani sostiene le nuove norme, mentre il 91 % vuole mantenere la legge attuale e il 75 % desidera ridurre o abolire la caccia amatoriale. La mancanza di studi scientifici su larga scala sull’impatto della caccia ricreativa rende difficile valutare se le affermazioni ambientali siano un vero contributo o un caso di greenwashing.
-
-Quando i dati sono disponibili, i risultati sono contrastanti: una review di 26 studi del Department of Fish, Wildlife and Conservation Biology (USA) evidenzia effetti sia positivi che negativi a seconda delle circostanze; una review del James Hutton Institute sulla caccia degli uccelli giunge a conclusioni analoghe. L’analisi più ampia (oltre 1000 articoli dal 1953 al 2020) su grandi mammiferi e uccelli in Europa, Nord‑America e Africa dichiara “assenza di prove per rispondere alla domanda sul dove e come la caccia ricreativa contribuisca a sforzi di conservazione equi e sostenibili”.
-
-Il ragionamento dei fautori parte dall’assunto che, senza cacciatori, mancherebbero fattori di controllo e la fauna crescerebbe fuori misura. Tuttavia, il solo Paese senza caccia ricreativa, il Costa Rica, è ecologicamente diverso dall’Italia. Studi della no‑profit svizzera IG Wild su dieci grandi aree protette in Svizzera, Germania, Austria e Italia mostrano scenari non apocalittici: nel Parco Nazionale Svizzero (senza caccia dal 1914) cervi e camosci sono in equilibrio; nei Kalkalpen austriaci la foresta si rigenera meglio; lince, lupo e gatto selvatico hanno rioccupato le loro nicchie.
-
-Il caso del cinghiale evidenzia la complessità: la pressione dei lupi regola la popolazione, ma la caccia elimina i maschi dominanti, spingendo le femmine a accoppiarsi con più maschi non dominanti e aumentando la natalità. Dal 2015‑2021 il prelievo di cinghiali è aumentato del 45 % (≈300 000 abbattimenti annui), ma la popolazione è cresciuta, con danni agricoli. In Cabañeros (Spagna), l’assenza di lupi e il divieto di caccia dal 2020 hanno provocato una crescita incontrollata dei cinghiali.
-
-Queste evidenze suggeriscono che la gestione scientifica della fauna richiede abbattimenti mirati da parte di organismi di monitoraggio, non una ricetta unica. L’ISPRA segnala, però, un calo cronico dei finanziamenti, con un ulteriore taglio di 14 milioni di euro nel 2023, minacciando più di 100 lavoratori precari. Senza risorse adeguate per ricerche a lungo termine, è più facile per i gruppi di pressione dell’industria venatoria sostenere la caccia ricreativa, avvolgendola in una patina di “green”.
-
-• Il ddl 1552 amplia drasticamente le possibilità di caccia, riducendo il ruolo vincolante dell’ISPRA.
-
-• Le associazioni venatorie promuovono la caccia con un linguaggio ambientale, ma il settore è strettamente legato a interessi economici del mercato delle armi.
-
-• Le indagini d’opinione mostrano un forte scetticismo pubblico verso le nuove norme.
-
-• Le evidenze scientifiche disponibili sono contrastanti e non confermano un contributo positivo della caccia alla conservazione.
-
-• La carenza di finanziamenti per l’ISPRA limita la ricerca a lungo termine, favorendo il discorso di “greenwashing” da parte dei gruppi di pressione.</description>
-      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
-    <hr>
-    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-greenwashing-della-caccia.jpg"><img src="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-greenwashing-della-caccia.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
-    <p>Il disegno di legge 1552, attualmente in votazione, modifica la legge 157/1992 sulla gestione della caccia in Italia. Già approvato al Senato, il testo prevede numerose agevolazioni per i cacciatori, tanto da essere soprannominato “ddl sparatutto”. Tra le novità vi sono l’aumento del numero di specie cacciabili, l’estensione delle aree consentite (incluse spiagge e zone prima protette), la reintroduzione della caccia notturna per alcune specie, l’uso di esche vive e la possibilità di catturare animali durante periodi di migrazione e nidificazione.</p>
-
-<p>L’ISPRA perde il ruolo vincolante, sostituito da un Comitato tecnico faunistico‑venatorio in cui l’istituto è solo consulente; le regioni otterranno maggiore autonomia decisionale. Il governo Meloni sostiene il provvedimento, presentandolo come un modo per trasformare la percezione pubblica della caccia: i cacciatori dovrebbero diventare “bioregolatori”, definiti dal ddl come “contributori alla tutela della biodiversità e dell’ecosistema”. Le associazioni venatorie hanno adottato termini ambientali (wilderness, gestione sostenibile) e, nel 2024, il presidente di Federcaccia Massimo Buconi li ha definiti “custodi della biodiversità”. Parallelamente, le associazioni collegano la caccia alla tutela del paesaggio, alla pulizia dei sentieri e alla valorizzazione della montagna, citando anche il linguaggio decoloniale dell’AIW.</p>
-
-<p>Il settore è fortemente legato a interessi economici: il mercato delle armi da caccia vale circa 8,5 miliardi di euro annui, con 88 000 occupati, e le associazioni ricevono finanziamenti da produttori di armi e accessori. Un sondaggio Ipsos Doxa 2026 per la Fondazione Cappellino mostra che solo il 3 % degli italiani sostiene le nuove norme, mentre il 91 % vuole mantenere la legge attuale e il 75 % desidera ridurre o abolire la caccia amatoriale. La mancanza di studi scientifici su larga scala sull’impatto della caccia ricreativa rende difficile valutare se le affermazioni ambientali siano un vero contributo o un caso di greenwashing.</p>
-
-<p>Quando i dati sono disponibili, i risultati sono contrastanti: una review di 26 studi del Department of Fish, Wildlife and Conservation Biology (USA) evidenzia effetti sia positivi che negativi a seconda delle circostanze; una review del James Hutton Institute sulla caccia degli uccelli giunge a conclusioni analoghe. L’analisi più ampia (oltre 1000 articoli dal 1953 al 2020) su grandi mammiferi e uccelli in Europa, Nord‑America e Africa dichiara “assenza di prove per rispondere alla domanda sul dove e come la caccia ricreativa contribuisca a sforzi di conservazione equi e sostenibili”.</p>
-
-<p>Il ragionamento dei fautori parte dall’assunto che, senza cacciatori, mancherebbero fattori di controllo e la fauna crescerebbe fuori misura. Tuttavia, il solo Paese senza caccia ricreativa, il Costa Rica, è ecologicamente diverso dall’Italia. Studi della no‑profit svizzera IG Wild su dieci grandi aree protette in Svizzera, Germania, Austria e Italia mostrano scenari non apocalittici: nel Parco Nazionale Svizzero (senza caccia dal 1914) cervi e camosci sono in equilibrio; nei Kalkalpen austriaci la foresta si rigenera meglio; lince, lupo e gatto selvatico hanno rioccupato le loro nicchie.</p>
-
-<p>Il caso del cinghiale evidenzia la complessità: la pressione dei lupi regola la popolazione, ma la caccia elimina i maschi dominanti, spingendo le femmine a accoppiarsi con più maschi non dominanti e aumentando la natalità. Dal 2015‑2021 il prelievo di cinghiali è aumentato del 45 % (≈300 000 abbattimenti annui), ma la popolazione è cresciuta, con danni agricoli. In Cabañeros (Spagna), l’assenza di lupi e il divieto di caccia dal 2020 hanno provocato una crescita incontrollata dei cinghiali.</p>
-
-<p>Queste evidenze suggeriscono che la gestione scientifica della fauna richiede abbattimenti mirati da parte di organismi di monitoraggio, non una ricetta unica. L’ISPRA segnala, però, un calo cronico dei finanziamenti, con un ulteriore taglio di 14 milioni di euro nel 2023, minacciando più di 100 lavoratori precari. Senza risorse adeguate per ricerche a lungo termine, è più facile per i gruppi di pressione dell’industria venatoria sostenere la caccia ricreativa, avvolgendola in una patina di “green”.</p>
-
-<ol>
-<li><strong>Il ddl 1552 amplia drasticamente le possibilità di caccia, riducendo il ruolo vincolante dell’ISPRA.</strong></li>
-<li><strong>Le associazioni venatorie promuovono la caccia con un linguaggio ambientale, ma il settore è strettamente legato a interessi economici del mercato delle armi.</strong></li>
-<li><strong>Le indagini d’opinione mostrano un forte scetticismo pubblico verso le nuove norme.</strong></li>
-<li><strong>Le evidenze scientifiche disponibili sono contrastanti e non confermano un contributo positivo della caccia alla conservazione.</strong></li>
-<li><strong>La carenza di finanziamenti per l’ISPRA limita la ricerca a lungo termine, favorendo il discorso di “greenwashing” da parte dei gruppi di pressione.</strong></li>
-</ol>
-    
-    <hr>
-    <p><a href="https://www.iltascabile.com/scienze/greenwashing-caccia/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
-      <guid isPermaLink="false">v18_https://www.iltascabile.com/scienze/greenwashing-caccia/</guid>
-      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-greenwashing-della-caccia.jpg" length="0" type="image/jpeg"/>
-      <pubDate>Mon, 02 Nov 2026 18:02:55 +0000</pubDate>
-      <media:group>
-        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-greenwashing-della-caccia.jpg" type="image/jpeg" medium="image"/>
-        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/10/Il-greenwashing-della-caccia.jpg"/>
       </media:group>
     </item>
   </channel>
