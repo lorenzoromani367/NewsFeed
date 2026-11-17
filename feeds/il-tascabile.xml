@@ -8,7 +8,82 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Tue, 17 Nov 2026 02:50:58 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 13:06:33 +0000</lastBuildDate>
+    <item>
+      <title>Processo ai data centers</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/6baf795585fd246d.html</link>
+      <description>Il mito dell’intelligenza artificiale come entità eterea è stato rapidamente smontato: la sua diffusione è limitata dalle strutture necessarie, i data center, che consumano enormi quantità di energia e acqua. Le previsioni indicano che entro il 2030 il consumo energetico globale dei data center eguaglierà quello del Giappone e il fabbisogno idrico quello dell’intera Africa subsahariana.
+
+Oltre 10 000 centri sono censiti, con più del 90 % della capacità computazionale concentrata negli USA e in Cina. In Europa l’hub FLAPD (Francoforte, Londra, Amsterdam, Parigi, Dublino) è saturo; gli investimenti si spostano verso il Mediterraneo, con l’Italia al tredicesimo posto mondiale per numero di strutture e investimenti superiori a 10 miliardi € nel biennio 2025‑26. I server nazionali assorbono 513 MW (pari a Firenze) e la domanda triplicherà entro il 2030; la Lombardia concentra il 60 % della potenza, ma la congestione spinge verso il Mezzogiorno.
+
+Questa crescita scontra la transizione ecologica, generando un nuovo fronte della climate litigation: le “data center litigations”. Le cause, promosse da ONG, comitati territoriali e giuristi, mirano a bloccare l’impatto ambientale dei poli di elaborazione dati, non più come NIMBY ma come violazione di bilanci di emissioni, consumo idrico e norme di nuisance. Le tre direttrici sono:
+
+• Pianificazione territoriale e zoning (es. Prince William Digital Gateway, Virginia);
+
+• Legislazione ambientale e climatica (es. NAACP contro xAI in Mississippi, Irlanda contro il data center Herbata a Naas);
+
+• Nuisance acustica (es. Haley v. X.AI Corp., Mississippi).
+
+Le azioni giudiziarie puntano a fermare o riformare i data center, evidenziando il rischio di un “fossil fuel lock‑in” e la necessità di regole più stringenti per energia, acqua e inquinamento.
+
+I cittadini denunciano un’immissione acustica e ambientale intollerabile che rende invivibili le abitazioni, chiedendo risarcimento e l’imposizione di vincoli e riconversioni tecnologiche sui data center.
+
+Le “data‑center litigations” evidenziano tre distorsioni strutturali della transizione energetica:
+
+• Cannibalizzazione delle energie rinnovabili : la massiccia domanda elettrica dei centri dati assorbe quasi tutta la nuova capacità pulita installata, ostacolando la decarbonizzazione di trasporti e riscaldamento (es. Irlanda, 2017‑2023).
+
+• Contestazione dei CPPA (Corporate Power Purchase Agreements) : i contratti a lungo termine con energia rinnovabile sono considerati artifici contabili, poiché un CPPA per un parco solare distante non garantisce al data center un’alimentazione pulita nelle ore notturne né un reale finanziamento di nuova capacità.
+
+• Nascita degli “islanded data centers” : impianti che si autoproducono energia da gas metano o turbine nei campus per bypassare i lunghi tempi di allacciamento, incrementando drasticamente le emissioni fossili.
+
+Le vertenze spingono i legislatori a rafforzare la normativa. Nell’Unione Europea la direttiva sull’Efficienza Energetica (EED) impone la rendicontazione ambientale per strutture sopra 500 kW; il regolamento delegato introduce un rating di sostenibilità basato su PUE (Power Usage Effectiveness) e WUE (Water Usage Effectiveness). Tuttavia i dati reali mancano perché le imprese li rifiutano. Alcuni Stati vanno oltre: in Spagna, per impianti oltre 1 MW, almeno l’80 % dei consumi deve essere monitorato.
+
+• Entro il 2030 i data center consumeranno energia pari a quella del Giappone e acqua pari a quella dell’Africa subsahariana.
+
+• Le cause legali contro i data center si concentrano su zoning, normativa ambientale e nuisance acustica.
+
+• La domanda dei data center cannibalizza le energie rinnovabili, mette in dubbio i CPPA e favorisce gli “islanded data centers” a combustibili fossili.
+
+• L’UE richiede rendicontazione ambientale e rating di sostenibilità, ma la mancanza di dati ostacola l’attuazione.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
+    <hr>
+    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/11/Processo-ai-data-center.jpg"><img src="https://www.iltascabile.com/wp-content/uploads/2026/11/Processo-ai-data-center.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
+    <p>Il mito dell’intelligenza artificiale come entità eterea è stato rapidamente smontato: la sua diffusione è limitata dalle strutture necessarie, i data center, che consumano enormi quantità di energia e acqua. Le previsioni indicano che entro il 2030 il consumo energetico globale dei data center eguaglierà quello del Giappone e il fabbisogno idrico quello dell’intera Africa subsahariana.</p>  
+<p>Oltre 10 000 centri sono censiti, con più del 90 % della capacità computazionale concentrata negli USA e in Cina. In Europa l’hub FLAPD (Francoforte, Londra, Amsterdam, Parigi, Dublino) è saturo; gli investimenti si spostano verso il Mediterraneo, con l’Italia al tredicesimo posto mondiale per numero di strutture e investimenti superiori a 10 miliardi € nel biennio 2025‑26. I server nazionali assorbono 513 MW (pari a Firenze) e la domanda triplicherà entro il 2030; la Lombardia concentra il 60 % della potenza, ma la congestione spinge verso il Mezzogiorno.</p>  
+<p>Questa crescita scontra la transizione ecologica, generando un nuovo fronte della climate litigation: le “data center litigations”. Le cause, promosse da ONG, comitati territoriali e giuristi, mirano a bloccare l’impatto ambientale dei poli di elaborazione dati, non più come NIMBY ma come violazione di bilanci di emissioni, consumo idrico e norme di nuisance. Le tre direttrici sono:</p>  
+<ol>  
+<li><strong>Pianificazione territoriale e zoning</strong> (es. Prince William Digital Gateway, Virginia);</li>  
+<li><strong>Legislazione ambientale e climatica</strong> (es. NAACP contro xAI in Mississippi, Irlanda contro il data center Herbata a Naas);</li>  
+<li><strong>Nuisance acustica</strong> (es. Haley v. X.AI Corp., Mississippi).</li>  
+</ol>  
+<p>Le azioni giudiziarie puntano a fermare o riformare i data center, evidenziando il rischio di un “fossil fuel lock‑in” e la necessità di regole più stringenti per energia, acqua e inquinamento.</p>  
+<p>I cittadini denunciano un’immissione acustica e ambientale intollerabile che rende invivibili le abitazioni, chiedendo risarcimento e l’imposizione di vincoli e riconversioni tecnologiche sui data center.</p>  
+<p>Le “data‑center litigations” evidenziano tre distorsioni strutturali della transizione energetica:</p>  
+<ol>  
+<li><strong>Cannibalizzazione delle energie rinnovabili</strong>: la massiccia domanda elettrica dei centri dati assorbe quasi tutta la nuova capacità pulita installata, ostacolando la decarbonizzazione di trasporti e riscaldamento (es. Irlanda, 2017‑2023).</li>  
+<li><strong>Contestazione dei CPPA (Corporate Power Purchase Agreements)</strong>: i contratti a lungo termine con energia rinnovabile sono considerati artifici contabili, poiché un CPPA per un parco solare distante non garantisce al data center un’alimentazione pulita nelle ore notturne né un reale finanziamento di nuova capacità.</li>  
+<li><strong>Nascita degli “islanded data centers”</strong>: impianti che si autoproducono energia da gas metano o turbine nei campus per bypassare i lunghi tempi di allacciamento, incrementando drasticamente le emissioni fossili.</li>  
+</ol>  
+<p>Le vertenze spingono i legislatori a rafforzare la normativa. Nell’Unione Europea la direttiva sull’Efficienza Energetica (EED) impone la rendicontazione ambientale per strutture sopra 500 kW; il regolamento delegato introduce un rating di sostenibilità basato su PUE (Power Usage Effectiveness) e WUE (Water Usage Effectiveness). Tuttavia i dati reali mancano perché le imprese li rifiutano. Alcuni Stati vanno oltre: in Spagna, per impianti oltre 1 MW, almeno l’80 % dei consumi deve essere monitorato.</p>  
+
+**Punti chiave**  
+<ol>  
+<li>Entro il 2030 i data center consumeranno energia pari a quella del Giappone e acqua pari a quella dell’Africa subsahariana.</li>  
+<li>Le cause legali contro i data center si concentrano su zoning, normativa ambientale e nuisance acustica.</li>  
+<li>La domanda dei data center cannibalizza le energie rinnovabili, mette in dubbio i CPPA e favorisce gli “islanded data centers” a combustibili fossili.</li>  
+<li>L’UE richiede rendicontazione ambientale e rating di sostenibilità, ma la mancanza di dati ostacola l’attuazione.</li>  
+</ol>
+    
+    <hr>
+    <p><a href="https://www.iltascabile.com/societa/processo-ai-data-centers/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://www.iltascabile.com/societa/processo-ai-data-centers/</guid>
+      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/11/Processo-ai-data-center.jpg" length="0" type="image/jpeg"/>
+      <pubDate>Tue, 17 Nov 2026 12:55:22 +0000</pubDate>
+      <media:group>
+        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/11/Processo-ai-data-center.jpg" type="image/jpeg" medium="image"/>
+        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/11/Processo-ai-data-center.jpg"/>
+      </media:group>
+    </item>
     <item>
       <title>Conoscere il mondo a memoria</title>
       <link>https://lorenzoromani367.github.io/NewsFeed/articoli/a3a5c21398979f92.html</link>
@@ -567,79 +642,6 @@ Infine, l’autrice immagina un “carnevale del rimosso”, una celebrazione de
       <media:group>
         <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/11/Sogno-un-carnevale-del-rimosso.jpg" type="image/jpeg" medium="image"/>
         <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/11/Sogno-un-carnevale-del-rimosso.jpg"/>
-      </media:group>
-    </item>
-    <item>
-      <title>L’odio come contenuto</title>
-      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/05d030628f2b12a9.html</link>
-      <description>Il 8 settembre, lungo la strada per il porto di Dover, un gruppo di uomini a volto coperto ha bloccato la via cantando slogan anti‑immigrazione come “Stop the boats” e “England until I die”. L’azione, rivendicata da Patriot platform , è stata trasmessa in streaming da Daniel Thomas, alias Danny Tommo, ex guardia del corpo di Tommy Robinson. Tommo è un “info‑attivista” con 167 000 iscritti su YouTube; i suoi video mescolano immagini generate dall’intelligenza artificiale, thumbnail con il suo volto e titoli che spaziano da litigi in strada a presunti “exposé” su telefoni di migranti, fino a contenuti di reclutamento per il suo gruppo patriottico.
-
-Patriot platform si presenta come “un diverso tipo di cristiano” che vuole fermare l’immigrazione per proteggere le donne bianche inglesi. Il messaggio xenofobo viene trasformato in content : una serie di video e podcast che si avvalgono di riferimenti alla morale cristiana, alla difesa delle donne e alla lotta contro la migrazione. Questa strategia non è isolata in Inghilterra; le nuove reclute della destra sfruttano le reti sociali per raggiungere numeri elevati e diffondere idee violente, “calmierando” la violenza mediante il contagocce e rendendo accettabile anche il contenuto più estremo.
-
-L’autore richiama l’esempio di Matteo Salvini, che nel 2020 ha mescolato la presunzione di colpevolezza a uno show televisivo, creando un “buon senso” retorico che sposta il dibattito fuori dalla politica. Un altro caso è quello di Lorenzo Caccialupi, influencer di destra legato a Charlie Kirk, che in uno short su YouTube dichiara che la deportazione è “common sense”, dimostrando come il “buon senso” diventi arma per normalizzare politiche violente.
-
-La propaganda opera su due fronti, interno ed esterno, costruendo un’immagine nazionale che combina forza militare e ordine interno. I suoi principi – semplificazione, saturazione e assertività parziale – sono stati potenziati dal digitale. Leonardo Bianchi individua due momenti chiave: dal 2014‑2016 l’uso dei meme e del “just joking” da parte dell’alt‑right, e il ritorno di Trump, che ha introdotto la “slopaganda” basata sull’intelligenza artificiale. Questi strumenti, adattati alle logiche algoritmiche delle piattaforme, hanno amplificato la diffusione di fake news e discorsi d’odio, creando camere dell’eco in cui l’odio cresce e la stabilità sociale si erode, favorendo l’ascesa di destre sempre più estreme, come dimostra il caso di Roberto Vannacci, ora europarlamentare, e la normalizzazione delle idee di Anders Breivik. La propaganda, dunque, serve a rendere accettabili messaggi estremisti, indebolendo la democrazia.
-
-Il termine “remigrazione” è oggi accettato come descrittore di una policy perché, dopo le stragi norvegesi, l’impunità delle ultra‑destre è aumentata di livello. Trasformare odio e violenza in programma politico richiede una manipolazione fine dei termini: parole nuove diventano “gusci vaghi” che, una volta assorbiti, creano realtà alternative dove il pensiero diventa motore dell’azione. Un esempio è Ebbw Vale, città gallese di case uniformi. Nel 2002 la Ebbw Vale Steelwork chiuse; il territorio ricevette i massimi fondi UE per lo sviluppo strutturale, ma nel 2016 il 62 % dei residenti votò per l’uscita dalla Brexit. Il Guardian cita un abitante che chiede “cosa ha fatto l’UE per noi?”. La percezione di un’UE distante e favorevole alle élite economiche rese plausibile il risultato.
-
-Cambridge Analytica, società di consulenza, scelse Ebbw Vale come target della campagna pro‑Brexit. L’azienda non solo costruì una comunicazione, ma esercitò una vera influenza elettorale: estrasse dati, li analizzò e sfruttò la capacità predittiva per individuare i “persuadables”, utenti indecisi o altamente persuadibili. Con bolle informative di messaggi semplici, emotivi e ripetitivi, trasformò l’indecisione in voto, creando realtà alternative personalizzate. Lo stesso modello fu usato negli Stati Uniti, dove Cambridge Analytica contribuì alla vittoria di Donald Trump, combinando persuasione digitale e sessismo sistemico per diffondere notizie false su Hillary Clinton, dipingendola come “arrivista”, “cattiva” e “inaffidabile”. Trump, nel 2016 su “60 Minutes”, rispose a Lesley Stahl che “non gli importava” se le critiche a Clinton fossero state “errori legittimati”. Oggi Ebbw Vale resta disoccupata, priva di turismo, mentre la propaganda digitalizzata continua a guidare la politica britannica e americana.
-
-La propaganda, prodotta da attori istituzionali, privati e individuali, si diffonde su tutti i media, inclusi gli influencer di destra, che trasformano contenuti di intrattenimento in spazi propagandistici. Questi video mostrano degrado apparente e soluzioni altrettanto superficiali, rafforzando fratture sociali, diffidenza verso poveri, migranti e minoranze. Il “noi” contro “loro” attinge a odi preesistenti – antisemitismo, islamofobia, aporofobia, sessismo – e li intensifica, offrendo una base stabile per una propaganda che convince le persone che le soluzioni siano limitate a sostenere tiranni, partiti o influencer.
-
-La propaganda efficace è quella che non solo genera seguito, ma soprattutto orienta il pensiero di chi la riceve in modo coerente ai propri scopi, indirizzando una frustrazione sociale verso soluzioni innocue rispetto alla causa originaria di tale frustrazione. Il testo cita diversi esempi: gli inglesi che si scagliano contro i migranti perché la vita in tempi di capitalismo è costosa, gli italiani che imputano al caldo estivo crescente la produzione industriale di India e Cina, gli europei bianchi che si attivano contro le persone in movimento a causa della privatizzazione che incalza e dei servizi che muoiono, e, ancor prima, i coloni che attaccano i colonizzati per giustificare la loro presenza.
-
-La storia della propaganda avanza in costante accelerazione, al punto che anche il singolo può trarne profitto diventando “emanatore di propaganda”, fenomeno particolarmente visibile negli influencer della politica. Per ridimensionare, se non neutralizzare, gli effetti della propaganda si propongono strategie di diffusione di messaggi, idee e debunking; l’insieme di queste iniziative è definito contropropaganda , intesa come ripristino del dibattito e risignificazione delle parole. Oggi più che mai la contropropaganda è il luogo in cui le parole devono essere spiegate nei loro significati reali, dove simbolo, vettore e significato vengono ricomposti nella loro legittima espressione per mostrare la realtà così com’è.
-
-La proposta propagandistica, tuttavia, non si limita a riconoscere la presenza di un contrasto, ma si attiva per smontarlo. Lo scontro avviene da posizioni impari: la propaganda è solitamente emessa da chi detiene il potere, con maggiori risorse che consentono una più ampia diffusione e una maggiore credibilità. La propaganda delle destre si muove in spazi di vantaggio, sta allargando le sue maglie e, dopo decenni di capillarizzazione, è pronta a “tirare i nodi”; chi si trova al centro degli intrighi rischia di essere tagliato fisicamente via dallo spazio sociale.
-
-• La trasformazione dell’odio in “content” è la strategia centrale di gruppi come Patriot platform, che usano video, podcast e riferimenti cristiani per normalizzare messaggi xenofobi.
-
-• Il digitale amplifica la propaganda attraverso meme, “just joking”, intelligenza artificiale e algoritmi, creando camere dell’eco che indeboliscono la democrazia.
-
-• Cambridge Analytica dimostra come i dati e la micro‑targettizzazione possano convertire indecisione in voto, sia in contesti britannici (Ebbw Vale) che americani (Trump).
-
-• Il “buon senso” retorico è usato da figure come Salvini e Caccialupi per rendere politiche violente apparentemente naturali.
-
-• La contropropaganda è proposta come risposta necessaria: debunking, risignificazione delle parole e ricostruzione del dibattito per contrastare la diffusione di odio.</description>
-      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Il Tascabile | <strong>Ambito:</strong> <em>Saggistica</em></p>
-    <hr>
-    <p><a class="zoom" href="https://www.iltascabile.com/wp-content/uploads/2026/11/Lodio-come-content.jpg"><img src="https://www.iltascabile.com/wp-content/uploads/2026/11/Lodio-come-content.jpg" referrerpolicy="no-referrer" style="max-width:100%"></a></p>
-    <p>Il 8 settembre, lungo la strada per il porto di Dover, un gruppo di uomini a volto coperto ha bloccato la via cantando slogan anti‑immigrazione come “Stop the boats” e “England until I die”. L’azione, rivendicata da <strong>Patriot platform</strong>, è stata trasmessa in streaming da Daniel Thomas, alias Danny Tommo, ex guardia del corpo di Tommy Robinson. Tommo è un “info‑attivista” con 167 000 iscritti su YouTube; i suoi video mescolano immagini generate dall’intelligenza artificiale, thumbnail con il suo volto e titoli che spaziano da litigi in strada a presunti “exposé” su telefoni di migranti, fino a contenuti di reclutamento per il suo gruppo patriottico.</p>  
-
-<p>Patriot platform si presenta come “un diverso tipo di cristiano” che vuole fermare l’immigrazione per proteggere le donne bianche inglesi. Il messaggio xenofobo viene trasformato in <em>content</em>: una serie di video e podcast che si avvalgono di riferimenti alla morale cristiana, alla difesa delle donne e alla lotta contro la migrazione. Questa strategia non è isolata in Inghilterra; le nuove reclute della destra sfruttano le reti sociali per raggiungere numeri elevati e diffondere idee violente, “calmierando” la violenza mediante il contagocce e rendendo accettabile anche il contenuto più estremo.</p>  
-
-<p>L’autore richiama l’esempio di Matteo Salvini, che nel 2020 ha mescolato la presunzione di colpevolezza a uno show televisivo, creando un “buon senso” retorico che sposta il dibattito fuori dalla politica. Un altro caso è quello di Lorenzo Caccialupi, influencer di destra legato a Charlie Kirk, che in uno short su YouTube dichiara che la deportazione è “common sense”, dimostrando come il “buon senso” diventi arma per normalizzare politiche violente.</p>  
-
-<p>La propaganda opera su due fronti, interno ed esterno, costruendo un’immagine nazionale che combina forza militare e ordine interno. I suoi principi – semplificazione, saturazione e assertività parziale – sono stati potenziati dal digitale. Leonardo Bianchi individua due momenti chiave: dal 2014‑2016 l’uso dei meme e del “just joking” da parte dell’alt‑right, e il ritorno di Trump, che ha introdotto la “slopaganda” basata sull’intelligenza artificiale. Questi strumenti, adattati alle logiche algoritmiche delle piattaforme, hanno amplificato la diffusione di fake news e discorsi d’odio, creando camere dell’eco in cui l’odio cresce e la stabilità sociale si erode, favorendo l’ascesa di destre sempre più estreme, come dimostra il caso di Roberto Vannacci, ora europarlamentare, e la normalizzazione delle idee di Anders Breivik. La propaganda, dunque, serve a rendere accettabili messaggi estremisti, indebolendo la democrazia.</p>  
-
-<p>Il termine “remigrazione” è oggi accettato come descrittore di una policy perché, dopo le stragi norvegesi, l’impunità delle ultra‑destre è aumentata di livello. Trasformare odio e violenza in programma politico richiede una manipolazione fine dei termini: parole nuove diventano “gusci vaghi” che, una volta assorbiti, creano realtà alternative dove il pensiero diventa motore dell’azione. Un esempio è Ebbw Vale, città gallese di case uniformi. Nel 2002 la Ebbw Vale Steelwork chiuse; il territorio ricevette i massimi fondi UE per lo sviluppo strutturale, ma nel 2016 il 62 % dei residenti votò per l’uscita dalla Brexit. Il Guardian cita un abitante che chiede “cosa ha fatto l’UE per noi?”. La percezione di un’UE distante e favorevole alle élite economiche rese plausibile il risultato.</p>  
-
-<p>Cambridge Analytica, società di consulenza, scelse Ebbw Vale come target della campagna pro‑Brexit. L’azienda non solo costruì una comunicazione, ma esercitò una vera influenza elettorale: estrasse dati, li analizzò e sfruttò la capacità predittiva per individuare i “persuadables”, utenti indecisi o altamente persuadibili. Con bolle informative di messaggi semplici, emotivi e ripetitivi, trasformò l’indecisione in voto, creando realtà alternative personalizzate. Lo stesso modello fu usato negli Stati Uniti, dove Cambridge Analytica contribuì alla vittoria di Donald Trump, combinando persuasione digitale e sessismo sistemico per diffondere notizie false su Hillary Clinton, dipingendola come “arrivista”, “cattiva” e “inaffidabile”. Trump, nel 2016 su “60 Minutes”, rispose a Lesley Stahl che “non gli importava” se le critiche a Clinton fossero state “errori legittimati”. Oggi Ebbw Vale resta disoccupata, priva di turismo, mentre la propaganda digitalizzata continua a guidare la politica britannica e americana.</p>  
-
-<p>La propaganda, prodotta da attori istituzionali, privati e individuali, si diffonde su tutti i media, inclusi gli influencer di destra, che trasformano contenuti di intrattenimento in spazi propagandistici. Questi video mostrano degrado apparente e soluzioni altrettanto superficiali, rafforzando fratture sociali, diffidenza verso poveri, migranti e minoranze. Il “noi” contro “loro” attinge a odi preesistenti – antisemitismo, islamofobia, aporofobia, sessismo – e li intensifica, offrendo una base stabile per una propaganda che convince le persone che le soluzioni siano limitate a sostenere tiranni, partiti o influencer.</p>  
-
-<p>La propaganda efficace è quella che non solo genera seguito, ma soprattutto orienta il pensiero di chi la riceve in modo coerente ai propri scopi, indirizzando una frustrazione sociale verso soluzioni innocue rispetto alla causa originaria di tale frustrazione. Il testo cita diversi esempi: gli inglesi che si scagliano contro i migranti perché la vita in tempi di capitalismo è costosa, gli italiani che imputano al caldo estivo crescente la produzione industriale di India e Cina, gli europei bianchi che si attivano contro le persone in movimento a causa della privatizzazione che incalza e dei servizi che muoiono, e, ancor prima, i coloni che attaccano i colonizzati per giustificare la loro presenza.</p>  
-
-<p>La storia della propaganda avanza in costante accelerazione, al punto che anche il singolo può trarne profitto diventando “emanatore di propaganda”, fenomeno particolarmente visibile negli influencer della politica. Per ridimensionare, se non neutralizzare, gli effetti della propaganda si propongono strategie di diffusione di messaggi, idee e debunking; l’insieme di queste iniziative è definito <strong>contropropaganda</strong>, intesa come ripristino del dibattito e risignificazione delle parole. Oggi più che mai la contropropaganda è il luogo in cui le parole devono essere spiegate nei loro significati reali, dove simbolo, vettore e significato vengono ricomposti nella loro legittima espressione per mostrare la realtà così com’è.</p>  
-
-<p>La proposta propagandistica, tuttavia, non si limita a riconoscere la presenza di un contrasto, ma si attiva per smontarlo. Lo scontro avviene da posizioni impari: la propaganda è solitamente emessa da chi detiene il potere, con maggiori risorse che consentono una più ampia diffusione e una maggiore credibilità. La propaganda delle destre si muove in spazi di vantaggio, sta allargando le sue maglie e, dopo decenni di capillarizzazione, è pronta a “tirare i nodi”; chi si trova al centro degli intrighi rischia di essere tagliato fisicamente via dallo spazio sociale.</p>  
-
-<ol>  
-<li><strong>La trasformazione dell’odio in “content”</strong> è la strategia centrale di gruppi come Patriot platform, che usano video, podcast e riferimenti cristiani per normalizzare messaggi xenofobi.</li>  
-<li><strong>Il digitale amplifica la propaganda</strong> attraverso meme, “just joking”, intelligenza artificiale e algoritmi, creando camere dell’eco che indeboliscono la democrazia.</li>  
-<li><strong>Cambridge Analytica dimostra come i dati e la micro‑targettizzazione</strong> possano convertire indecisione in voto, sia in contesti britannici (Ebbw Vale) che americani (Trump).</li>  
-<li><strong>Il “buon senso” retorico</strong> è usato da figure come Salvini e Caccialupi per rendere politiche violente apparentemente naturali.</li>  
-<li><strong>La contropropaganda</strong> è proposta come risposta necessaria: debunking, risignificazione delle parole e ricostruzione del dibattito per contrastare la diffusione di odio.</li>  
-</ol>
-    
-    <hr>
-    <p><a href="https://www.iltascabile.com/societa/odio-content/">Leggi originale su Il Tascabile &rarr;</a></p></div>]]></content:encoded>
-      <guid isPermaLink="false">v18_https://www.iltascabile.com/societa/odio-content/</guid>
-      <enclosure url="https://www.iltascabile.com/wp-content/uploads/2026/11/Lodio-come-content.jpg" length="0" type="image/jpeg"/>
-      <pubDate>Tue, 03 Nov 2026 11:46:09 +0000</pubDate>
-      <media:group>
-        <media:content url="https://www.iltascabile.com/wp-content/uploads/2026/11/Lodio-come-content.jpg" type="image/jpeg" medium="image"/>
-        <media:thumbnail url="https://www.iltascabile.com/wp-content/uploads/2026/11/Lodio-come-content.jpg"/>
       </media:group>
     </item>
   </channel>
