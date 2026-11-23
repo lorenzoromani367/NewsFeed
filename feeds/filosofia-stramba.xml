@@ -8,7 +8,38 @@
     <docs>http://www.rssboard.org/rss-specification</docs>
     <generator>python-feedgen</generator>
     <language>it</language>
-    <lastBuildDate>Mon, 23 Nov 2026 00:39:13 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 14:27:51 +0000</lastBuildDate>
+    <item>
+      <title>Due anni fa, quando scrivevo o dicevo che negare agli LLM la</title>
+      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/51fb2d4925d2a30a.html</link>
+      <description>Il testo riflette sul cambiamento di opinione riguardo le capacità degli LLM, citando la recente dimostrazione dell'ipotesi di Riemann con l'ausilio di un'AI e sollevando questioni sulla comprensibilità delle dimostrazioni generate dalle macchine.
+
+Invita a mettere da parte idee ormai smentite e a concentrarsi sulle nuove domande che l'AI pone alla ricerca matematica.
+
+• Il matematico Levent Alpöge ha annunciato una dimostrazione dell'ipotesi di Riemann formalizzata in circa 17 milioni di righe di codice Lean, verificata formalmente ma ancora in fase di comprensione.
+
+• L'autore ammette di aver evoluto la propria visione sugli LLM, passando da considerazioni di “pappagalli statistici” a riconoscere potenzialità più ampie.
+
+• Si pone la domanda se le AI possano rendere comprensibili dimostrazioni attualmente troppo complesse anche per gli specialisti, e quale valore abbia una dimostrazione se non è pienamente compresa.
+
+• Il testo sostiene che discutere le nuove questioni sollevate dalle AI è più produttivo che difendere a tutti i costi posizioni precedenti.</description>
+      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Filosofia Stramba | <strong>Ambito:</strong> <em>Filosofia</em></p>
+    <hr>
+    
+    <p>Il testo riflette sul cambiamento di opinione riguardo le capacità degli LLM, citando la recente dimostrazione dell'ipotesi di Riemann con l'ausilio di un'AI e sollevando questioni sulla comprensibilità delle dimostrazioni generate dalle macchine.</p>
+<p>Invita a mettere da parte idee ormai smentite e a concentrarsi sulle nuove domande che l'AI pone alla ricerca matematica.</p>
+<ol>
+<li><strong>Il matematico Levent Alpöge ha annunciato una dimostrazione dell'ipotesi di Riemann formalizzata in circa 17 milioni di righe di codice Lean, verificata formalmente ma ancora in fase di comprensione.</strong></li>
+<li><strong>L'autore ammette di aver evoluto la propria visione sugli LLM, passando da considerazioni di “pappagalli statistici” a riconoscere potenzialità più ampie.</strong></li>
+<li><strong>Si pone la domanda se le AI possano rendere comprensibili dimostrazioni attualmente troppo complesse anche per gli specialisti, e quale valore abbia una dimostrazione se non è pienamente compresa.</strong></li>
+<li><strong>Il testo sostiene che discutere le nuove questioni sollevate dalle AI è più produttivo che difendere a tutti i costi posizioni precedenti.</strong></li>
+</ol>
+    
+    <hr>
+    <p><a href="https://t.me/filosofiastramba/1433">Leggi originale su Filosofia Stramba &rarr;</a></p></div>]]></content:encoded>
+      <guid isPermaLink="false">v18_https://t.me/filosofiastramba/1433</guid>
+      <pubDate>Mon, 23 Nov 2026 14:27:45 +0000</pubDate>
+    </item>
     <item>
       <title>Concordo con Nagel nel ritenere estremanente improbabile che</title>
       <link>https://lorenzoromani367.github.io/NewsFeed/articoli/bdc26feb190f7883.html</link>
@@ -258,37 +289,6 @@ https://www.indiscreto.org/il-monastero-e-le-donne-fuori-dalla-norma/</descripti
     <p><a href="https://t.me/filosofiastramba/1424">Leggi originale su Filosofia Stramba &rarr;</a></p></div>]]></content:encoded>
       <guid isPermaLink="false">v18_https://t.me/filosofiastramba/1424</guid>
       <pubDate>Mon, 02 Nov 2026 18:21:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>Articolo stupendo e per me condivisibile al 100% di Boyd, co</title>
-      <link>https://lorenzoromani367.github.io/NewsFeed/articoli/34e0c45a71c888d1.html</link>
-      <description>Articolo di Boyd definito “stupendo” e consigliato al 100% dal lettore.
-
-Citazione evidenzia la mancanza di spazio per ricerca e sfumature nel dibattito su adolescenti e tecnologia, con una polarizzazione tra opposizione alle aziende tech e complicità.
-
-• Il lettore esprime pieno accordo con l’articolo.
-
-• Invita alla lettura del pezzo.
-
-• Critica la polarità del dibattito contemporaneo su teen‑and‑tech.
-
-• Riferisce che chi critica Jonathan Haidt viene etichettato “corporate shill”.</description>
-      <content:encoded><![CDATA[<div><p><strong>FONTE:</strong> Filosofia Stramba | <strong>Ambito:</strong> <em>Filosofia</em></p>
-    <hr>
-    
-    <p>Articolo di Boyd definito “stupendo” e consigliato al 100% dal lettore.</p>
-<p>Citazione evidenzia la mancanza di spazio per ricerca e sfumature nel dibattito su adolescenti e tecnologia, con una polarizzazione tra opposizione alle aziende tech e complicità.</p>
-<ol>
-<li>Il lettore esprime pieno accordo con l’articolo.</li>
-<li>Invita alla lettura del pezzo.</li>
-<li>Critica la polarità del dibattito contemporaneo su teen‑and‑tech.</li>
-<li>Riferisce che chi critica Jonathan Haidt viene etichettato “corporate shill”.</li>
-</ol>
-    
-    <hr>
-    <p><a href="https://t.me/filosofiastramba/1423">Leggi originale su Filosofia Stramba &rarr;</a></p></div>]]></content:encoded>
-      <guid isPermaLink="false">v18_https://t.me/filosofiastramba/1423</guid>
-      <pubDate>Sat, 31 Oct 2026 14:28:09 +0000</pubDate>
     </item>
   </channel>
 </rss>
